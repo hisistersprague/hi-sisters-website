@@ -4167,7 +4167,7 @@ let currentLang = 'en';
 let currentCountry = null;
 const servicesByCountry = {
   spain: ['laser','electro','peeling','trichology','cosmetics'],
-  czech: ['laser','electro','peeling','massage','cosmetology','microcurrent','faceMassage','trichology','menFace','cosmetics']
+  czech: ['laser','electro','peeling','massage','cosmetology','trichology','cosmetics']
 };
 
 function getPath(obj, path){
@@ -4194,7 +4194,7 @@ function renderValues(lang){
   });
 }
 
-const PRICED_SERVICES = {laser:'laser', peeling:'peeling', massage:'massage', electro:'electro', cosmetology:'cosmetology', microcurrent:'microcurrent', faceMassage:'faceMassage', menFace:'menFace'};
+const PRICED_SERVICES = {laser:'laser', peeling:'peeling', massage:'massage', electro:'electro', cosmetology:'cosmetology'};
 
 /* Service card backgrounds. Drop a base64 data-URI per key to use a real photo;
    while empty, a brand gradient is used as the background under the filter. */
@@ -5347,6 +5347,8 @@ function renderPriceModal(lang){
     tabBtns.forEach(b=> b.classList.toggle('active', b.dataset.tab === currentPriceTab));
     if(currentPriceTab === 'complexes'){
       bodyEl.innerHTML = p.complexes.map(c=>`<div class="price-row"><span class="lbl">${c.label}</span><span class="val"><span class="was">${c.was} Kč</span>${c.now} Kč</span></div>`).join('');
+    if(p.menFaceItems&&p.menFaceItems.length){bodyEl.innerHTML+='<hr style="margin:20px 0"><h4 style="margin:0 0 10px;font-size:14px;font-weight:700;color:var(--navy)">'+(p.menFaceTitle||'Mužská epilace')+'</h4>'+priceRows(p.menFaceItems);if(p.menFacePackages)bodyEl.innerHTML+='<h4 style="margin:12px 0 8px;font-size:13px;color:var(--navy);font-weight:600">'+(p.menFacePackagesTitle||'Balíčky')+'</h4>'+priceRows(p.menFacePackages);}
+
     } else if(currentPriceTab === 'women'){
       bodyEl.innerHTML = priceRows(p.laserWomen);
     } else {
@@ -5373,10 +5375,12 @@ function renderPriceModal(lang){
     noteEl.textContent = p.pragueNote;
     tabsEl.classList.add('hidden');
     bodyEl.innerHTML = priceRows(p.massageSessions);
+    if(p.faceMassageTitle){bodyEl.innerHTML+='<hr style="margin:20px 0"><h4 style="margin:0 0 10px;font-size:14px;font-weight:700;color:var(--navy)">'+p.faceMassageTitle+'</h4>'+priceRows(p.faceMassageSessions||[]);}
+
   } else if(currentPriceType === 'cosmetology'){
     tabsEl.classList.add('hidden');
     titleEl.textContent = p.cosmetologyTitle || 'Kosmetologie';
-    bodyEl.innerHTML = '<p class="price-modal-desc">'+(p.cosmetologyDesc||'')+'</p>'+priceRows(p.cosmetologyItems||[]);
+    bodyEl.innerHTML = '<p class="price-modal-desc">'+(p.cosmetologyDesc||'')+'</p>'+priceRows(p.cosmetologyItems||[])+'<h4 style="margin:20px 0 10px;font-size:14px;font-weight:700;color:var(--navy)">'+(p.microcurrentTitle||'Mikrotokova terapie')+'</h4><p class="price-modal-desc" style="font-size:13px">'+(p.microcurrentDesc||'')+'</p><p class="price-modal-note">⏱ '+(p.microcurrentDuration||'60 min')+'</p>'+priceRows(p.microcurrentSessions||[]);
   } else if(currentPriceType === 'microcurrent'){
     tabsEl.classList.add('hidden');
     titleEl.textContent = p.microcurrentTitle || 'Mikrotokova terapie';
