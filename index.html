@@ -5376,19 +5376,19 @@ function renderPriceModal(lang){
   } else if(currentPriceType === 'cosmetology'){
     tabsEl.classList.add('hidden');
     titleEl.textContent = p.cosmetologyTitle || 'Kosmetologie';
-    contentEl.innerHTML = '<p class="price-modal-desc">'+(p.cosmetologyDesc||'')+'</p>'+priceRows(p.cosmetologyItems||[]);
+    bodyEl.innerHTML = '<p class="price-modal-desc">'+(p.cosmetologyDesc||'')+'</p>'+priceRows(p.cosmetologyItems||[]);
   } else if(currentPriceType === 'microcurrent'){
     tabsEl.classList.add('hidden');
     titleEl.textContent = p.microcurrentTitle || 'Mikrotokova terapie';
-    contentEl.innerHTML = '<p class="price-modal-desc">'+(p.microcurrentDesc||'')+'</p><p class="price-modal-note">⏱ '+(p.microcurrentDuration||'60 min')+'</p>'+priceRows(p.microcurrentSessions||[]);
+    bodyEl.innerHTML = '<p class="price-modal-desc">'+(p.microcurrentDesc||'')+'</p><p class="price-modal-note">⏱ '+(p.microcurrentDuration||'60 min')+'</p>'+priceRows(p.microcurrentSessions||[]);
   } else if(currentPriceType === 'faceMassage'){
     tabsEl.classList.add('hidden');
     titleEl.textContent = p.faceMassageTitle || 'Masaž obličeje';
-    contentEl.innerHTML = priceRows(p.faceMassageSessions||[]);
+    bodyEl.innerHTML = priceRows(p.faceMassageSessions||[]);
   } else if(currentPriceType === 'menFace'){
     tabsEl.classList.add('hidden');
     titleEl.textContent = p.menFaceTitle || 'Mužská epilace';
-    contentEl.innerHTML = priceRows(p.menFaceItems||[])+'<h4 style="margin:18px 0 10px;color:var(--navy)">'+(p.menFacePackagesTitle||'Balíčky')+'</h4>'+priceRows(p.menFacePackages||[]);
+    bodyEl.innerHTML = priceRows(p.menFaceItems||[])+'<h4 style="margin:18px 0 10px;color:var(--navy)">'+(p.menFacePackagesTitle||'Balíčky')+'</h4>'+priceRows(p.menFacePackages||[]);
   } else if(currentPriceType === 'electro'){
     tabsEl.classList.add('hidden');
     if(isSpain){
