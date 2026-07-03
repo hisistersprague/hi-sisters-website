@@ -5347,12 +5347,17 @@ function renderPriceModal(lang){
     tabBtns.forEach(b=> b.classList.toggle('active', b.dataset.tab === currentPriceTab));
     if(currentPriceTab === 'complexes'){
       bodyEl.innerHTML = p.complexes.map(c=>`<div class="price-row"><span class="lbl">${c.label}</span><span class="val"><span class="was">${c.was} Kč</span>${c.now} Kč</span></div>`).join('');
-    if(p.menFaceItems&&p.menFaceItems.length){bodyEl.innerHTML+='<hr style="margin:20px 0"><h4 style="margin:0 0 10px;font-size:14px;font-weight:700;color:var(--navy)">'+(p.menFaceTitle||'Mužská epilace')+'</h4>'+priceRows(p.menFaceItems);if(p.menFacePackages)bodyEl.innerHTML+='<h4 style="margin:12px 0 8px;font-size:13px;color:var(--navy);font-weight:600">'+(p.menFacePackagesTitle||'Balíčky')+'</h4>'+priceRows(p.menFacePackages);}
+    if(p.menFacePackages&&p.menFacePackages.length){bodyEl.innerHTML+='<hr style="margin:20px 0"><h4 style="margin:0 0 10px;font-size:14px;font-weight:700;color:var(--navy)">'+(p.menFacePackagesTitle||'Mužské komplexy obličeje')+'</h4>'+priceRows(p.menFacePackages);}
 
     } else if(currentPriceTab === 'women'){
       bodyEl.innerHTML = priceRows(p.laserWomen);
     } else {
-      bodyEl.innerHTML = priceRows(p.laserMen);
+      var menHtml = '';
+      if(p.menFaceItems && p.menFaceItems.length){
+        menHtml += '<h4 style="margin:0 0 10px;font-size:14px;font-weight:700;color:var(--navy)">'+(p.menFaceTitle||'Obličej')+'</h4>'+priceRows(p.menFaceItems)+'<hr style="margin:16px 0">';
+      }
+      if(p.laserMen) menHtml += priceRows(p.laserMen);
+      bodyEl.innerHTML = menHtml;
     }
   } else if(currentPriceType === 'peeling'){
     titleEl.textContent = isSpain ? (p.peelingTitleEs || p.modalTitlePeeling) : p.modalTitlePeeling;
