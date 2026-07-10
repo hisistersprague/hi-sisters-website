@@ -5817,5 +5817,163 @@ document.addEventListener('click',function(e){
 }, true);
 })();
 </script>
+
+<!-- TZ: Final Fixes (cosmetics btn rename, trich cleanup, gallery timing fix) -->
+<script>
+(function(){
+
+// ========================================================
+// 1. RENAME COSMETICS BUTTON + TRICHOLOGY CLEANUP
+// ========================================================
+var COSMETICS_BTN = {cs:'O kosmetice',en:'About cosmetics',ru:'О косметике',uk:'Про косметику',es:'Sobre la cosmética'};
+
+function fixCosmetics(){
+  var lang=document.documentElement.lang||'cs';
+  var lbl=COSMETICS_BTN[lang]||COSMETICS_BTN.cs;
+  document.querySelectorAll('.s-card').forEach(function(card){
+    var h3=card.querySelector('h3,h2');
+    if(!h3) return;
+    var t=h3.textContent.toLowerCase();
+    // Cosmetics card
+    if(t.includes('kosmetika')||t.includes('cosmetic')||t.includes('cosmética')){
+      var detBtn=card.querySelector('[data-service-detail="cosmetics"], .s-btn-detail');
+      if(detBtn) detBtn.textContent=lbl;
+    }
+  });
+}
+
+// ========================================================
+// 2. GALLERY FIX: Inject with 3500ms delay after lang change
+// ========================================================
+var GALLERY_T={
+  cs:{lb:'VÝSLEDKY',ti:'Před & Po',sub:'Skutečné výsledky našich klientek.',btn:'Rezervovat konzultaci',ph:'Foto brzy',zones:['Podpaží','Bikány','Nohy','Obličej','Hnáty','Tělo']},
+  en:{lb:'RESULTS',ti:'Before & After',sub:'Real results of our clients.',btn:'Book consultation',ph:'Photo soon',zones:['Underarms','Bikini','Legs','Face','Knees','Body']},
+  ru:{lb:'РЕЗУЛЬТАТЫ',ti:'До & После',sub:'Реальные результаты.',btn:'Записаться',ph:'Фото скоро',zones:['Подмышки','Бикини','Ноги','Лицо','Колени','Тело']},
+  uk:{lb:'РЕЗУЛЬТАТИ',ti:'До & Після',sub:'Реальні результати.',btn:'Записатись',ph:'Фото скоро',zones:['Підпахви','Бікіні','Ноги','Обличчя','Коліна','Тіло']},
+  es:{lb:'RESULTADOS',ti:'Antes & Después',sub:'Resultados reales de nuestras clientas.',btn:'Reservar consulta',ph:'Foto pronto',zones:['Axilas','Bikíni','Piernas','Cara','Rodillas','Cuerpo']}
+};
+
+function injectGallery(){
+  if(document.getElementById('gallery-section')) return;
+  var reviews=document.getElementById('reviews');
+  if(!reviews) return;
+  var lang=document.documentElement.lang||'cs';
+  var d=GALLERY_T[lang]||GALLERY_T.cs;
+  var cards=d.zones.map(function(z){return'<div class="gallery-ph"><div class="gallery-ph-icon">📸</div><div class="gallery-ph-zone">'+z+'</div><div class="gallery-ph-text">'+d.ph+'</div></div>';}).join('');
+  var html='<section class="gallery-section" id="gallery-section"><div class="gallery-inner"><p class="gallery-label">'+d.lb+'</p><h2 class="gallery-title">'+d.ti+'</h2><p class="gallery-subtitle">'+d.sub+'</p><div class="gallery-grid">'+cards+'</div><div class="gallery-cta"><a class="gallery-cta-btn" href="#contacts" onclick="document.getElementById('contacts')&&document.getElementById('contacts').scrollIntoView({behavior:'smooth'});return false;">📅 '+d.btn+'</a></div></div></section>';
+  reviews.insertAdjacentHTML('beforebegin',html);
+  setTimeout(fixCosmetics, 100);
+}
+
+function reinjectGallery(){
+  var o=document.getElementById('gallery-section');
+  if(o) o.remove();
+  // Use 3500ms delay to ensure country render completes first
+  setTimeout(injectGallery, 3500);
+}
+
+// Watch for lang changes with longer delay  
+new MutationObserver(function(m){m.forEach(function(r){if(r.attributeName==='lang')reinjectGallery();});}).observe(document.documentElement,{attributes:true,attributeFilter:['lang']});
+
+// Also watch for visibility changes
+document.addEventListener('visibilitychange',function(){if(!document.hidden)setTimeout(injectGallery,500);});
+
+// Fallback interval - retry every 2s up to 30s
+var _gIv=setInterval(function(){
+  if(injectGallery()!==undefined||++window._gTries>15)clearInterval(_gIv);
+},2000);
+window._gTries=0;
+
+// ========================================================
+// 3. DETECT COUNTRY SELECTION (for city switcher + new cards)
+// ========================================================
+document.addEventListener('click',function(e){
+  var t=e.target;
+  while(t&&t!==document.body){
+    var txt=t.innerText||t.textContent||'';
+    if(txt.match(/Prague|Praha|Prag|Праг/) && !t.dataset.priceType && t.tagName!=='INPUT'){
+      document.body.dataset.country='cz';
+      setTimeout(function(){addMicroPressoCards();fixCosmetics();},1500);
+      break;
+    } else if(txt.match(/Valencia|Valencie|Вален/) && !t.dataset.priceType && t.tagName!=='INPUT'){
+      document.body.dataset.country='es';
+      setTimeout(fixCosmetics,1500);
+      break;
+    }
+    t=t.parentElement;
+  }
+},true);
+
+// ========================================================
+// 4. ADD MICROCURRENT + PRESSOTHERAPY CARDS TO PRAGUE GRID
+// ========================================================
+var MICRO_TRANS={cs:['Mikroproudová terapie obličeje','Neinvazivní procedura pro omlazení a lifting. Přírodní efekt bez injekcí.'],en:['Microcurrent Facial Therapy','Non-invasive facial rejuvenation and lifting without injections.'],ru:['Микротоковая терапия лица','Неинвазивная процедура для омоложения и лифтинга.'],uk:['Мікрострумова терапія обличчя','Неінвазивна процедура для омолодження та ліфтингу.'],es:['Terapia de microcorrientes facial','Procedimiento no invasivo para rejuvenecer y tensar el óvalo facial.']};
+var PRESS_TRANS={cs:['Pressoterapié','Přístrojová lymfodrenáž. Odstraňuje otoky, zlepšuje obtěžení a výkžnost nohou.'],en:['Pressotherapy','Apparatus lymphatic drainage. Reduces swelling and improves leg circulation.'],ru:['Прессотерапия','Аппаратный лимфодренаж. Убирает отёки, улучшает кровообращение.'],uk:['Пресотерапія','Апаратний лімфодренаж. Прибирає набряки, поліпшує циркуляцію.'],es:['Presoterapia','Drenaje linfático con aparatos. Reduce la pesadez de piernas y mejora la circulación.']};
+
+var PRICE_BTN_LABELS={cs:'Zobrazit ceník',en:'View prices',ru:'Смотреть прайс',uk:'Переглянути прайс',es:'Ver precios'};
+
+function addMicroPressoCards(){
+  var country=document.body.dataset.country||'cz';
+  if(country==='es') return;
+  
+  // Remove old ones if any
+  ['micro-card','presso-card'].forEach(function(id){var o=document.getElementById(id);if(o)o.remove();});
+  
+  var lang=document.documentElement.lang||'cs';
+  var mi=MICRO_TRANS[lang]||MICRO_TRANS.cs;
+  var pi=PRESS_TRANS[lang]||PRESS_TRANS.cs;
+  var pb=PRICE_BTN_LABELS[lang]||PRICE_BTN_LABELS.cs;
+  
+  var grid=document.querySelector('.services-scroll,.services-grid,[id="services"] .scroll-snap');
+  if(!grid){
+    // Find the grid containing service cards
+    var cards=document.querySelectorAll('.s-card');
+    if(cards.length>0) grid=cards[0].parentElement;
+  }
+  if(!grid) return;
+  
+  function makeCard(id,title,desc,pt){
+    var c=document.createElement('div');c.className='s-card';c.id=id;
+    c.innerHTML='<div class="s-card-img" style="background:linear-gradient(135deg,#0d0b1e 0%,#1a1535 100%);height:200px;display:flex;align-items:center;justify-content:center;font-size:40px">'+(pt==='microcurrent'?'⚡':'💧')+'</div>'+
+      '<div class="s-card-body" style="padding:20px;flex:1"><h3 style="font-family:Cormorant Garamond,serif;font-size:22px;color:#0d0b1e;margin:0 0 10px">'+title+'</h3><p style="font-size:14px;color:rgba(10,7,40,.65);line-height:1.6">'+desc+'</p></div>'+
+      '<div class="s-card-footer" style="padding:16px 20px"><button class="s-btn" data-price-type="'+pt+'" style="padding:10px 20px;background:var(--navy,#0d0b1e);color:var(--gold,#c9a96e);border:1.5px solid rgba(201,169,110,.35);border-radius:5px;font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;cursor:pointer">'+pb+'</button></div>';
+    return c;
+  }
+  
+  // Find trichology card to insert before it
+  var trichCard=[].slice.call(grid.children).find(function(c){
+    var t=(c.querySelector('h3,h2')?.textContent||'').toLowerCase();
+    return t.includes('trichol')||t.includes('tricolog')||t.includes('трих');
+  });
+  
+  var microCard=makeCard('micro-card',mi[0],mi[1],'microcurrent');
+  var pressoCard=makeCard('presso-card',pi[0],pi[1],'pressotherapy');
+  
+  if(trichCard){
+    grid.insertBefore(pressoCard,trichCard);
+    grid.insertBefore(microCard,pressoCard);
+  } else {
+    // Insert before cosmetics if no trich
+    var cosmCard=[].slice.call(grid.children).find(function(c){
+      var t=(c.querySelector('h3,h2')?.textContent||'').toLowerCase();
+      return t.includes('kosmetika')||t.includes('cosmetic')||t.includes('cosmética');
+    });
+    if(cosmCard){grid.insertBefore(pressoCard,cosmCard);grid.insertBefore(microCard,pressoCard);}
+    else{grid.appendChild(microCard);grid.appendChild(pressoCard);}
+  }
+}
+
+// Apply fixes after lang change (with delay for DOM to settle)
+new MutationObserver(function(m){m.forEach(function(r){
+  if(r.attributeName==='lang'){
+    setTimeout(fixCosmetics,1000);
+    setTimeout(function(){addMicroPressoCards();},2000);
+  }
+});}).observe(document.documentElement,{attributes:true,attributeFilter:['lang']});
+
+// Initial run
+setTimeout(function(){fixCosmetics();addMicroPressoCards();},3000);
+})();
+</script>
 </body>
 </html>
