@@ -578,8 +578,8 @@ footer{background:var(--navy-deep);color:#cfc9ee;padding:64px 0 28px;}
   <link rel="shortcut icon" href="/favicon.svg">
 <script async src="https://www.googletagmanager.com/gtag/js?id=AW-193956948"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','AW-193956948');</script>
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-193956948"><\/script>
-<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','AW-193956948');<\/script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-193956948"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','AW-193956948');</script>
 </head>
 <body>
 
@@ -5326,7 +5326,6 @@ function renderAll(lang){
 let currentPriceType = null;
 let currentPriceTab = 'complexes';
 
-window._setCountry=function(c){currentCountry=c;var l=c==='spain'?'es':'cs';currentLang=l;renderAll(l);var o=document.getElementById('country-overlay');if(o)o.classList.add('hidden');};
 function priceRows(list){
   return list.map(item=>{
     const sale=item.now!==undefined;
@@ -6022,6 +6021,21 @@ setTimeout(function(){fixCosmetics();addMicroPressoCards();},3000);
   }, 150);
 })();
 </script>
-<script>(function(){var c=localStorage.getItem('hs-country');if(!c)return;var t=setInterval(function(){if(window._setCountry){clearInterval(t);window._setCountry(c);}},50);setTimeout(function(){clearInterval(t);},3000);})();<\/script>
+
+<script>
+(function(){
+  var c=localStorage.getItem('hs-country');
+  if(!c) return;
+  // Fire after main script fully loaded
+  var attempts=0;
+  var t=setInterval(function(){
+    var card=document.querySelector('.co-card[data-country="'+c+'"]');
+    if(card){
+      clearInterval(t);
+      card.click();
+    } else if(++attempts>60) clearInterval(t);
+  },50);
+})();
+</script>
 </body>
 </html>
