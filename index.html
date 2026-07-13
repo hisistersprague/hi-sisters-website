@@ -576,6 +576,8 @@ footer{background:var(--navy-deep);color:#cfc9ee;padding:64px 0 28px;}
 </style>
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <link rel="shortcut icon" href="/favicon.svg">
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-193956948"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','AW-193956948');</script>
 </head>
 <body>
 
@@ -4166,7 +4168,7 @@ const TEAM = [
     desc:{ru:'Электроэпиляция и интимные пилинги. С 2023 года.',uk:'Електроепіляція та інтимні пілінги. Із 2023 року.',en:'Electrolysis and intimate peels. Since 2023.',es:'Electrólisis y peelings íntimos. Desde 2023.',cs:'Elektroepilace a intimní peelingy. Od roku 2023.'} }
 ];
 let currentLang = 'en';
-let currentCountry = null;
+let currentCountry = localStorage.getItem('hs-country');
 const servicesByCountry = {
   spain: ['laser','electro','peeling','cosmetics'],
   czech: ['laser','electro','peeling','massage','cosmetology','microcurrent','pressotherapy','trichology','cosmetics']
@@ -5494,7 +5496,7 @@ document.querySelectorAll('.country-switch').forEach(cs=>{
 
 document.querySelectorAll('.co-card').forEach(card=>{
   card.addEventListener('click', ()=>{
-    currentCountry = card.dataset.country;
+    currentCountry = card.dataset.country; localStorage.setItem('hs-country', currentCountry);
     const suggestedLang = currentCountry === 'spain' ? 'es' : 'cs';
     currentLang = suggestedLang;
     renderAll(currentLang);
@@ -6003,6 +6005,18 @@ new MutationObserver(function(m){m.forEach(function(r){
 
 // Initial run
 setTimeout(function(){fixCosmetics();addMicroPressoCards();},3000);
+})();
+</script>
+
+<script>
+(function(){
+  var c=localStorage.getItem('hs-country');
+  if(!c) return;
+  // Auto-click the saved country card to trigger renderAll
+  setTimeout(function(){
+    var card=document.querySelector('.co-card[data-country="'+c+'"]');
+    if(card) card.click();
+  }, 150);
 })();
 </script>
 </body>
