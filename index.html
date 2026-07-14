@@ -5641,6 +5641,8 @@ document.getElementById('fab-close').addEventListener('click', (e)=>{
   document.getElementById('fab-book').classList.add('hidden');
 });
 
+
+document.querySelectorAll('.faq-q').forEach(function(b){b.addEventListener('click',function(){var it=b.closest('.faq-item'),an=it.querySelector('.faq-a'),ic=it.querySelector('.faq-icon'),was=an.classList.contains('open');document.querySelectorAll('.faq-a').forEach(function(a){a.classList.remove('open')});document.querySelectorAll('.faq-icon').forEach(function(i){i.classList.remove('open')});if(!was){an.classList.add('open');ic.classList.add('open');}});});
 renderAll(currentLang);
 </script>
 
@@ -5758,6 +5760,19 @@ if(document.readyState!=='loading'){setTimeout(inject,1000);}else{document.addEv
 .hiw-step-num{font-size:38px;font-weight:700;color:rgba(200,169,126,0.35);line-height:1;margin-bottom:14px;font-family:Georgia,serif}
 .hiw-step-title{color:#fff;font-size:16px;font-weight:500;margin-bottom:8px}
 .hiw-step-desc{color:rgba(255,255,255,0.6);font-size:13px;line-height:1.65;margin:0}
+
+.faq-section{background:#f7f5f0;padding:60px 0}
+.faq-inner{max-width:800px;margin:0 auto;padding:0 24px}
+.faq-label{color:#c8a97e;font-size:12px;letter-spacing:3px;text-transform:uppercase;margin-bottom:12px}
+.faq-title{font-size:clamp(24px,3vw,36px);font-weight:300;color:#1a1a2e;margin-bottom:32px}
+.faq-item{border-bottom:1px solid rgba(0,0,0,0.1)}
+.faq-q{width:100%;background:none;border:none;text-align:left;padding:18px 0;cursor:pointer;display:flex;justify-content:space-between;align-items:center;font-size:16px;color:#1a1a2e;font-family:inherit}
+.faq-q-text{font-weight:400}
+.faq-icon{font-size:22px;color:#c8a97e;transition:transform 0.3s;font-weight:300;flex-shrink:0;margin-left:16px}
+.faq-icon.open{transform:rotate(45deg)}
+.faq-a{overflow:hidden;max-height:0;transition:max-height 0.35s ease}
+.faq-a.open{max-height:400px}
+.faq-a-inner{padding:0 0 18px;color:rgba(26,26,46,0.7);font-size:15px;line-height:1.65}
 </style>
 <script>
 (function(){
@@ -6037,11 +6052,13 @@ setTimeout(function(){fixCosmetics();addMicroPressoCards();},3000);
 (function(){
   var c=localStorage.getItem('hs-country');
   if(!c) return;
-  // Auto-click the saved country card to trigger renderAll
   setTimeout(function(){
-    var card=document.querySelector('.co-card[data-country="'+c+'"]');
-    if(card) card.click();
-  }, 150);
+    if(typeof renderAll==='function'){
+      currentCountry=c;
+      currentLang=(c==='spain')?'es':'cs';
+      renderAll(currentLang);
+    }
+  }, 200);
 })();
 </script>
 
