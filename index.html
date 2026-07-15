@@ -6076,11 +6076,12 @@ setTimeout(function(){fixCosmetics();addMicroPressoCards();},3000);
       }else if(att>60)clearInterval(t);
     },50);
   }
+  // After 600ms: overlay in English, FAQ delegation with 10ms delay trick
   setTimeout(function(){
-    // 1. Always show overlay
+    // 1. Show overlay
     var ov=document.getElementById('country-overlay');
     if(ov)ov.classList.remove('hidden');
-    // 2. Force overlay text to English
+    // 2. Overlay text to English
     if(typeof translations!=='undefined'&&translations.en&&translations.en.countrySelect){
       var en=translations.en.countrySelect;
       document.querySelectorAll('[data-i18n]').forEach(function(el){
@@ -6088,17 +6089,20 @@ setTimeout(function(){fixCosmetics();addMicroPressoCards();},3000);
         if(k&&k.indexOf('countrySelect.')===0){var s=k.replace('countrySelect.','');if(en[s])el.textContent=en[s];}
       });
     }
-    // 3. FAQ accordion via EVENT DELEGATION on the stable parent
-    var faqSect=document.querySelector('.faq-section');
-    if(faqSect){
-      faqSect.addEventListener('click',function(e){
+    // 3. FAQ: delegation on stable section + 10ms delay so we fire AFTER all other handlers
+    var fs=document.querySelector('.faq-section');
+    if(fs){
+      fs.addEventListener('click',function(e){
         var btn=e.target.closest('.faq-q');
         if(!btn)return;
-        var it=btn.closest('.faq-item'),an=it.querySelector('.faq-a'),ic=it.querySelector('.faq-icon'),was=an.classList.contains('open');
-        document.querySelectorAll('.faq-a').forEach(function(a){a.classList.remove('open');});
-        document.querySelectorAll('.faq-icon').forEach(function(i){i.classList.remove('open');});
-        if(!was){an.classList.add('open');ic.classList.add('open');}
-      },true);
+        var it=btn.closest('.faq-item'),an=it.querySelector('.faq-a'),ic=it.querySelector('.faq-icon');
+        var wasOpen=an.classList.contains('open');
+        setTimeout(function(){
+          document.querySelectorAll('.faq-a').forEach(function(a){a.classList.remove('open');});
+          document.querySelectorAll('.faq-icon').forEach(function(i){i.classList.remove('open');});
+          if(!wasOpen){an.classList.add('open');ic.classList.add('open');}
+        },10);
+      },false);
     }
   }, 600);
 })();
