@@ -6076,7 +6076,7 @@ setTimeout(function(){fixCosmetics();addMicroPressoCards();},3000);
       }else if(att>60)clearInterval(t);
     },50);
   }
-  // Overlay + English text after 600ms
+  // Overlay + English after 600ms
   setTimeout(function(){
     var ov=document.getElementById('country-overlay');
     if(ov)ov.classList.remove('hidden');
@@ -6088,13 +6088,14 @@ setTimeout(function(){fixCosmetics();addMicroPressoCards();},3000);
       });
     }
   }, 600);
-})();
-
-// FAQ delegation - added immediately, 10ms delay to fire after all handlers
-(function(){
-  function addFAQDelegation(){
+  // FAQ: keep trying until .faq-section exists, then add delegation ONCE
+  var faqAdded=false;
+  var faqTimer=setInterval(function(){
+    if(faqAdded)return clearInterval(faqTimer);
     var fs=document.querySelector('.faq-section');
     if(!fs)return;
+    clearInterval(faqTimer);
+    faqAdded=true;
     fs.addEventListener('click',function(e){
       var btn=e.target.closest('.faq-q');
       if(!btn)return;
@@ -6106,15 +6107,8 @@ setTimeout(function(){fixCosmetics();addMicroPressoCards();},3000);
         if(!wasOpen){an.classList.add('open');ic.classList.add('open');}
       },10);
     },false);
-  }
-  // Try immediately
-  if(document.querySelector('.faq-section')) addFAQDelegation();
-  // Also try after DOM is ready (covers delayed rendering)
-  document.addEventListener('DOMContentLoaded', addFAQDelegation);
-  setTimeout(addFAQDelegation, 100);
-  setTimeout(addFAQDelegation, 600);
+  }, 50);
 })();
-
 </script>
 </body>
 </html>
