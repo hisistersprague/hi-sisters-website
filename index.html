@@ -6065,13 +6065,46 @@ setTimeout(function(){fixCosmetics();addMicroPressoCards();},3000);
 <script>
 (function(){
   var c=localStorage.getItem('hs-country');
-  if(c){var att=0,t=setInterval(function(){att++;if(typeof renderAll==='function'){clearInterval(t);currentCountry=c;currentLang=(c==='spain')?'es':'cs';renderAll(currentLang);}else if(att>60)clearInterval(t);},50);}
-  window.addEventListener('load',function(){
+  if(c){
+    var att=0,t=setInterval(function(){
+      att++;
+      if(typeof renderAll==='function'){
+        clearInterval(t);
+        currentCountry=c;
+        currentLang=(c==='spain')?'es':'cs';
+        renderAll(currentLang);
+      }else if(att>60)clearInterval(t);
+    },50);
+  }
+  // Use setTimeout instead of window.load — load may already have fired
+  // in a 3.76MB single-file HTML. 600ms gives renderAll time to finish.
+  setTimeout(function(){
+    // 1. Always show overlay
     var ov=document.getElementById('country-overlay');
     if(ov)ov.classList.remove('hidden');
-    if(typeof translations!=='undefined'&&translations.en&&translations.en.countrySelect){var en=translations.en.countrySelect;document.querySelectorAll('[data-i18n]').forEach(function(el){var k=el.getAttribute('data-i18n');if(k&&k.indexOf('countrySelect.')===0){var s=k.replace('countrySelect.','');if(en[s])el.textContent=en[s];}});}
-    document.querySelectorAll('.faq-q').forEach(function(btn){var fresh=btn.cloneNode(true);btn.parentNode.replaceChild(fresh,btn);fresh.addEventListener('click',function(){var it=fresh.closest('.faq-item'),an=it.querySelector('.faq-a'),ic=it.querySelector('.faq-icon'),was=an.classList.contains('open');document.querySelectorAll('.faq-a').forEach(function(a){a.classList.remove('open');});document.querySelectorAll('.faq-icon').forEach(function(i){i.classList.remove('open');});if(!was){an.classList.add('open');ic.classList.add('open');}});});
-  });
+    // 2. Force overlay text to English
+    if(typeof translations!=='undefined'&&translations.en&&translations.en.countrySelect){
+      var en=translations.en.countrySelect;
+      document.querySelectorAll('[data-i18n]').forEach(function(el){
+        var k=el.getAttribute('data-i18n');
+        if(k&&k.indexOf('countrySelect.')===0){
+          var s=k.replace('countrySelect.','');
+          if(en[s])el.textContent=en[s];
+        }
+      });
+    }
+    // 3. FAQ accordion — clone to strip old listeners, rebind clean
+    document.querySelectorAll('.faq-q').forEach(function(btn){
+      var f=btn.cloneNode(true);
+      if(btn.parentNode)btn.parentNode.replaceChild(f,btn);
+      f.addEventListener('click',function(){
+        var it=f.closest('.faq-item'),an=it.querySelector('.faq-a'),ic=it.querySelector('.faq-icon'),was=an.classList.contains('open');
+        document.querySelectorAll('.faq-a').forEach(function(a){a.classList.remove('open');});
+        document.querySelectorAll('.faq-icon').forEach(function(i){i.classList.remove('open');});
+        if(!was){an.classList.add('open');ic.classList.add('open');}
+      });
+    });
+  }, 600);
 })();
 </script>
 </body>
