@@ -4231,7 +4231,7 @@ function renderServices(lang){
   grid.innerHTML = '';
   const items = translations[lang].services.items;
   const keys = currentCountry ? servicesByCountry[currentCountry] : Object.keys(items);
-  const p = translations[lang].pricing;
+  const p = translations[lang].services.pricing;
   keys.forEach((key,i)=>{
     const s = items[key];
     if(!s) return;
@@ -4396,7 +4396,7 @@ let laserPriceSubTab = 'women';
 
 function renderLaserModal(lang){
   const L = translations[lang].laserPage;
-  const P = translations[lang].pricing;
+  const P = translations[lang].services.pricing;
   const inner = document.getElementById('laser-modal-inner');
 
   // FAQ accordion
@@ -5346,7 +5346,7 @@ function priceRows(list){
 }
 
 function renderPriceModal(lang){
-  const p = translations[lang].pricing;
+  const p = translations[lang].services.pricing;
   const titleEl = document.getElementById('price-modal-title');
   const noteEl = document.getElementById('price-modal-note');
   const tabsEl = document.getElementById('price-tabs');
