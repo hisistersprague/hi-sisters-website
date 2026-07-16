@@ -5034,7 +5034,7 @@ function renderTraining(lang){
 
     const footerHtml = t.price
       ? `<div class="tc-footer">
-           <div><div class="tc-price">${t.price}€</div></div>
+           <div><div class="tc-price">${t.price}</div></div>
            <button class="cart-add-btn${cartIncludes(t.id)?' in-cart':''}" data-id="${t.id}" data-title="${t.title.replace(/"/g,'&quot;')}" data-price="${t.price}" data-in-cart="${cartIncludes(t.id)?'1':''}">
              ${cartIncludes(t.id) ? c.addedBtn : c.addBtn}
            </button>
