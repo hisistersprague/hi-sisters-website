@@ -5402,7 +5402,7 @@ function renderPriceModal(lang){
   } else if(currentPriceType === 'cosmetology'){
     tabsEl.classList.add('hidden');
     titleEl.textContent = p.cosmetologyTitle || 'Kosmetologie';
-    bodyEl.innerHTML = '<p class="price-modal-desc">'+(p.cosmetologyDesc||'')+'</p>'+priceRows(p.cosmetologyItems||[]);
+    bodyEl.innerHTML = '<p class="price-modal-desc">'+(p.cosmetologyDesc||'')+'</p>'+priceRows(p.cosmetologyItems||[])+'<h4 style="margin:20px 0 10px;font-size:14px;font-weight:700;color:var(--navy)">'+(p.microcurrentTitle||'Mikrotokova terapie')+'</h4><p class="price-modal-desc" style="font-size:13px">'+(p.microcurrentDesc||'')+'</p><p class="price-modal-note">⌚ '+(p.microcurrentDuration||'60 min')+'</p>'+priceRows(p.microcurrentSessions||[]);
   } else if(currentPriceType === 'microcurrent'){
     tabsEl.classList.add('hidden');
     titleEl.textContent = p.microcurrentTitle || 'Mikrotokova terapie';
