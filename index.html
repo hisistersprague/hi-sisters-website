@@ -4552,6 +4552,7 @@ function renderLaserPriceBody(L, P){
 
 /* ---------- Service detail pages (electro / peeling / pressotherapy) ---------- */
 const SERVICE_PAGES = {
+  laser: {title:'Laser epilation',intro:'',sections:[],equipment:[],faqTitle:'',faq:[],priceGroups:[],note:''},
   electro: {
     title: 'Электроэпиляция',
     intro: 'Универсальный метод, который позволяет удалить абсолютно любые волосы навсегда: тёмные, светлые, рыжие, седые и даже пушковые. В основе — точечное воздействие электрического импульса на волосяной фолликул: импульс разрушает корень волоса, лишая его способности к росту.',
@@ -4918,8 +4919,8 @@ function renderServiceModal(key){
   inner.innerHTML = `
     <div class="lm-hero">
       <span class="eyebrow">Hi Sisters Clinic</span>
-      <h2>${D.title}</h2>
-      <p>${D.intro}</p>
+      <h2>${(translations&&currentLang&&translations[currentLang]&&translations[currentLang].services&&translations[currentLang].services.items&&translations[currentLang].services.items[key]&&translations[currentLang].services.items[key].title)||D.title}</h2>
+      <p>${(translations&&currentLang&&translations[currentLang]&&translations[currentLang].services&&translations[currentLang].services.items&&translations[currentLang].services.items[key]&&translations[currentLang].services.items[key].desc)||D.intro}</p>
     </div>
     ${sectionsHtml}
     ${equipHtml}
@@ -4953,10 +4954,7 @@ function openServiceModal(key){
 }
 
 
-function openLaserModal(){
-  renderLaserModal(currentLang);
-  document.getElementById('laser-modal').classList.remove('hidden');
-}
+function openLaserModal(){openServiceModal('laser');}
 function closeLaserModal(){
   document.getElementById('laser-modal').classList.add('hidden');
 }
