@@ -6054,7 +6054,7 @@ setTimeout(function(){fixCosmetics();addMicroPressoCards();},3000);
   setTimeout(function(){
     if(typeof renderAll==='function'){
       currentCountry=c;
-      currentLang=(c==='spain')?'es':'cs';
+      currentLang=currentLang||(c==='spain'?'es':'cs');
       renderAll(currentLang);
     }
   }, 200);
@@ -6070,7 +6070,7 @@ setTimeout(function(){fixCosmetics();addMicroPressoCards();},3000);
       if(typeof renderAll==='function'){
         clearInterval(t);
         currentCountry=c;
-        currentLang=(c==='spain')?'es':'cs';
+        currentLang=currentLang||(c==='spain'?'es':'cs');
         renderAll(currentLang);
       }else if(att>60)clearInterval(t);
     },50);
