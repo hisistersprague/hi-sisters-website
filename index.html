@@ -5730,7 +5730,7 @@ function inject(){
   if(document.querySelector('.hiw-section'))return;
   var lang=document.documentElement.lang||'cs';
   var d=T[lang]||T.cs;
-  svc.insertAdjacentHTML('beforebegin',build(d));
+  svc.insertAdjacentHTML('beforebegin',build(d));var _faqEl=document.querySelector('.faq-section');if(_faqEl&&contacts)contacts.parentNode.insertBefore(_faqEl,contacts);
   document.querySelectorAll('.faq-q').forEach(function(btn){
     btn.addEventListener('click',function(){
       var item=btn.parentElement;
@@ -6110,20 +6110,5 @@ setTimeout(function(){fixCosmetics();addMicroPressoCards();},3000);
 })();
 </script>
 
-<script>
-(function(){
-  function moveFaq(){
-    var faq=document.querySelector('.faq-section');
-    var cont=document.querySelector('#contacts');
-    if(faq&&cont&&cont.parentNode){
-      cont.parentNode.insertBefore(faq,cont);
-    } else {
-      setTimeout(moveFaq,300);
-    }
-  }
-  if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',function(){setTimeout(moveFaq,2500);});}
-  else{setTimeout(moveFaq,2500);}
-})();
-</script>
 </body>
 </html>
