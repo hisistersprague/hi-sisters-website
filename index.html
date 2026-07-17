@@ -4395,7 +4395,7 @@ let laserPriceTab = 'prague';
 let laserPriceSubTab = 'women';
 
 function renderLaserModal(lang){
-  const L = translations[lang].laserPage;
+  const L = translations[lang].laserPage; if(!L){const m=document.getElementById('laser-modal');if(m)m.classList.remove('hidden');return;}
   const P = translations[lang].services.pricing;
   const inner = document.getElementById('laser-modal-inner');
 
@@ -6107,6 +6107,22 @@ setTimeout(function(){fixCosmetics();addMicroPressoCards();},3000);
       },10);
     },false);
   }, 50);
+})();
+</script>
+
+<script>
+(function(){
+  function moveFaq(){
+    var faq=document.querySelector('.faq-section');
+    var cont=document.querySelector('#contacts');
+    if(faq&&cont&&cont.parentNode){
+      cont.parentNode.insertBefore(faq,cont);
+    } else {
+      setTimeout(moveFaq,300);
+    }
+  }
+  if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',function(){setTimeout(moveFaq,800);});}
+  else{setTimeout(moveFaq,800);}
 })();
 </script>
 </body>
