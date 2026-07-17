@@ -5436,6 +5436,11 @@ function renderPriceModal(lang){
         <div class="price-spec-header" style="margin-top:12px">${p.electroSpec2Name}</div>
         <div class="price-row"><span class="lbl">${p.electroBodyLabel}</span><span class="val">${p.electroSpec2Body} ${p.electroPerMin} · ${p.electroSpec2Body*60} ${p.electroPerHour}</span></div>
         <div class="price-row"><span class="lbl">${p.electroFaceLabel}</span><span class="val">${p.electroSpec2Face} ${p.electroPerMin} · ${p.electroSpec2Face*60} ${p.electroPerHour}</span></div>
+        <div class="price-spec-header" style="margin-top:12px">${p.electroSpec3Name}</div>
+        <div class="price-row"><span class="lbl">${p.electroBodyLabel}</span><span class="val">${p.electroSpec3Body} ${p.electroPerMin} · ${p.electroSpec3Body*60} ${p.electroPerHour}</span></div>
+        <div class="price-row"><span class="lbl">${p.electroFaceLabel}</span><span class="val">${p.electroSpec3Face} ${p.electroPerMin} · ${p.electroSpec3Face*60} ${p.electroPerHour}</span></div>
+        <div class="price-spec-header" style="margin-top:12px">${p.electroSpec4Name}</div>
+        <div class="price-row"><span class="lbl">${p.electroBodyLabel}</span><span class="val">${p.electroSpec4Body} ${p.electroPerMin} · ${p.electroSpec4Body*60} ${p.electroPerHour}</span></div>
         <div class="price-spec-header" style="margin-top:12px">Доп. услуги</div>
         <div class="price-row"><span class="lbl">${p.electroNeedleLabel}</span><span class="val">${p.electroNeedle} Kč</span></div>
         <div class="price-row"><span class="lbl">${p.electro4HandsLabel}</span><span class="val">${p.electro4Hands} Kč</span></div>
@@ -5642,7 +5647,7 @@ document.getElementById('fab-close').addEventListener('click', (e)=>{
 });
 
 
-document.querySelectorAll('.faq-q').forEach(function(b){b.addEventListener('click',function(){var it=b.closest('.faq-item'),an=it.querySelector('.faq-a'),ic=it.querySelector('.faq-icon'),was=an.classList.contains('open');document.querySelectorAll('.faq-a').forEach(function(a){a.classList.remove('open')});document.querySelectorAll('.faq-icon').forEach(function(i){i.classList.remove('open')});if(!was){an.classList.add('open');ic.classList.add('open');}});});
+document.querySelectorAll('.faq-q').forEach(function(b){b.addEventListener('click',function(){var it=b.closest('.faq-item'),an=it.querySelector('.faq-a'),ic=it.querySelector('.faq-icon'),was=it.classList.contains('open');document.querySelectorAll('.faq-item').forEach(function(a){a.classList.remove('open')});document.querySelectorAll('.faq-icon').forEach(function(i){i.classList.remove('open')});if(!was){it.classList.add('open');ic.classList.add('open');}});});
 renderAll(currentLang);
 </script>
 
