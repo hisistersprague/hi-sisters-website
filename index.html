@@ -6131,5 +6131,27 @@ if(window._SP_T&&window._SP_T[l]&&window._SP_T[l].peeling){window._SP_T[l].peeli
 });
 if(typeof SERVICE_PAGES!=='undefined'&&!SERVICE_PAGES.laser)SERVICE_PAGES.laser=LC.cs;
 })();
+</script>
+<script>
+(function(){
+var TC={
+cs:{title:'Trichologie',desc:'Diagnostika stavu vlasů a pokožky hlavy pomocí trichoskopu. Sestavujeme individuální léčebný protokol pro každého klienta.',items:[{label:'Konzultace + trichoskop + léčba',price:2000}]},
+ru:{title:'Трихология',desc:'Диагностика волос и кожи головы с помощью трихоскопа. Составляем индивидуальный лечебный протокол.',items:[{label:'Консультация + трихоскоп + лечение',price:2000}]},
+en:{title:'Trichology',desc:'Hair and scalp diagnostics using a trichoscope. We create an individual treatment protocol for each client.',items:[{label:'Consultation + trichoscope + treatment',price:2000}]},
+uk:{title:'Трихологія',desc:'Діагностика волосся та шкіри голови за допомогою трихоскопа.',items:[{label:'Консультація + трихоскоп + лікування',price:2000}]},
+es:{title:'Tricología',desc:'Diagnóstico del cabello y cuero cabelludo con tricoscopio. Protocolo de tratamiento individual.',items:[{label:'Consulta + tricoscopio + tratamiento',price:2000}]}
+};
+var LANGS=['cs','en','ru','uk','es'];
+LANGS.forEach(function(l){
+if(typeof translations!=='undefined'&&translations[l]){
+translations[l].trichologyTitle=TC[l].title;
+translations[l].trichologyDesc=TC[l].desc;
+translations[l].trichologyItems=TC[l].items;
+}
+if(window._SP_T&&window._SP_T[l]){
+window._SP_T[l].trichology={title:TC[l].title,intro:TC[l].desc,sections:[{h:(l==='cs'?'Co zahrnuje?':l==='ru'?'Что включает?':l==='uk'?'Що включає?':l==='es'?'¿Qué incluye?':'What\'s included?'),p:(l==='cs'?'Trichoskopické vyšetření vlasové pokožky, diagnostika, první léčebné ošetření — vše v jednom sezení.':l==='ru'?'Трихоскопическое исследование, диагностика, первая процедура — всё за один сеанс.':l==='uk'?'Трихоскопія шкіри, діагностика, перша процедура — все за один сеанс.':l==='es'?'Examen tricopilógico, diagnóstico y primer tratamiento — todo en una sesión.':'Trichoscopic scalp examination, diagnosis, first treatment — all in one session.')},{h:(l==='cs'?'Pro koho?':l==='ru'?'Кому подходит?':l==='uk'?'Кому підходить?':l==='es'?'¿Para quién?':'Who is it for?'),p:(l==='cs'?'Pro kohokoli, kdo řeší vypadávání vlasů, lupy, mastné nebo suché vlasové pokožce.':l==='ru'?'Для всех, кто столкнулся с выпадением волос, перхотью, жирной или сухой кожей головы.':l==='uk'?'Для всіх, хто стикається з випадінням волосся, лупою, жирною або сухою шкірою.':l==='es'?'Para cualquiera que tenga caída del cabello, caspa o cuero cabelludo graso o seco.':'For anyone dealing with hair loss, dandruff, oily or dry scalp.')}],equipment:[],faqTitle:'',faq:[],priceGroups:[{title:(l==='cs'?'Ceník':l==='ru'?'Прайс':l==='uk'?'Прайс':'Price'),paras:[TC[l].items[0].label+' — 2 000 Kč']}],note:''};
+}
+});
+})();
 </script></body>
 </html>
