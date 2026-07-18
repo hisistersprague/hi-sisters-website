@@ -6190,29 +6190,19 @@ window._SP_T[l].massage=MS[l];
 <script>
 (function(){
 document.addEventListener('click',function(e){
-var btn=e.target.closest('[data-price-type]');
-if(!btn)return;
+if(!e.target.closest('[data-price-type]'))return;
 setTimeout(function(){
-var modal=document.getElementById('hs-price-modal');
-if(!modal||modal.classList.contains('hidden'))return;
-var old=modal.querySelector('.hs-price-country-note');
-if(old)old.remove();
-var content=document.getElementById('hs-price-content');
-if(!content)return;
+var noteEl=document.getElementById('price-modal-note');
+if(!noteEl)return;
 var lang=typeof currentLang!=='undefined'?currentLang:'cs';
 var country=typeof currentCountry!=='undefined'?currentCountry:'';
 var p=translations&&translations[lang]&&translations[lang].services&&translations[lang].services.pricing;
-if(!p&&!p?.pragueNote)return;
-var sn={cs:'Ceny pro Valencii na vyžádání. Napište nám!',ru:'Цены для Валенсии — по запросу.',en:'Prices for Valencia on request. Contact us!',uk:'Ціни для Валенсії — за запитом.',es:'Precios para Valencia bajo consulta. ¡Contáctenos!'};
-var nt=(country==='spain'||country==='es')?(sn[lang]||sn.en)+'\n'+(p.pragueNote||''):(p.pragueNote||'');
-if(!nt)return;
-var div=document.createElement('div');
-div.className='hs-price-country-note';
-div.style.cssText='font-size:12px;color:#b8a080;text-align:center;padding:10px 0 0;border-top:1px solid rgba(200,180,140,0.2);margin-top:10px;white-space:pre-line;';
-div.textContent=nt;
-var parent=content.parentElement||modal;
-parent.appendChild(div);
-},300);
+var pn=p&&p.pragueNote?p.pragueNote:'';
+var sn={cs:'Ceny pro Valencii na vyžádání. Napište nám!',ru:'Цены для Валенсии — по запросу.',en:'Prices for Valencia available on request. Contact us!',uk:'Ціни для Валенсії — за запитом.',es:'Precios para Valencia bajo consulta. ¡Contáctenos!'};
+var nt=(country==='spain'||country==='es')?(sn[lang]||sn.en)+(pn?'\n'+pn:''):pn;
+noteEl.textContent=nt;
+noteEl.style.display=nt?'block':'none';
+},350);
 },true);
 })();
 </script></body>
