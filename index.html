@@ -6156,5 +6156,29 @@ window._SP_T[l].trichology={title:TC[l].title,intro:TC[l].desc,sections:[{h:(l==
 }
 });
 })();
+</script>
+<script>
+(function(){
+function addTrichoPriceBtn(){
+var cards=[].slice.call(document.querySelectorAll('.s-card'));
+for(var i=0;i<cards.length;i++){
+var c=cards[i];
+var h=c.querySelector('h3,h2');
+if(!h||!h.textContent.toLowerCase().includes('tricholog'))continue;
+if(c.querySelector('[data-price-type="trichology"]'))return;
+var btnsDiv=c.querySelector('[class*="card-btns"],[class*="s-card-btn"],[class*="btns"]');
+if(!btnsDiv){btnsDiv=c.querySelector('button')?.parentElement;}
+if(!btnsDiv)return;
+var pb=document.createElement('button');
+pb.className='s-btn-price price-link';
+pb.dataset.priceType='trichology';
+var lang=typeof currentLang!=='undefined'?currentLang:'cs';
+var lbl=(translations&&translations[lang]&&translations[lang].services&&translations[lang].services.priceBtnLabel)||'View price list';
+pb.textContent=lbl;
+btnsDiv.insertBefore(pb,btnsDiv.firstChild);
+}
+}
+if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',function(){setTimeout(addTrichoPriceBtn,2500);});}else{setTimeout(addTrichoPriceBtn,2500);}
+})();
 </script></body>
 </html>
