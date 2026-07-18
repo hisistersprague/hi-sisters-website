@@ -4213,7 +4213,7 @@ function renderValues(lang){
   });
 }
 
-const PRICED_SERVICES = {laser:'laser', peeling:'peeling', massage:'massage', electro:'electro', cosmetology:'cosmetology'};
+const PRICED_SERVICES = {laser:'laser', peeling:'peeling', massage:'massage', electro:'electro', cosmetology:'cosmetology',trichology:'trichology'};
 
 /* Service card backgrounds. Drop a base64 data-URI per key to use a real photo;
    while empty, a brand gradient is used as the background under the filter. */
@@ -4554,6 +4554,7 @@ function renderLaserPriceBody(L, P){
 
 /* ---------- Service detail pages (electro / peeling / pressotherapy) ---------- */
 const SERVICE_PAGES = {
+  trichology:{title:'Trichologie',intro:'Diagnostika stavu vlasů a pokožky hlavy pomocí trichoskopu.',sections:[{h:'Co zahrnuje?',p:'Trichoskopie, diagnostika a první ošetření — vše v jednom sezínině.'},{h:'Pro koho?',p:'Pro kohokoli kdo řeší vypadávání vlasů, lupy nebo mastnou kůži.'}],equipment:[],faqTitle:'Časté dotazy',faq:[{q:'Jaké problémy léčíte?',a:'Vypadávání vlasů, lupy, seborea, mastná kůže hlavy.'},{q:'Kolik sezínin?',a:'První sezínině je komplexní vyšetření. Dále dle diagnózy 3–6 sezínin.'}],priceGroups:[{title:'Ceník',paras:['Konzultace + trichoskop + léčba — 2 000 Kč']}],note:''},
   electro: {
     title: 'Электроэпиляция',
     intro: 'Универсальный метод, который позволяет удалить абсолютно любые волосы навсегда: тёмные, светлые, рыжие, седые и даже пушковые. В основе — точечное воздействие электрического импульса на волосяной фолликул: импульс разрушает корень волоса, лишая его способности к росту.',
@@ -5409,7 +5410,7 @@ function renderPriceModal(lang){
     tabsEl.classList.add('hidden');
     titleEl.textContent = p.microcurrentTitle || 'Mikrotokova terapie';
     bodyEl.innerHTML = '<p class="price-modal-desc">'+(p.microcurrentDesc||'')+'</p><p class="price-modal-note">⏱ '+(p.microcurrentDuration||'60 min')+'</p>'+priceRows(p.microcurrentSessions||[]);
-  } else if(currentPriceType === 'faceMassage'){
+  } else if(currentPriceType === 'trichology'){tabsEl.classList.add('hidden');titleEl.textContent=p.trichologyTitle||'Trichologie';bodyEl.innerHTML='<p class="price-modal-desc">'+(p.trichologyDesc||'')+'</p>'+priceRows(p.trichologyItems||[]);} else if(currentPriceType === 'faceMassage'){
     tabsEl.classList.add('hidden');
     titleEl.textContent = p.faceMassageTitle || 'Masaž obličeje';
     bodyEl.innerHTML = priceRows(p.faceMassageSessions||[]);
