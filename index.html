@@ -6186,5 +6186,38 @@ window._SP_T[l].massage=MS[l];
 }
 });
 })();
+</script>
+<script>
+(function(){
+function addPriceNote(){
+var modal=document.getElementById('hs-price-modal');
+if(!modal)return;
+var obs=new MutationObserver(function(){
+var note=modal.querySelector('.hs-price-country-note');
+if(note)note.remove();
+var content=document.getElementById('hs-price-content');
+if(!content||!content.children.length)return;
+var lang=typeof currentLang!=='undefined'?currentLang:'cs';
+var country=typeof currentCountry!=='undefined'?currentCountry:'';
+var p=translations&&translations[lang]&&translations[lang].services&&translations[lang].services.pricing;
+if(!p)return;
+var noteText='';
+if(country==='spain'||country==='es'){
+var sn={cs:'Ceny pro Valencii na vyžádání. Napište nám!',ru:'Цены для Валенсии — по запросу. Напишите нам!',en:'Prices for Valencia available on request. Contact us!',uk:'Ціни для Валенсії — за запитом. Напишіть!',es:'Precios para Valencia disponibles bajo consulta. ¡Contáctenos!'};
+noteText=(sn[lang]||sn.en)+'\n'+(p.pragueNote||'');
+}else{
+noteText=p.pragueNote||'';
+}
+if(!noteText)return;
+var div=document.createElement('div');
+div.className='hs-price-country-note';
+div.style.cssText='font-size:12px;color:#b8a080;text-align:center;padding:10px 0 0;border-top:1px solid rgba(200,180,140,0.2);margin-top:10px;white-space:pre-line;';
+div.textContent=noteText;
+content.parentElement.appendChild(div);
+});
+obs.observe(modal,{attributes:true,attributeFilter:['class']});
+}
+if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',addPriceNote);}else{addPriceNote();}
+})();
 </script></body>
 </html>
