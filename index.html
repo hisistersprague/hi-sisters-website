@@ -6215,24 +6215,10 @@ translations[l].services.items.trichology.priceBtnLabel=LBL[l];
 </script>
 <script>
 window._triPriceTimer=setInterval(function(){
-  var tt=[].slice.call(document.querySelectorAll('.s-card')).filter(function(c){
-    var h=c.querySelector('h3,h2');
-    return h&&h.textContent.toLowerCase().indexOf('tricholog')>=0;
-  });
-  if(!tt.length)return;
-  var tc=tt[0];
+  var tc=[].slice.call(document.querySelectorAll('.s-card')).find(function(c){var h=c.querySelector('h3,h2');return h&&h.textContent.toLowerCase().indexOf('tricholog')>=0;});
+  if(!tc)return;
   if(tc.querySelector('[data-price-type="trichology"]')){clearInterval(window._triPriceTimer);return;}
-  var bd=tc.querySelector('.s-card-btns');
-  if(!bd)return;
-  var pb=document.createElement('button');
-  pb.className='s-btn-price price-link';
-  pb.setAttribute('data-price-type','trichology');
-  var lang=(typeof currentLang!=='undefined')?currentLang:'cs';
-  var t=typeof translations!=='undefined'?translations:null;
-  var lbl=(t&&t[lang]&&t[lang].services&&t[lang].services.priceBtn)||(t&&t['cs']&&t['cs'].services&&t['cs'].services.priceBtn)||'Ceník';
-  pb.textContent=lbl;
-  bd.insertBefore(pb,bd.firstChild);
-  clearInterval(window._triPriceTimer);
+  if(typeof renderServices==='function'&&typeof currentLang!=='undefined'){renderServices(currentLang);clearInterval(window._triPriceTimer);}
 },1500);
 </script>
 </body>
