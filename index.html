@@ -4246,7 +4246,7 @@ function renderServices(lang){
         <button class="s-btn-price price-link" data-price-type="laser">${sv.priceBtn}</button>
         <button class="s-btn-detail" data-laser-detail="1">${sv.detailBtnLabel}</button>
       </div>`;
-    } else if(PRICED_SERVICES[key]){
+    } else if(PRICED_SERVICES[key]||key==='trichology'){
       const detBtn = (typeof SERVICE_PAGES!=='undefined' && SERVICE_PAGES[key]) ? `<button class="s-btn-detail" data-service-detail="${key}">${sv.detailBtnLabel}</button>` : `<a class="s-btn-detail" href="https://www.instagram.com/hi.sisters_cz/" target="_blank" rel="noopener">${sv.detailBtnLabel}</a>`;
       priceBlock = `<div class="s-card-btns">
         <button class="s-btn-price price-link" data-price-type="${PRICED_SERVICES[key]}">${sv.priceBtn}</button>
