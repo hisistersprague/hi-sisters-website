@@ -6220,5 +6220,21 @@ setTimeout(function(){
   }
 },4000);
 </script>
-</body>
+
+<script>
+(function(){
+// Fix trichology price modal translations for all languages
+var TRICHO_TITLES={cs:'Trichologie',ru:'Трихология',en:'Trichology',uk:'Трихологія',es:'Tricología'};
+var TRICHO_DESC={cs:'Trichoskopie, diagnostika a léčba vlasové pokožky.',ru:'Диагностика волос и кожи головы с помощью трихоскопа.',en:'Scalp and hair diagnostics using trichoscope.',uk:'Діагностика волосся та шкіри голови.',es:'Diagnóstico capilar mediante tricoscopio.'};
+var TRICHO_ITEMS={cs:[{label:'Konzultace + trichoskop + léčba',price:'2 000 Kč'}],ru:[{label:'Консультация + трихоскоп + лечение',price:'2 000 Kč'}],en:[{label:'Consultation + trichoscope + treatment',price:'2 000 Kč'}],uk:[{label:'Консультація + трихоскоп + лікування',price:'2 000 Kč'}],es:[{label:'Consulta + tricoscopio + tratamiento',price:'2 000 Kč'}]};
+var LANGS=['cs','ru','en','uk','es'];
+LANGS.forEach(function(l){
+if(typeof translations!=='undefined'&&translations[l]){
+translations[l].trichologyTitle=TRICHO_TITLES[l];
+translations[l].trichologyDesc=TRICHO_DESC[l];
+translations[l].trichologyItems=TRICHO_ITEMS[l];
+}
+});
+})();
+</script></body>
 </html>
