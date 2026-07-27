@@ -6214,12 +6214,11 @@ translations[l].services.items.trichology.priceBtnLabel=LBL[l];
 })();
 </script>
 <script>
-window._triPriceTimer=setInterval(function(){
-  var tc=[].slice.call(document.querySelectorAll('.s-card')).find(function(c){var h=c.querySelector('h3,h2');return h&&h.textContent.toLowerCase().indexOf('tricholog')>=0;});
-  if(!tc)return;
-  if(tc.querySelector('[data-price-type="trichology"]')){clearInterval(window._triPriceTimer);return;}
-  if(typeof renderServices==='function'&&typeof currentLang!=='undefined'){renderServices(currentLang);clearInterval(window._triPriceTimer);}
-},1500);
+setTimeout(function(){
+  if(typeof renderServices==='function'&&typeof currentLang!=='undefined'){
+    renderServices(currentLang);
+  }
+},4000);
 </script>
 </body>
 </html>
