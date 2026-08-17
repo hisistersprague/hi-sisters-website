@@ -596,6 +596,11 @@ footer{background:var(--navy-deep);color:#cfc9ee;padding:64px 0 28px;}
 </head>
 <body>
 
+<script>
+/* Returning visitor already picked a country -> never paint the gate again. */
+try{if(localStorage.getItem('hs-country')){var s=document.createElement('style');s.textContent='#country-overlay{opacity:0!important;visibility:hidden!important;pointer-events:none!important}';document.head.appendChild(s);}}catch(e){}
+</script>
+
 <div id="country-overlay">
   <video class="co-bg-video bg-video" autoplay muted loop playsinline></video>
   <div class="co-tint"></div>
@@ -4193,7 +4198,15 @@ const TEAM = [
     role:{ru:'Специалист',uk:'Спеціалістка',en:'Specialist',es:'Especialista',cs:'Specialistka'},
     desc:{ru:'Электроэпиляция и интимные пилинги. С 2023 года.',uk:'Електроепіляція та інтимні пілінги. Із 2023 року.',en:'Electrolysis and intimate peels. Since 2023.',es:'Electrólisis y peelings íntimos. Desde 2023.',cs:'Elektroepilace a intimní peelingy. Od roku 2023.'} }
 ];
-let currentLang = 'en';
+let currentLang = (function(){
+  try{
+    var c = localStorage.getItem('hs-country');
+    if(c) return c === 'spain' ? 'es' : 'cs';
+    var n = (navigator.language || '').slice(0,2).toLowerCase();
+    if(['cs','ru','uk','es','en'].indexOf(n) >= 0) return n;
+  }catch(e){}
+  return 'cs';
+})();
 let currentCountry = localStorage.getItem('hs-country');
 const servicesByCountry = {
   spain: ['laser','electro','peeling','cosmetics'],
@@ -6060,6 +6073,8 @@ setTimeout(function(){fixCosmetics();addMicroPressoCards();},3000);
   // Overlay + English after 600ms
   setTimeout(function(){
     var ov=document.getElementById('country-overlay');
+    var saved=null; try{saved=localStorage.getItem('hs-country');}catch(e){}
+    if(saved){ if(ov)ov.classList.add('hidden'); return; }
     if(ov)ov.classList.remove('hidden');
     if(typeof translations!=='undefined'&&translations.en&&translations.en.countrySelect){
       var en=translations.en.countrySelect;
