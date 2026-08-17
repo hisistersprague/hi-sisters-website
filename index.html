@@ -6218,5 +6218,83 @@ translations[l].services.items.trichology.priceBtnLabel=LBL[l];
 })();
 </script>
 
+<!-- Hero: one primary CTA + phone / address / rating -->
+<style>
+.hero-cluster .btn-gold{
+  background:var(--gold)!important;color:var(--navy-deep)!important;
+  border:1px solid var(--gold)!important;font-weight:600!important;letter-spacing:.02em;
+}
+.hero-cluster .btn-gold:hover{background:var(--gold-light)!important;border-color:var(--gold-light)!important;color:var(--navy-deep)!important;}
+.hero-contact{
+  display:flex;flex-wrap:wrap;align-items:center;gap:9px 18px;margin-top:6px;
+  font-size:14px;color:rgba(255,255,255,.88);line-height:1.4;
+}
+.hero-contact a{color:inherit;text-decoration:none;display:inline-flex;align-items:center;gap:7px;}
+.hero-contact a:hover{color:var(--gold-light);}
+.hero-contact .hc-ico{opacity:.75;flex:none;}
+.hero-contact .hc-sep{opacity:.3;}
+.hero-contact .hc-rating{color:var(--gold-light);font-weight:600;white-space:nowrap;}
+@media(max-width:600px){
+  .hero-cluster .hero-contact{justify-content:center;font-size:13px;gap:8px 14px;}
+  .hero-contact .hc-sep{display:none;}
+}
+</style>
+<script>
+(function(){
+  var PLACE = {
+    czech:{
+      tel:'+420702192946', telShow:'+420 702 192 946',
+      addr:{cs:'Chlumčanského 497/5, Praha 8 – Libeň',ru:'Chlumčanského 497/5, Прага 8 – Либень',uk:'Chlumčanského 497/5, Прага 8 – Лібень',en:'Chlumčanského 497/5, Prague 8 – Libeň',es:'Chlumčanského 497/5, Praga 8 – Libeň'},
+      map:'https://www.google.com/maps/search/Chlum%C4%8Dansk%C3%A9ho+497%2F5,+Praha+8'
+    },
+    spain:{
+      tel:'+34637024759', telShow:'+34 637 024 759',
+      addr:{cs:'Carrer de Pere Aleixandre 34, Valencie',ru:'Carrer de Pere Aleixandre 34, Валенсия',uk:'Carrer de Pere Aleixandre 34, Валенсія',en:'Carrer de Pere Aleixandre 34, Valencia',es:'Carrer de Pere Aleixandre 34, València'},
+      map:'https://www.google.com/maps/search/Calle+de+Pere+Aleixandre,+34,+Valencia+46006'
+    }
+  };
+  /* Google rating shown only for the Prague profile — Valencia has no public score yet. */
+  var RATING = {count:192, url:'https://www.google.com/search?q=Hi+Sisters+Clinic+Praha'};
+  var T = {
+    cs:{reviews:'recenzí na Google'}, ru:{reviews:'отзыва в Google'},
+    uk:{reviews:'відгуків у Google'}, en:{reviews:'Google reviews'},
+    es:{reviews:'reseñas en Google'}
+  };
+  var PIN='<svg class="hc-ico" width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>';
+  var TEL='<svg class="hc-ico" width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.58 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.46.57 3.6a1 1 0 0 1-.25 1z"/></svg>';
+
+  function render(){
+    var cluster = document.querySelector('.hero-cluster');
+    if(!cluster) return;
+    var lang = document.documentElement.lang || 'cs';
+    if(!T[lang]) lang = 'cs';
+    var country = (typeof currentCountry !== 'undefined' && currentCountry) ? currentCountry : 'czech';
+    var p = PLACE[country] || PLACE.czech;
+
+    var row = cluster.querySelector('.hero-contact');
+    if(!row){
+      row = document.createElement('div');
+      row.className = 'hero-contact';
+      cluster.appendChild(row);
+    }
+    var html =
+      '<a href="tel:'+p.tel+'">'+TEL+'<span>'+p.telShow+'</span></a>' +
+      '<span class="hc-sep">·</span>' +
+      '<a href="'+p.map+'" target="_blank" rel="noopener">'+PIN+'<span>'+(p.addr[lang]||p.addr.cs)+'</span></a>';
+    if(country === 'czech'){
+      html += '<span class="hc-sep">·</span>' +
+        '<a href="'+RATING.url+'" target="_blank" rel="noopener" class="hc-rating">★ 5,0 — '+RATING.count+' '+T[lang].reviews+'</a>';
+    }
+    row.innerHTML = html;
+    /* Keep it last so it sits under the button. */
+    cluster.appendChild(row);
+  }
+
+  function schedule(){ setTimeout(render, 60); setTimeout(render, 600); }
+  if(document.readyState === 'loading') document.addEventListener('DOMContentLoaded', schedule); else schedule();
+  new MutationObserver(schedule).observe(document.documentElement,{attributes:true,attributeFilter:['lang']});
+  document.addEventListener('click', function(e){ if(e.target.closest('.country-switch')) schedule(); }, true);
+})();
+</script>
 </body>
 </html>
