@@ -597,8 +597,9 @@ footer{background:var(--navy-deep);color:#cfc9ee;padding:64px 0 28px;}
 <body>
 
 <script>
-/* Returning visitor already picked a country -> never paint the gate again. */
-try{if(localStorage.getItem('hs-country')){var s=document.createElement('style');s.textContent='#country-overlay{opacity:0!important;visibility:hidden!important;pointer-events:none!important}';document.head.appendChild(s);}}catch(e){}
+/* No country gate. Prague is the default (~90% of traffic); Valencia is one
+   click away via the flag switcher in the header. */
+try{var s=document.createElement('style');s.textContent='#country-overlay{display:none!important}';document.head.appendChild(s);}catch(e){}
 </script>
 
 <div id="country-overlay">
@@ -4201,13 +4202,13 @@ const TEAM = [
 let currentLang = (function(){
   try{
     var c = localStorage.getItem('hs-country');
-    if(c) return c === 'spain' ? 'es' : 'cs';
+    if(c === 'spain') return 'es';
     var n = (navigator.language || '').slice(0,2).toLowerCase();
     if(['cs','ru','uk','es','en'].indexOf(n) >= 0) return n;
   }catch(e){}
   return 'cs';
 })();
-let currentCountry = localStorage.getItem('hs-country');
+let currentCountry = localStorage.getItem('hs-country') || 'czech';
 const servicesByCountry = {
   spain: ['laser','electro','peeling','cosmetics'],
   czech: ['laser','electro','peeling','massage','cosmetology','microcurrent','pressotherapy','trichology','cosmetics']
@@ -5532,12 +5533,22 @@ document.querySelectorAll('.country-switch').forEach(cs=>{
     const btn = e.target.closest('button');
     if(!btn) return;
     currentCountry = btn.dataset.country;
+    try{ localStorage.setItem('hs-country', currentCountry); }catch(err){}
     const ind = document.getElementById('country-indicator');
     if(ind) ind.textContent =
       currentCountry === 'spain' ? '🇪🇸 Valencia' : '🇨🇿 Prague';
     renderAll(currentLang);
   });
 });
+
+/* Country gate is gone, so seed the header indicator on load. */
+(function(){
+  var ind = document.getElementById('country-indicator');
+  if(ind) ind.textContent = currentCountry === 'spain' ? '🇪🇸 Valencia' : '🇨🇿 Prague';
+  document.querySelectorAll('.country-switch button[data-country]').forEach(function(b){
+    b.classList.toggle('active', b.dataset.country === currentCountry);
+  });
+})();
 
 document.querySelectorAll('.co-card').forEach(card=>{
   card.addEventListener('click', ()=>{
@@ -6073,9 +6084,8 @@ setTimeout(function(){fixCosmetics();addMicroPressoCards();},3000);
   // Overlay + English after 600ms
   setTimeout(function(){
     var ov=document.getElementById('country-overlay');
-    var saved=null; try{saved=localStorage.getItem('hs-country');}catch(e){}
-    if(saved){ if(ov)ov.classList.add('hidden'); return; }
-    if(ov)ov.classList.remove('hidden');
+    if(ov)ov.classList.add('hidden');
+    return;
     if(typeof translations!=='undefined'&&translations.en&&translations.en.countrySelect){
       var en=translations.en.countrySelect;
       document.querySelectorAll('[data-i18n]').forEach(function(el){
