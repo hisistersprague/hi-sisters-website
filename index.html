@@ -5670,38 +5670,6 @@ renderAll(currentLang);
 <!-- 1. Nav i18n -->
 <script>(function(){var N={ru:{home:'Главная',services:'Услуги',training:'Обучение',about:'О нас',contacts:'Контакты',book:'Записаться онлайн'},en:{home:'Home',services:'Services',training:'Training',about:'About',contacts:'Contacts',book:'Book online'},cs:{home:'Domů',services:'Služby',training:'Školení',about:'O nás',contacts:'Kontakty',book:'Rezervovat online'},uk:{home:'Головна',services:'Послуги',training:'Навчання',about:'Про нас',contacts:'Контакти',book:'Записатись онлайн'},es:{home:'Inicio',services:'Servicios',training:'Formación',about:'Nosotras',contacts:'Contacto',book:'Reservar online'}};function applyNav(lang){var t=N[lang]||N.ru;var m={'nav.home':'home','nav.services':'services','nav.training':'training','nav.about':'about','nav.contacts':'contacts'};document.querySelectorAll('[data-i18n]').forEach(function(el){var k=el.dataset.i18n;if(m[k])el.textContent=t[m[k]];});document.querySelectorAll('.btn-book').forEach(function(b){b.textContent=t.book;});document.querySelectorAll('#tabs a').forEach(function(a){var h=a.getAttribute('href')||'';if(h.includes('#home'))a.textContent=t.home;else if(h.includes('#services'))a.textContent=t.services;else if(h.includes('#training'))a.textContent=t.training;else if(h.includes('#about'))a.textContent=t.about;else if(h.includes('#contacts'))a.textContent=t.contacts;});}new MutationObserver(function(){applyNav(document.documentElement.lang||'ru');}).observe(document.documentElement,{attributes:true,attributeFilter:['lang']});setTimeout(function(){applyNav(document.documentElement.lang||'ru');},800);})()</script>
 
-<!-- 2. Misc Fixes: trichCTA, social links, page title, cart btn -->
-<script>
-(function(){
-var COMING_SOON={cs:'Brzy dostupné',en:'Coming soon',ru:'Скоро',uk:'Скоро',es:'Próximamente'};
-function fixTrich(){
-  var lang=document.documentElement.lang||'cs';
-  document.querySelectorAll('.s-card').forEach(function(card){
-    var h3=card.querySelector('h3,h2');
-    if(!h3) return;
-    var t=h3.textContent.toLowerCase();
-    if(!(t.includes('trichol')||t.includes('tricolog')||t.includes('трих'))) return;
-    // Remove "Napsat dotaz" button
-    var btn=card.querySelector('.s-btn-trich');
-    if(btn) btn.remove();
-    // Remove price buttons
-    card.querySelectorAll('[data-price-type="trichology"]').forEach(function(b){b.remove();});
-    // Add "coming soon" badge if not present
-    if(!card.querySelector('.trich-badge')){
-      var badge=document.createElement('div');
-      badge.className='trich-badge';
-      badge.textContent=COMING_SOON[lang]||COMING_SOON.cs;
-      badge.style.cssText='display:inline-block;padding:5px 14px;background:rgba(201,169,110,.12);color:var(--gold,#c9a96e);border:1px solid rgba(201,169,110,.3);border-radius:20px;font-size:11px;letter-spacing:.1em;text-transform:uppercase;font-weight:600;margin:0 20px 16px';
-      var footer=card.querySelector('.s-card-footer')||card;
-      footer.appendChild(badge);
-    }
-  });
-}
-new MutationObserver(function(m){m.forEach(function(r){if(r.attributeName==='lang')setTimeout(fixTrich,800);});}).observe(document.documentElement,{attributes:true,attributeFilter:['lang']});
-setTimeout(fixTrich,1500);
-setTimeout(fixTrich,4000);
-})();
-</script>
 
 <!-- 3. Hero CTA v5: inject price button + Schema.org -->
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BeautySalon","name":"Hi Sisters Clinic","url":"https://hi-sisters.clinic","description":"Laser and electrolysis hair removal, skin care and training in Prague and Valencia.","address":[{"@type":"PostalAddress","streetAddress":"Chlumčanského 497/5","addressLocality":"Praha 8","postalCode":"180 00","addressCountry":"CZ"},{"@type":"PostalAddress","streetAddress":"Calle de Pere Aleixandre, 34","addressLocality":"Valencia","postalCode":"46006","addressCountry":"ES"}],"telephone":["+420702192946","+34637024759"],"priceRange":"$$","sameAs":["https://www.instagram.com/hi.sisters_clinic/","https://www.instagram.com/hi.sisters_cz/"]}</script>
@@ -6158,9 +6126,9 @@ es:{title:'Tricología',desc:'Diagnóstico del cabello y cuero cabelludo con tri
 var LANGS=['cs','en','ru','uk','es'];
 LANGS.forEach(function(l){
 if(typeof translations!=='undefined'&&translations[l]){
-translations[l].trichologyTitle=TC[l].title;
-translations[l].trichologyDesc=TC[l].desc;
-translations[l].trichologyItems=TC[l].items;
+var _p=translations[l].services&&translations[l].services.pricing;if(_p){_p.trichologyTitle=TC[l].title;_p.trichologyDesc=TC[l].desc;_p.trichologyItems=TC[l].items;}
+
+
 }
 if(window._SP_T&&window._SP_T[l]){
 window._SP_T[l].trichology={title:TC[l].title,intro:TC[l].desc,sections:[{h:(l==='cs'?'Co zahrnuje?':l==='ru'?'Что включает?':l==='uk'?'Що включає?':l==='es'?'¿Qué incluye?':'What\'s included?'),p:(l==='cs'?'Trichoskopické vyšetření vlasové pokožky, diagnostika, první léčebné ošetření — vše v jednom sezení.':l==='ru'?'Трихоскопическое исследование, диагностика, первая процедура — всё за один сеанс.':l==='uk'?'Трихоскопія шкіри, діагностика, перша процедура — все за один сеанс.':l==='es'?'Examen tricopilógico, diagnóstico y primer tratamiento — todo en una sesión.':'Trichoscopic scalp examination, diagnosis, first treatment — all in one session.')},{h:(l==='cs'?'Pro koho?':l==='ru'?'Кому подходит?':l==='uk'?'Кому підходить?':l==='es'?'¿Para quién?':'Who is it for?'),p:(l==='cs'?'Pro kohokoli, kdo řeší vypadávání vlasů, lupy, mastné nebo suché vlasové pokožce.':l==='ru'?'Для всех, кто столкнулся с выпадением волос, перхотью, жирной или сухой кожей головы.':l==='uk'?'Для всіх, хто стикається з випадінням волосся, лупою, жирною або сухою шкірою.':l==='es'?'Para cualquiera que tenga caída del cabello, caspa o cuero cabelludo graso o seco.':'For anyone dealing with hair loss, dandruff, oily or dry scalp.')}],equipment:[],faqTitle:'',faq:[],priceGroups:[{title:(l==='cs'?'Ceník':l==='ru'?'Прайс':l==='uk'?'Прайс':'Price'),paras:[TC[l].items[0].label+' — 2 000 Kč']}],note:''};
@@ -6224,28 +6192,6 @@ translations[l].services.items.trichology.priceBtnLabel=LBL[l];
 });
 })();
 </script>
-<script>
-setTimeout(function(){
-  if(typeof renderServices==='function'&&typeof currentLang!=='undefined'){
-    renderServices(currentLang);
-  }
-},4000);
-</script>
 
-<script>
-(function(){
-// Fix trichology price modal translations for all languages
-var TRICHO_TITLES={cs:'Trichologie',ru:'Трихология',en:'Trichology',uk:'Трихологія',es:'Tricología'};
-var TRICHO_DESC={cs:'Trichoskopie, diagnostika a léčba vlasové pokožky.',ru:'Диагностика волос и кожи головы с помощью трихоскопа.',en:'Scalp and hair diagnostics using trichoscope.',uk:'Діагностика волосся та шкіри голови.',es:'Diagnóstico capilar mediante tricoscopio.'};
-var TRICHO_ITEMS={cs:[{label:'Konzultace + trichoskop + léčba',price:'2 000 Kč'}],ru:[{label:'Консультация + трихоскоп + лечение',price:'2 000 Kč'}],en:[{label:'Consultation + trichoscope + treatment',price:'2 000 Kč'}],uk:[{label:'Консультація + трихоскоп + лікування',price:'2 000 Kč'}],es:[{label:'Consulta + tricoscopio + tratamiento',price:'2 000 Kč'}]};
-var LANGS=['cs','ru','en','uk','es'];
-LANGS.forEach(function(l){
-if(typeof translations!=='undefined'&&translations[l]){
-translations[l].trichologyTitle=TRICHO_TITLES[l];
-translations[l].trichologyDesc=TRICHO_DESC[l];
-translations[l].trichologyItems=TRICHO_ITEMS[l];
-}
-});
-})();
-</script></body>
+</body>
 </html>
