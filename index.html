@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cs">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -1515,7 +1515,7 @@ footer{background:var(--navy-deep);color:#cfc9ee;padding:64px 0 28px;}
 
   <section id="about" class="section">
     <div class="wrap">
-      <div class="about-photo"><img src="assets/img1.jpg" alt="Hi Sisters Clinic team"></div>
+      <div class="about-photo"><img src="assets/img1.jpg" alt="Hi Sisters Clinic team" loading="lazy" decoding="async"></div>
       <div>
         <div class="eyebrow" data-i18n="about.eyebrow">О нас</div>
         <h2 data-i18n="about.title">Мы делаем эпиляцию иначе</h2>
@@ -2728,11 +2728,11 @@ function renderHeroBadge(lang){
 
 const GOOGLE_URL = 'https://www.google.com/maps?cid=17098057881509158110';
 const REVIEWS_HEAD = {
-  ru:{eyebrow:'Отзывы',title:'Что говорят клиенты',tag:'Отзыв с Google',trust:'5,0 на Google · 550+ клиентов'},
-  en:{eyebrow:'Reviews',title:'What our clients say',tag:'Google review',trust:'5.0 on Google · 550+ clients'},
-  es:{eyebrow:'Opiniones',title:'Lo que dicen nuestras clientas',tag:'Reseña de Google',trust:'5,0 en Google · 550+ clientas'},
-  cs:{eyebrow:'Recenze',title:'Co říkají klientky',tag:'Recenze z Google',trust:'5,0 na Googlu · 550+ klientek'},
-  uk:{eyebrow:'Відгуки',title:'Що кажуть клієнтки',tag:'Відгук з Google',trust:'5,0 на Google · 550+ клієнток'}
+  ru:{eyebrow:'Отзывы',title:'Что говорят клиенты',tag:'Отзыв с Google',trust:'5,0 на Google · 192 отзыва'},
+  en:{eyebrow:'Reviews',title:'What our clients say',tag:'Google review',trust:'5.0 on Google · 192 reviews'},
+  es:{eyebrow:'Opiniones',title:'Lo que dicen nuestras clientas',tag:'Reseña de Google',trust:'5,0 en Google · 192 reseñas'},
+  cs:{eyebrow:'Recenze',title:'Co říkají klientky',tag:'Recenze z Google',trust:'5,0 na Googlu · 192 recenzí'},
+  uk:{eyebrow:'Відгуки',title:'Що кажуть клієнтки',tag:'Відгук з Google',trust:'5,0 на Google · 192 відгуки'}
 };
 const REVIEWS = {
   ru:[
@@ -3787,10 +3787,11 @@ translations[l].services.items.trichology.priceBtnLabel=LBL[l];
     }
   };
   /* Google rating shown only for the Prague profile — Valencia has no public score yet. */
+  /* Review count also appears in the translations `trust` strings — update both. */
   var RATING = {count:192, url:'https://www.google.com/search?q=Hi+Sisters+Clinic+Praha'};
   var T = {
     cs:{reviews:'recenzí na Google'}, ru:{reviews:'отзыва в Google'},
-    uk:{reviews:'відгуків у Google'}, en:{reviews:'Google reviews'},
+    uk:{reviews:'відгуки у Google'}, en:{reviews:'Google reviews'},
     es:{reviews:'reseñas en Google'}
   };
   var PIN='<svg class="hc-ico" width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>';
