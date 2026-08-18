@@ -3132,10 +3132,15 @@ document.getElementById('burger').addEventListener('click', ()=>{
   const country = document.getElementById('country-switch-nav');
   if(!navRight || !tabs || !lang || !country) return;
   let sep=null, capC=null, capL=null;
+  /* This caption used to be the hardcoded Russian word, so it stayed Russian
+     in the Czech, Ukrainian, English and Spanish menus. */
+  const CAP = {cs:'Zem\u011b', ru:'\u0421\u0442\u0440\u0430\u043d\u0430', uk:'\u041a\u0440\u0430\u0457\u043d\u0430', en:'Country', es:'Pa\u00eds'};
+  function capText(){ const l = document.documentElement.lang || 'cs'; return CAP[l] || CAP.cs; }
   function el(cls,txt){ const d=document.createElement('div'); d.className=cls; if(txt)d.textContent=txt; return d; }
   function place(){
     if(mq.matches){
-      if(!sep){ sep=el('menu-sep'); capC=el('menu-cap','Страна'); }
+      if(!sep){ sep=el('menu-sep'); capC=el('menu-cap'); }
+      capC.textContent = capText();
       tabs.appendChild(sep); tabs.appendChild(capC); tabs.appendChild(country);
     } else {
       navRight.insertBefore(country, navRight.firstChild);
@@ -3143,6 +3148,8 @@ document.getElementById('burger').addEventListener('click', ()=>{
     }
   }
   place();
+  new MutationObserver(()=>{ if(capC) capC.textContent = capText(); })
+    .observe(document.documentElement, {attributes:true, attributeFilter:['lang']});
   if(mq.addEventListener) mq.addEventListener('change', place);
   else if(mq.addListener) mq.addListener(place);
   // close menu after choosing language/country
