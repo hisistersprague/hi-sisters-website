@@ -1858,9 +1858,9 @@ const ORDER_WEBHOOK = '';
 
 function collectOrder(lang, channel){
   return {
-    items: cart.map(i=>({title:i.title, price:i.price})),
+    items: cart.map(i=>({title:i.title, price:i.price, czk:i.czk, eur:i.eur})),
     total: cartTotal(),
-    currency: 'EUR',
+    totalText: cartTotalText(),
     lang, channel,
     country: currentCountry || null,
     name: (document.getElementById('cart-name')?.value || '').trim(),
@@ -1882,12 +1882,32 @@ function notifyManager(lang, channel){
   }catch(e){}
 }
 
-function cartTotal(){ return cart.reduce((s,i)=>s+i.price, 0); }
+/* Course prices read "25 000 Kc / 1 000 EUR"; one course is priced on request.
+   parseInt() stopped at the first space and turned 25 000 Kc into 25 EUR. */
+function parsePrice(raw){
+  const s = String(raw || '');
+  const num = re => { const m = s.match(re); return m ? parseInt(m[1].replace(/[\s\u00a0]/g,''), 10) : null; };
+  return { raw: s, czk: num(/([\d\s\u00a0]+)K\u010d/), eur: num(/([\d\s\u00a0]+)\u20ac/) };
+}
+function fmtNum(n){ return String(n).replace(/\B(?=(\d{3})+(?!\d))/g, '\u00a0'); }
+function cartTotal(){
+  return cart.reduce((a,i)=>({czk:a.czk+(i.czk||0), eur:a.eur+(i.eur||0), priced:a.priced+((i.czk||i.eur)?1:0)}),
+                     {czk:0, eur:0, priced:0});
+}
+function cartTotalText(){
+  const t = cartTotal();
+  if(!t.priced) return '\u2014';
+  const parts = [];
+  if(t.czk) parts.push(fmtNum(t.czk) + '\u00a0K\u010d');
+  if(t.eur) parts.push(fmtNum(t.eur) + '\u00a0\u20ac');
+  return parts.join(' / ');
+}
 
 function cartIncludes(id){ return cart.some(i=>i.id===id); }
 
 function cartAdd(id, title, price){
-  if(!cartIncludes(id)) cart.push({id, title, price});
+  const p = parsePrice(price);
+  if(!cartIncludes(id)) cart.push({id, title, price: p.raw, czk: p.czk, eur: p.eur});
   renderCartDrawer(currentLang);
   updateCartBadge();
   updateTrainingButtons(currentLang);
@@ -1909,9 +1929,9 @@ function updateCartBadge(){
 function buildOrderMessage(lang){
   const c = translations[lang].cart;
   let msg = c.msgGreeting;
-  cart.forEach(i=>{ msg += `• ${i.title} — ${i.price}€
+  cart.forEach(i=>{ msg += `• ${i.title} — ${i.price}
 `; });
-  msg += c.msgTotal + cartTotal() + '€';
+  msg += c.msgTotal + cartTotalText();
   msg += c.msgQuestion;
   return msg;
 }
@@ -1944,11 +1964,11 @@ function renderCartDrawer(lang){
     <div class="cart-item">
       <div class="cart-item-info">
         <div class="cart-item-title">${item.title}</div>
-        <div class="cart-item-price">${item.price}€</div>
+        <div class="cart-item-price">${item.price}</div>
       </div>
       <button class="cart-item-remove" data-id="${item.id}" aria-label="remove">×</button>
     </div>`).join('');
-  document.getElementById('cart-total-val').textContent = cartTotal() + '€';
+  document.getElementById('cart-total-val').textContent = cartTotalText();
   document.getElementById('cart-order-label').textContent = c.orderVia;
 
   const msg = buildOrderMessage(lang);
@@ -2563,7 +2583,7 @@ document.getElementById('cart-items').addEventListener('click', (e)=>{
 document.getElementById('training-list').addEventListener('click', (e)=>{
   const btn = e.target.closest('.cart-add-btn');
   if(!btn || btn.dataset.inCart === '1') return;
-  cartAdd(btn.dataset.id, btn.dataset.title, parseInt(btn.dataset.price));
+  cartAdd(btn.dataset.id, btn.dataset.title, btn.dataset.price);
   openCart();
   renderCartDrawer(currentLang);
 });
