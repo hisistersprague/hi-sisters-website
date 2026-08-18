@@ -123,7 +123,7 @@ nav.tabs a:hover{color:var(--gold-light);border-color:var(--gold);}
 .burger{display:none;background:none;border:none;color:var(--gold-light);font-size:24px;cursor:pointer;}
 
 /* ---------- Hero ---------- */
-.hero{position:relative;overflow:hidden;color:#fff;padding:96px 0 84px;text-align:center;}
+.hero{position:relative;overflow:hidden;color:#fff;padding:96px 0 84px;text-align:center;background:var(--navy-deep);}
 .hero-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:saturate(112%) contrast(1.03);}
 .hero-tint{position:absolute;inset:0;background:var(--navy);mix-blend-mode:color;opacity:.62;}
 .hero-vignette{position:absolute;inset:0;background:linear-gradient(180deg, rgba(10,7,56,.18) 0%, rgba(10,7,56,.08) 30%, rgba(10,7,56,.5) 78%, rgba(10,7,56,.82) 100%);}
@@ -1475,7 +1475,7 @@ footer{background:var(--navy-deep);color:#cfc9ee;padding:64px 0 28px;}
 
 <main>
   <section id="home" class="hero">
-    <video class="hero-video bg-video" autoplay muted loop playsinline preload="metadata"></video>
+    <video class="hero-video bg-video" autoplay muted loop playsinline preload="metadata" poster="assets/hero-poster.jpg"></video>
     <div class="hero-tint"></div>
     <div class="hero-vignette"></div>
     <div class="wrap">
@@ -2700,7 +2700,7 @@ function renderContacts(lang){
       bookUrl:true,
       address:'Chlumčanského 497/5, Praha 8-Libeň, 180 00 Praha 8',
       phone:'+420 702 192 946',
-      hours: lang==='ru'?'Пн–Сб: 9:00–20:00': lang==='es'?'Lun–Sáb: 9:00–20:00': lang==='cs'?'Po–So: 9:00–20:00': lang==='uk'?'Пн–Сб: 9:00–20:00':'Mon–Sat: 9:00–20:00'
+      hours: lang==='ru'?'Ежедневно: 10:00–19:00': lang==='es'?'Todos los días: 10:00–19:00': lang==='cs'?'Denně: 10:00–19:00': lang==='uk'?'Щодня: 10:00–19:00':'Daily: 10:00–19:00'
     }
   ];
   studios.forEach(s=>{
