@@ -2887,19 +2887,33 @@ function renderReviews(lang){
     track.appendChild(d);
   });
 }
+/* Both carousels use scroll-snap-type: x mandatory. Chrome then ignores a
+   programmatic scrollBy on them, so the arrow buttons did nothing at all.
+   Lift the snap for the duration of the scroll and put it back after. */
+function snapFreeScroll(t, dx){
+  clearTimeout(t._snapRestore);
+  t.style.scrollSnapType = 'none';
+  t.style.scrollBehavior = 'auto';
+  void t.offsetWidth;                 /* force the new styles to take effect */
+  t.scrollLeft = t.scrollLeft + dx;   /* direct assignment; scrollBy is ignored while snapping */
+  t._snapRestore = setTimeout(function(){
+    t.style.removeProperty('scroll-snap-type');
+    t.style.removeProperty('scroll-behavior');
+  }, 80);
+}
 function scrollServices(dir){
   const t=document.getElementById('services-grid');
   if(!t) return;
   const card=t.querySelector('.s-card');
   const dx=(card?card.offsetWidth:340)+24;
-  t.scrollBy({left:dir*dx,behavior:'smooth'});
+  snapFreeScroll(t, dir*dx);
 }
 function scrollReviews(dir){
   const t=document.getElementById('rev-track');
   if(!t) return;
   const card=t.querySelector('.rev-card');
   const dx=(card?card.offsetWidth:360)+22;
-  t.scrollBy({left:dir*dx,behavior:'smooth'});
+  snapFreeScroll(t, dir*dx);
 }
 
 function renderAll(lang){
