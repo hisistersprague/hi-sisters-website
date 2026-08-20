@@ -604,8 +604,6 @@ footer{background:var(--navy-deep);color:#cfc9ee;padding:64px 0 28px;}
   <link rel="shortcut icon" href="/favicon.svg">
 <script async src="https://www.googletagmanager.com/gtag/js?id=AW-193956948"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','AW-193956948');</script>
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-193956948"></script>
-<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','AW-193956948');</script>
 </head>
 <body>
 <svg width="0" height="0" style="position:absolute;overflow:hidden" aria-hidden="true" focusable="false"><symbol id="hs-logo" viewBox="0 0 470.3572 219.3124">
@@ -1937,14 +1935,39 @@ function updateCartBadge(){
   badge.style.display = cart.length ? 'flex' : 'none';
 }
 
+/* Labels are built here rather than taken from translations[lang].cart: a later
+   patch overwrites that object, and in the second version msgTotal/msgQuestion
+   lost their line breaks and msgQuestion turned into a bare "Kontakt:" label.
+   Reading them produced a run-together message ending in a colon with nothing
+   after it — and the name/phone the client typed were never included at all. */
+const ORDER_LABELS = {
+  cs:{name:'Jméno', contact:'Kontakt', total:'Celkem'},
+  ru:{name:'Имя', contact:'Контакт', total:'Итого'},
+  uk:{name:'Імʼя', contact:'Контакт', total:'Разом'},
+  en:{name:'Name', contact:'Contact', total:'Total'},
+  es:{name:'Nombre', contact:'Contacto', total:'Total'}
+};
+
 function buildOrderMessage(lang){
   const c = translations[lang].cart;
-  let msg = c.msgGreeting;
-  cart.forEach(i=>{ msg += `• ${i.title} — ${i.price}
-`; });
-  msg += c.msgTotal + cartTotalText();
-  msg += c.msgQuestion;
+  const L = ORDER_LABELS[lang] || ORDER_LABELS.en;
+  const val = id => ((document.getElementById(id)||{}).value || '').trim();
+  let msg = String(c.msgGreeting || '').trim() + '\n\n';
+  cart.forEach(i=>{ msg += `• ${i.title} — ${i.price}\n`; });
+  msg += `\n${L.total}: ${cartTotalText()}`;
+  const nm = val('cart-name'), ct = val('cart-contact');
+  if(nm) msg += `\n${L.name}: ${nm}`;
+  if(ct) msg += `\n${L.contact}: ${ct}`;
   return msg;
+}
+
+/* The WhatsApp href is built when the drawer renders — i.e. before the client
+   has typed anything. Rebuild it on click so what they typed actually goes. */
+function refreshOrderLinks(){
+  try{
+    const wa = document.getElementById('cart-wa-btn');
+    if(wa) wa.href = `https://wa.me/${CONTACT_NUMBER}?text=${encodeURIComponent(buildOrderMessage(currentLang))}`;
+  }catch(e){}
 }
 
 function openCart(){
@@ -2577,7 +2600,7 @@ document.getElementById('services-grid').addEventListener('click', (e)=>{
 });
 document.getElementById('cart-btn').addEventListener('click', ()=>{ openCart(); renderCartDrawer(currentLang); });
 document.getElementById('cart-close').addEventListener('click', closeCart);
-document.getElementById('cart-wa-btn').addEventListener('click', ()=> notifyManager(currentLang, 'WhatsApp'));
+document.getElementById('cart-wa-btn').addEventListener('click', ()=>{ refreshOrderLinks(); notifyManager(currentLang, 'WhatsApp'); });
 document.getElementById('cart-tg-btn').addEventListener('click', ()=> notifyManager(currentLang, 'Telegram'));
 document.getElementById('rev-prev').addEventListener('click', ()=> scrollReviews(-1));
 document.getElementById('rev-next').addEventListener('click', ()=> scrollReviews(1));
