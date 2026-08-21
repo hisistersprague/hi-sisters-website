@@ -1517,7 +1517,11 @@ footer{background:var(--navy-deep);color:#cfc9ee;padding:64px 0 28px;}
         <div class="eyebrow" data-i18n="training.eyebrow">Обучение</div>
         <h2 data-i18n="training.title">Для специалистов, которым важен результат, а не просто сертификат</h2>
       </div>
-      <div class="t-list" id="training-list"></div>
+      <div class="svc-wrap"><div class="svc-track" id="training-list"></div></div>
+      <div class="rev-nav">
+        <button class="rev-arrow" id="trn-prev" aria-label="Previous">&lsaquo;</button>
+        <button class="rev-arrow" id="trn-next" aria-label="Next">&rsaquo;</button>
+      </div>
       <p class="training-note" data-i18n="training.ctaNote">Подробности — в директ</p>
     </div>
   </section>
@@ -2640,57 +2644,52 @@ function renderTraining(lang){
   list.innerHTML = '';
   const c = translations[lang].cart;
 
-  // Course type config: category name, emoji icon, CSS class, trainer photo key
-  const typeConfig = {
-    'laser-basic':  {cat:{ru:'Лазерная эпиляция',en:'Laser hair removal',es:'Depilación láser',cs:'Laserová epilace',uk:'Лазерна епіляція'}, icon:'✨', cls:'tc-laser', photo:'anna'},
-    'laser-adv':    {cat:{ru:'Лазерная эпиляция',en:'Laser hair removal',es:'Depilación láser',cs:'Laserová epilace',uk:'Лазерна епіляція'}, icon:'⚡', cls:'tc-laser', photo:'anna'},
-    'laser-online': {cat:{ru:'Онлайн-курс',en:'Online course',es:'Curso online',cs:'Online kurz',uk:'Онлайн-курс'}, icon:'💻', cls:'tc-laser', photo:'anna'},
-    'peeling-course':{cat:{ru:'Интимные пилинги',en:'Intimate peelings',es:'Peelings íntimos',cs:'Intimní peelingy',uk:'Інтимні пілінги'}, icon:'🌸', cls:'tc-peeling', photo:'anna'},
-    'electro-start':{cat:{ru:'Электроэпиляция',en:'Electrolysis',es:'Electrólisis',cs:'Elektroepilace',uk:'Електроепіляція'}, icon:'⚡', cls:'tc-electro', photo:'staff1'},
-    'electro-full': {cat:{ru:'Электроэпиляция',en:'Electrolysis',es:'Electrólisis',cs:'Elektroepilace',uk:'Електроепіляція'}, icon:'⚡', cls:'tc-electro', photo:'staff1'},
-    'electro-adv':  {cat:{ru:'Электроэпиляция',en:'Electrolysis',es:'Electrólisis',cs:'Elektroepilace',uk:'Електроепіляція'}, icon:'🎯', cls:'tc-electro', photo:'staff1'},
-    'hire-course':  {cat:{ru:'Управление командой',en:'Team management',es:'Gestión de equipo',cs:'Správa týmu',uk:'Управління командою'}, icon:'👥', cls:'tc-hire', photo:'staff4'},
-  };
+  /* Courses are rendered with the very same markup as the services block
+     (.s-card in a .svc-track carousel) so the two sections read as one system.
+     COURSE_VISIBLE / COURSE_DETAILS live in the block at the end of the file. */
+  const visible = (typeof COURSE_VISIBLE !== 'undefined') ? COURSE_VISIBLE : null;
+  const imgs = (typeof COURSE_IMAGES !== 'undefined') ? COURSE_IMAGES : {};
+  const ui = (typeof COURSE_UI !== 'undefined') ? (COURSE_UI[lang] || COURSE_UI.en) : {prog:''};
 
-  translations[lang].training.items.forEach(t=>{
-    const cfg = typeConfig[t.id] || {cat:{ru:'Обучение'}, icon:'📚', cls:'tc-laser', photo:'anna'};
-    const catLabel = cfg.cat[lang] || cfg.cat['ru'];
-    const photoSrc = teamPhotos[cfg.photo];
+  const items = translations[lang].training.items.filter(t => !visible || visible.indexOf(t.id) >= 0);
 
-    const trainerHtml = photoSrc
-      ? `<div class="tc-trainer-wrap"><img class="tc-trainer-img" src="${photoSrc}" alt="${t.trainer||''}"></div>`
-      : `<div class="tc-trainer-wrap"><div class="tc-trainer-init">${(t.trainer||'?').split(' ').map(w=>w[0]).slice(0,2).join('')}</div></div>`;
-
-    const footerHtml = t.price
-      ? `<div class="tc-footer">
-           <div><div class="tc-price">${t.price}</div></div>
-           <button class="cart-add-btn${cartIncludes(t.id)?' in-cart':''}" data-id="${t.id}" data-title="${t.title.replace(/"/g,'&quot;')}" data-price="${t.price}" data-in-cart="${cartIncludes(t.id)?'1':''}">
-             ${cartIncludes(t.id) ? c.addedBtn : c.addBtn}
-           </button>
-         </div>`
-      : `<div class="tc-footer"><div class="tc-price-note">${translations[lang].training.ctaNote}</div></div>`;
-
+  items.forEach((t, i) => {
     const card = document.createElement('div');
-    card.className = `tc ${cfg.cls}`;
+    card.className = 's-card';
     card.dataset.courseId = t.id;
+
+    const bg = imgs[t.id]
+      ? `background-image:url('${imgs[t.id]}')`
+      : 'background-image:linear-gradient(160deg,#1E1670,#0A0738)';
+
+    const hasDetail = (typeof COURSE_DETAILS !== 'undefined') && COURSE_DETAILS[t.id];
+    const detailBtn = hasDetail
+      ? `<button class="s-btn-detail" data-course-detail="${t.id}">${ui.prog}</button>`
+      : '';
+
+    const inCart = cartIncludes(t.id);
+    const buyBtn = t.price
+      ? `<button class="s-btn-price cart-add-btn${inCart ? ' in-cart' : ''}" data-id="${t.id}" data-title="${String(t.title).replace(/"/g,'&quot;')}" data-price="${t.price}" data-in-cart="${inCart ? '1' : ''}">${inCart ? c.addedBtn : c.addBtn}</button>`
+      : '';
+
     card.innerHTML = `
-      <div class="tc-header">
-        <div class="tc-header-bg"></div>
-        <div class="tc-icon">${cfg.icon}</div>
-        <div class="tc-category">${catLabel}</div>
-        ${trainerHtml}
-      </div>
-      <div class="tc-body">
+      <div class="s-card-media" style="${bg};background-position:center 28%"></div>
+      <div class="s-card-inner">
+        <span class="num">0${i + 1}</span>
         <h3>${t.title}</h3>
-        <span class="tc-format">${t.format}</span>
-        ${t.trainer ? `<div class="tc-trainer-name">👩‍🏫 ${t.trainer}</div>` : ''}
-        <p class="tc-desc">${t.desc}</p>
-        ${footerHtml}
+        <p>${t.desc}</p>
+        <div class="c-meta">
+          <span class="c-format">${t.format || ''}</span>
+          ${t.price ? `<span class="c-price">${t.price}</span>` : ''}
+        </div>
+        <div class="s-card-btns">
+          ${buyBtn}
+          ${detailBtn}
+        </div>
       </div>`;
     list.appendChild(card);
   });
 }
-
 function renderAboutValues(lang){
   const grid = document.getElementById('about-values-grid');
   grid.innerHTML = '';
@@ -3955,5 +3954,96 @@ translations[l].services.items.trichology.priceBtnLabel=LBL[l];
     if(e.target.closest('[data-country]')) setTimeout(sync, 60);
   }, true);
 })()</script>
+<!-- 8. Training block rendered like the services block + course programme modal -->
+<style>
+.c-meta{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 12px;margin:-6px 0 16px;}
+.c-format{font-size:12.5px;color:#c9c3e8;letter-spacing:.02em;}
+.c-price{font-family:'Cormorant Garamond',serif;font-size:20px;color:var(--gold-light);margin-left:auto;white-space:nowrap;}
+.s-btn-price.in-cart{background:var(--gold-dark);color:#fff;}
+#cm-back{position:fixed;inset:0;background:rgba(10,7,40,.72);backdrop-filter:blur(3px);z-index:1200;display:none;align-items:center;justify-content:center;padding:24px;}
+#cm-back.open{display:flex;}
+#cm{background:var(--cream);color:var(--ink);max-width:620px;width:100%;max-height:86vh;overflow-y:auto;border-radius:12px;padding:30px 32px 34px;position:relative;box-shadow:0 18px 60px rgba(10,7,40,.4);}
+#cm h3{font-family:'Cormorant Garamond',serif;font-size:27px;color:var(--navy);margin:0 6px 6px 0;line-height:1.2;}
+#cm .cm-sub{font-size:13px;color:var(--muted);margin-bottom:14px;}
+#cm .cm-lead{font-size:15px;line-height:1.6;margin-bottom:20px;}
+#cm h4{font-size:12px;text-transform:uppercase;letter-spacing:.1em;color:var(--gold-dark);margin:20px 0 9px;}
+#cm ul{list-style:none;padding:0;margin:0;}
+#cm li{position:relative;padding-left:20px;font-size:14.5px;line-height:1.55;margin-bottom:8px;}
+#cm li::before{content:'';position:absolute;left:4px;top:9px;width:5px;height:5px;border-radius:50%;background:var(--gold);}
+#cm .cm-price{margin-top:22px;padding-top:16px;border-top:1px solid var(--cream-deep);font-family:'Cormorant Garamond',serif;font-size:24px;color:var(--navy);}
+#cm-x{position:absolute;top:12px;right:14px;background:none;border:none;font-size:26px;line-height:1;color:var(--muted);cursor:pointer;padding:4px 8px;}
+#cm-x:hover{color:var(--navy);}
+@media(max-width:600px){#cm{padding:26px 20px 28px;}#cm h3{font-size:23px;}}
+</style>
+<div id="cm-back"><div id="cm" role="dialog" aria-modal="true"><button id="cm-x" aria-label="close">&times;</button><div id="cm-body"></div></div></div>
+<script>
+const COURSE_DETAILS = {"laser-basic": {"ru": {"lead": "С дипломом, практикой и клиентами уже в первый месяц.", "groups": [["Что даём", ["Теория без воды: кожа, волос, принципы лазера, интервалы", "Отработка на моделях с любым фототипом кожи и типом волос", "Сертификат и европейский диплом, признанный в странах ЕС", "Методичка, чат-поддержка и −5% на покупку оборудования"]], ["Почему выбирают нас", ["Уверенное понимание, почему лазер удаляет волосы навсегда", "Учим работать на результат, а не на скидки", "Окупаемость курса с первых клиентов"]]]}, "uk": {"lead": "З дипломом, практикою і клієнтами вже в перший місяць.", "groups": [["Що даємо", ["Теорія без води: шкіра, волосся, принципи лазера, інтервали", "Відпрацювання на моделях із будь-яким фототипом шкіри й типом волосся", "Сертифікат і європейський диплом, визнаний у країнах ЄС", "Методичка, чат-підтримка і −5% на купівлю обладнання"]], ["Чому обирають нас", ["Впевнене розуміння, чому лазер видаляє волосся назавжди", "Вчимо працювати на результат, а не на знижки", "Окупність курсу з перших клієнтів"]]]}, "cs": {"lead": "S diplomem, praxí a klientkami už v prvním měsíci.", "groups": [["Co dostanete", ["Teorie bez vaty: kůže, chloupek, principy laseru, intervaly", "Praxe na modelkách s libovolným fototypem pleti i typem chloupků", "Certifikát a evropský diplom uznávaný v zemích EU", "Skripta, podpora v chatu a −5 % na nákup přístroje"]], ["Proč si vybírají nás", ["Jisté porozumění tomu, proč laser odstraňuje chloupky natrvalo", "Učíme pracovat na výsledek, ne na slevy", "Kurz se vrátí už s prvními klientkami"]]]}, "en": {"lead": "With a diploma, hands-on practice and clients in your first month.", "groups": [["What you get", ["Theory with no filler: skin, hair, laser principles, intervals", "Practice on models with any skin phototype and hair type", "Certificate and a European diploma recognised across the EU", "Handbook, chat support and −5% on equipment"]], ["Why people choose us", ["A clear understanding of why laser removes hair for good", "We teach you to work for results, not for discounts", "The course pays for itself with your first clients"]]]}, "es": {"lead": "Con diploma, práctica y clientas ya en el primer mes.", "groups": [["Qué incluye", ["Teoría sin relleno: piel, vello, principios del láser, intervalos", "Práctica con modelos de cualquier fototipo y tipo de vello", "Certificado y diploma europeo reconocido en la UE", "Manual, soporte por chat y −5% en la compra de equipo"]], ["Por qué nos eligen", ["Entender de verdad por qué el láser elimina el vello para siempre", "Enseñamos a trabajar por resultados, no por descuentos", "El curso se amortiza con las primeras clientas"]]]}}, "laser-adv": {"ru": {"lead": "Это не просто повышение — это перезагрузка. С вами работает врач-эксперт.", "groups": [["Что вы получаете", ["Разбор ошибок в работе, которые стоят вам клиентов и прибыли", "Объяснение от врача: что происходит в коже и почему результат есть или нет", "Как распознавать противопоказания и не навредить клиенту", "Честный разбор оборудования: где реальная мощность, а где маркетинг", "Персональные рекомендации под ваш город, спрос и нишу", "Чек-листы, параметры и сценарии консультаций"]], ["Формат", ["Индивидуально, без группы. Поддержка после курса — по желанию"]]]}, "uk": {"lead": "Це не просто підвищення — це перезавантаження. З вами працює лікар-експерт.", "groups": [["Що ви отримуєте", ["Розбір помилок у роботі, які коштують вам клієнтів і прибутку", "Пояснення від лікаря: що відбувається в шкірі й чому результат є або немає", "Як розпізнавати протипоказання і не нашкодити клієнту", "Чесний розбір обладнання: де реальна потужність, а де маркетинг", "Персональні рекомендації під ваше місто, попит і нішу", "Чек-листи, параметри та сценарії консультацій"]], ["Формат", ["Індивідуально, без групи. Підтримка після курсу — за бажанням"]]]}, "cs": {"lead": "Není to jen zvyšování kvalifikace — je to restart. Pracuje s vámi lékařka-expertka.", "groups": [["Co získáte", ["Rozbor chyb v práci, které vás stojí klientky a zisk", "Vysvětlení od lékařky: co se děje v kůži a proč výsledek je nebo není", "Jak rozpoznat kontraindikace a neublížit klientce", "Poctivý rozbor přístrojů: kde je skutečný výkon a kde marketing", "Osobní doporučení pro vaše město, poptávku a niku", "Checklisty, parametry a scénáře konzultací"]], ["Formát", ["Individuálně, bez skupiny. Podpora po kurzu — dle přání"]]]}, "en": {"lead": "Not just an upgrade — a reset. You work one-to-one with a doctor.", "groups": [["What you get", ["A review of the mistakes that cost you clients and profit", "A doctor explaining what happens in the skin and why results come or do not", "How to spot contraindications and avoid harming a client", "An honest look at equipment: real power versus marketing", "Personal recommendations for your city, demand and niche", "Checklists, parameters and consultation scripts"]], ["Format", ["One-to-one, no group. Follow-up support if you want it"]]]}, "es": {"lead": "No es solo un reciclaje: es un reinicio. Trabajas con una médica experta.", "groups": [["Qué obtienes", ["Análisis de los errores que te cuestan clientas y beneficio", "Explicación médica: qué ocurre en la piel y por qué hay resultado o no", "Cómo detectar contraindicaciones y no dañar a la clienta", "Análisis honesto del equipo: potencia real frente a marketing", "Recomendaciones personales para tu ciudad, demanda y nicho", "Checklists, parámetros y guiones de consulta"]], ["Formato", ["Individual, sin grupo. Soporte posterior si lo deseas"]]]}}, "electro-start": {"ru": {"lead": "Вход в профессию с чистого листа — уверенно и без перегруза. Только чёткая база, без сложных зон: ноги, подмышки, руки, классическое и глубокое бикини.", "groups": [["Курс для вас, если", ["Вы только входите в профессию и хотите понять, ваше это или нет", "Хотите зарабатывать на самых популярных зонах", "Не готовы сразу браться за лицо, шею и гормонозависимые участки"]], ["Что включено", ["Индивидуальное офлайн-обучение и работа с моделями", "Методическое пособие и персональная поддержка после курса", "Современные протоколы — без корок и ожогов", "Помощь в подборе оборудования", "Сертификат европейского образца"]]]}, "uk": {"lead": "Вхід у професію з чистого аркуша — впевнено і без перевантаження. Тільки чітка база, без складних зон: ноги, пахви, руки, класичне та глибоке бікіні.", "groups": [["Курс для вас, якщо", ["Ви тільки входите в професію і хочете зрозуміти, ваше це чи ні", "Хочете заробляти на найпопулярніших зонах", "Не готові одразу братися за обличчя, шию і гормонозалежні ділянки"]], ["Що включено", ["Індивідуальне офлайн-навчання і робота з моделями", "Методичний посібник і персональна підтримка після курсу", "Сучасні протоколи — без кірочок і опіків", "Допомога в підборі обладнання", "Сертифікат європейського зразка"]]]}, "cs": {"lead": "Vstup do oboru od nuly — s jistotou a bez přetížení. Jen jasný základ, bez složitých zón: nohy, podpaží, ruce, klasické i hluboké bikini.", "groups": [["Kurz je pro vás, pokud", ["Do oboru teprve vstupujete a chcete zjistit, jestli je to pro vás", "Chcete vydělávat na nejžádanějších zónách", "Nechcete hned začínat obličejem, krkem a hormonálně závislými partiemi"]], ["Co je v ceně", ["Individuální prezenční výuka a práce s modelkami", "Skripta a osobní podpora po kurzu", "Moderní protokoly — bez strupů a popálenin", "Pomoc s výběrem přístroje", "Certifikát evropského typu"]]]}, "en": {"lead": "A calm start from scratch — confident and without overload. Just a solid base, no difficult areas: legs, underarms, arms, classic and deep bikini.", "groups": [["This course is for you if", ["You are only entering the profession and want to know whether it suits you", "You want to earn on the most requested areas", "You are not ready to start with the face, neck and hormone-dependent zones"]], ["What is included", ["One-to-one in-person training and work with models", "A handbook and personal support after the course", "Modern protocols — no scabs, no burns", "Help choosing your equipment", "A European-style certificate"]]]}, "es": {"lead": "Entrar en la profesión desde cero — con seguridad y sin agobio. Solo una base clara, sin zonas difíciles: piernas, axilas, brazos, bikini clásico y profundo.", "groups": [["Este curso es para ti si", ["Estás empezando y quieres saber si esta profesión es lo tuyo", "Quieres ganar con las zonas más demandadas", "No te ves aún trabajando cara, cuello o zonas hormonodependientes"]], ["Qué incluye", ["Formación presencial individual y trabajo con modelos", "Manual y soporte personal después del curso", "Protocolos modernos — sin costras ni quemaduras", "Ayuda para elegir el equipo", "Certificado de modelo europeo"]]]}}, "electro-full": {"ru": {"lead": "Навсегда удаляйте волосы там, где лазер бессилен. Теория и практика на всех зонах: лицо, шея, тело, чувствительные участки. Любой тип волос, любой фототип кожи.", "groups": [["Что даём", ["Европейский диплом и сертификат", "Работа с моделями на реальных зонах", "Методическое пособие и персональная поддержка после курса", "Помощь в подборе оборудования", "Современные протоколы: учим работать без реабилитации — корки и ожоги остались в прошлом"]], ["Почему это востребовано", ["Электроэпиляция закрывает то, с чем лазер не справляется: светлый, седой и пушковый волос", "Мастер лазера без этой услуги теряет часть клиентов", "Высокий средний чек и стабильный поток повторных визитов"]]]}, "uk": {"lead": "Назавжди видаляйте волосся там, де лазер безсилий. Теорія і практика на всіх зонах: обличчя, шия, тіло, чутливі ділянки. Будь-який тип волосся, будь-який фототип шкіри.", "groups": [["Що даємо", ["Європейський диплом і сертифікат", "Робота з моделями на реальних зонах", "Методичний посібник і персональна підтримка після курсу", "Допомога в підборі обладнання", "Сучасні протоколи: вчимо працювати без реабілітації — кірочки й опіки лишились у минулому"]], ["Чому це затребувано", ["Електроепіляція закриває те, з чим лазер не впорається: світле, сиве і пушкове волосся", "Майстер лазера без цієї послуги втрачає частину клієнтів", "Високий середній чек і стабільний потік повторних візитів"]]]}, "cs": {"lead": "Odstraňte chloupky natrvalo tam, kde laser nestačí. Teorie i praxe na všech zónách: obličej, krk, tělo, citlivá místa. Jakýkoli typ chloupků, jakýkoli fototyp pleti.", "groups": [["Co dostanete", ["Evropský diplom a certifikát", "Práce s modelkami na skutečných zónách", "Skripta a osobní podpora po kurzu", "Pomoc s výběrem přístroje", "Moderní protokoly: učíme pracovat bez rekonvalescence — strupy a popáleniny jsou minulostí"]], ["Proč je o to zájem", ["Elektroepilace řeší to, na co laser nestačí: světlé, šedivé a jemné chloupky", "Bez této služby laserová specialistka o část klientek přichází", "Vysoká průměrná útrata a stabilní opakované návštěvy"]]]}, "en": {"lead": "Remove hair permanently where laser cannot reach. Theory and practice on every area: face, neck, body, sensitive zones. Any hair type, any skin phototype.", "groups": [["What you get", ["A European diploma and certificate", "Work with models on real areas", "A handbook and personal support after the course", "Help choosing your equipment", "Modern protocols: working with no downtime — scabs and burns are a thing of the past"]], ["Why it is in demand", ["Electrolysis handles what laser cannot: light, grey and vellus hair", "A laser specialist without this service loses part of her clients", "A high average ticket and steady repeat visits"]]]}, "es": {"lead": "Elimina el vello para siempre donde el láser no llega. Teoría y práctica en todas las zonas: cara, cuello, cuerpo, zonas sensibles. Cualquier tipo de vello, cualquier fototipo.", "groups": [["Qué incluye", ["Diploma europeo y certificado", "Trabajo con modelos en zonas reales", "Manual y soporte personal después del curso", "Ayuda para elegir el equipo", "Protocolos modernos: trabajar sin recuperación — las costras y quemaduras son cosa del pasado"]], ["Por qué hay demanda", ["La electrólisis resuelve lo que el láser no puede: vello claro, canoso y fino", "Sin este servicio, una especialista en láser pierde parte de sus clientas", "Ticket medio alto y visitas recurrentes estables"]]]}}, "electro-adv": {"ru": {"lead": "Чёткая техника, прогнозируемый результат и уверенность в работе. Вы начнёте понимать, что именно происходит в фолликуле и как этим процессом управлять.", "groups": [["Что вы получаете", ["Разбор вашей техники и ошибок, которые мешают результату", "Понимание движения тока и коагуляции в фолликуле", "Как подбирать мощность, время и иглу под конкретный волос и зону", "Как работать без травмы, перегрева и осложнений", "Гормонозависимые и анатомически сложные зоны: гирсутизм, гипертрихоз", "Логика ведения клиента и построения курса", "Как делать результат на любом аппарате, а не зависеть от модели"]], ["Формат", ["Индивидуально, без группы. При необходимости добавляем день практики"]]]}, "uk": {"lead": "Чітка техніка, прогнозований результат і впевненість у роботі. Ви почнете розуміти, що саме відбувається у фолікулі і як цим процесом керувати.", "groups": [["Що ви отримуєте", ["Розбір вашої техніки й помилок, які заважають результату", "Розуміння руху струму та коагуляції у фолікулі", "Як підбирати потужність, час та голку під конкретне волосся й зону", "Як працювати без травми, перегріву та ускладнень", "Гормонозалежні та анатомічно складні зони: гірсутизм, гіпертрихоз", "Логіка ведення клієнта і побудови курсу", "Як робити результат на будь-якому апараті, а не залежати від моделі"]], ["Формат", ["Індивідуально, без групи. За потреби додаємо день практики"]]]}, "cs": {"lead": "Přesná technika, předvídatelný výsledek a jistota v práci. Začnete rozumět tomu, co se přesně děje ve folikulu a jak ten proces řídit.", "groups": [["Co získáte", ["Rozbor vaší techniky a chyb, které brání výsledku", "Porozumění průchodu proudu a koagulaci ve folikulu", "Jak volit výkon, čas a jehlu podle konkrétního chloupku a zóny", "Jak pracovat bez traumatu, přehřátí a komplikací", "Hormonálně závislé a anatomicky složité zóny: hirsutismus, hypertrichóza", "Logika vedení klientky a sestavení kurzu", "Jak dosáhnout výsledku na jakémkoli přístroji, ne být závislá na modelu"]], ["Formát", ["Individuálně, bez skupiny. V případě potřeby přidáme den praxe"]]]}, "en": {"lead": "Precise technique, predictable results and confidence at work. You will understand what actually happens in the follicle and how to control it.", "groups": [["What you get", ["A review of your technique and the mistakes holding your results back", "Understanding current flow and coagulation in the follicle", "How to choose power, timing and needle for a given hair and area", "How to work without trauma, overheating or complications", "Hormone-dependent and anatomically difficult areas: hirsutism, hypertrichosis", "The logic of guiding a client and building a course of treatment", "How to get results on any device instead of depending on the model"]], ["Format", ["One-to-one, no group. An extra practice day can be added if needed"]]]}, "es": {"lead": "Técnica precisa, resultado predecible y seguridad en el trabajo. Entenderás qué ocurre exactamente en el folículo y cómo controlar ese proceso.", "groups": [["Qué obtienes", ["Análisis de tu técnica y de los errores que frenan el resultado", "Comprensión del paso de la corriente y la coagulación en el folículo", "Cómo elegir potencia, tiempo y aguja según el vello y la zona", "Cómo trabajar sin traumatismo, sobrecalentamiento ni complicaciones", "Zonas hormonodependientes y anatómicamente difíciles: hirsutismo, hipertricosis", "La lógica de acompañar a la clienta y construir el curso", "Cómo lograr resultados con cualquier equipo, sin depender del modelo"]], ["Formato", ["Individual, sin grupo. Se puede añadir un día de práctica si hace falta"]]]}}};
+const COURSE_UI = {"ru": {"prog": "Программа курса", "close": "Закрыть"}, "uk": {"prog": "Програма курсу", "close": "Закрити"}, "cs": {"prog": "Program kurzu", "close": "Zavřít"}, "en": {"prog": "Course programme", "close": "Close"}, "es": {"prog": "Programa del curso", "close": "Cerrar"}};
+const COURSE_VISIBLE = ["laser-basic", "laser-adv", "electro-start", "electro-full", "electro-adv"];
+const COURSE_IMAGES = {"laser-basic": "assets/laser.jpg", "laser-adv": "assets/laser.jpg", "electro-start": "assets/electro.jpg", "electro-full": "assets/electro.jpg", "electro-adv": "assets/electro.jpg"};
+(function(){
+  function esc(x){ return String(x == null ? '' : x).replace(/[&<>"]/g, function(ch){
+    return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[ch];
+  }); }
+
+  function findItem(lang, id){
+    try{ return (translations[lang].training.items || []).filter(function(t){ return t.id === id; })[0] || null; }
+    catch(e){ return null; }
+  }
+
+  function openCourse(id){
+    var lang = (document.documentElement.lang || 'cs').slice(0,2);
+    var d = COURSE_DETAILS[id] && (COURSE_DETAILS[id][lang] || COURSE_DETAILS[id].en);
+    if(!d) return;
+    var t = findItem(lang, id) || {};
+    var html = '<h3>' + esc(t.title || '') + '</h3>';
+    if(t.format) html += '<div class="cm-sub">' + esc(t.format) + '</div>';
+    html += '<div class="cm-lead">' + esc(d.lead) + '</div>';
+    d.groups.forEach(function(g){
+      html += '<h4>' + esc(g[0]) + '</h4><ul>';
+      g[1].forEach(function(li){ html += '<li>' + esc(li) + '</li>'; });
+      html += '</ul>';
+    });
+    if(t.price) html += '<div class="cm-price">' + esc(t.price) + '</div>';
+    document.getElementById('cm-body').innerHTML = html;
+    document.getElementById('cm-back').classList.add('open');
+  }
+  function closeCourse(){
+    document.getElementById('cm-back').classList.remove('open');
+  }
+
+  document.addEventListener('click', function(e){
+    var b = e.target.closest('[data-course-detail]');
+    if(b){ e.preventDefault(); openCourse(b.dataset.courseDetail); return; }
+    if(e.target.id === 'cm-x' || e.target.id === 'cm-back') closeCourse();
+  });
+  document.addEventListener('keydown', function(e){ if(e.key === 'Escape') closeCourse(); });
+
+  /* Arrows for the course carousel, same helper the services carousel uses. */
+  function scrollTraining(dir){
+    var t = document.getElementById('training-list');
+    if(!t) return;
+    var card = t.querySelector('.s-card');
+    var dx = (card ? card.offsetWidth : 340) + 14;
+    if(typeof snapFreeScroll === 'function') snapFreeScroll(t, dir * dx);
+    else t.scrollLeft += dir * dx;
+  }
+  function wire(){
+    var p = document.getElementById('trn-prev'), n = document.getElementById('trn-next');
+    if(p && !p._w){ p._w = 1; p.addEventListener('click', function(){ scrollTraining(-1); }); }
+    if(n && !n._w){ n._w = 1; n.addEventListener('click', function(){ scrollTraining(1); }); }
+  }
+  wire();
+  if(document.readyState === 'loading') document.addEventListener('DOMContentLoaded', wire);
+
+  /* renderTraining already ran once before this block executed, so the very
+     first paint had no access to COURSE_VISIBLE/COURSE_DETAILS. Redraw once. */
+  function redraw(){
+    try{ renderTraining(typeof currentLang !== 'undefined' ? currentLang : 'cs'); wire(); }catch(e){}
+  }
+  redraw();
+  setTimeout(redraw, 400);
+})();
+</script>
 </body>
 </html>
