@@ -3393,7 +3393,7 @@ function reinject(){
   if(f)f.remove();
   inject();
 }
-new MutationObserver(function(m){m.forEach(function(r){if(r.attributeName==='lang')setTimeout(reinject,3500);});}).observe(document.documentElement,{attributes:true,attributeFilter:['lang']});
+new MutationObserver(function(m){m.forEach(function(r){if(r.attributeName==='lang'){setTimeout(reinject,150);setTimeout(reinject,1200);}/* was 3500 ms: the how-it-works and FAQ sections kept showing the previous language for 3.5 s */});}).observe(document.documentElement,{attributes:true,attributeFilter:['lang']});
 if(document.readyState!=='loading'){setTimeout(inject,1000);}else{document.addEventListener('DOMContentLoaded',function(){setTimeout(inject,1000);});}
 })();
 </script>
@@ -4068,6 +4068,26 @@ const COURSE_IMAGES = {"laser-basic": "assets/trainer-laser.jpg", "laser-adv": "
   }
   redraw();
   setTimeout(redraw, 400);
+})();
+</script>
+<!-- 9. The Collaboration block carried data-i18n keys that existed in no language -->
+<script>
+(function(){
+  var C = {"en": {"eyebrow": "COLLABORATION", "title": "Partner with Hi Sisters", "subtitle": "We collaborate with businesses, beauty brands and influencers who share our values", "b2b": {"title": "B2B & Corporate", "desc": "Corporate wellness programs, employee benefits, beauty events. Special rates for companies."}, "influencer": {"title": "Influencers & Content", "desc": "Authentic content creation, review partnerships, ambassador programs. We value real stories."}, "brands": {"title": "Beauty Brands", "desc": "Product introductions, co-branding, educational events for professionals."}, "btn": "Write to us"}, "ru": {"eyebrow": "СОТРУДНИЧЕСТВО", "title": "Партнёрство с Hi Sisters", "subtitle": "Работаем с компаниями, бьюти-брендами и блогерами, которым близки наши ценности", "b2b": {"title": "Бизнесу и компаниям", "desc": "Программы заботы о сотрудниках, корпоративные бонусы, бьюти-мероприятия. Специальные условия для компаний."}, "influencer": {"title": "Блогерам и авторам", "desc": "Честный контент, обзоры, амбассадорские программы. Нам важны реальные истории."}, "brands": {"title": "Бьюти-брендам", "desc": "Знакомство с продуктом, совместные проекты, обучающие мероприятия для специалистов."}, "btn": "Напишите нам"}, "uk": {"eyebrow": "СПІВПРАЦЯ", "title": "Партнерство з Hi Sisters", "subtitle": "Працюємо з компаніями, б'юті-брендами та блогерами, яким близькі наші цінності", "b2b": {"title": "Бізнесу та компаніям", "desc": "Програми турботи про співробітників, корпоративні бонуси, б'юті-заходи. Спеціальні умови для компаній."}, "influencer": {"title": "Блогерам і авторам", "desc": "Чесний контент, огляди, амбасадорські програми. Нам важливі справжні історії."}, "brands": {"title": "Б'юті-брендам", "desc": "Знайомство з продуктом, спільні проєкти, навчальні заходи для спеціалістів."}, "btn": "Напишіть нам"}, "cs": {"eyebrow": "SPOLUPRÁCE", "title": "Partnerství s Hi Sisters", "subtitle": "Spolupracujeme s firmami, beauty značkami a tvůrci, kterým jsou blízké naše hodnoty", "b2b": {"title": "Firmám a korporacím", "desc": "Programy péče o zaměstnance, firemní benefity, beauty akce. Zvláštní podmínky pro firmy."}, "influencer": {"title": "Tvůrcům a influencerkám", "desc": "Poctivý obsah, recenze, ambasadorské programy. Záleží nám na skutečných příbězích."}, "brands": {"title": "Beauty značkám", "desc": "Představení produktu, společné projekty, vzdělávací akce pro odbornice."}, "btn": "Napište nám"}, "es": {"eyebrow": "COLABORACIÓN", "title": "Colabora con Hi Sisters", "subtitle": "Trabajamos con empresas, marcas de belleza y creadoras que comparten nuestros valores", "b2b": {"title": "Empresas y corporativo", "desc": "Programas de bienestar para empleados, beneficios corporativos, eventos de belleza. Condiciones especiales para empresas."}, "influencer": {"title": "Creadoras de contenido", "desc": "Contenido honesto, reseñas, programas de embajadoras. Valoramos las historias reales."}, "brands": {"title": "Marcas de belleza", "desc": "Presentación de producto, proyectos conjuntos, eventos formativos para profesionales."}, "btn": "Escríbenos"}};
+  if(typeof translations === 'undefined') return;
+  Object.keys(C).forEach(function(l){ if(translations[l]) translations[l].collab = C[l]; });
+  /* renderStatic() writes documentElement.lang itself, which fires this very
+     observer again — without the guard below that is an infinite loop. */
+  var last = null;
+  function apply(){
+    var l = document.documentElement.lang || 'cs';
+    if(l === last) return;
+    last = l;
+    try{ renderStatic(l); }catch(e){}
+  }
+  apply();
+  setTimeout(apply, 500);
+  new MutationObserver(apply).observe(document.documentElement,{attributes:true,attributeFilter:['lang']});
 })();
 </script>
 </body>
