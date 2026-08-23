@@ -227,6 +227,8 @@ a.rev-tag:hover{color:var(--gold);}
 .team-grid.solo{grid-template-columns:minmax(0,260px);justify-content:center;}
 .team-card{text-align:center;}
 .team-card .ph{aspect-ratio:4/5;border-radius:6px;overflow:hidden;background:var(--cream-deep);margin-bottom:10px;}
+.team-card .ph-init{display:flex;align-items:center;justify-content:center;background:linear-gradient(160deg,var(--navy-light),var(--navy-deep));}
+.team-card .ph-init span{font-family:'Cormorant Garamond',serif;font-size:54px;color:var(--gold-light);line-height:1;}
 .team-card .ph img{width:100%;height:100%;object-fit:cover;display:block;}
 .team-card .name{font-size:15px;color:var(--navy);font-weight:600;}
 .team-card .role{font-size:11px;color:var(--gold-dark);margin-top:4px;text-transform:uppercase;letter-spacing:.05em;}
@@ -1739,6 +1741,10 @@ const TEAM = [
     name:{ru:'Анна Ничипорук',uk:'Анна Ничипорук',en:'Anna Nichyporuk',es:'Anna Nichyporuk',cs:'Anna Nichyporuk'},
     role:{ru:'Владелица клиники',uk:'Власниця клініки',en:'Owner & founder',es:'Fundadora y propietaria',cs:'Zakladatelka a majitelka'},
     desc:{ru:'Лазерная и электроэпиляция, обучение специалистов. Опыт с 2019 года.',uk:'Лазерна та електроепіляція, навчання спеціалістів. Досвід із 2019 року.',en:'Laser & electrolysis, plus training for specialists. Since 2019.',es:'Depilación láser y electrólisis, además de formación. Desde 2019.',cs:'Laserová a elektroepilace, školení specialistů. Od roku 2019.'} },
+  { photo:'valeria',
+    name:{ru:'Валерия',uk:'Валерія',en:'Valeriia',es:'Valeria',cs:'Valeria'},
+    role:{ru:'Косметолог-трихолог',uk:'Косметолог-трихолог',en:'Cosmetologist & trichologist',es:'Cosmetóloga y tricóloga',cs:'Kosmetoložka a tricholožka'},
+    desc:{ru:'Косметология и трихология. Опыт с 2016 года.',uk:'Косметологія та трихологія. Досвід із 2016 року.',en:'Cosmetology and trichology. Since 2016.',es:'Cosmetología y tricología. Desde 2016.',cs:'Kosmetologie a trichologie. Od roku 2016.'} },
   { photo:'staff1',
     name:{ru:'Наталья',uk:'Наталя',en:'Natalia',es:'Natalia',cs:'Natalia'},
     role:{ru:'Специалист',uk:'Спеціалістка',en:'Specialist',es:'Especialista',cs:'Specialistka'},
@@ -2758,7 +2764,13 @@ function renderTeam(lang){
     const desc = m.desc[lang] || m.desc.en;
     const card = document.createElement('div');
     card.className = 'team-card';
-    card.innerHTML = `<div class="ph"><img src="${teamPhotos[m.photo]}" alt="${name}"></div><div class="name">${name}</div><div class="role">${role}</div><div class="bio">${desc}</div>`;
+    /* A member can be added before their photo file exists — show an initial
+       instead of a broken image until the file lands in assets/. */
+    const src = teamPhotos[m.photo];
+    const ph = src
+      ? `<div class="ph"><img src="${src}" alt="${name}" loading="lazy" decoding="async"></div>`
+      : `<div class="ph ph-init"><span>${name.trim().charAt(0)}</span></div>`;
+    card.innerHTML = `${ph}<div class="name">${name}</div><div class="role">${role}</div><div class="bio">${desc}</div>`;
     grid.appendChild(card);
   });
 }
