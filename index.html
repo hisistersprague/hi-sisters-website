@@ -1986,9 +1986,24 @@ function closeCart(){
   document.getElementById('cart-overlay').classList.remove('open');
 }
 
+/* The later translation patch replaces whole sections with Object.assign, so
+   keys the patch does not repeat are dropped. cart.title is one of them — the
+   drawer opened with a blank header. And #cart-total-label-text was never
+   written from JS at all, so the total stayed the English "Total" everywhere. */
+const CART_FALLBACK = {
+  cs:{title:'Košík', total:'Celkem'},
+  ru:{title:'Корзина', total:'Итого'},
+  uk:{title:'Кошик', total:'Разом'},
+  en:{title:'Cart', total:'Total'},
+  es:{title:'Carrito', total:'Total'}
+};
+
 function renderCartDrawer(lang){
   const c = translations[lang].cart;
-  document.getElementById('cart-title').textContent = c.title;
+  const fb = CART_FALLBACK[lang] || CART_FALLBACK.en;
+  document.getElementById('cart-title').textContent = c.title || fb.title;
+  const totalLbl = document.getElementById('cart-total-label-text');
+  if(totalLbl) totalLbl.textContent = String(c.total || fb.total).replace(/\s*:\s*$/, '');
   document.getElementById('cart-order-label').textContent = c.orderVia;
   const body = document.getElementById('cart-items');
   if(cart.length === 0){
