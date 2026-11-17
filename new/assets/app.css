@@ -27,8 +27,8 @@ img{max-width:100%}
      border-bottom:1px solid rgba(255,255,255,.14)}
 .top-in{display:flex;align-items:center;gap:14px;height:62px}
 .brand{display:block;width:100px;height:46px;flex-shrink:0;text-decoration:none;background:#fff;
-       -webkit-mask:url(/assets/logo.svg) no-repeat left center/contain;
-       mask:url(/assets/logo.svg) no-repeat left center/contain}
+       -webkit-mask:url(/new/assets/logo.svg) no-repeat left center/contain;
+       mask:url(/new/assets/logo.svg) no-repeat left center/contain}
 .top-sp{flex:1}
 .langs{display:flex;gap:2px}
 .langs a{display:block;padding:5px 8px;font-size:12.5px;letter-spacing:.06em;
