@@ -15,29 +15,36 @@ a{color:inherit}
 img{max-width:100%}
 .wrap{max-width:var(--max);margin:0 auto;padding:0 20px}
 
+/* ─── полоска доверия над шапкой ─── */
+.proofbar{background:var(--navy-deep);color:#CFC9E6;font-size:13px}
+.proofbar .wrap{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 10px;padding-block:7px}
+.proofbar b{color:#fff;font-weight:500}
+.proofbar .stars{color:var(--gold);letter-spacing:.06em;font-size:12px}
+.proofbar b+span{margin-right:6px}
+
 /* ─── шапка: верхняя строка + строка навигации ─── */
-.top{position:sticky;top:0;z-index:50;background:rgba(250,246,239,.94);
-     backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
-.top-in{display:flex;align-items:center;gap:14px;height:58px}
-.brand{font-family:'Cormorant Garamond',serif;font-size:23px;letter-spacing:.02em;
-       text-decoration:none;white-space:nowrap}
-.brand b{font-weight:600}
+.top{position:sticky;top:0;z-index:50;background:var(--navy);color:#fff;
+     border-bottom:1px solid rgba(255,255,255,.14)}
+.top-in{display:flex;align-items:center;gap:14px;height:62px}
+.brand{display:block;width:100px;height:46px;flex-shrink:0;text-decoration:none;background:#fff;
+       -webkit-mask:url(/assets/logo.svg) no-repeat left center/contain;
+       mask:url(/assets/logo.svg) no-repeat left center/contain}
 .top-sp{flex:1}
 .langs{display:flex;gap:2px}
 .langs a{display:block;padding:5px 8px;font-size:12.5px;letter-spacing:.06em;
-         text-decoration:none;color:var(--muted);border-radius:5px}
-.langs a[aria-current]{background:var(--navy);color:#fff}
-.top-tel{font-size:14.5px;text-decoration:none;white-space:nowrap}
-.nav-row{border-top:1px solid var(--line)}
+         text-decoration:none;color:#CFC9E6;border-radius:5px}
+.langs a[aria-current]{background:#fff;color:var(--navy)}
+.top-tel{font-size:14.5px;text-decoration:none;white-space:nowrap;color:#fff}
+.nav-row{border-top:1px solid rgba(255,255,255,.14)}
 .mainnav{display:flex;gap:2px;overflow-x:auto;scrollbar-width:none;-ms-overflow-style:none}
 .mainnav::-webkit-scrollbar{display:none}
 .mainnav a{padding:12px 14px;font-size:15.5px;text-decoration:none;white-space:nowrap;
-           color:var(--ink);border-bottom:2px solid transparent;transition:color .15s}
-.mainnav a:hover{color:var(--gold-dark)}
-.mainnav a[aria-current]{border-bottom-color:var(--navy);font-weight:500}
-.city-sw{padding:5px 11px;border:1px solid var(--line);border-radius:999px;
-         font-size:13px;text-decoration:none;white-space:nowrap;background:#fff}
-.city-sw span{color:var(--muted)}
+           color:#fff;border-bottom:2px solid transparent;transition:color .15s}
+.mainnav a:hover{color:var(--gold)}
+.mainnav a[aria-current]{border-bottom-color:var(--gold);font-weight:500}
+.city-sw{padding:5px 11px;border:1px solid rgba(255,255,255,.35);border-radius:999px;
+         font-size:13px;text-decoration:none;white-space:nowrap;background:transparent;color:#fff}
+.city-sw span{color:#CFC9E6}
 
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;
      padding:13px 24px;border-radius:7px;border:1.5px solid var(--navy);background:var(--navy);
@@ -46,7 +53,9 @@ img{max-width:100%}
 .btn:hover{opacity:.87}
 .btn-sm{padding:9px 16px;font-size:14px}
 .btn-ghost{background:transparent;color:var(--navy)}
-.btn-gold{background:var(--gold);border-color:var(--gold);color:var(--navy-deep)}
+.btn-gold{background:var(--navy);border-color:var(--navy);color:#fff}
+.band .btn-gold,.dark .btn-gold,.top .btn{background:#fff;border-color:#fff;color:var(--navy-deep)}
+.band .btn-gold:hover,.top .btn:hover{opacity:.9}
 
 /* ─── первый экран ─── */
 .hero{padding:52px 0 42px}
@@ -152,12 +161,33 @@ section{padding:50px 0}
 .band .b-meta{margin-top:20px;font-size:14.5px;color:#CFC9E6;line-height:1.9}
 .band .b-meta a{color:#fff}
 
+/* перечень услуг на главной */
+.svc-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}
+.svc-list a,.svc-list div{display:block;padding:16px 18px;background:#fff;border:1px solid var(--line);
+   border-radius:12px;text-decoration:none;transition:border-color .15s}
+.svc-list a:hover{border-color:var(--navy)}
+.svc-list b{display:block;font-family:'Cormorant Garamond',serif;font-size:21px;font-weight:600;
+   margin-bottom:4px}
+.svc-list span{display:block;font-size:14px;color:var(--muted);line-height:1.45}
+
+/* тёмная секция в фирменном синем */
+.dark{background:var(--navy);color:#fff;border:0}
+.dark .sec-head h2{color:#fff}
+.dark .sec-head p{color:#CFC9E6}
+.dark .mini{background:rgba(255,255,255,.07);border-color:rgba(255,255,255,.16)}
+.dark .mini h3{color:#fff}
+.dark .mini .role{color:var(--gold)}
+.dark .ava{background:var(--navy-light)}
+.dark .ava-let{background:var(--navy-light);color:var(--gold)}
+.dark .more-list a{background:transparent;border-color:rgba(255,255,255,.4);color:#fff}
+.dark .more-list a:hover{border-color:var(--gold);color:var(--gold)}
+
 /* специалисты и аппараты на главной */
 .team-mini{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px}
 .mini{background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px}
 .alt .mini{background:var(--cream)}
 .mini .ava{width:64px;height:64px;margin-bottom:11px}
-.mini .ava-let{font-size:26px}
+.mini .ava-let{font-size:27px}
 .mini h3{font-size:18px;margin-bottom:3px}
 .mini .role{font-size:12px;letter-spacing:.05em;text-transform:uppercase;color:var(--gold-dark);line-height:1.4}
 .eq .eq-tag{font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--gold-dark);margin-bottom:6px}
@@ -200,10 +230,11 @@ section{padding:50px 0}
 .team{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
 .mate{padding:22px;background:#fff;border:1px solid var(--line);border-radius:12px}
 .alt .mate{background:var(--cream)}
-.mate .ava{display:block;width:84px;height:84px;border-radius:50%;object-fit:cover;
-           background:var(--navy-light);margin-bottom:14px}
-.mate .ava-let{display:flex;align-items:center;justify-content:center;background:var(--navy);
-               color:var(--gold);font-family:'Cormorant Garamond',serif;font-size:34px}
+.ava{display:block;border-radius:50%;object-fit:cover;background:var(--navy-light)}
+.ava-let{display:flex;align-items:center;justify-content:center;background:var(--navy);
+         color:var(--gold);font-family:'Cormorant Garamond',serif;line-height:1}
+.mate .ava{width:84px;height:84px;margin-bottom:14px}
+.mate .ava-let{font-size:34px}
 .mate h3{font-size:20px;margin-bottom:3px}
 .mate .role{font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:var(--gold-dark);margin-bottom:9px}
 .mate p{font-size:14.5px;color:var(--muted)}
@@ -269,13 +300,15 @@ footer a{color:#fff;text-decoration:none}
 .sticky .btn{width:100%}
 @media(max-width:720px){
   body{font-size:16px;overflow-x:hidden}
-  .top-in{height:52px;gap:10px}
+  .proofbar{font-size:12px}
+  .proofbar .wrap{gap:3px 8px}
+  .top-in{height:56px;gap:10px}
+  .brand{width:82px;height:38px}
   .hero{padding:32px 0 28px}
   .hero-sm{padding:26px 0 20px}
   .top-tel{display:none}
   .top-in>.btn{display:none}        /* кнопка живёт в липкой панели внизу */
   .langs a{padding:5px 6px;font-size:12px}
-  .brand{font-size:20px}
   .city-sw{padding:4px 8px;font-size:12px}
   .city-sw span{display:none}
   .top{position:static}              /* на телефоне шапка не липнет: внизу есть кнопка */
