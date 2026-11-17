@@ -156,7 +156,8 @@ section{padding:50px 0}
 .team-mini{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px}
 .mini{background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px}
 .alt .mini{background:var(--cream)}
-.mini .ava{margin-bottom:11px}
+.mini .ava{width:64px;height:64px;margin-bottom:11px}
+.mini .ava-let{font-size:26px}
 .mini h3{font-size:18px;margin-bottom:3px}
 .mini .role{font-size:12px;letter-spacing:.05em;text-transform:uppercase;color:var(--gold-dark);line-height:1.4}
 .eq .eq-tag{font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--gold-dark);margin-bottom:6px}
@@ -199,10 +200,10 @@ section{padding:50px 0}
 .team{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
 .mate{padding:22px;background:#fff;border:1px solid var(--line);border-radius:12px}
 .alt .mate{background:var(--cream)}
-.mate .ava{display:block;width:100%;aspect-ratio:3/4;border-radius:10px;object-fit:cover;
-           object-position:50% 18%;background:var(--navy-light);margin-bottom:16px}
+.mate .ava{display:block;width:84px;height:84px;border-radius:50%;object-fit:cover;
+           background:var(--navy-light);margin-bottom:14px}
 .mate .ava-let{display:flex;align-items:center;justify-content:center;background:var(--navy);
-               color:var(--gold);font-family:'Cormorant Garamond',serif;font-size:64px}
+               color:var(--gold);font-family:'Cormorant Garamond',serif;font-size:34px}
 .mate h3{font-size:20px;margin-bottom:3px}
 .mate .role{font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:var(--gold-dark);margin-bottom:9px}
 .mate p{font-size:14.5px;color:var(--muted)}
