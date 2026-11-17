@@ -4,6 +4,7 @@
   --gold:#D4B896; --gold-light:#F0DFC0; --gold-dark:#8A7256;
   --cream:#FAF6EF; --cream-deep:#F1EADC;
   --ink:#1A1530; --muted:#6B6580; --line:#E4DCCB;
+  --line-gold:rgba(212,184,150,.55);
   --max:1120px;
 }
 *{box-sizing:border-box;margin:0;padding:0}
@@ -25,7 +26,7 @@ img{max-width:100%}
 
 /* ─── шапка: верхняя строка + строка навигации ─── */
 .top{position:sticky;top:0;z-index:50;background:var(--navy);color:#fff;
-     border-bottom:1px solid rgba(255,255,255,.14)}
+     border-bottom:2px solid var(--gold)}
 .top-in{display:flex;align-items:center;gap:14px;height:62px}
 .brand{display:block;width:100px;height:46px;flex-shrink:0;text-decoration:none;background:#fff;
        -webkit-mask:url(/new/assets/logo.svg) no-repeat left center/contain;
@@ -53,7 +54,8 @@ img{max-width:100%}
      transition:opacity .15s}
 .btn:hover{opacity:.87}
 .btn-sm{padding:9px 16px;font-size:14px}
-.btn-ghost{background:transparent;color:var(--navy)}
+.btn-ghost{background:transparent;color:var(--navy);border-color:var(--gold-dark)}
+.btn-ghost:hover{border-color:var(--navy);opacity:1}
 .btn-gold{background:var(--navy);border-color:var(--navy);color:#fff}
 .band .btn-gold,.dark .btn-gold,.top .btn{background:#fff;border-color:#fff;color:var(--navy-deep)}
 .band .btn-gold:hover,.top .btn:hover{opacity:.9}
@@ -109,6 +111,9 @@ img{max-width:100%}
 section{padding:50px 0}
 .sec-head{margin-bottom:26px}
 .sec-head h2{font-size:clamp(28px,5vw,40px);margin-bottom:8px}
+.sec-head h2::before{content:'';display:block;width:38px;height:2px;
+                     background:var(--gold);margin-bottom:14px}
+.dark .sec-head h2::before,.band h2::before{background:var(--gold)}
 .sec-head p{color:var(--muted);max-width:34em}
 .alt{background:#fff;border-block:1px solid var(--line)}
 
@@ -137,7 +142,7 @@ section{padding:50px 0}
              font-size:14.5px;text-decoration:none}
 
 /* цены */
-.ptable{background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden}
+.ptable{background:#fff;border:1px solid var(--line-gold);border-radius:14px;overflow:hidden}
 .alt .ptable{background:var(--cream)}
 .prow{display:flex;justify-content:space-between;gap:16px;padding:13px 18px;
       border-bottom:1px solid var(--cream-deep);font-size:15.5px}
@@ -164,7 +169,7 @@ section{padding:50px 0}
 
 /* контакты */
 .studios{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px}
-.studio{background:#fff;border:1px solid var(--line);border-radius:14px;padding:26px}
+.studio{background:#fff;border:1px solid var(--line-gold);border-radius:14px;padding:26px}
 .alt .studio{background:var(--cream)}
 .studio h3{font-size:24px;margin-bottom:14px}
 .studio dl{display:grid;grid-template-columns:auto 1fr;gap:9px 16px;font-size:15px;margin-bottom:20px}
@@ -182,7 +187,7 @@ section{padding:50px 0}
 
 /* перечень услуг на главной */
 .svc-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}
-.svc-list a,.svc-list div{display:block;padding:16px 18px;background:#fff;border:1px solid var(--line);
+.svc-list a,.svc-list div{display:block;padding:16px 18px;background:#fff;border:1px solid var(--line-gold);
    border-radius:12px;text-decoration:none;transition:border-color .15s}
 .svc-list a:hover{border-color:var(--navy)}
 .svc-list b{display:block;font-family:'Cormorant Garamond',serif;font-size:21px;font-weight:600;
@@ -226,7 +231,7 @@ section{padding:50px 0}
 
 /* топ-предложения */
 .offers{display:grid;grid-template-columns:repeat(auto-fit,minmax(255px,1fr));gap:16px}
-.offer{padding:22px;background:#fff;border:1px solid var(--line);border-radius:12px;
+.offer{padding:22px;background:#fff;border:1px solid var(--line-gold);border-radius:12px;
        display:flex;flex-direction:column}
 .offer h3{font-size:20px;margin-bottom:10px}
 .offer p{font-size:14.5px;color:var(--muted);flex:1;margin-bottom:12px}
@@ -234,11 +239,12 @@ section{padding:50px 0}
 .o-price{display:flex;align-items:baseline;flex-wrap:wrap;gap:10px;margin:auto 0 16px}
 .o-price b{font-family:'Cormorant Garamond',serif;font-size:30px;font-weight:600;line-height:1}
 .o-price s{color:var(--muted);font-size:15px}
-.o-price .off{padding:3px 9px;border-radius:999px;background:var(--navy);color:#fff;font-size:12.5px}
+.o-price .off{padding:3px 9px;border-radius:999px;background:var(--gold);
+              color:var(--navy-deep);font-size:12.5px;font-weight:500}
 
 /* принципы и команда */
 .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px}
-.card{padding:24px;background:#fff;border:1px solid var(--line);border-radius:12px}
+.card{padding:24px;background:#fff;border:1px solid var(--line-gold);border-radius:12px}
 .alt .card{background:var(--cream)}
 .card h3{font-size:21px;margin-bottom:8px}
 .card p{font-size:15px;color:var(--muted)}
@@ -247,7 +253,7 @@ section{padding:50px 0}
 .stats b{display:block;font-family:'Cormorant Garamond',serif;font-size:42px;color:var(--ink);
          font-weight:600;line-height:1}
 .team{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
-.mate{padding:22px;background:#fff;border:1px solid var(--line);border-radius:12px}
+.mate{padding:22px;background:#fff;border:1px solid var(--line-gold);border-radius:12px}
 .alt .mate{background:var(--cream)}
 .ava{display:block;border-radius:50%;object-fit:cover;background:var(--navy-light)}
 .ava-let{display:flex;align-items:center;justify-content:center;background:var(--navy);
@@ -260,7 +266,7 @@ section{padding:50px 0}
 
 /* косметика */
 .prods{display:grid;grid-template-columns:repeat(auto-fit,minmax(265px,1fr));gap:14px}
-.prod{padding:20px;background:#fff;border:1px solid var(--line);border-radius:12px;
+.prod{padding:20px;background:#fff;border:1px solid var(--line-gold);border-radius:12px;
       display:flex;flex-direction:column}
 .alt .prod{background:var(--cream)}
 .prod .brand{font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--gold-dark)}
@@ -306,16 +312,17 @@ section{padding:50px 0}
 footer{background:var(--navy-deep);color:#CFC9E6;padding:40px 0 30px;font-size:14.5px}
 footer a{color:#fff;text-decoration:none}
 .foot-in{display:flex;flex-wrap:wrap;gap:26px;justify-content:space-between}
-.foot-title{font-family:'Cormorant Garamond',serif;font-size:21px;color:#fff;margin-bottom:16px}
+.foot-title{font-family:'Cormorant Garamond',serif;font-size:21px;color:var(--gold);margin-bottom:16px}
+.foot-title::after{content:'';display:block;width:38px;height:2px;background:var(--gold);margin-top:12px}
 .foot-studio{line-height:1.75}
 .foot-studio b{color:#fff;font-weight:500}
 .foot-nav{display:flex;flex-wrap:wrap;gap:6px 18px;margin-top:24px;
-          padding-top:20px;border-top:1px solid rgba(255,255,255,.14)}
+          padding-top:20px;border-top:1px solid rgba(212,184,150,.32)}
 .foot-nav a{text-decoration:none;opacity:.85}
 
 /* липкая кнопка на телефоне */
 .sticky{position:fixed;left:0;right:0;bottom:0;z-index:60;padding:10px 16px calc(10px + env(safe-area-inset-bottom));
-        background:rgba(250,246,239,.95);backdrop-filter:blur(10px);border-top:1px solid var(--line);display:none}
+        background:rgba(250,246,239,.95);backdrop-filter:blur(10px);border-top:2px solid var(--gold);display:none}
 .sticky .btn{width:100%}
 @media(max-width:720px){
   body{font-size:16px;overflow-x:hidden}
