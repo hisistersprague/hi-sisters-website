@@ -403,8 +403,9 @@ section{padding:50px 0}
     color:#fff;border:0;overflow:hidden;position:relative}
 .bf .wrap{position:relative;z-index:1}
 /* две ленты крест-накрест, как в сторис */
-.bf-tapes{position:absolute;top:0;left:0;right:0;height:132px;overflow:hidden;
+.bf-tapes{position:absolute;inset:0;overflow:hidden;
           pointer-events:none;user-select:none;z-index:2}
+.bf-pair{position:absolute;left:0;right:0;height:132px}
 .bf-tape{position:absolute;left:-10%;width:120%;display:block;white-space:nowrap;
          font-family:'Jost',sans-serif;font-weight:700;font-size:21px;letter-spacing:.1em;
          color:#fff;padding:7px 0;text-align:center}
@@ -412,10 +413,14 @@ section{padding:50px 0}
               box-shadow:0 2px 12px rgba(0,0,0,.35)}
 .bf-tape-pink{top:62px;transform:rotate(7deg);background:var(--bf-pink);color:#fff;
               box-shadow:0 2px 12px rgba(0,0,0,.2)}
-.bf .wrap{padding-top:124px}
+/* ленты ниже первой — тише, чтобы не спорить с текстом */
+.bf-pair:not(:first-child){opacity:.3}
+.bf-pair:not(:first-child) .bf-tape{font-size:18px}
+.bf .wrap{padding-top:124px;position:relative;z-index:3}
 @media(max-width:720px){
-  .bf-tapes{height:112px}
+  .bf-pair{height:112px}
   .bf-tape{font-size:16px;padding:6px 0}
+  .bf-pair:not(:first-child) .bf-tape{font-size:14px}
   .bf-tape-dark{top:28px}
   .bf-tape-pink{top:52px}
   .bf .wrap{padding-top:104px}
@@ -430,7 +435,8 @@ section{padding:50px 0}
 .bf h2{font-family:'Jost',sans-serif;font-weight:500;text-transform:uppercase;line-height:1.2;
        font-size:clamp(22px,3.6vw,32px);color:#fff;max-width:20em;letter-spacing:.01em}
 .bf h2::before{display:none}
-.bf-rows{border-top:1px solid rgba(242,181,232,.28)}
+.bf-rows{border-top:1px solid rgba(242,181,232,.28);background:rgba(10,7,56,.62);
+   border-radius:16px;padding:0 18px;backdrop-filter:blur(2px)}
 .bf-row{display:flex;flex-wrap:wrap;align-items:flex-start;justify-content:space-between;gap:12px 24px;
         padding:20px 0;border-bottom:1px solid rgba(242,181,232,.28)}
 .bf-main{flex:1 1 300px}
@@ -563,6 +569,34 @@ section{padding:50px 0}
 /* прайс: группа — кнопка, раскрывается таблицей */
 .ptab-h{font-family:'Cormorant Garamond',serif;font-size:23px;font-weight:600;
    margin:30px 0 10px;padding-top:22px;border-top:1px solid var(--line-gold)}
+.pslides{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;
+   padding:4px 0 14px;scrollbar-width:thin;-webkit-overflow-scrolling:touch}
+.pslides::-webkit-scrollbar{height:6px}
+.pslides::-webkit-scrollbar-thumb{background:var(--line-gold);border-radius:999px}
+.pslide{flex:0 0 min(88%,345px);scroll-snap-align:center;border-radius:18px;overflow:hidden;
+   position:relative;background:var(--navy-deep);color:#fff;
+   border:1px solid rgba(239,217,180,.32);display:flex;flex-direction:column}
+.pslide::before{content:'';position:absolute;inset:0;
+   background-image:linear-gradient(168deg,rgba(19,11,86,.80),rgba(10,7,56,.93)),
+     url(/assets/photos/hero-bg.jpg);
+   background-size:cover,cover;background-position:center,58% 34%}
+.pslide-in{position:relative;z-index:1;padding:22px 20px 24px;display:flex;flex-direction:column;flex:1}
+.pslide-kick{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold-ui);
+   margin-bottom:6px}
+.pslide h3{font-family:'Cormorant Garamond',serif;font-size:27px;font-weight:600;line-height:1.1;
+   color:#fff;margin-bottom:14px}
+.pslide .prow{display:flex;justify-content:space-between;gap:12px;padding:8px 0;font-size:14px;
+   border-bottom:1px solid rgba(255,255,255,.13);background:none;color:#E4DFF3}
+.pslide .prow:last-child{border-bottom:0}
+.pslide .prow span:last-child{font-family:'Jost',sans-serif;font-size:14.5px;font-weight:600;
+   color:var(--gold-ui);white-space:nowrap}
+.pslide-cta{margin-top:auto;padding-top:16px}
+.pslide-cta .btn{width:100%;background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.pnav{display:flex;align-items:center;gap:10px;margin-top:2px}
+.pnav button{width:38px;height:38px;border-radius:50%;border:1px solid var(--line-gold);
+   background:#fff;color:var(--navy);cursor:pointer;font-size:17px;line-height:1;transition:.15s}
+.pnav button:hover{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.pnav-hint{font-size:13.5px;color:var(--muted)}
 .pacc{display:grid;gap:10px}
 .pgroup{background:#fff;border:1px solid var(--line-gold);border-radius:14px;overflow:hidden}
 .pgroup[open]{border-color:var(--accent);box-shadow:0 10px 28px rgba(19,11,86,.07)}
