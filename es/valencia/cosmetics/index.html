@@ -27,7 +27,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/assets/app.css?v=00e09566">
+<link rel="stylesheet" href="/assets/app.css?v=66165391">
 <link rel="icon" href="/favicon.svg">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-K921K357QH"></script>
 <script>
@@ -72,7 +72,8 @@ addEventListener('click',function(ev){
   <div class="shop-bar"><div class="shop-row"><label class="shop-lbl" for="shop-sort">Orden</label><select class="shop-sort" id="shop-sort"><option value="def">Recomendado</option><option value="asc">Precio, de menor a mayor</option><option value="desc">Precio, de mayor a menor</option></select></div></div>
   <div class="shop-count">Productos: <span id="shop-n">3</span></div>
   <div class="prods" id="shop-grid" data-msg="¡Hola! Me gustaría pedir: {p}" data-msgpre="¡Hola! Me gustaría reservar: {p}"><article class="prod" data-brand="Happy Intim" data-cat="body"
-data-stock="" data-price="65" data-ord="0">
+data-stock="" data-top=""
+data-price="65" data-ord="0">
 <figure class="prod-pic"><span class="prod-cat">Cuerpo</span><span class="prod-ph">BO</span></figure>
 <div class="brand">Happy Intim</div>
 <h3>Body Butter</h3>
@@ -81,7 +82,8 @@ data-stock="" data-price="65" data-ord="0">
 <a class="btn btn-sm btn-gold prod-order" href="https://wa.me/34637024759" data-p="Happy Intim Body Butter, 200 ml"
 target="_blank" rel="noopener">Pedir</a>
 </article><article class="prod" data-brand="Happy Intim" data-cat="body"
-data-stock="" data-price="65" data-ord="1">
+data-stock="" data-top=""
+data-price="65" data-ord="1">
 <figure class="prod-pic"><span class="prod-cat">Cuerpo</span><span class="prod-ph">BO</span></figure>
 <div class="brand">Happy Intim</div>
 <h3>Body Peel</h3>
@@ -90,7 +92,8 @@ data-stock="" data-price="65" data-ord="1">
 <a class="btn btn-sm btn-gold prod-order" href="https://wa.me/34637024759" data-p="Happy Intim Body Peel, 150 ml"
 target="_blank" rel="noopener">Pedir</a>
 </article><article class="prod" data-brand="Happy Intim" data-cat="body"
-data-stock="" data-price="65" data-ord="2">
+data-stock="" data-top=""
+data-price="65" data-ord="2">
 <figure class="prod-pic"><span class="prod-cat">Cuerpo</span><span class="prod-ph">CR</span></figure>
 <div class="brand">Happy Intim</div>
 <h3>Cream Lightening</h3>
@@ -108,7 +111,7 @@ target="_blank" rel="noopener">Pedir</a>
   var nEl=document.getElementById('shop-n');
   var empty=document.getElementById('shop-empty');
   var sel=document.getElementById('shop-sort');
-  var f={brand:'',cat:'',stock:''};
+  var f={brand:'',cat:'',stock:'',top:''};
   cards.forEach(function(c){
     var a=c.querySelector('.prod-order'); if(!a) return;
     var tpl=grid.dataset[c.dataset.stock==='pre'?'msgpre':'msg']||'{p}';
@@ -118,7 +121,7 @@ target="_blank" rel="noopener">Pedir</a>
     var n=0;
     cards.forEach(function(c){
       var ok=(!f.brand||c.dataset.brand===f.brand)&&(!f.cat||c.dataset.cat===f.cat)
-             &&(!f.stock||c.dataset.stock===f.stock);
+             &&(!f.stock||c.dataset.stock===f.stock)&&(!f.top||c.dataset.top==='1');
       c.hidden=!ok; if(ok) n++;
     });
     if(nEl) nEl.textContent=n;
