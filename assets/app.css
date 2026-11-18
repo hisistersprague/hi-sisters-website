@@ -335,6 +335,17 @@ section{padding:50px 0}
 
 /* перечень услуг на главной */
 .svc-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}
+@media(min-width:1024px){.svc-list{grid-template-columns:none;grid-auto-flow:column;
+   grid-auto-columns:minmax(0,1fr);gap:10px}
+  .svc-list b{font-size:19px}
+  .svc-list a,.svc-list div{padding:14px 15px}}
+.dark-photo{position:relative;background-color:var(--navy)}
+.dark-photo::before{content:'';position:absolute;inset:0;pointer-events:none;
+   background-image:linear-gradient(170deg,rgba(19,11,86,.84),rgba(10,7,56,.90)),
+     url(/assets/photos/what-bg.jpg);
+   background-size:cover,cover;background-position:center,30% 32%;
+   background-repeat:no-repeat,no-repeat}
+.dark-photo>.wrap{position:relative;z-index:1}
 .svc-list a,.svc-list div{display:block;padding:16px 18px;background:#fff;border:1px solid var(--line-gold);
    border-radius:12px;text-decoration:none;transition:border-color .15s}
 .svc-list a:hover{border-color:var(--navy)}
