@@ -203,6 +203,21 @@ section{padding:50px 0}
       border-bottom:1px solid var(--cream-deep);font-size:15.5px}
 .prow:last-child{border-bottom:0}
 .prow span:last-child{font-family:'Cormorant Garamond',serif;font-size:19px;white-space:nowrap}
+
+/* на телефоне карточка услуги — строка со значком, а не экран на каждую */
+@media(max-width:720px){
+  .svc{gap:10px}
+  .svc-card{flex-direction:row;align-items:stretch;border-radius:12px}
+  .svc-card img{width:104px;min-width:104px;height:auto;aspect-ratio:auto;align-self:stretch}
+  .svc-body{padding:13px 14px}
+  .svc-body h3{font-size:18.5px;margin-bottom:4px;line-height:1.15}
+  .svc-body p{font-size:13.5px;line-height:1.45;flex:none;display:-webkit-box;
+     -webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+  .svc-body{justify-content:center}
+  .svc-foot{margin-top:10px;gap:8px}
+  .svc-price{font-size:18px}
+  .svc-foot .btn-sm{padding:7px 12px;font-size:13px}
+}
 .pcols{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px}
 .pcol h3{font-size:22px;margin-bottom:12px}
 
@@ -578,8 +593,8 @@ footer a{color:#fff;text-decoration:none}
 
 /* липкая кнопка на телефоне */
 .sticky{position:fixed;left:0;right:0;bottom:0;z-index:60;padding:10px 16px calc(10px + env(safe-area-inset-bottom));
-        background:rgba(10,7,56,.94);backdrop-filter:blur(10px);border-top:1px solid var(--gold-ui);display:none}
-.sticky .btn-gold{background:var(--gold-ui);border-color:var(--gold-ui);color:var(--navy-deep)}
+        background:rgba(255,255,255,.96);backdrop-filter:blur(10px);border-top:1px solid var(--line-gold);display:none}
+.sticky .btn-gold{background:var(--navy);border-color:var(--navy);color:#fff;font-weight:500}
 .sticky .btn{width:100%}
 @media(max-width:720px){
   body{font-size:16px;overflow-x:hidden}
