@@ -27,7 +27,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/assets/app.css?v=e27f1304">
+<link rel="stylesheet" href="/assets/app.css?v=50c77ba0">
 <link rel="icon" href="/favicon.svg">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-K921K357QH"></script>
 <script>
@@ -69,7 +69,7 @@ addEventListener('click',function(ev){
 
 <section class="rose"><div class="wrap">
   <div class="sec-head"><h2>Каталог</h2></div>
-  <div class="shop-bar"><div class="shop-row shop-find"><input type="search" id="shop-q" placeholder="Пошук за назвою або брендом" autocomplete="off" aria-label="Пошук за назвою або брендом"></div><div class="shop-row"><label class="shop-lbl" for="shop-sort">Сортування</label><select class="shop-sort" id="shop-sort"><option value="def">За добором</option><option value="asc">Спочатку дешевші</option><option value="desc">Спочатку дорожчі</option></select></div></div>
+  <div class="shop-bar"><div class="shop-row shop-find"><input type="search" id="shop-q" placeholder="Пошук за назвою або брендом" autocomplete="off" aria-label="Пошук за назвою або брендом"><button class="chip shop-toggle" type="button" id="shop-more" aria-expanded="false" aria-controls="shop-rows">Фільтри</button></div><div class="shop-rows" id="shop-rows"><div class="shop-row"><label class="shop-lbl" for="shop-sort">Сортування</label><select class="shop-sort" id="shop-sort"><option value="def">За добором</option><option value="asc">Спочатку дешевші</option><option value="desc">Спочатку дорожчі</option></select></div></div></div>
   <div class="shop-count">Товарів: <span id="shop-n">3</span></div>
   <div class="prods" id="shop-grid" data-msg="Вітаю! Хочу замовити: {p}" data-msgpre="Вітаю! Хочу оформити передзамовлення: {p}"><article class="prod" data-brand="Happy Intim" data-cat="body"
 data-stock="" data-top=""
@@ -117,6 +117,11 @@ target="_blank" rel="noopener">Замовити</a>
     var tpl=grid.dataset[c.dataset.stock==='pre'?'msgpre':'msg']||'{p}';
     a.href=a.getAttribute('href')+'?text='+encodeURIComponent(tpl.replace('{p}',a.dataset.p));
   });
+  var more=document.getElementById('shop-more'), rowsEl=document.getElementById('shop-rows');
+  if(more&&rowsEl){ more.addEventListener('click',function(){
+    var open=rowsEl.classList.toggle('is-open');
+    more.setAttribute('aria-expanded',open?'true':'false');
+    more.classList.toggle('is-on',open); }); }
   var q=document.getElementById('shop-q');
   function stem(w){ return w.length>5?w.slice(0,w.length-2):(w.length>3?w.slice(0,w.length-1):w); }
   function terms(v){
