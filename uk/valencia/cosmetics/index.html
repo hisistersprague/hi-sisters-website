@@ -71,40 +71,34 @@ addEventListener('click',function(ev){
   <div class="sec-head"><h2>Каталог</h2></div>
   <div class="shop-bar"><div class="shop-row"><label class="shop-lbl" for="shop-sort">Сортування</label><select class="shop-sort" id="shop-sort"><option value="def">За добором</option><option value="asc">Спочатку дешевші</option><option value="desc">Спочатку дорожчі</option></select></div></div>
   <div class="shop-count">Товарів: <span id="shop-n">3</span></div>
-  <div class="prods" id="shop-grid">
-      <article class="prod" data-brand="Happy Intim" data-cat="body"
-               data-stock="" data-price="65" data-ord="0">
-        <figure class="prod-pic"><span class="prod-cat">Тіло</span><span class="prod-ph">BO</span></figure>
-        <div class="brand">Happy Intim</div>
-        <h3>Body Butter</h3>
-        <p class="prod-for"></p>
-        
-        <div class="pm"><span>200 ml</span><b>65 €</b></div>
-        <a class="btn btn-sm btn-gold prod-order" href="https://wa.me/34637024759?text=%D0%92%D1%96%D1%82%D0%B0%D1%8E%21%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BC%D0%BE%D0%B2%D0%B8%D1%82%D0%B8%3A%20Happy%20Intim%20Body%20Butter%2C%20200%20ml"
-           target="_blank" rel="noopener">Замовити</a>
-      </article>
-      <article class="prod" data-brand="Happy Intim" data-cat="body"
-               data-stock="" data-price="65" data-ord="1">
-        <figure class="prod-pic"><span class="prod-cat">Тіло</span><span class="prod-ph">BO</span></figure>
-        <div class="brand">Happy Intim</div>
-        <h3>Body Peel</h3>
-        <p class="prod-for"></p>
-        
-        <div class="pm"><span>150 ml</span><b>65 €</b></div>
-        <a class="btn btn-sm btn-gold prod-order" href="https://wa.me/34637024759?text=%D0%92%D1%96%D1%82%D0%B0%D1%8E%21%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BC%D0%BE%D0%B2%D0%B8%D1%82%D0%B8%3A%20Happy%20Intim%20Body%20Peel%2C%20150%20ml"
-           target="_blank" rel="noopener">Замовити</a>
-      </article>
-      <article class="prod" data-brand="Happy Intim" data-cat="body"
-               data-stock="" data-price="65" data-ord="2">
-        <figure class="prod-pic"><span class="prod-cat">Тіло</span><span class="prod-ph">CR</span></figure>
-        <div class="brand">Happy Intim</div>
-        <h3>Cream Lightening</h3>
-        <p class="prod-for"></p>
-        
-        <div class="pm"><span>50 ml</span><b>65 €</b></div>
-        <a class="btn btn-sm btn-gold prod-order" href="https://wa.me/34637024759?text=%D0%92%D1%96%D1%82%D0%B0%D1%8E%21%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BC%D0%BE%D0%B2%D0%B8%D1%82%D0%B8%3A%20Happy%20Intim%20Cream%20Lightening%2C%2050%20ml"
-           target="_blank" rel="noopener">Замовити</a>
-      </article></div>
+  <div class="prods" id="shop-grid" data-msg="Вітаю! Хочу замовити: {p}" data-msgpre="Вітаю! Хочу оформити передзамовлення: {p}"><article class="prod" data-brand="Happy Intim" data-cat="body"
+data-stock="" data-price="65" data-ord="0">
+<figure class="prod-pic"><span class="prod-cat">Тіло</span><span class="prod-ph">BO</span></figure>
+<div class="brand">Happy Intim</div>
+<h3>Body Butter</h3>
+<p class="prod-for"></p>
+<div class="pm"><span>200 ml</span><b>65 €</b></div>
+<a class="btn btn-sm btn-gold prod-order" href="https://wa.me/34637024759" data-p="Happy Intim Body Butter, 200 ml"
+target="_blank" rel="noopener">Замовити</a>
+</article><article class="prod" data-brand="Happy Intim" data-cat="body"
+data-stock="" data-price="65" data-ord="1">
+<figure class="prod-pic"><span class="prod-cat">Тіло</span><span class="prod-ph">BO</span></figure>
+<div class="brand">Happy Intim</div>
+<h3>Body Peel</h3>
+<p class="prod-for"></p>
+<div class="pm"><span>150 ml</span><b>65 €</b></div>
+<a class="btn btn-sm btn-gold prod-order" href="https://wa.me/34637024759" data-p="Happy Intim Body Peel, 150 ml"
+target="_blank" rel="noopener">Замовити</a>
+</article><article class="prod" data-brand="Happy Intim" data-cat="body"
+data-stock="" data-price="65" data-ord="2">
+<figure class="prod-pic"><span class="prod-cat">Тіло</span><span class="prod-ph">CR</span></figure>
+<div class="brand">Happy Intim</div>
+<h3>Cream Lightening</h3>
+<p class="prod-for"></p>
+<div class="pm"><span>50 ml</span><b>65 €</b></div>
+<a class="btn btn-sm btn-gold prod-order" href="https://wa.me/34637024759" data-p="Happy Intim Cream Lightening, 50 ml"
+target="_blank" rel="noopener">Замовити</a>
+</article></div>
   <p class="shop-empty" id="shop-empty" hidden>За цими фільтрами нічого немає — зніміть один із них.</p>
 </div></section>
 <script>
@@ -115,6 +109,11 @@ addEventListener('click',function(ev){
   var empty=document.getElementById('shop-empty');
   var sel=document.getElementById('shop-sort');
   var f={brand:'',cat:'',stock:''};
+  cards.forEach(function(c){
+    var a=c.querySelector('.prod-order'); if(!a) return;
+    var tpl=grid.dataset[c.dataset.stock==='pre'?'msgpre':'msg']||'{p}';
+    a.href=a.getAttribute('href')+'?text='+encodeURIComponent(tpl.replace('{p}',a.dataset.p));
+  });
   function apply(){
     var n=0;
     cards.forEach(function(c){
