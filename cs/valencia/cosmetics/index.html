@@ -23,7 +23,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/assets/app.css?v=057bddaf">
+<link rel="stylesheet" href="/assets/app.css?v=dbefc8d5">
 <link rel="icon" href="/favicon.svg">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-K921K357QH"></script>
 <script>
@@ -60,9 +60,16 @@ addEventListener('click',function(ev){
 
 <section class="tint"><div class="wrap">
   <div class="sec-head"><h2>Péče o tělo</h2><p>Řada pro domácí pokračování epilační kúry: jemný peeling, výživa a sjednocení tónu pleti.</p></div>
-  <div class="prods">
-      <article class="prod">
-        <figure class="prod-pic"><span>BO</span></figure>
+</div></section>
+
+<section class="rose"><div class="wrap">
+  <div class="sec-head"><h2>Katalog</h2></div>
+  <div class="shop-bar"><div class="shop-row"><label class="shop-lbl" for="shop-sort">Řazení</label><select class="shop-sort" id="shop-sort"><option value="def">Dle výběru</option><option value="asc">Od nejlevnějšího</option><option value="desc">Od nejdražšího</option></select></div></div>
+  <div class="shop-count">Produktů: <span id="shop-n">3</span></div>
+  <div class="prods" id="shop-grid">
+      <article class="prod" data-brand="" data-cat="body"
+               data-price="65" data-ord="0">
+        <figure class="prod-pic"><span class="prod-cat">Tělo</span><span>BO</span></figure>
         
         <h3>Body Butter</h3>
         <p class="prod-for"></p>
@@ -71,8 +78,9 @@ addEventListener('click',function(ev){
         <a class="btn btn-sm btn-gold prod-order" href="https://wa.me/34637024759?text=Dobr%C3%BD%20den%21%20Cht%C4%9Bla%20bych%20objednat%3A%20Body%20Butter"
            target="_blank" rel="noopener">Objednat</a>
       </article>
-      <article class="prod">
-        <figure class="prod-pic"><span>BO</span></figure>
+      <article class="prod" data-brand="" data-cat="body"
+               data-price="65" data-ord="1">
+        <figure class="prod-pic"><span class="prod-cat">Tělo</span><span>BO</span></figure>
         
         <h3>Body Peel</h3>
         <p class="prod-for"></p>
@@ -81,8 +89,9 @@ addEventListener('click',function(ev){
         <a class="btn btn-sm btn-gold prod-order" href="https://wa.me/34637024759?text=Dobr%C3%BD%20den%21%20Cht%C4%9Bla%20bych%20objednat%3A%20Body%20Peel"
            target="_blank" rel="noopener">Objednat</a>
       </article>
-      <article class="prod">
-        <figure class="prod-pic"><span>CR</span></figure>
+      <article class="prod" data-brand="" data-cat="body"
+               data-price="65" data-ord="2">
+        <figure class="prod-pic"><span class="prod-cat">Tělo</span><span>CR</span></figure>
         
         <h3>Cream Lightening</h3>
         <p class="prod-for"></p>
@@ -91,8 +100,46 @@ addEventListener('click',function(ev){
         <a class="btn btn-sm btn-gold prod-order" href="https://wa.me/34637024759?text=Dobr%C3%BD%20den%21%20Cht%C4%9Bla%20bych%20objednat%3A%20Cream%20Lightening"
            target="_blank" rel="noopener">Objednat</a>
       </article></div>
+  <p class="shop-empty" id="shop-empty" hidden>S těmito filtry nic nenajdeme — jeden z nich zrušte.</p>
 </div></section>
-
+<script>
+(function(){
+  var grid=document.getElementById('shop-grid'); if(!grid) return;
+  var cards=[].slice.call(grid.children);
+  var nEl=document.getElementById('shop-n');
+  var empty=document.getElementById('shop-empty');
+  var sel=document.getElementById('shop-sort');
+  var f={brand:'',cat:''};
+  function apply(){
+    var n=0;
+    cards.forEach(function(c){
+      var ok=(!f.brand||c.dataset.brand===f.brand)&&(!f.cat||c.dataset.cat===f.cat);
+      c.hidden=!ok; if(ok) n++;
+    });
+    if(nEl) nEl.textContent=n;
+    if(empty) empty.hidden=n>0;
+  }
+  function sort(){
+    var v=sel?sel.value:'def';
+    var a=cards.slice();
+    if(v==='asc') a.sort(function(x,y){return x.dataset.price-y.dataset.price;});
+    else if(v==='desc') a.sort(function(x,y){return y.dataset.price-x.dataset.price;});
+    else a.sort(function(x,y){return x.dataset.ord-y.dataset.ord;});
+    a.forEach(function(c){grid.appendChild(c);});
+  }
+  [].forEach.call(document.querySelectorAll('.chips'),function(box){
+    box.addEventListener('click',function(ev){
+      var b=ev.target.closest('.chip'); if(!b) return;
+      [].forEach.call(box.children,function(x){x.classList.remove('is-on');});
+      b.classList.add('is-on');
+      f[box.dataset.f]=b.dataset.v||'';
+      apply();
+    });
+  });
+  if(sel) sel.addEventListener('change',sort);
+  apply();
+})();
+</script>
 <section class="alt"><div class="wrap"><p class="note">Tělová řada je k dostání ve studiu ve Valencii. Kosmetika na vlasy a pokožku hlavy je v pražské klinice.</p></div></section>
 
 <section class="band"><div class="wrap">
