@@ -190,6 +190,13 @@ section{padding:50px 0}
 .rose .rev{border-color:var(--rose-line)}
 .rose .btn-gold{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
 .rose .btn-ghost{color:var(--navy);border-color:var(--navy)}
+.rose-photo{position:relative;background-color:var(--rose)}
+.rose-photo::before{content:'';position:absolute;inset:0;pointer-events:none;
+   background-image:linear-gradient(180deg,rgba(248,237,230,.88),rgba(248,237,230,.93)),
+     url(/assets/photos/why-bg.jpg);
+   background-size:cover,cover;background-position:center,center 22%;
+   background-repeat:no-repeat,no-repeat}
+.rose-photo>.wrap{position:relative;z-index:1}
 .lilac .card,.lilac .ptable,.lilac .studio,.lilac .prod,.lilac .mate,.lilac .svc-card,
 .lilac .offer,.lilac .course{background:#fff}
 
