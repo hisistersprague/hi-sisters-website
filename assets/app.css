@@ -563,6 +563,7 @@ section{padding:50px 0}
 .prod{position:relative}
 
 /* панель фильтров каталога */
+.shop-brands{margin-top:10px;font-size:14px;color:var(--muted)}
 .shop-find{flex-direction:row;align-items:center;gap:10px}
 .shop-toggle{display:none}
 @media(max-width:767px){
