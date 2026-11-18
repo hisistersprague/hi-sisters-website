@@ -18,7 +18,7 @@ img{max-width:100%}
 
 /* ─── шапка: верхняя строка + строка навигации ─── */
 .top{position:sticky;top:0;z-index:50;background:var(--navy);color:#fff;
-     border-bottom:2px solid var(--gold)}
+     border-bottom:1px solid rgba(212,184,150,.3)}
 .top-in{display:flex;align-items:center;gap:14px;height:62px}
 .brand{display:block;width:100px;height:46px;flex-shrink:0;text-decoration:none;background:#fff;
        -webkit-mask:url(/new/assets/logo.svg) no-repeat left center/contain;
@@ -54,52 +54,64 @@ img{max-width:100%}
                                            color:var(--navy-deep)}
 .band .btn-gold:hover,.top .btn:hover{opacity:.9}
 
-/* ─── первый экран ─── */
-.hero{padding:52px 0 42px}
-.hero-sm{padding:40px 0 26px}
-.kicker{font-size:12.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--gold-dark);
+/* ─── первый экран: тёмный, в цвет логотипа ─── */
+.hero{position:relative;overflow:hidden;padding:56px 0 46px;color:#fff;
+      background:linear-gradient(165deg,var(--navy-light) 0%,var(--navy) 42%,var(--navy-deep) 100%)}
+.hero::before{content:'';position:absolute;top:-240px;right:-180px;width:620px;height:620px;
+      border-radius:50%;pointer-events:none;
+      background:radial-gradient(circle,rgba(212,184,150,.26) 0%,rgba(212,184,150,0) 68%)}
+.hero::after{content:'';position:absolute;left:0;right:0;bottom:0;height:2px;background:var(--gold)}
+.hero .wrap{position:relative;z-index:1}
+.hero-sm{padding:42px 0 30px}
+.kicker{font-size:12.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);
         margin-bottom:14px}
-.kicker a{color:var(--gold-dark)}
-.hero h1{font-size:clamp(30px,6vw,52px);margin-bottom:18px;max-width:17em}
+.kicker a{color:var(--gold)}
+.hero h1{font-size:clamp(30px,6vw,52px);margin-bottom:18px;max-width:17em;color:#fff}
 .hero-sm h1{font-size:clamp(34px,7vw,56px)}
-.hero .lead{font-size:clamp(17px,2.4vw,20px);color:var(--muted);max-width:32em;margin-bottom:26px}
+.hero .lead{font-size:clamp(17px,2.4vw,20px);color:#CFC9E6;max-width:32em;margin-bottom:26px}
+.hero .free{color:#CFC9E6}
+.hero .btn-gold{background:var(--gold);border-color:var(--gold);color:var(--navy-deep)}
+.hero .btn-ghost{background:transparent;color:var(--gold);border-color:var(--gold)}
+.hero .btn-ghost:hover{background:rgba(212,184,150,.14)}
 .fact{display:flex;align-items:baseline;gap:7px;padding:9px 15px;background:#fff;
       border:1px solid var(--line);border-radius:999px;font-size:14.5px}
 .fact b{font-family:'Cormorant Garamond',serif;font-size:19px;font-weight:600}
 .cta-row{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-bottom:26px}
 .free{font-size:14px;color:var(--muted)}
 .proof{display:flex;flex-wrap:wrap;align-items:center;gap:18px 26px;
-       padding-top:22px;border-top:1px solid var(--line)}
+       padding-top:22px;border-top:1px solid rgba(212,184,150,.3)}
 .stars{color:var(--gold-dark);letter-spacing:.08em}
 .hero-badge{display:inline-flex;align-items:center;gap:13px;padding:10px 22px 10px 12px;
-            background:#fff;border:1px solid var(--gold);border-radius:60px;
-            box-shadow:0 8px 26px rgba(19,11,86,.09)}
+            background:rgba(255,255,255,.1);backdrop-filter:blur(12px);
+            border:1px solid rgba(212,184,150,.5);border-radius:60px;
+            box-shadow:0 10px 30px rgba(10,7,40,.35)}
 .hero-badge-avatars{display:flex;flex-shrink:0}
 .hero-badge-avatars img{width:38px;height:38px;border-radius:50%;object-fit:cover;
-            border:2px solid #fff;margin-left:-12px;background:var(--navy-light)}
+            border:2px solid var(--gold-light);margin-left:-12px;background:var(--navy-light)}
 .hero-badge-avatars img:first-child{margin-left:0}
 .hero-badge-text{line-height:1.12}
 .hero-badge-num{display:block;font-family:'Cormorant Garamond',serif;font-size:30px;
-            font-weight:600;color:var(--navy)}
-.hero-badge-lbl{display:block;font-size:12.5px;color:var(--muted);letter-spacing:.02em}
+            font-weight:600;color:var(--gold-light)}
+.hero-badge-lbl{display:block;font-size:12.5px;color:#E7E2FB;letter-spacing:.02em}
 .proof-side{display:flex;flex-direction:column;gap:7px}
-.proof-years{font-size:14px;color:var(--muted)}
-.proof-years b{font-family:'Cormorant Garamond',serif;font-size:21px;color:var(--ink)}
+.proof-years{font-size:14px;color:#CFC9E6}
+.proof-years b{font-family:'Cormorant Garamond',serif;font-size:21px;color:var(--gold-light)}
 .rev-trust{display:inline-flex;align-items:center;gap:10px;text-decoration:none}
-.rev-trust-stars{color:var(--gold-dark);letter-spacing:2px;font-size:17px}
+.rev-trust-stars{color:var(--gold);letter-spacing:2px;font-size:17px}
 .rev-trust-text{color:var(--navy);font-size:14.5px;font-weight:500;
             border-bottom:1px solid var(--navy)}
+.hero .rev-trust-text{color:#fff;border-bottom-color:var(--gold)}
 .sec-head+.rev-trust{margin:-14px 0 22px}
 .alt .rev-trust-text{color:var(--navy)}
-.where{margin-top:20px;font-size:14.5px;color:var(--muted)}
-.where a{color:var(--navy);text-underline-offset:3px}
+.where{margin-top:20px;font-size:14.5px;color:#CFC9E6}
+.where a{color:var(--gold-light);text-underline-offset:3px}
 .dirs{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px;margin-bottom:26px}
-.dir{padding:16px 18px;background:#fff;border:1px solid var(--line);border-radius:12px;
-     text-decoration:none;display:block;transition:border-color .15s}
-.dir:hover{border-color:var(--gold)}
-.dir b{display:block;font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:600}
-.dir span{display:block;font-size:14px;color:var(--muted);margin:3px 0 8px}
-.dir em{font-style:normal;font-size:15.5px;color:var(--gold-dark)}
+.dir{padding:16px 18px;background:rgba(255,255,255,.07);border:1px solid rgba(212,184,150,.45);
+     border-radius:12px;text-decoration:none;display:block;transition:border-color .15s,background .15s}
+.dir:hover{border-color:var(--gold);background:rgba(255,255,255,.12)}
+.dir b{display:block;font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:600;color:#fff}
+.dir span{display:block;font-size:14px;color:#CFC9E6;margin:3px 0 8px}
+.dir em{font-style:normal;font-size:15.5px;color:var(--gold)}
 
 /* ─── секции ─── */
 section{padding:50px 0}
