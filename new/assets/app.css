@@ -20,9 +20,14 @@ img{max-width:100%}
 .top{position:sticky;top:0;z-index:50;background:var(--navy);color:#fff;
      border-bottom:1px solid rgba(212,184,150,.3)}
 .top-in{display:flex;align-items:center;gap:14px;height:62px}
-.brand{display:block;width:100px;height:46px;flex-shrink:0;text-decoration:none;background:#fff;
-       -webkit-mask:url(/new/assets/logo.svg) no-repeat left center/contain;
-       mask:url(/new/assets/logo.svg) no-repeat left center/contain}
+/* логотип рисуем двумя слоями одной маски: имя золотом, подпись белым */
+.brand{position:relative;display:block;width:100px;height:47px;flex-shrink:0;text-decoration:none}
+.brand span{position:absolute;left:0;width:100%;
+            -webkit-mask:url(/new/assets/logo.svg) no-repeat 0 0/100% auto;
+            mask:url(/new/assets/logo.svg) no-repeat 0 0/100% auto}
+.brand .brand-top{top:0;height:35px;background:var(--gold)}
+.brand .brand-sub{top:35px;height:12px;background:#fff;
+           -webkit-mask-position:0 -35px;mask-position:0 -35px}
 .top-sp{flex:1}
 .langs{display:flex;gap:2px}
 .langs a{display:block;padding:5px 8px;font-size:12.5px;letter-spacing:.06em;
@@ -72,8 +77,9 @@ img{max-width:100%}
         text-transform:uppercase;color:var(--gold);margin-bottom:14px;max-width:26em;line-height:1.5}
 .hero .slogan{font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;line-height:1.12;
         letter-spacing:-.01em;font-size:clamp(30px,6vw,52px);margin-bottom:18px;max-width:17em;color:#fff}
+.hero .slogan .g{color:var(--gold)}
 .hero .lead{font-size:clamp(17px,2.4vw,20px);color:#CFC9E6;max-width:32em;margin-bottom:26px}
-.hero .free{color:#CFC9E6}
+.hero .free{color:var(--gold-light)}
 .hero .btn-gold{background:var(--gold);border-color:var(--gold);color:var(--navy-deep)}
 .hero .btn-ghost{background:transparent;color:var(--gold);border-color:var(--gold)}
 .hero .btn-ghost:hover{background:rgba(212,184,150,.14)}
@@ -337,7 +343,9 @@ footer a{color:#fff;text-decoration:none}
 @media(max-width:720px){
   body{font-size:16px;overflow-x:hidden}
   .top-in{height:56px;gap:10px}
-  .brand{width:82px;height:38px}
+  .brand{width:82px;height:39px}
+  .brand .brand-top{height:29px}
+  .brand .brand-sub{top:29px;height:10px;-webkit-mask-position:0 -29px;mask-position:0 -29px}
   .hero{padding:32px 0 28px}
   .hero-sm{padding:26px 0 20px}
   .top-tel{display:none}
