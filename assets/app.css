@@ -1,10 +1,10 @@
 
 :root{
   --navy:#130B56; --navy-deep:#0A0738; --navy-light:#1E1670;
-  --gold:#D6B57D; --gold-light:#F3DBB1; --gold-dark:#A8895A;
+  --gold:#D6B57D; --gold-light:#F2DDD0; --gold-dark:#A8895A;
   --accent:#F2B5E8;            /* розовый из сторис — на кнопках и активных элементах */
   --accent-ink:#2B0F55;
-  --gold-ui:#EFD9B4;           /* светлое шампанское золото — из бликов логотипа */
+  --gold-ui:#E8C6B0;           /* розовое золото: тёплое, но без желтизны */
   --blush:#FBF1F8;             /* светло-розовый фон для чередования секций */
   --lilac:#F3F0FB;             /* светло-сиреневый фон */
   --rose:#F8EDE6;              /* бежево-розовый фон секций */
@@ -79,9 +79,7 @@ img{max-width:100%}
 .hero-grid{display:grid;grid-template-columns:minmax(0,1fr) 340px;gap:clamp(24px,4vw,48px);
    align-items:center}
 .hero-pic{margin:0;position:relative;display:flex;flex-direction:column;align-items:center;
-   justify-content:center;gap:16px;padding:clamp(28px,4vw,46px) 24px;border-radius:20px;
-   border:1px solid rgba(239,217,180,.38);
-   background:radial-gradient(circle at 50% 38%,rgba(239,217,180,.17),rgba(10,7,56,.12) 72%)}
+   justify-content:center;gap:18px;padding:clamp(18px,3vw,30px) 8px}
 .hero-mark{position:relative;width:260px;height:123px}
 .hero-mark span{position:absolute;left:0;width:100%;
    -webkit-mask:url(/assets/logo.svg) no-repeat 0 0/100% auto;
@@ -490,6 +488,30 @@ section{padding:50px 0}
 .shop-sort{padding:8px 13px;border-radius:999px;border:1px solid var(--line-gold);background:#fff;
    font:inherit;font-size:14px;color:var(--navy);cursor:pointer}
 .shop-count{font-size:13.5px;color:var(--muted);margin-bottom:12px}
+
+/* прайс: группа — кнопка, раскрывается таблицей */
+.ptab-h{font-family:'Cormorant Garamond',serif;font-size:23px;font-weight:600;
+   margin:30px 0 10px;padding-top:22px;border-top:1px solid var(--line-gold)}
+.pacc{display:grid;gap:10px}
+.pgroup{background:#fff;border:1px solid var(--line-gold);border-radius:14px;overflow:hidden}
+.pgroup[open]{border-color:var(--accent);box-shadow:0 10px 28px rgba(19,11,86,.07)}
+.pgroup>summary{display:flex;align-items:center;gap:12px;padding:17px 20px;cursor:pointer;
+   list-style:none;user-select:none}
+.pgroup>summary::-webkit-details-marker{display:none}
+.pgroup>summary:hover{background:var(--rose)}
+.pg-name{font-family:'Cormorant Garamond',serif;font-size:21px;font-weight:600;color:var(--ink);
+   flex:1;line-height:1.2}
+.pg-from{font-size:14px;color:var(--muted);white-space:nowrap}
+.pg-sign{width:26px;height:26px;flex-shrink:0;border-radius:50%;border:1px solid var(--line-gold);
+   position:relative;transition:.15s}
+.pg-sign::before,.pg-sign::after{content:"";position:absolute;left:50%;top:50%;background:var(--navy);
+   transform:translate(-50%,-50%);transition:.18s}
+.pg-sign::before{width:11px;height:1.6px}
+.pg-sign::after{width:1.6px;height:11px}
+.pgroup[open] .pg-sign{background:var(--accent);border-color:var(--accent)}
+.pgroup[open] .pg-sign::after{height:0}
+.pgroup>.ptable{padding:0 20px 18px;border-top:1px solid var(--line)}
+@media(max-width:560px){.pg-name{font-size:18.5px}.pg-from{font-size:13px}}
 .shop-empty{padding:28px 0;color:var(--muted)}
 @media(max-width:620px){.shop-lbl{min-width:100%}}
 .prod{padding:20px;background:#fff;border:1px solid var(--line-gold);border-radius:12px;
