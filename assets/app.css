@@ -455,7 +455,7 @@ section{padding:50px 0}
 .prod-pic{margin:0;aspect-ratio:4/3;border-radius:10px;overflow:hidden;background:var(--cream-deep);
    display:flex;align-items:center;justify-content:center;border:1px solid var(--line-gold)}
 .prod-pic img{width:100%;height:100%;object-fit:cover;display:block}
-.prod-pic span{font-family:'Cormorant Garamond',serif;font-size:30px;color:var(--gold-dark);
+.prod-pic .prod-ph{font-family:'Cormorant Garamond',serif;font-size:30px;color:var(--gold-dark);
    letter-spacing:.04em}
 .prod-for{font-size:14.5px;color:var(--muted);flex:1;margin-top:8px}
 .prod-ing{margin-top:10px;border-top:1px solid var(--line);padding-top:9px}
@@ -468,15 +468,18 @@ section{padding:50px 0}
 .prod-order{margin-top:12px;width:100%;background:var(--accent);border-color:var(--accent);
    color:var(--accent-ink)}
 .prod-note{font-size:12.5px;color:var(--muted);margin-top:7px}
-.prod-stock{position:absolute;top:10px;right:10px;z-index:2;padding:4px 11px;border-radius:999px;
-   font-size:11px;letter-spacing:.04em;white-space:nowrap}
+.prod-stock{position:absolute;top:10px;right:10px;z-index:3;padding:4px 10px;border-radius:999px;
+   font-family:'Jost',system-ui,sans-serif;font-size:11px;line-height:1.3;font-weight:500;
+   letter-spacing:.03em;white-space:nowrap;max-width:50%;overflow:hidden;text-overflow:ellipsis}
 .prod-stock.is-in{background:#E8F5EC;border:1px solid #9FCCAE;color:#1F6B3A}
 .prod-stock.is-pre{background:#FBF1F8;border:1px solid var(--accent);color:#8A3C7C}
 .prod[data-stock="pre"] .prod-order{background:transparent;border-color:var(--navy);color:var(--navy)}
 .prod-cat{position:absolute;top:10px;left:10px;z-index:2;padding:4px 10px;border-radius:999px;
-   background:rgba(255,255,255,.94);border:1px solid var(--line-gold);font-size:11px;
-   letter-spacing:.04em;color:var(--navy);white-space:nowrap;max-width:calc(100% - 20px);
+   background:rgba(255,255,255,.94);border:1px solid var(--line-gold);
+   font-family:'Jost',system-ui,sans-serif;font-size:11px;line-height:1.3;font-weight:500;
+   letter-spacing:.03em;color:var(--navy);white-space:nowrap;max-width:46%;
    overflow:hidden;text-overflow:ellipsis}
+.prod[data-stock=""] .prod-cat{max-width:calc(100% - 20px)}
 .prod{position:relative}
 
 /* панель фильтров каталога */
@@ -575,7 +578,7 @@ footer a{color:#fff;text-decoration:none}
 
 /* липкая кнопка на телефоне */
 .sticky{position:fixed;left:0;right:0;bottom:0;z-index:60;padding:10px 16px calc(10px + env(safe-area-inset-bottom));
-        background:rgba(250,246,239,.95);backdrop-filter:blur(10px);border-top:2px solid var(--accent);display:none}
+        background:rgba(10,7,56,.94);backdrop-filter:blur(10px);border-top:1px solid var(--gold-ui);display:none}
 .sticky .btn-gold{background:var(--gold-ui);border-color:var(--gold-ui);color:var(--navy-deep)}
 .sticky .btn{width:100%}
 @media(max-width:720px){
