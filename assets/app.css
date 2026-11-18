@@ -75,7 +75,11 @@ img{max-width:100%}
         rgba(10,7,56,.90) 100%),url(/assets/photos/hero-bg.jpg);
       background-size:cover,cover;background-position:center,58% 34%;
       background-repeat:no-repeat,no-repeat}
-@media(max-width:720px){.hero{background-position:center,66% 30%}}
+@media(max-width:720px){
+  .hero{background-image:linear-gradient(176deg,rgba(19,11,86,.80) 0%,rgba(19,11,86,.72) 34%,
+          rgba(10,7,56,.52) 72%,rgba(10,7,56,.60) 100%),url(/assets/photos/hero-bg-m.jpg);
+        background-position:center,center 28%}
+}
 .hero::before{content:'';position:absolute;top:-240px;right:-180px;width:620px;height:620px;
       border-radius:50%;pointer-events:none;
       background:radial-gradient(circle,rgba(212,184,150,.26) 0%,rgba(212,184,150,0) 68%)}
