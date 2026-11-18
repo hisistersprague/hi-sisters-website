@@ -40,6 +40,17 @@ img{max-width:100%}
 .langs a{display:block;padding:5px 8px;font-size:12.5px;letter-spacing:.06em;
          text-decoration:none;color:#CFC9E6;border-radius:5px}
 .langs a[aria-current]{background:var(--gold-ui);color:var(--navy-deep)}
+.socs{display:flex;align-items:center;gap:3px}
+.soc{display:flex;align-items:center;justify-content:center;width:30px;height:30px;
+   border-radius:9px;color:var(--gold-ui);transition:.15s}
+.soc svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.6;
+   stroke-linecap:round;stroke-linejoin:round}
+.soc:hover{background:rgba(255,255,255,.12);color:#fff}
+.soc-whatsapp:hover{color:#5BD066}
+.soc-viber:hover{color:#B49CE6}
+.soc-telegram:hover{color:#5CC2F0}
+.soc-instagram:hover{color:var(--accent)}
+@media(max-width:860px){.soc{width:27px;height:27px}.soc svg{width:17px;height:17px}}
 .top-tel{font-size:14.5px;text-decoration:none;white-space:nowrap;color:#fff}
 .nav-row{border-top:1px solid rgba(226,193,120,.35)}
 .mainnav{display:flex;gap:2px;overflow-x:auto;scrollbar-width:none;-ms-overflow-style:none}
@@ -355,13 +366,22 @@ section{padding:50px 0}
 .dark .more-list a:hover{border-color:var(--gold);color:var(--gold)}
 
 /* специалисты и аппараты на главной */
-.team-mini{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px}
-.mini{background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px}
+.team-mini{display:grid;grid-template-columns:repeat(auto-fit,minmax(172px,1fr));gap:12px}
+.mini{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.15);border-radius:14px;
+   padding:0;overflow:hidden;display:flex;flex-direction:column;transition:border-color .15s}
+.mini:hover{border-color:var(--accent)}
 .alt .mini{background:var(--cream)}
-.mini .ava{width:64px;height:64px;margin-bottom:11px}
-.mini .ava-let{font-size:27px}
-.mini h3{font-size:18px;margin-bottom:3px}
-.mini .role{font-size:12px;letter-spacing:.05em;text-transform:uppercase;color:var(--gold-dark);line-height:1.4}
+.mini .ava{width:100%;height:auto;aspect-ratio:1/1;border-radius:0;object-fit:cover;
+   display:block;margin:0}
+.mini .ava-let{font-size:40px;aspect-ratio:1/1;width:100%;height:auto;border-radius:0}
+.mini-body{padding:12px 13px 14px;display:flex;flex-direction:column;flex:1}
+.mini h3{font-size:18px;margin-bottom:4px;line-height:1.15}
+.mini .role{font-size:11px;letter-spacing:.08em;text-transform:uppercase;line-height:1.35;
+   font-weight:600;color:var(--accent)}
+.mini p{font-size:12.5px;line-height:1.45;margin-top:8px;color:#CFC9E6;
+   display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+@media(max-width:520px){.team-mini{grid-template-columns:repeat(auto-fit,minmax(148px,1fr));gap:10px}
+   .mini h3{font-size:16.5px}.mini p{-webkit-line-clamp:2}}
 .eq .eq-tag{font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--gold-dark);margin-bottom:6px}
 .eq h3{font-family:'Jost',sans-serif;font-weight:500;letter-spacing:.01em}
 .eq-link{display:inline-block;margin-top:12px;font-size:14.5px;color:var(--navy);text-underline-offset:3px}
