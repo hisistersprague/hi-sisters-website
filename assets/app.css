@@ -434,6 +434,22 @@ section{padding:50px 0}
 
 /* косметика */
 .prods{display:grid;grid-template-columns:repeat(auto-fit,minmax(265px,1fr));gap:14px}
+.prod-pic{margin:0;aspect-ratio:4/3;border-radius:10px;overflow:hidden;background:var(--cream-deep);
+   display:flex;align-items:center;justify-content:center;border:1px solid var(--line-gold)}
+.prod-pic img{width:100%;height:100%;object-fit:cover;display:block}
+.prod-pic span{font-family:'Cormorant Garamond',serif;font-size:30px;color:var(--gold-dark);
+   letter-spacing:.04em}
+.prod-for{font-size:14.5px;color:var(--muted);flex:1;margin-top:8px}
+.prod-ing{margin-top:10px;border-top:1px solid var(--line);padding-top:9px}
+.prod-ing summary{cursor:pointer;font-size:13px;font-weight:600;color:var(--navy);
+   letter-spacing:.03em;list-style:none}
+.prod-ing summary::-webkit-details-marker{display:none}
+.prod-ing summary::before{content:"+ ";color:var(--accent);font-weight:700}
+.prod-ing[open] summary::before{content:"– "}
+.prod-ing p{font-size:13.5px;line-height:1.65;color:var(--muted);margin-top:7px}
+.prod-order{margin-top:12px;width:100%;background:var(--accent);border-color:var(--accent);
+   color:var(--accent-ink)}
+.prod-note{font-size:12.5px;color:var(--muted);margin-top:7px}
 .prod{padding:20px;background:#fff;border:1px solid var(--line-gold);border-radius:12px;
       display:flex;flex-direction:column}
 .alt .prod{background:var(--cream)}
