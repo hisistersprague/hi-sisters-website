@@ -76,6 +76,14 @@ img{max-width:100%}
       background:radial-gradient(circle,rgba(212,184,150,.26) 0%,rgba(212,184,150,0) 68%)}
 .hero::after{content:'';position:absolute;left:0;right:0;bottom:0;height:2px;background:var(--gold)}
 .hero .wrap{position:relative;z-index:1}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1fr) 340px;gap:clamp(24px,4vw,48px);
+   align-items:center}
+.hero-pic{margin:0;position:relative}
+.hero-pic img{display:block;width:100%;height:auto;border-radius:18px;
+   border:1px solid rgba(239,217,180,.5);box-shadow:0 26px 60px rgba(0,0,0,.34)}
+.hero-pic figcaption{margin-top:12px;font-size:13.5px;color:#CFC9E6;text-align:center}
+@media(max-width:980px){.hero-grid{grid-template-columns:1fr}
+   .hero-pic{max-width:420px;margin-inline:auto;order:2}}
 .hero-sm{padding:42px 0 30px}
 .kicker{font-size:12.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--gold-ui);
         margin-bottom:14px}
