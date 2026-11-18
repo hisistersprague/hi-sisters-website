@@ -569,6 +569,16 @@ section{padding:50px 0}
 /* прайс: группа — кнопка, раскрывается таблицей */
 .ptab-h{font-family:'Cormorant Garamond',serif;font-size:23px;font-weight:600;
    margin:30px 0 10px;padding-top:22px;border-top:1px solid var(--line-gold)}
+.svc-blocks{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:16px}
+.svc-block{background:#fff;border:1px solid var(--line-gold);border-radius:14px;padding:22px 22px 18px;
+   border-top:3px solid var(--accent);display:flex;flex-direction:column}
+.svc-block h3{font-size:22px;margin-bottom:9px}
+.svc-block p{font-size:15px;color:var(--muted);margin-bottom:12px}
+.svc-block ul{list-style:none;margin:0 0 14px;padding:0}
+.svc-block li{position:relative;padding-left:19px;margin-bottom:8px;font-size:14.5px;line-height:1.5}
+.svc-block li::before{content:"";position:absolute;left:0;top:9px;width:7px;height:7px;
+   border-radius:50%;background:var(--gold-ui);border:1px solid var(--gold-dark)}
+.svc-block-foot{margin-top:auto;display:flex;align-items:center;justify-content:space-between;gap:12px}
 .pslides{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;
    padding:4px 0 14px;scrollbar-width:thin;-webkit-overflow-scrolling:touch}
 .pslides::-webkit-scrollbar{height:6px}
