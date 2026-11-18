@@ -563,6 +563,9 @@ section{padding:50px 0}
 .prod{position:relative}
 
 /* панель фильтров каталога */
+.shop-find input{width:100%;max-width:420px;padding:11px 14px;border-radius:12px;
+  border:1px solid var(--rose-line);background:#fff;font:inherit;font-size:15px;color:var(--navy)}
+.shop-find input:focus{outline:2px solid var(--gold-ui);outline-offset:1px}
 .art-grid{display:grid;gap:22px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
 .art-item h3{font-family:'Cormorant Garamond',serif;font-size:21px;font-weight:600;
   color:var(--navy);margin-bottom:8px}
