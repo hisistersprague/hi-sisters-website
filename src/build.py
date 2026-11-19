@@ -1704,7 +1704,7 @@ def head(lang, city, title, desc, rel='', langs=None):
 
 {alts}
   <link rel="alternate" hreflang="x-default" href="{base}/{'cs' if 'cs' in ls_ else ls_[0]}/prague/{rel}">
-<link rel="preload" as="image" media="(max-width:720px)" href="/assets/photos/hero-bg-m.webp" type="image/webp"><link rel="preload" as="image" media="(min-width:721px)" href="/assets/photos/hero-bg.webp" type="image/webp"><link rel="preconnect" href="https://fonts.googleapis.com">
+<meta name="google-site-verification" content="w0gr_xIGKVAPVdWsNGRQxfjPjKZGN87bxB6bOTXDnwI"><link rel="preload" as="image" media="(max-width:720px)" href="/assets/photos/hero-bg-m.webp" type="image/webp"><link rel="preload" as="image" media="(min-width:721px)" href="/assets/photos/hero-bg.webp" type="image/webp"><link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/app.css?v={CSSVER}">
