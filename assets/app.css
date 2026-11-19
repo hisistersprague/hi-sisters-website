@@ -700,6 +700,41 @@ section{padding:50px 0}
 .alt .note{background:var(--cream)}
 
 /* текстовые страницы */
+.btn-wa{background:#fff;color:var(--ink);border:1px solid var(--line-gold)}
+.btn-wa:hover{border-color:#25D366;color:#128C4A}
+.vframe{position:relative;padding-top:56.25%;border-radius:14px;overflow:hidden}
+.vframe iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.vfile{width:100%;border-radius:14px;display:block}
+.hero-v{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0;opacity:.35}
+.hero{position:relative}
+.hero .wrap{position:relative;z-index:1}
+.ba{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:0 0 14px}
+.ba figure{margin:0}
+.ba img{width:100%;height:auto;border-radius:10px;display:block}
+.ba figcaption{font-size:13px;color:var(--muted);text-align:center;margin-top:5px;
+  letter-spacing:.05em;text-transform:uppercase}
+.rev-v{width:100%;border-radius:10px;margin:0 0 12px;display:block}
+.c-save{color:var(--gold-dark);font-size:14px;letter-spacing:.03em}
+.c-meta s{color:var(--muted);font-weight:400;margin-left:6px}
+.c-packs{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.c-pack{background:#fff;border:1px solid var(--line-gold);border-radius:14px;padding:20px}
+.c-pack h4{font-family:'Cormorant Garamond',serif;font-size:21px;font-weight:600;margin:0 0 8px}
+.c-pack ul{margin:10px 0 0;padding-left:18px;font-size:15px;line-height:1.6}
+.course h3 a{color:inherit;text-decoration:none}
+.course h3 a:hover{color:var(--accent)}
+.prow-a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--line-gold)}
+.prow-a:hover{color:var(--accent);border-color:var(--accent)}
+.prow-h{background:var(--cream);font-weight:600}
+.prow-h span:first-child{font-size:16px}
+.proc-sub{font-family:'Cormorant Garamond',serif;font-size:26px;font-weight:600;
+  margin:38px 0 14px;color:var(--accent)}
+.proc-sub:first-child{margin-top:0}
+.proc{padding:22px 0 8px;border-top:1px solid var(--line);scroll-margin-top:24px}
+.proc h2{font-size:24px;margin:0 0 6px}
+.proc h4{font-family:'Cormorant Garamond',serif;font-size:19px;font-weight:600;margin:20px 0 8px}
+.proc-meta{font-size:14.5px;color:var(--gold-dark);letter-spacing:.04em;margin:0 0 12px}
+.proc ul,.proc ol{margin:0 0 6px;padding-left:20px}
+.proc li{margin-bottom:6px;font-size:15.5px;line-height:1.6}
 .arts{max-width:760px}
 .art{margin-bottom:30px}
 .art h2{font-size:clamp(24px,4vw,32px);margin-bottom:12px}
