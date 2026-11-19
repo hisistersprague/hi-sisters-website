@@ -3706,7 +3706,8 @@ ZONE_UI = {
 
 def zone_rows(city, lang, key):
     """Строки прайса именно этой зоны: берём по номеру, порядок во всех языках один."""
-    grp = prices['groups'].get(ZONE_GROUP[city]) or {}
+    gname = (zones[key].get('group') or {}).get(city) or ZONE_GROUP[city]
+    grp = prices['groups'].get(gname) or {}
     rows = grp.get(lang) or grp.get('ru') or []
     cur = studios[city]['currency']
     out, vals = '', []
