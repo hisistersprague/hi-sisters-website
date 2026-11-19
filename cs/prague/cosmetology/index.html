@@ -27,7 +27,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/assets/app.css?v=3e2d0eff">
+<link rel="stylesheet" href="/assets/app.css?v=83922065">
 <link rel="icon" href="/favicon.svg">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-K921K357QH"></script>
 <script>
@@ -50,7 +50,7 @@ addEventListener('click',function(ev){
     <a class="top-tel" href="tel:+420702192946">+420 702 192 946</a>
     <a class="btn btn-sm" href="/cs/prague/booking/" data-book>Objednat se</a>
   </div>
-  <div class="nav-row"><div class="wrap"><nav class="mainnav"><a href="/cs/prague/">Domů</a><a href="/cs/prague/services/" aria-current="page">Služby</a><a href="/cs/prague/training/">Školení</a><a href="/cs/prague/cosmetics/">Kosmetika</a><a href="/cs/prague/about/">O nás</a><a href="/cs/prague/contacts/">Kontakty</a></nav></div></div>
+  <div class="nav-row"><div class="wrap"><nav class="mainnav"><span class="nav-i"><a class="nav-a" href="/cs/prague/">Domů</a></span><span class="nav-i has-sub"><a class="nav-a" href="/cs/prague/services/" aria-current="page">Služby</a><button class="nav-x" type="button" aria-expanded="false" aria-label="Služby"></button><span class="nav-sub"><a href="/cs/prague/cosmetology/" class="is-on">Kosmetologie</a><a href="/cs/prague/laser/">Laserová epilace</a><a href="/cs/prague/electro/">Elektroepilace</a><a href="/cs/prague/trichology/">Trichologie</a><a href="/cs/prague/services/">Všechny služby</a></span></span><span class="nav-i"><a class="nav-a" href="/cs/prague/training/">Školení</a></span><span class="nav-i"><a class="nav-a" href="/cs/prague/cosmetics/">Kosmetika</a></span><span class="nav-i"><a class="nav-a" href="/cs/prague/about/">O nás</a></span><span class="nav-i"><a class="nav-a" href="/cs/prague/contacts/">Kontakty</a></span></nav></div></div>
 </header>
 <main>
 <section class="hero hero-sm"><div class="wrap">
@@ -107,5 +107,21 @@ addEventListener('click',function(ev){
     </div>
   </div>
   <nav class="foot-nav"><a href="/cs/prague/">Domů</a><a href="/cs/prague/services/">Služby</a><a href="/cs/prague/training/">Školení</a><a href="/cs/prague/cosmetics/">Kosmetika</a><a href="/cs/prague/about/">O nás</a><a href="/cs/prague/contacts/">Kontakty</a></nav>
-</div></footer><div class="sticky"><a class="btn btn-gold" href="/cs/prague/booking/" data-book>Objednat se</a></div><script type="application/ld+json">{"@context":"https://schema.org","@type":"Service","name":"Kosmetologie","description":"Profesionální péče o pleť v Hi Sisters — individuální programy pro klientky závislé na stavu kůže a požadovaném výsledku.","serviceType":"Kosmetologie","provider":{"@id":"https://hi-sisters.clinic/cs/prague/#business"},"areaServed":"Prague","url":"https://hi-sisters.clinic/cs/prague/cosmetology/","offers":{"@type":"Offer","price":1000,"priceCurrency":"CZK","availability":"https://schema.org/InStock"}}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Hi Sisters Clinic","item":"https://hi-sisters.clinic/cs/prague/"},{"@type":"ListItem","position":2,"name":"Služby a ceník","item":"https://hi-sisters.clinic/cs/prague/services/"},{"@type":"ListItem","position":3,"name":"Kosmetologie","item":"https://hi-sisters.clinic/cs/prague/cosmetology/"}]}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Bolí procedury?","acceptedAnswer":{"@type":"Answer","text":"Ne, všechny procedury jsou bezbolestné nebo mírně nepříjemné."}},{"@type":"Question","name":"Jak často chodit?","acceptedAnswer":{"@type":"Answer","text":"Záleží na stavu pleti — obvykle 1x za 2–4 týdny."}}]}</script>
+</div></footer><div class="sticky"><a class="btn btn-gold" href="/cs/prague/booking/" data-book>Objednat se</a></div><script type="application/ld+json">{"@context":"https://schema.org","@type":"Service","name":"Kosmetologie","description":"Profesionální péče o pleť v Hi Sisters — individuální programy pro klientky závislé na stavu kůže a požadovaném výsledku.","serviceType":"Kosmetologie","provider":{"@id":"https://hi-sisters.clinic/cs/prague/#business"},"areaServed":"Prague","url":"https://hi-sisters.clinic/cs/prague/cosmetology/","offers":{"@type":"Offer","price":1000,"priceCurrency":"CZK","availability":"https://schema.org/InStock"}}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Hi Sisters Clinic","item":"https://hi-sisters.clinic/cs/prague/"},{"@type":"ListItem","position":2,"name":"Služby a ceník","item":"https://hi-sisters.clinic/cs/prague/services/"},{"@type":"ListItem","position":3,"name":"Kosmetologie","item":"https://hi-sisters.clinic/cs/prague/cosmetology/"}]}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Bolí procedury?","acceptedAnswer":{"@type":"Answer","text":"Ne, všechny procedury jsou bezbolestné nebo mírně nepříjemné."}},{"@type":"Question","name":"Jak často chodit?","acceptedAnswer":{"@type":"Answer","text":"Záleží na stavu pleti — obvykle 1x za 2–4 týdny."}}]}</script><script>(function(){
+  var subs=[].slice.call(document.querySelectorAll('.has-sub'));
+  subs.forEach(function(el){
+    var btn=el.querySelector('.nav-x');
+    if(!btn) return;
+    btn.addEventListener('click',function(ev){
+      ev.preventDefault();
+      var open=el.classList.toggle('is-open');
+      btn.setAttribute('aria-expanded',open?'true':'false');
+    });
+  });
+  document.addEventListener('click',function(ev){
+    subs.forEach(function(el){
+      if(!el.contains(ev.target)) el.classList.remove('is-open');
+    });
+  });
+})();</script>
 </body></html>

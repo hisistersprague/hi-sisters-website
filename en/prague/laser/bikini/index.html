@@ -27,7 +27,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/assets/app.css?v=3e2d0eff">
+<link rel="stylesheet" href="/assets/app.css?v=83922065">
 <link rel="icon" href="/favicon.svg">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-K921K357QH"></script>
 <script>
@@ -50,7 +50,7 @@ addEventListener('click',function(ev){
     <a class="top-tel" href="tel:+420702192946">+420 702 192 946</a>
     <a class="btn btn-sm" href="/en/prague/booking/" data-book>Book now</a>
   </div>
-  <div class="nav-row"><div class="wrap"><nav class="mainnav"><a href="/en/prague/">Home</a><a href="/en/prague/services/" aria-current="page">Services</a><a href="/en/prague/training/">Training</a><a href="/en/prague/cosmetics/">Cosmetics</a><a href="/en/prague/about/">About</a><a href="/en/prague/contacts/">Contacts</a></nav></div></div>
+  <div class="nav-row"><div class="wrap"><nav class="mainnav"><span class="nav-i"><a class="nav-a" href="/en/prague/">Home</a></span><span class="nav-i has-sub"><a class="nav-a" href="/en/prague/services/" aria-current="page">Services</a><button class="nav-x" type="button" aria-expanded="false" aria-label="Services"></button><span class="nav-sub"><a href="/en/prague/cosmetology/">Cosmetology</a><a href="/en/prague/laser/">Laser epilation</a><a href="/en/prague/electro/">Electrolysis</a><a href="/en/prague/trichology/">Trichology</a><a href="/en/prague/services/">All services</a></span></span><span class="nav-i"><a class="nav-a" href="/en/prague/training/">Training</a></span><span class="nav-i"><a class="nav-a" href="/en/prague/cosmetics/">Cosmetics</a></span><span class="nav-i"><a class="nav-a" href="/en/prague/about/">About</a></span><span class="nav-i"><a class="nav-a" href="/en/prague/contacts/">Contacts</a></span></nav></div></div>
 </header>
 <main>
 <section class="hero hero-sm"><div class="wrap">
@@ -105,5 +105,21 @@ addEventListener('click',function(ev){
     </div>
   </div>
   <nav class="foot-nav"><a href="/en/prague/">Home</a><a href="/en/prague/services/">Services</a><a href="/en/prague/training/">Training</a><a href="/en/prague/cosmetics/">Cosmetics</a><a href="/en/prague/about/">About</a><a href="/en/prague/contacts/">Contacts</a></nav>
-</div></footer><div class="sticky"><a class="btn btn-gold" href="/en/prague/booking/" data-book>Book now</a></div><script type="application/ld+json">{"@context":"https://schema.org","@type":"Service","name":"Laser epilation","description":"Laser epilation is the most effective method for permanent removal of dark hair. The diode laser targets melanin, destroys the follicle with thermal energy without damaging surrounding skin.","serviceType":"Laser hair removal","provider":{"@id":"https://hi-sisters.clinic/en/prague/#business"},"areaServed":"Prague","url":"https://hi-sisters.clinic/en/prague/laser/","offers":{"@type":"Offer","price":2000,"priceCurrency":"CZK","availability":"https://schema.org/InStock"}}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Hi Sisters Clinic","item":"https://hi-sisters.clinic/en/prague/"},{"@type":"ListItem","position":2,"name":"Services & prices","item":"https://hi-sisters.clinic/en/prague/services/"},{"@type":"ListItem","position":3,"name":"Laser hair removal","item":"https://hi-sisters.clinic/en/prague/laser/"},{"@type":"ListItem","position":4,"name":"Laser hair removal, bikini","item":"https://hi-sisters.clinic/en/prague/laser/bikini/"}]}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How long does the result last?","acceptedAnswer":{"@type":"Answer","text":"After a completed course the hair does not come back. If you start from scratch and follow the aftercare, we stand behind the result."}},{"@type":"Question","name":"What is the difference between deep and classic bikini?","acceptedAnswer":{"@type":"Answer","text":"Classic covers the panty line and the groin. Deep covers the whole intimate area, including the buttock crease. We agree on the exact area at the consultation."}}]}</script>
+</div></footer><div class="sticky"><a class="btn btn-gold" href="/en/prague/booking/" data-book>Book now</a></div><script type="application/ld+json">{"@context":"https://schema.org","@type":"Service","name":"Laser epilation","description":"Laser epilation is the most effective method for permanent removal of dark hair. The diode laser targets melanin, destroys the follicle with thermal energy without damaging surrounding skin.","serviceType":"Laser hair removal","provider":{"@id":"https://hi-sisters.clinic/en/prague/#business"},"areaServed":"Prague","url":"https://hi-sisters.clinic/en/prague/laser/","offers":{"@type":"Offer","price":2000,"priceCurrency":"CZK","availability":"https://schema.org/InStock"}}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Hi Sisters Clinic","item":"https://hi-sisters.clinic/en/prague/"},{"@type":"ListItem","position":2,"name":"Services & prices","item":"https://hi-sisters.clinic/en/prague/services/"},{"@type":"ListItem","position":3,"name":"Laser hair removal","item":"https://hi-sisters.clinic/en/prague/laser/"},{"@type":"ListItem","position":4,"name":"Laser hair removal, bikini","item":"https://hi-sisters.clinic/en/prague/laser/bikini/"}]}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How long does the result last?","acceptedAnswer":{"@type":"Answer","text":"After a completed course the hair does not come back. If you start from scratch and follow the aftercare, we stand behind the result."}},{"@type":"Question","name":"What is the difference between deep and classic bikini?","acceptedAnswer":{"@type":"Answer","text":"Classic covers the panty line and the groin. Deep covers the whole intimate area, including the buttock crease. We agree on the exact area at the consultation."}}]}</script><script>(function(){
+  var subs=[].slice.call(document.querySelectorAll('.has-sub'));
+  subs.forEach(function(el){
+    var btn=el.querySelector('.nav-x');
+    if(!btn) return;
+    btn.addEventListener('click',function(ev){
+      ev.preventDefault();
+      var open=el.classList.toggle('is-open');
+      btn.setAttribute('aria-expanded',open?'true':'false');
+    });
+  });
+  document.addEventListener('click',function(ev){
+    subs.forEach(function(el){
+      if(!el.contains(ev.target)) el.classList.remove('is-open');
+    });
+  });
+})();</script>
 </body></html>

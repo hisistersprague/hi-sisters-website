@@ -27,7 +27,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/assets/app.css?v=3e2d0eff">
+<link rel="stylesheet" href="/assets/app.css?v=83922065">
 <link rel="icon" href="/favicon.svg">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-K921K357QH"></script>
 <script>
@@ -50,7 +50,7 @@ addEventListener('click',function(ev){
     <a class="top-tel" href="tel:+34637024759">+34 637 02 47 59</a>
     <a class="btn btn-sm" href="/en/valencia/booking/" data-book>Book now</a>
   </div>
-  <div class="nav-row"><div class="wrap"><nav class="mainnav"><a href="/en/valencia/">Home</a><a href="/en/valencia/services/" aria-current="page">Services</a><a href="/en/valencia/training/">Training</a><a href="/en/valencia/cosmetics/">Cosmetics</a><a href="/en/valencia/about/">About</a><a href="/en/valencia/contacts/">Contacts</a></nav></div></div>
+  <div class="nav-row"><div class="wrap"><nav class="mainnav"><span class="nav-i"><a class="nav-a" href="/en/valencia/">Home</a></span><span class="nav-i has-sub"><a class="nav-a" href="/en/valencia/services/" aria-current="page">Services</a><button class="nav-x" type="button" aria-expanded="false" aria-label="Services"></button><span class="nav-sub"><a href="/en/valencia/laser/">Laser epilation</a><a href="/en/valencia/electro/" class="is-on">Electrolysis</a><a href="/en/valencia/services/">All services</a></span></span><span class="nav-i"><a class="nav-a" href="/en/valencia/training/">Training</a></span><span class="nav-i"><a class="nav-a" href="/en/valencia/cosmetics/">Cosmetics</a></span><span class="nav-i"><a class="nav-a" href="/en/valencia/about/">About</a></span><span class="nav-i"><a class="nav-a" href="/en/valencia/contacts/">Contacts</a></span></nav></div></div>
 </header>
 <main>
 <section class="hero hero-sm"><div class="wrap">
@@ -106,5 +106,21 @@ addEventListener('click',function(ev){
     </div>
   </div>
   <nav class="foot-nav"><a href="/en/valencia/">Home</a><a href="/en/valencia/services/">Services</a><a href="/en/valencia/training/">Training</a><a href="/en/valencia/cosmetics/">Cosmetics</a><a href="/en/valencia/about/">About</a><a href="/en/valencia/contacts/">Contacts</a></nav>
-</div></footer><div class="sticky"><a class="btn btn-gold" href="/en/valencia/booking/" data-book>Book now</a></div><script type="application/ld+json">{"@context":"https://schema.org","@type":"Service","name":"Electrolysis","description":"Electrolysis is the only method that permanently removes any type of hair.","serviceType":"Electrolysis","provider":{"@id":"https://hi-sisters.clinic/en/valencia/#business"},"areaServed":"Valencia","url":"https://hi-sisters.clinic/en/valencia/electro/","offers":{"@type":"Offer","price":45,"priceCurrency":"EUR","availability":"https://schema.org/InStock"}}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Hi Sisters Clinic","item":"https://hi-sisters.clinic/en/valencia/"},{"@type":"ListItem","position":2,"name":"Services & prices","item":"https://hi-sisters.clinic/en/valencia/services/"},{"@type":"ListItem","position":3,"name":"Electrolysis","item":"https://hi-sisters.clinic/en/valencia/electro/"}]}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Does it hurt?","acceptedAnswer":{"@type":"Answer","text":"Mildly uncomfortable — like a gentle pinprick. Your specialist adjusts intensity to your pain threshold."}},{"@type":"Question","name":"How many sessions?","acceptedAnswer":{"@type":"Answer","text":"Face: 10–20 sessions, body: 15–30 sessions every 1–4 weeks."}},{"@type":"Question","name":"Can it remove light hair?","acceptedAnswer":{"@type":"Answer","text":"Yes! That's the main advantage — works on any hair type including light, red and grey."}}]}</script>
+</div></footer><div class="sticky"><a class="btn btn-gold" href="/en/valencia/booking/" data-book>Book now</a></div><script type="application/ld+json">{"@context":"https://schema.org","@type":"Service","name":"Electrolysis","description":"Electrolysis is the only method that permanently removes any type of hair.","serviceType":"Electrolysis","provider":{"@id":"https://hi-sisters.clinic/en/valencia/#business"},"areaServed":"Valencia","url":"https://hi-sisters.clinic/en/valencia/electro/","offers":{"@type":"Offer","price":45,"priceCurrency":"EUR","availability":"https://schema.org/InStock"}}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Hi Sisters Clinic","item":"https://hi-sisters.clinic/en/valencia/"},{"@type":"ListItem","position":2,"name":"Services & prices","item":"https://hi-sisters.clinic/en/valencia/services/"},{"@type":"ListItem","position":3,"name":"Electrolysis","item":"https://hi-sisters.clinic/en/valencia/electro/"}]}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Does it hurt?","acceptedAnswer":{"@type":"Answer","text":"Mildly uncomfortable — like a gentle pinprick. Your specialist adjusts intensity to your pain threshold."}},{"@type":"Question","name":"How many sessions?","acceptedAnswer":{"@type":"Answer","text":"Face: 10–20 sessions, body: 15–30 sessions every 1–4 weeks."}},{"@type":"Question","name":"Can it remove light hair?","acceptedAnswer":{"@type":"Answer","text":"Yes! That's the main advantage — works on any hair type including light, red and grey."}}]}</script><script>(function(){
+  var subs=[].slice.call(document.querySelectorAll('.has-sub'));
+  subs.forEach(function(el){
+    var btn=el.querySelector('.nav-x');
+    if(!btn) return;
+    btn.addEventListener('click',function(ev){
+      ev.preventDefault();
+      var open=el.classList.toggle('is-open');
+      btn.setAttribute('aria-expanded',open?'true':'false');
+    });
+  });
+  document.addEventListener('click',function(ev){
+    subs.forEach(function(el){
+      if(!el.contains(ev.target)) el.classList.remove('is-open');
+    });
+  });
+})();</script>
 </body></html>
