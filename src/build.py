@@ -1436,6 +1436,18 @@ section{padding:50px 0}
 /* текстовые страницы */
 .btn-wa{background:#fff;color:var(--ink);border:1px solid var(--line-gold)}
 .btn-wa:hover{border-color:#25D366;color:#128C4A}
+.vframe{position:relative;padding-top:56.25%;border-radius:14px;overflow:hidden}
+.vframe iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.vfile{width:100%;border-radius:14px;display:block}
+.hero-v{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0;opacity:.35}
+.hero{position:relative}
+.hero .wrap{position:relative;z-index:1}
+.ba{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:0 0 14px}
+.ba figure{margin:0}
+.ba img{width:100%;height:auto;border-radius:10px;display:block}
+.ba figcaption{font-size:13px;color:var(--muted);text-align:center;margin-top:5px;
+  letter-spacing:.05em;text-transform:uppercase}
+.rev-v{width:100%;border-radius:10px;margin:0 0 12px;display:block}
 .c-save{color:var(--gold-dark);font-size:14px;letter-spacing:.03em}
 .c-meta s{color:var(--muted);font-weight:400;margin-left:6px}
 .c-packs{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
@@ -3276,14 +3288,88 @@ def build_booking(lang, city):
 
 
 
-def service_reviews(key, city, lang):
-    """Отзывы Google именно об этой услуге в этом городе."""
+def video_src(obj):
+    """Видео берём из данных: либо файл в assets, либо ссылка на YouTube или Vimeo."""
+    v = obj.get('video') if isinstance(obj, dict) else None
+    return v if isinstance(v, str) and v else (v or {}).get('src') if isinstance(v, dict) else None
+
+
+def video_block(obj, lang, title=''):
+    """Отдельный блок с видео процедуры, услуги или курса."""
+    v = obj.get('video') if isinstance(obj, dict) else None
+    if not v:
+        return ''
+    src = v if isinstance(v, str) else v.get('src', '')
+    poster = '' if isinstance(v, str) else v.get('poster', '')
+    cap = '' if isinstance(v, str) else ((v.get('title') or {}).get(lang, '') if isinstance(v.get('title'), dict) else v.get('title', ''))
+    if not src:
+        return ''
+    if 'youtube.com' in src or 'youtu.be' in src or 'vimeo.com' in src:
+        media = ('<div class="vframe"><iframe src="%s" title="%s" loading="lazy" '
+                 'allow="accelerometer; autoplay; clipboard-write; encrypted-media; picture-in-picture" '
+                 'allowfullscreen></iframe></div>' % (e(src), e(cap or title)))
+    else:
+        media = ('<video class="vfile" controls preload="none"%s><source src="%s" type="video/mp4"></video>'
+                 % ((' poster="%s"' % e(poster)) if poster else '', e(src)))
+    head = ('<div class="sec-head"><h2>%s</h2></div>' % e(cap)) if cap else ''
+    return '<section class="alt"><div class="wrap">%s%s</div></section>' % (head, media)
+
+
+def hero_video(obj):
+    """Фоновое видео в шапке: без звука, с повтором, с резервным кадром."""
+    v = obj.get('heroVideo') if isinstance(obj, dict) else None
+    if not v:
+        return ''
+    src = v if isinstance(v, str) else v.get('src', '')
+    poster = '' if isinstance(v, str) else v.get('poster', '')
+    if not src:
+        return ''
+    return ('<video class="hero-v" autoplay muted loop playsinline preload="none"%s>'
+            '<source src="%s" type="video/mp4"></video>'
+            % ((' poster="%s"' % e(poster)) if poster else '', e(src)))
+
+
+BA_UI = {'ru': ('До', 'После'), 'uk': ('До', 'Після'), 'cs': ('Před', 'Po'),
+         'en': ('Before', 'After'), 'es': ('Antes', 'Después')}
+
+
+def before_after(r, lang):
+    """Фото до и после, если они приложены к отзыву."""
+    b, a = r.get('before'), r.get('after')
+    if not b or not a:
+        return ''
+    t1, t2 = BA_UI[lang]
+    return ('<div class="ba">'
+            '<figure><img src="%s" alt="%s" loading="lazy"><figcaption>%s</figcaption></figure>'
+            '<figure><img src="%s" alt="%s" loading="lazy"><figcaption>%s</figcaption></figure>'
+            '</div>' % (e(b), e(t1), e(t1), e(a), e(t2), e(t2)))
+
+
+def review_video(r):
+    """Видеоотзыв: без звука, по клику — со звуком через стандартные элементы управления."""
+    v = r.get('video')
+    if not v:
+        return ''
+    poster = (' poster="%s"' % e(r['poster'])) if r.get('poster') else ''
+    return ('<video class="rev-v" controls preload="none"%s><source src="%s" type="video/mp4"></video>'
+            % (poster, e(v)))
+
+
+def review_card(r, lang):
+    src = r.get('source', 'Google')
+    return ('<figure class="rev"><div class="stars">★★★★★</div>%s%s<p>%s</p><cite>%s · %s</cite></figure>'
+            % (before_after(r, lang), review_video(r),
+               e(r['text'].get(lang) or r['text']['ru']), e(r['name']), e(src)))
+
+
+def service_reviews(key, city, lang, proc=None):
+    """Отзывы об этой услуге в этом городе; на странице процедуры — только о ней."""
     items = (svc_reviews['items'].get(key) or {}).get(city) or []
+    if proc:
+        items = [r for r in items if r.get('proc') == proc]
     if not items:
         return ''
-    cards = ''.join(
-        '<figure class="rev"><div class="stars">★★★★★</div><p>%s</p><cite>%s · Google</cite></figure>'
-        % (e(r['text'].get(lang) or r['text']['ru']), e(r['name'])) for r in items)
+    cards = ''.join(review_card(r, lang) for r in items)
     return ('<section><div class="wrap">'
             '<div class="sec-head"><h2>%s</h2></div><div class="revs">%s</div>'
             '</div></section>' % (e(svc_reviews['sectionTitle'][lang]), cards))
@@ -3391,6 +3477,7 @@ def build_service(lang, city, key):
 <section><div class="wrap arts">{blocks}</div></section>
 {svc_split}
 {methods_block}
+{video_block(svc, lang, card['title'])}
 {price_block}
 {proc_blocks(key, city, lang)}
 {faq_block}
@@ -3460,7 +3547,9 @@ def build_proc(lang, city, it):
 </div></section>
 
 <section><div class="wrap arts"><div class="art">{proc_body(it, lang, 'h2')}</div></div></section>
+{video_block(it, lang, title_)}
 {price_block}
+{service_reviews(key, city, lang, proc=it['slug'])}
 {faq_block}
 <section class="alt"><div class="wrap">
   <div class="sec-head"><h2>{e(u['other'])}</h2></div>
@@ -3672,6 +3761,7 @@ def build_course(lang, city, cid):
 </div></section>
 
 {'<section><div class="wrap arts">' + prog + '</div></section>' if prog else ''}
+{video_block(it, lang, title_)}
 {course_packages(it, lang)}
 <section class="alt"><div class="wrap">
   <div class="sec-head"><h2>{e(u['other'])}</h2></div>
