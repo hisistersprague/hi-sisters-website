@@ -3409,6 +3409,9 @@ def root_redirect():
 
 ROBOTS = """User-agent: *
 Allow: /
+Disallow: /admin/
+Disallow: /src/
+Disallow: /new/
 
 Sitemap: %s/sitemap.xml
 """ % BASE
@@ -3437,6 +3440,15 @@ if __name__ == '__main__':
     for f in ('favicon.svg', 'CNAME'):
         if os.path.isfile(os.path.join(ROOT, f)):
             shutil.copy2(os.path.join(ROOT, f), os.path.join(OUT, f))
+    # панель управления: отдельная страница, в поиск не идёт
+    adm = os.path.join(ROOT, 'admin', 'index.html')
+    if os.path.isfile(adm):
+        os.makedirs(os.path.join(OUT, 'admin'), exist_ok=True)
+        shutil.copy2(adm, os.path.join(OUT, 'admin', 'index.html'))
+        # понятные названия прайсов для панели
+        names = {k: (v.get('ru') or k) for k, v in PGROUP_TITLE.items()}
+        io.open(os.path.join(OUT, 'admin', 'groups.json'), 'w', encoding='utf-8').write(
+            json.dumps(names, ensure_ascii=False, indent=1))
     pages = []
     seo_pages = []
     for lang in LANGS:

@@ -6,6 +6,7 @@ SITE = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'site')
 CYR = re.compile(r'[а-яёіїєА-ЯЁІЇЄ]')
 pages = [os.path.join(dp, f) for dp, _, fs in os.walk(SITE) for f in fs if f.endswith('.html')]
 pages = [p for p in pages if p[len(SITE):].count('/') > 1]
+pages = [p for p in pages if '/admin/' not in p[len(SITE):]]
 
 desc = collections.defaultdict(list)
 titles = collections.defaultdict(list)

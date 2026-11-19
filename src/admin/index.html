@@ -1,0 +1,377 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Панель управления — Hi Sisters Clinic</title>
+<link rel="icon" href="/favicon.svg">
+<style>
+:root{--navy:#130B56;--navy-deep:#0A0738;--gold:#D6B57D;--gold-dark:#A8895A;
+  --cream:#FBF6F1;--line:#E7DED3;--ink:#241F3B;--muted:#6B6586;--ok:#2E7D5B;--bad:#B3261E}
+*{box-sizing:border-box}
+body{margin:0;font:15px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--ink);
+  background:var(--cream)}
+header{background:var(--navy);color:#fff;padding:14px 20px;display:flex;gap:14px;align-items:center;
+  flex-wrap:wrap;position:sticky;top:0;z-index:5}
+header b{font-weight:600;letter-spacing:.04em}
+header .sp{flex:1}
+main{max-width:1060px;margin:0 auto;padding:22px 16px 80px}
+h2{font-size:19px;margin:28px 0 10px}
+.card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px;margin-bottom:16px}
+label{display:block;font-size:13px;color:var(--muted);margin-bottom:5px}
+input,select,textarea{width:100%;padding:9px 11px;border:1px solid var(--line);border-radius:9px;
+  font:inherit;background:#fff;color:var(--ink)}
+textarea{min-height:320px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:13px}
+button{padding:10px 16px;border:0;border-radius:999px;background:var(--navy);color:#fff;
+  font:inherit;cursor:pointer}
+button.sec{background:#fff;color:var(--navy);border:1px solid var(--navy)}
+button.sm{padding:5px 11px;font-size:13px}
+button:disabled{opacity:.5;cursor:default}
+.row{display:flex;gap:10px;align-items:flex-end;flex-wrap:wrap}
+.row>div{flex:1 1 200px}
+table{width:100%;border-collapse:collapse}
+th,td{padding:7px 6px;border-bottom:1px solid var(--line);text-align:left;vertical-align:middle}
+th{font-size:12px;color:var(--muted);font-weight:500;text-transform:uppercase;letter-spacing:.05em}
+td input{padding:7px 9px}
+.msg{padding:11px 14px;border-radius:10px;margin:12px 0;font-size:14px}
+.msg.ok{background:#E8F5EE;color:var(--ok)}
+.msg.bad{background:#FDECEA;color:var(--bad)}
+.msg.wait{background:#FFF6E5;color:var(--gold-dark)}
+.tabs{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px}
+.tabs button{background:#fff;color:var(--navy);border:1px solid var(--line);border-radius:999px}
+.tabs button.on{background:var(--gold);border-color:var(--gold);color:#2B1C0B}
+.hint{font-size:13px;color:var(--muted);margin-top:6px}
+.files{display:grid;gap:8px;grid-template-columns:repeat(auto-fit,minmax(210px,1fr))}
+.files button{background:#fff;color:var(--ink);border:1px solid var(--line);border-radius:12px;
+  text-align:left;padding:12px 14px;line-height:1.35}
+.files button.on{border-color:var(--gold);box-shadow:0 0 0 2px rgba(214,181,125,.3)}
+.files small{display:block;color:var(--muted);font-size:12px;margin-top:3px}
+.del{background:#fff;color:var(--bad);border:1px solid var(--line)}
+</style>
+</head>
+<body>
+<header>
+  <b>Hi Sisters — панель управления</b>
+  <span class="sp"></span>
+  <span id="who"></span>
+  <button class="sec sm" id="logout" hidden>Выйти</button>
+</header>
+
+<main>
+  <div id="auth" class="card">
+    <h2 style="margin-top:0">Вход</h2>
+    <p class="hint">Нужен личный ключ доступа GitHub с правом записи в репозиторий сайта.
+      Ключ хранится только в этом браузере и отправляется только на github.com.</p>
+    <div class="row">
+      <div>
+        <label for="tok">Ключ доступа</label>
+        <input id="tok" type="password" autocomplete="off" placeholder="github_pat_…">
+      </div>
+      <div style="flex:0 0 auto"><button id="enter">Войти</button></div>
+    </div>
+    <p class="hint">Где взять: GitHub → Settings → Developer settings → Personal access tokens →
+      Fine-grained tokens → Generate new token → Repository access: только hi-sisters-website →
+      Permissions → Repository permissions → Contents: Read and write.</p>
+  </div>
+
+  <div id="app" hidden>
+    <h2>Что редактируем</h2>
+    <div class="files" id="files"></div>
+    <div id="editor"></div>
+  </div>
+</main>
+
+<script>
+const REPO = 'hisistersprague/hi-sisters-website';
+const DIR = 'src/content/';
+const FILES = [
+  {f: 'prices.json',   t: 'Цены',            d: 'Все прайсы по услугам и городам'},
+  {f: 'reviews.json',  t: 'Отзывы',          d: 'Отзывы клиенток на пяти языках'},
+  {f: 'shop.json',     t: 'Косметика',       d: 'Товары из СРМ: цена и наличие'},
+  {f: 'top.json',      t: 'Хиты продаж',     d: 'Что показывать первым в каталоге'},
+  {f: 'courses.json',  t: 'Обучение',        d: 'Курсы, программы и цены'},
+  {f: 'services.json', t: 'Услуги',          d: 'Описания направлений и страниц'},
+  {f: 'studios.json',  t: 'Студии',          d: 'Адреса, телефоны, часы работы'},
+  {f: 'ui.json',       t: 'Тексты сайта',    d: 'Шапка, подвал, блоки на главной'},
+  {f: 'articles.json', t: 'Статьи',          d: 'Лазер и электро, выбор мастера'},
+  {f: 'team.json',     t: 'Команда',         d: 'Специалисты и их описания'},
+];
+const LANGS = ['ru', 'uk', 'cs', 'en', 'es'];
+const LNAME = {ru: 'Русский', uk: 'Українська', cs: 'Čeština', en: 'English', es: 'Español'};
+
+let token = localStorage.getItem('hs_token') || '';
+let cur = null;      // {f, data, sha}
+const $ = s => document.querySelector(s);
+
+function api(path, opts) {
+  return fetch('https://api.github.com/repos/' + REPO + path, Object.assign({
+    headers: {Authorization: 'Bearer ' + token, Accept: 'application/vnd.github+json'}
+  }, opts || {}));
+}
+
+function msg(where, text, kind) {
+  const el = document.createElement('div');
+  el.className = 'msg ' + (kind || 'ok');
+  el.textContent = text;
+  where.prepend(el);
+  if (kind !== 'bad') setTimeout(() => el.remove(), 9000);
+  return el;
+}
+
+async function enter() {
+  token = $('#tok').value.trim();
+  if (!token) return;
+  const r = await api('');
+  if (!r.ok) {
+    msg($('#auth'), 'Ключ не подошёл (' + r.status + '). Проверьте права Contents: Read and write.', 'bad');
+    return;
+  }
+  localStorage.setItem('hs_token', token);
+  start();
+}
+
+function start() {
+  $('#auth').hidden = true;
+  $('#app').hidden = false;
+  $('#logout').hidden = false;
+  $('#who').textContent = 'репозиторий сайта';
+  drawFiles();
+}
+
+function drawFiles() {
+  const box = $('#files');
+  box.innerHTML = '';
+  FILES.forEach(x => {
+    const b = document.createElement('button');
+    b.innerHTML = '<span>' + x.t + '</span><small>' + x.d + '</small>';
+    b.onclick = () => { [...box.children].forEach(c => c.classList.remove('on')); b.classList.add('on'); open(x); };
+    box.appendChild(b);
+  });
+}
+
+async function open(x) {
+  const ed = $('#editor');
+  ed.innerHTML = '<div class="card">Загружаю…</div>';
+  const r = await api('/contents/' + DIR + x.f + '?ref=main');
+  if (!r.ok) { ed.innerHTML = '<div class="card">Не удалось открыть файл (' + r.status + ')</div>'; return; }
+  const j = await r.json();
+  const text = new TextDecoder().decode(Uint8Array.from(atob(j.content.replace(/\n/g, '')), c => c.charCodeAt(0)));
+  cur = {f: x.f, title: x.t, sha: j.sha, data: JSON.parse(text)};
+  render();
+}
+
+function saveBar(body) {
+  const bar = document.createElement('div');
+  bar.className = 'card';
+  bar.innerHTML = '<div class="row"><div><b>' + cur.title + '</b>' +
+    '<div class="hint">После сохранения сайт пересоберётся сам, это занимает около минуты.</div></div>' +
+    '<div style="flex:0 0 auto"><button id="save">Сохранить</button></div></div>';
+  body.prepend(bar);
+  bar.querySelector('#save').onclick = () => save(bar);
+}
+
+async function save(bar) {
+  const btn = bar.querySelector('#save');
+  btn.disabled = true;
+  const text = JSON.stringify(cur.data, null, 1);
+  const b64 = btoa(String.fromCharCode(...new TextEncoder().encode(text)));
+  const r = await api('/contents/' + DIR + cur.f, {
+    method: 'PUT',
+    body: JSON.stringify({message: 'Правка: ' + cur.title, content: b64, sha: cur.sha, branch: 'main'})
+  });
+  btn.disabled = false;
+  if (!r.ok) { msg(bar, 'Не сохранилось (' + r.status + '). Попробуйте ещё раз.', 'bad'); return; }
+  const j = await r.json();
+  cur.sha = j.content.sha;
+  msg(bar, 'Сохранено. Сайт пересоберётся примерно через минуту.', 'ok');
+}
+
+function render() {
+  const ed = $('#editor');
+  ed.innerHTML = '';
+  saveBar(ed);
+  const box = document.createElement('div');
+  ed.appendChild(box);
+  if (cur.f === 'prices.json') return prices(box);
+  if (cur.f === 'reviews.json') return reviews(box);
+  if (cur.f === 'shop.json') return shop(box);
+  raw(box);
+}
+
+/* ——— цены ——— */
+let GROUPNAMES = {};
+fetch('/admin/groups.json').then(r => r.ok ? r.json() : {}).then(j => { GROUPNAMES = j; });
+function groupName(k) { return GROUPNAMES[k] || k; }
+
+function prices(box) {
+  const g = cur.data.groups || {};
+  const keys = Object.keys(g);
+  let gk = keys[0], lang = 'ru';
+  const card = document.createElement('div');
+  card.className = 'card';
+  box.appendChild(card);
+  function draw() {
+    const rows = (g[gk] || {})[lang] || [];
+    card.innerHTML = '';
+    const sel = document.createElement('div');
+    sel.className = 'row';
+    sel.innerHTML = '<div><label>Прайс</label><select id="gk">' +
+      keys.map(k => '<option value="' + k + '"' + (k === gk ? ' selected' : '') + '>' +
+        groupName(k) + '</option>').join('') +
+      '</select></div>';
+    card.appendChild(sel);
+    const tabs = document.createElement('div');
+    tabs.className = 'tabs';
+    LANGS.forEach(l => {
+      const b = document.createElement('button');
+      b.textContent = LNAME[l];
+      if (l === lang) b.className = 'on';
+      b.onclick = () => { lang = l; draw(); };
+      tabs.appendChild(b);
+    });
+    card.appendChild(tabs);
+    const t = document.createElement('table');
+    t.innerHTML = '<tr><th>Название</th><th style="width:110px">Цена</th>' +
+      '<th style="width:110px">Было</th><th style="width:110px">Стало</th><th style="width:40px"></th></tr>';
+    rows.forEach((r, i) => {
+      const tr = document.createElement('tr');
+      ['label', 'price', 'was', 'now'].forEach(f => {
+        const td = document.createElement('td');
+        const inp = document.createElement('input');
+        inp.value = r[f] === undefined ? '' : r[f];
+        inp.oninput = () => {
+          if (inp.value === '') delete r[f]; else r[f] = inp.value;
+        };
+        td.appendChild(inp);
+        tr.appendChild(td);
+      });
+      const td = document.createElement('td');
+      const del = document.createElement('button');
+      del.className = 'del sm'; del.textContent = '×';
+      del.onclick = () => { rows.splice(i, 1); draw(); };
+      td.appendChild(del); tr.appendChild(td);
+      t.appendChild(tr);
+    });
+    card.appendChild(t);
+    const add = document.createElement('button');
+    add.className = 'sec sm'; add.textContent = 'Добавить строку';
+    add.style.marginTop = '12px';
+    add.onclick = () => { rows.push({label: '', price: ''}); g[gk][lang] = rows; draw(); };
+    card.appendChild(add);
+    card.querySelector('#gk').onchange = ev => { gk = ev.target.value; draw(); };
+  }
+  draw();
+}
+
+/* ——— отзывы ——— */
+function reviews(box) {
+  let lang = 'ru';
+  const card = document.createElement('div');
+  card.className = 'card';
+  box.appendChild(card);
+  function draw() {
+    const list = cur.data[lang] || [];
+    card.innerHTML = '';
+    const tabs = document.createElement('div');
+    tabs.className = 'tabs';
+    LANGS.forEach(l => {
+      const b = document.createElement('button');
+      b.textContent = LNAME[l];
+      if (l === lang) b.className = 'on';
+      b.onclick = () => { lang = l; draw(); };
+      tabs.appendChild(b);
+    });
+    card.appendChild(tabs);
+    list.forEach((r, i) => {
+      const w = document.createElement('div');
+      w.className = 'row';
+      w.style.marginBottom = '10px';
+      const n = document.createElement('input');
+      n.value = r.name || ''; n.placeholder = 'Имя';
+      n.oninput = () => r.name = n.value;
+      const q = document.createElement('input');
+      q.value = r.q || ''; q.placeholder = 'Текст отзыва';
+      q.oninput = () => r.q = q.value;
+      const d = document.createElement('button');
+      d.className = 'del sm'; d.textContent = '×';
+      d.onclick = () => { list.splice(i, 1); draw(); };
+      const c1 = document.createElement('div'); c1.style.flex = '0 0 180px'; c1.appendChild(n);
+      const c2 = document.createElement('div'); c2.style.flex = '1 1 420px'; c2.appendChild(q);
+      const c3 = document.createElement('div'); c3.style.flex = '0 0 auto'; c3.appendChild(d);
+      w.append(c1, c2, c3);
+      card.appendChild(w);
+    });
+    const add = document.createElement('button');
+    add.className = 'sec sm'; add.textContent = 'Добавить отзыв';
+    add.onclick = () => { (cur.data[lang] = list).push({name: '', q: ''}); draw(); };
+    card.appendChild(add);
+  }
+  draw();
+}
+
+/* ——— косметика ——— */
+function shop(box) {
+  const card = document.createElement('div');
+  card.className = 'card';
+  box.appendChild(card);
+  const find = document.createElement('input');
+  find.placeholder = 'Поиск по названию или бренду';
+  find.style.marginBottom = '12px';
+  card.appendChild(find);
+  const holder = document.createElement('div');
+  card.appendChild(holder);
+  function draw() {
+    const q = find.value.trim().toLowerCase();
+    const t = document.createElement('table');
+    t.innerHTML = '<tr><th>Бренд</th><th>Название</th><th style="width:100px">Объём</th>' +
+      '<th style="width:100px">Цена</th><th style="width:150px">Наличие</th></tr>';
+    cur.data.forEach(p => {
+      if (q && !((p.brand + ' ' + p.name).toLowerCase().includes(q))) return;
+      const tr = document.createElement('tr');
+      tr.innerHTML = '<td>' + (p.brand || '') + '</td><td>' + (p.name || '') + '</td>';
+      const tdv = document.createElement('td'); tdv.textContent = p.volume || '';
+      const tdp = document.createElement('td');
+      const ip = document.createElement('input');
+      ip.value = p.price; ip.oninput = () => p.price = Number(ip.value) || 0;
+      tdp.appendChild(ip);
+      const tds = document.createElement('td');
+      const s = document.createElement('select');
+      s.innerHTML = '<option value="in">В наличии</option><option value="pre">Под заказ</option>';
+      s.value = p.stock || 'pre';
+      s.onchange = () => p.stock = s.value;
+      tds.appendChild(s);
+      tr.append(tdv, tdp, tds);
+      t.appendChild(tr);
+    });
+    holder.innerHTML = '';
+    holder.appendChild(t);
+  }
+  find.oninput = draw;
+  draw();
+}
+
+/* ——— запасной редактор ——— */
+function raw(box) {
+  const card = document.createElement('div');
+  card.className = 'card';
+  const ta = document.createElement('textarea');
+  ta.value = JSON.stringify(cur.data, null, 1);
+  const info = document.createElement('div');
+  info.className = 'hint';
+  info.textContent = 'Правьте только то, что внутри кавычек. Если текст станет неправильным, сохранить не получится — панель предупредит.';
+  ta.oninput = () => {
+    try { cur.data = JSON.parse(ta.value); ta.style.borderColor = ''; info.textContent = 'Можно сохранять.'; }
+    catch (e) { ta.style.borderColor = 'var(--bad)'; info.textContent = 'Ошибка в тексте: ' + e.message; }
+  };
+  card.append(info, ta);
+  box.appendChild(card);
+}
+
+$('#enter').onclick = enter;
+$('#tok').addEventListener('keydown', e => { if (e.key === 'Enter') enter(); });
+$('#logout').onclick = () => { localStorage.removeItem('hs_token'); location.reload(); };
+if (token) { $('#tok').value = token; start(); }
+</script>
+</body>
+</html>

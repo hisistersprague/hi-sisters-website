@@ -27,6 +27,8 @@ pages = [os.path.join(dp, f) for dp, _, fs in os.walk(SITE) for f in fs if f.end
 pages = [f for f in pages if f[len(SITE):] != '/index.html']
 # страницы-перенаправления проверять нечего
 pages = [f for f in pages if '/massage/' not in f[len(SITE):]]
+# панель управления — служебная страница, в ней нет ни навигации, ни описания
+pages = [f for f in pages if not f[len(SITE):].startswith('/admin/')]
 pages = [f for f in pages if f[len(SITE):].count('/') != 1 or not f.endswith('.html')]
 links = 0
 for fp in sorted(pages):
