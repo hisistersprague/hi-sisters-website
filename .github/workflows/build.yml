@@ -2,6 +2,7 @@ name: Пересборка сайта
 
 # Сайт собирается сам, как только меняется содержимое в src/content/.
 # Картинки лежат в assets/ в корне: их подкладываем в сборку, но заново не копируем.
+# app.css генерирует сборка, поэтому старую копию из assets/ не подкладываем.
 on:
   push:
     branches: [main]
@@ -31,7 +32,7 @@ jobs:
         run: cd src && python3 build.py
       - name: Подложить картинки и проверить сборку
         run: |
-          rsync -a assets/ src/site/assets/
+          rsync -a --exclude 'app.css' assets/ src/site/assets/
           cd src && python3 _check.py
       - name: Разложить страницы в корень сайта
         run: rsync -a src/site/ ./
