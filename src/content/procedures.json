@@ -1229,22 +1229,27 @@
    },
    "body": {
     "ru": [
+     "PMP — это peppermint peel от Love Cosmedical: мятный пилинг на основе комплекса трихлоруксусной кислоты (TCA) с другими кислотами, пептидами и ментолом. В клинике работаем мягкой версией Mild. Ментол даёт ощущение прохлады во время процедуры и смягчает жжение.",
      "Процедуру подбираем под задачу: неровный тон, следы постакне, тусклость, снижение плотности кожи. Косметолог контролирует время выдержки и количество слоёв — от этого зависит и результат, и реакция кожи, поэтому параметры всегда индивидуальные.",
      "Пилинг работает накопительно: заметная разница обычно видна после 3–4 процедур, а не после первой. Мы сразу проговариваем это на консультации, чтобы ожидания совпадали с реальностью."
     ],
     "uk": [
+     "PMP — це peppermint peel від Love Cosmedical: мʼятний пілінг на основі комплексу трихлороцтової кислоти (TCA) з іншими кислотами, пептидами та ментолом. У клініці працюємо мʼякою версією Mild. Ментол дає відчуття прохолоди під час процедури і помʼякшує печіння.",
      "Процедуру підбираємо під задачу: нерівний тон, сліди постакне, тьмяність, зниження щільності шкіри. Косметолог контролює час витримки та кількість шарів — від цього залежить і результат, і реакція шкіри, тому параметри завжди індивідуальні.",
      "Пілінг працює накопичувально: помітна різниця зазвичай видна після 3–4 процедур, а не після першої. Ми одразу про це говоримо на консультації, щоб очікування збігалися з реальністю."
     ],
     "cs": [
+     "PMP je peppermint peel od Love Cosmedical: mátový peeling na bázi komplexu trichloroctové kyseliny (TCA) s dalšími kyselinami, peptidy a mentolem. Na klinice pracujeme s jemnější verzí Mild. Mentol při ošetření chladí a zmírňuje pálení.",
      "Ošetření volíme podle cíle: nerovný tón, stopy po akné, šedivost, nižší hustota pleti. Kosmetoložka řídí dobu působení a počet vrstev — na tom závisí výsledek i reakce pleti, proto jsou parametry vždy individuální.",
      "Peeling pracuje kumulativně: patrný rozdíl bývá vidět po 3–4 ošetřeních, ne po prvním. Říkáme to hned na konzultaci, aby očekávání odpovídala realitě."
     ],
     "en": [
+     "PMP is the peppermint peel by Love Cosmedical: a mint peel built on a trichloroacetic acid (TCA) complex with other acids, peptides and menthol. We work with the gentler Mild version. The menthol cools the skin during the treatment and takes the edge off the stinging.",
      "We tailor the session to the goal: uneven tone, post-acne marks, dullness, loss of skin density. The cosmetologist controls the contact time and the number of layers — both the result and the skin's reaction depend on this, so the parameters are always individual.",
      "This peel works cumulatively: a visible difference usually comes after 3–4 sessions, not after the first. We say so at the consultation so expectations match reality."
     ],
     "es": [
+     "PMP es el peppermint peel de Love Cosmedical: un peeling de menta basado en un complejo de ácido tricloroacético (TCA) con otros ácidos, péptidos y mentol. En la clínica trabajamos con la versión suave Mild. El mentol refresca durante el tratamiento y suaviza el escozor.",
      "Ajustamos la sesión al objetivo: tono irregular, marcas de acné, falta de luminosidad, pérdida de densidad. La cosmetóloga controla el tiempo de contacto y el número de capas: de ello dependen el resultado y la reacción de la piel, así que los parámetros son siempre individuales.",
      "Este peeling actúa de forma acumulativa: la diferencia visible suele llegar tras 3–4 sesiones, no con la primera. Lo decimos en la consulta para que las expectativas coincidan con la realidad."
     ]
@@ -3270,21 +3275,44 @@
    ],
    "duration": 45,
    "title": {
-    "ru": "Мезотерапия кожи головы",
-    "uk": "Мезотерапія шкіри голови"
+    "ru": "Мезотерапия кожи головы на дермапене",
+    "uk": "Мезотерапія шкіри голови на дермапені",
+    "cs": "Mezoterapie vlasové pokožky dermapenem",
+    "en": "Dermapen scalp mesotherapy",
+    "es": "Mesoterapia capilar con Dermapen"
    },
    "lead": {
-    "ru": "Микроинъекции в кожу головы: работают с питанием волосяных фолликулов и состоянием кожи. Делаем только после осмотра трихоскопом.",
-    "uk": "Мікроінʼєкції у шкіру голови: працюють із живленням волосяних фолікулів і станом шкіри. Робимо лише після огляду трихоскопом."
+    "ru": "Коктейль для кожи головы вводим аппаратом Dermapen через микроканалы, без шприцевых инъекций. Делаем только после осмотра трихоскопом.",
+    "uk": "Коктейль для шкіри голови вводимо апаратом Dermapen через мікроканали, без шприцевих інʼєкцій. Робимо лише після огляду трихоскопом.",
+    "cs": "Koktejl pro pokožku hlavy zavádíme přístrojem Dermapen přes mikrokanálky, bez injekcí stříkačkou. Děláme až po vyšetření trichoskopem.",
+    "en": "The scalp cocktail goes in through micro-channels made by a Dermapen, with no syringe injections. We only do it after a trichoscopy.",
+    "es": "El cóctel para el cuero cabelludo entra por microcanales hechos con Dermapen, sin inyecciones con jeringa. Solo lo hacemos tras la tricoscopia."
    },
    "body": {
     "ru": [
-     "Препарат вводят тонкой иглой по проборам в зоне, где есть истончение или выпадение. Коктейль подбирают по картине трихоскопии: одни составы работают с кровоснабжением и питанием фолликулов, другие — с жирностью и воспалением кожи головы.",
-     "Что важно понимать: мезотерапия не отменяет причину выпадения. Если дело в дефиците железа, гормонах или заболевании, процедуры дадут временный эффект, а выпадение вернётся. Поэтому мы сначала смотрим трихоскопом и при необходимости отправляем на анализы, а курс начинаем, когда понятно, с чем работаем. Результат оценивают не раньше, чем через 3 месяца: таков цикл роста волоса."
+     "Аппарат с одноразовой стерильной насадкой проходит по проборам в зоне, где есть истончение или выпадение, создавая микроканалы заданной глубины. Через них в кожу головы попадает коктейль. Глубину трихолог выставляет по зоне и состоянию кожи.",
+     "Работают два механизма: сам состав и реакция кожи на контролируемое микроповреждение — усиливается кровоток в зоне фолликулов. Коктейль подбирают по картине трихоскопии: одни составы работают с питанием фолликулов, другие — с жирностью и воспалением кожи головы.",
+     "Что важно понимать: процедура не отменяет причину выпадения. Если дело в дефиците железа, гормонах или заболевании, эффект будет временным, а выпадение вернётся. Поэтому мы сначала смотрим трихоскопом и при необходимости отправляем на анализы. Результат оценивают не раньше, чем через 3 месяца: таков цикл роста волоса."
     ],
     "uk": [
-     "Препарат вводять тонкою іглою по проборах у зоні, де є стоншення або випадіння. Коктейль підбирають за картиною трихоскопії: одні склади працюють із кровопостачанням і живленням фолікулів, інші — із жирністю та запаленням шкіри голови.",
-     "Що важливо розуміти: мезотерапія не скасовує причину випадіння. Якщо справа в дефіциті заліза, гормонах або захворюванні, процедури дадуть тимчасовий ефект, а випадіння повернеться. Тому ми спершу дивимося трихоскопом і за потреби відправляємо на аналізи, а курс починаємо, коли зрозуміло, з чим працюємо. Результат оцінюють не раніше, ніж через 3 місяці: такий цикл росту волосини."
+     "Апарат з одноразовою стерильною насадкою проходить по проборах у зоні, де є стоншення або випадіння, створюючи мікроканали заданої глибини. Через них у шкіру голови потрапляє коктейль. Глибину трихолог виставляє за зоною і станом шкіри.",
+     "Працюють два механізми: сам склад і реакція шкіри на контрольоване мікропошкодження — посилюється кровотік у зоні фолікулів. Коктейль добирають за картиною трихоскопії: одні склади працюють із живленням фолікулів, інші — із жирністю та запаленням шкіри голови.",
+     "Що важливо розуміти: процедура не скасовує причину випадіння. Якщо справа в дефіциті заліза, гормонах або захворюванні, ефект буде тимчасовим, а випадіння повернеться. Тому ми спершу дивимося трихоскопом і за потреби відправляємо на аналізи. Результат оцінюють не раніше, ніж через 3 місяці: такий цикл росту волосини."
+    ],
+    "cs": [
+     "Přístroj s jednorázovou sterilní hlavicí přejíždí po pěšinkách v místě prořídnutí nebo padání a vytváří mikrokanálky v nastavené hloubce. Jimi se do pokožky hlavy dostane koktejl. Hloubku volí tricholog podle zóny a stavu pokožky.",
+     "Pracují dva mechanismy: samotný přípravek a reakce pokožky na řízené mikropodráždění — v oblasti folikulů se zvýší prokrvení. Koktejl se vybírá podle nálezu trichoskopie: jedny přípravky pracují s výživou folikulů, jiné s mastnotou a zánětem pokožky hlavy.",
+     "Co je potřeba vědět: ošetření neodstraní příčinu padání. Pokud jde o nedostatek železa, hormony nebo onemocnění, efekt bude dočasný a padání se vrátí. Proto se nejdřív díváme trichoskopem a podle potřeby posíláme na vyšetření. Výsledek se hodnotí nejdřív za 3 měsíce — takový je cyklus růstu vlasu."
+    ],
+    "en": [
+     "A device with a sterile single-use tip passes along the partings in the area of thinning or shedding, creating micro-channels at a set depth. The cocktail enters the scalp through them. The trichologist sets the depth by area and by the state of the skin.",
+     "Two mechanisms work together: the formula itself and the skin's response to controlled micro-injury, which increases blood flow around the follicles. The cocktail is chosen from the trichoscopy findings: some formulas address follicle nutrition, others oiliness and inflammation of the scalp.",
+     "What matters: the treatment does not remove the cause of the shedding. If it comes from iron deficiency, hormones or disease, the effect is temporary and the shedding returns. That is why we examine with a trichoscope first and refer for tests when needed. Results are judged no earlier than three months in — that is the hair cycle."
+    ],
+    "es": [
+     "Un aparato con cabezal estéril de un solo uso recorre las rayas del cabello en la zona de afinamiento o caída y crea microcanales a una profundidad fijada. Por ellos entra el cóctel en el cuero cabelludo. El tricólogo ajusta la profundidad según la zona y el estado de la piel.",
+     "Actúan dos mecanismos: la propia fórmula y la respuesta de la piel a una microlesión controlada, que aumenta el riego alrededor de los folículos. El cóctel se elige según la tricoscopia: unas fórmulas trabajan la nutrición del folículo y otras la grasa y la inflamación del cuero cabelludo.",
+     "Lo importante: el tratamiento no elimina la causa de la caída. Si viene de un déficit de hierro, de las hormonas o de una enfermedad, el efecto será temporal y la caída volverá. Por eso primero miramos con el tricoscopio y derivamos a analítica si hace falta. El resultado se valora a partir de los tres meses: es el ciclo del cabello."
     ]
    },
    "who": {
@@ -3292,48 +3320,118 @@
      "истончение волос и снижение плотности",
      "выпадение, подтверждённое осмотром",
      "жирность и воспаление кожи головы",
-     "поддержка после перенесённого выпадения"
+     "поддержка после перенесённого выпадения",
+     "вы не хотите шприцевых инъекций"
     ],
     "uk": [
      "стоншення волосся і зниження щільності",
      "випадіння, підтверджене оглядом",
      "жирність і запалення шкіри голови",
-     "підтримка після перенесеного випадіння"
+     "підтримка після перенесеного випадіння",
+     "ви не хочете шприцевих інʼєкцій"
+    ],
+    "cs": [
+     "ztenčování vlasů a nižší hustota",
+     "padání potvrzené vyšetřením",
+     "mastnota a zánět pokožky hlavy",
+     "udržení po prodělaném padání",
+     "nechcete injekce stříkačkou"
+    ],
+    "en": [
+     "thinning hair and lower density",
+     "shedding confirmed by examination",
+     "an oily or inflamed scalp",
+     "maintenance after a period of shedding",
+     "you would rather avoid syringe injections"
+    ],
+    "es": [
+     "cabello más fino y menor densidad",
+     "caída confirmada en la exploración",
+     "cuero cabelludo graso o inflamado",
+     "mantenimiento tras una etapa de caída",
+     "prefieres evitar las inyecciones con jeringa"
     ]
    },
    "how": {
     "ru": [
      "осмотр трихоскопом и подбор коктейля",
      "обработка кожи головы антисептиком",
-     "микроинъекции по проборам в нужной зоне",
+     "проход дермапеном по проборам в нужной зоне",
+     "нанесение состава",
      "рекомендации по уходу на 1–2 дня"
     ],
     "uk": [
      "огляд трихоскопом і підбір коктейлю",
      "обробка шкіри голови антисептиком",
-     "мікроінʼєкції по проборах у потрібній зоні",
+     "прохід дермапеном по проборах у потрібній зоні",
+     "нанесення складу",
      "рекомендації щодо догляду на 1–2 дні"
+    ],
+    "cs": [
+     "vyšetření trichoskopem a volba koktejlu",
+     "ošetření pokožky hlavy antiseptikem",
+     "přejezd dermapenem po pěšinkách v dané zóně",
+     "nanesení přípravku",
+     "doporučení k péči na 1–2 dny"
+    ],
+    "en": [
+     "trichoscopy and choosing the cocktail",
+     "antiseptic preparation of the scalp",
+     "passing the Dermapen along the partings in the area",
+     "applying the formula",
+     "care guidance for the next day or two"
+    ],
+    "es": [
+     "tricoscopia y elección del cóctel",
+     "preparación antiséptica del cuero cabelludo",
+     "pasada con el Dermapen por las rayas de la zona",
+     "aplicación de la fórmula",
+     "pautas de cuidado para uno o dos días"
     ]
    },
    "after": {
     "ru": [
-     "во время процедуры ощущаются уколы, иногда жжение — это терпимо, но безболезненно не бывает",
-     "кожа головы может быть чувствительной до вечера",
+     "во время процедуры ощущается покалывание, иногда жжение — терпимо, но безболезненно не бывает",
+     "покраснение и чувствительность кожи головы до вечера, иногда до следующего дня",
      "голову не мыть сутки",
      "2 дня без сауны, бассейна и активного спорта",
-     "процедура не проводится при беременности, кормлении, воспалениях на коже головы и нарушениях свёртываемости крови"
+     "не делаем при воспалениях и повреждениях кожи головы, беременности, нарушениях свёртываемости крови и склонности к келоидным рубцам"
     ],
     "uk": [
-     "під час процедури відчуваються уколи, іноді пекіння — це терпимо, але безболісно не буває",
-     "шкіра голови може бути чутливою до вечора",
+     "під час процедури відчувається поколювання, іноді печіння — терпимо, але безболісно не буває",
+     "почервоніння й чутливість шкіри голови до вечора, іноді до наступного дня",
      "голову не мити добу",
      "2 дні без сауни, басейну й активного спорту",
-     "процедура не проводиться при вагітності, годуванні, запаленнях на шкірі голови й порушеннях згортання крові"
+     "не робимо при запаленнях і пошкодженнях шкіри голови, вагітності, порушеннях згортання крові та схильності до келоїдних рубців"
+    ],
+    "cs": [
+     "během ošetření cítíte brnění, někdy pálení — snesitelné, ale bezbolestné to není",
+     "zarudnutí a citlivost pokožky hlavy do večera, někdy do druhého dne",
+     "hlavu jeden den nemýt",
+     "2 dny bez sauny, bazénu a náročného sportu",
+     "neděláme při zánětech a poraněních pokožky hlavy, v těhotenství, při poruchách srážlivosti a sklonu ke keloidním jizvám"
+    ],
+    "en": [
+     "you feel tingling and sometimes stinging during the session — bearable, but not painless",
+     "redness and a tender scalp until the evening, sometimes into the next day",
+     "do not wash your hair for 24 hours",
+     "two days without sauna, pool or hard training",
+     "not done with inflammation or wounds on the scalp, in pregnancy, with clotting disorders or a tendency to keloid scarring"
+    ],
+    "es": [
+     "durante la sesión se nota hormigueo y a veces escozor: es llevadero, pero no indoloro",
+     "enrojecimiento y sensibilidad del cuero cabelludo hasta la tarde, a veces hasta el día siguiente",
+     "no lavar la cabeza durante 24 horas",
+     "dos días sin sauna, piscina ni deporte intenso",
+     "no se hace con inflamación o heridas en el cuero cabelludo, en embarazo, con trastornos de coagulación ni tendencia a queloides"
     ]
    },
    "freq": {
     "ru": "Курс обычно 6–10 процедур с интервалом 1–2 недели, затем поддержка. Точный курс трихолог назначает после осмотра.",
-    "uk": "Курс зазвичай 6–10 процедур з інтервалом 1–2 тижні, далі підтримка. Точний курс трихолог призначає після огляду."
+    "uk": "Курс зазвичай 6–10 процедур з інтервалом 1–2 тижні, далі підтримка. Точний курс трихолог призначає після огляду.",
+    "cs": "Kúra obvykle 6–10 ošetření v intervalu 1–2 týdny, pak udržovací režim. Přesnou kúru určí tricholog po vyšetření.",
+    "en": "Usually a course of 6–10 sessions 1–2 weeks apart, then maintenance. The trichologist sets the exact course after the examination.",
+    "es": "Normalmente una pauta de 6–10 sesiones cada 1–2 semanas y después mantenimiento. El tricólogo fija la pauta exacta tras la exploración."
    }
   },
   {
