@@ -27,7 +27,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/assets/app.css?v=bea5e144">
+<link rel="stylesheet" href="/assets/app.css?v=3a160280">
 <link rel="icon" href="/favicon.svg">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-K921K357QH"></script>
 <script>
@@ -106,6 +106,28 @@ addEventListener('click',function(ev){
   </div>
   <nav class="foot-nav"><a href="/cs/prague/">Domů</a><a href="/cs/prague/services/">Služby</a><a href="/cs/prague/training/">Školení</a><a href="/cs/prague/cosmetics/">Kosmetika</a><a href="/cs/prague/about/">O nás</a><a href="/cs/prague/contacts/">Kontakty</a></nav>
 </div></footer><div class="sticky"><a class="btn btn-gold" href="/cs/prague/booking/" data-book>Objednat se</a></div><script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Hi Sisters Clinic","item":"https://hi-sisters.clinic/cs/prague/"},{"@type":"ListItem","position":2,"name":"Služby a ceník","item":"https://hi-sisters.clinic/cs/prague/services/"},{"@type":"ListItem","position":3,"name":"Kosmetologie","item":"https://hi-sisters.clinic/cs/prague/cosmetology/"},{"@type":"ListItem","position":4,"name":"Enzymoterapie","item":"https://hi-sisters.clinic/cs/prague/cosmetology/enzyme-therapy/"}]}</script><script>(function(){
+  var cars=[].slice.call(document.querySelectorAll('[data-car]'));
+  cars.forEach(function(car){
+    var track=car.querySelector('.rc-track');
+    var prev=car.querySelector('.rc-prev');
+    var next=car.querySelector('.rc-next');
+    if(!track||!prev||!next) return;
+    function step(){
+      var card=track.querySelector('.rev');
+      return card?card.getBoundingClientRect().width+16:320;
+    }
+    function sync(){
+      prev.disabled=track.scrollLeft<=2;
+      next.disabled=track.scrollLeft+track.clientWidth>=track.scrollWidth-2;
+    }
+    prev.addEventListener('click',function(){track.scrollLeft-=step()*2;});
+    next.addEventListener('click',function(){track.scrollLeft+=step()*2;});
+    track.addEventListener('scroll',sync,{passive:true});
+    window.addEventListener('resize',sync);
+    sync();
+  });
+})();
+(function(){
   var subs=[].slice.call(document.querySelectorAll('.has-sub'));
   subs.forEach(function(el){
     var btn=el.querySelector('.nav-x');

@@ -261,6 +261,21 @@ section{padding:50px 0}
 .pcol h3{font-size:22px;margin-bottom:12px}
 
 /* отзывы */
+.rev-car{position:relative}
+.rc-track{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;
+  scroll-behavior:smooth;padding:2px 2px 10px;scrollbar-width:none;-ms-overflow-style:none}
+.rc-track::-webkit-scrollbar{display:none}
+.rc-track .rev{flex:0 0 320px;scroll-snap-align:start;margin:0;display:flex;flex-direction:column}
+.rc-track .rev p{flex:1}
+.rc-btn{position:absolute;top:50%;transform:translateY(-50%);width:40px;height:40px;
+  border-radius:50%;border:1px solid var(--line-gold);background:#fff;color:var(--accent);
+  font-size:22px;line-height:1;cursor:pointer;display:flex;align-items:center;
+  justify-content:center;box-shadow:0 4px 14px rgba(19,11,86,.08);z-index:2}
+.rc-btn:hover{border-color:var(--accent);background:var(--rose)}
+.rc-btn[disabled]{opacity:.35;cursor:default}
+.rc-prev{left:-14px}
+.rc-next{right:-14px}
+@media(max-width:900px){.rc-btn{display:none}.rc-track .rev{flex-basis:82vw}}
 .revs{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px}
 .rev{padding:22px;background:var(--cream);border:1px solid var(--line);border-radius:12px}
 .rev p{font-size:15.5px;margin:10px 0 12px}

@@ -27,7 +27,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/assets/app.css?v=bea5e144">
+<link rel="stylesheet" href="/assets/app.css?v=3a160280">
 <link rel="icon" href="/favicon.svg">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-K921K357QH"></script>
 <script>
@@ -128,9 +128,9 @@ addEventListener('click',function(ev){
   <div class="sec-head"><h2>Що кажуть клієнтки</h2></div>
   <a class="rev-trust" href="https://www.google.com/maps?cid=17098057881509158110" target="_blank" rel="noopener"><span class="rev-trust-stars">★★★★★</span><span class="rev-trust-text">5,0 на Google · 211 відгуків</span></a>
   <div class="revs">
-      <figure class="rev"><div class="stars">★★★★★</div><p>Ходжу на електроепіляцію до Наталі, дуже задоволена. Адміністраторки завжди зустрінуть, допоможуть, дадуть відповідь на всі питання. Дуже чисто й затишно, процедура завжди на найвищому рівні — починаючи зі стерильності.</p><cite>Анна</cite></figure>
-      <figure class="rev"><div class="stars">★★★★★</div><p>Була на прийомі у Валерії, усе дуже сподобалося. Уважно вислухала, все пояснила простою мовою, відповіла на всі питання й дала рекомендації. Було комфортно, без поспіху.</p><cite>Татьяна Ткаченко</cite></figure>
-      <figure class="rev"><div class="stars">★★★★★</div><p>Без сумнівів можу рекомендувати це місце. Чудові спеціалістки, дуже приємні люди, прекрасна атмосфера і, найголовніше, якісна робота.</p><cite>Yuliia Kozhevnikova</cite></figure></div>
+      <figure class="rev"><div class="stars">★★★★★</div><p>Ходжу з 2023 року. Найбільше ціную чесний підхід: тут не нав’язують зайвих процедур і не розтягують курс. Якщо бачать, що на зоні лазер уже не дасть результату, чесно радять перейти на електроепіляцію.</p><cite>Афіна М.</cite></figure>
+      <figure class="rev"><div class="stars">★★★★★</div><p>Робила і лазерну, і електроепіляцію. Усе пояснили заздалегідь, під час процедури регулярно питали, як я почуваюся. Після докладно розповіли про догляд і коли приходити знову.</p><cite>Мирослава П.</cite></figure>
+      <figure class="rev"><div class="stars">★★★★★</div><p>Робили електроепіляцію, працювала Наталя. Показала, що всі інструменти стерильні, усе пояснила і терпляче відповіла на мої дивні питання. Кілька разів під час процедури запитала, як я почуваюся.</p><cite>Анна А.</cite></figure></div>
 </div></section>
 <section class="band"><div class="wrap">
   <h2>Запишіться сьогодні</h2>
@@ -163,6 +163,28 @@ addEventListener('click',function(ev){
   </div>
   <nav class="foot-nav"><a href="/uk/prague/">Головна</a><a href="/uk/prague/services/">Послуги</a><a href="/uk/prague/training/">Навчання</a><a href="/uk/prague/cosmetics/">Косметика</a><a href="/uk/prague/about/">Про нас</a><a href="/uk/prague/contacts/">Контакти</a></nav>
 </div></footer><div class="sticky"><a class="btn btn-gold" href="/uk/prague/booking/" data-book>Записатися</a></div><script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Hi Sisters Clinic","item":"https://hi-sisters.clinic/uk/prague/"},{"@type":"ListItem","position":2,"name":"Ми робимо епіляцію інакше","item":"https://hi-sisters.clinic/uk/prague/about/"}]}</script><script>(function(){
+  var cars=[].slice.call(document.querySelectorAll('[data-car]'));
+  cars.forEach(function(car){
+    var track=car.querySelector('.rc-track');
+    var prev=car.querySelector('.rc-prev');
+    var next=car.querySelector('.rc-next');
+    if(!track||!prev||!next) return;
+    function step(){
+      var card=track.querySelector('.rev');
+      return card?card.getBoundingClientRect().width+16:320;
+    }
+    function sync(){
+      prev.disabled=track.scrollLeft<=2;
+      next.disabled=track.scrollLeft+track.clientWidth>=track.scrollWidth-2;
+    }
+    prev.addEventListener('click',function(){track.scrollLeft-=step()*2;});
+    next.addEventListener('click',function(){track.scrollLeft+=step()*2;});
+    track.addEventListener('scroll',sync,{passive:true});
+    window.addEventListener('resize',sync);
+    sync();
+  });
+})();
+(function(){
   var subs=[].slice.call(document.querySelectorAll('.has-sub'));
   subs.forEach(function(el){
     var btn=el.querySelector('.nav-x');
