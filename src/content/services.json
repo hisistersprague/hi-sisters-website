@@ -599,6 +599,17 @@
     "note": "",
     "seoTitle": "Laserová epilace {city} — ceník a trvalý výsledek"
    }
+  },
+  "video": {
+   "src": "/assets/video/laser-nohy-1.mp4",
+   "poster": "/assets/video/laser-nohy-1.jpg",
+   "title": {
+    "ru": "Как проходит сеанс лазерной эпиляции",
+    "uk": "Як проходить сеанс лазерної епіляції",
+    "cs": "Jak probíhá sezení laserové epilace",
+    "en": "What a laser session looks like",
+    "es": "Cómo es una sesión de láser"
+   }
   }
  },
  "electro": {
@@ -1220,6 +1231,17 @@
      }
     ],
     "seoTitle": "Elektroepilace {city} — cena za minutu, i světlé chloupky"
+   }
+  },
+  "video": {
+   "src": "/assets/video/elektroepilace-4ruce.mp4",
+   "poster": "/assets/video/elektroepilace-4ruce.jpg",
+   "title": {
+    "ru": "Электроэпиляция в четыре руки",
+    "uk": "Електроепіляція в чотири руки",
+    "cs": "Elektroepilace ve čtyřech rukou",
+    "en": "Electrolysis with four hands",
+    "es": "Electrólisis a cuatro manos"
    }
   }
  },

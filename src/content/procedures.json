@@ -889,6 +889,17 @@
     "cs": "Jednou za 4–6 týdnů při sklonu k vyrážkám, jednou za 2–3 měsíce udržovacím režimem. Interval volíme podle toho, jak rychle se vám plní póry, ne podle kalendáře.",
     "en": "Every 4–6 weeks if you are prone to breakouts, every 2–3 months for maintenance. We set the interval by how fast your pores refill, not by the calendar.",
     "es": "Cada 4–6 semanas si tienes tendencia a brotes y cada 2–3 meses como mantenimiento. El intervalo se fija según lo rápido que se te vuelven a llenar los poros, no por calendario."
+   },
+   "video": {
+    "src": "/assets/video/cisteni-pleti.mp4",
+    "poster": "/assets/video/cisteni-pleti.jpg",
+    "title": {
+     "ru": "Как проходит чистка лица",
+     "uk": "Як проходить чистка обличчя",
+     "cs": "Jak probíhá čištění pleti",
+     "en": "What a facial cleanse looks like",
+     "es": "Cómo es una limpieza facial"
+    }
    }
   },
   {
