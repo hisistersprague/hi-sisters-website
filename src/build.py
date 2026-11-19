@@ -4078,6 +4078,7 @@ def root_redirect():
             '<meta name="viewport" content="width=device-width,initial-scale=1">'
             '<title>Hi Sisters Clinic — Praha a Valencia</title>'
             '<meta name="robots" content="noindex,follow">'
+            '<meta name="google-site-verification" content="w0gr_xIGKVAPVdWsNGRQxfjPjKZGN87bxB6bOTXDnwI">'
             '<link rel="canonical" href="%s/cs/prague/">%s'
             '<meta http-equiv="refresh" content="0;url=/cs/prague/">'
             '<link rel="icon" href="/favicon.svg">%s'
