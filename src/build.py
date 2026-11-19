@@ -1473,7 +1473,7 @@ section{padding:50px 0}
 .btn-wa:hover{border-color:#25D366;color:#128C4A}
 .vframe{position:relative;padding-top:56.25%;border-radius:14px;overflow:hidden}
 .vframe iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
-.vfile{width:100%;border-radius:14px;display:block}
+.vfile{width:100%;max-width:420px;max-height:70vh;border-radius:14px;display:block;margin:0 auto;background:#0d0738}
 .hero-v{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0;opacity:.35}
 .hero{position:relative}
 .hero .wrap{position:relative;z-index:1}
