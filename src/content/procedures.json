@@ -1,0 +1,3227 @@
+{
+ "ui": {
+  "ru": {
+   "descTitle": "Описание процедур",
+   "who": "Кому подходит",
+   "how": "Как проходит",
+   "after": "После процедуры",
+   "freq": "Как часто",
+   "own": "Отдельная страница процедуры",
+   "back": "Все процедуры раздела",
+   "other": "Другие процедуры этого раздела",
+   "min": "минут",
+   "from": "от"
+  },
+  "uk": {
+   "descTitle": "Опис процедур",
+   "who": "Кому підходить",
+   "how": "Як проходить",
+   "after": "Після процедури",
+   "freq": "Як часто",
+   "own": "Окрема сторінка процедури",
+   "back": "Усі процедури розділу",
+   "other": "Інші процедури цього розділу",
+   "min": "хвилин",
+   "from": "від"
+  },
+  "cs": {
+   "descTitle": "Popis procedur",
+   "who": "Pro koho je vhodná",
+   "how": "Jak probíhá",
+   "after": "Po proceduře",
+   "freq": "Jak často",
+   "own": "Samostatná stránka procedury",
+   "back": "Všechny procedury sekce",
+   "other": "Další procedury této sekce",
+   "min": "minut",
+   "from": "od"
+  },
+  "en": {
+   "descTitle": "Treatment descriptions",
+   "who": "Who it suits",
+   "how": "How it goes",
+   "after": "After the treatment",
+   "freq": "How often",
+   "own": "Dedicated treatment page",
+   "back": "All treatments in this section",
+   "other": "Other treatments in this section",
+   "min": "minutes",
+   "from": "from"
+  },
+  "es": {
+   "descTitle": "Descripción de los tratamientos",
+   "who": "Para quién es",
+   "how": "Cómo se realiza",
+   "after": "Después del tratamiento",
+   "freq": "Con qué frecuencia",
+   "own": "Página propia del tratamiento",
+   "back": "Todos los tratamientos de la sección",
+   "other": "Otros tratamientos de esta sección",
+   "min": "minutos",
+   "from": "desde"
+  }
+ },
+ "subs": [
+  {
+   "key": "consult",
+   "title": {
+    "ru": "Консультации",
+    "uk": "Консультації",
+    "cs": "Konzultace",
+    "en": "Consultations",
+    "es": "Consultas"
+   }
+  },
+  {
+   "key": "cleaning",
+   "title": {
+    "ru": "Чистки лица",
+    "uk": "Чистки обличчя",
+    "cs": "Čištění pleti",
+    "en": "Facial cleansing",
+    "es": "Limpiezas faciales"
+   }
+  },
+  {
+   "key": "peel",
+   "title": {
+    "ru": "Пилинги",
+    "uk": "Пілінги",
+    "cs": "Peelingy",
+    "en": "Peels",
+    "es": "Peelings"
+   }
+  },
+  {
+   "key": "care",
+   "title": {
+    "ru": "Уходовые процедуры",
+    "uk": "Догляд за шкірою",
+    "cs": "Ošetření pleti",
+    "en": "Skincare treatments",
+    "es": "Tratamientos de cuidado"
+   }
+  },
+  {
+   "key": "device",
+   "title": {
+    "ru": "Аппаратная косметология",
+    "uk": "Апаратна косметологія",
+    "cs": "Přístrojová kosmetologie",
+    "en": "Device-based treatments",
+    "es": "Aparatología"
+   }
+  },
+  {
+   "key": "massage",
+   "title": {
+    "ru": "Массаж лица",
+    "uk": "Масаж обличчя",
+    "cs": "Masáž tváře",
+    "en": "Facial massage",
+    "es": "Masaje facial"
+   }
+  },
+  {
+   "key": "meso",
+   "title": {
+    "ru": "Мезотерапия",
+    "uk": "Мезотерапія",
+    "cs": "Mezoterapie",
+    "en": "Mesotherapy",
+    "es": "Mesoterapia"
+   }
+  },
+  {
+   "key": "inject",
+   "title": {
+    "ru": "Инъекционная косметология",
+    "uk": "Ін’єкційна косметологія"
+   }
+  }
+ ],
+ "items": [
+  {
+   "slug": "skin-consultation",
+   "sub": "consult",
+   "service": "cosmetology",
+   "group": "cosmetologyItems",
+   "rows": [
+    0
+   ],
+   "duration": 60,
+   "title": {
+    "ru": "Консультация косметолога с анализом кожи",
+    "uk": "Консультація косметолога з аналізом шкіри",
+    "cs": "Konzultace kosmetoložky s analýzou pleti",
+    "en": "Cosmetologist consultation with skin analysis",
+    "es": "Consulta de cosmetología con análisis de la piel"
+   },
+   "lead": {
+    "ru": "С этого начинается любой уход: сначала смотрим, что с кожей, и только потом решаем, какие процедуры нужны и в каком порядке.",
+    "uk": "Із цього починається будь-який догляд: спершу дивимося, що зі шкірою, і лише потім вирішуємо, які процедури потрібні та в якому порядку.",
+    "cs": "Tímto začíná každá péče: nejdřív se podíváme, v jakém stavu pleť je, a teprve potom řešíme, jaká ošetření a v jakém pořadí.",
+    "en": "Every plan starts here: first we look at the actual state of your skin, and only then decide which treatments you need and in what order.",
+    "es": "Todo plan empieza aquí: primero vemos en qué estado está la piel y solo después decidimos qué tratamientos hacen falta y en qué orden."
+   },
+   "body": {
+    "ru": [
+     "Косметолог осматривает кожу, оценивает её тип и состояние на день приёма, смотрит зоны с высыпаниями, расширенными порами, пигментацией и сухостью. Отдельно разбираем, чем вы пользуетесь дома: часто именно домашний уход даёт половину проблем, с которыми приходят в клинику.",
+     "На выходе вы получаете понятный план: какие процедуры нужны, с каким интервалом их делать, что убрать из домашнего ухода и что добавить. Если по состоянию кожи процедура сейчас не показана, мы скажем об этом прямо и предложим подождать."
+    ],
+    "uk": [
+     "Косметолог оглядає шкіру, оцінює її тип і стан на день прийому, дивиться зони з висипаннями, розширеними порами, пігментацією та сухістю. Окремо розбираємо, чим ви користуєтеся вдома: часто саме домашній догляд дає половину проблем, з якими приходять до клініки.",
+     "На виході ви отримуєте зрозумілий план: які процедури потрібні, з яким інтервалом їх робити, що прибрати з домашнього догляду і що додати. Якщо за станом шкіри процедура зараз не показана, ми скажемо про це прямо і запропонуємо почекати."
+    ],
+    "cs": [
+     "Kosmetoložka si pleť prohlédne, zhodnotí její typ a stav v den návštěvy a všimne si míst s projevy akné, rozšířenými póry, pigmentací nebo suchostí. Zvlášť probereme, co používáte doma: domácí péče bývá příčinou poloviny potíží, se kterými klientky přicházejí.",
+     "Odnesete si srozumitelný plán: která ošetření potřebujete, v jakých intervalech je dělat, co z domácí péče vyřadit a co doplnit. Pokud ošetření kvůli stavu pleti teď vhodné není, řekneme to na rovinu a doporučíme počkat."
+    ],
+    "en": [
+     "The cosmetologist examines your skin, assesses its type and its condition on the day, and notes the areas with breakouts, enlarged pores, pigmentation or dryness. We also go through what you use at home — home care is behind about half of the problems clients come in with.",
+     "You leave with a clear plan: which treatments you need, how far apart to space them, what to drop from your home routine and what to add. If your skin is not in a state for a treatment right now, we will say so plainly and suggest waiting."
+    ],
+    "es": [
+     "La cosmetóloga examina la piel, valora su tipo y su estado el día de la visita y revisa las zonas con brotes, poros dilatados, pigmentación o sequedad. También repasamos lo que usas en casa: la rutina doméstica está detrás de la mitad de los problemas con los que llegan las clientas.",
+     "Te vas con un plan claro: qué tratamientos necesitas, con qué intervalos hacerlos, qué quitar de tu rutina y qué añadir. Si por el estado de la piel ahora no conviene ningún tratamiento, te lo diremos con franqueza y propondremos esperar."
+    ]
+   },
+   "who": {
+    "ru": [
+     "вы впервые идёте к косметологу и не знаете, с чего начать",
+     "кожа изменилась: появились высыпания, сухость, пигментация",
+     "домашний уход перестал работать или вы не уверены, что он вам подходит",
+     "хотите понять, нужен ли курс процедур или достаточно разового ухода"
+    ],
+    "uk": [
+     "ви вперше йдете до косметолога і не знаєте, з чого почати",
+     "шкіра змінилася: з’явилися висипання, сухість, пігментація",
+     "домашній догляд перестав працювати або ви не впевнені, що він вам підходить",
+     "хочете зрозуміти, чи потрібен курс процедур, чи достатньо разового догляду"
+    ],
+    "cs": [
+     "jdete ke kosmetoložce poprvé a nevíte, čím začít",
+     "pleť se změnila: objevily se vyrážky, suchost, pigmentace",
+     "domácí péče přestala fungovat nebo si nejste jistá, že vám vyhovuje",
+     "chcete vědět, jestli potřebujete kúru, nebo stačí jedno ošetření"
+    ],
+    "en": [
+     "you are seeing a cosmetologist for the first time and do not know where to start",
+     "your skin has changed: breakouts, dryness or pigmentation have appeared",
+     "your home routine has stopped working, or you are not sure it suits you",
+     "you want to know whether you need a course of treatments or a single one is enough"
+    ],
+    "es": [
+     "vas a una cosmetóloga por primera vez y no sabes por dónde empezar",
+     "la piel ha cambiado: han aparecido brotes, sequedad o pigmentación",
+     "tu rutina de casa ha dejado de funcionar o no estás segura de que te convenga",
+     "quieres saber si necesitas una pauta de tratamientos o basta con uno"
+    ]
+   },
+   "how": {
+    "ru": [
+     "разговор: что беспокоит, что уже пробовали, какие есть заболевания и лекарства",
+     "осмотр кожи под лампой, оценка типа кожи, пор, высыпаний, пигментации",
+     "разбор домашнего ухода — можно принести свои баночки или их фотографии",
+     "план: процедуры, интервалы, домашний уход"
+    ],
+    "uk": [
+     "розмова: що турбує, що вже пробували, які є захворювання та ліки",
+     "огляд шкіри під лампою, оцінка типу шкіри, пор, висипань, пігментації",
+     "розбір домашнього догляду — можна принести свої банички або їхні фото",
+     "план: процедури, інтервали, домашній догляд"
+    ],
+    "cs": [
+     "rozhovor: co vás trápí, co jste zkoušela, jaké máte nemoci a léky",
+     "prohlídka pleti pod lampou, zhodnocení typu pleti, pórů, vyrážek, pigmentace",
+     "rozbor domácí péče — můžete přinést své přípravky nebo jejich fotky",
+     "plán: ošetření, intervaly, domácí péče"
+    ],
+    "en": [
+     "a conversation: what bothers you, what you have tried, your conditions and medications",
+     "examining the skin under a lamp: skin type, pores, breakouts, pigmentation",
+     "going through your home routine — bring the products or photos of them",
+     "the plan: treatments, intervals, home care"
+    ],
+    "es": [
+     "una conversación: qué te preocupa, qué has probado, qué enfermedades y medicación tienes",
+     "examen de la piel con lámpara: tipo de piel, poros, brotes, pigmentación",
+     "revisión de tu rutina de casa — puedes traer los productos o fotos de ellos",
+     "el plan: tratamientos, intervalos, cuidado en casa"
+    ]
+   },
+   "after": {
+    "ru": [
+     "кожа остаётся в том же состоянии: это осмотр, а не процедура",
+     "если решили начинать сразу, часть процедур можно сделать в тот же день",
+     "стоимость консультации засчитывается, если в этот день делаем процедуру"
+    ],
+    "uk": [
+     "шкіра залишається в тому самому стані: це огляд, а не процедура",
+     "якщо вирішили починати одразу, частину процедур можна зробити того ж дня",
+     "вартість консультації зараховується, якщо того дня робимо процедуру"
+    ],
+    "cs": [
+     "pleť zůstává ve stejném stavu: jde o prohlídku, ne o ošetření",
+     "pokud se rozhodnete začít hned, část ošetření lze udělat týž den",
+     "cena konzultace se odečte, pokud v ten den uděláme ošetření"
+    ],
+    "en": [
+     "your skin is unchanged — this is an assessment, not a treatment",
+     "if you want to start right away, some treatments can be done the same day",
+     "the consultation fee counts towards a treatment done on the same day"
+    ],
+    "es": [
+     "la piel queda igual: es una valoración, no un tratamiento",
+     "si quieres empezar ya, algunos tratamientos se pueden hacer el mismo día",
+     "el importe de la consulta se descuenta si ese día hacemos un tratamiento"
+    ]
+   },
+   "freq": {
+    "ru": "Повторный разбор имеет смысл раз в 3–6 месяцев или когда кожа заметно меняется — например, после смены климата, беременности или нового лечения.",
+    "uk": "Повторний розбір має сенс раз на 3–6 місяців або коли шкіра помітно змінюється — наприклад, після зміни клімату, вагітності чи нового лікування.",
+    "cs": "Opakovaná konzultace má smysl jednou za 3–6 měsíců nebo když se pleť výrazně změní — třeba po změně klimatu, v těhotenství nebo při nové léčbě.",
+    "en": "A follow-up makes sense every 3–6 months, or whenever your skin changes noticeably — after a change of climate, a pregnancy or a new course of medication.",
+    "es": "Una revisión tiene sentido cada 3–6 meses o cuando la piel cambia de forma notable: tras un cambio de clima, un embarazo o una nueva medicación."
+   }
+  },
+  {
+   "slug": "dermatologist",
+   "sub": "consult",
+   "service": "cosmetology",
+   "group": "cosmetologyItems",
+   "rows": [
+    1
+   ],
+   "duration": 45,
+   "title": {
+    "ru": "Консультация врача-дерматолога",
+    "uk": "Консультація лікаря-дерматолога",
+    "cs": "Konzultace u dermatologa",
+    "en": "Dermatologist consultation",
+    "es": "Consulta con dermatólogo"
+   },
+   "lead": {
+    "ru": "Нужна тогда, когда вопрос выходит за рамки косметологии: кожное заболевание, назначения, анализы.",
+    "uk": "Потрібна тоді, коли питання виходить за межі косметології: шкірне захворювання, призначення, аналізи.",
+    "cs": "Je potřeba, když otázka přesahuje kosmetologii: kožní onemocnění, léčba, vyšetření.",
+    "en": "This is for questions that go beyond cosmetology: a skin condition, prescriptions, tests.",
+    "es": "Es para lo que va más allá de la cosmetología: una enfermedad de la piel, tratamiento médico, analíticas."
+   },
+   "body": {
+    "ru": [
+     "Косметолог работает с состоянием кожи, врач — с заболеваниями. Если мы видим акне средней и тяжёлой степени, розацеа, дерматит, подозрительные образования или реакцию на препараты, честнее направить вас к дерматологу, а не пытаться закрыть это уходовыми процедурами.",
+     "Врач может назначить лечение и анализы, после которых мы спокойно возвращаемся к уходу. Такое разделение экономит деньги: часть проблем решается лечением, а не курсом процедур."
+    ],
+    "uk": [
+     "Косметолог працює зі станом шкіри, лікар — із захворюваннями. Якщо ми бачимо акне середнього та важкого ступеня, розацеа, дерматит, підозрілі утворення чи реакцію на препарати, чесніше направити вас до дерматолога, а не намагатися закрити це доглядовими процедурами.",
+     "Лікар може призначити лікування та аналізи, після яких ми спокійно повертаємося до догляду. Такий розподіл економить гроші: частина проблем вирішується лікуванням, а не курсом процедур."
+    ],
+    "cs": [
+     "Kosmetoložka pracuje se stavem pleti, lékař s onemocněním. Pokud vidíme středně těžké nebo těžké akné, rozaceu, dermatitidu, podezřelé útvary nebo reakci na léky, je čistší poslat vás k dermatologovi než to řešit kosmetickými ošetřeními.",
+     "Lékař může předepsat léčbu a vyšetření, po kterých se v klidu vrátíme k péči. Toto rozdělení šetří peníze: část potíží vyřeší léčba, ne kúra ošetření."
+    ],
+    "en": [
+     "A cosmetologist works with the condition of your skin; a doctor works with disease. If we see moderate or severe acne, rosacea, dermatitis, suspicious lesions or a reaction to medication, it is more honest to send you to a dermatologist than to paper over it with skincare treatments.",
+     "The doctor can prescribe treatment and order tests, after which we calmly return to skincare. This split saves money: some problems are solved by medicine, not by a course of treatments."
+    ],
+    "es": [
+     "La cosmetóloga trabaja con el estado de la piel; el médico, con la enfermedad. Si vemos acné moderado o grave, rosácea, dermatitis, lesiones sospechosas o una reacción a un medicamento, es más honesto derivarte al dermatólogo que taparlo con tratamientos estéticos.",
+     "El médico puede pautar tratamiento y pedir analíticas, y después volvemos con calma al cuidado estético. Esta separación ahorra dinero: parte de los problemas se resuelven con medicina, no con una pauta de tratamientos."
+    ]
+   },
+   "who": {
+    "ru": [
+     "акне, которое не уходит от уходовых процедур",
+     "розацеа, дерматит, обострения и зуд",
+     "новые или изменившиеся родинки и другие образования",
+     "сильное выпадение волос вместе с проблемами кожи головы"
+    ],
+    "uk": [
+     "акне, яке не йде від доглядових процедур",
+     "розацеа, дерматит, загострення та зуд",
+     "нові або змінені родимки та інші утворення",
+     "сильне випадіння волосся разом із проблемами шкіри голови"
+    ],
+    "cs": [
+     "akné, které kosmetická ošetření nezvládají",
+     "rozacea, dermatitida, vzplanutí a svědění",
+     "nové nebo změněné znaménka a jiné útvary",
+     "silné padání vlasů spolu s potížemi pokožky hlavy"
+    ],
+    "en": [
+     "acne that skincare treatments are not resolving",
+     "rosacea, dermatitis, flare-ups and itching",
+     "new or changed moles and other lesions",
+     "heavy hair loss together with scalp problems"
+    ],
+    "es": [
+     "acné que los tratamientos estéticos no resuelven",
+     "rosácea, dermatitis, brotes y picor",
+     "lunares nuevos o que han cambiado y otras lesiones",
+     "caída intensa del cabello junto con problemas del cuero cabelludo"
+    ]
+   },
+   "how": {
+    "ru": [
+     "сбор истории: когда началось, чем лечились, что принимаете",
+     "осмотр кожи, при необходимости — дерматоскопия",
+     "назначения: лечение, анализы или направление к другому специалисту",
+     "согласование, какие косметологические процедуры можно делать параллельно"
+    ],
+    "uk": [
+     "збір історії: коли почалося, чим лікувалися, що приймаєте",
+     "огляд шкіри, за потреби — дерматоскопія",
+     "призначення: лікування, аналізи або направлення до іншого спеціаліста",
+     "узгодження, які косметологічні процедури можна робити паралельно"
+    ],
+    "cs": [
+     "anamnéza: kdy to začalo, čím jste se léčila, co berete",
+     "prohlídka pleti, podle potřeby dermatoskopie",
+     "doporučení: léčba, vyšetření nebo odeslání k jinému specialistovi",
+     "dohoda, která kosmetická ošetření lze dělat zároveň"
+    ],
+    "en": [
+     "history: when it started, how it was treated, what you take",
+     "examination of the skin, with dermatoscopy if needed",
+     "a plan: treatment, tests or referral to another specialist",
+     "agreeing which cosmetology treatments can run alongside"
+    ],
+    "es": [
+     "historia: cuándo empezó, cómo se trató, qué tomas",
+     "examen de la piel y, si hace falta, dermatoscopia",
+     "pauta: tratamiento, analíticas o derivación a otro especialista",
+     "acordar qué tratamientos estéticos se pueden hacer a la vez"
+    ]
+   },
+   "after": {
+    "ru": [
+     "на коже ничего не меняется: это приём врача",
+     "если назначено лечение, уходовые процедуры подбираем уже под него",
+     "часть процедур на время лечения придётся отложить — скажем об этом сразу"
+    ],
+    "uk": [
+     "на шкірі нічого не змінюється: це прийом лікаря",
+     "якщо призначено лікування, доглядові процедури підбираємо вже під нього",
+     "частину процедур на час лікування доведеться відкласти — скажемо про це одразу"
+    ],
+    "cs": [
+     "na pleti se nic nemění: jde o lékařskou konzultaci",
+     "pokud je nasazena léčba, ošetření volíme až podle ní",
+     "část ošetření bude po dobu léčby potřeba odložit — řekneme to hned"
+    ],
+    "en": [
+     "nothing changes on the skin — this is a medical appointment",
+     "if treatment is prescribed, we choose skincare treatments around it",
+     "some treatments will have to wait while you are being treated — we say so upfront"
+    ],
+    "es": [
+     "en la piel no cambia nada: es una consulta médica",
+     "si se pauta tratamiento, elegimos los tratamientos estéticos en función de él",
+     "algunos tratamientos habrá que posponerlos durante la medicación: lo decimos desde el principio"
+    ]
+   },
+   "freq": {
+    "ru": "По необходимости: при активном лечении — так, как назначит врач; родинки стоит показывать раз в год.",
+    "uk": "За потреби: під час активного лікування — так, як призначить лікар; родимки варто показувати раз на рік.",
+    "cs": "Podle potřeby: při aktivní léčbě tak, jak určí lékař; znaménka je dobré ukázat jednou za rok.",
+    "en": "As needed: during active treatment, as the doctor schedules it; moles are worth checking once a year.",
+    "es": "Según necesidad: durante el tratamiento activo, como indique el médico; los lunares conviene revisarlos una vez al año."
+   }
+  },
+  {
+   "slug": "device-cleaning",
+   "sub": "cleaning",
+   "service": "cosmetology",
+   "group": "cosmetologyItems",
+   "rows": [
+    2
+   ],
+   "duration": 60,
+   "title": {
+    "ru": "Аппаратная чистка лица",
+    "uk": "Апаратна чистка обличчя",
+    "cs": "Přístrojové čištění pleti",
+    "en": "Device-assisted facial cleansing",
+    "es": "Limpieza facial con aparatología"
+   },
+   "lead": {
+    "ru": "Самая деликатная из чисток: работаем ультразвуком, без выдавливания. Подходит, когда кожа чувствительная, а забитых пор немного.",
+    "uk": "Найделікатніша з чисток: працюємо ультразвуком, без видавлювання. Підходить, коли шкіра чутлива, а забитих пор небагато.",
+    "cs": "Nejšetrnější z čištění: pracujeme ultrazvukem, bez vytlačování. Vhodné pro citlivou pleť, kde není mnoho ucpaných pórů.",
+    "en": "The gentlest of the cleansings: ultrasound only, no extractions. It suits sensitive skin with a moderate number of clogged pores.",
+    "es": "La más delicada de las limpiezas: solo ultrasonido, sin extracciones. Va bien en pieles sensibles con pocos poros obstruidos."
+   },
+   "body": {
+    "ru": [
+     "Ультразвуковая лопатка снимает ороговевшие клетки и вытягивает содержимое пор за счёт колебаний и воды — кожу не травмируем и не растягиваем. После такой чистки лицо почти не краснеет, поэтому процедуру можно делать перед событием или в обеденный перерыв.",
+     "Ограничение честное: глубокие закрытые комедоны и плотные пробки ультразвук не достаёт. Если косметолог видит, что их много, он предложит механическую или комбинированную чистку — иначе вы заплатите за процедуру, которая решит задачу лишь частично."
+    ],
+    "uk": [
+     "Ультразвукова лопатка знімає зроговілі клітини й витягує вміст пор завдяки коливанням і воді — шкіру не травмуємо й не розтягуємо. Після такої чистки обличчя майже не червоніє, тож процедуру можна зробити перед подією або в обідню перерву.",
+     "Обмеження чесне: глибокі закриті комедони та щільні пробки ультразвук не дістає. Якщо косметолог бачить, що їх багато, він запропонує механічну або комбіновану чистку — інакше ви заплатите за процедуру, яка вирішить задачу лише частково."
+    ],
+    "cs": [
+     "Ultrazvuková špachtle sejme zrohovatělé buňky a pomocí vibrací a vody vytáhne obsah pórů — pleť netraumatizujeme ani neroztahujeme. Po tomto čištění tvář téměř nezčervená, takže se dá zvládnout před akcí nebo v pauze na obědě.",
+     "Omezení řekneme na rovinu: hluboké zavřené komedony a pevné zátky ultrazvuk nedostane. Pokud jich kosmetoložka vidí mnoho, navrhne mechanické nebo kombinované čištění — jinak zaplatíte za ošetření, které úkol vyřeší jen částečně."
+    ],
+    "en": [
+     "An ultrasonic spatula lifts off dead cells and draws the contents of the pores out through vibration and water — the skin is not traumatised or stretched. Afterwards the face barely reddens, so this one fits before an event or over a lunch break.",
+     "The honest limitation: ultrasound does not reach deep closed comedones or firm plugs. If the cosmetologist sees a lot of them, she will suggest mechanical or combined cleansing instead — otherwise you pay for a treatment that only half-solves the problem."
+    ],
+    "es": [
+     "Una espátula de ultrasonido retira las células muertas y extrae el contenido de los poros mediante vibración y agua: no se traumatiza ni se estira la piel. Después la cara apenas enrojece, así que cabe antes de un evento o en una pausa para comer.",
+     "La limitación, dicha con franqueza: el ultrasonido no llega a los comedones cerrados profundos ni a los tapones compactos. Si la cosmetóloga ve muchos, propondrá una limpieza mecánica o combinada; de lo contrario pagarías por un tratamiento que resuelve solo la mitad."
+    ]
+   },
+   "who": {
+    "ru": [
+     "чувствительная и склонная к покраснениям кожа",
+     "немного открытых комедонов, расширенные поры",
+     "нужно освежить лицо без следов на коже",
+     "первая чистка, если вы боитесь болезненных процедур"
+    ],
+    "uk": [
+     "чутлива і схильна до почервонінь шкіра",
+     "небагато відкритих комедонів, розширені пори",
+     "потрібно освіжити обличчя без слідів на шкірі",
+     "перша чистка, якщо ви боїтеся болісних процедур"
+    ],
+    "cs": [
+     "citlivá pleť se sklonem k zarudnutí",
+     "menší množství otevřených komedonů, rozšířené póry",
+     "potřeba osvěžit tvář bez viditelných stop",
+     "první čištění, pokud se bojíte bolestivých procedur"
+    ],
+    "en": [
+     "sensitive skin that reddens easily",
+     "a modest number of open comedones, enlarged pores",
+     "you need a refresh with no visible traces",
+     "a first cleansing if you are wary of painful treatments"
+    ],
+    "es": [
+     "piel sensible y con tendencia al enrojecimiento",
+     "pocos comedones abiertos, poros dilatados",
+     "quieres refrescar el rostro sin dejar marcas",
+     "una primera limpieza si te dan miedo los tratamientos dolorosos"
+    ]
+   },
+   "how": {
+    "ru": [
+     "демакияж и очищение",
+     "размягчающий состав, чтобы поры раскрылись",
+     "ультразвуковая чистка лопаткой по зонам",
+     "успокаивающая маска и крем по типу кожи"
+    ],
+    "uk": [
+     "демакіяж і очищення",
+     "розм’якшувальний склад, щоб пори розкрилися",
+     "ультразвукова чистка лопаткою по зонах",
+     "заспокійлива маска і крем за типом шкіри"
+    ],
+    "cs": [
+     "odlíčení a čištění",
+     "zvláčňující přípravek, aby se póry otevřely",
+     "ultrazvukové čištění špachtlí po zónách",
+     "zklidňující maska a krém podle typu pleti"
+    ],
+    "en": [
+     "make-up removal and cleansing",
+     "a softening solution so the pores open",
+     "ultrasonic cleansing area by area",
+     "a soothing mask and a cream matched to your skin"
+    ],
+    "es": [
+     "desmaquillado y limpieza",
+     "producto reblandecedor para abrir los poros",
+     "limpieza con ultrasonido zona por zona",
+     "mascarilla calmante y crema según tu tipo de piel"
+    ]
+   },
+   "after": {
+    "ru": [
+     "лёгкое покраснение проходит за полчаса-час",
+     "в тот же день можно пользоваться макияжем, если кожа спокойна",
+     "сутки без сауны, бассейна и активного спорта",
+     "крем с SPF обязателен, особенно весной и летом"
+    ],
+    "uk": [
+     "легке почервоніння проходить за півгодини-годину",
+     "того ж дня можна користуватися макіяжем, якщо шкіра спокійна",
+     "добу без сауни, басейну й активного спорту",
+     "крем із SPF обов’язковий, особливо навесні та влітку"
+    ],
+    "cs": [
+     "lehké zarudnutí odejde za půl hodiny až hodinu",
+     "týž den lze použít make-up, pokud je pleť v klidu",
+     "jeden den bez sauny, bazénu a náročného sportu",
+     "krém s SPF je povinný, zejména na jaře a v létě"
+    ],
+    "en": [
+     "slight redness settles within half an hour to an hour",
+     "make-up is fine the same day if the skin is calm",
+     "no sauna, pool or hard training for a day",
+     "an SPF cream is a must, especially in spring and summer"
+    ],
+    "es": [
+     "el leve enrojecimiento baja en media hora o una hora",
+     "el maquillaje puede volver el mismo día si la piel está tranquila",
+     "un día sin sauna, piscina ni deporte intenso",
+     "la crema con SPF es obligatoria, sobre todo en primavera y verano"
+    ]
+   },
+   "freq": {
+    "ru": "Раз в 3–4 недели при жирной коже, раз в 6–8 недель при нормальной. Чаще не нужно: поры не успевают заполниться, а барьер кожи нарушается.",
+    "uk": "Раз на 3–4 тижні при жирній шкірі, раз на 6–8 тижнів при нормальній. Частіше не потрібно: пори не встигають заповнитися, а бар’єр шкіри порушується.",
+    "cs": "Jednou za 3–4 týdny u mastné pleti, jednou za 6–8 týdnů u normální. Častěji nemá smysl: póry se nestihnou zaplnit a naruší se kožní bariéra.",
+    "en": "Every 3–4 weeks for oily skin, every 6–8 weeks for normal skin. More often is pointless: the pores have not refilled and the skin barrier suffers.",
+    "es": "Cada 3–4 semanas en piel grasa y cada 6–8 semanas en piel normal. Más seguido no aporta: los poros no se han vuelto a llenar y la barrera cutánea se daña."
+   }
+  },
+  {
+   "slug": "mechanical-cleaning",
+   "sub": "cleaning",
+   "service": "cosmetology",
+   "group": "cosmetologyItems",
+   "rows": [
+    3
+   ],
+   "duration": 90,
+   "title": {
+    "ru": "Механическая чистка лица",
+    "uk": "Механічна чистка обличчя",
+    "cs": "Mechanické čištění pleti",
+    "en": "Mechanical facial cleansing",
+    "es": "Limpieza mecánica facial"
+   },
+   "lead": {
+    "ru": "Та самая «настоящая» чистка: косметолог вручную убирает комедоны и пробки. Делает то, что аппарат не достаёт, но требует времени на восстановление.",
+    "uk": "Та сама «справжня» чистка: косметолог вручну прибирає комедони та пробки. Робить те, чого апарат не дістає, але потребує часу на відновлення.",
+    "cs": "To „opravdové“ čištění: kosmetoložka ručně odstraní komedony a zátky. Zvládne to, co přístroj nedostane, ale potřebuje čas na zhojení.",
+    "en": "The classic deep cleanse: the cosmetologist clears comedones and plugs by hand. It does what a device cannot reach, but it needs recovery time.",
+    "es": "La limpieza profunda clásica: la cosmetóloga retira comedones y tapones a mano. Llega donde el aparato no llega, pero necesita tiempo de recuperación."
+   },
+   "body": {
+    "ru": [
+     "Кожу распаривают или размягчают специальным составом, затем косметолог стерильным инструментом и пальцами в перчатках убирает закрытые и открытые комедоны, милиумы и плотные пробки. Это кропотливая работа по зонам — именно поэтому процедура длится около полутора часов.",
+     "Механическая чистка — самая результативная по количеству убранного, но и самая заметная для кожи: краснота держится от нескольких часов до суток, местами возможны точечные корочки. Мы не делаем такую чистку «впритык» к событию и честно говорим, что за один раз сильно забитую кожу до идеала не доводят: обычно нужно 2–3 процедуры с интервалом в месяц и настроенный домашний уход."
+    ],
+    "uk": [
+     "Шкіру розпарюють або розм’якшують спеціальним складом, потім косметолог стерильним інструментом і пальцями в рукавичках прибирає закриті й відкриті комедони, міліуми та щільні пробки. Це копітка робота по зонах — саме тому процедура триває близько півтори години.",
+     "Механічна чистка — найрезультативніша за кількістю прибраного, але й найпомітніша для шкіри: червоність тримається від кількох годин до доби, місцями можливі точкові кірочки. Ми не робимо таку чистку «впритул» до події й чесно кажемо, що за один раз сильно забиту шкіру до ідеалу не доводять: зазвичай потрібно 2–3 процедури з інтервалом у місяць і налаштований домашній догляд."
+    ],
+    "cs": [
+     "Pleť se napaří nebo zvláční speciálním přípravkem a kosmetoložka pak sterilním nástrojem a prsty v rukavicích odstraní zavřené i otevřené komedony, miliu a pevné zátky. Je to pečlivá práce po zónách — proto ošetření trvá kolem hodiny a půl.",
+     "Mechanické čištění je nejvýkonnější v tom, kolik dokáže odstranit, ale pro pleť nejviditelnější: zarudnutí drží od několika hodin do jednoho dne a místy se mohou objevit tečkované krustičky. Takové čištění nedáváme těsně před akcí a na rovinu říkáme, že silně ucpanou pleť jedno ošetření do ideálu nedostane: obvykle jsou potřeba 2–3 ošetření v měsíčních intervalech a nastavená domácí péče."
+    ],
+    "en": [
+     "The skin is steamed or softened with a dedicated solution, then the cosmetologist clears closed and open comedones, milia and firm plugs with a sterile tool and gloved fingers. It is meticulous, area-by-area work — which is why the appointment runs about an hour and a half.",
+     "Mechanical cleansing removes the most, but it is also the most visible on the skin: redness lasts from a few hours up to a day and small pinpoint crusts can appear. We do not schedule it right before an event, and we say plainly that badly congested skin is not brought to perfection in one go: it usually takes 2–3 sessions a month apart plus a home routine that actually works."
+    ],
+    "es": [
+     "Se vaporiza la piel o se reblandece con un producto específico y después la cosmetóloga retira comedones cerrados y abiertos, milios y tapones compactos con instrumental estéril y los dedos enguantados. Es un trabajo minucioso por zonas: de ahí la hora y media de cita.",
+     "La limpieza mecánica es la que más extrae, pero también la más visible en la piel: el enrojecimiento dura de unas horas a un día y pueden salir pequeñas costritas puntuales. No la programamos justo antes de un evento y decimos con franqueza que una piel muy congestionada no queda perfecta en una sola sesión: suelen hacer falta 2–3 sesiones con un mes de separación y una rutina de casa bien ajustada."
+    ]
+   },
+   "who": {
+    "ru": [
+     "много закрытых комедонов и чёрных точек",
+     "плотная, жирная кожа с расширенными порами",
+     "милиумы, которые не убираются другими способами",
+     "кожа после долгого перерыва в уходе"
+    ],
+    "uk": [
+     "багато закритих комедонів і чорних точок",
+     "щільна, жирна шкіра з розширеними порами",
+     "міліуми, які не видаляються іншими способами",
+     "шкіра після довгої перерви в догляді"
+    ],
+    "cs": [
+     "mnoho zavřených komedonů a černých teček",
+     "silná, mastná pleť s rozšířenými póry",
+     "milia, která jinak nejdou odstranit",
+     "pleť po dlouhé pauze v péči"
+    ],
+    "en": [
+     "plenty of closed comedones and blackheads",
+     "thick, oily skin with enlarged pores",
+     "milia that nothing else shifts",
+     "skin after a long gap without care"
+    ],
+    "es": [
+     "muchos comedones cerrados y puntos negros",
+     "piel gruesa y grasa con poros dilatados",
+     "milios que no se quitan de otra forma",
+     "piel tras una larga pausa sin cuidados"
+    ]
+   },
+   "how": {
+    "ru": [
+     "очищение и обезжиривание кожи",
+     "размягчение: пар или холодное гидрирование составом",
+     "ручное удаление комедонов по зонам, инструментом и руками в перчатках",
+     "дезинфекция, сужающая маска, успокаивающий крем"
+    ],
+    "uk": [
+     "очищення та обезжирення шкіри",
+     "розм’якшення: пара або холодне гідрування складом",
+     "ручне видалення комедонів по зонах, інструментом і руками в рукавичках",
+     "дезінфекція, звужувальна маска, заспокійливий крем"
+    ],
+    "cs": [
+     "čištění a odmaštění pleti",
+     "zvláčnění: napaření nebo chladná hydratace přípravkem",
+     "ruční odstranění komedonů po zónách nástrojem a rukama v rukavicích",
+     "dezinfekce, stahující maska, zklidňující krém"
+    ],
+    "en": [
+     "cleansing and degreasing the skin",
+     "softening: steam or cold hydration with a solution",
+     "manual clearing of comedones area by area, with a tool and gloved hands",
+     "disinfection, a pore-tightening mask, a soothing cream"
+    ],
+    "es": [
+     "limpieza y desengrasado de la piel",
+     "reblandecimiento: vapor o hidratación en frío con producto",
+     "extracción manual por zonas, con instrumental y manos enguantadas",
+     "desinfección, mascarilla astringente y crema calmante"
+    ]
+   },
+   "after": {
+    "ru": [
+     "краснота и небольшая отёчность — от нескольких часов до суток",
+     "возможны точечные корочки на местах глубоких комедонов: их нельзя сдирать",
+     "два-три дня без макияжа на проблемных местах, сауны, бассейна и спорта",
+     "SPF ежедневно: свежая кожа легко даёт пигментацию",
+     "если дома есть кислоты и ретинол, пауза 3–5 дней"
+    ],
+    "uk": [
+     "червоність і невелика набряклість — від кількох годин до доби",
+     "можливі точкові кірочки на місцях глибоких комедонів: їх не можна здирати",
+     "два-три дні без макіяжу на проблемних місцях, сауни, басейну та спорту",
+     "SPF щодня: свіжа шкіра легко дає пігментацію",
+     "якщо вдома є кислоти й ретинол, пауза 3–5 днів"
+    ],
+    "cs": [
+     "zarudnutí a mírný otok — od několika hodin do jednoho dne",
+     "na místech hlubokých komedonů mohou být krustičky: nesmí se strhávat",
+     "dva až tři dny bez make-upu na problémových místech, bez sauny, bazénu a sportu",
+     "SPF každý den: čerstvá pleť snadno zapigmentuje",
+     "pokud doma používáte kyseliny a retinol, pauza 3–5 dní"
+    ],
+    "en": [
+     "redness and slight swelling — from a few hours up to a day",
+     "pinpoint crusts can form where deep comedones were: do not pick them",
+     "two or three days without make-up on the treated spots, and no sauna, pool or sport",
+     "SPF every day: freshly cleared skin pigments easily",
+     "if you use acids or retinol at home, pause them for 3–5 days"
+    ],
+    "es": [
+     "enrojecimiento y una ligera hinchazón, de unas horas a un día",
+     "pueden salir costritas donde había comedones profundos: no se arrancan",
+     "dos o tres días sin maquillaje en las zonas tratadas, sin sauna, piscina ni deporte",
+     "SPF a diario: la piel recién limpia pigmenta con facilidad",
+     "si usas ácidos o retinol en casa, pausa de 3–5 días"
+    ]
+   },
+   "freq": {
+    "ru": "При активных забитых порах — 2–3 процедуры с интервалом 3–4 недели, затем поддержка раз в 1,5–2 месяца. Если кожа спокойная, чаще одного раза в месяц чистку делать не стоит.",
+    "uk": "При активно забитих порах — 2–3 процедури з інтервалом 3–4 тижні, далі підтримка раз на 1,5–2 місяці. Якщо шкіра спокійна, частіше ніж раз на місяць чистку робити не варто.",
+    "cs": "Při výrazně ucpaných pórech 2–3 ošetření v intervalu 3–4 týdny, pak udržovací jednou za 1,5–2 měsíce. Pokud je pleť v klidu, častěji než jednou za měsíc čištění nedělejte.",
+    "en": "For actively congested skin: 2–3 sessions 3–4 weeks apart, then maintenance every 1.5–2 months. On calm skin, more often than once a month is not worth it.",
+    "es": "Con poros muy congestionados: 2–3 sesiones cada 3–4 semanas y luego mantenimiento cada 1,5–2 meses. Si la piel está tranquila, no conviene más de una vez al mes."
+   }
+  },
+  {
+   "slug": "combined-cleaning",
+   "sub": "cleaning",
+   "service": "cosmetology",
+   "group": "cosmetologyItems",
+   "rows": [
+    4
+   ],
+   "duration": 120,
+   "title": {
+    "ru": "Комбинированная чистка лица",
+    "uk": "Комбінована чистка обличчя",
+    "cs": "Kombinované čištění pleti",
+    "en": "Combined facial cleansing",
+    "es": "Limpieza facial combinada"
+   },
+   "lead": {
+    "ru": "Ультразвук плюс ручная работа: аппарат снимает поверхностное, руки достают глубокое. Чаще всего мы советуем именно её.",
+    "uk": "Ультразвук плюс ручна робота: апарат знімає поверхневе, руки дістають глибоке. Найчастіше ми радимо саме її.",
+    "cs": "Ultrazvuk plus ruční práce: přístroj sejme povrchové, ruce dostanou hluboké. Nejčastěji doporučujeme právě tuto variantu.",
+    "en": "Ultrasound plus hands: the device clears the surface, the hands reach what sits deep. This is the one we recommend most often.",
+    "es": "Ultrasonido más trabajo manual: el aparato limpia la superficie y las manos llegan a lo profundo. Es la que más recomendamos."
+   },
+   "body": {
+    "ru": [
+     "Сначала ультразвуком снимаем ороговевший слой и всё, что лежит в порах неглубоко, — так уменьшается объём ручной работы. Затем косметолог вручную убирает то, что ультразвук не берёт: закрытые комедоны, милиумы, плотные пробки в Т-зоне.",
+     "Отличие от механической чистки — в нагрузке на кожу. За счёт аппаратного этапа руками работают меньше и точечнее, поэтому краснота обычно сходит быстрее, а результат по чистоте пор сопоставим. Отличие от аппаратной — в глубине: комедоны, до которых ультразвук не доходит, здесь всё-таки убирают."
+    ],
+    "uk": [
+     "Спочатку ультразвуком знімаємо зроговілий шар і все, що лежить у порах неглибоко, — так зменшується обсяг ручної роботи. Потім косметолог вручну прибирає те, чого ультразвук не бере: закриті комедони, міліуми, щільні пробки в Т-зоні.",
+     "Відмінність від механічної чистки — у навантаженні на шкіру. За рахунок апаратного етапу руками працюють менше і точковіше, тому червоність зазвичай сходить швидше, а результат за чистотою пор порівнянний. Відмінність від апаратної — у глибині: комедони, до яких ультразвук не доходить, тут усе ж прибирають."
+    ],
+    "cs": [
+     "Nejprve ultrazvukem sejmeme zrohovatělou vrstvu a vše, co leží v pórech nehluboko — tím se zmenší objem ruční práce. Potom kosmetoložka ručně odstraní to, na co ultrazvuk nestačí: zavřené komedony, milia, pevné zátky v T-zóně.",
+     "Rozdíl proti mechanickému čištění je v zátěži pro pleť. Díky přístrojové fázi se rukama pracuje méně a cíleněji, takže zarudnutí obvykle odchází rychleji a výsledek v čistotě pórů je srovnatelný. Rozdíl proti přístrojovému čištění je v hloubce: komedony, kam ultrazvuk nedosáhne, se tady odstraní."
+    ],
+    "en": [
+     "First the ultrasound lifts the keratinised layer and everything sitting shallow in the pores, which cuts down the amount of manual work. Then the cosmetologist clears by hand what ultrasound cannot take: closed comedones, milia, firm plugs in the T-zone.",
+     "The difference from mechanical cleansing is the load on the skin. Because the device does part of the job, the hands work less and more selectively, so redness usually settles faster while pore clarity is comparable. The difference from device-only cleansing is depth: comedones out of ultrasound's reach do get removed here."
+    ],
+    "es": [
+     "Primero el ultrasonido retira la capa de células muertas y todo lo que está superficial en los poros, lo que reduce el trabajo manual. Después la cosmetóloga extrae a mano lo que el ultrasonido no alcanza: comedones cerrados, milios y tapones compactos en la zona T.",
+     "La diferencia con la limpieza mecánica está en la carga para la piel: como el aparato hace parte del trabajo, las manos trabajan menos y de forma más selectiva, así que el enrojecimiento suele bajar antes y el resultado en los poros es comparable. La diferencia con la limpieza por aparatología está en la profundidad: aquí sí se retiran los comedones que el ultrasonido no alcanza."
+    ]
+   },
+   "who": {
+    "ru": [
+     "смешанная кожа: жирная Т-зона и сухие щёки",
+     "комедоны есть и на поверхности, и глубоко",
+     "хочется результата механической чистки, но с меньшей краснотой",
+     "регулярный уход за кожей, склонной к высыпаниям"
+    ],
+    "uk": [
+     "змішана шкіра: жирна Т-зона і сухі щоки",
+     "комедони є і на поверхні, і глибоко",
+     "хочеться результату механічної чистки, але з меншою червоністю",
+     "регулярний догляд за шкірою, схильною до висипань"
+    ],
+    "cs": [
+     "smíšená pleť: mastná T-zóna a suché tváře",
+     "komedony jsou povrchové i hluboké",
+     "chcete výsledek mechanického čištění s menším zarudnutím",
+     "pravidelná péče o pleť se sklonem k vyrážkám"
+    ],
+    "en": [
+     "combination skin: oily T-zone, dry cheeks",
+     "comedones both on the surface and deeper down",
+     "you want the result of a mechanical cleanse with less redness",
+     "regular care for skin prone to breakouts"
+    ],
+    "es": [
+     "piel mixta: zona T grasa y mejillas secas",
+     "comedones tanto superficiales como profundos",
+     "quieres el resultado de la limpieza mecánica con menos rojez",
+     "cuidado regular de una piel con tendencia a brotes"
+    ]
+   },
+   "how": {
+    "ru": [
+     "демакияж, очищение, обезжиривание",
+     "размягчение кожи",
+     "ультразвуковой этап по всему лицу",
+     "ручная доработка проблемных зон",
+     "дезинфекция, маска по типу кожи, крем с защитой"
+    ],
+    "uk": [
+     "демакіяж, очищення, обезжирення",
+     "розм’якшення шкіри",
+     "ультразвуковий етап по всьому обличчю",
+     "ручне доопрацювання проблемних зон",
+     "дезінфекція, маска за типом шкіри, крем із захистом"
+    ],
+    "cs": [
+     "odlíčení, čištění, odmaštění",
+     "zvláčnění pleti",
+     "ultrazvuková fáze na celé tváři",
+     "ruční dopracování problémových zón",
+     "dezinfekce, maska podle typu pleti, krém s ochranou"
+    ],
+    "en": [
+     "make-up removal, cleansing, degreasing",
+     "softening the skin",
+     "the ultrasound stage across the whole face",
+     "manual work on the problem areas",
+     "disinfection, a mask for your skin type, a protective cream"
+    ],
+    "es": [
+     "desmaquillado, limpieza, desengrasado",
+     "reblandecimiento de la piel",
+     "fase de ultrasonido en todo el rostro",
+     "trabajo manual en las zonas problemáticas",
+     "desinfección, mascarilla según tipo de piel y crema protectora"
+    ]
+   },
+   "after": {
+    "ru": [
+     "краснота обычно сходит за несколько часов, реже держится до утра",
+     "точечные корочки возможны там, где убирали глубокие комедоны",
+     "сутки-двое без сауны, бассейна, интенсивного спорта",
+     "макияж лучше вернуть на следующий день",
+     "SPF ежедневно; кислоты и ретинол — через 3–5 дней"
+    ],
+    "uk": [
+     "червоність зазвичай сходить за кілька годин, рідше тримається до ранку",
+     "точкові кірочки можливі там, де прибирали глибокі комедони",
+     "добу-дві без сауни, басейну, інтенсивного спорту",
+     "макіяж краще повернути наступного дня",
+     "SPF щодня; кислоти й ретинол — через 3–5 днів"
+    ],
+    "cs": [
+     "zarudnutí obvykle odejde za několik hodin, výjimečně drží do rána",
+     "krustičky se mohou objevit tam, kde se odstraňovaly hluboké komedony",
+     "jeden až dva dny bez sauny, bazénu a intenzivního sportu",
+     "make-up je lepší vrátit až druhý den",
+     "SPF každý den; kyseliny a retinol za 3–5 dní"
+    ],
+    "en": [
+     "redness usually clears within a few hours, occasionally lasting until morning",
+     "pinpoint crusts are possible where deep comedones were removed",
+     "a day or two without sauna, pool or intense training",
+     "better to return to make-up the next day",
+     "SPF daily; acids and retinol after 3–5 days"
+    ],
+    "es": [
+     "el enrojecimiento baja en unas horas; a veces dura hasta la mañana siguiente",
+     "pueden salir costritas donde se retiraron comedones profundos",
+     "uno o dos días sin sauna, piscina ni deporte intenso",
+     "mejor volver al maquillaje al día siguiente",
+     "SPF a diario; ácidos y retinol a los 3–5 días"
+    ]
+   },
+   "freq": {
+    "ru": "Раз в 4–6 недель при склонности к высыпаниям, раз в 2–3 месяца для поддержания. Интервал подбираем по тому, как быстро у вас заполняются поры, а не по календарю.",
+    "uk": "Раз на 4–6 тижнів при схильності до висипань, раз на 2–3 місяці для підтримання. Інтервал підбираємо за тим, як швидко у вас заповнюються пори, а не за календарем.",
+    "cs": "Jednou za 4–6 týdnů při sklonu k vyrážkám, jednou za 2–3 měsíce udržovacím režimem. Interval volíme podle toho, jak rychle se vám plní póry, ne podle kalendáře.",
+    "en": "Every 4–6 weeks if you are prone to breakouts, every 2–3 months for maintenance. We set the interval by how fast your pores refill, not by the calendar.",
+    "es": "Cada 4–6 semanas si tienes tendencia a brotes y cada 2–3 meses como mantenimiento. El intervalo se fija según lo rápido que se te vuelven a llenar los poros, no por calendario."
+   }
+  },
+  {
+   "slug": "dmk-cleaning",
+   "sub": "cleaning",
+   "service": "cosmetology",
+   "group": "cosmetologyItems",
+   "rows": [
+    13
+   ],
+   "duration": 120,
+   "title": {
+    "ru": "Чистка лица по протоколу DMK",
+    "uk": "Чистка обличчя за протоколом DMK",
+    "cs": "Čištění pleti podle protokolu DMK",
+    "en": "DMK protocol facial cleansing",
+    "es": "Limpieza facial con protocolo DMK"
+   },
+   "lead": {
+    "ru": "Чистка в логике DMK: сначала ферменты размягчают содержимое пор и разгоняют кровоток, и только потом косметолог убирает комедоны.",
+    "uk": "Чистка в логіці DMK: спершу ферменти розм’якшують вміст пор і розганяють кровотік, і лише потім косметолог прибирає комедони.",
+    "cs": "Čištění v logice DMK: nejprve enzymy zvláční obsah pórů a rozproudí krevní tok, teprve pak kosmetoložka odstraní komedony.",
+    "en": "Cleansing the DMK way: enzymes first soften what sits in the pores and get the circulation going, and only then does the cosmetologist clear the comedones.",
+    "es": "Limpieza con la lógica DMK: primero las enzimas reblandecen el contenido de los poros y activan la circulación, y solo después la cosmetóloga retira los comedones."
+   },
+   "body": {
+    "ru": [
+     "Протокол строится на ферментной подготовке. Состав на основе энзимов работает с поверхностными ороговевшими клетками и усиливает приток крови, за счёт этого пробки выходят легче, а механического давления на кожу нужно меньше. Дальше идёт обычная ручная работа по зонам и финальный уход с маской.",
+     "Мы не объединяем все процедуры DMK в одну: у бренда своя логика, и чистка в ней — отдельный шаг, не то же самое, что «Огонь и лёд» или ферментная маска. Какой именно протокол нужен вам, косметолог решает на осмотре; это решение зависит от состояния кожи в день приёма, а не от того, что популярнее."
+    ],
+    "uk": [
+     "Протокол будується на ферментній підготовці. Склад на основі ензимів працює з поверхневими зроговілими клітинами та посилює приплив крові, завдяки цьому пробки виходять легше, а механічного тиску на шкіру потрібно менше. Далі йде звичайна ручна робота по зонах і фінальний догляд із маскою.",
+     "Ми не об’єднуємо всі процедури DMK в одну: у бренду своя логіка, і чистка в ній — окремий крок, не те саме, що «Вогонь і лід» чи ферментна маска. Який саме протокол потрібен вам, косметолог вирішує на огляді; це рішення залежить від стану шкіри в день прийому, а не від того, що популярніше."
+    ],
+    "cs": [
+     "Protokol stojí na enzymatické přípravě. Přípravek na bázi enzymů pracuje s povrchovými zrohovatělými buňkami a zvyšuje přítok krve, díky tomu zátky vycházejí snáz a je potřeba menší mechanický tlak na pleť. Pak následuje běžná ruční práce po zónách a závěrečná péče s maskou.",
+     "Nespojujeme všechna ošetření DMK do jednoho: značka má vlastní logiku a čištění je v ní samostatný krok, ne totéž jako „Oheň a led“ nebo enzymatická maska. Který protokol potřebujete, rozhodne kosmetoložka při vyšetření — podle stavu pleti v den návštěvy, ne podle toho, co je populárnější."
+    ],
+    "en": [
+     "The protocol is built on enzyme preparation. An enzyme-based formula works on the surface keratinised cells and increases blood flow, so plugs come out more easily and less mechanical pressure is needed. After that comes the usual area-by-area manual work and a finishing mask.",
+     "We do not lump all DMK treatments together: the brand has its own logic, and cleansing is a separate step within it — not the same thing as Fire & Ice or an enzyme mask. Which protocol you need is decided at the consultation, based on the state of your skin on the day rather than on what is trending."
+    ],
+    "es": [
+     "El protocolo se basa en la preparación enzimática. Una fórmula con enzimas actúa sobre las células queratinizadas de la superficie y aumenta el flujo sanguíneo, de modo que los tapones salen con más facilidad y hace falta menos presión mecánica. Después viene el trabajo manual habitual por zonas y una mascarilla final.",
+     "No juntamos todos los tratamientos DMK en uno: la marca tiene su propia lógica y la limpieza es un paso aparte, distinto de «Fuego y hielo» o de una mascarilla enzimática. Qué protocolo necesitas se decide en la valoración, según el estado de la piel ese día y no según lo que esté de moda."
+    ]
+   },
+   "who": {
+    "ru": [
+     "кожа с забитыми порами, которой тяжело даётся обычная механическая чистка",
+     "тусклый цвет лица, замедленное обновление кожи",
+     "вы уже в уходе DMK и хотите продолжать в одной системе",
+     "жирная кожа с застойными элементами"
+    ],
+    "uk": [
+     "шкіра із забитими порами, якій важко дається звичайна механічна чистка",
+     "тьмяний колір обличчя, уповільнене оновлення шкіри",
+     "ви вже в догляді DMK і хочете продовжувати в одній системі",
+     "жирна шкіра із застійними елементами"
+    ],
+    "cs": [
+     "pleť s ucpanými póry, které běžné mechanické čištění nedělá dobře",
+     "šedivá barva pleti, zpomalená obnova",
+     "už jste v péči DMK a chcete pokračovat v jednom systému",
+     "mastná pleť se stagnujícími projevy"
+    ],
+    "en": [
+     "congested skin that tolerates a plain mechanical cleanse poorly",
+     "a dull complexion, slowed skin renewal",
+     "you are already on DMK care and want to stay within one system",
+     "oily skin with stagnant breakouts"
+    ],
+    "es": [
+     "piel congestionada que tolera mal la limpieza mecánica clásica",
+     "tono apagado, renovación cutánea lenta",
+     "ya sigues cuidado DMK y quieres continuar en el mismo sistema",
+     "piel grasa con lesiones estancadas"
+    ]
+   },
+   "how": {
+    "ru": [
+     "очищение и подготовка кожи препаратами линии",
+     "ферментный этап: состав остаётся на коже заданное время",
+     "ручное удаление комедонов и пробок по зонам",
+     "финальная маска и домашние рекомендации в системе DMK"
+    ],
+    "uk": [
+     "очищення та підготовка шкіри препаратами лінії",
+     "ферментний етап: склад залишається на шкірі заданий час",
+     "ручне видалення комедонів і пробок по зонах",
+     "фінальна маска та домашні рекомендації в системі DMK"
+    ],
+    "cs": [
+     "čištění a příprava pleti přípravky dané řady",
+     "enzymatická fáze: přípravek zůstává na pleti stanovenou dobu",
+     "ruční odstranění komedonů a zátek po zónách",
+     "závěrečná maska a doporučení pro domácí péči v systému DMK"
+    ],
+    "en": [
+     "cleansing and preparing the skin with the line's products",
+     "the enzyme stage: the formula stays on the skin for a set time",
+     "manual clearing of comedones and plugs area by area",
+     "a finishing mask and home-care guidance within the DMK system"
+    ],
+    "es": [
+     "limpieza y preparación de la piel con los productos de la línea",
+     "fase enzimática: la fórmula permanece en la piel un tiempo pautado",
+     "extracción manual de comedones y tapones por zonas",
+     "mascarilla final y pautas de cuidado en casa dentro del sistema DMK"
+    ]
+   },
+   "after": {
+    "ru": [
+     "во время ферментного этапа кожу может ощутимо стягивать и покалывать — это ожидаемо",
+     "краснота держится несколько часов, иногда до следующего утра",
+     "сутки без сауны, бассейна и активного спорта",
+     "SPF обязателен, особенно если планируются пилинги",
+     "домашний уход желательно согласовать: система рассчитана на последовательность"
+    ],
+    "uk": [
+     "під час ферментного етапу шкіру може відчутно стягувати й поколювати — це очікувано",
+     "червоність тримається кілька годин, іноді до наступного ранку",
+     "добу без сауни, басейну й активного спорту",
+     "SPF обов’язковий, особливо якщо плануються пілінги",
+     "домашній догляд бажано узгодити: система розрахована на послідовність"
+    ],
+    "cs": [
+     "během enzymatické fáze může pleť výrazně stahovat a brnět — to se čeká",
+     "zarudnutí drží několik hodin, někdy do druhého rána",
+     "jeden den bez sauny, bazénu a náročného sportu",
+     "SPF je povinné, zejména pokud se plánují peelingy",
+     "domácí péči je dobré sladit: systém počítá s návazností"
+    ],
+    "en": [
+     "during the enzyme stage the skin can feel noticeably tight and tingly — that is expected",
+     "redness lasts a few hours, sometimes until the next morning",
+     "no sauna, pool or hard training for a day",
+     "SPF is a must, particularly if peels are planned",
+     "it is worth aligning your home routine: the system is built on consistency"
+    ],
+    "es": [
+     "durante la fase enzimática la piel puede tensarse y hormiguear de forma notable: es lo esperado",
+     "el enrojecimiento dura unas horas, a veces hasta la mañana siguiente",
+     "un día sin sauna, piscina ni deporte intenso",
+     "el SPF es obligatorio, sobre todo si se planean peelings",
+     "conviene ajustar la rutina de casa: el sistema se basa en la continuidad"
+    ]
+   },
+   "freq": {
+    "ru": "Как правило, курсом: 3–4 процедуры с интервалом 2–4 недели, дальше поддержка. Точный интервал зависит от реакции кожи на ферментный этап.",
+    "uk": "Як правило, курсом: 3–4 процедури з інтервалом 2–4 тижні, далі підтримка. Точний інтервал залежить від реакції шкіри на ферментний етап.",
+    "cs": "Většinou v kúře: 3–4 ošetření v intervalu 2–4 týdny, pak udržovací režim. Přesný interval závisí na tom, jak pleť na enzymatickou fázi reaguje.",
+    "en": "Usually as a course: 3–4 sessions 2–4 weeks apart, then maintenance. The exact interval depends on how your skin responds to the enzyme stage.",
+    "es": "Normalmente en pauta: 3–4 sesiones cada 2–4 semanas y después mantenimiento. El intervalo exacto depende de cómo responda tu piel a la fase enzimática."
+   }
+  },
+  {
+   "slug": "quick-peel",
+   "sub": "peel",
+   "service": "cosmetology",
+   "group": "cosmetologyItems",
+   "rows": [
+    8
+   ],
+   "duration": 45,
+   "title": {
+    "ru": "Пилинг Quick Peel",
+    "uk": "Пілінг Quick Peel",
+    "cs": "Peeling Quick Peel",
+    "en": "Quick Peel",
+    "es": "Peeling Quick Peel"
+   },
+   "lead": {
+    "ru": "Короткий поверхностный пилинг: освежает цвет лица и выравнивает текстуру, почти не выбивая из графика.",
+    "uk": "Короткий поверхневий пілінг: освіжає колір обличчя й вирівнює текстуру, майже не вибиваючи з графіка.",
+    "cs": "Krátký povrchový peeling: osvěží barvu pleti a vyrovná texturu, aniž byste musela měnit plány.",
+    "en": "A short superficial peel: it refreshes the complexion and evens out texture without disrupting your week.",
+    "es": "Un peeling superficial breve: refresca el tono y uniforma la textura sin trastocarte la semana."
+   },
+   "body": {
+    "ru": [
+     "Состав работает в пределах верхних слоёв кожи: ускоряет отшелушивание, за счёт этого лицо выглядит свежее, поры становятся чище, мелкие неровности сглаживаются. Это именно «быстрый» вариант — его часто берут как первый пилинг или как поддержку между более серьёзными процедурами.",
+     "Сильную пигментацию, рубцы и глубокие морщины поверхностный пилинг не убирает. Если задача такая, честнее сразу обсудить курс или другие процедуры — одним Quick Peel вопрос не решить."
+    ],
+    "uk": [
+     "Склад працює в межах верхніх шарів шкіри: прискорює відлущування, завдяки цьому обличчя виглядає свіжіше, пори стають чистішими, дрібні нерівності згладжуються. Це саме «швидкий» варіант — його часто беруть як перший пілінг або як підтримку між серйознішими процедурами.",
+     "Сильну пігментацію, рубці та глибокі зморшки поверхневий пілінг не прибирає. Якщо задача така, чесніше одразу обговорити курс або інші процедури — одним Quick Peel питання не вирішити."
+    ],
+    "cs": [
+     "Přípravek pracuje v horních vrstvách pleti: zrychlí odlupování, díky čemu tvář vypadá svěžeji, póry jsou čistší a drobné nerovnosti se vyhladí. Je to opravdu „rychlá“ varianta — často se bere jako první peeling nebo jako doplnění mezi náročnějšími ošetřeními.",
+     "Výraznou pigmentaci, jizvy a hluboké vrásky povrchový peeling neodstraní. Pokud je cílem tohle, je čistší hned probrat kúru nebo jiná ošetření — samotný Quick Peel to nevyřeší."
+    ],
+    "en": [
+     "The formula works within the upper layers of the skin: it speeds up exfoliation, so the face looks fresher, pores read cleaner and fine unevenness smooths out. This is genuinely the quick option — often chosen as a first peel or as a top-up between heavier treatments.",
+     "A superficial peel will not remove strong pigmentation, scars or deep wrinkles. If that is the goal, it is more honest to discuss a course or other treatments right away — Quick Peel alone will not get you there."
+    ],
+    "es": [
+     "La fórmula actúa en las capas superiores de la piel: acelera la exfoliación, de modo que el rostro se ve más fresco, los poros más limpios y las irregularidades finas se suavizan. Es de verdad la opción rápida: se suele elegir como primer peeling o como refuerzo entre tratamientos más intensos.",
+     "Un peeling superficial no elimina la pigmentación marcada, las cicatrices ni las arrugas profundas. Si ese es el objetivo, es más honesto hablar de una pauta o de otros tratamientos: con Quick Peel solo no se consigue."
+    ]
+   },
+   "who": {
+    "ru": [
+     "тусклый цвет лица, кожа «устала»",
+     "неровная текстура, расширенные поры",
+     "первый опыт пилинга",
+     "нужен быстрый уход без восстановления"
+    ],
+    "uk": [
+     "тьмяний колір обличчя, шкіра «втомилася»",
+     "нерівна текстура, розширені пори",
+     "перший досвід пілінгу",
+     "потрібен швидкий догляд без відновлення"
+    ],
+    "cs": [
+     "šedivá barva pleti, pleť vypadá vyčerpaně",
+     "nerovná textura, rozšířené póry",
+     "první zkušenost s peelingem",
+     "potřebujete rychlé ošetření bez rekonvalescence"
+    ],
+    "en": [
+     "a dull complexion, skin that looks tired",
+     "uneven texture, enlarged pores",
+     "a first experience of peeling",
+     "you want a quick treatment with no downtime"
+    ],
+    "es": [
+     "tono apagado, piel con aspecto cansado",
+     "textura irregular, poros dilatados",
+     "es tu primer peeling",
+     "quieres un tratamiento rápido sin recuperación"
+    ]
+   },
+   "how": {
+    "ru": [
+     "очищение и подготовка кожи",
+     "нанесение состава на заданное время, по зонам",
+     "нейтрализация",
+     "успокаивающий уход и SPF"
+    ],
+    "uk": [
+     "очищення та підготовка шкіри",
+     "нанесення складу на заданий час, по зонах",
+     "нейтралізація",
+     "заспокійливий догляд і SPF"
+    ],
+    "cs": [
+     "čištění a příprava pleti",
+     "nanesení přípravku na danou dobu, po zónách",
+     "neutralizace",
+     "zklidňující péče a SPF"
+    ],
+    "en": [
+     "cleansing and preparing the skin",
+     "applying the formula for a set time, area by area",
+     "neutralising",
+     "soothing care and SPF"
+    ],
+    "es": [
+     "limpieza y preparación de la piel",
+     "aplicación de la fórmula un tiempo pautado, por zonas",
+     "neutralización",
+     "cuidado calmante y SPF"
+    ]
+   },
+   "after": {
+    "ru": [
+     "во время нанесения возможно лёгкое жжение и покалывание — это нормально",
+     "краснота обычно проходит за 1–2 часа",
+     "шелушение лёгкое, чаще на 2–3-й день",
+     "SPF обязателен все дни после процедуры",
+     "кислоты, скрабы и ретинол дома — пауза на 5–7 дней"
+    ],
+    "uk": [
+     "під час нанесення можливе легке пекіння й поколювання — це нормально",
+     "червоність зазвичай проходить за 1–2 години",
+     "злущування легке, частіше на 2–3-й день",
+     "SPF обов’язковий усі дні після процедури",
+     "кислоти, скраби й ретинол удома — пауза на 5–7 днів"
+    ],
+    "cs": [
+     "během aplikace je možné lehké pálení a brnění — to je normální",
+     "zarudnutí obvykle odejde za 1–2 hodiny",
+     "olupování je mírné, nejčastěji 2.–3. den",
+     "SPF je povinné všechny dny po ošetření",
+     "kyseliny, peelingy a retinol doma — pauza 5–7 dní"
+    ],
+    "en": [
+     "mild stinging and tingling during application is normal",
+     "redness usually passes within 1–2 hours",
+     "light flaking, most often on days 2–3",
+     "SPF is a must every day afterwards",
+     "acids, scrubs and retinol at home — pause for 5–7 days"
+    ],
+    "es": [
+     "un ligero escozor u hormigueo durante la aplicación es normal",
+     "el enrojecimiento suele pasar en 1–2 horas",
+     "descamación leve, sobre todo al segundo o tercer día",
+     "SPF obligatorio todos los días siguientes",
+     "ácidos, exfoliantes y retinol en casa: pausa de 5–7 días"
+    ]
+   },
+   "freq": {
+    "ru": "Курсом 4–6 процедур с интервалом 7–14 дней, дальше по состоянию кожи. Между курсами делаем паузу: постоянное отшелушивание истончает защитный барьер.",
+    "uk": "Курсом 4–6 процедур з інтервалом 7–14 днів, далі за станом шкіри. Між курсами робимо паузу: постійне відлущування стоншує захисний бар’єр.",
+    "cs": "V kúře 4–6 ošetření v intervalu 7–14 dní, dál podle stavu pleti. Mezi kúrami děláme pauzu: trvalé odlupování ztenčuje ochrannou bariéru.",
+    "en": "As a course of 4–6 sessions 7–14 days apart, then according to your skin. We leave a gap between courses: constant exfoliation thins the protective barrier.",
+    "es": "En pauta de 4–6 sesiones cada 7–14 días y después según la piel. Entre pautas dejamos descanso: exfoliar sin parar adelgaza la barrera protectora."
+   }
+  },
+  {
+   "slug": "pmp-peel",
+   "sub": "peel",
+   "service": "cosmetology",
+   "group": "cosmetologyItems",
+   "rows": [
+    9
+   ],
+   "duration": 60,
+   "title": {
+    "ru": "Пилинг PMP",
+    "uk": "Пілінг PMP",
+    "cs": "Peeling PMP",
+    "en": "PMP peel",
+    "es": "Peeling PMP"
+   },
+   "lead": {
+    "ru": "Пилинг для работы с тоном и плотностью кожи: подходит, когда одной поверхностной процедуры уже мало.",
+    "uk": "Пілінг для роботи з тоном і щільністю шкіри: підходить, коли однієї поверхневої процедури вже мало.",
+    "cs": "Peeling pro práci s tónem a hustotou pleti: vhodný, když jedno povrchové ošetření už nestačí.",
+    "en": "A peel aimed at tone and skin density: for when a single superficial treatment is no longer enough.",
+    "es": "Un peeling orientado al tono y la densidad de la piel: para cuando un tratamiento superficial ya no basta."
+   },
+   "body": {
+    "ru": [
+     "Процедуру подбираем под задачу: неровный тон, следы постакне, тусклость, снижение плотности кожи. Косметолог контролирует время выдержки и количество слоёв — от этого зависит и результат, и реакция кожи, поэтому параметры всегда индивидуальные.",
+     "Пилинг работает накопительно: заметная разница обычно видна после 3–4 процедур, а не после первой. Мы сразу проговариваем это на консультации, чтобы ожидания совпадали с реальностью."
+    ],
+    "uk": [
+     "Процедуру підбираємо під задачу: нерівний тон, сліди постакне, тьмяність, зниження щільності шкіри. Косметолог контролює час витримки та кількість шарів — від цього залежить і результат, і реакція шкіри, тому параметри завжди індивідуальні.",
+     "Пілінг працює накопичувально: помітна різниця зазвичай видна після 3–4 процедур, а не після першої. Ми одразу про це говоримо на консультації, щоб очікування збігалися з реальністю."
+    ],
+    "cs": [
+     "Ošetření volíme podle cíle: nerovný tón, stopy po akné, šedivost, nižší hustota pleti. Kosmetoložka řídí dobu působení a počet vrstev — na tom závisí výsledek i reakce pleti, proto jsou parametry vždy individuální.",
+     "Peeling pracuje kumulativně: patrný rozdíl bývá vidět po 3–4 ošetřeních, ne po prvním. Říkáme to hned na konzultaci, aby očekávání odpovídala realitě."
+    ],
+    "en": [
+     "We tailor the session to the goal: uneven tone, post-acne marks, dullness, loss of skin density. The cosmetologist controls the contact time and the number of layers — both the result and the skin's reaction depend on this, so the parameters are always individual.",
+     "This peel works cumulatively: a visible difference usually comes after 3–4 sessions, not after the first. We say so at the consultation so expectations match reality."
+    ],
+    "es": [
+     "Ajustamos la sesión al objetivo: tono irregular, marcas de acné, falta de luminosidad, pérdida de densidad. La cosmetóloga controla el tiempo de contacto y el número de capas: de ello dependen el resultado y la reacción de la piel, así que los parámetros son siempre individuales.",
+     "Este peeling actúa de forma acumulativa: la diferencia visible suele llegar tras 3–4 sesiones, no con la primera. Lo decimos en la consulta para que las expectativas coincidan con la realidad."
+    ]
+   },
+   "who": {
+    "ru": [
+     "неровный тон и следы после высыпаний",
+     "кожа потеряла плотность и свежесть",
+     "расширенные поры и неровная текстура",
+     "нужен курс, а не разовая процедура"
+    ],
+    "uk": [
+     "нерівний тон і сліди після висипань",
+     "шкіра втратила щільність і свіжість",
+     "розширені пори та нерівна текстура",
+     "потрібен курс, а не разова процедура"
+    ],
+    "cs": [
+     "nerovný tón a stopy po vyrážkách",
+     "pleť ztratila hustotu a svěžest",
+     "rozšířené póry a nerovná textura",
+     "potřebujete kúru, ne jedno ošetření"
+    ],
+    "en": [
+     "uneven tone and marks left by breakouts",
+     "skin that has lost density and freshness",
+     "enlarged pores and uneven texture",
+     "you need a course rather than a one-off"
+    ],
+    "es": [
+     "tono irregular y marcas tras los brotes",
+     "piel que ha perdido densidad y frescura",
+     "poros dilatados y textura irregular",
+     "necesitas una pauta, no una sesión aislada"
+    ]
+   },
+   "how": {
+    "ru": [
+     "осмотр и выбор параметров под состояние кожи",
+     "очищение и обезжиривание",
+     "нанесение состава слоями, с контролем реакции",
+     "нейтрализация и восстанавливающий уход",
+     "SPF и домашние рекомендации"
+    ],
+    "uk": [
+     "огляд і вибір параметрів під стан шкіри",
+     "очищення та обезжирення",
+     "нанесення складу шарами, з контролем реакції",
+     "нейтралізація та відновлювальний догляд",
+     "SPF і домашні рекомендації"
+    ],
+    "cs": [
+     "vyšetření a volba parametrů podle stavu pleti",
+     "čištění a odmaštění",
+     "nanášení přípravku ve vrstvách s kontrolou reakce",
+     "neutralizace a regenerační péče",
+     "SPF a doporučení domácí péče"
+    ],
+    "en": [
+     "assessment and choice of parameters for your skin",
+     "cleansing and degreasing",
+     "applying the formula in layers while watching the reaction",
+     "neutralising and restorative care",
+     "SPF and home-care guidance"
+    ],
+    "es": [
+     "valoración y elección de parámetros según la piel",
+     "limpieza y desengrasado",
+     "aplicación en capas controlando la reacción",
+     "neutralización y cuidado reparador",
+     "SPF y pautas para casa"
+    ]
+   },
+   "after": {
+    "ru": [
+     "краснота и чувство стянутости в первый день",
+     "шелушение с 2–4-го дня, иногда заметное: это ожидаемая часть процедуры",
+     "не сдирать шелушение и не пользоваться скрабами",
+     "SPF каждый день, иначе возможна пигментация",
+     "спорт, сауна и бассейн — через 3–4 дня"
+    ],
+    "uk": [
+     "червоність і відчуття стягнутості в перший день",
+     "злущування з 2–4-го дня, іноді помітне: це очікувана частина процедури",
+     "не здирати злущування й не користуватися скрабами",
+     "SPF щодня, інакше можлива пігментація",
+     "спорт, сауна й басейн — через 3–4 дні"
+    ],
+    "cs": [
+     "zarudnutí a napětí pleti první den",
+     "olupování od 2.–4. dne, někdy výrazné: to k ošetření patří",
+     "olupující se kůži nestrhávat, nepoužívat peelingy",
+     "SPF každý den, jinak může vzniknout pigmentace",
+     "sport, sauna a bazén za 3–4 dny"
+    ],
+    "en": [
+     "redness and a feeling of tightness on day one",
+     "flaking from day 2–4, sometimes noticeable: that is an expected part of it",
+     "do not pick the flaking skin and do not use scrubs",
+     "SPF every day, or pigmentation can follow",
+     "sport, sauna and pool after 3–4 days"
+    ],
+    "es": [
+     "enrojecimiento y sensación de tirantez el primer día",
+     "descamación del día 2 al 4, a veces visible: forma parte del tratamiento",
+     "no arrancar la piel que se descama ni usar exfoliantes",
+     "SPF a diario; si no, puede aparecer pigmentación",
+     "deporte, sauna y piscina a los 3–4 días"
+    ]
+   },
+   "freq": {
+    "ru": "Курс 3–6 процедур с интервалом 2–4 недели, сезонно — чаще осенью и зимой. Летом и при активном солнце курс обычно переносим.",
+    "uk": "Курс 3–6 процедур з інтервалом 2–4 тижні, сезонно — частіше восени та взимку. Влітку й за активного сонця курс зазвичай переносимо.",
+    "cs": "Kúra 3–6 ošetření v intervalu 2–4 týdny, sezónně — spíš na podzim a v zimě. V létě a při silném slunci kúru obvykle odkládáme.",
+    "en": "A course of 3–6 sessions 2–4 weeks apart, mostly in autumn and winter. In summer or strong sun we usually postpone the course.",
+    "es": "Pauta de 3–6 sesiones cada 2–4 semanas, sobre todo en otoño e invierno. En verano o con sol fuerte normalmente la posponemos."
+   }
+  },
+  {
+   "slug": "jalupro-glow-peel",
+   "sub": "peel",
+   "service": "cosmetology",
+   "group": "cosmetologyItems",
+   "rows": [
+    10
+   ],
+   "duration": 60,
+   "title": {
+    "ru": "Пилинг JALUPRO GLOW PEEL",
+    "uk": "Пілінг JALUPRO GLOW PEEL",
+    "cs": "Peeling JALUPRO GLOW PEEL",
+    "en": "JALUPRO GLOW PEEL",
+    "es": "Peeling JALUPRO GLOW PEEL"
+   },
+   "lead": {
+    "ru": "Пилинг с акцентом на сияние: берут, когда нужно освежить лицо к событию и при этом не уйти в сильное шелушение.",
+    "uk": "Пілінг з акцентом на сяйво: беруть, коли потрібно освіжити обличчя до події й при цьому не вийти на сильне злущування.",
+    "cs": "Peeling s důrazem na rozjasnění: bere se, když je potřeba osvěžit tvář před akcí a přitom se vyhnout silnému olupování.",
+    "en": "A peel focused on glow: chosen when you need the face refreshed before an event without heavy flaking.",
+    "es": "Un peeling centrado en la luminosidad: se elige cuando hay que refrescar el rostro antes de un evento sin descamación fuerte."
+   },
+   "body": {
+    "ru": [
+     "Процедура работает мягко: отшелушивание сочетается с увлажняющим и восстанавливающим этапом, поэтому кожа после неё выглядит не «облезшей», а напитанной. Это тот вариант пилинга, который чаще всего делают перед съёмкой, свадьбой или поездкой.",
+     "Эффект сияния — не замена курсового лечения. Если есть выраженная пигментация или постакне, косметолог предложит сочетать такой пилинг с другими процедурами, а не делать его бесконечно."
+    ],
+    "uk": [
+     "Процедура працює м’яко: відлущування поєднується з зволожувальним і відновлювальним етапом, тому шкіра після неї виглядає не «облізлою», а напоєною. Це той варіант пілінгу, який найчастіше роблять перед зйомкою, весіллям або поїздкою.",
+     "Ефект сяйва — не заміна курсового лікування. Якщо є виражена пігментація або постакне, косметолог запропонує поєднувати такий пілінг з іншими процедурами, а не робити його без кінця."
+    ],
+    "cs": [
+     "Ošetření působí jemně: odlupování se kombinuje s hydratační a regenerační fází, takže pleť po něm nevypadá „oloupaná“, ale vyživená. Je to varianta peelingu, kterou klientky nejčastěji volí před fotografováním, svatbou nebo odjezdem.",
+     "Rozjasnění nenahrazuje kúru. Pokud je výrazná pigmentace nebo stopy po akné, kosmetoložka navrhne tento peeling kombinovat s dalšími ošetřeními, ne ho dělat bez konce."
+    ],
+    "en": [
+     "The treatment is gentle: exfoliation is paired with a hydrating, restorative stage, so the skin looks nourished rather than stripped. This is the peel most often chosen before a shoot, a wedding or a trip.",
+     "Glow is not a substitute for a treatment course. With pronounced pigmentation or post-acne marks, the cosmetologist will suggest combining this peel with other treatments rather than repeating it indefinitely."
+    ],
+    "es": [
+     "El tratamiento es suave: la exfoliación se combina con una fase hidratante y reparadora, así que la piel queda nutrida y no «pelada». Es el peeling que más se elige antes de una sesión de fotos, una boda o un viaje.",
+     "La luminosidad no sustituye una pauta de tratamiento. Con pigmentación marcada o marcas de acné, la cosmetóloga propondrá combinarlo con otros tratamientos en lugar de repetirlo sin fin."
+    ]
+   },
+   "who": {
+    "ru": [
+     "нужно освежить лицо за несколько дней до события",
+     "сухая и обезвоженная кожа",
+     "тусклый тон без выраженных проблем",
+     "первый пилинг для чувствительной кожи"
+    ],
+    "uk": [
+     "потрібно освіжити обличчя за кілька днів до події",
+     "суха та зневоднена шкіра",
+     "тьмяний тон без виражених проблем",
+     "перший пілінг для чутливої шкіри"
+    ],
+    "cs": [
+     "potřebujete osvěžit tvář několik dní před akcí",
+     "suchá a dehydratovaná pleť",
+     "šedivý tón bez výraznějších potíží",
+     "první peeling pro citlivou pleť"
+    ],
+    "en": [
+     "you need the face refreshed a few days before an event",
+     "dry, dehydrated skin",
+     "a dull tone without pronounced problems",
+     "a first peel for sensitive skin"
+    ],
+    "es": [
+     "quieres refrescar el rostro unos días antes de un evento",
+     "piel seca y deshidratada",
+     "tono apagado sin problemas marcados",
+     "un primer peeling para piel sensible"
+    ]
+   },
+   "how": {
+    "ru": [
+     "очищение и подготовка",
+     "пилинговый этап с контролем времени",
+     "нейтрализация",
+     "увлажняющий и восстанавливающий уход",
+     "SPF"
+    ],
+    "uk": [
+     "очищення та підготовка",
+     "пілінговий етап із контролем часу",
+     "нейтралізація",
+     "зволожувальний і відновлювальний догляд",
+     "SPF"
+    ],
+    "cs": [
+     "čištění a příprava",
+     "peelingová fáze s kontrolou času",
+     "neutralizace",
+     "hydratační a regenerační péče",
+     "SPF"
+    ],
+    "en": [
+     "cleansing and preparation",
+     "the peeling stage with timed control",
+     "neutralising",
+     "hydrating and restorative care",
+     "SPF"
+    ],
+    "es": [
+     "limpieza y preparación",
+     "fase de peeling con control del tiempo",
+     "neutralización",
+     "cuidado hidratante y reparador",
+     "SPF"
+    ]
+   },
+   "after": {
+    "ru": [
+     "краснота лёгкая, обычно проходит в тот же день",
+     "шелушение мелкое или его нет вовсе",
+     "макияж возможен на следующий день",
+     "SPF ежедневно",
+     "перед важным событием планируйте процедуру за 3–5 дней, а не накануне"
+    ],
+    "uk": [
+     "червоність легка, зазвичай проходить того ж дня",
+     "злущування дрібне або його немає зовсім",
+     "макіяж можливий наступного дня",
+     "SPF щодня",
+     "перед важливою подією плануйте процедуру за 3–5 днів, а не напередодні"
+    ],
+    "cs": [
+     "zarudnutí je mírné, obvykle odejde týž den",
+     "olupování je drobné nebo žádné",
+     "make-up je možný druhý den",
+     "SPF každý den",
+     "před důležitou akcí plánujte ošetření 3–5 dní předem, ne den před"
+    ],
+    "en": [
+     "redness is mild and usually gone the same day",
+     "flaking is fine or absent altogether",
+     "make-up is fine the next day",
+     "SPF daily",
+     "before an important event, book it 3–5 days ahead, not the night before"
+    ],
+    "es": [
+     "el enrojecimiento es leve y suele irse el mismo día",
+     "la descamación es fina o inexistente",
+     "el maquillaje puede volver al día siguiente",
+     "SPF a diario",
+     "antes de un evento importante, resérvalo 3–5 días antes, no la víspera"
+    ]
+   },
+   "freq": {
+    "ru": "Разово перед событием или курсом 3–4 процедуры с интервалом 10–14 дней.",
+    "uk": "Разово перед подією або курсом 3–4 процедури з інтервалом 10–14 днів.",
+    "cs": "Jednorázově před akcí nebo v kúře 3–4 ošetření v intervalu 10–14 dní.",
+    "en": "As a one-off before an event, or as a course of 3–4 sessions 10–14 days apart.",
+    "es": "Puntual antes de un evento o en pauta de 3–4 sesiones cada 10–14 días."
+   }
+  },
+  {
+   "slug": "cryo-pro-x-peel",
+   "sub": "peel",
+   "service": "cosmetology",
+   "group": "cosmetologyItems",
+   "rows": [
+    11
+   ],
+   "duration": 60,
+   "title": {
+    "ru": "Пилинг Cryo Pro X",
+    "uk": "Пілінг Cryo Pro X",
+    "cs": "Peeling Cryo Pro X",
+    "en": "Cryo Pro X peel",
+    "es": "Peeling Cryo Pro X"
+   },
+   "lead": {
+    "ru": "Пилинг с охлаждающим действием: отшелушивание идёт на холоде, поэтому процедура переносится мягче, чем кажется по описанию.",
+    "uk": "Пілінг з охолоджувальною дією: відлущування йде на холоді, тому процедура переноситься м’якше, ніж здається з опису.",
+    "cs": "Peeling s chladivým účinkem: odlupování probíhá za chladu, takže ošetření se snáší lépe, než popis napovídá.",
+    "en": "A peel with a cooling action: exfoliation happens cold, so it is easier to tolerate than the description suggests.",
+    "es": "Un peeling con acción refrescante: la exfoliación se produce en frío, así que se tolera mejor de lo que suena."
+   },
+   "body": {
+    "ru": [
+     "Состав сочетает кислотное отшелушивание с охлаждением: кожа одновременно обновляется и получает меньше раздражения, чем при обычном кислотном пилинге. За счёт этого процедуру можно предложить там, где кожа реактивная и быстро краснеет.",
+     "Как любой пилинг, он требует защиты от солнца и паузы в агрессивном домашнем уходе. Если кожа в день приёма воспалена или повреждена, процедуру переносим — это не вопрос вежливости, а условие результата."
+    ],
+    "uk": [
+     "Склад поєднує кислотне відлущування з охолодженням: шкіра одночасно оновлюється й отримує менше подразнення, ніж при звичайному кислотному пілінгу. Завдяки цьому процедуру можна запропонувати там, де шкіра реактивна і швидко червоніє.",
+     "Як будь-який пілінг, він потребує захисту від сонця й паузи в агресивному домашньому догляді. Якщо шкіра в день прийому запалена або пошкоджена, процедуру переносимо — це не питання ввічливості, а умова результату."
+    ],
+    "cs": [
+     "Přípravek spojuje kyselé odlupování s chlazením: pleť se obnovuje a zároveň dostává menší podráždění než u běžného kyselého peelingu. Díky tomu ho lze nabídnout i tam, kde je pleť reaktivní a rychle zčervená.",
+     "Jako každý peeling vyžaduje ochranu před sluncem a pauzu v agresivní domácí péči. Pokud je pleť v den návštěvy podrážděná nebo poškozená, ošetření odložíme — není to zdvořilost, ale podmínka výsledku."
+    ],
+    "en": [
+     "The formula combines acid exfoliation with cooling: the skin renews while taking less irritation than with a standard acid peel. That makes it an option for reactive skin that flushes quickly.",
+     "Like any peel, it needs sun protection and a pause in aggressive home care. If the skin is inflamed or damaged on the day, we reschedule — that is not politeness, it is a condition for the result."
+    ],
+    "es": [
+     "La fórmula combina exfoliación ácida con frío: la piel se renueva recibiendo menos irritación que con un peeling ácido clásico. Eso lo convierte en una opción para pieles reactivas que se enrojecen rápido.",
+     "Como todo peeling, exige protección solar y una pausa en la rutina agresiva de casa. Si ese día la piel está inflamada o dañada, lo posponemos: no es cortesía, es condición para el resultado."
+    ]
+   },
+   "who": {
+    "ru": [
+     "реактивная кожа, которая плохо переносит обычные кислоты",
+     "неровный тон и тусклость",
+     "расширенные поры, жирный блеск",
+     "хочется обновления без выраженного шелушения"
+    ],
+    "uk": [
+     "реактивна шкіра, яка погано переносить звичайні кислоти",
+     "нерівний тон і тьмяність",
+     "розширені пори, жирний блиск",
+     "хочеться оновлення без вираженого злущування"
+    ],
+    "cs": [
+     "reaktivní pleť, která běžné kyseliny snáší špatně",
+     "nerovný tón a šedivost",
+     "rozšířené póry, mastný lesk",
+     "chcete obnovu bez výrazného olupování"
+    ],
+    "en": [
+     "reactive skin that tolerates ordinary acids poorly",
+     "uneven tone and dullness",
+     "enlarged pores, oily shine",
+     "you want renewal without obvious flaking"
+    ],
+    "es": [
+     "piel reactiva que tolera mal los ácidos habituales",
+     "tono irregular y falta de luz",
+     "poros dilatados, brillo graso",
+     "quieres renovación sin descamación evidente"
+    ]
+   },
+   "how": {
+    "ru": [
+     "очищение и обезжиривание",
+     "нанесение охлаждающего пилингового состава",
+     "выдержка под контролем косметолога",
+     "снятие состава, успокаивающий уход",
+     "SPF и рекомендации"
+    ],
+    "uk": [
+     "очищення та обезжирення",
+     "нанесення охолоджувального пілінгового складу",
+     "витримка під контролем косметолога",
+     "зняття складу, заспокійливий догляд",
+     "SPF і рекомендації"
+    ],
+    "cs": [
+     "čištění a odmaštění",
+     "nanesení chladivého peelingového přípravku",
+     "působení pod kontrolou kosmetoložky",
+     "odstranění přípravku, zklidňující péče",
+     "SPF a doporučení"
+    ],
+    "en": [
+     "cleansing and degreasing",
+     "applying the cooling peel formula",
+     "contact time under the cosmetologist's control",
+     "removing the formula, soothing care",
+     "SPF and guidance"
+    ],
+    "es": [
+     "limpieza y desengrasado",
+     "aplicación de la fórmula refrescante",
+     "tiempo de contacto controlado por la cosmetóloga",
+     "retirada de la fórmula y cuidado calmante",
+     "SPF y pautas"
+    ]
+   },
+   "after": {
+    "ru": [
+     "ощущение холода и покалывания во время процедуры",
+     "краснота обычно сходит за несколько часов",
+     "лёгкое шелушение возможно на 2–3-й день",
+     "SPF ежедневно",
+     "кислоты и ретинол дома — через 5–7 дней"
+    ],
+    "uk": [
+     "відчуття холоду й поколювання під час процедури",
+     "червоність зазвичай сходить за кілька годин",
+     "легке злущування можливе на 2–3-й день",
+     "SPF щодня",
+     "кислоти й ретинол удома — через 5–7 днів"
+    ],
+    "cs": [
+     "během ošetření pocit chladu a brnění",
+     "zarudnutí obvykle odejde za několik hodin",
+     "mírné olupování je možné 2.–3. den",
+     "SPF každý den",
+     "kyseliny a retinol doma za 5–7 dní"
+    ],
+    "en": [
+     "a sensation of cold and tingling during the session",
+     "redness usually settles within a few hours",
+     "light flaking is possible on days 2–3",
+     "SPF daily",
+     "acids and retinol at home after 5–7 days"
+    ],
+    "es": [
+     "sensación de frío y hormigueo durante la sesión",
+     "el enrojecimiento suele bajar en unas horas",
+     "puede haber descamación leve al segundo o tercer día",
+     "SPF a diario",
+     "ácidos y retinol en casa a los 5–7 días"
+    ]
+   },
+   "freq": {
+    "ru": "Курс 4–6 процедур с интервалом 10–14 дней. Между курсами — пауза 2–3 месяца.",
+    "uk": "Курс 4–6 процедур з інтервалом 10–14 днів. Між курсами — пауза 2–3 місяці.",
+    "cs": "Kúra 4–6 ošetření v intervalu 10–14 dní. Mezi kúrami pauza 2–3 měsíce.",
+    "en": "A course of 4–6 sessions 10–14 days apart, with a 2–3 month gap between courses.",
+    "es": "Pauta de 4–6 sesiones cada 10–14 días, con un descanso de 2–3 meses entre pautas."
+   }
+  },
+  {
+   "slug": "dmk-fire-and-ice",
+   "sub": "peel",
+   "service": "cosmetology",
+   "group": "cosmetologyItems",
+   "rows": [
+    12
+   ],
+   "duration": 90,
+   "title": {
+    "ru": "«Огонь и лёд» от DMK",
+    "uk": "«Вогонь і лід» від DMK",
+    "cs": "„Oheň a led“ od DMK",
+    "en": "Fire & Ice by DMK",
+    "es": "«Fuego y hielo» de DMK"
+   },
+   "lead": {
+    "ru": "Двухфазная процедура: сначала активная фаза с ощутимым разогревом, затем охлаждающая и восстанавливающая. Отсюда и название.",
+    "uk": "Двофазна процедура: спершу активна фаза з відчутним розігрівом, потім охолоджувальна і відновлювальна. Звідси й назва.",
+    "cs": "Dvoufázové ošetření: nejprve aktivní fáze s výrazným zahřátím, potom chladivá a regenerační. Odtud název.",
+    "en": "A two-phase treatment: an active phase with noticeable heat, then a cooling, restorative one. Hence the name.",
+    "es": "Un tratamiento en dos fases: primero una fase activa con calor notable y después una refrescante y reparadora. De ahí el nombre."
+   },
+   "body": {
+    "ru": [
+     "В первой фазе состав заметно разогревает кожу и усиливает кровоток — это и даёт эффект обновления. Во второй фазе кожу охлаждают и успокаивают, снимая реакцию. Ощущения в первой фазе сильные: жар, пощипывание, иногда желание прервать процедуру. Косметолог ведёт её по времени и всегда может замедлить.",
+     "Это отдельный протокол DMK, а не «чистка от DMK» и не маска: задачи у них разные. «Огонь и лёд» берут, когда нужно быстро улучшить вид кожи и подтянуть текстуру, в том числе перед событием. Мы не обещаем «эффект как после лазера» — это другой уровень воздействия."
+    ],
+    "uk": [
+     "У першій фазі склад помітно розігріває шкіру й посилює кровотік — це й дає ефект оновлення. У другій фазі шкіру охолоджують і заспокоюють, знімаючи реакцію. Відчуття в першій фазі сильні: жар, пощипування, іноді бажання припинити процедуру. Косметолог веде її за часом і завжди може сповільнити.",
+     "Це окремий протокол DMK, а не «чистка від DMK» і не маска: задачі у них різні. «Вогонь і лід» беруть, коли потрібно швидко покращити вигляд шкіри й підтягнути текстуру, зокрема перед подією. Ми не обіцяємо «ефект як після лазера» — це інший рівень впливу."
+    ],
+    "cs": [
+     "V první fázi přípravek pleť výrazně zahřeje a zvýší krevní tok — právě to dává efekt obnovy. V druhé fázi se pleť chladí a zklidňuje, reakce odchází. Vjemy v první fázi jsou silné: žár, píchání, někdy chuť ošetření přerušit. Kosmetoložka ho vede podle času a vždy může zpomalit.",
+     "Jde o samostatný protokol DMK, ne o „čištění od DMK“ ani o masku: mají jiné cíle. „Oheň a led“ se bere, když je potřeba rychle zlepšit vzhled pleti a zpevnit texturu, třeba před akcí. Neslibujeme „efekt jako po laseru“ — to je jiná úroveň zákroku."
+    ],
+    "en": [
+     "In the first phase the formula heats the skin markedly and boosts circulation — that is what drives the renewal. In the second phase the skin is cooled and calmed, and the reaction subsides. The sensations in phase one are strong: heat, prickling, sometimes the urge to stop. The cosmetologist works to the clock and can always slow things down.",
+     "This is a distinct DMK protocol, not the DMK cleansing and not a mask: they serve different purposes. Fire & Ice is chosen to improve the look of the skin quickly and tighten texture, including before an event. We do not promise a laser-like effect — that is a different level of intervention."
+    ],
+    "es": [
+     "En la primera fase la fórmula calienta la piel de forma notable y activa la circulación: eso es lo que produce la renovación. En la segunda se enfría y se calma la piel, y la reacción baja. Las sensaciones de la primera fase son intensas: calor, picor y a veces ganas de parar. La cosmetóloga la lleva por tiempos y siempre puede ir más despacio.",
+     "Es un protocolo propio de DMK, distinto de la limpieza DMK y de una mascarilla: los objetivos son otros. «Fuego y hielo» se elige para mejorar rápido el aspecto de la piel y tensar la textura, también antes de un evento. No prometemos un «efecto como el láser»: es otro nivel de intervención."
+    ]
+   },
+   "who": {
+    "ru": [
+     "нужен быстрый видимый результат по текстуре и тону",
+     "неровная кожа, расширенные поры",
+     "следы постакне без активных воспалений",
+     "вы уже знакомы с процедурами DMK"
+    ],
+    "uk": [
+     "потрібен швидкий видимий результат за текстурою й тоном",
+     "нерівна шкіра, розширені пори",
+     "сліди постакне без активних запалень",
+     "ви вже знайомі з процедурами DMK"
+    ],
+    "cs": [
+     "potřebujete rychlý viditelný výsledek v textuře a tónu",
+     "nerovná pleť, rozšířené póry",
+     "stopy po akné bez aktivních zánětů",
+     "procedury DMK už znáte"
+    ],
+    "en": [
+     "you want a fast visible result in texture and tone",
+     "uneven skin, enlarged pores",
+     "post-acne marks without active inflammation",
+     "you already know DMK treatments"
+    ],
+    "es": [
+     "quieres un resultado visible rápido en textura y tono",
+     "piel irregular, poros dilatados",
+     "marcas de acné sin inflamación activa",
+     "ya conoces los tratamientos DMK"
+    ]
+   },
+   "how": {
+    "ru": [
+     "очищение и подготовка кожи",
+     "первая фаза: активный состав, ощутимый разогрев",
+     "вторая фаза: охлаждение и восстановление",
+     "финальный уход и SPF"
+    ],
+    "uk": [
+     "очищення та підготовка шкіри",
+     "перша фаза: активний склад, відчутний розігрів",
+     "друга фаза: охолодження та відновлення",
+     "фінальний догляд і SPF"
+    ],
+    "cs": [
+     "čištění a příprava pleti",
+     "první fáze: aktivní přípravek, výrazné zahřátí",
+     "druhá fáze: chlazení a regenerace",
+     "závěrečná péče a SPF"
+    ],
+    "en": [
+     "cleansing and preparing the skin",
+     "phase one: the active formula, noticeable heat",
+     "phase two: cooling and recovery",
+     "finishing care and SPF"
+    ],
+    "es": [
+     "limpieza y preparación de la piel",
+     "fase uno: fórmula activa, calor notable",
+     "fase dos: enfriamiento y recuperación",
+     "cuidado final y SPF"
+    ]
+   },
+   "after": {
+    "ru": [
+     "в первой фазе — выраженный жар и пощипывание, это часть процедуры",
+     "краснота держится от нескольких часов до суток",
+     "возможно лёгкое шелушение на 2–4-й день",
+     "сутки без сауны, бассейна, спорта и бани",
+     "SPF обязателен, особенно в первые дни",
+     "не планируйте процедуру накануне важного события"
+    ],
+    "uk": [
+     "у першій фазі — виражений жар і пощипування, це частина процедури",
+     "червоність тримається від кількох годин до доби",
+     "можливе легке злущування на 2–4-й день",
+     "добу без сауни, басейну, спорту й лазні",
+     "SPF обов’язковий, особливо в перші дні",
+     "не плануйте процедуру напередодні важливої події"
+    ],
+    "cs": [
+     "v první fázi výrazný žár a píchání, to k ošetření patří",
+     "zarudnutí drží od několika hodin do jednoho dne",
+     "2.–4. den je možné mírné olupování",
+     "jeden den bez sauny, bazénu a sportu",
+     "SPF je povinné, zejména první dny",
+     "neplánujte ošetření den před důležitou akcí"
+    ],
+    "en": [
+     "phase one brings pronounced heat and prickling — that is part of it",
+     "redness lasts from a few hours up to a day",
+     "light flaking is possible on days 2–4",
+     "no sauna, pool or sport for a day",
+     "SPF is a must, especially in the first days",
+     "do not book it the day before something important"
+    ],
+    "es": [
+     "la primera fase trae calor intenso y picor: forma parte del tratamiento",
+     "el enrojecimiento dura de unas horas a un día",
+     "puede haber descamación leve del día 2 al 4",
+     "un día sin sauna, piscina ni deporte",
+     "SPF obligatorio, sobre todo los primeros días",
+     "no lo programes la víspera de algo importante"
+    ]
+   },
+   "freq": {
+    "ru": "Разово или курсом 3–4 процедуры с интервалом 2–4 недели. Чаще не делаем: коже нужно время между активными протоколами.",
+    "uk": "Разово або курсом 3–4 процедури з інтервалом 2–4 тижні. Частіше не робимо: шкірі потрібен час між активними протоколами.",
+    "cs": "Jednorázově nebo v kúře 3–4 ošetření v intervalu 2–4 týdny. Častěji ne: pleť potřebuje mezi aktivními protokoly čas.",
+    "en": "As a one-off or a course of 3–4 sessions 2–4 weeks apart. Not more often: the skin needs time between active protocols.",
+    "es": "Puntual o en pauta de 3–4 sesiones cada 2–4 semanas. No más seguido: la piel necesita tiempo entre protocolos activos."
+   }
+  },
+  {
+   "slug": "carboxytherapy",
+   "sub": "care",
+   "service": "cosmetology",
+   "group": "cosmetologyItems",
+   "rows": [
+    5
+   ],
+   "duration": 60,
+   "title": {
+    "ru": "Карбокситерапия",
+    "uk": "Карбокситерапія",
+    "cs": "Karboxyterapie",
+    "en": "Carboxytherapy",
+    "es": "Carboxiterapia"
+   },
+   "lead": {
+    "ru": "Неинъекционная процедура: кожу выводят из «спящего» состояния за счёт углекислого газа, который усиливает приток крови и кислорода.",
+    "uk": "Неінъєкційна процедура: шкіру виводять зі «спального» стану завдяки вуглекислому газу, який посилює приплив крові та кисню.",
+    "cs": "Neinvazivní ošetření: pleť se probere ze „spánku“ díky oxidu uhličitému, který zvýší přítok krve a kyslíku.",
+    "en": "A non-injection treatment: carbon dioxide wakes the skin up by increasing the flow of blood and oxygen.",
+    "es": "Un tratamiento sin inyecciones: el dióxido de carbono despierta la piel aumentando el aporte de sangre y oxígeno."
+   },
+   "body": {
+    "ru": [
+     "На кожу наносят маску и состав, которые при соединении дают углекислый газ. Кожа отвечает на него расширением капилляров — приток крови и кислорода усиливается, лицо розовеет, появляется ощущение тепла и легкого покалывания. За счёт этого улучшается цвет лица, кожа выглядит более плотной и напитанной.",
+     "Карбокситерапия хорошо работает как подготовка к другим процедурам и как уход для уставшей, обезвоженной кожи. Это не замена инъекционным методикам: она не заполняет морщины и не меняет овал, но заметно освежает и делает кожу живее."
+    ],
+    "uk": [
+     "На шкіру наносять маску і склад, які при з’єднанні дають вуглекислий газ. Шкіра відповідає на нього розширенням капілярів — приплив крові та кисню посилюється, обличчя рожевіє, з’являється відчуття тепла й легкого поколювання. За рахунок цього покращується колір обличчя, шкіра виглядає щільнішою й напоєною.",
+     "Карбокситерапія добре працює як підготовка до інших процедур і як догляд для втомленої, зневодненої шкіри. Це не заміна інʼєкційним методикам: вона не заповнює зморшки й не змінює овал, але помітно освіжає й робить шкіру живішою."
+    ],
+    "cs": [
+     "Na pleť se nanese maska a přípravek, které spolu uvolňují oxid uhličitý. Pleť na něj reaguje rozšířením kapilár — přítok krve a kyslíku se zvýší, tvář zrůžoví a objeví se pocit tepla a lehkého brnění. Díky tomu se zlepší barva pleti a kůže vypadá hustší a vyživenější.",
+     "Karboxyterapie dobře funguje jako příprava na jiná ošetření a jako péče o vyčerpanou, dehydratovanou pleť. Nenahrazuje injekční metody: vrásky nevyplní ani ovál nezmění, ale pleť výrazně osvěží a oživí."
+    ],
+    "en": [
+     "A mask and an activating formula are applied; together they release carbon dioxide. The skin responds by widening its capillaries — blood and oxygen flow increase, the face flushes pink and you feel warmth and a light tingle. The complexion improves and the skin looks denser and better nourished.",
+     "Carboxytherapy works well as preparation for other treatments and as care for tired, dehydrated skin. It is not a replacement for injectables: it does not fill wrinkles or change the contour, but it noticeably refreshes the skin and makes it look alive."
+    ],
+    "es": [
+     "Se aplican una mascarilla y una fórmula activadora que juntas liberan dióxido de carbono. La piel responde dilatando los capilares: aumenta el flujo de sangre y oxígeno, el rostro se sonrosa y se nota calor y un ligero hormigueo. Mejora el tono y la piel se ve más densa y nutrida.",
+     "La carboxiterapia funciona bien como preparación para otros tratamientos y como cuidado de pieles cansadas y deshidratadas. No sustituye a los inyectables: no rellena arrugas ni cambia el óvalo facial, pero refresca la piel de forma notable y la deja con mejor aspecto."
+    ]
+   },
+   "who": {
+    "ru": [
+     "тусклая, уставшая кожа и сероватый цвет лица",
+     "обезвоженность, чувство стянутости",
+     "подготовка кожи перед событием",
+     "кожа после перелётов, недосыпа, стресса"
+    ],
+    "uk": [
+     "тьмяна, втомлена шкіра і сіруватий колір обличчя",
+     "зневоднення, відчуття стягнутості",
+     "підготовка шкіри перед подією",
+     "шкіра після перельотів, недосипу, стресу"
+    ],
+    "cs": [
+     "šedivá, vyčerpaná pleť a nevýrazná barva",
+     "dehydratace, pocit napětí",
+     "příprava pleti před akcí",
+     "pleť po letech, nedostatku spánku a stresu"
+    ],
+    "en": [
+     "dull, tired skin with a greyish tone",
+     "dehydration and a feeling of tightness",
+     "preparing the skin before an event",
+     "skin after flights, poor sleep, stress"
+    ],
+    "es": [
+     "piel apagada y cansada, con tono grisáceo",
+     "deshidratación y sensación de tirantez",
+     "preparar la piel antes de un evento",
+     "piel tras vuelos, falta de sueño o estrés"
+    ]
+   },
+   "how": {
+    "ru": [
+     "очищение кожи",
+     "нанесение активного состава и маски",
+     "выдержка: кожа розовеет, чувствуется тепло и покалывание",
+     "снятие маски, увлажняющий уход и SPF"
+    ],
+    "uk": [
+     "очищення шкіри",
+     "нанесення активного складу й маски",
+     "витримка: шкіра рожевіє, відчувається тепло й поколювання",
+     "зняття маски, зволожувальний догляд і SPF"
+    ],
+    "cs": [
+     "čištění pleti",
+     "nanesení aktivního přípravku a masky",
+     "působení: pleť zrůžoví, cítíte teplo a brnění",
+     "sejmutí masky, hydratační péče a SPF"
+    ],
+    "en": [
+     "cleansing the skin",
+     "applying the active formula and the mask",
+     "contact time: the skin turns pink, you feel warmth and tingling",
+     "removing the mask, hydrating care and SPF"
+    ],
+    "es": [
+     "limpieza de la piel",
+     "aplicación de la fórmula activa y la mascarilla",
+     "tiempo de acción: la piel se sonrosa, se nota calor y hormigueo",
+     "retirada de la mascarilla, hidratación y SPF"
+    ]
+   },
+   "after": {
+    "ru": [
+     "розовый цвет лица сходит за 20–40 минут",
+     "макияж можно наносить в тот же день",
+     "ограничений по сауне и спорту практически нет",
+     "SPF — по сезону, как обычно"
+    ],
+    "uk": [
+     "рожевий колір обличчя сходить за 20–40 хвилин",
+     "макіяж можна наносити того ж дня",
+     "обмежень щодо сауни та спорту практично немає",
+     "SPF — за сезоном, як завжди"
+    ],
+    "cs": [
+     "zrůžovění odejde za 20–40 minut",
+     "make-up lze nanést týž den",
+     "omezení pro saunu a sport prakticky nejsou",
+     "SPF podle sezóny, jako obvykle"
+    ],
+    "en": [
+     "the pink flush fades in 20–40 minutes",
+     "make-up is fine the same day",
+     "there are practically no sauna or sport restrictions",
+     "SPF as usual for the season"
+    ],
+    "es": [
+     "el sonrosado baja en 20–40 minutos",
+     "el maquillaje puede volver el mismo día",
+     "prácticamente no hay restricciones de sauna o deporte",
+     "SPF según la temporada, como siempre"
+    ]
+   },
+   "freq": {
+    "ru": "Курсом 5–10 процедур с интервалом 3–7 дней, затем поддержка раз в месяц. Разово — как освежающий уход перед событием.",
+    "uk": "Курсом 5–10 процедур з інтервалом 3–7 днів, далі підтримка раз на місяць. Разово — як освіжальний догляд перед подією.",
+    "cs": "V kúře 5–10 ošetření v intervalu 3–7 dní, pak udržovací jednou za měsíc. Jednorázově jako osvěžení před akcí.",
+    "en": "As a course of 5–10 sessions 3–7 days apart, then maintenance once a month. As a one-off, a refresher before an event.",
+    "es": "En pauta de 5–10 sesiones cada 3–7 días y después mantenimiento mensual. Puntual, como refresco antes de un evento."
+   }
+  },
+  {
+   "slug": "enzyme-therapy",
+   "sub": "care",
+   "service": "cosmetology",
+   "group": "cosmetologyItems",
+   "rows": [
+    6
+   ],
+   "duration": 90,
+   "title": {
+    "ru": "Ферментотерапия",
+    "uk": "Ферментотерапія",
+    "cs": "Enzymoterapie",
+    "en": "Enzyme therapy",
+    "es": "Enzimoterapia"
+   },
+   "lead": {
+    "ru": "Процедура с ферментной маской, которая ощутимо стягивает кожу и разгоняет кровоток. Одна из самых заметных по ощущениям — и по результату.",
+    "uk": "Процедура з ферментною маскою, яка відчутно стягує шкіру й розганяє кровотік. Одна з найпомітніших за відчуттями — і за результатом.",
+    "cs": "Ošetření s enzymatickou maskou, která pleť citelně stahuje a rozproudí krevní tok. Jedno z nejvýraznějších co do vjemů i výsledku.",
+    "en": "A treatment with an enzyme mask that tightens the skin noticeably and gets the blood moving. One of the most sensation-heavy — and most visible — treatments we do.",
+    "es": "Un tratamiento con mascarilla enzimática que tensa la piel de forma notable y activa la circulación. Uno de los más intensos en sensaciones y en resultado."
+   },
+   "body": {
+    "ru": [
+     "Ферментная маска застывает на лице и работает примерно 40–45 минут. В это время ощущается сильное стягивание, пульсация и тепло — кожа «качается» за счёт усиленного кровотока. Это нормальная реакция, и о ней мы предупреждаем заранее: процедура не расслабляющая, лежать с такой маской спокойно получается не у всех.",
+     "После снятия маски кожа выглядит плотнее, ровнее и свежее, уменьшается отёчность. Такую процедуру часто берут курсом при тусклости, снижении тонуса, следах постакне и как альтернативу инъекциям, когда к ним не готовы."
+    ],
+    "uk": [
+     "Ферментна маска застигає на обличчі й працює приблизно 40–45 хвилин. У цей час відчувається сильне стягування, пульсація і тепло — шкіра «качається» за рахунок посиленого кровотоку. Це нормальна реакція, і про неї ми попереджаємо заздалегідь: процедура не розслаблива, лежати з такою маскою спокійно виходить не в усіх.",
+     "Після зняття маски шкіра виглядає щільнішою, рівнішою і свіжішою, зменшується набряклість. Таку процедуру часто беруть курсом при тьмяності, зниженні тонусу, слідах постакне і як альтернативу інʼєкціям, коли до них не готові."
+    ],
+    "cs": [
+     "Enzymatická maska na tváři ztuhne a pracuje přibližně 40–45 minut. Během té doby je cítit silné stahování, pulzování a teplo — pleť se „rozhýbe“ zvýšeným krevním tokem. Je to normální reakce a dopředu na ni upozorňujeme: ošetření není relaxační a ležet s takovou maskou v klidu nezvládne každá.",
+     "Po sejmutí masky je pleť hustší, vyrovnanější a svěžejší a zmenší se otoky. Toto ošetření se často bere v kúře při šedivosti, nižším tonusu, stopách po akné a jako alternativa injekcí, když na ně klientka není připravená."
+    ],
+    "en": [
+     "The enzyme mask sets on the face and works for about 40–45 minutes. During that time you feel strong tightening, pulsing and warmth — the skin is being pushed by the increased blood flow. That is a normal reaction and we warn about it in advance: this is not a relaxing treatment, and lying still under that mask does not suit everyone.",
+     "Once the mask is off, the skin looks denser, smoother and fresher, and puffiness goes down. It is often taken as a course for dullness, loss of tone and post-acne marks, and as an alternative to injectables for those not ready for them."
+    ],
+    "es": [
+     "La mascarilla enzimática se endurece sobre el rostro y actúa unos 40–45 minutos. Durante ese tiempo se nota una tensión fuerte, pulsaciones y calor: la piel se «activa» por el aumento del flujo sanguíneo. Es una reacción normal y avisamos de ella por adelantado: no es un tratamiento relajante y no todo el mundo aguanta tumbada con esa mascarilla.",
+     "Al retirarla, la piel se ve más densa, uniforme y fresca, y baja la hinchazón. Se suele hacer en pauta para falta de luminosidad, pérdida de tono y marcas de acné, y como alternativa a los inyectables cuando aún no se quieren."
+    ]
+   },
+   "who": {
+    "ru": [
+     "снижение тонуса и плотности кожи",
+     "тусклый цвет лица, отёчность",
+     "следы постакне и неровный тон",
+     "не готовы к инъекциям, но хотите видимый результат"
+    ],
+    "uk": [
+     "зниження тонусу і щільності шкіри",
+     "тьмяний колір обличчя, набряклість",
+     "сліди постакне і нерівний тон",
+     "не готові до інʼєкцій, але хочете видимий результат"
+    ],
+    "cs": [
+     "nižší tonus a hustota pleti",
+     "šedivá barva pleti, otoky",
+     "stopy po akné a nerovný tón",
+     "nejste připravená na injekce, ale chcete viditelný výsledek"
+    ],
+    "en": [
+     "loss of tone and skin density",
+     "a dull complexion, puffiness",
+     "post-acne marks and uneven tone",
+     "you are not ready for injectables but want a visible result"
+    ],
+    "es": [
+     "pérdida de tono y densidad",
+     "tono apagado, hinchazón",
+     "marcas de acné y tono irregular",
+     "no quieres inyectables pero buscas un resultado visible"
+    ]
+   },
+   "how": {
+    "ru": [
+     "очищение и подготовка кожи",
+     "нанесение ферментной маски",
+     "выдержка 40–45 минут: стягивание, пульсация, тепло",
+     "снятие маски, восстанавливающий уход",
+     "SPF и домашние рекомендации"
+    ],
+    "uk": [
+     "очищення та підготовка шкіри",
+     "нанесення ферментної маски",
+     "витримка 40–45 хвилин: стягування, пульсація, тепло",
+     "зняття маски, відновлювальний догляд",
+     "SPF і домашні рекомендації"
+    ],
+    "cs": [
+     "čištění a příprava pleti",
+     "nanesení enzymatické masky",
+     "působení 40–45 minut: stahování, pulzování, teplo",
+     "sejmutí masky, regenerační péče",
+     "SPF a doporučení domácí péče"
+    ],
+    "en": [
+     "cleansing and preparing the skin",
+     "applying the enzyme mask",
+     "40–45 minutes of contact: tightening, pulsing, warmth",
+     "removing the mask, restorative care",
+     "SPF and home-care guidance"
+    ],
+    "es": [
+     "limpieza y preparación de la piel",
+     "aplicación de la mascarilla enzimática",
+     "40–45 minutos de acción: tensión, pulsaciones, calor",
+     "retirada de la mascarilla y cuidado reparador",
+     "SPF y pautas para casa"
+    ]
+   },
+   "after": {
+    "ru": [
+     "выраженное покраснение в первые 1–3 часа — это ожидаемо",
+     "иногда кожа слегка шелушится через день-два",
+     "сутки без сауны, бассейна и активного спорта",
+     "SPF обязателен",
+     "лучше не планировать процедуру накануне важного события"
+    ],
+    "uk": [
+     "виражене почервоніння в перші 1–3 години — це очікувано",
+     "іноді шкіра злегка злущується через день-два",
+     "добу без сауни, басейну й активного спорту",
+     "SPF обов’язковий",
+     "краще не планувати процедуру напередодні важливої події"
+    ],
+    "cs": [
+     "výrazné zarudnutí první 1–3 hodiny — to se čeká",
+     "někdy se pleť za den či dva mírně olupuje",
+     "jeden den bez sauny, bazénu a náročného sportu",
+     "SPF je povinné",
+     "ošetření je lepší neplánovat den před důležitou akcí"
+    ],
+    "en": [
+     "marked redness for the first 1–3 hours — that is expected",
+     "the skin sometimes flakes slightly a day or two later",
+     "no sauna, pool or hard training for a day",
+     "SPF is a must",
+     "better not to book it the day before something important"
+    ],
+    "es": [
+     "enrojecimiento marcado durante las primeras 1–3 horas: es lo esperado",
+     "a veces la piel se descama un poco al día siguiente",
+     "un día sin sauna, piscina ni deporte intenso",
+     "SPF obligatorio",
+     "mejor no programarlo la víspera de algo importante"
+    ]
+   },
+   "freq": {
+    "ru": "Курсом 4–6 процедур с интервалом 1–2 недели, затем поддержка раз в 4–6 недель.",
+    "uk": "Курсом 4–6 процедур з інтервалом 1–2 тижні, далі підтримка раз на 4–6 тижнів.",
+    "cs": "V kúře 4–6 ošetření v intervalu 1–2 týdny, pak udržovací jednou za 4–6 týdnů.",
+    "en": "A course of 4–6 sessions 1–2 weeks apart, then maintenance every 4–6 weeks.",
+    "es": "Pauta de 4–6 sesiones cada 1–2 semanas y después mantenimiento cada 4–6 semanas."
+   }
+  },
+  {
+   "slug": "enzyme-therapy-quick-peel",
+   "sub": "care",
+   "service": "cosmetology",
+   "group": "cosmetologyItems",
+   "rows": [
+    7
+   ],
+   "duration": 90,
+   "title": {
+    "ru": "Ферментотерапия с пилингом Quick Peel",
+    "uk": "Ферментотерапія з пілінгом Quick Peel",
+    "cs": "Enzymoterapie s peelingem Quick Peel",
+    "en": "Enzyme therapy with Quick Peel",
+    "es": "Enzimoterapia con peeling Quick Peel"
+   },
+   "lead": {
+    "ru": "Та же ферментотерапия, но с предварительным пилингом: сначала снимаем ороговевший слой, потом работаем маской.",
+    "uk": "Та сама ферментотерапія, але з попереднім пілінгом: спершу знімаємо зроговілий шар, потім працюємо маскою.",
+    "cs": "Stejná enzymoterapie, ale s peelingem předem: nejdřív sejmeme zrohovatělou vrstvu, pak pracujeme maskou.",
+    "en": "The same enzyme therapy, but with a peel first: we lift the keratinised layer, then work with the mask.",
+    "es": "La misma enzimoterapia, pero con peeling previo: primero retiramos la capa de células muertas y después trabajamos con la mascarilla."
+   },
+   "body": {
+    "ru": [
+     "Пилинг перед ферментной маской убирает мёртвые клетки и делает кожу более восприимчивой — маска работает глубже, результат по тону и плотности заметнее. Логика простая: чем лучше подготовлена кожа, тем больше отдача от активного этапа.",
+     "Сочетание активнее, чем каждая процедура по отдельности, поэтому и реакция кожи будет сильнее: краснота держится дольше, возможно шелушение. Косметолог решает на осмотре, выдержит ли кожа такую нагрузку именно сегодня."
+    ],
+    "uk": [
+     "Пілінг перед ферментною маскою прибирає мертві клітини й робить шкіру більш сприйнятливою — маска працює глибше, результат за тоном і щільністю помітніший. Логіка проста: чим краще підготовлена шкіра, тим більша віддача від активного етапу.",
+     "Поєднання активніше, ніж кожна процедура окремо, тому й реакція шкіри буде сильнішою: червоність тримається довше, можливе злущування. Косметолог вирішує на огляді, чи витримає шкіра таке навантаження саме сьогодні."
+    ],
+    "cs": [
+     "Peeling před enzymatickou maskou odstraní mrtvé buňky a pleť je vnímavější — maska pracuje hlouběji a výsledek v tónu a hustotě je patrnější. Logika je jednoduchá: čím lépe je pleť připravená, tím větší je přínos aktivní fáze.",
+     "Kombinace je aktivnější než každé ošetření zvlášť, takže i reakce pleti bude silnější: zarudnutí drží déle a je možné olupování. Kosmetoložka při vyšetření rozhodne, zda pleť takovou zátěž dnes zvládne."
+    ],
+    "en": [
+     "A peel before the enzyme mask removes dead cells and makes the skin more receptive — the mask works deeper and the gain in tone and density is more visible. The logic is simple: the better the skin is prepared, the more the active stage gives back.",
+     "The combination is more active than either treatment alone, so the skin's reaction is stronger too: redness lasts longer and flaking is possible. The cosmetologist decides at the appointment whether your skin can take that load today."
+    ],
+    "es": [
+     "Un peeling antes de la mascarilla enzimática retira las células muertas y deja la piel más receptiva: la mascarilla actúa más profundo y la mejora de tono y densidad se nota más. La lógica es simple: cuanto mejor preparada esté la piel, más rinde la fase activa.",
+     "La combinación es más activa que cada tratamiento por separado, así que la reacción también es mayor: el enrojecimiento dura más y puede haber descamación. La cosmetóloga decide en la consulta si tu piel aguanta esa carga ese día."
+    ]
+   },
+   "who": {
+    "ru": [
+     "плотная кожа с неровным тоном",
+     "следы постакне",
+     "нужен более выраженный результат, чем от маски отдельно",
+     "вы уже проходили ферментотерапию и хорошо её перенесли"
+    ],
+    "uk": [
+     "щільна шкіра з нерівним тоном",
+     "сліди постакне",
+     "потрібен виразніший результат, ніж від маски окремо",
+     "ви вже проходили ферментотерапію і добре її перенесли"
+    ],
+    "cs": [
+     "silnější pleť s nerovným tónem",
+     "stopy po akné",
+     "potřebujete výraznější výsledek než ze samotné masky",
+     "enzymoterapii už jste měla a snesla ji dobře"
+    ],
+    "en": [
+     "thicker skin with uneven tone",
+     "post-acne marks",
+     "you want a stronger result than the mask alone gives",
+     "you have had enzyme therapy before and tolerated it well"
+    ],
+    "es": [
+     "piel gruesa con tono irregular",
+     "marcas de acné",
+     "buscas un resultado más marcado que con la mascarilla sola",
+     "ya te has hecho enzimoterapia y la toleraste bien"
+    ]
+   },
+   "how": {
+    "ru": [
+     "очищение и обезжиривание",
+     "пилинговый этап и нейтрализация",
+     "нанесение ферментной маски и выдержка",
+     "снятие маски, восстанавливающий уход",
+     "SPF и рекомендации на несколько дней"
+    ],
+    "uk": [
+     "очищення та обезжирення",
+     "пілінговий етап і нейтралізація",
+     "нанесення ферментної маски і витримка",
+     "зняття маски, відновлювальний догляд",
+     "SPF і рекомендації на кілька днів"
+    ],
+    "cs": [
+     "čištění a odmaštění",
+     "peelingová fáze a neutralizace",
+     "nanesení enzymatické masky a působení",
+     "sejmutí masky, regenerační péče",
+     "SPF a doporučení na několik dní"
+    ],
+    "en": [
+     "cleansing and degreasing",
+     "the peel stage and neutralising",
+     "applying the enzyme mask and letting it work",
+     "removing the mask, restorative care",
+     "SPF and guidance for the next few days"
+    ],
+    "es": [
+     "limpieza y desengrasado",
+     "fase de peeling y neutralización",
+     "aplicación de la mascarilla enzimática y tiempo de acción",
+     "retirada de la mascarilla y cuidado reparador",
+     "SPF y pautas para los días siguientes"
+    ]
+   },
+   "after": {
+    "ru": [
+     "краснота выраженная, до нескольких часов, иногда до следующего утра",
+     "шелушение возможно на 2–4-й день",
+     "2–3 дня без сауны, бассейна и спорта",
+     "SPF ежедневно, кислоты дома — через 5–7 дней",
+     "макияж лучше на следующий день"
+    ],
+    "uk": [
+     "червоність виражена, до кількох годин, іноді до наступного ранку",
+     "злущування можливе на 2–4-й день",
+     "2–3 дні без сауни, басейну і спорту",
+     "SPF щодня, кислоти вдома — через 5–7 днів",
+     "макіяж краще наступного дня"
+    ],
+    "cs": [
+     "zarudnutí je výrazné, několik hodin, někdy do druhého rána",
+     "olupování je možné 2.–4. den",
+     "2–3 dny bez sauny, bazénu a sportu",
+     "SPF každý den, kyseliny doma za 5–7 dní",
+     "make-up raději až druhý den"
+    ],
+    "en": [
+     "pronounced redness for several hours, sometimes until the next morning",
+     "flaking is possible on days 2–4",
+     "2–3 days without sauna, pool or sport",
+     "SPF daily, acids at home after 5–7 days",
+     "better to wait a day before make-up"
+    ],
+    "es": [
+     "enrojecimiento marcado durante varias horas, a veces hasta la mañana siguiente",
+     "puede haber descamación del día 2 al 4",
+     "2–3 días sin sauna, piscina ni deporte",
+     "SPF a diario; ácidos en casa a los 5–7 días",
+     "mejor esperar un día para el maquillaje"
+    ]
+   },
+   "freq": {
+    "ru": "Курсом 4–6 процедур с интервалом 2 недели. Чередуем с более спокойными процедурами, чтобы не перегружать кожу.",
+    "uk": "Курсом 4–6 процедур з інтервалом 2 тижні. Чергуємо зі спокійнішими процедурами, щоб не перевантажувати шкіру.",
+    "cs": "V kúře 4–6 ošetření v intervalu 2 týdny. Střídáme je s klidnějšími ošetřeními, abychom pleť nepřetížili.",
+    "en": "A course of 4–6 sessions two weeks apart, alternated with calmer treatments so the skin is not overloaded.",
+    "es": "Pauta de 4–6 sesiones cada dos semanas, alternadas con tratamientos más suaves para no sobrecargar la piel."
+   }
+  },
+  {
+   "slug": "dmk-mask",
+   "sub": "care",
+   "service": "cosmetology",
+   "group": "cosmetologyItems",
+   "rows": [
+    14
+   ],
+   "duration": 45,
+   "title": {
+    "ru": "Маска DMK",
+    "uk": "Маска DMK",
+    "cs": "Maska DMK",
+    "en": "DMK mask",
+    "es": "Mascarilla DMK"
+   },
+   "lead": {
+    "ru": "Короткий уход в системе DMK: поддерживающая процедура между основными протоколами.",
+    "uk": "Короткий догляд у системі DMK: підтримувальна процедура між основними протоколами.",
+    "cs": "Krátké ošetření v systému DMK: udržovací krok mezi hlavními protokoly.",
+    "en": "A short treatment within the DMK system: a maintenance step between the main protocols.",
+    "es": "Un tratamiento corto dentro del sistema DMK: un paso de mantenimiento entre los protocolos principales."
+   },
+   "body": {
+    "ru": [
+     "Маску подбирают под задачу дня: успокоить кожу, увлажнить, поддержать результат после чистки или активного протокола. Это не самостоятельное «лечение», а часть системы — поэтому её обычно делают в связке с другими процедурами DMK или между ними.",
+     "Процедура спокойная, без восстановления: кожа после неё выглядит ровнее и увлажнённее, без красноты и шелушения."
+    ],
+    "uk": [
+     "Маску підбирають під задачу дня: заспокоїти шкіру, зволожити, підтримати результат після чистки або активного протоколу. Це не самостійне «лікування», а частина системи — тому її зазвичай роблять у зв’язці з іншими процедурами DMK або між ними.",
+     "Процедура спокійна, без відновлення: шкіра після неї виглядає рівнішою та зволоженішою, без червоності й злущування."
+    ],
+    "cs": [
+     "Masku vybíráme podle cíle daného dne: zklidnit pleť, hydratovat, udržet výsledek po čištění nebo aktivním protokolu. Není to samostatná „léčba“, ale část systému — proto se obvykle dělá spolu s dalšími ošetřeními DMK nebo mezi nimi.",
+     "Ošetření je klidné, bez rekonvalescence: pleť po něm vypadá vyrovnaněji a hydratovaněji, bez zarudnutí a olupování."
+    ],
+    "en": [
+     "The mask is chosen for the day's goal: to calm the skin, hydrate it, or hold the result after a cleanse or an active protocol. It is not a standalone cure but part of a system — so it is usually done alongside other DMK treatments or between them.",
+     "The session is calm, with no downtime: afterwards the skin looks more even and better hydrated, with no redness or flaking."
+    ],
+    "es": [
+     "La mascarilla se elige según el objetivo del día: calmar la piel, hidratarla o mantener el resultado tras una limpieza o un protocolo activo. No es un «tratamiento» por sí sola, sino parte de un sistema: suele hacerse junto con otros tratamientos DMK o entre ellos.",
+     "La sesión es tranquila y sin recuperación: después la piel se ve más uniforme e hidratada, sin rojez ni descamación."
+    ]
+   },
+   "who": {
+    "ru": [
+     "поддержка между основными процедурами",
+     "кожа после чистки или активного протокола",
+     "обезвоженность и чувство стянутости",
+     "нужен спокойный уход без восстановления"
+    ],
+    "uk": [
+     "підтримка між основними процедурами",
+     "шкіра після чистки або активного протоколу",
+     "зневоднення і відчуття стягнутості",
+     "потрібен спокійний догляд без відновлення"
+    ],
+    "cs": [
+     "udržení mezi hlavními ošetřeními",
+     "pleť po čištění nebo aktivním protokolu",
+     "dehydratace a pocit napětí",
+     "potřebujete klidné ošetření bez rekonvalescence"
+    ],
+    "en": [
+     "maintenance between the main treatments",
+     "skin after a cleanse or an active protocol",
+     "dehydration and a feeling of tightness",
+     "you want a calm treatment with no downtime"
+    ],
+    "es": [
+     "mantenimiento entre los tratamientos principales",
+     "piel tras una limpieza o un protocolo activo",
+     "deshidratación y sensación de tirantez",
+     "quieres un tratamiento tranquilo y sin recuperación"
+    ]
+   },
+   "how": {
+    "ru": [
+     "очищение кожи",
+     "подбор маски под состояние кожи",
+     "нанесение и выдержка",
+     "финальный уход и SPF"
+    ],
+    "uk": [
+     "очищення шкіри",
+     "підбір маски під стан шкіри",
+     "нанесення і витримка",
+     "фінальний догляд і SPF"
+    ],
+    "cs": [
+     "čištění pleti",
+     "výběr masky podle stavu pleti",
+     "nanesení a působení",
+     "závěrečná péče a SPF"
+    ],
+    "en": [
+     "cleansing the skin",
+     "choosing the mask for the skin's condition",
+     "application and contact time",
+     "finishing care and SPF"
+    ],
+    "es": [
+     "limpieza de la piel",
+     "elección de la mascarilla según el estado de la piel",
+     "aplicación y tiempo de acción",
+     "cuidado final y SPF"
+    ]
+   },
+   "after": {
+    "ru": [
+     "ограничений практически нет",
+     "макияж возможен сразу",
+     "SPF — как обычно по сезону"
+    ],
+    "uk": [
+     "обмежень практично немає",
+     "макіяж можливий одразу",
+     "SPF — як завжди за сезоном"
+    ],
+    "cs": [
+     "omezení prakticky nejsou",
+     "make-up je možný hned",
+     "SPF jako obvykle podle sezóny"
+    ],
+    "en": [
+     "practically no restrictions",
+     "make-up is fine straight away",
+     "SPF as usual for the season"
+    ],
+    "es": [
+     "prácticamente sin restricciones",
+     "el maquillaje puede ser inmediato",
+     "SPF como siempre según la temporada"
+    ]
+   },
+   "freq": {
+    "ru": "По плану ухода: обычно между основными процедурами, раз в 1–2 недели.",
+    "uk": "За планом догляду: зазвичай між основними процедурами, раз на 1–2 тижні.",
+    "cs": "Podle plánu péče: obvykle mezi hlavními ošetřeními, jednou za 1–2 týdny.",
+    "en": "As your care plan dictates: usually between the main treatments, every 1–2 weeks.",
+    "es": "Según el plan de cuidado: normalmente entre tratamientos principales, cada 1–2 semanas."
+   }
+  },
+  {
+   "slug": "microcurrent",
+   "sub": "device",
+   "service": "cosmetology",
+   "group": "microcurrentSessions",
+   "rows": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "duration": 60,
+   "title": {
+    "ru": "Микротоки",
+    "uk": "Мікроструми",
+    "cs": "Mikroproudy",
+    "en": "Microcurrent",
+    "es": "Microcorrientes"
+   },
+   "lead": {
+    "ru": "Процедура со слабым током: работает с мышцами и лимфотоком, снимает отёчность и возвращает лицу тонус. Ощущается как легкое покалывание.",
+    "uk": "Процедура зі слабким струмом: працює з м’язами й лімфотоком, знімає набряклість і повертає обличчю тонус. Відчувається як легке поколювання.",
+    "cs": "Ošetření slabým proudem: pracuje s mimickými svaly a lymfou, zmírňuje otoky a vrací tváři tonus. Cítíte lehké brnění.",
+    "en": "A low-current treatment: it works on the muscles and lymph flow, reduces puffiness and brings tone back to the face. It feels like a light tingle.",
+    "es": "Un tratamiento de corriente baja: actúa sobre los músculos y el drenaje linfático, reduce la hinchazón y devuelve tono al rostro. Se siente como un hormigueo suave."
+   },
+   "body": {
+    "ru": [
+     "Электроды проводят по лицу слабым импульсным током, который кожа почти не ощущает. Ток воздействует на мимические мышцы и улучшает лимфодренаж: уходит отёчность, лицо выглядит собраннее, контур чётче. Процедура комфортная, после неё нет ни красноты, ни восстановления, поэтому её можно делать в любой день.",
+     "Главное про микротоки честно: эффект накопительный и требует курса. Одна процедура даёт заметный, но короткий результат — его хватает, например, перед съёмкой. Чтобы тонус держался, нужен курс и затем поддержка; мы не обещаем «подтяжку как после аппаратных методик с нагревом» — это другой механизм."
+    ],
+    "uk": [
+     "Електроди проводять по обличчю слабким імпульсним струмом, який шкіра майже не відчуває. Струм впливає на мімічні м’язи й покращує лімфодренаж: зникає набряклість, обличчя виглядає зібранішим, контур чіткішим. Процедура комфортна, після неї немає ні червоності, ні відновлення, тому її можна робити будь-якого дня.",
+     "Головне про мікроструми чесно: ефект накопичувальний і потребує курсу. Одна процедура дає помітний, але короткий результат — його вистачає, наприклад, перед зйомкою. Щоб тонус тримався, потрібен курс і потім підтримка; ми не обіцяємо «підтяжку як після апаратних методик із нагріванням» — це інший механізм."
+    ],
+    "cs": [
+     "Elektrody vedou po tváři slabý impulsní proud, který pleť téměř necítí. Proud působí na mimické svaly a zlepšuje lymfatickou drenáž: otoky odcházejí, tvář vypadá svěžeji a kontura je zřetelnější. Ošetření je příjemné, bez zarudnutí a bez rekonvalescence, takže se dá udělat kterýkoli den.",
+     "Co je u mikroproudů potřeba říct na rovinu: efekt je kumulativní a chce kúru. Jedno ošetření dá patrný, ale krátký výsledek — stačí třeba před fotografováním. Aby tonus držel, je potřeba kúra a pak udržovací režim; neslibujeme „lifting jako po přístrojích s ohřevem“ — to je jiný mechanismus."
+    ],
+    "en": [
+     "Electrodes pass a weak pulsed current over the face that the skin barely registers. The current works on the mimic muscles and improves lymphatic drainage: puffiness goes, the face looks more defined, the contour sharper. The session is comfortable, with no redness and no downtime, so it fits any day.",
+     "The honest part about microcurrent: the effect is cumulative and needs a course. A single session gives a visible but short-lived result — enough before a shoot, for instance. Holding the tone takes a course and then maintenance; we do not promise a lift comparable to heat-based devices, because the mechanism is different."
+    ],
+    "es": [
+     "Los electrodos recorren el rostro con una corriente pulsada débil que la piel apenas nota. La corriente actúa sobre los músculos de la mímica y mejora el drenaje linfático: baja la hinchazón, el rostro se ve más definido y el contorno más marcado. La sesión es cómoda, sin rojez ni recuperación, así que cabe cualquier día.",
+     "Lo honesto sobre las microcorrientes: el efecto es acumulativo y requiere pauta. Una sesión da un resultado visible pero corto, suficiente antes de una sesión de fotos. Para mantener el tono hacen falta una pauta y luego mantenimiento; no prometemos un lifting como el de los aparatos con calor, porque el mecanismo es distinto."
+    ]
+   },
+   "who": {
+    "ru": [
+     "отёчность, особенно по утрам",
+     "снижение тонуса, «уставшее» лицо",
+     "нужен быстрый результат перед событием",
+     "восстановление после долгого стресса или недосыпа",
+     "подготовка кожи к другим процедурам"
+    ],
+    "uk": [
+     "набряклість, особливо зранку",
+     "зниження тонусу, «втомлене» обличчя",
+     "потрібен швидкий результат перед подією",
+     "відновлення після тривалого стресу або недосипу",
+     "підготовка шкіри до інших процедур"
+    ],
+    "cs": [
+     "otoky, zejména po ránu",
+     "nižší tonus, „unavená“ tvář",
+     "potřebujete rychlý výsledek před akcí",
+     "zotavení po dlouhém stresu nebo nedostatku spánku",
+     "příprava pleti na další ošetření"
+    ],
+    "en": [
+     "puffiness, especially in the mornings",
+     "loss of tone, a tired-looking face",
+     "you need a fast result before an event",
+     "recovery after a long stretch of stress or poor sleep",
+     "preparing the skin for other treatments"
+    ],
+    "es": [
+     "hinchazón, sobre todo por la mañana",
+     "pérdida de tono, cara de cansancio",
+     "necesitas un resultado rápido antes de un evento",
+     "recuperación tras una temporada de estrés o mal dormir",
+     "preparar la piel para otros tratamientos"
+    ]
+   },
+   "how": {
+    "ru": [
+     "очищение кожи",
+     "нанесение проводящего геля",
+     "работа электродами по зонам лица и шеи",
+     "завершающий уход по типу кожи"
+    ],
+    "uk": [
+     "очищення шкіри",
+     "нанесення провідного гелю",
+     "робота електродами по зонах обличчя й шиї",
+     "завершальний догляд за типом шкіри"
+    ],
+    "cs": [
+     "čištění pleti",
+     "nanesení vodivého gelu",
+     "práce elektrodami po zónách tváře a šíje",
+     "závěrečná péče podle typu pleti"
+    ],
+    "en": [
+     "cleansing the skin",
+     "applying conductive gel",
+     "working with the electrodes across the face and neck",
+     "finishing care matched to your skin"
+    ],
+    "es": [
+     "limpieza de la piel",
+     "aplicación de gel conductor",
+     "trabajo con los electrodos por zonas del rostro y el cuello",
+     "cuidado final según tu tipo de piel"
+    ]
+   },
+   "after": {
+    "ru": [
+     "никаких следов: можно сразу краситься и идти по делам",
+     "ограничений по спорту, сауне и бассейну нет",
+     "эффект от одной процедуры держится несколько дней",
+     "процедура не проводится при кардиостимуляторе, эпилепсии, беременности и металлических имплантах в зоне работы — об этом спрашиваем до начала"
+    ],
+    "uk": [
+     "жодних слідів: можна одразу фарбуватися й іти по справах",
+     "обмежень щодо спорту, сауни й басейну немає",
+     "ефект від однієї процедури тримається кілька днів",
+     "процедура не проводиться за наявності кардіостимулятора, епілепсії, вагітності та металевих імплантів у зоні роботи — про це питаємо до початку"
+    ],
+    "cs": [
+     "žádné stopy: hned se můžete nalíčit a jít dál",
+     "sport, sauna ani bazén nejsou omezené",
+     "efekt jednoho ošetření drží několik dní",
+     "ošetření neděláme při kardiostimulátoru, epilepsii, těhotenství a kovových implantátech v místě práce — ptáme se na to předem"
+    ],
+    "en": [
+     "no traces: you can put make-up on and carry on with your day",
+     "no restrictions on sport, sauna or pool",
+     "the effect of a single session lasts a few days",
+     "not performed with a pacemaker, epilepsy, pregnancy or metal implants in the treated area — we ask about this beforehand"
+    ],
+    "es": [
+     "no deja marcas: puedes maquillarte y seguir con tu día",
+     "sin restricciones de deporte, sauna o piscina",
+     "el efecto de una sesión dura unos días",
+     "no se realiza con marcapasos, epilepsia, embarazo ni implantes metálicos en la zona tratada: lo preguntamos antes"
+    ]
+   },
+   "freq": {
+    "ru": "Курс 5–15 процедур, 2–3 раза в неделю, затем поддержка раз в 2–4 недели. Пакеты на 5, 10 и 15 сеансов дешевле разовых — цены в прайсе выше.",
+    "uk": "Курс 5–15 процедур, 2–3 рази на тиждень, далі підтримка раз на 2–4 тижні. Пакети на 5, 10 і 15 сеансів дешевші за разові — ціни в прайсі вище.",
+    "cs": "Kúra 5–15 ošetření, 2–3× týdně, pak udržovací jednou za 2–4 týdny. Balíčky na 5, 10 a 15 sezení jsou výhodnější než jednotlivá — ceny najdete v ceníku výše.",
+    "en": "A course of 5–15 sessions, 2–3 times a week, then maintenance every 2–4 weeks. Packages of 5, 10 and 15 work out cheaper than single sessions — see the price list above.",
+    "es": "Pauta de 5–15 sesiones, 2–3 veces por semana, y después mantenimiento cada 2–4 semanas. Los paquetes de 5, 10 y 15 salen más baratos que las sesiones sueltas: ver la tarifa arriba."
+   }
+  },
+  {
+   "slug": "face-massage",
+   "sub": "massage",
+   "service": "cosmetology",
+   "group": "faceMassageSessions",
+   "rows": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "duration": 90,
+   "title": {
+    "ru": "Массаж лица",
+    "uk": "Масаж обличчя",
+    "cs": "Masáž tváře",
+    "en": "Facial massage",
+    "es": "Masaje facial"
+   },
+   "lead": {
+    "ru": "Полтора часа работы руками: лицо, шея, зона декольте. Снимает зажимы, убирает отёчность и заметно меняет цвет лица.",
+    "uk": "Півтори години роботи руками: обличчя, шия, зона декольте. Знімає зажими, прибирає набряклість і помітно змінює колір обличчя.",
+    "cs": "Hodina a půl práce rukama: tvář, šíje, dekolt. Uvolní napětí, zmírní otoky a výrazně promění barvu pleti.",
+    "en": "An hour and a half of hands-on work: face, neck, décolleté. It releases tension, reduces puffiness and visibly changes the complexion.",
+    "es": "Hora y media de trabajo manual: rostro, cuello y escote. Libera tensión, reduce la hinchazón y cambia el tono de forma visible."
+   },
+   "body": {
+    "ru": [
+     "Массаж работает с тем, что редко попадает в поле зрения: напряжением мимических и жевательных мышц, застоем лимфы, зажимами в шее. После него обычно уходит утренняя отёчность, расслабляется лоб и область между бровями, лицо выглядит отдохнувшим.",
+     "Это процедура, которая хорошо работает курсом и в связке с другими: массаж усиливает результат уходовых процедур, потому что улучшает кровоснабжение кожи. Эффект заметный, но не бесконечный — мышцы возвращаются к привычному тонусу, поэтому имеет смысл поддерживающий режим, а не единичный сеанс."
+    ],
+    "uk": [
+     "Масаж працює з тим, що рідко потрапляє в поле зору: напруженням мімічних і жувальних м’язів, застоєм лімфи, зажимами в шиї. Після нього зазвичай зникає ранкова набряклість, розслабляється лоб і ділянка між бровами, обличчя виглядає відпочилим.",
+     "Це процедура, яка добре працює курсом і в зв’язці з іншими: масаж посилює результат доглядових процедур, бо покращує кровопостачання шкіри. Ефект помітний, але не безкінечний — м’язи повертаються до звичного тонусу, тому має сенс підтримувальний режим, а не одиничний сеанс."
+    ],
+    "cs": [
+     "Masáž pracuje s tím, co se obvykle přehlíží: s napětím mimických a žvýkacích svalů, se stázou lymfy a s blokádami v šíji. Po ní obvykle odejde ranní otok, uvolní se čelo a oblast mezi obočím a tvář vypadá odpočatě.",
+     "Je to ošetření, které funguje v kúře a v kombinaci s dalšími: masáž posiluje výsledek pečujících ošetření, protože zlepšuje zásobení pleti krví. Efekt je patrný, ale ne trvalý — svaly se vracejí ke svému tonusu, proto má smysl udržovací režim, ne jedno sezení."
+    ],
+    "en": [
+     "Massage works on what rarely gets attention: tension in the mimic and chewing muscles, stagnant lymph, tightness in the neck. Afterwards the morning puffiness usually goes, the forehead and the area between the brows relax, and the face looks rested.",
+     "It works best as a course and alongside other treatments: massage amplifies skincare results because it improves blood supply to the skin. The effect is clear but not permanent — muscles return to their habitual tone, so a maintenance rhythm makes more sense than a single session."
+    ],
+    "es": [
+     "El masaje trabaja lo que rara vez se mira: la tensión de los músculos de la mímica y la masticación, el estancamiento linfático, la rigidez del cuello. Después suele irse la hinchazón matutina, se relajan la frente y el entrecejo y el rostro se ve descansado.",
+     "Funciona mejor en pauta y combinado con otros tratamientos: el masaje potencia los resultados del cuidado facial porque mejora el aporte de sangre a la piel. El efecto es claro pero no permanente: los músculos vuelven a su tono habitual, así que tiene más sentido un ritmo de mantenimiento que una sesión aislada."
+    ]
+   },
+   "who": {
+    "ru": [
+     "отёчность и «тяжёлое» лицо по утрам",
+     "напряжение в шее, зажатая челюсть, привычка хмуриться",
+     "снижение тонуса кожи",
+     "хочется результата без аппаратов и инъекций",
+     "курсовой уход в связке с процедурами"
+    ],
+    "uk": [
+     "набряклість і «важке» обличчя зранку",
+     "напруження в шиї, стиснута щелепа, звичка хмуритися",
+     "зниження тонусу шкіри",
+     "хочеться результату без апаратів та інʼєкцій",
+     "курсовий догляд у зв’язці з процедурами"
+    ],
+    "cs": [
+     "otoky a „těžká“ tvář po ránu",
+     "napětí v šíji, stažená čelist, zvyk krčit čelo",
+     "nižší tonus pleti",
+     "chcete výsledek bez přístrojů a injekcí",
+     "kúrová péče v kombinaci s ošetřeními"
+    ],
+    "en": [
+     "puffiness and a heavy-looking face in the mornings",
+     "neck tension, a clenched jaw, a habit of frowning",
+     "loss of skin tone",
+     "you want results without devices or injections",
+     "course-based care alongside other treatments"
+    ],
+    "es": [
+     "hinchazón y cara «pesada» por la mañana",
+     "tensión en el cuello, mandíbula apretada, costumbre de fruncir el ceño",
+     "pérdida de tono de la piel",
+     "quieres resultados sin aparatos ni inyecciones",
+     "cuidado en pauta combinado con otros tratamientos"
+    ]
+   },
+   "how": {
+    "ru": [
+     "демакияж и очищение",
+     "массаж лица, шеи и зоны декольте — около 90 минут",
+     "работа с мышцами и лимфодренаж",
+     "завершающий уход по типу кожи"
+    ],
+    "uk": [
+     "демакіяж і очищення",
+     "масаж обличчя, шиї та зони декольте — близько 90 хвилин",
+     "робота з м’язами й лімфодренаж",
+     "завершальний догляд за типом шкіри"
+    ],
+    "cs": [
+     "odlíčení a čištění",
+     "masáž tváře, šíje a dekoltu — asi 90 minut",
+     "práce se svaly a lymfatická drenáž",
+     "závěrečná péče podle typu pleti"
+    ],
+    "en": [
+     "make-up removal and cleansing",
+     "massage of the face, neck and décolleté — about 90 minutes",
+     "muscle work and lymphatic drainage",
+     "finishing care matched to your skin"
+    ],
+    "es": [
+     "desmaquillado y limpieza",
+     "masaje de rostro, cuello y escote: unos 90 minutos",
+     "trabajo muscular y drenaje linfático",
+     "cuidado final según tu tipo de piel"
+    ]
+   },
+   "after": {
+    "ru": [
+     "лёгкое покраснение от разогрева проходит за полчаса",
+     "возможна небольшая сонливость — это нормально",
+     "макияж можно наносить в тот же день",
+     "ограничений по спорту и сауне нет",
+     "массаж не делаем при активных высыпаниях и воспалениях в зоне работы"
+    ],
+    "uk": [
+     "легке почервоніння від розігріву проходить за півгодини",
+     "можлива невелика сонливість — це нормально",
+     "макіяж можна наносити того ж дня",
+     "обмежень щодо спорту й сауни немає",
+     "масаж не робимо при активних висипаннях і запаленнях у зоні роботи"
+    ],
+    "cs": [
+     "lehké zarudnutí ze zahřátí odejde za půl hodiny",
+     "může se objevit mírná ospalost — to je normální",
+     "make-up lze nanést týž den",
+     "sport ani sauna nejsou omezené",
+     "masáž neděláme při aktivních vyrážkách a zánětech v místě práce"
+    ],
+    "en": [
+     "light redness from the warming fades within half an hour",
+     "a little sleepiness afterwards is normal",
+     "make-up is fine the same day",
+     "no sport or sauna restrictions",
+     "we do not massage over active breakouts or inflammation"
+    ],
+    "es": [
+     "el leve enrojecimiento por el calor baja en media hora",
+     "una ligera somnolencia después es normal",
+     "el maquillaje puede volver el mismo día",
+     "sin restricciones de deporte o sauna",
+     "no masajeamos sobre brotes activos ni inflamación"
+    ]
+   },
+   "freq": {
+    "ru": "Курс 6–15 сеансов, 1–2 раза в неделю, затем поддержка раз в 2–4 недели. Пакеты на 6, 8, 10 и 15 сеансов выгоднее разовых — цены в прайсе выше.",
+    "uk": "Курс 6–15 сеансів, 1–2 рази на тиждень, далі підтримка раз на 2–4 тижні. Пакети на 6, 8, 10 і 15 сеансів вигідніші за разові — ціни в прайсі вище.",
+    "cs": "Kúra 6–15 sezení, 1–2× týdně, pak udržovací jednou za 2–4 týdny. Balíčky na 6, 8, 10 a 15 sezení jsou výhodnější než jednotlivá — ceny v ceníku výše.",
+    "en": "A course of 6–15 sessions, once or twice a week, then maintenance every 2–4 weeks. Packages of 6, 8, 10 and 15 are better value than single sessions — see the price list above.",
+    "es": "Pauta de 6–15 sesiones, una o dos veces por semana, y después mantenimiento cada 2–4 semanas. Los paquetes de 6, 8, 10 y 15 salen mejor de precio que las sesiones sueltas: ver la tarifa arriba."
+   }
+  },
+  {
+   "slug": "mesotherapy",
+   "sub": "meso",
+   "service": "cosmetology",
+   "group": "cosmetologyItems",
+   "rows": [
+    15,
+    16,
+    17
+   ],
+   "title": {
+    "ru": "Мезотерапия лица и шеи",
+    "uk": "Мезотерапія обличчя та шиї"
+   },
+   "lead": {
+    "ru": "Микроинъекции коктейля с витаминами, аминокислотами и гиалуроновой кислотой. Работает с качеством кожи: увлажнённостью, тоном, плотностью.",
+    "uk": "Мікроінʼєкції коктейлю з вітамінами, амінокислотами та гіалуроновою кислотою. Працює з якістю шкіри: зволоженістю, тоном, щільністю."
+   },
+   "body": {
+    "ru": [
+     "Препарат вводят очень тонкой иглой на небольшую глубину по всей зоне: лицо, шея или лицо вместе с шеей. Коктейль подбирают под задачу — увлажнение, тусклый тон, снижение плотности, профилактика возрастных изменений. Ощущения терпимые, но это именно инъекции: будут точечные уколы, возможны небольшие папулы, которые расходятся в течение суток.",
+     "Мезотерапия работает курсом: обычно 4–6 процедур с интервалом 1–2 недели, затем поддержка. Одна процедура даёт эффект увлажнения, но накопительного результата по плотности и тону от неё ждать не стоит — об этом говорим до начала, а не после."
+    ],
+    "uk": [
+     "Препарат вводять дуже тонкою іглою на невелику глибину по всій зоні: обличчя, шия або обличчя разом із шиєю. Коктейль підбирають під задачу — зволоження, тьмяний тон, зниження щільності, профілактика вікових змін. Відчуття терпимі, але це саме інʼєкції: будуть точкові уколи, можливі невеликі папули, які розходяться протягом доби.",
+     "Мезотерапія працює курсом: зазвичай 4–6 процедур з інтервалом 1–2 тижні, далі підтримка. Одна процедура дає ефект зволоження, але накопичувального результату за щільністю й тоном від неї чекати не варто — про це говоримо до початку, а не після."
+    ]
+   },
+   "who": {
+    "ru": [
+     "обезвоженная кожа, чувство стянутости",
+     "тусклый тон, мелкие морщинки",
+     "снижение плотности кожи, первые возрастные изменения",
+     "подготовка кожи к событию за 2–3 недели",
+     "шея и зона под подбородком, где кожа тоньше"
+    ],
+    "uk": [
+     "зневоднена шкіра, відчуття стягнутості",
+     "тьмяний тон, дрібні зморшки",
+     "зниження щільності шкіри, перші вікові зміни",
+     "підготовка шкіри до події за 2–3 тижні",
+     "шия та зона під підборіддям, де шкіра тонша"
+    ]
+   },
+   "how": {
+    "ru": [
+     "осмотр, подбор коктейля и зоны",
+     "обработка кожи антисептиком, при необходимости — анестезирующий крем",
+     "микроинъекции по зоне",
+     "успокаивающий уход",
+     "рекомендации на 2–3 дня"
+    ],
+    "uk": [
+     "огляд, підбір коктейлю та зони",
+     "обробка шкіри антисептиком, за потреби — анестезуючий крем",
+     "мікроінʼєкції по зоні",
+     "заспокійливий догляд",
+     "рекомендації на 2–3 дні"
+    ]
+   },
+   "after": {
+    "ru": [
+     "точечные следы от инъекций и небольшие папулы расходятся за несколько часов — сутки",
+     "возможны небольшие синячки, особенно в зоне шеи",
+     "2–3 дня без сауны, бассейна, бани и активного спорта",
+     "в день процедуры не трогать кожу руками и не наносить макияж",
+     "SPF обязателен",
+     "процедура не проводится при беременности, кормлении, активных воспалениях и нарушениях свёртываемости крови"
+    ],
+    "uk": [
+     "точкові сліди від інʼєкцій і невеликі папули розходяться за кілька годин — добу",
+     "можливі невеликі синячки, особливо в зоні шиї",
+     "2–3 дні без сауни, басейну, лазні й активного спорту",
+     "у день процедури не торкатися шкіри руками й не наносити макіяж",
+     "SPF обов’язковий",
+     "процедура не проводиться при вагітності, годуванні, активних запаленнях і порушеннях згортання крові"
+    ]
+   },
+   "freq": {
+    "ru": "Курс 4–6 процедур с интервалом 1–2 недели, затем поддержка раз в 1–2 месяца. Зоны можно комбинировать: лицо, шея или лицо и шея вместе — цены в прайсе выше.",
+    "uk": "Курс 4–6 процедур з інтервалом 1–2 тижні, далі підтримка раз на 1–2 місяці. Зони можна комбінувати: обличчя, шия або обличчя й шия разом — ціни в прайсі вище."
+   }
+  },
+  {
+   "slug": "trichology-consultation",
+   "sub": "consult",
+   "service": "trichology",
+   "group": "trichologyItems",
+   "rows": [
+    0
+   ],
+   "duration": 60,
+   "title": {
+    "ru": "Консультация трихолога с трихоскопией и лечением",
+    "uk": "Консультація трихолога з трихоскопією та лікуванням",
+    "cs": "Konzultace trichologa s trichoskopií a ošetřením",
+    "en": "Trichologist consultation with trichoscopy and treatment",
+    "es": "Consulta de tricología con tricoscopia y tratamiento"
+   },
+   "lead": {
+    "ru": "Первый приём: смотрим кожу головы под увеличением, разбираем причины и сразу делаем первую процедуру.",
+    "uk": "Перший прийом: дивимося шкіру голови під збільшенням, розбираємо причини й одразу робимо першу процедуру.",
+    "cs": "První návštěva: pokožku hlavy si prohlédneme pod zvětšením, probereme příčiny a hned uděláme první ošetření.",
+    "en": "The first appointment: we look at the scalp under magnification, work through the causes and carry out the first treatment there and then.",
+    "es": "La primera visita: miramos el cuero cabelludo con aumento, repasamos las causas y hacemos ya el primer tratamiento."
+   },
+   "body": {
+    "ru": [
+     "Трихоскоп показывает то, что не видно глазом: состояние устьев волосяных фолликулов, плотность волос на участке, соотношение тонких и толстых волос, воспаление, шелушение, состояние кожи головы. На основе этой картины становится понятно, с чем мы имеем дело: временное выпадение после стресса или болезни, истончение волос, себорейные изменения или что-то, что требует врача.",
+     "Важно разделять: уход за кожей головы — это наша зона, а диагностика и лечение заболеваний — зона врача. Если мы видим признаки, которые требуют анализов или назначений, мы прямо об этом говорим и рекомендуем обследование. Делать процедуры «вслепую», когда причина может быть в гормонах, железе или щитовидной железе, бессмысленно: деньги уйдут, а выпадение продолжится."
+    ],
+    "uk": [
+     "Трихоскоп показує те, чого не видно оком: стан устів волосяних фолікулів, щільність волосся на ділянці, співвідношення тонких і товстих волосин, запалення, злущування, стан шкіри голови. На основі цієї картини стає зрозуміло, з чим ми маємо справу: тимчасове випадіння після стресу чи хвороби, стоншення волосся, себорейні зміни або щось, що вимагає лікаря.",
+     "Важливо розділяти: догляд за шкірою голови — це наша зона, а діагностика й лікування захворювань — зона лікаря. Якщо ми бачимо ознаки, які вимагають аналізів або призначень, ми прямо про це говоримо й рекомендуємо обстеження. Робити процедури «всліпу», коли причина може бути в гормонах, залізі чи щитоподібній залозі, безглуздо: гроші підуть, а випадіння продовжиться."
+    ],
+    "cs": [
+     "Trichoskop ukáže to, co oko nevidí: stav vyústění vlasových folikulů, hustotu vlasů na daném místě, poměr tenkých a silných vlasů, zánět, olupování a stav pokožky hlavy. Z tohoto obrazu je zřejmé, s čím máme co do činění: dočasné padání po stresu nebo nemoci, ztenčování vlasů, seboroické změny, nebo něco, co patří lékaři.",
+     "Je důležité to rozdělit: péče o pokožku hlavy je naše oblast, diagnostika a léčba onemocnění je oblast lékaře. Pokud vidíme příznaky, které vyžadují vyšetření nebo léky, řekneme to na rovinu a doporučíme vyšetření. Dělat ošetření „naslepo“, když příčina může být v hormonech, železe nebo štítné žláze, nemá smysl: peníze odejdou a padání bude pokračovat."
+    ],
+    "en": [
+     "A trichoscope shows what the eye cannot: the state of the follicular openings, hair density in a given area, the ratio of fine to thick hairs, inflammation, flaking and the condition of the scalp. That picture tells us what we are dealing with: temporary shedding after stress or illness, hair thinning, seborrhoeic changes, or something that belongs with a doctor.",
+     "The line matters: scalp care is our area, while diagnosing and treating disease is the doctor's. If we see signs that call for tests or prescriptions, we say so plainly and recommend a work-up. Running treatments blind, when the cause may sit in hormones, iron or the thyroid, is pointless: the money goes and the shedding continues."
+    ],
+    "es": [
+     "El tricoscopio muestra lo que el ojo no ve: el estado de los orificios foliculares, la densidad del pelo en una zona, la proporción de cabellos finos y gruesos, la inflamación, la descamación y el estado del cuero cabelludo. Esa imagen dice con qué estamos tratando: caída temporal tras un estrés o una enfermedad, afinamiento del cabello, cambios seborreicos o algo que corresponde al médico.",
+     "La línea importa: el cuidado del cuero cabelludo es nuestro terreno; diagnosticar y tratar enfermedades es el del médico. Si vemos signos que piden analíticas o medicación, lo decimos con claridad y recomendamos un estudio. Hacer tratamientos a ciegas, cuando la causa puede estar en las hormonas, el hierro o la tiroides, no sirve: el dinero se va y la caída sigue."
+    ]
+   },
+   "who": {
+    "ru": [
+     "волосы выпадают сильнее обычного дольше месяца",
+     "волосы стали тоньше, объём уменьшился",
+     "зуд, шелушение, перхоть, чувство стянутости кожи головы",
+     "жирность кожи головы, быстро загрязняющиеся корни",
+     "выпадение после родов, болезни, диеты или стресса"
+    ],
+    "uk": [
+     "волосся випадає сильніше за звичайне довше місяця",
+     "волосся стало тоншим, обʼєм зменшився",
+     "зуд, злущування, лупа, відчуття стягнутості шкіри голови",
+     "жирність шкіри голови, швидко забруднюються корені",
+     "випадіння після народження дитини, хвороби, дієти або стресу"
+    ],
+    "cs": [
+     "vlasy padají víc než obvykle déle než měsíc",
+     "vlasy jsou tenčí, objem se zmenšil",
+     "svědění, olupování, lupy, pocit napětí pokožky hlavy",
+     "mastná pokožka hlavy, rychle mastné kořínky",
+     "padání po porodu, nemoci, dietě nebo stresu"
+    ],
+    "en": [
+     "hair shedding more than usual for over a month",
+     "hair has become finer, volume has dropped",
+     "itching, flaking, dandruff, a tight-feeling scalp",
+     "an oily scalp, roots that get greasy fast",
+     "shedding after childbirth, illness, a diet or stress"
+    ],
+    "es": [
+     "caída mayor de lo normal durante más de un mes",
+     "el pelo se ha afinado, has perdido volumen",
+     "picor, descamación, caspa, sensación de tirantez",
+     "cuero cabelludo graso, raíces que se engrasan rápido",
+     "caída tras el parto, una enfermedad, una dieta o estrés"
+    ]
+   },
+   "how": {
+    "ru": [
+     "разговор: когда началось, что менялось в жизни и в здоровье, какие препараты принимаете",
+     "осмотр кожи головы и волос трихоскопом по зонам",
+     "разбор домашнего ухода: шампунь, частота мытья, укладки, окрашивания",
+     "первая процедура для кожи головы по результатам осмотра",
+     "план: уход, интервалы и, при необходимости, обследование у врача"
+    ],
+    "uk": [
+     "розмова: коли почалося, що змінювалося в житті та здоровʼї, які препарати приймаєте",
+     "огляд шкіри голови та волосся трихоскопом по зонах",
+     "розбір домашнього догляду: шампунь, частота миття, укладання, фарбування",
+     "перша процедура для шкіри голови за результатами огляду",
+     "план: догляд, інтервали і, за потреби, обстеження в лікаря"
+    ],
+    "cs": [
+     "rozhovor: kdy to začalo, co se změnilo v životě a ve zdraví, jaké léky berete",
+     "prohlídka pokožky hlavy a vlasů trichoskopem po zónách",
+     "rozbor domácí péče: šampon, frekvence mytí, úpravy, barvení",
+     "první ošetření pokožky hlavy podle nálezu",
+     "plán: péče, intervaly a podle potřeby vyšetření u lékaře"
+    ],
+    "en": [
+     "a conversation: when it started, what changed in your life and health, what medication you take",
+     "examining the scalp and hair with a trichoscope, area by area",
+     "going through home care: shampoo, washing frequency, styling, colouring",
+     "a first scalp treatment based on what we find",
+     "a plan: care, intervals and, if needed, a medical work-up"
+    ],
+    "es": [
+     "una conversación: cuándo empezó, qué cambió en tu vida y tu salud, qué medicación tomas",
+     "examen del cuero cabelludo y el pelo con tricoscopio, por zonas",
+     "revisión del cuidado en casa: champú, frecuencia de lavado, peinados, tintes",
+     "un primer tratamiento del cuero cabelludo según el hallazgo",
+     "un plan: cuidado, intervalos y, si hace falta, estudio médico"
+    ]
+   },
+   "after": {
+    "ru": [
+     "после процедуры голову обычно не мыть сутки",
+     "выпадение не прекращается сразу: первые изменения видны через 2–3 месяца",
+     "не ждите роста новых волос раньше, чем через 3–4 месяца — таков цикл волоса",
+     "если назначено обследование, повторный приём имеет смысл с результатами на руках"
+    ],
+    "uk": [
+     "після процедури голову зазвичай не мити добу",
+     "випадіння не припиняється одразу: перші зміни видно через 2–3 місяці",
+     "не чекайте росту нового волосся раніше, ніж через 3–4 місяці — такий цикл волосини",
+     "якщо призначено обстеження, повторний прийом має сенс із результатами на руках"
+    ],
+    "cs": [
+     "po ošetření hlavu obvykle jeden den nemyjte",
+     "padání nepřestane hned: první změny jsou vidět za 2–3 měsíce",
+     "nový růst nečekejte dřív než za 3–4 měsíce — takový je cyklus vlasu",
+     "pokud je doporučeno vyšetření, kontrola má smysl až s výsledky"
+    ],
+    "en": [
+     "usually do not wash your hair for a day after the treatment",
+     "shedding does not stop immediately: the first changes show after 2–3 months",
+     "do not expect new growth sooner than 3–4 months — that is the hair cycle",
+     "if tests were recommended, the follow-up makes sense once you have the results"
+    ],
+    "es": [
+     "después del tratamiento, normalmente no laves la cabeza durante un día",
+     "la caída no se detiene de inmediato: los primeros cambios se ven a los 2–3 meses",
+     "no esperes pelo nuevo antes de 3–4 meses: es el ciclo del cabello",
+     "si se recomendó analítica, la revisión tiene sentido con los resultados en mano"
+    ]
+   },
+   "freq": {
+    "ru": "Первый приём — один раз, далее контроль через 2–3 месяца. Процедуры для кожи головы обычно идут курсом, интервал зависит от состояния.",
+    "uk": "Перший прийом — один раз, далі контроль через 2–3 місяці. Процедури для шкіри голови зазвичай ідуть курсом, інтервал залежить від стану.",
+    "cs": "První návštěva jednou, pak kontrola za 2–3 měsíce. Ošetření pokožky hlavy obvykle běží v kúře, interval závisí na stavu.",
+    "en": "The first appointment once, then a review after 2–3 months. Scalp treatments usually run as a course, with the interval set by the condition.",
+    "es": "La primera visita una vez y después revisión a los 2–3 meses. Los tratamientos del cuero cabelludo suelen ir en pauta, con intervalos según el estado."
+   }
+  },
+  {
+   "slug": "trichology-follow-up",
+   "sub": "consult",
+   "service": "trichology",
+   "group": "trichologyItems",
+   "rows": [
+    2
+   ],
+   "duration": 30,
+   "title": {
+    "ru": "Повторная консультация трихолога",
+    "uk": "Повторна консультація трихолога",
+    "cs": "Kontrolní konzultace trichologa",
+    "en": "Follow-up trichologist consultation",
+    "es": "Consulta de seguimiento de tricología"
+   },
+   "lead": {
+    "ru": "Контроль: сравниваем картину с первым приёмом и корректируем план. Без повторного осмотра непонятно, работает ли то, что мы делаем.",
+    "uk": "Контроль: порівнюємо картину з першим прийомом і коригуємо план. Без повторного огляду незрозуміло, чи працює те, що ми робимо.",
+    "cs": "Kontrola: porovnáme nález s první návštěvou a upravíme plán. Bez kontroly nelze poznat, zda to, co děláme, funguje.",
+    "en": "A review: we compare the picture with the first visit and adjust the plan. Without a second look there is no way to tell whether what we are doing works.",
+    "es": "Una revisión: comparamos la imagen con la primera visita y ajustamos el plan. Sin un segundo examen no se sabe si lo que hacemos funciona."
+   },
+   "body": {
+    "ru": [
+     "Трихолог снова смотрит те же зоны трихоскопом и сравнивает: изменилась ли плотность, стало ли меньше тонких волос, ушло ли воспаление и шелушение. Если есть результаты анализов, разбираем и их.",
+     "По итогам либо продолжаем курс, либо меняем схему: иногда достаточно поправить домашний уход, иногда нужно подождать, а иногда — вернуться к врачу. Если изменений нет совсем, мы скажем это прямо и не будем продлевать курс ради курса."
+    ],
+    "uk": [
+     "Трихолог знову дивиться ті самі зони трихоскопом і порівнює: чи змінилася щільність, чи стало менше тонкого волосся, чи зникло запалення і злущування. Якщо є результати аналізів, розбираємо і їх.",
+     "За підсумками або продовжуємо курс, або змінюємо схему: іноді достатньо поправити домашній догляд, іноді потрібно почекати, а іноді — повернутися до лікаря. Якщо змін немає зовсім, ми скажемо це прямо й не будемо продовжувати курс заради курсу."
+    ],
+    "cs": [
+     "Tricholog si znovu prohlédne stejná místa trichoskopem a porovná: změnila se hustota, je méně tenkých vlasů, odešel zánět a olupování. Pokud máte výsledky vyšetření, probereme i je.",
+     "Podle toho buď kúru pokračujeme, nebo schéma změníme: někdy stačí upravit domácí péči, jindy je potřeba počkat a jindy vrátit se k lékaři. Pokud změny nejsou vůbec, řekneme to na rovinu a nebudeme kúru prodlužovat kvůli kúře."
+    ],
+    "en": [
+     "The trichologist examines the same areas with the trichoscope again and compares: has density changed, are there fewer fine hairs, has the inflammation and flaking settled. If you have test results, we go through those too.",
+     "Then we either continue the course or change the approach: sometimes adjusting home care is enough, sometimes it is a matter of waiting, and sometimes it means going back to the doctor. If nothing has changed at all, we will say so plainly rather than extend a course for its own sake."
+    ],
+    "es": [
+     "El tricólogo vuelve a examinar las mismas zonas con el tricoscopio y compara: si ha cambiado la densidad, si hay menos cabellos finos, si se ha calmado la inflamación y la descamación. Si tienes analíticas, también las repasamos.",
+     "Según eso, seguimos con la pauta o cambiamos el enfoque: a veces basta ajustar el cuidado en casa, a veces hay que esperar y a veces volver al médico. Si no ha cambiado nada, lo diremos con franqueza en lugar de alargar la pauta por alargarla."
+    ]
+   },
+   "who": {
+    "ru": [
+     "вы прошли часть курса и нужен контроль",
+     "получили результаты анализов",
+     "состояние изменилось: стало лучше или хуже",
+     "нужно скорректировать домашний уход"
+    ],
+    "uk": [
+     "ви пройшли частину курсу і потрібен контроль",
+     "отримали результати аналізів",
+     "стан змінився: стало краще або гірше",
+     "потрібно скоригувати домашній догляд"
+    ],
+    "cs": [
+     "prošla jste částí kúry a potřebujete kontrolu",
+     "máte výsledky vyšetření",
+     "stav se změnil: lépe, nebo hůř",
+     "je potřeba upravit domácí péči"
+    ],
+    "en": [
+     "you have done part of the course and need a check",
+     "your test results have come back",
+     "the situation has changed, for better or worse",
+     "your home care needs adjusting"
+    ],
+    "es": [
+     "has hecho parte de la pauta y necesitas control",
+     "ya tienes los resultados de las analíticas",
+     "la situación ha cambiado, a mejor o a peor",
+     "hay que ajustar el cuidado en casa"
+    ]
+   },
+   "how": {
+    "ru": [
+     "сравнение трихоскопии с первым приёмом",
+     "разбор результатов анализов, если они есть",
+     "корректировка домашнего ухода",
+     "решение: продолжать курс, менять схему или ждать"
+    ],
+    "uk": [
+     "порівняння трихоскопії з першим прийомом",
+     "розбір результатів аналізів, якщо вони є",
+     "коригування домашнього догляду",
+     "рішення: продовжувати курс, змінювати схему або чекати"
+    ],
+    "cs": [
+     "porovnání trichoskopie s první návštěvou",
+     "rozbor výsledků vyšetření, pokud jsou",
+     "úprava domácí péče",
+     "rozhodnutí: pokračovat v kúře, změnit schéma, nebo počkat"
+    ],
+    "en": [
+     "comparing trichoscopy with the first visit",
+     "going through test results, if you have them",
+     "adjusting home care",
+     "a decision: continue the course, change the approach, or wait"
+    ],
+    "es": [
+     "comparación de la tricoscopia con la primera visita",
+     "revisión de las analíticas, si las hay",
+     "ajuste del cuidado en casa",
+     "decisión: seguir la pauta, cambiar el enfoque o esperar"
+    ]
+   },
+   "after": {
+    "ru": [
+     "это приём, а не процедура: ограничений нет",
+     "если в этот день делаем процедуру, голову не мыть сутки"
+    ],
+    "uk": [
+     "це прийом, а не процедура: обмежень немає",
+     "якщо того дня робимо процедуру, голову не мити добу"
+    ],
+    "cs": [
+     "jde o konzultaci, ne o ošetření: žádná omezení",
+     "pokud v ten den uděláme ošetření, hlavu jeden den nemyjte"
+    ],
+    "en": [
+     "this is an appointment, not a treatment: no restrictions",
+     "if we do a treatment the same day, do not wash your hair for a day"
+    ],
+    "es": [
+     "es una consulta, no un tratamiento: sin restricciones",
+     "si ese día hacemos tratamiento, no laves la cabeza en 24 horas"
+    ]
+   },
+   "freq": {
+    "ru": "Раз в 2–3 месяца во время курса; затем по необходимости.",
+    "uk": "Раз на 2–3 місяці під час курсу; далі за потреби.",
+    "cs": "Jednou za 2–3 měsíce během kúry, pak podle potřeby.",
+    "en": "Every 2–3 months during a course, then as needed.",
+    "es": "Cada 2–3 meses durante la pauta y después según necesidad."
+   }
+  },
+  {
+   "slug": "scalp-mesotherapy",
+   "sub": "meso",
+   "service": "trichology",
+   "group": "trichologyItems",
+   "rows": [
+    1
+   ],
+   "duration": 45,
+   "title": {
+    "ru": "Мезотерапия кожи головы",
+    "uk": "Мезотерапія шкіри голови"
+   },
+   "lead": {
+    "ru": "Микроинъекции в кожу головы: работают с питанием волосяных фолликулов и состоянием кожи. Делаем только после осмотра трихоскопом.",
+    "uk": "Мікроінʼєкції у шкіру голови: працюють із живленням волосяних фолікулів і станом шкіри. Робимо лише після огляду трихоскопом."
+   },
+   "body": {
+    "ru": [
+     "Препарат вводят тонкой иглой по проборам в зоне, где есть истончение или выпадение. Коктейль подбирают по картине трихоскопии: одни составы работают с кровоснабжением и питанием фолликулов, другие — с жирностью и воспалением кожи головы.",
+     "Что важно понимать: мезотерапия не отменяет причину выпадения. Если дело в дефиците железа, гормонах или заболевании, процедуры дадут временный эффект, а выпадение вернётся. Поэтому мы сначала смотрим трихоскопом и при необходимости отправляем на анализы, а курс начинаем, когда понятно, с чем работаем. Результат оценивают не раньше, чем через 3 месяца: таков цикл роста волоса."
+    ],
+    "uk": [
+     "Препарат вводять тонкою іглою по проборах у зоні, де є стоншення або випадіння. Коктейль підбирають за картиною трихоскопії: одні склади працюють із кровопостачанням і живленням фолікулів, інші — із жирністю та запаленням шкіри голови.",
+     "Що важливо розуміти: мезотерапія не скасовує причину випадіння. Якщо справа в дефіциті заліза, гормонах або захворюванні, процедури дадуть тимчасовий ефект, а випадіння повернеться. Тому ми спершу дивимося трихоскопом і за потреби відправляємо на аналізи, а курс починаємо, коли зрозуміло, з чим працюємо. Результат оцінюють не раніше, ніж через 3 місяці: такий цикл росту волосини."
+    ]
+   },
+   "who": {
+    "ru": [
+     "истончение волос и снижение плотности",
+     "выпадение, подтверждённое осмотром",
+     "жирность и воспаление кожи головы",
+     "поддержка после перенесённого выпадения"
+    ],
+    "uk": [
+     "стоншення волосся і зниження щільності",
+     "випадіння, підтверджене оглядом",
+     "жирність і запалення шкіри голови",
+     "підтримка після перенесеного випадіння"
+    ]
+   },
+   "how": {
+    "ru": [
+     "осмотр трихоскопом и подбор коктейля",
+     "обработка кожи головы антисептиком",
+     "микроинъекции по проборам в нужной зоне",
+     "рекомендации по уходу на 1–2 дня"
+    ],
+    "uk": [
+     "огляд трихоскопом і підбір коктейлю",
+     "обробка шкіри голови антисептиком",
+     "мікроінʼєкції по проборах у потрібній зоні",
+     "рекомендації щодо догляду на 1–2 дні"
+    ]
+   },
+   "after": {
+    "ru": [
+     "во время процедуры ощущаются уколы, иногда жжение — это терпимо, но безболезненно не бывает",
+     "кожа головы может быть чувствительной до вечера",
+     "голову не мыть сутки",
+     "2 дня без сауны, бассейна и активного спорта",
+     "процедура не проводится при беременности, кормлении, воспалениях на коже головы и нарушениях свёртываемости крови"
+    ],
+    "uk": [
+     "під час процедури відчуваються уколи, іноді пекіння — це терпимо, але безболісно не буває",
+     "шкіра голови може бути чутливою до вечора",
+     "голову не мити добу",
+     "2 дні без сауни, басейну й активного спорту",
+     "процедура не проводиться при вагітності, годуванні, запаленнях на шкірі голови й порушеннях згортання крові"
+    ]
+   },
+   "freq": {
+    "ru": "Курс обычно 6–10 процедур с интервалом 1–2 недели, затем поддержка. Точный курс трихолог назначает после осмотра.",
+    "uk": "Курс зазвичай 6–10 процедур з інтервалом 1–2 тижні, далі підтримка. Точний курс трихолог призначає після огляду."
+   }
+  }
+ ]
+}

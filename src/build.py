@@ -87,6 +87,13 @@ shop_items = [dict(it, top=_is_top(it)) if _is_top(it) else it for it in shop_it
 zones = L('zones.json')
 bf = L('blackfriday.json')
 svc_reviews = L('service-reviews.json')
+procs = L('procedures.json')
+PROC_UI, PROC_SUBS, PROC_ITEMS = procs['ui'], procs['subs'], procs['items']
+# строка прайса → процедура, чтобы название в прайсе стало ссылкой
+PROC_BY_ROW = {}
+for _it in PROC_ITEMS:
+    for _r in _it['rows']:
+        PROC_BY_ROW[(_it['group'], _r)] = _it
 
 LANGS = ['ru', 'uk', 'cs', 'en', 'es']
 CITIES = ['prague', 'valencia']
@@ -532,21 +539,175 @@ def hero_price(city, lang):
     return '%s %d %s %s' % (PRICE_FROM[lang], min(vals), studios[city]['currency'], PRICE_UNIT[lang])
 
 
-def price_rows(group, city, lang, limit=None, order=True):
-    """Готовые строки прайса <div class="prow">."""
+def row_val(r, city):
+    v = r.get('now') or r.get('price')
+    return v if isinstance(v, str) else '%s %s' % (v, studios[city]['currency'])
+
+
+def price_rows(group, city, lang, limit=None, order=True, link=None):
+    """Готовые строки прайса <div class="prow">.
+
+    link='anchor' — название ведёт к описанию на этой же странице,
+    link='page'   — на отдельную страницу процедуры."""
     g = prices['groups'].get(group) or {}
-    rr = [r for r in (g.get(lang) or g.get('ru') or []) if _num(r) is not None]
+    rr = [(i, r) for i, r in enumerate(g.get(lang) or g.get('ru') or []) if _num(r) is not None]
     if order:
-        rr = sorted(rr, key=lambda r: _num(r) or 0)
+        rr = sorted(rr, key=lambda ir: _num(ir[1]) or 0)
     if limit:
         rr = rr[:limit]
-    cur = studios[city]['currency']
+    return ''.join('<div class="prow"><span>%s</span><span>%s</span></div>'
+                   % (row_label(group, i, r, city, lang, link), e(row_val(r, city)))
+                   for i, r in rr)
 
-    def val(r):
-        v = r.get('now') or r.get('price')
-        return v if isinstance(v, str) else '%s %s' % (v, cur)
-    return ''.join('<div class="prow"><span>%s</span><span>%s</span></div>' % (e(r['label']), e(val(r)))
-                   for r in rr)
+
+def row_label(group, i, r, city, lang, link=None):
+    """Название строки прайса: ссылкой, если у процедуры есть описание."""
+    t = e(r['label'])
+    it = PROC_BY_ROW.get((group, i))
+    if not link or not it or not (it.get('title') or {}).get(lang):
+        return t
+    href = ('#p-' + it['slug']) if link == 'anchor' else '/%s/%s/%s' % (lang, city, proc_rel(it))
+    return '<a class="prow-a" href="%s">%s</a>' % (href, t)
+
+
+def proc_rel(it):
+    return '%s/%s/' % (it['service'], it['slug'])
+
+
+def proc_price(it, city, lang):
+    """Цена процедуры: точная для одной строки, «от» — если строк несколько."""
+    g = prices['groups'].get(it['group']) or {}
+    rr = g.get(lang) or g.get('ru') or []
+    vals = [_num(rr[i]) for i in it['rows'] if i < len(rr) and _num(rr[i]) is not None]
+    if not vals:
+        return None
+    cur = studios[city]['currency']
+    return ('%d %s' % (vals[0], cur) if len(vals) == 1
+            else '%s %d %s' % (PRICE_FROM[lang], min(vals), cur))
+
+
+def proc_list(service, city, lang):
+    """Процедуры раздела, у которых есть описание на этом языке и цена в городе."""
+    out = []
+    for it in PROC_ITEMS:
+        if it.get('service') != service or not (it.get('title') or {}).get(lang):
+            continue
+        if it['group'] in LANG_SKIP.get(lang, set()):
+            continue
+        g = prices['groups'].get(it['group']) or {}
+        if not (g.get(lang) or g.get('ru')):
+            continue
+        if proc_price(it, city, lang) is None:
+            continue
+        out.append(it)
+    order = {s['key']: n for n, s in enumerate(PROC_SUBS)}
+    return sorted(out, key=lambda it: (order.get(it['sub'], 99), it['rows'][0]))
+
+
+def service_groups(key, city, lang):
+    """Все группы прайса, которые показываем на странице услуги."""
+    gg = [SERVICE_GROUP.get(city, {}).get(key, '')] + list(SERVICE_EXTRA.get(key) or [])
+    skip = LANG_SKIP.get(lang, set())
+    return [g for g in gg if g and g not in skip and prices['groups'].get(g)]
+
+
+def proc_price_tables(key, city, lang):
+    """Прайс раздела по подразделам ТЗ; строки без описания остаются в своей группе."""
+    groups = service_groups(key, city, lang)
+    mine = {g: [(i, r) for i, r in enumerate(prices['groups'][g].get(lang)
+                                             or prices['groups'][g].get('ru') or [])
+                if _num(r) is not None] for g in groups}
+    used = set()
+    out = ''
+    for sub in PROC_SUBS:
+        title = (sub.get('title') or {}).get(lang)
+        if not title:
+            continue
+        body = ''
+        for it in proc_list(key, city, lang):
+            if it['sub'] != sub['key'] or it['group'] not in mine:
+                continue
+            rows = [(i, r) for i, r in mine[it['group']] if i in it['rows']]
+            if not rows:
+                continue
+            multi = len(rows) > 1
+            # если название процедуры совпадает с названием подраздела, не дублируем
+            if multi and it['title'][lang].strip().lower() != title.strip().lower():
+                body += ('<div class="prow prow-h"><span><a class="prow-a" href="#p-%s">%s</a></span>'
+                         '<span></span></div>'
+                         % (it['slug'], e(it['title'][lang])))
+            for i, r in rows:
+                used.add((it['group'], i))
+                lab = e(r['label']) if multi else row_label(it['group'], i, r, city, lang, 'anchor')
+                body += ('<div class="prow"><span>%s</span><span>%s</span></div>'
+                         % (lab, e(row_val(r, city))))
+        if body:
+            out += '<h3 class="ptab-h">%s</h3><div class="ptable">%s</div>' % (e(title), body)
+    # остальное — как было, под названием своей группы
+    for g in groups:
+        rest = [(i, r) for i, r in mine[g] if (g, i) not in used]
+        if not rest:
+            continue
+        body = ''.join('<div class="prow"><span>%s</span><span>%s</span></div>'
+                       % (row_label(g, i, r, city, lang, 'anchor'), e(row_val(r, city)))
+                       for i, r in rest)
+        out += ('<h3 class="ptab-h">%s</h3><div class="ptable">%s</div>'
+                % (e((PGROUP_TITLE.get(g) or {}).get(lang, g)), body))
+    return out
+
+
+def proc_body(it, lang, h='h4'):
+    """Текст процедуры: абзацы, кому подходит, как проходит, после, как часто."""
+    u = PROC_UI[lang]
+    out = ''.join('<p>%s</p>' % e(x) for x in (it.get('body') or {}).get(lang, []))
+    for fld, tag in (('who', 'ul'), ('how', 'ol'), ('after', 'ul')):
+        xs = (it.get(fld) or {}).get(lang) or []
+        if xs:
+            out += ('<%s>%s</%s><%s>%s</%s>'
+                    % (h, e(u[fld]), h, tag,
+                       ''.join('<li>%s</li>' % e(x) for x in xs), tag))
+    fr = (it.get('freq') or {}).get(lang)
+    if fr:
+        out += '<p class="note"><b>%s.</b> %s</p>' % (e(u['freq']), e(fr))
+    return out
+
+
+def proc_meta(it, city, lang):
+    u = PROC_UI[lang]
+    bits = []
+    if it.get('duration'):
+        bits.append('%d %s' % (it['duration'], u['min']))
+    pr = proc_price(it, city, lang)
+    if pr:
+        bits.append(pr)
+    return ' · '.join(bits)
+
+
+def proc_blocks(key, city, lang):
+    """Описания процедур раздела — с собственными ссылками на каждую."""
+    u = PROC_UI[lang]
+    items = proc_list(key, city, lang)
+    if not items:
+        return ''
+    out = ''
+    for sub in PROC_SUBS:
+        part = [it for it in items if it['sub'] == sub['key']]
+        title = (sub.get('title') or {}).get(lang)
+        if not part or not title:
+            continue
+        out += '<h3 class="proc-sub">%s</h3>' % e(title)
+        for it in part:
+            out += ('<div class="proc" id="p-%s"><h2>%s</h2>'
+                    '<p class="proc-meta">%s</p><p class="lead">%s</p>%s'
+                    '<div class="more-list"><a href="%s" data-book>%s</a>'
+                    '<a href="/%s/%s/%s">%s</a></div></div>'
+                    % (it['slug'], e(it['title'][lang]), e(proc_meta(it, city, lang)),
+                       e((it.get('lead') or {}).get(lang, '')), proc_body(it, lang),
+                       book_href(lang, city), e(HERO[lang]['cta']),
+                       lang, city, proc_rel(it), e(u['own'])))
+    return ('<section class="alt"><div class="wrap arts">'
+            '<div class="sec-head"><h2>%s</h2></div>%s</div></section>'
+            % (e(u['descTitle']), out))
 
 
 def css():
@@ -1252,6 +1413,19 @@ section{padding:50px 0}
 .alt .note{background:var(--cream)}
 
 /* текстовые страницы */
+.prow-a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--line-gold)}
+.prow-a:hover{color:var(--accent);border-color:var(--accent)}
+.prow-h{background:var(--cream);font-weight:600}
+.prow-h span:first-child{font-size:16px}
+.proc-sub{font-family:'Cormorant Garamond',serif;font-size:26px;font-weight:600;
+  margin:38px 0 14px;color:var(--accent)}
+.proc-sub:first-child{margin-top:0}
+.proc{padding:22px 0 8px;border-top:1px solid var(--line);scroll-margin-top:24px}
+.proc h2{font-size:24px;margin:0 0 6px}
+.proc h4{font-family:'Cormorant Garamond',serif;font-size:19px;font-weight:600;margin:20px 0 8px}
+.proc-meta{font-size:14.5px;color:var(--gold-dark);letter-spacing:.04em;margin:0 0 12px}
+.proc ul,.proc ol{margin:0 0 6px;padding-left:20px}
+.proc li{margin-bottom:6px;font-size:15.5px;line-height:1.6}
 .arts{max-width:760px}
 .art{margin-bottom:30px}
 .art h2{font-size:clamp(24px,4vw,32px);margin-bottom:12px}
@@ -3096,15 +3270,20 @@ def build_service(lang, city, key):
     faq_block = ('<section class="lilac"><div class="wrap"><div class="sec-head"><h2>%s</h2></div>'
                  '<div class="faq">%s</div></div></section>' % (e(pg.get('faqTitle', '')), faqs)) if faqs else ''
 
-    ptab = price_rows(SERVICE_GROUP.get(city, {}).get(key, ''), city, lang, order=False)
-    extra = ''
-    for xg in (SERVICE_EXTRA.get(key) or []):
-        if xg in LANG_SKIP.get(lang, set()):
-            continue
-        xr = price_rows(xg, city, lang, order=False)
-        if xr:
-            extra += ('<h3 class="ptab-h">%s</h3><div class="ptable">%s</div>'
-                      % (e((PGROUP_TITLE.get(xg) or {}).get(lang, xg)), xr))
+    ptab, extra = '', ''
+    if proc_list(key, city, lang):
+        # раздел с описанными процедурами: прайс разложен по подразделам,
+        # названия ведут к описанию ниже на странице
+        extra = proc_price_tables(key, city, lang)
+    else:
+        ptab = price_rows(SERVICE_GROUP.get(city, {}).get(key, ''), city, lang, order=False)
+        for xg in (SERVICE_EXTRA.get(key) or []):
+            if xg in LANG_SKIP.get(lang, set()):
+                continue
+            xr = price_rows(xg, city, lang, order=False)
+            if xr:
+                extra += ('<h3 class="ptab-h">%s</h3><div class="ptable">%s</div>'
+                          % (e((PGROUP_TITLE.get(xg) or {}).get(lang, xg)), xr))
     # у страницы может не быть своей группы цен — тогда показываем только дополнительные
     price_block = ('<section class="tint"><div class="wrap"><div class="sec-head"><h2>%s</h2></div>'
                    '%s%s'
@@ -3151,6 +3330,7 @@ def build_service(lang, city, key):
 {svc_split}
 {methods_block}
 {price_block}
+{proc_blocks(key, city, lang)}
 {faq_block}
 
 {service_reviews(key, city, lang)}
@@ -3169,6 +3349,69 @@ def build_service(lang, city, key):
                other_rel=other_rel, schema=sch,
                langs=[l for l in LANGS if svc['page'].get(l)])
 
+
+
+# ───────── отдельная страница процедуры: /<язык>/<город>/<услуга>/<процедура>/ ─────────
+def build_proc(lang, city, it):
+    """Своя страница процедуры — такую ссылку можно отправить клиенту."""
+    st = studios[city]; h = HERO[lang]; sec = SECTIONS[lang]; u = PROC_UI[lang]
+    key = it['service']
+    svc = services[key]
+    card = svc['card'].get(lang) or svc['card'].get('ru')
+    pg = svc['page'].get(lang) or svc['page'].get('ru')
+    cityname = st['city'].get(lang, st['city']['en'])
+    title_ = it['title'][lang]
+    lead = (it.get('lead') or {}).get(lang, '')
+    rows = ''
+    g = prices['groups'].get(it['group']) or {}
+    rr = g.get(lang) or g.get('ru') or []
+    for i in it['rows']:
+        if i < len(rr) and _num(rr[i]) is not None:
+            rows += ('<div class="prow"><span>%s</span><span>%s</span></div>'
+                     % (e(rr[i]['label']), e(row_val(rr[i], city))))
+    price_block = ('<section class="tint"><div class="wrap"><div class="sec-head"><h2>%s</h2></div>'
+                   '<div class="ptable">%s</div>'
+                   '<div class="more-list"><a href="/%s/%s/%s/">%s</a></div>'
+                   '</div></section>' % (e(sec['prices']), rows, lang, city, key,
+                                         e(u['back']))) if rows else ''
+    sib = [x for x in proc_list(key, city, lang) if x['slug'] != it['slug'] and x['sub'] == it['sub']]
+    if not sib:
+        sib = [x for x in proc_list(key, city, lang) if x['slug'] != it['slug']][:6]
+    sib_links = ''.join('<a href="/%s/%s/%s">%s</a>' % (lang, city, proc_rel(x), e(x['title'][lang]))
+                        for x in sib)
+    faqs = ''.join('<details><summary>%s</summary><div class="ans">%s</div></details>'
+                   % (e(f['q']), e(f['a'])) for f in (it.get('faq') or {}).get(lang, []))
+    faq_block = ('<section class="lilac"><div class="wrap"><div class="sec-head"><h2>%s</h2></div>'
+                 '<div class="faq">%s</div></div></section>'
+                 % (e(pg.get('faqTitle', '')), faqs)) if faqs else ''
+    main = f"""
+<section class="hero hero-sm"><div class="wrap">
+  <div class="kicker"><a href="/{lang}/{city}/{key}/">{e(card['title'])}</a> · {e(cityname)}</div>
+  <h1>{e(title_)}</h1>
+  <p class="lead">{e(lead)}</p>
+  <div class="cta-row">
+    <a class="btn btn-gold" href="{book_href(lang, city)}" data-book>{e(h['cta'])}</a>
+    {'<span class="fact"><b>' + e(proc_meta(it, city, lang)) + '</b></span>' if proc_meta(it, city, lang) else ''}
+    <span class="free">{e(h['free'])}</span>
+  </div>
+</div></section>
+
+<section><div class="wrap arts"><div class="art">{proc_body(it, lang, 'h2')}</div></div></section>
+{price_block}
+{faq_block}
+<section class="alt"><div class="wrap">
+  <div class="sec-head"><h2>{e(u['other'])}</h2></div>
+  <div class="more-list">{sib_links}<a href="/{lang}/{city}/{key}/">{e(u['back'])}</a></div>
+</div></section>
+"""
+    desc = (lead or '')[:300]
+    sch = (crumbs(lang, city, [(SERVICES_PAGE[lang]['h1'], REL['services']),
+                               (card['title'], key + '/'), (title_, proc_rel(it))])
+           + faq_schema((it.get('faq') or {}).get(lang, [])))
+    return doc(lang, city, proc_rel(it), 'services',
+               '%s — %s, Hi Sisters Clinic' % (title_, cityname), desc, main,
+               other_rel='', schema=sch,
+               langs=[l for l in LANGS if (it.get('title') or {}).get(l)])
 
 
 # ───────────── страницы под запросы по зонам: /<язык>/<город>/laser/<зона>/ ─────────────
@@ -3474,6 +3717,16 @@ if __name__ == '__main__':
                 write(os.path.join(d, key, 'index.html'), build_service(lang, city, key))
                 pages.append('/%s/%s/%s/' % (lang, city, key))
                 seo_pages.append((lang, city, key + '/'))
+            for it_ in PROC_ITEMS:
+                k_ = it_['service']
+                svc_ = services.get(k_) or {}
+                if (city not in svc_.get('cities', []) or not svc_.get('page', {}).get(lang)
+                        or not (it_.get('title') or {}).get(lang)
+                        or it_ not in proc_list(k_, city, lang)):
+                    continue
+                write(os.path.join(d, k_, it_['slug'], 'index.html'), build_proc(lang, city, it_))
+                pages.append('/%s/%s/%s' % (lang, city, proc_rel(it_)))
+                seo_pages.append((lang, city, proc_rel(it_)))
             for b in city_brands(city):
                 rel_b = REL['cosmetics'] + brand_slug(b) + '/'
                 write(os.path.join(d, REL['cosmetics'], brand_slug(b), 'index.html'),
