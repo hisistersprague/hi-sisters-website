@@ -608,7 +608,7 @@
   "page": {
    "ru": {
     "title": "Электроэпиляция",
-    "intro": "Электроэпиляция — единственный метод, который навсегда удаляет любой волос.",
+    "intro": "Электроэпиляция работает с каждым волосом отдельно, поэтому убирает светлые, рыжие и седые волосы, на которые лазер не действует. При правильно подобранных параметрах обработанный фолликул больше не даёт волос.",
     "sections": [
      {
       "title": "Как работает электроэпиляция",
@@ -725,7 +725,7 @@
    },
    "uk": {
     "title": "Електроепіляція",
-    "intro": "єдиний метод, що постійно видаляє будь-яке волосся.",
+    "intro": "Електроепіляція працює з кожною волосиною окремо, тому прибирає світле, руде й сиве волосся, на яке лазер не діє. За правильно підібраних параметрів оброблений фолікул більше не дає волосся.",
     "sections": [
      {
       "title": "Як працює електроепіляція",
@@ -842,7 +842,7 @@
    },
    "en": {
     "title": "Electrolysis",
-    "intro": "Electrolysis is the only method that permanently removes any type of hair.",
+    "intro": "Electrolysis treats every hair individually, so it removes the blond, red and grey hair that a laser cannot see. With correctly chosen parameters, a treated follicle no longer produces hair.",
     "sections": [
      {
       "title": "How electrolysis works",
@@ -959,7 +959,7 @@
    },
    "es": {
     "title": "Electrólisis",
-    "intro": "El único método que elimina permanentemente cualquier tipo de vello.",
+    "intro": "La electrólisis trata cada pelo por separado, así que elimina el vello rubio, pelirrojo y canoso al que el láser no llega. Con los parámetros bien elegidos, el folículo tratado ya no vuelve a dar vello.",
     "sections": [
      {
       "title": "Cómo funciona la electrólisis",
@@ -1076,7 +1076,7 @@
    },
    "cs": {
     "title": "Elektroepilace",
-    "intro": "Elektroepilace je jediná metoda, která trvalě odstraňuje jakýkoli chloupek — včetně světlých, zrzavých a šedých.",
+    "intro": "Elektroepilace pracuje s každým chloupkem zvlášť, proto odstraní i světlé, zrzavé a šedivé chloupky, na které laser nepůsobí. Při správně zvolených parametrech už ošetřený folikul chloupek nevytvoří.",
     "sections": [
      {
       "title": "Jak elektroepilace funguje",
@@ -1692,7 +1692,7 @@
   "page": {
    "ru": {
     "title": "Трихология",
-    "intro": "Диагностика волос и кожи головы с помощью трихоскопа. Составляем индивидуальный лечебный протокол.",
+    "intro": "Трихоскопия кожи головы и волос под увеличением, разбор причин выпадения и план ухода. Отдельно разграничиваем косметический уход и то, что требует анализов и врача.",
     "sections": [
      {
       "title": "С чем к нам приходят",
@@ -1768,7 +1768,7 @@
    },
    "uk": {
     "title": "Трихологія",
-    "intro": "Діагностика волосся та шкіри голови за допомогою трихоскопа.",
+    "intro": "Трихоскопія шкіри голови та волосся під збільшенням, розбір причин випадіння і план догляду. Окремо розмежовуємо косметичний догляд і те, що потребує аналізів та лікаря.",
     "sections": [
      {
       "title": "З чим до нас приходять",
@@ -1844,7 +1844,7 @@
    },
    "en": {
     "title": "Trichology",
-    "intro": "Hair and scalp diagnostics using a trichoscope. We create an individual treatment protocol for each client.",
+    "intro": "Trichoscopy of the scalp and hair under magnification, a look at the causes of shedding and a care plan. We draw a clear line between cosmetic care and what needs tests and a doctor.",
     "sections": [
      {
       "title": "What people come with",
@@ -1920,7 +1920,7 @@
    },
    "es": {
     "title": "Tricología",
-    "intro": "Diagnóstico del cabello y cuero cabelludo con tricoscopio. Protocolo de tratamiento individual.",
+    "intro": "Tricoscopia del cuero cabelludo y del cabello con aumento, análisis de las causas de la caída y plan de cuidado. Separamos con claridad el cuidado estético de lo que requiere analíticas y médico.",
     "sections": [
      {
       "title": "Con qué llegan las clientas",
@@ -1996,7 +1996,7 @@
    },
    "cs": {
     "title": "Trichologie",
-    "intro": "Diagnostika stavu vlasů a pokožky hlavy pomocí trichoskopu. Sestavujeme individuální léčebný protokol pro každého klienta.",
+    "intro": "Trichoskopie pokožky hlavy a vlasů pod zvětšením, rozbor příčin padání a plán péče. Zvlášť oddělujeme kosmetickou péči od toho, co patří k vyšetření a k lékaři.",
     "sections": [
      {
       "title": "S čím k nám klientky chodí",
