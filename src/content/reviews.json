@@ -1,492 +1,932 @@
 {
-  "ru": [
-    {
-      "name": "Анна",
-      "q": "Хожу на электроэпиляцию к Наталье, очень довольна. Администраторы всегда встретят, помогут, ответят на все вопросы. Очень чисто и уютно, процедура всегда на высшем уровне — начиная со стерильности."
-    },
-    {
-      "name": "Татьяна Ткаченко",
-      "q": "Была на приёме у Валерии, всё очень понравилось. Внимательно выслушала, всё объяснила простым языком, ответила на все вопросы и дала рекомендации. Было комфортно, без спешки."
-    },
-    {
-      "name": "Yuliia Kozhevnikova",
-      "q": "Без сомнений могу рекомендовать это место. Отличные специалисты, очень приятные люди, прекрасная обстановка и, самое главное, качественная работа."
-    },
-    {
-      "q": "Вы лучшая инвестиция для девушек.",
-      "name": "Виктория Ю."
-    },
-    {
-      "q": "Одно из лучших мест, где я когда-либо была.",
-      "name": "Ангелина Г."
-    },
-    {
-      "q": "Никто не сделает визит настолько приятным, как они.",
-      "name": "Татьяна В."
-    },
-    {
-      "q": "Прекрасная студия! Современное оборудование, внимательное отношение и приятная атмосфера.",
-      "name": "Анастасия Н."
-    },
-    {
-      "q": "Невероятное качество процедур, а персонал — отдельная причина возвращаться снова.",
-      "name": "Валерия"
-    },
-    {
-      "q": "С первого визита остались только приятные впечатления.",
-      "name": "Мелания П."
-    },
-    {
-      "q": "Всем советую! Все мастера — опытные специалисты своего дела.",
-      "name": "Наталия Б."
-    },
-    {
-      "q": "Перед процедурой подбирают действительно эффективный метод и объясняют все нюансы.",
-      "name": "Евгения"
-    },
-    {
-      "q": "10 из 10 качество и сервис. Персонализированный подход и качественный результат.",
-      "name": "Анастасия"
-    },
-    {
-      "q": "Высокий уровень профессионализма, ответственность и дружелюбие.",
-      "name": "Яна"
-    },
-    {
-      "q": "Волосы действительно исчезают навсегда. Атмосфера уютная и доброжелательная.",
-      "name": "Вероника Т."
-    },
-    {
-      "q": "Лучшая студия лазерной эпиляции! Получила желаемый результат и идеальную гладкость.",
-      "name": "Алина Р."
-    },
-    {
-      "q": "Моя любимая клиника лазерной эпиляции! Хожу третий год, результат супер.",
-      "name": "Анастасия К."
-    },
-    {
-      "q": "Вежливый и профессиональный персонал подробно объяснил процедуру, развеял все сомнения.",
-      "name": "Дарина Д."
-    },
-    {
-      "q": "Результат очень классный. Я настолько была впечатлена, что приду ещё.",
-      "name": "Лера П."
-    },
-    {
-      "q": "Невероятное место, девочки профессионалы и горят своим делом.",
-      "name": "Кристина Б."
-    },
-    {
-      "q": "Ни разу не пожалела о своём выборе данной клиники.",
-      "name": "Малика М."
-    },
-    {
-      "q": "Делаю лазерную эпиляцию — результат виден на все 100%. Рекомендую.",
-      "name": "Карина К."
-    },
-    {
-      "q": "Девушки очень грамотно консультируют и помогают выбрать нужный метод.",
-      "name": "Светлана"
-    },
-    {
-      "q": "Хорошая студия, отличный персонал. Результат меня радует.",
-      "name": "Ксения Т."
-    },
-    {
-      "q": "Шикарное место! Девочки дружелюбные, всё на высшем уровне.",
-      "name": "Марина П."
-    }
-  ],
-  "en": [
-    {
-      "name": "Анна",
-      "q": "I come to Natalia for electrolysis and I am very happy. The receptionists always greet you, help and answer everything. It is clean and cosy, and the treatment is always done properly, starting with sterility."
-    },
-    {
-      "name": "Татьяна Ткаченко",
-      "q": "I saw Valeria and liked everything. She listened carefully, explained it all in plain words, answered my questions and gave recommendations. It felt comfortable and unhurried."
-    },
-    {
-      "name": "Yuliia Kozhevnikova",
-      "q": "I can recommend this place without hesitation. Excellent specialists, lovely people, a beautiful space and, most importantly, work done well."
-    },
-    {
-      "q": "You are the best investment for girls.",
-      "name": "Victoria Yu."
-    },
-    {
-      "q": "One of the best places I have ever been to.",
-      "name": "Anhelina H."
-    },
-    {
-      "q": "No one makes a visit as pleasant as they do.",
-      "name": "Tatiana V."
-    },
-    {
-      "q": "A wonderful studio! Modern equipment, attentive care and a lovely atmosphere.",
-      "name": "Anastasia N."
-    },
-    {
-      "q": "Incredible quality of treatments, and the team is a reason to come back.",
-      "name": "Valeria"
-    },
-    {
-      "q": "From the very first visit, only the best impressions.",
-      "name": "Melania P."
-    },
-    {
-      "q": "I recommend it to everyone! Every specialist is a true master of their craft.",
-      "name": "Natalia B."
-    },
-    {
-      "q": "They pick a truly effective method beforehand and explain every detail.",
-      "name": "Evgenia"
-    },
-    {
-      "q": "10 out of 10 for quality and service. A personalised approach and great results.",
-      "name": "Anastasia"
-    },
-    {
-      "q": "A high level of professionalism, responsibility and warmth.",
-      "name": "Yana"
-    },
-    {
-      "q": "The hair really does disappear for good. A cosy, welcoming atmosphere.",
-      "name": "Veronika T."
-    },
-    {
-      "q": "The best laser hair removal studio! I got the result and perfect smoothness.",
-      "name": "Alina R."
-    },
-    {
-      "q": "My favourite laser hair removal clinic! Third year here, the result is amazing.",
-      "name": "Anastasia K."
-    },
-    {
-      "q": "Polite, professional staff explained the procedure and eased all my doubts.",
-      "name": "Daryna D."
-    },
-    {
-      "q": "The result is really great. I was so impressed I will come again.",
-      "name": "Lera P."
-    },
-    {
-      "q": "An incredible place, the girls are pros who love what they do.",
-      "name": "Kristina B."
-    },
-    {
-      "q": "I have never once regretted choosing this clinic.",
-      "name": "Malika M."
-    },
-    {
-      "q": "I do laser hair removal here — the result is 100% visible. Recommend.",
-      "name": "Karyna K."
-    },
-    {
-      "q": "The girls advise expertly and help you choose the right method.",
-      "name": "Svetlana"
-    },
-    {
-      "q": "Great studio, excellent staff. The result makes me happy.",
-      "name": "Ksenia T."
-    },
-    {
-      "q": "A fantastic place! Friendly girls, everything top-notch.",
-      "name": "Marina P."
-    }
-  ],
-  "es": [
-    {
-      "name": "Анна",
-      "q": "Vengo a hacerme electrólisis con Natalia y estoy encantada. Las recepcionistas siempre te reciben, ayudan y responden a todo. Está muy limpio y acogedor, y el tratamiento siempre es impecable, empezando por la esterilidad."
-    },
-    {
-      "name": "Татьяна Ткаченко",
-      "q": "Estuve con Valeria y me gustó todo. Me escuchó con atención, me lo explicó con palabras sencillas, respondió a mis preguntas y me dio recomendaciones. Me sentí cómoda y sin prisas."
-    },
-    {
-      "name": "Yuliia Kozhevnikova",
-      "q": "Puedo recomendar este sitio sin dudarlo. Excelentes especialistas, gente encantadora, un espacio precioso y, sobre todo, un trabajo bien hecho."
-    },
-    {
-      "q": "Sois la mejor inversión para las chicas.",
-      "name": "Victoria Yu."
-    },
-    {
-      "q": "Uno de los mejores lugares en los que he estado.",
-      "name": "Anhelina H."
-    },
-    {
-      "q": "Nadie hace que la visita sea tan agradable como ellas.",
-      "name": "Tatiana V."
-    },
-    {
-      "q": "¡Un estudio maravilloso! Equipo moderno, trato atento y un ambiente agradable.",
-      "name": "Anastasia N."
-    },
-    {
-      "q": "Calidad de los tratamientos increíble, y el equipo invita a volver.",
-      "name": "Valeria"
-    },
-    {
-      "q": "Desde la primera visita, solo buenas impresiones.",
-      "name": "Melania P."
-    },
-    {
-      "q": "¡Lo recomiendo a todas! Todas son verdaderas profesionales.",
-      "name": "Natalia B."
-    },
-    {
-      "q": "Eligen de antemano un método realmente eficaz y explican cada detalle.",
-      "name": "Evgenia"
-    },
-    {
-      "q": "10 de 10 en calidad y servicio. Enfoque personalizado y gran resultado.",
-      "name": "Anastasia"
-    },
-    {
-      "q": "Un alto nivel de profesionalidad, responsabilidad y amabilidad.",
-      "name": "Yana"
-    },
-    {
-      "q": "El vello desaparece de verdad para siempre. Ambiente acogedor y cordial.",
-      "name": "Veronika T."
-    },
-    {
-      "q": "¡El mejor estudio de depilación láser! Logré el resultado y una piel perfecta.",
-      "name": "Alina R."
-    },
-    {
-      "q": "¡Mi clínica de depilación láser favorita! Tercer año aquí, resultado genial.",
-      "name": "Anastasia K."
-    },
-    {
-      "q": "Personal amable y profesional que explicó todo y disipó mis dudas.",
-      "name": "Daryna D."
-    },
-    {
-      "q": "El resultado es buenísimo. Quedé tan impresionada que volveré.",
-      "name": "Lera P."
-    },
-    {
-      "q": "Un lugar increíble, las chicas son profesionales y aman su trabajo.",
-      "name": "Kristina B."
-    },
-    {
-      "q": "Ni una sola vez me arrepentí de elegir esta clínica.",
-      "name": "Malika M."
-    },
-    {
-      "q": "Hago depilación láser aquí: el resultado se ve al 100%. Lo recomiendo.",
-      "name": "Karyna K."
-    },
-    {
-      "q": "Las chicas asesoran muy bien y ayudan a elegir el método adecuado.",
-      "name": "Svetlana"
-    },
-    {
-      "q": "Buen estudio, personal excelente. El resultado me alegra.",
-      "name": "Ksenia T."
-    },
-    {
-      "q": "¡Un sitio fantástico! Chicas amables y todo de primer nivel.",
-      "name": "Marina P."
-    }
-  ],
-  "cs": [
-    {
-      "name": "Анна",
-      "q": "Chodím na elektroepilaci k Natálii a jsem moc spokojená. Recepční vás vždy přivítají, poradí a odpoví na všechno. Je tu čisto a útulno, ošetření je vždy na úrovni — počínaje sterilitou."
-    },
-    {
-      "name": "Татьяна Ткаченко",
-      "q": "Byla jsem u Valerie a moc se mi to líbilo. Pozorně mě vyslechla, všechno vysvětlila srozumitelně, odpověděla na dotazy a dala doporučení. Bylo to příjemné a bez spěchu."
-    },
-    {
-      "name": "Yuliia Kozhevnikova",
-      "q": "Bez váhání můžu tohle místo doporučit. Skvělé specialistky, moc příjemní lidé, krásné prostředí a hlavně kvalitně odvedená práce."
-    },
-    {
-      "q": "Jste ta nejlepší investice pro holky.",
-      "name": "Victoria Yu."
-    },
-    {
-      "q": "Jedno z nejlepších míst, kde jsem kdy byla.",
-      "name": "Anhelina H."
-    },
-    {
-      "q": "Nikdo neudělá návštěvu tak příjemnou jako ony.",
-      "name": "Tatiana V."
-    },
-    {
-      "q": "Skvělé studio! Moderní vybavení, pozorný přístup a příjemná atmosféra.",
-      "name": "Anastasia N."
-    },
-    {
-      "q": "Neuvěřitelná kvalita procedur a tým, kvůli kterému se chcete vracet.",
-      "name": "Valeria"
-    },
-    {
-      "q": "Od první návštěvy jen ty nejlepší dojmy.",
-      "name": "Melania P."
-    },
-    {
-      "q": "Všem doporučuji! Všechny jsou skutečné profesionálky.",
-      "name": "Natalia B."
-    },
-    {
-      "q": "Předem zvolí opravdu účinnou metodu a vše podrobně vysvětlí.",
-      "name": "Evgenia"
-    },
-    {
-      "q": "10 z 10 za kvalitu i servis. Osobní přístup a skvělý výsledek.",
-      "name": "Anastasia"
-    },
-    {
-      "q": "Vysoká úroveň profesionality, zodpovědnost a vstřícnost.",
-      "name": "Yana"
-    },
-    {
-      "q": "Chloupky opravdu zmizí navždy. Útulná a přátelská atmosféra.",
-      "name": "Veronika T."
-    },
-    {
-      "q": "Nejlepší studio laserové epilace! Mám výsledek i dokonalou hladkost.",
-      "name": "Alina R."
-    },
-    {
-      "q": "Moje oblíbená klinika laserové epilace! Třetí rok a výsledek super.",
-      "name": "Anastasia K."
-    },
-    {
-      "q": "Milý a profesionální personál vše vysvětlil a rozptýlil mé pochyby.",
-      "name": "Daryna D."
-    },
-    {
-      "q": "Výsledek je opravdu skvělý. Byla jsem tak nadšená, že přijdu znovu.",
-      "name": "Lera P."
-    },
-    {
-      "q": "Neuvěřitelné místo, holky jsou profesionálky a baví je to.",
-      "name": "Kristina B."
-    },
-    {
-      "q": "Ani jednou jsem nelitovala, že jsem si vybrala tuto kliniku.",
-      "name": "Malika M."
-    },
-    {
-      "q": "Chodím sem na laserovou epilaci — výsledek je vidět na 100%. Doporučuji.",
-      "name": "Karyna K."
-    },
-    {
-      "q": "Holky skvěle poradí a pomohou vybrat správnou metodu.",
-      "name": "Svetlana"
-    },
-    {
-      "q": "Skvělé studio, výborný personál. Výsledek mě těší.",
-      "name": "Ksenia T."
-    },
-    {
-      "q": "Fantastické místo! Milé holky a všechno na špičkové úrovni.",
-      "name": "Marina P."
-    }
-  ],
-  "uk": [
-    {
-      "name": "Анна",
-      "q": "Ходжу на електроепіляцію до Наталі, дуже задоволена. Адміністраторки завжди зустрінуть, допоможуть, дадуть відповідь на всі питання. Дуже чисто й затишно, процедура завжди на найвищому рівні — починаючи зі стерильності."
-    },
-    {
-      "name": "Татьяна Ткаченко",
-      "q": "Була на прийомі у Валерії, усе дуже сподобалося. Уважно вислухала, все пояснила простою мовою, відповіла на всі питання й дала рекомендації. Було комфортно, без поспіху."
-    },
-    {
-      "name": "Yuliia Kozhevnikova",
-      "q": "Без сумнівів можу рекомендувати це місце. Чудові спеціалістки, дуже приємні люди, прекрасна атмосфера і, найголовніше, якісна робота."
-    },
-    {
-      "q": "Ви найкраща інвестиція для дівчат.",
-      "name": "Вікторія Ю."
-    },
-    {
-      "q": "Одне з найкращих місць, де я коли-небудь була.",
-      "name": "Ангеліна Г."
-    },
-    {
-      "q": "Ніхто не зробить візит настільки приємним, як вони.",
-      "name": "Тетяна В."
-    },
-    {
-      "q": "Чудова студія! Сучасне обладнання, уважне ставлення та приємна атмосфера.",
-      "name": "Анастасія Н."
-    },
-    {
-      "q": "Неймовірна якість процедур, а команда — причина повертатися знову.",
-      "name": "Валерія"
-    },
-    {
-      "q": "З першого візиту лишилися тільки приємні враження.",
-      "name": "Меланія П."
-    },
-    {
-      "q": "Усім раджу! Усі майстри — досвідчені фахівці своєї справи.",
-      "name": "Наталія Б."
-    },
-    {
-      "q": "Перед процедурою підбирають дієвий метод і пояснюють усі нюанси.",
-      "name": "Євгенія"
-    },
-    {
-      "q": "10 із 10 якість і сервіс. Персоналізований підхід і якісний результат.",
-      "name": "Анастасія"
-    },
-    {
-      "q": "Високий рівень професіоналізму, відповідальність і доброзичливість.",
-      "name": "Яна"
-    },
-    {
-      "q": "Волосся справді зникає назавжди. Атмосфера затишна й привітна.",
-      "name": "Вероніка Т."
-    },
-    {
-      "q": "Найкраща студія лазерної епіляції! Отримала бажаний результат і гладкість.",
-      "name": "Аліна Р."
-    },
-    {
-      "q": "Моя улюблена клініка лазерної епіляції! Ходжу третій рік, результат супер.",
-      "name": "Анастасія К."
-    },
-    {
-      "q": "Ввічливий і професійний персонал пояснив процедуру й розвіяв усі сумніви.",
-      "name": "Дарина Д."
-    },
-    {
-      "q": "Результат дуже класний. Я була настільки вражена, що прийду ще.",
-      "name": "Лера П."
-    },
-    {
-      "q": "Неймовірне місце, дівчата професіонали й палають своєю справою.",
-      "name": "Крістіна Б."
-    },
-    {
-      "q": "Жодного разу не пошкодувала про свій вибір цієї клініки.",
-      "name": "Маліка М."
-    },
-    {
-      "q": "Роблю лазерну епіляцію — результат видно на всі 100%. Рекомендую.",
-      "name": "Карина К."
-    },
-    {
-      "q": "Дівчата дуже грамотно консультують і допомагають обрати потрібний метод.",
-      "name": "Світлана"
-    },
-    {
-      "q": "Гарна студія, чудовий персонал. Результат мене тішить.",
-      "name": "Ксенія Т."
-    },
-    {
-      "q": "Шикарне місце! Дівчата привітні, усе на найвищому рівні.",
-      "name": "Марина П."
-    }
-  ]
+ "ru": [
+  {
+   "name": "Афина М.",
+   "q": "Хожу с 2023 года. Больше всего ценю честный подход: здесь не навязывают лишние процедуры и не растягивают курс. Если видят, что на зоне лазер уже не даст результата, честно советуют перейти на электроэпиляцию."
+  },
+  {
+   "name": "Мирослава П.",
+   "q": "Делала и лазерную, и электроэпиляцию. Всё объяснили заранее, во время процедуры регулярно спрашивали, как я себя чувствую. После подробно рассказали про уход и когда приходить снова."
+  },
+  {
+   "name": "Анна А.",
+   "q": "Делали электроэпиляцию, работала Наталья. Показала, что все инструменты стерильны, всё объяснила и терпеливо ответила на мои странные вопросы. Несколько раз во время процедуры спросила, как я себя чувствую."
+  },
+  {
+   "name": "Сабина К.",
+   "q": "Была у трихолога Валерии. Внимательно всё объяснила, подобрала уход именно для меня и рассказала, как им пользоваться. Результат заметила уже после первого применения: волосы мягче и живее."
+  },
+  {
+   "name": "Марианна П.",
+   "q": "В студии уютная атмосфера, угощают вкусным кофе. Валерия как трихолог очень доступно и подробно объяснила мою ситуацию. Отдельный плюс, что она ещё и косметолог, поэтому подход комплексный."
+  },
+  {
+   "name": "Татьяна Н.",
+   "q": "Визит к трихологу Валерии: всё чётко объяснила, уделила достаточно времени и внимательно осмотрела волосы и кожу головы. Получила конкретные рекомендации, которые действительно оказались полезными."
+  },
+  {
+   "name": "Лана Г.",
+   "q": "Обращалась к трихологу Валерии. Понравилось, что всё подробно разложили по полочкам, успокоили и подобрали понятный план лечения."
+  },
+  {
+   "name": "Мари Ш.",
+   "q": "Очень понравилась консультация с Юлианной. Не было страшно задавать вопросы: всё спокойно объясняла и отвечала на всё, что меня интересовало."
+  },
+  {
+   "name": "Саб Л.",
+   "q": "Электроэпиляция поначалу может быть немного болезненной, но всё индивидуально. Благодаря доброжелательному подходу девушек ждёшь каждого следующего сеанса, а главное — результата. Большой плюс: вечера, выходные и праздники не проблема."
+  },
+  {
+   "name": "Дарья Д.",
+   "q": "Благодаря специалистам почти полностью избавилась от нежелательных волос на лице, которые беспокоили очень сильно. Здесь действительно квалифицированные мастера."
+  },
+  {
+   "name": "Ирина С.",
+   "q": "Электроэпиляция проводилась аккуратно, без травмирования кожи. После процедуры не было никакой реакции и видимых корочек."
+  },
+  {
+   "name": "Татьяна К.",
+   "q": "Была моделью на электроэпиляции у мастера Юлианны. Очень положительное впечатление: администраторы приветливые, всё стерильно, иглу всегда открывали при мне."
+  },
+  {
+   "name": "Карина К.",
+   "q": "Была на комбинированной чистке лица. Мастер Валерия отлично справилась: на второй день после процедуры кожа шелковая и здоровая."
+  },
+  {
+   "name": "Мирелла Д.",
+   "q": "Посещаю клинику с 2023 года и смело рекомендую: качество и результат на высоте, к сервису никогда не было претензий. После каждого визита выхожу спокойной."
+  },
+  {
+   "name": "Ирина К.",
+   "q": "Всегда доброжелательная атмосфера, опытные мастера и индивидуальный подход. Результат от процедур превзошёл мои ожидания."
+  },
+  {
+   "name": "Сандра Б.",
+   "q": "Отметила для себя не только результат, но и общение — до процедуры, во время и после."
+  },
+  {
+   "name": "Алина Т.",
+   "q": "Лучшая клиника, лучшие мастера, лучший результат. Рекомендую всем друзьям и знакомым."
+  },
+  {
+   "name": "Руслана Р.",
+   "q": "Визит к трихологу был отличным. Ценю профессиональный и человеческий подход, подробную консультацию и полезные рекомендации по уходу за волосами."
+  },
+  {
+   "name": "Лея Р.",
+   "q": "Приятная атмосфера и очень доброжелательный подход. Много информации и внимательное отношение — услугами довольна."
+  },
+  {
+   "name": "Максим С.",
+   "q": "Врач — профессионал своего дела. Делаю всё по рекомендациям и уже вижу улучшения."
+  },
+  {
+   "name": "Диана М.",
+   "q": "Приятная атмосфера и адекватная консультация трихолога."
+  },
+  {
+   "name": "Зиновия К.",
+   "q": "Всё понравилось, мастер отличный. Рекомендую."
+  },
+  {
+   "name": "Анна",
+   "q": "Хожу на электроэпиляцию к Наталье, очень довольна. Администраторы всегда встретят, помогут, ответят на все вопросы. Очень чисто и уютно, процедура всегда на высшем уровне — начиная со стерильности."
+  },
+  {
+   "name": "Татьяна Ткаченко",
+   "q": "Была на приёме у Валерии, всё очень понравилось. Внимательно выслушала, всё объяснила простым языком, ответила на все вопросы и дала рекомендации. Было комфортно, без спешки."
+  },
+  {
+   "name": "Yuliia Kozhevnikova",
+   "q": "Без сомнений могу рекомендовать это место. Отличные специалисты, очень приятные люди, прекрасная обстановка и, самое главное, качественная работа."
+  },
+  {
+   "q": "Вы лучшая инвестиция для девушек.",
+   "name": "Виктория Ю."
+  },
+  {
+   "q": "Одно из лучших мест, где я когда-либо была.",
+   "name": "Ангелина Г."
+  },
+  {
+   "q": "Никто не сделает визит настолько приятным, как они.",
+   "name": "Татьяна В."
+  },
+  {
+   "q": "Прекрасная студия! Современное оборудование, внимательное отношение и приятная атмосфера.",
+   "name": "Анастасия Н."
+  },
+  {
+   "q": "Невероятное качество процедур, а персонал — отдельная причина возвращаться снова.",
+   "name": "Валерия"
+  },
+  {
+   "q": "С первого визита остались только приятные впечатления.",
+   "name": "Мелания П."
+  },
+  {
+   "q": "Всем советую! Все мастера — опытные специалисты своего дела.",
+   "name": "Наталия Б."
+  },
+  {
+   "q": "Перед процедурой подбирают действительно эффективный метод и объясняют все нюансы.",
+   "name": "Евгения"
+  },
+  {
+   "q": "10 из 10 качество и сервис. Персонализированный подход и качественный результат.",
+   "name": "Анастасия"
+  },
+  {
+   "q": "Высокий уровень профессионализма, ответственность и дружелюбие.",
+   "name": "Яна"
+  },
+  {
+   "q": "Волосы действительно исчезают навсегда. Атмосфера уютная и доброжелательная.",
+   "name": "Вероника Т."
+  },
+  {
+   "q": "Лучшая студия лазерной эпиляции! Получила желаемый результат и идеальную гладкость.",
+   "name": "Алина Р."
+  },
+  {
+   "q": "Моя любимая клиника лазерной эпиляции! Хожу третий год, результат супер.",
+   "name": "Анастасия К."
+  },
+  {
+   "q": "Вежливый и профессиональный персонал подробно объяснил процедуру, развеял все сомнения.",
+   "name": "Дарина Д."
+  },
+  {
+   "q": "Результат очень классный. Я настолько была впечатлена, что приду ещё.",
+   "name": "Лера П."
+  },
+  {
+   "q": "Невероятное место, девочки профессионалы и горят своим делом.",
+   "name": "Кристина Б."
+  },
+  {
+   "q": "Ни разу не пожалела о своём выборе данной клиники.",
+   "name": "Малика М."
+  },
+  {
+   "q": "Делаю лазерную эпиляцию — результат виден на все 100%. Рекомендую.",
+   "name": "Карина К."
+  },
+  {
+   "q": "Девушки очень грамотно консультируют и помогают выбрать нужный метод.",
+   "name": "Светлана"
+  },
+  {
+   "q": "Хорошая студия, отличный персонал. Результат меня радует.",
+   "name": "Ксения Т."
+  },
+  {
+   "q": "Шикарное место! Девочки дружелюбные, всё на высшем уровне.",
+   "name": "Марина П."
+  }
+ ],
+ "en": [
+  {
+   "name": "Afina M.",
+   "q": "I have been coming since 2023. What I value most is the honesty: nobody pushes extra treatments or stretches the course. If they see the laser will not do more on an area, they tell you to switch to electrolysis."
+  },
+  {
+   "name": "Myroslava P.",
+   "q": "I had both laser and electrolysis here. Everything was explained beforehand, and during the session they kept asking how I was doing. Afterwards they went through the aftercare and when to come back."
+  },
+  {
+   "name": "Anna A.",
+   "q": "I had electrolysis with Natalia. She showed me that all the instruments were sterile, explained everything and patiently answered my odd questions. She checked how I was feeling several times during the session."
+  },
+  {
+   "name": "Sabina K.",
+   "q": "I saw Valeria, the trichologist. She explained everything carefully, chose a routine specifically for me and showed me how to use it. I saw the difference after the first use: softer, livelier hair."
+  },
+  {
+   "name": "Marianna P.",
+   "q": "The studio has a cosy atmosphere and they offer you good coffee. As a trichologist, Valeria explained my situation clearly and in detail. A real plus is that she is also a cosmetologist, so the approach is joined up."
+  },
+  {
+   "name": "Tetiana N.",
+   "q": "A visit to Valeria the trichologist: she explained everything clearly, gave me plenty of time and examined my hair and scalp carefully. I left with specific advice that genuinely helped."
+  },
+  {
+   "name": "Lana H.",
+   "q": "I came to Valeria the trichologist. I liked that everything was laid out step by step, they calmed me down and put together a clear plan."
+  },
+  {
+   "name": "Mari Sh.",
+   "q": "I really liked the consultation with Julianna. I was not afraid to ask questions: she explained everything calmly and answered whatever I wanted to know."
+  },
+  {
+   "name": "Sab L.",
+   "q": "Electrolysis can sting a bit at first, but it is individual. The girls are so kind that you look forward to the next session — and above all to the result. A big plus: evenings, weekends and holidays are no problem."
+  },
+  {
+   "name": "Daria D.",
+   "q": "Thanks to the specialists here I have almost completely got rid of the facial hair that bothered me so much. The team really knows what it is doing."
+  },
+  {
+   "name": "Irina S.",
+   "q": "The electrolysis was done gently, without damaging the skin. Afterwards there was no reaction and no visible crusts."
+  },
+  {
+   "name": "Tetiana K.",
+   "q": "I was a model for electrolysis with Julianna. A very good impression: friendly receptionists, everything sterile, and the needle was always opened in front of me."
+  },
+  {
+   "name": "Karina K.",
+   "q": "I had a combined facial cleanse. Valeria did a great job: by the second day my skin was silky and healthy."
+  },
+  {
+   "name": "Mirella D.",
+   "q": "I have been coming since 2023 and recommend it without hesitation: the quality and the result are excellent, and I have never had an issue with the service. I leave calm every time."
+  },
+  {
+   "name": "Iryna K.",
+   "q": "Always a warm atmosphere, experienced specialists and an individual approach. The results went beyond what I expected."
+  },
+  {
+   "name": "Sandra B.",
+   "q": "What stood out for me was not just the result but the communication — before, during and after the treatment."
+  },
+  {
+   "name": "Alina T.",
+   "q": "The best clinic, the best specialists, the best result. I recommend it to all my friends."
+  },
+  {
+   "name": "Ruslana R.",
+   "q": "The trichology appointment was excellent. I appreciate the professional yet human approach, the detailed consultation and the useful hair-care advice."
+  },
+  {
+   "name": "Lea R.",
+   "q": "A pleasant atmosphere and a very friendly approach. Plenty of information and real attention — I am happy with the service."
+  },
+  {
+   "name": "Maxim S.",
+   "q": "The doctor really knows her field. I follow the recommendations and already see improvement."
+  },
+  {
+   "name": "Diana M.",
+   "q": "A pleasant atmosphere and a sensible trichology consultation."
+  },
+  {
+   "name": "Zinoviia K.",
+   "q": "I liked everything, the specialist is great. Recommended."
+  },
+  {
+   "name": "Анна",
+   "q": "I come to Natalia for electrolysis and I am very happy. The receptionists always greet you, help and answer everything. It is clean and cosy, and the treatment is always done properly, starting with sterility."
+  },
+  {
+   "name": "Татьяна Ткаченко",
+   "q": "I saw Valeria and liked everything. She listened carefully, explained it all in plain words, answered my questions and gave recommendations. It felt comfortable and unhurried."
+  },
+  {
+   "name": "Yuliia Kozhevnikova",
+   "q": "I can recommend this place without hesitation. Excellent specialists, lovely people, a beautiful space and, most importantly, work done well."
+  },
+  {
+   "q": "You are the best investment for girls.",
+   "name": "Victoria Yu."
+  },
+  {
+   "q": "One of the best places I have ever been to.",
+   "name": "Anhelina H."
+  },
+  {
+   "q": "No one makes a visit as pleasant as they do.",
+   "name": "Tatiana V."
+  },
+  {
+   "q": "A wonderful studio! Modern equipment, attentive care and a lovely atmosphere.",
+   "name": "Anastasia N."
+  },
+  {
+   "q": "Incredible quality of treatments, and the team is a reason to come back.",
+   "name": "Valeria"
+  },
+  {
+   "q": "From the very first visit, only the best impressions.",
+   "name": "Melania P."
+  },
+  {
+   "q": "I recommend it to everyone! Every specialist is a true master of their craft.",
+   "name": "Natalia B."
+  },
+  {
+   "q": "They pick a truly effective method beforehand and explain every detail.",
+   "name": "Evgenia"
+  },
+  {
+   "q": "10 out of 10 for quality and service. A personalised approach and great results.",
+   "name": "Anastasia"
+  },
+  {
+   "q": "A high level of professionalism, responsibility and warmth.",
+   "name": "Yana"
+  },
+  {
+   "q": "The hair really does disappear for good. A cosy, welcoming atmosphere.",
+   "name": "Veronika T."
+  },
+  {
+   "q": "The best laser hair removal studio! I got the result and perfect smoothness.",
+   "name": "Alina R."
+  },
+  {
+   "q": "My favourite laser hair removal clinic! Third year here, the result is amazing.",
+   "name": "Anastasia K."
+  },
+  {
+   "q": "Polite, professional staff explained the procedure and eased all my doubts.",
+   "name": "Daryna D."
+  },
+  {
+   "q": "The result is really great. I was so impressed I will come again.",
+   "name": "Lera P."
+  },
+  {
+   "q": "An incredible place, the girls are pros who love what they do.",
+   "name": "Kristina B."
+  },
+  {
+   "q": "I have never once regretted choosing this clinic.",
+   "name": "Malika M."
+  },
+  {
+   "q": "I do laser hair removal here — the result is 100% visible. Recommend.",
+   "name": "Karyna K."
+  },
+  {
+   "q": "The girls advise expertly and help you choose the right method.",
+   "name": "Svetlana"
+  },
+  {
+   "q": "Great studio, excellent staff. The result makes me happy.",
+   "name": "Ksenia T."
+  },
+  {
+   "q": "A fantastic place! Friendly girls, everything top-notch.",
+   "name": "Marina P."
+  }
+ ],
+ "es": [
+  {
+   "name": "Afina M.",
+   "q": "Vengo desde 2023. Lo que más valoro es la honestidad: aquí no te endosan tratamientos de más ni alargan la pauta. Si ven que el láser ya no va a dar resultado en una zona, te dicen de pasar a la electrólisis."
+  },
+  {
+   "name": "Myroslava P.",
+   "q": "Me hice aquí láser y electrólisis. Me lo explicaron todo antes y durante la sesión me preguntaban cómo iba. Al terminar me detallaron los cuidados y cuándo volver."
+  },
+  {
+   "name": "Anna A.",
+   "q": "Me hice electrólisis con Natalia. Me enseñó que todo el instrumental estaba estéril, me lo explicó todo y respondió con paciencia a mis preguntas raras. Durante la sesión me preguntó varias veces cómo estaba."
+  },
+  {
+   "name": "Sabina K.",
+   "q": "Fui con Valeria, la tricóloga. Me lo explicó todo con detalle, eligió una rutina para mí y me enseñó a usarla. Noté la diferencia tras el primer uso: el pelo más suave y con más vida."
+  },
+  {
+   "name": "Marianna P.",
+   "q": "El estudio tiene un ambiente acogedor y te ofrecen buen café. Como tricóloga, Valeria me explicó mi caso de forma clara y detallada. Un plus es que además es cosmetóloga, así que el enfoque es completo."
+  },
+  {
+   "name": "Tetiana N.",
+   "q": "Visita con Valeria, la tricóloga: me lo explicó todo con claridad, me dedicó tiempo y revisó con atención mi pelo y mi cuero cabelludo. Me fui con recomendaciones concretas que de verdad me sirvieron."
+  },
+  {
+   "name": "Lana H.",
+   "q": "Fui con Valeria, la tricóloga. Me gustó que me lo explicaran todo paso a paso, me tranquilizaran y me prepararan un plan claro."
+  },
+  {
+   "name": "Mari Sh.",
+   "q": "Me gustó mucho la consulta con Julianna. No me dio reparo preguntar: me lo explicó todo con calma y respondió a todo lo que quería saber."
+  },
+  {
+   "name": "Sab L.",
+   "q": "La electrólisis puede molestar un poco al principio, pero depende de cada una. Con lo amables que son las chicas, esperas con ganas la siguiente sesión y, sobre todo, el resultado. Un gran plus: tardes, fines de semana y festivos no son problema."
+  },
+  {
+   "name": "Daria D.",
+   "q": "Gracias a las especialistas me he quitado casi del todo el vello facial que tanto me molestaba. Aquí el equipo sabe de verdad lo que hace."
+  },
+  {
+   "name": "Irina S.",
+   "q": "La electrólisis se hizo con cuidado, sin dañar la piel. Después no tuve ninguna reacción ni costritas visibles."
+  },
+  {
+   "name": "Tetiana K.",
+   "q": "Fui modelo de electrólisis con Julianna. Muy buena impresión: recepcionistas amables, todo estéril y la aguja siempre la abrían delante de mí."
+  },
+  {
+   "name": "Karina K.",
+   "q": "Me hice una limpieza facial combinada. Valeria lo hizo genial: al segundo día la piel estaba sedosa y sana."
+  },
+  {
+   "name": "Mirella D.",
+   "q": "Vengo desde 2023 y la recomiendo sin dudar: la calidad y el resultado son excelentes y nunca he tenido queja del servicio. Salgo tranquila cada vez."
+  },
+  {
+   "name": "Iryna K.",
+   "q": "Siempre un ambiente cálido, especialistas con experiencia y un enfoque individual. El resultado superó lo que esperaba."
+  },
+  {
+   "name": "Sandra B.",
+   "q": "Lo que me marcó no fue solo el resultado, sino la comunicación: antes, durante y después del tratamiento."
+  },
+  {
+   "name": "Alina T.",
+   "q": "La mejor clínica, las mejores profesionales, el mejor resultado. Se lo recomiendo a todas mis amigas."
+  },
+  {
+   "name": "Ruslana R.",
+   "q": "La cita de tricología fue excelente. Valoro el enfoque profesional y a la vez cercano, la consulta detallada y los consejos útiles para el cabello."
+  },
+  {
+   "name": "Lea R.",
+   "q": "Ambiente agradable y trato muy cercano. Mucha información y atención de verdad: contenta con el servicio."
+  },
+  {
+   "name": "Maxim S.",
+   "q": "La doctora sabe muy bien lo que hace. Sigo las recomendaciones y ya veo mejoría."
+  },
+  {
+   "name": "Diana M.",
+   "q": "Ambiente agradable y una consulta de tricología sensata."
+  },
+  {
+   "name": "Zinoviia K.",
+   "q": "Me gustó todo, la profesional es estupenda. La recomiendo."
+  },
+  {
+   "name": "Анна",
+   "q": "Vengo a hacerme electrólisis con Natalia y estoy encantada. Las recepcionistas siempre te reciben, ayudan y responden a todo. Está muy limpio y acogedor, y el tratamiento siempre es impecable, empezando por la esterilidad."
+  },
+  {
+   "name": "Татьяна Ткаченко",
+   "q": "Estuve con Valeria y me gustó todo. Me escuchó con atención, me lo explicó con palabras sencillas, respondió a mis preguntas y me dio recomendaciones. Me sentí cómoda y sin prisas."
+  },
+  {
+   "name": "Yuliia Kozhevnikova",
+   "q": "Puedo recomendar este sitio sin dudarlo. Excelentes especialistas, gente encantadora, un espacio precioso y, sobre todo, un trabajo bien hecho."
+  },
+  {
+   "q": "Sois la mejor inversión para las chicas.",
+   "name": "Victoria Yu."
+  },
+  {
+   "q": "Uno de los mejores lugares en los que he estado.",
+   "name": "Anhelina H."
+  },
+  {
+   "q": "Nadie hace que la visita sea tan agradable como ellas.",
+   "name": "Tatiana V."
+  },
+  {
+   "q": "¡Un estudio maravilloso! Equipo moderno, trato atento y un ambiente agradable.",
+   "name": "Anastasia N."
+  },
+  {
+   "q": "Calidad de los tratamientos increíble, y el equipo invita a volver.",
+   "name": "Valeria"
+  },
+  {
+   "q": "Desde la primera visita, solo buenas impresiones.",
+   "name": "Melania P."
+  },
+  {
+   "q": "¡Lo recomiendo a todas! Todas son verdaderas profesionales.",
+   "name": "Natalia B."
+  },
+  {
+   "q": "Eligen de antemano un método realmente eficaz y explican cada detalle.",
+   "name": "Evgenia"
+  },
+  {
+   "q": "10 de 10 en calidad y servicio. Enfoque personalizado y gran resultado.",
+   "name": "Anastasia"
+  },
+  {
+   "q": "Un alto nivel de profesionalidad, responsabilidad y amabilidad.",
+   "name": "Yana"
+  },
+  {
+   "q": "El vello desaparece de verdad para siempre. Ambiente acogedor y cordial.",
+   "name": "Veronika T."
+  },
+  {
+   "q": "¡El mejor estudio de depilación láser! Logré el resultado y una piel perfecta.",
+   "name": "Alina R."
+  },
+  {
+   "q": "¡Mi clínica de depilación láser favorita! Tercer año aquí, resultado genial.",
+   "name": "Anastasia K."
+  },
+  {
+   "q": "Personal amable y profesional que explicó todo y disipó mis dudas.",
+   "name": "Daryna D."
+  },
+  {
+   "q": "El resultado es buenísimo. Quedé tan impresionada que volveré.",
+   "name": "Lera P."
+  },
+  {
+   "q": "Un lugar increíble, las chicas son profesionales y aman su trabajo.",
+   "name": "Kristina B."
+  },
+  {
+   "q": "Ni una sola vez me arrepentí de elegir esta clínica.",
+   "name": "Malika M."
+  },
+  {
+   "q": "Hago depilación láser aquí: el resultado se ve al 100%. Lo recomiendo.",
+   "name": "Karyna K."
+  },
+  {
+   "q": "Las chicas asesoran muy bien y ayudan a elegir el método adecuado.",
+   "name": "Svetlana"
+  },
+  {
+   "q": "Buen estudio, personal excelente. El resultado me alegra.",
+   "name": "Ksenia T."
+  },
+  {
+   "q": "¡Un sitio fantástico! Chicas amables y todo de primer nivel.",
+   "name": "Marina P."
+  }
+ ],
+ "cs": [
+  {
+   "name": "Afina M.",
+   "q": "Chodím sem od roku 2023. Nejvíc si cením poctivého přístupu: nikdo tu nevnucuje zbytečná ošetření ani nenatahuje kúru. Když vidí, že laser už na dané zóně výsledek nepřinese, poctivě doporučí přejít na elektroepilaci."
+  },
+  {
+   "name": "Myroslava P.",
+   "q": "Měla jsem tu laserovou i elektroepilaci. Všechno mi vysvětlili dopředu a během ošetření se pravidelně ptali, jak se cítím. Potom mi podrobně řekli, jak o pleť pečovat a kdy přijít znovu."
+  },
+  {
+   "name": "Anna A.",
+   "q": "Byla jsem na elektroepilaci u Natálie. Ukázala mi, že všechny nástroje jsou sterilní, vše vysvětlila a trpělivě odpověděla i na mé zvláštní otázky. Během ošetření se několikrát ptala, jak mi je."
+  },
+  {
+   "name": "Sabina K.",
+   "q": "Byla jsem u tricholožky Valerie. Vše pozorně vysvětlila, vybrala péči přímo pro mě a popsala, jak ji používat. Výsledek jsem viděla hned po prvním použití: vlasy jsou měkčí a živější."
+  },
+  {
+   "name": "Marianna P.",
+   "q": "Ve studiu je útulná atmosféra a nabídnou vám dobrou kávu. Valerie jako tricholožka mi srozumitelně a podrobně vysvětlila můj stav. Velké plus je, že je zároveň kosmetoložka, takže přístup je komplexní."
+  },
+  {
+   "name": "Tetiana N.",
+   "q": "Návštěva u tricholožky Valerie: vše jasně vysvětlila, věnovala mi dost času a pozorně si prohlédla vlasy i pokožku hlavy. Dostala jsem konkrétní doporučení, která mi opravdu pomohla."
+  },
+  {
+   "name": "Lana H.",
+   "q": "Byla jsem u tricholožky Valerie. Líbilo se mi, že mi všechno srozumitelně vysvětlili, uklidnili mě a sestavili jasný plán léčby."
+  },
+  {
+   "name": "Mari Š.",
+   "q": "Moc se mi líbila konzultace s Juliannou. Nebála jsem se ptát: všechno klidně vysvětlila a odpověděla na vše, co mě zajímalo."
+  },
+  {
+   "name": "Sab L.",
+   "q": "Elektroepilace může ze začátku trochu bolet, ale je to individuální. Díky milému přístupu holek se na každé další sezení těšíte, a hlavně na výsledek. Velké plus: večery, víkendy i svátky nejsou problém."
+  },
+  {
+   "name": "Daria D.",
+   "q": "Díky zdejším specialistkám jsem se skoro úplně zbavila nežádoucích chloupků na obličeji, které mě hodně trápily. Pracují tu opravdu kvalifikované mistryně."
+  },
+  {
+   "name": "Irina S.",
+   "q": "Elektroepilace probíhala šetrně, bez poranění kůže. Po ošetření jsem neměla žádnou reakci ani viditelné krustičky."
+  },
+  {
+   "name": "Tetiana K.",
+   "q": "Byla jsem modelkou na elektroepilaci u Julianny. Velmi dobrý dojem: recepční jsou milé, všechno je sterilní a jehlu přede mnou vždy otevřely."
+  },
+  {
+   "name": "Karina K.",
+   "q": "Byla jsem na kombinovaném čištění pleti. Valerie to zvládla skvěle: druhý den po ošetření je pleť hedvábná a zdravá."
+  },
+  {
+   "name": "Mirella D.",
+   "q": "Do kliniky chodím od roku 2023 a klidně ji doporučím: kvalita i výsledek jsou na výši a na servis jsem si nikdy nestěžovala. Po každé návštěvě odcházím v klidu."
+  },
+  {
+   "name": "Iryna K.",
+   "q": "Vždy vstřícná atmosféra, zkušené mistryně a individuální přístup. Výsledek ošetření předčil moje očekávání."
+  },
+  {
+   "name": "Sandra B.",
+   "q": "Ocenila jsem nejen výsledek, ale i komunikaci — před ošetřením, během něj i po něm."
+  },
+  {
+   "name": "Alina T.",
+   "q": "Nejlepší klinika, nejlepší mistryně, nejlepší výsledek. Doporučuji všem kamarádkám i známým."
+  },
+  {
+   "name": "Ruslana R.",
+   "q": "Návštěva u tricholožky byla skvělá. Cením si profesionálního a zároveň lidského přístupu, podrobné konzultace a užitečných rad k péči o vlasy."
+  },
+  {
+   "name": "Lea R.",
+   "q": "Příjemná atmosféra a velmi vstřícný přístup. Hodně informací a pozornost ke klientovi — se službami jsem spokojená."
+  },
+  {
+   "name": "Maxim S.",
+   "q": "Lékařka je profesionálka. Řídím se doporučeními a už vidím zlepšení."
+  },
+  {
+   "name": "Diana M.",
+   "q": "Příjemná atmosféra a věcná konzultace u tricholožky."
+  },
+  {
+   "name": "Zinoviia K.",
+   "q": "Všechno se mi líbilo, mistryně je skvělá. Doporučuji."
+  },
+  {
+   "name": "Анна",
+   "q": "Chodím na elektroepilaci k Natálii a jsem moc spokojená. Recepční vás vždy přivítají, poradí a odpoví na všechno. Je tu čisto a útulno, ošetření je vždy na úrovni — počínaje sterilitou."
+  },
+  {
+   "name": "Татьяна Ткаченко",
+   "q": "Byla jsem u Valerie a moc se mi to líbilo. Pozorně mě vyslechla, všechno vysvětlila srozumitelně, odpověděla na dotazy a dala doporučení. Bylo to příjemné a bez spěchu."
+  },
+  {
+   "name": "Yuliia Kozhevnikova",
+   "q": "Bez váhání můžu tohle místo doporučit. Skvělé specialistky, moc příjemní lidé, krásné prostředí a hlavně kvalitně odvedená práce."
+  },
+  {
+   "q": "Jste ta nejlepší investice pro holky.",
+   "name": "Victoria Yu."
+  },
+  {
+   "q": "Jedno z nejlepších míst, kde jsem kdy byla.",
+   "name": "Anhelina H."
+  },
+  {
+   "q": "Nikdo neudělá návštěvu tak příjemnou jako ony.",
+   "name": "Tatiana V."
+  },
+  {
+   "q": "Skvělé studio! Moderní vybavení, pozorný přístup a příjemná atmosféra.",
+   "name": "Anastasia N."
+  },
+  {
+   "q": "Neuvěřitelná kvalita procedur a tým, kvůli kterému se chcete vracet.",
+   "name": "Valeria"
+  },
+  {
+   "q": "Od první návštěvy jen ty nejlepší dojmy.",
+   "name": "Melania P."
+  },
+  {
+   "q": "Všem doporučuji! Všechny jsou skutečné profesionálky.",
+   "name": "Natalia B."
+  },
+  {
+   "q": "Předem zvolí opravdu účinnou metodu a vše podrobně vysvětlí.",
+   "name": "Evgenia"
+  },
+  {
+   "q": "10 z 10 za kvalitu i servis. Osobní přístup a skvělý výsledek.",
+   "name": "Anastasia"
+  },
+  {
+   "q": "Vysoká úroveň profesionality, zodpovědnost a vstřícnost.",
+   "name": "Yana"
+  },
+  {
+   "q": "Chloupky opravdu zmizí navždy. Útulná a přátelská atmosféra.",
+   "name": "Veronika T."
+  },
+  {
+   "q": "Nejlepší studio laserové epilace! Mám výsledek i dokonalou hladkost.",
+   "name": "Alina R."
+  },
+  {
+   "q": "Moje oblíbená klinika laserové epilace! Třetí rok a výsledek super.",
+   "name": "Anastasia K."
+  },
+  {
+   "q": "Milý a profesionální personál vše vysvětlil a rozptýlil mé pochyby.",
+   "name": "Daryna D."
+  },
+  {
+   "q": "Výsledek je opravdu skvělý. Byla jsem tak nadšená, že přijdu znovu.",
+   "name": "Lera P."
+  },
+  {
+   "q": "Neuvěřitelné místo, holky jsou profesionálky a baví je to.",
+   "name": "Kristina B."
+  },
+  {
+   "q": "Ani jednou jsem nelitovala, že jsem si vybrala tuto kliniku.",
+   "name": "Malika M."
+  },
+  {
+   "q": "Chodím sem na laserovou epilaci — výsledek je vidět na 100%. Doporučuji.",
+   "name": "Karyna K."
+  },
+  {
+   "q": "Holky skvěle poradí a pomohou vybrat správnou metodu.",
+   "name": "Svetlana"
+  },
+  {
+   "q": "Skvělé studio, výborný personál. Výsledek mě těší.",
+   "name": "Ksenia T."
+  },
+  {
+   "q": "Fantastické místo! Milé holky a všechno na špičkové úrovni.",
+   "name": "Marina P."
+  }
+ ],
+ "uk": [
+  {
+   "name": "Афіна М.",
+   "q": "Ходжу з 2023 року. Найбільше ціную чесний підхід: тут не нав’язують зайвих процедур і не розтягують курс. Якщо бачать, що на зоні лазер уже не дасть результату, чесно радять перейти на електроепіляцію."
+  },
+  {
+   "name": "Мирослава П.",
+   "q": "Робила і лазерну, і електроепіляцію. Усе пояснили заздалегідь, під час процедури регулярно питали, як я почуваюся. Після докладно розповіли про догляд і коли приходити знову."
+  },
+  {
+   "name": "Анна А.",
+   "q": "Робили електроепіляцію, працювала Наталя. Показала, що всі інструменти стерильні, усе пояснила і терпляче відповіла на мої дивні питання. Кілька разів під час процедури запитала, як я почуваюся."
+  },
+  {
+   "name": "Сабіна К.",
+   "q": "Була в трихолога Валерії. Уважно все пояснила, підібрала догляд саме для мене і розповіла, як ним користуватися. Результат помітила вже після першого застосування: волосся м’якше й живіше."
+  },
+  {
+   "name": "Маріанна П.",
+   "q": "У студії затишна атмосфера, пригощають смачною кавою. Валерія як трихолог дуже доступно й докладно пояснила мою ситуацію. Окремий плюс, що вона ще й косметолог, тому підхід комплексний."
+  },
+  {
+   "name": "Тетяна Н.",
+   "q": "Візит до трихолога Валерії: усе чітко пояснила, приділила достатньо часу і уважно оглянула волосся та шкіру голови. Отримала конкретні рекомендації, які справді виявилися корисними."
+  },
+  {
+   "name": "Лана Г.",
+   "q": "Зверталася до трихолога Валерії. Сподобалося, що все докладно розклали по полицях, заспокоїли й підібрали зрозумілий план лікування."
+  },
+  {
+   "name": "Марі Ш.",
+   "q": "Дуже сподобалася консультація з Юліанною. Не було страшно ставити запитання: усе спокійно пояснювала й відповідала на все, що мене цікавило."
+  },
+  {
+   "name": "Саб Л.",
+   "q": "Електроепіляція спочатку може бути трохи болісною, але все індивідуально. Завдяки доброзичливому підходу дівчат чекаєш на кожен наступний сеанс, а головне — на результат. Великий плюс: вечори, вихідні та свята не проблема."
+  },
+  {
+   "name": "Дар'я Д.",
+   "q": "Завдяки фахівцям майже повністю позбулася небажаного волосся на обличчі, яке дуже турбувало. Тут справді кваліфіковані майстри."
+  },
+  {
+   "name": "Ірина С.",
+   "q": "Електроепіляція проводилася акуратно, без травмування шкіри. Після процедури не було жодної реакції та видимих кірочок."
+  },
+  {
+   "name": "Тетяна К.",
+   "q": "Була моделлю на електроепіляції в майстрині Юліанни. Дуже позитивне враження: адміністраторки привітні, все стерильно, голку завжди відкривали при мені."
+  },
+  {
+   "name": "Карина К.",
+   "q": "Була на комбінованій чистці обличчя. Майстриня Валерія чудово впоралася: на другий день після процедури шкіра шовкова і здорова."
+  },
+  {
+   "name": "Мірелла Д.",
+   "q": "Відвідую клініку з 2023 року й сміливо рекомендую: якість і результат на висоті, до сервісу ніколи не було претензій. Після кожного візиту виходжу спокійною."
+  },
+  {
+   "name": "Ірина К.",
+   "q": "Завжди доброзичлива атмосфера, досвідчені майстри та індивідуальний підхід. Результат від процедур перевершив мої очікування."
+  },
+  {
+   "name": "Сандра Б.",
+   "q": "Відзначила для себе не лише результат, а й спілкування — до процедури, під час і після."
+  },
+  {
+   "name": "Аліна Т.",
+   "q": "Найкраща клініка, найкращі майстри, найкращий результат. Рекомендую всім друзям і знайомим."
+  },
+  {
+   "name": "Руслана Р.",
+   "q": "Візит до трихолога був чудовим. Ціную професійний і людяний підхід, докладну консультацію та корисні рекомендації щодо догляду за волоссям."
+  },
+  {
+   "name": "Лея Р.",
+   "q": "Приємна атмосфера і дуже доброзичливий підхід. Багато інформації та уважне ставлення — послугами задоволена."
+  },
+  {
+   "name": "Максим С.",
+   "q": "Лікар — професіонал своєї справи. Роблю все за рекомендаціями і вже бачу покращення."
+  },
+  {
+   "name": "Діана М.",
+   "q": "Приємна атмосфера й адекватна консультація трихолога."
+  },
+  {
+   "name": "Зіновія К.",
+   "q": "Усе сподобалося, майстриня чудова. Рекомендую."
+  },
+  {
+   "name": "Анна",
+   "q": "Ходжу на електроепіляцію до Наталі, дуже задоволена. Адміністраторки завжди зустрінуть, допоможуть, дадуть відповідь на всі питання. Дуже чисто й затишно, процедура завжди на найвищому рівні — починаючи зі стерильності."
+  },
+  {
+   "name": "Татьяна Ткаченко",
+   "q": "Була на прийомі у Валерії, усе дуже сподобалося. Уважно вислухала, все пояснила простою мовою, відповіла на всі питання й дала рекомендації. Було комфортно, без поспіху."
+  },
+  {
+   "name": "Yuliia Kozhevnikova",
+   "q": "Без сумнівів можу рекомендувати це місце. Чудові спеціалістки, дуже приємні люди, прекрасна атмосфера і, найголовніше, якісна робота."
+  },
+  {
+   "q": "Ви найкраща інвестиція для дівчат.",
+   "name": "Вікторія Ю."
+  },
+  {
+   "q": "Одне з найкращих місць, де я коли-небудь була.",
+   "name": "Ангеліна Г."
+  },
+  {
+   "q": "Ніхто не зробить візит настільки приємним, як вони.",
+   "name": "Тетяна В."
+  },
+  {
+   "q": "Чудова студія! Сучасне обладнання, уважне ставлення та приємна атмосфера.",
+   "name": "Анастасія Н."
+  },
+  {
+   "q": "Неймовірна якість процедур, а команда — причина повертатися знову.",
+   "name": "Валерія"
+  },
+  {
+   "q": "З першого візиту лишилися тільки приємні враження.",
+   "name": "Меланія П."
+  },
+  {
+   "q": "Усім раджу! Усі майстри — досвідчені фахівці своєї справи.",
+   "name": "Наталія Б."
+  },
+  {
+   "q": "Перед процедурою підбирають дієвий метод і пояснюють усі нюанси.",
+   "name": "Євгенія"
+  },
+  {
+   "q": "10 із 10 якість і сервіс. Персоналізований підхід і якісний результат.",
+   "name": "Анастасія"
+  },
+  {
+   "q": "Високий рівень професіоналізму, відповідальність і доброзичливість.",
+   "name": "Яна"
+  },
+  {
+   "q": "Волосся справді зникає назавжди. Атмосфера затишна й привітна.",
+   "name": "Вероніка Т."
+  },
+  {
+   "q": "Найкраща студія лазерної епіляції! Отримала бажаний результат і гладкість.",
+   "name": "Аліна Р."
+  },
+  {
+   "q": "Моя улюблена клініка лазерної епіляції! Ходжу третій рік, результат супер.",
+   "name": "Анастасія К."
+  },
+  {
+   "q": "Ввічливий і професійний персонал пояснив процедуру й розвіяв усі сумніви.",
+   "name": "Дарина Д."
+  },
+  {
+   "q": "Результат дуже класний. Я була настільки вражена, що прийду ще.",
+   "name": "Лера П."
+  },
+  {
+   "q": "Неймовірне місце, дівчата професіонали й палають своєю справою.",
+   "name": "Крістіна Б."
+  },
+  {
+   "q": "Жодного разу не пошкодувала про свій вибір цієї клініки.",
+   "name": "Маліка М."
+  },
+  {
+   "q": "Роблю лазерну епіляцію — результат видно на всі 100%. Рекомендую.",
+   "name": "Карина К."
+  },
+  {
+   "q": "Дівчата дуже грамотно консультують і допомагають обрати потрібний метод.",
+   "name": "Світлана"
+  },
+  {
+   "q": "Гарна студія, чудовий персонал. Результат мене тішить.",
+   "name": "Ксенія Т."
+  },
+  {
+   "q": "Шикарне місце! Дівчата привітні, усе на найвищому рівні.",
+   "name": "Марина П."
+  }
+ ]
 }

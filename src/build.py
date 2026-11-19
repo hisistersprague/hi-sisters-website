@@ -995,6 +995,21 @@ section{padding:50px 0}
 .pcol h3{font-size:22px;margin-bottom:12px}
 
 /* отзывы */
+.rev-car{position:relative}
+.rc-track{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;
+  scroll-behavior:smooth;padding:2px 2px 10px;scrollbar-width:none;-ms-overflow-style:none}
+.rc-track::-webkit-scrollbar{display:none}
+.rc-track .rev{flex:0 0 320px;scroll-snap-align:start;margin:0;display:flex;flex-direction:column}
+.rc-track .rev p{flex:1}
+.rc-btn{position:absolute;top:50%;transform:translateY(-50%);width:40px;height:40px;
+  border-radius:50%;border:1px solid var(--line-gold);background:#fff;color:var(--accent);
+  font-size:22px;line-height:1;cursor:pointer;display:flex;align-items:center;
+  justify-content:center;box-shadow:0 4px 14px rgba(19,11,86,.08);z-index:2}
+.rc-btn:hover{border-color:var(--accent);background:var(--rose)}
+.rc-btn[disabled]{opacity:.35;cursor:default}
+.rc-prev{left:-14px}
+.rc-next{right:-14px}
+@media(max-width:900px){.rc-btn{display:none}.rc-track .rev{flex-basis:82vw}}
 .revs{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px}
 .rev{padding:22px;background:var(--cream);border:1px solid var(--line);border-radius:12px}
 .rev p{font-size:15.5px;margin:10px 0 12px}
@@ -2147,17 +2162,42 @@ def bf_block(lang, city):
 DIR_LINK = {'epil': 'laser', 'cosm': 'cosmetology', 'electro': 'electro'}
 
 
-def reviews_block(lang, n=3, alt=False, city='prague'):
+REV_NAV = {'ru': ('Предыдущие отзывы', 'Следующие отзывы'),
+           'uk': ('Попередні відгуки', 'Наступні відгуки'),
+           'cs': ('Předchozí recenze', 'Další recenze'),
+           'en': ('Previous reviews', 'Next reviews'),
+           'es': ('Reseñas anteriores', 'Reseñas siguientes')}
+
+
+def reviews_block(lang, n=3, alt=False, city='prague', carousel=False):
+    """Отзывы: сеткой на внутренних страницах, каруселью — на главной."""
     sec = SECTIONS[lang]
-    revs = ''.join(f"""
+    items = (reviews.get(lang) or reviews['ru'])[:n]
+    cards = ''.join(f"""
+      <figure class="rev"><div class="stars">★★★★★</div><p>{e(r['q'])}</p>"""
+                    f"""<cite>{e(r['name'])} · Google</cite></figure>"""
+                    for r in items) if carousel else ''.join(f"""
       <figure class="rev"><div class="stars">★★★★★</div><p>{e(r['q'])}</p><cite>{e(r['name'])}</cite></figure>"""
-                   for r in (reviews.get(lang) or reviews['ru'])[:n])
+                    for r in items)
+    if not carousel:
+        return f"""
+<section class="rose"><div class="wrap">
+  <div class="sec-head"><h2>{e(sec['revs'])}</h2></div>
+  {trust_link(city, lang)}
+  <div class="revs">{cards}</div>
+</div></section>"""
+    prev_, next_ = REV_NAV[lang]
     return f"""
 <section class="rose"><div class="wrap">
   <div class="sec-head"><h2>{e(sec['revs'])}</h2></div>
   {trust_link(city, lang)}
-  <div class="revs">{revs}</div>
+  <div class="rev-car" data-car>
+    <button class="rc-btn rc-prev" type="button" aria-label="{e(prev_)}">‹</button>
+    <div class="rc-track">{cards}</div>
+    <button class="rc-btn rc-next" type="button" aria-label="{e(next_)}">›</button>
+  </div>
 </div></section>"""
+
 
 
 # ───────────────────────────────── главная ─────────────────────────────────
@@ -2412,7 +2452,7 @@ def build_home(lang, city):
 {team_mini(lang, city)}
 {advantages_block(lang, city)}
 {photo_band(lang, city)}
-""" + reviews_block(lang, 3, city=city)
+""" + reviews_block(lang, 24, city=city, carousel=True)
     return doc(lang, city, '', 'home', title, desc, main, schema=jld(biz_schema(lang, city)))
 
 
@@ -2634,6 +2674,28 @@ SHOP_UI = {
 }
 
 NAV_JS = """(function(){
+  var cars=[].slice.call(document.querySelectorAll('[data-car]'));
+  cars.forEach(function(car){
+    var track=car.querySelector('.rc-track');
+    var prev=car.querySelector('.rc-prev');
+    var next=car.querySelector('.rc-next');
+    if(!track||!prev||!next) return;
+    function step(){
+      var card=track.querySelector('.rev');
+      return card?card.getBoundingClientRect().width+16:320;
+    }
+    function sync(){
+      prev.disabled=track.scrollLeft<=2;
+      next.disabled=track.scrollLeft+track.clientWidth>=track.scrollWidth-2;
+    }
+    prev.addEventListener('click',function(){track.scrollLeft-=step()*2;});
+    next.addEventListener('click',function(){track.scrollLeft+=step()*2;});
+    track.addEventListener('scroll',sync,{passive:true});
+    window.addEventListener('resize',sync);
+    sync();
+  });
+})();
+(function(){
   var subs=[].slice.call(document.querySelectorAll('.has-sub'));
   subs.forEach(function(el){
     var btn=el.querySelector('.nav-x');
