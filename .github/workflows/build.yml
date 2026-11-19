@@ -1,6 +1,62 @@
 name: Пересборка сайта
 
 # Сайт собирается сам, как только меняется содержимое в src/content/.
+# Картинки лежат в assets/ в корне: их подкладываем в сборку, но заново не копируем.
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'src/**'
+      - '.github/workflows/build.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: site-build
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Собрать страницы
+        env:
+          HS_SKIP_ASSETS: '1'
+        run: |
+          cd src
+          python3 build.py
+
+      - name: Подложить картинки и проверить сборку
+        run: |
+          rsync -a assets/ src/site/assets/
+          cd src
+          python3 _check.py
+
+      - name: Разложить страницы в корень сайта
+        run: rsync -a src/site/ ./
+
+      - name: Закоммитить, если что-то изменилось
+        run: |
+          git config user.name 'hi-sisters bot'
+          git config user.email 'actions@users.noreply.github.com'
+          git add -A
+          if git diff --staged --quiet; then
+            echo 'изменений нет'
+          else
+            git commit -m 'Пересборка сайта из src/content'
+            git push
+          fi
+name: Пересборка сайта
+
+# Сайт собирается сам, как только меняется содержимое в src/content/.
 # Картинки лежат в assets/ в корне и заново не копируются.
 on:
   push:
