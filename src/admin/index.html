@@ -48,6 +48,10 @@ td input{padding:7px 9px}
 .files button.on{border-color:var(--gold);box-shadow:0 0 0 2px rgba(214,181,125,.3)}
 .files small{display:block;color:var(--muted);font-size:12px;margin-top:3px}
 .del{background:#fff;color:var(--bad);border:1px solid var(--line)}
+.crs{border:1px solid #e7e1d6;border-radius:10px;padding:12px;margin:12px 0}
+.crs>div{margin-bottom:8px}
+.chk{display:flex;align-items:center;gap:6px;font-size:14px}
+.chk input{width:auto}
 </style>
 </head>
 <body>
@@ -196,7 +200,80 @@ function render() {
   if (cur.f === 'prices.json') return prices(box);
   if (cur.f === 'reviews.json') return reviews(box);
   if (cur.f === 'shop.json') return shop(box);
+  if (cur.f === 'courses.json') return courses(box);
   raw(box);
+}
+
+/* ——— обучение: курсы, скидки, пакеты ——— */
+function courses(box) {
+  let lang = 'ru';
+  const card = document.createElement('div');
+  card.className = 'card';
+  box.appendChild(card);
+
+  function draw() {
+    const items = (cur.data.items || {})[lang] || [];
+    const visible = cur.data.visible || (cur.data.visible = []);
+    card.innerHTML = '';
+    const tabs = document.createElement('div');
+    tabs.className = 'tabs';
+    LANGS.forEach(l => {
+      const b = document.createElement('button');
+      b.textContent = LNAME[l];
+      if (l === lang) b.className = 'on';
+      b.onclick = () => { lang = l; draw(); };
+      tabs.appendChild(b);
+    });
+    card.appendChild(tabs);
+
+    const hint = document.createElement('p');
+    hint.className = 'hint';
+    hint.textContent = 'Галочка — показывать курс на сайте. «Было» зачёркивается рядом с ценой, '
+      + '«экономия» и «действует до» показываются, только если заполнены. '
+      + 'Названия и тексты у каждого языка свои, галочка и порядок — общие.';
+    card.appendChild(hint);
+
+    items.forEach(it => {
+      const w = document.createElement('div');
+      w.className = 'crs';
+      const on = visible.indexOf(it.id) >= 0;
+
+      const head = document.createElement('div');
+      head.className = 'row';
+      const cb = document.createElement('label');
+      cb.className = 'chk';
+      const inp = document.createElement('input');
+      inp.type = 'checkbox';
+      inp.checked = on;
+      inp.onchange = () => {
+        const i = visible.indexOf(it.id);
+        if (inp.checked && i < 0) visible.push(it.id);
+        if (!inp.checked && i >= 0) visible.splice(i, 1);
+      };
+      cb.appendChild(inp);
+      cb.appendChild(document.createTextNode(' на сайте'));
+      head.appendChild(cb);
+      const code = document.createElement('span');
+      code.className = 'hint';
+      code.textContent = it.id;
+      head.appendChild(code);
+      w.appendChild(head);
+
+      [['title', 'Название'], ['format', 'Формат'], ['trainer', 'Ведёт'],
+       ['desc', 'Короткое описание'], ['price', 'Цена'], ['was', 'Было'],
+       ['save', 'Экономия'], ['until', 'Действует до']].forEach(f => {
+        const d = document.createElement('div');
+        d.innerHTML = '<label>' + f[1] + '</label>';
+        const i2 = document.createElement('input');
+        i2.value = it[f[0]] === undefined ? '' : it[f[0]];
+        i2.oninput = () => { if (i2.value === '') delete it[f[0]]; else it[f[0]] = i2.value; };
+        d.appendChild(i2);
+        w.appendChild(d);
+      });
+      card.appendChild(w);
+    });
+  }
+  draw();
 }
 
 /* ——— цены ——— */

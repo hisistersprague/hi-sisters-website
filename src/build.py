@@ -1436,6 +1436,14 @@ section{padding:50px 0}
 /* текстовые страницы */
 .btn-wa{background:#fff;color:var(--ink);border:1px solid var(--line-gold)}
 .btn-wa:hover{border-color:#25D366;color:#128C4A}
+.c-save{color:var(--gold-dark);font-size:14px;letter-spacing:.03em}
+.c-meta s{color:var(--muted);font-weight:400;margin-left:6px}
+.c-packs{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.c-pack{background:#fff;border:1px solid var(--line-gold);border-radius:14px;padding:20px}
+.c-pack h4{font-family:'Cormorant Garamond',serif;font-size:21px;font-weight:600;margin:0 0 8px}
+.c-pack ul{margin:10px 0 0;padding-left:18px;font-size:15px;line-height:1.6}
+.course h3 a{color:inherit;text-decoration:none}
+.course h3 a:hover{color:var(--accent)}
 .prow-a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--line-gold)}
 .prow-a:hover{color:var(--accent);border-color:var(--accent)}
 .prow-h{background:var(--cream);font-weight:600}
@@ -1700,11 +1708,10 @@ CLIENTS_SHORT = {'ru': 'клиентов', 'uk': 'клієнток', 'cs': 'klie
 
 SOCIAL_SVG = {
  'whatsapp': '<path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2Z"/>'
-             '<path d="M8.9 7.6c.2-.4.4-.4.6-.4h.5c.2 0 .4 0 .6.5l.8 1.9c.1.2 0 .4-.1.5l-.4.5c-.1.2-.3.3-.1.6'
-             '.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.1.5.1.6-.1l.7-.8c.2-.2.4-.2.6-.1l1.8.9c.2.1.4.2.4.3'
-             '0 .2 0 .9-.3 1.3-.3.4-1.1.9-1.6.9-1.3.1-2.5-.3-4.6-1.5-2.4-1.4-3.9-4-4-4.2-.1-.2-.9-1.3-.9-2.5'
-             '0-1.2.6-1.8.8-2.1Z"/>',
- 'viber': '<path d="M12 2.5c-4.6 0-8.3 2.9-8.3 7.6 0 2.4 1 4.4 2.7 5.7v4.2l3-2c.8.2 1.7.3 2.6.3'
+             '<path d="M9 7.8c.2-.4.5-.4.7-.4h.5c.2 0 .4.1.6.5l.8 1.9c.1.2 0 .4-.1.5"/>'
+             '<path d="M11.5 10.3l-.4.5c-.2.2-.3.4-.1.6.9 1.4 2.1 2.5 3.6 3.1.3.1.5.1.7-.1"/>'
+             '<path d="M15.3 14.4l.7-.8c.2-.2.4-.2.6-.1l1.8.9c.2.1.4.2.4.4"/>',
+             'viber': '<path d="M12 2.5c-4.6 0-8.3 2.9-8.3 7.6 0 2.4 1 4.4 2.7 5.7v4.2l3-2c.8.2 1.7.3 2.6.3'
           ' 4.6 0 8.3-2.9 8.3-7.6S16.6 2.5 12 2.5Z"/>'
           '<path d="M9.2 7.9c.2-.3.4-.3.6-.3h.4c.2 0 .3 0 .5.4l.6 1.5c.1.2 0 .3-.1.4l-.3.4c-.1.1-.2.2-.1.4'
           '.2.3.6 1 1.3 1.6.9.8 1.6 1.1 1.8 1.2.2 0 .3 0 .5-.1l.5-.6c.1-.2.3-.2.5-.1l1.4.7c.1.1.3.2.3.3'
@@ -3550,6 +3557,138 @@ def build_zone(lang, city, key):
 
 
 # ──────────────────────────────── обучение ────────────────────────────────
+COURSE_UI = {
+ 'ru': {'about': 'О курсе', 'prog': 'Программа курса', 'incl': 'Что входит',
+        'trainer': 'Ведёт', 'format': 'Формат', 'price': 'Стоимость',
+        'options': 'Варианты обучения', 'save': 'экономия', 'old': 'вместо',
+        'until': 'Предложение действует до', 'back': 'Все курсы', 'other': 'Другие курсы',
+        'page': 'Страница курса'},
+ 'uk': {'about': 'Про курс', 'prog': 'Програма курсу', 'incl': 'Що входить',
+        'trainer': 'Веде', 'format': 'Формат', 'price': 'Вартість',
+        'options': 'Варіанти навчання', 'save': 'економія', 'old': 'замість',
+        'until': 'Пропозиція діє до', 'back': 'Усі курси', 'other': 'Інші курси',
+        'page': 'Сторінка курсу'},
+ 'cs': {'about': 'O kurzu', 'prog': 'Program kurzu', 'incl': 'Co je v ceně',
+        'trainer': 'Vede', 'format': 'Formát', 'price': 'Cena',
+        'options': 'Varianty kurzu', 'save': 'úspora', 'old': 'místo',
+        'until': 'Nabídka platí do', 'back': 'Všechny kurzy', 'other': 'Další kurzy',
+        'page': 'Stránka kurzu'},
+ 'en': {'about': 'About the course', 'prog': 'Course programme', 'incl': 'What is included',
+        'trainer': 'Taught by', 'format': 'Format', 'price': 'Price',
+        'options': 'Training options', 'save': 'you save', 'old': 'instead of',
+        'until': 'Offer valid until', 'back': 'All courses', 'other': 'Other courses',
+        'page': 'Course page'},
+ 'es': {'about': 'Sobre el curso', 'prog': 'Programa del curso', 'incl': 'Qué incluye',
+        'trainer': 'Imparte', 'format': 'Formato', 'price': 'Precio',
+        'options': 'Opciones de formación', 'save': 'ahorras', 'old': 'en vez de',
+        'until': 'Oferta válida hasta', 'back': 'Todos los cursos', 'other': 'Otros cursos',
+        'page': 'Página del curso'},
+}
+
+
+def course_item(cid, lang):
+    items = {i['id']: i for i in (courses['items'].get(lang) or courses['items']['ru'])}
+    return items.get(cid)
+
+
+def course_detail(cid, lang):
+    d = courses['details'].get(cid) or {}
+    return d.get(lang) or d.get('ru') or {}
+
+
+def course_price(it, lang):
+    """Цена курса: со старой ценой, экономией и сроком действия, если они заданы."""
+    u = COURSE_UI[lang]
+    now = it.get('now') or it.get('price') or ''
+    was = it.get('was')
+    out = '<b>%s</b>' % e(now)
+    if was:
+        out += ' <s>%s</s>' % e(was)
+        if it.get('save'):
+            out += ' <span class="c-save">%s %s</span>' % (e(u['save']), e(it['save']))
+    return out
+
+
+def course_packages(it, lang):
+    """Тарифные пакеты курса: у каждого своя цена и состав."""
+    u = COURSE_UI[lang]
+    pk = it.get('packages') or []
+    if not pk:
+        return ''
+    out = ''
+    for x in pk:
+        body = ''.join('<li>%s</li>' % e(y) for y in (x.get('list') or []))
+        out += ('<article class="c-pack"><h4>%s</h4><div class="c-meta">%s</div>%s%s</article>'
+                % (e(x.get('title', '')), course_price(x, lang),
+                   ('<p>%s</p>' % e(x['desc'])) if x.get('desc') else '',
+                   ('<ul>%s</ul>' % body) if body else ''))
+    return ('<section class="tint"><div class="wrap"><div class="sec-head"><h2>%s</h2></div>'
+            '<div class="c-packs">%s</div></div></section>' % (e(u['options']), out))
+
+
+def build_course(lang, city, cid):
+    """Отдельная страница курса: программа, стоимость, варианты, запись."""
+    st = studios[city]; tr = TRAIN[lang]; u = COURSE_UI[lang]
+    it = course_item(cid, lang) or {}
+    det = course_detail(cid, lang)
+    cityname = st['city'].get(lang, st['city']['en'])
+    title_ = it.get('title', '')
+    lead = det.get('lead') or it.get('desc', '')
+    img = (courses.get('images') or {}).get(cid)
+
+    prog = ''
+    for grp in det.get('groups', []):
+        if isinstance(grp, list) and len(grp) == 2:
+            prog += ('<div class="art"><h2>%s</h2><ul>%s</ul></div>'
+                     % (e(grp[0]), ''.join('<li>%s</li>' % e(x) for x in grp[1])))
+
+    facts = ''
+    for k, v in (('format', it.get('format')), ('trainer', it.get('trainer'))):
+        if v:
+            facts += '<div class="prow"><span>%s</span><span>%s</span></div>' % (e(u[k]), e(v))
+    facts += ('<div class="prow"><span>%s</span><span>%s</span></div>'
+              % (e(u['price']), course_price(it, lang)))
+    if it.get('until'):
+        facts += ('<div class="prow"><span>%s</span><span>%s</span></div>'
+                  % (e(u['until']), e(it['until'])))
+
+    others = ''.join('<a href="/%s/%s/%s%s/">%s</a>'
+                     % (lang, city, REL['training'], x, e((course_item(x, lang) or {}).get('title', '')))
+                     for x in (courses.get('visible') or []) if x != cid and course_item(x, lang))
+
+    main = f"""
+<section class="hero hero-sm"><div class="wrap">
+  <div class="kicker"><a href="/{lang}/{city}/{REL['training']}">{e(tr['kicker'])}</a> · {e(cityname)}</div>
+  <h1>{e(title_)}</h1>
+  <p class="lead">{e(lead)}</p>
+  <div class="cta-row">
+    <a class="btn btn-gold" href="{book_href(lang, city)}" data-book>{e(tr['cta'])}</a>
+    {wa_btn(lang, city, title_)}
+  </div>
+</div></section>
+
+<section class="tint"><div class="wrap">
+  <div class="ptable">{facts}</div>
+</div></section>
+
+{'<section><div class="wrap arts">' + prog + '</div></section>' if prog else ''}
+{course_packages(it, lang)}
+<section class="alt"><div class="wrap">
+  <div class="sec-head"><h2>{e(u['other'])}</h2></div>
+  <div class="more-list">{others}<a href="/{lang}/{city}/{REL['training']}">{e(u['back'])}</a></div>
+</div></section>
+"""
+    rel = REL['training'] + cid + '/'
+    sch = (crumbs(lang, city, [(tr['h1'], REL['training']), (title_, rel)])
+           + jld({'@context': 'https://schema.org', '@type': 'Course', 'name': title_,
+                  'description': lead,
+                  'provider': {'@type': 'Organization', 'name': 'Hi Sisters Clinic',
+                               'url': BASE}}))
+    return doc(lang, city, rel, 'training',
+               '%s — %s, Hi Sisters Clinic' % (title_, cityname), (lead or '')[:300],
+               main, cta=tr['cta'], schema=sch)
+
+
 def build_training(lang, city):
     st = studios[city]; tr = TRAIN[lang]
     cityname = st['city'].get(lang, st['city']['en'])
@@ -3570,11 +3709,14 @@ def build_training(lang, city):
         body = (('<p class="c-lead">%s</p>' % e(det['lead'])) if det.get('lead') else '') + prog
         cards += f"""
       <article class="course">
-        <h3>{e(it.get('title',''))}</h3>
-        <div class="c-meta"><span>{e(it.get('format',''))}</span><b>{e(it.get('price',''))}</b></div>
+        <h3><a href="/{lang}/{city}/{REL['training']}{cid}/">{e(it.get('title',''))}</a></h3>
+        <div class="c-meta"><span>{e(it.get('format',''))}</span>{course_price(it, lang)}</div>
         {'<p class="c-desc">' + e(it.get('desc','')) + '</p>' if it.get('desc') else ''}
         {'<details><summary>' + e(ui_prog) + '</summary><div class="c-prog">' + body + '</div></details>' if body else ''}
-        <a class="btn btn-sm" href="{book_href(lang, city)}" data-book>{e(tr['cta'])}</a>
+        <div class="more-list">
+          <a href="{book_href(lang, city)}" data-book>{e(tr['cta'])}</a>
+          <a href="/{lang}/{city}/{REL['training']}{cid}/">{e(COURSE_UI[lang]['page'])}</a>
+        </div>
       </article>"""
 
     main = f"""
@@ -3773,6 +3915,13 @@ if __name__ == '__main__':
                 write(os.path.join(d, key, 'index.html'), build_service(lang, city, key))
                 pages.append('/%s/%s/%s/' % (lang, city, key))
                 seo_pages.append((lang, city, key + '/'))
+            for cid_ in (courses.get('visible') or []):
+                if not course_item(cid_, lang):
+                    continue
+                write(os.path.join(d, REL['training'], cid_, 'index.html'),
+                      build_course(lang, city, cid_))
+                pages.append('/%s/%s/%s%s/' % (lang, city, REL['training'], cid_))
+                seo_pages.append((lang, city, REL['training'] + cid_ + '/'))
             for it_ in PROC_ITEMS:
                 k_ = it_['service']
                 svc_ = services.get(k_) or {}
