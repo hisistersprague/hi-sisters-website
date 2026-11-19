@@ -566,7 +566,12 @@ def row_label(group, i, r, city, lang, link=None):
     it = PROC_BY_ROW.get((group, i))
     if not link or not it or not (it.get('title') or {}).get(lang):
         return t
-    href = ('#p-' + it['slug']) if link == 'anchor' else '/%s/%s/%s' % (lang, city, proc_rel(it))
+    if link == 'anchor':
+        href = '#p-' + it['slug']
+    else:
+        if not any(x['slug'] == it['slug'] for x in proc_list(it['service'], city, lang)):
+            return t
+        href = '/%s/%s/%s' % (lang, city, proc_rel(it))
     return '<a class="prow-a" href="%s">%s</a>' % (href, t)
 
 
@@ -649,7 +654,7 @@ def proc_price_tables(key, city, lang):
         if not rest:
             continue
         body = ''.join('<div class="prow"><span>%s</span><span>%s</span></div>'
-                       % (row_label(g, i, r, city, lang, 'anchor'), e(row_val(r, city)))
+                       % (row_label(g, i, r, city, lang, 'page'), e(row_val(r, city)))
                        for i, r in rest)
         out += ('<h3 class="ptab-h">%s</h3><div class="ptable">%s</div>'
                 % (e((PGROUP_TITLE.get(g) or {}).get(lang, g)), body))
@@ -700,10 +705,12 @@ def proc_blocks(key, city, lang):
             out += ('<div class="proc" id="p-%s"><h2>%s</h2>'
                     '<p class="proc-meta">%s</p><p class="lead">%s</p>%s'
                     '<div class="more-list"><a href="%s" data-book>%s</a>'
+                    '<a href="%s" target="_blank" rel="noopener" data-wa>%s</a>'
                     '<a href="/%s/%s/%s">%s</a></div></div>'
                     % (it['slug'], e(it['title'][lang]), e(proc_meta(it, city, lang)),
                        e((it.get('lead') or {}).get(lang, '')), proc_body(it, lang),
                        book_href(lang, city), e(HERO[lang]['cta']),
+                       wa_book(lang, city, it['title'][lang]), e(WA_BOOK[lang]['btn']),
                        lang, city, proc_rel(it), e(u['own'])))
     return ('<section class="alt"><div class="wrap arts">'
             '<div class="sec-head"><h2>%s</h2></div>%s</div></section>'
@@ -1413,6 +1420,8 @@ section{padding:50px 0}
 .alt .note{background:var(--cream)}
 
 /* текстовые страницы */
+.btn-wa{background:#fff;color:var(--ink);border:1px solid var(--line-gold)}
+.btn-wa:hover{border-color:#25D366;color:#128C4A}
 .prow-a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--line-gold)}
 .prow-a:hover{color:var(--accent);border-color:var(--accent)}
 .prow-h{background:var(--cream);font-weight:600}
@@ -2851,6 +2860,36 @@ def order_href(city, lang, product, pre=False):
     return 'https://wa.me/%s?text=%s' % (phone, quote(text))
 
 
+# ───────── запись через WhatsApp: текст подставляется сам ─────────
+# Формулировки по ТЗ: сообщение зависит от языка, а на страницах услуг
+# в него подставляются название процедуры и город.
+WA_BOOK = {
+ 'ru': {'btn': 'Написать в WhatsApp', 'msg': 'Здравствуйте! Хочу записаться на процедуру.',
+        'ctx': 'Здравствуйте! Хочу записаться: {p}. Город: {c}.'},
+ 'uk': {'btn': 'Написати у WhatsApp', 'msg': 'Добрий день! Хочу записатися на процедуру.',
+        'ctx': 'Добрий день! Хочу записатися: {p}. Місто: {c}.'},
+ 'cs': {'btn': 'Napsat na WhatsApp', 'msg': 'Dobrý den! Chtěla bych se objednat na proceduru.',
+        'ctx': 'Dobrý den! Chtěla bych se objednat: {p}. Město: {c}.'},
+ 'en': {'btn': 'Message on WhatsApp', 'msg': 'Hello! I would like to book a treatment.',
+        'ctx': 'Hello! I would like to book: {p}. City: {c}.'},
+ 'es': {'btn': 'Escribir por WhatsApp', 'msg': '¡Hola! Quiero pedir una cita para un tratamiento.',
+        'ctx': '¡Hola! Quiero pedir una cita: {p}. Ciudad: {c}.'},
+}
+
+
+def wa_book(lang, city, what=None):
+    """Ссылка на WhatsApp с готовым текстом; если известна процедура — с её названием."""
+    w = WA_BOOK[lang]
+    cityname = studios[city]['city'].get(lang, studios[city]['city']['en'])
+    text = w['ctx'].format(p=what, c=cityname) if what else w['msg']
+    return 'https://wa.me/%s?text=%s' % (re.sub(r'[^0-9]', '', studios[city]['phone']), quote(text))
+
+
+def wa_btn(lang, city, what=None):
+    return ('<a class="btn btn-wa" href="%s" target="_blank" rel="noopener" data-wa>%s</a>'
+            % (wa_book(lang, city, what), e(WA_BOOK[lang]['btn'])))
+
+
 def wa_base(city):
     return 'https://wa.me/%s' % re.sub(r'[^0-9]', '', studios[city]['phone'])
 
@@ -3321,6 +3360,7 @@ def build_service(lang, city, key):
   <p class="lead">{e(pg.get('intro') or card['desc'])}</p>
   <div class="cta-row">
     <a class="btn btn-gold" href="{book_href(lang, city)}" data-book>{e(h['cta'])}</a>
+    {wa_btn(lang, city, pg.get('title') or card['title'])}
     {'<span class="fact"><b>' + e(price) + '</b></span>' if price else ''}
     <span class="free">{e(h['free'])}</span>
   </div>
@@ -3391,6 +3431,7 @@ def build_proc(lang, city, it):
   <p class="lead">{e(lead)}</p>
   <div class="cta-row">
     <a class="btn btn-gold" href="{book_href(lang, city)}" data-book>{e(h['cta'])}</a>
+    {wa_btn(lang, city, title_)}
     {'<span class="fact"><b>' + e(proc_meta(it, city, lang)) + '</b></span>' if proc_meta(it, city, lang) else ''}
     <span class="free">{e(h['free'])}</span>
   </div>
