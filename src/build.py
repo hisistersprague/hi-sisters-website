@@ -560,10 +560,24 @@ def price_rows(group, city, lang, limit=None, order=True, link=None):
                    for i, r in rr)
 
 
+def zone_for(group, i, city):
+    """Зона лазера для строки прайса — у зоны есть своя страница."""
+    if group != ZONE_GROUP.get(city):
+        return None
+    for zk, z in zones.items():
+        if i in (z['rows'].get(city) or []):
+            return zk
+    return None
+
+
 def row_label(group, i, r, city, lang, link=None):
     """Название строки прайса: ссылкой, если у процедуры есть описание."""
     t = e(r['label'])
     it = PROC_BY_ROW.get((group, i))
+    if link and not it:
+        zk = zone_for(group, i, city)
+        if zk:
+            return '<a class="prow-a" href="/%s/%s/laser/%s/">%s</a>' % (lang, city, zk, t)
     if not link or not it or not (it.get('title') or {}).get(lang):
         return t
     if link == 'anchor':
@@ -3315,7 +3329,8 @@ def build_service(lang, city, key):
         # названия ведут к описанию ниже на странице
         extra = proc_price_tables(key, city, lang)
     else:
-        ptab = price_rows(SERVICE_GROUP.get(city, {}).get(key, ''), city, lang, order=False)
+        ptab = price_rows(SERVICE_GROUP.get(city, {}).get(key, ''), city, lang,
+                          order=False, link='page')
         for xg in (SERVICE_EXTRA.get(key) or []):
             if xg in LANG_SKIP.get(lang, set()):
                 continue

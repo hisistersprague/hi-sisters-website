@@ -34,39 +34,105 @@
     "intro": "Лазерная эпиляция — наиболее эффективный метод для тёмных и густых волос. Диодный лазер точечно воздействует на меланин, разрушает фолликул тепловой энергией.",
     "sections": [
      {
-      "h": "Как это работает?",
-      "p": "Лазерный луч поглощается меланином. Тепловая энергия разрушает фолликул, предотвращая дальнейший рост."
+      "title": "Как работает лазер",
+      "paras": [
+       "Лазерный луч поглощается меланином — пигментом внутри волоса. Энергия превращается в тепло и повреждает волосяной фолликул. Чем темнее и толще волос, тем больше в нём меланина и тем лучше работает метод.",
+       "Важная деталь, от которой зависит весь курс: лазер действует только на волосы в активной фазе роста. В любой момент времени в такой фазе находится лишь часть волос в зоне — остальные «спят» и на этом сеансе не отреагируют. Поэтому одной процедурой задача не решается в принципе, и дело не в аппарате."
+      ]
      },
      {
-      "h": "Кому подходит?",
-      "p": "Лучше всего для тёмных волос на светлой коже. Для светлых, рыжих или седых волос рекомендуем электроэпиляцию."
+      "title": "Кому подходит",
+      "p": "Лучше всего метод работает на тёмных волосах. Для светлых, рыжих и седых волос меланина не хватает — там эффективнее электроэпиляция, и мы скажем об этом прямо, а не продадим курс, который не сработает.",
+      "list": [
+       "тёмные волосы на теле: подмышки, бикини, ноги, руки, спина, грудь",
+       "вросшие волосы и раздражение после бритья",
+       "мужские зоны: спина, грудь, плечи, шея, живот",
+       "женское лицо мы лазером не делаем — на нём волосы чаще связаны с гормональным фоном, и лазер может дать обратный эффект; для лица предлагаем электроэпиляцию"
+      ]
      },
      {
-      "h": "Как проходит сеанс?",
-      "p": "15–60 минут в зависимости от зоны. Ощущения — лёгкий щелчок. Рекомендуем 6–10 сеансов с интервалом 4–8 недель."
+      "title": "Как проходит сеанс",
+      "steps": [
+       "осмотр зоны, проверка противопоказаний, выбор параметров под тип кожи и волос",
+       "защитные очки, нанесение геля",
+       "проход аппаратом по зоне: ощущение — короткий горячий щелчок, охлаждение насадки его смягчает",
+       "успокаивающее средство после процедуры",
+       "15–60 минут в зависимости от зоны"
+      ]
      },
      {
-      "h": "Подготовка и уход",
-      "p": "За день до процедуры брейте зону. Избегайте загара за 2 недели до и после. После сеанса нанесите успокаивающий крем."
+      "title": "Как строится курс",
+      "paras": [
+       "Мы работаем на результат, а не на бесконечные поддерживающие процедуры. Курс строится так, чтобы попасть в фазы роста разных групп волос: первые сеансы идут с интервалом около 4–6 недель, затем интервал увеличивается — 8, 10, 12 недель и больше.",
+       "Увеличение интервала — не затягивание курса, а его логика: чем меньше волос остаётся, тем дольше нужно ждать, пока оставшиеся войдут в активную фазу. Приходить раньше смысла нет: сеанс будет почти вхолостую.",
+       "Сколько всего понадобится сеансов, заранее точно не скажет никто. У большинства заметное прореживание начинается после 2–3 процедур, а курс занимает 6–10 сеансов и больше — это зависит от зоны, гормонального фона, плотности и цвета волос. Мы не обещаем «полное удаление за 6 сеансов»: такое обещание невозможно выполнить честно."
+      ],
+      "note": "После курса у части клиенток волосы возвращаются частично — обычно на фоне гормональных изменений: беременности, отмены или начала приёма препаратов, заболеваний щитовидной железы. Это не ошибка курса, а свойство организма; в таких случаях нужны единичные поддерживающие сеансы."
+     },
+     {
+      "title": "Подготовка",
+      "list": [
+       "побрить зону за 12–24 часа до сеанса: волос должен быть в фолликуле, но не над кожей",
+       "за 2 недели — без загара, солярия и автозагара",
+       "за 2–4 недели не выщипывать, не делать воск и шугаринг: фолликул должен быть на месте",
+       "в день процедуры не наносить на зону кремы, дезодорант и масла",
+       "предупредить мастера о приёме лекарств: часть препаратов повышает светочувствительность"
+      ]
+     },
+     {
+      "title": "Уход после",
+      "list": [
+       "покраснение и небольшая отёчность вокруг фолликулов — нормальная реакция, проходит за несколько часов",
+       "1–2 дня без сауны, бани, бассейна и горячей ванны",
+       "2 недели без солнца и солярия, SPF на открытых зонах обязателен",
+       "не тереть зону мочалкой и скрабом 3–4 дня",
+       "через 1–2 недели волосы начнут выпадать: это ожидаемо, помогает мягкий скраб",
+       "дезодорант после подмышек — на следующий день"
+      ]
+     },
+     {
+      "title": "Противопоказания",
+      "list": [
+       "беременность и грудное вскармливание",
+       "свежий загар, в том числе автозагар",
+       "онкологические заболевания, эпилепсия",
+       "повреждения, воспаления и высыпания в зоне обработки",
+       "приём препаратов, повышающих светочувствительность, включая изотретиноин",
+       "родинки и татуировки в зоне: их обходим",
+       "герпес в активной фазе при обработке зоны лица и бикини"
+      ],
+      "note": "Полный список мастер проверяет на осмотре перед первым сеансом — это бесплатно."
      }
     ],
     "faqTitle": "Часто задаваемые вопросы",
     "faq": [
      {
       "q": "Больно ли делать лазерную эпиляцию?",
-      "a": "Ощущения — лёгкий щелчок. Современные аппараты с охлаждением значительно снижают дискомфорт."
+      "a": "Ощущение похоже на короткий горячий щелчок. Охлаждение насадки заметно его смягчает. Чувствительнее всего зоны с тонкой кожей — бикини и подмышки; в первые сеансы ощутимее, дальше легче, потому что волос становится меньше."
      },
      {
       "q": "Сколько сеансов нужно?",
-      "a": "В среднем 6–10 сеансов в зависимости от зоны и волос."
+      "a": "Обычно 6–10, иногда больше. Точное число заранее не назовёт никто честно: лазер работает только по волосам в активной фазе роста, а их доля у всех разная. Прореживание обычно видно уже после 2–3 сеансов."
      },
      {
-      "q": "Как долго держится результат?",
-      "a": "После полного курса результат постоянный. При гормональных изменениях может понадобиться коррекция."
+      "q": "Почему интервалы между сеансами увеличиваются?",
+      "a": "Потому что с каждым разом остаётся меньше волос, и нужно больше времени, чтобы оставшиеся вошли в активную фазу. Если прийти раньше срока, сеанс пройдёт почти впустую."
      },
      {
-      "q": "Когда появятся первые результаты?",
-      "a": "После 2–3 сеансов значительное прореживание. После курса — до 90% постоянного удаления."
+      "q": "Результат навсегда?",
+      "a": "Обработанный фолликул не восстанавливается. Но в коже есть фолликулы, которые на момент курса были неактивны, и их может «включить» гормональный фон — беременность, щитовидная железа, препараты. Тогда нужны единичные поддерживающие сеансы, а не новый курс."
+     },
+     {
+      "q": "Делаете ли вы лазерную эпиляцию женского лица?",
+      "a": "Нет. Волосы на женском лице чаще связаны с гормональным фоном, и лазер в этой зоне может дать усиление роста. Для лица мы предлагаем электроэпиляцию — она работает с каждым волосом отдельно."
+     },
+     {
+      "q": "Можно ли делать летом?",
+      "a": "Можно, если зона закрыта одеждой и вы не загораете. На открытые участки — ноги, руки, плечи — летом нужен SPF и отказ от загара за две недели до и после сеанса."
+     },
+     {
+      "q": "Что делать с вросшими волосами?",
+      "a": "Обычно они уходят вместе с курсом: волос перестаёт расти — нечему врастать. В начале курса помогает мягкий скраб и отказ от бритвы между сеансами в пользу машинки."
      }
     ],
     "priceGroups": [],
@@ -77,35 +143,105 @@
     "intro": "Лазерна епіляція — найефективніший метод для темного волосся. Діодний лазер руйнує фолікул тепловою енергією.",
     "sections": [
      {
-      "h": "Як це працює?",
-      "p": "Лазерний промінь поглинається меланіном. Теплова енергія руйнує фолікул."
+      "title": "Як працює лазер",
+      "paras": [
+       "Лазерний промінь поглинається меланіном — пігментом усередині волосини. Енергія перетворюється на тепло і пошкоджує волосяний фолікул. Чим темніша і товща волосина, тим більше в ній меланіну і тим краще працює метод.",
+       "Важлива деталь, від якої залежить увесь курс: лазер діє лише на волосся в активній фазі росту. У будь-який момент у такій фазі перебуває лише частина волосся в зоні — решта «спить» і на цьому сеансі не відреагує. Тому однією процедурою задача не вирішується в принципі, і річ не в апараті."
+      ]
      },
      {
-      "h": "Кому підходить?",
-      "p": "Найкраще для темного волосся та світлої шкіри. Для світлого волосся — електроепіляція."
+      "title": "Кому підходить",
+      "p": "Найкраще метод працює на темному волоссі. Для світлого, рудого й сивого меланіну не вистачає — там ефективніша електроепіляція, і ми скажемо про це прямо, а не продамо курс, який не спрацює.",
+      "list": [
+       "темне волосся на тілі: пахви, бікіні, ноги, руки, спина, груди",
+       "врослі волосини й подразнення після гоління",
+       "чоловічі зони: спина, груди, плечі, шия, живіт",
+       "жіноче обличчя ми лазером не робимо — там волосся частіше пов’язане з гормональним фоном, і лазер може дати зворотний ефект; для обличчя пропонуємо електроепіляцію"
+      ]
      },
      {
-      "h": "Як проходить сеанс?",
-      "p": "15–60 хвилин залежно від зони. Відчуття — легке клацання. 6–10 сеансів з інтервалом 4–8 тижнів."
+      "title": "Як проходить сеанс",
+      "steps": [
+       "огляд зони, перевірка протипоказань, вибір параметрів під тип шкіри та волосся",
+       "захисні окуляри, нанесення гелю",
+       "прохід апаратом по зоні: відчуття — короткий гарячий щиглик, охолодження насадки його пом’якшує",
+       "заспокійливий засіб після процедури",
+       "15–60 хвилин залежно від зони"
+      ]
      },
      {
-      "h": "Підготовка",
-      "p": "Напередодні за день поголіть зону. Уникайте засмаги 2 тижні до і після."
+      "title": "Як будується курс",
+      "paras": [
+       "Ми працюємо на результат, а не на безкінечні підтримувальні процедури. Курс будується так, щоб потрапити у фази росту різних груп волосся: перші сеанси йдуть з інтервалом близько 4–6 тижнів, далі інтервал збільшується — 8, 10, 12 тижнів і більше.",
+       "Збільшення інтервалу — не затягування курсу, а його логіка: чим менше волосся залишається, тим довше треба чекати, поки решта увійде в активну фазу. Приходити раніше сенсу немає: сеанс буде майже вхолосту.",
+       "Скільки всього знадобиться сеансів, заздалегідь точно не скаже ніхто. У більшості помітне прорідження починається після 2–3 процедур, а курс займає 6–10 сеансів і більше — це залежить від зони, гормонального фону, щільності й кольору волосся. Ми не обіцяємо «повне видалення за 6 сеансів»: таку обіцянку неможливо виконати чесно."
+      ],
+      "note": "Після курсу в частини клієнток волосся повертається частково — зазвичай на тлі гормональних змін: вагітності, відміни чи початку прийому препаратів, захворювань щитоподібної залози. Це не помилка курсу, а властивість організму; у таких випадках потрібні поодинокі підтримувальні сеанси."
+     },
+     {
+      "title": "Підготовка",
+      "list": [
+       "поголити зону за 12–24 години до сеансу: волосина має бути у фолікулі, але не над шкірою",
+       "за 2 тижні — без засмаги, солярію та автозасмаги",
+       "за 2–4 тижні не висмикувати, не робити віск і шугаринг: фолікул має бути на місці",
+       "у день процедури не наносити на зону креми, дезодорант і олії",
+       "попередити майстра про прийом ліків: частина препаратів підвищує світлочутливість"
+      ]
+     },
+     {
+      "title": "Догляд після",
+      "list": [
+       "почервоніння й невелика набряклість навколо фолікулів — нормальна реакція, минає за кілька годин",
+       "1–2 дні без сауни, лазні, басейну й гарячої ванни",
+       "2 тижні без сонця й солярію, SPF на відкритих зонах обов’язковий",
+       "не терти зону мочалкою і скрабом 3–4 дні",
+       "через 1–2 тижні волосся почне випадати: це очікувано, допомагає м’який скраб",
+       "дезодорант після пахв — наступного дня"
+      ]
+     },
+     {
+      "title": "Протипоказання",
+      "list": [
+       "вагітність і грудне вигодовування",
+       "свіжа засмага, зокрема автозасмага",
+       "онкологічні захворювання, епілепсія",
+       "пошкодження, запалення та висипання в зоні обробки",
+       "прийом препаратів, що підвищують світлочутливість, включно з ізотретиноїном",
+       "родимки й татуювання в зоні: їх обходимо",
+       "герпес в активній фазі при обробці зони обличчя і бікіні"
+      ],
+      "note": "Повний список майстер перевіряє на огляді перед першим сеансом — це безкоштовно."
      }
     ],
     "faqTitle": "Часті запитання",
     "faq": [
      {
-      "q": "Чи боляче?",
-      "a": "Відчуття — легке клацання. Апарати мають охолодження, яке значно знижує дискомфорт."
+      "q": "Чи боляче робити лазерну епіляцію?",
+      "a": "Відчуття схоже на короткий гарячий щиглик. Охолодження насадки помітно його пом’якшує. Найчутливіші зони з тонкою шкірою — бікіні та пахви; у перші сеанси відчутніше, далі легше, бо волосся стає менше."
      },
      {
       "q": "Скільки сеансів потрібно?",
-      "a": "В середньому 6–10 сеансів."
+      "a": "Зазвичай 6–10, іноді більше. Точне число заздалегідь чесно не назве ніхто: лазер працює лише по волоссю в активній фазі росту, а його частка у всіх різна. Прорідження зазвичай видно вже після 2–3 сеансів."
      },
      {
-      "q": "Коли з’являться перші результати?",
-      "a": "Після 2–3 сеансів значне прорідження. Після курсу — до 90%."
+      "q": "Чому інтервали між сеансами збільшуються?",
+      "a": "Бо щоразу залишається менше волосся, і потрібно більше часу, щоб решта увійшла в активну фазу. Якщо прийти раніше строку, сеанс пройде майже даремно."
+     },
+     {
+      "q": "Результат назавжди?",
+      "a": "Оброблений фолікул не відновлюється. Але в шкірі є фолікули, які на момент курсу були неактивні, і їх може «увімкнути» гормональний фон — вагітність, щитоподібна залоза, препарати. Тоді потрібні поодинокі підтримувальні сеанси, а не новий курс."
+     },
+     {
+      "q": "Чи робите ви лазерну епіляцію жіночого обличчя?",
+      "a": "Ні. Волосся на жіночому обличчі частіше пов’язане з гормональним фоном, і лазер у цій зоні може дати посилення росту. Для обличчя ми пропонуємо електроепіляцію — вона працює з кожною волосиною окремо."
+     },
+     {
+      "q": "Чи можна робити влітку?",
+      "a": "Можна, якщо зона закрита одягом і ви не засмагаєте. На відкриті ділянки — ноги, руки, плечі — влітку потрібен SPF і відмова від засмаги за два тижні до та після сеансу."
+     },
+     {
+      "q": "Що робити з врослими волосинами?",
+      "a": "Зазвичай вони зникають разом із курсом: волосина перестає рости — немає чому вростати. На початку курсу допомагає м’який скраб і відмова від бритви між сеансами на користь машинки."
      }
     ],
     "priceGroups": [],
@@ -116,39 +252,105 @@
     "intro": "Laser epilation is the most effective method for permanent removal of dark hair. The diode laser targets melanin, destroys the follicle with thermal energy without damaging surrounding skin.",
     "sections": [
      {
-      "h": "How does it work?",
-      "p": "The laser beam is absorbed by melanin in the hair. Thermal energy destroys the follicle, preventing further growth."
+      "title": "How the laser works",
+      "paras": [
+       "The laser beam is absorbed by melanin, the pigment inside the hair. That energy turns into heat and damages the follicle. The darker and thicker the hair, the more melanin it holds and the better the method works.",
+       "One detail shapes the whole course: the laser only acts on hairs in the active growth phase. At any given moment only part of the hair in an area is in that phase — the rest is dormant and will not respond at that session. So a single treatment cannot solve the task in principle, and that has nothing to do with the device."
+      ]
      },
      {
-      "h": "Who is it for?",
-      "p": "Ideal for dark hair on light skin. For light, red or grey hair we recommend electro-epilation."
+      "title": "Who it suits",
+      "p": "The method works best on dark hair. Blond, red and grey hair does not hold enough melanin — electrolysis is more effective there, and we will say so plainly rather than sell a course that will not work.",
+      "list": [
+       "dark body hair: underarms, bikini, legs, arms, back, chest",
+       "ingrown hairs and irritation from shaving",
+       "men's areas: back, chest, shoulders, neck, abdomen",
+       "we do not laser a woman's face — facial hair in women is more often hormone-driven and the laser can stimulate growth there; for the face we offer electrolysis"
+      ]
      },
      {
-      "h": "Session overview",
-      "p": "15–60 minutes depending on the zone. Feels like a rubber band snap. We recommend 6–10 sessions with 4–8 week intervals."
+      "title": "How a session goes",
+      "steps": [
+       "checking the area and contraindications, setting parameters for your skin and hair",
+       "protective goggles, applying gel",
+       "passing the handpiece over the area: it feels like a short hot flick, the cooled tip softens it",
+       "a soothing product afterwards",
+       "15–60 minutes depending on the area"
+      ]
      },
      {
-      "h": "Preparation & aftercare",
-      "p": "Shave the zone the day before. Avoid sun 2 weeks before and after. Apply soothing cream after each session."
+      "title": "How the course is built",
+      "paras": [
+       "We work towards a result, not towards endless maintenance sessions. The course is spaced to catch different groups of hair in their growth phase: the first sessions are about 4–6 weeks apart, then the interval grows — 8, 10, 12 weeks and more.",
+       "A longer interval is not us stretching the course; it is the logic of it. The fewer hairs remain, the longer it takes for the rest to enter the active phase. Coming earlier is pointless: the session would largely be wasted.",
+       "No one can honestly tell you the exact number of sessions in advance. Most people see visible thinning after 2–3 treatments, and a course runs 6–10 sessions or more, depending on the area, hormones, hair density and colour. We do not promise complete removal in six sessions, because that promise cannot be kept honestly."
+      ],
+      "note": "After a course some clients see hair partly return, usually alongside hormonal change: pregnancy, starting or stopping medication, thyroid conditions. That is not a failure of the course but how the body works; in those cases single maintenance sessions are enough."
+     },
+     {
+      "title": "How to prepare",
+      "list": [
+       "shave the area 12–24 hours before: the hair should be in the follicle, not above the skin",
+       "no sun, sunbeds or fake tan for two weeks beforehand",
+       "no plucking, waxing or sugaring for 2–4 weeks: the follicle has to be there",
+       "no creams, deodorant or oils on the area on the day",
+       "tell us about your medication: some drugs increase light sensitivity"
+      ]
+     },
+     {
+      "title": "Aftercare",
+      "list": [
+       "redness and slight swelling around the follicles is a normal reaction and settles within hours",
+       "no sauna, pool or hot bath for 1–2 days",
+       "no sun or sunbeds for two weeks; SPF on exposed areas is a must",
+       "do not scrub the area with a washcloth or exfoliant for 3–4 days",
+       "after 1–2 weeks the hairs start to shed: that is expected, a gentle scrub helps",
+       "deodorant after underarms — from the next day"
+      ]
+     },
+     {
+      "title": "Contraindications",
+      "list": [
+       "pregnancy and breastfeeding",
+       "a fresh tan, including fake tan",
+       "cancer, epilepsy",
+       "wounds, inflammation or breakouts in the treated area",
+       "medication that increases light sensitivity, including isotretinoin",
+       "moles and tattoos in the area: we work around them",
+       "active herpes when treating the face or bikini"
+      ],
+      "note": "The full list is checked at the consultation before your first session — that consultation is free."
      }
     ],
     "faqTitle": "FAQ",
     "faq": [
      {
-      "q": "Does laser epilation hurt?",
-      "a": "The sensation is like a rubber band snap. Modern devices have cooling that significantly reduces discomfort."
+      "q": "Does laser hair removal hurt?",
+      "a": "It feels like a short hot flick. The cooled tip softens it noticeably. The most sensitive areas are those with thin skin — bikini and underarms; the first sessions are sharper, then it gets easier as there is less hair."
      },
      {
-      "q": "How many sessions do I need?",
-      "a": "On average 6–10 sessions depending on the zone and hair type."
+      "q": "How many sessions will I need?",
+      "a": "Usually 6–10, sometimes more. Nobody can give you an exact number honestly in advance: the laser only works on hair in the active growth phase, and that share differs from person to person. Thinning is usually visible after 2–3 sessions."
      },
      {
-      "q": "How long do results last?",
-      "a": "After completing the course results are permanent. Hormonal changes may require one correction session."
+      "q": "Why do the intervals between sessions get longer?",
+      "a": "Because each time there is less hair left, and the remaining hairs need more time to enter the active phase. Coming in early means the session is largely wasted."
      },
      {
-      "q": "When will I see first results?",
-      "a": "After 2–3 sessions significant reduction. After the full course — up to 90% permanent removal."
+      "q": "Is the result permanent?",
+      "a": "A treated follicle does not recover. But the skin holds follicles that were dormant during the course, and hormones can switch them on — pregnancy, thyroid, medication. Then single maintenance sessions are enough, not a new course."
+     },
+     {
+      "q": "Do you treat a woman's face with laser?",
+      "a": "No. Facial hair in women is more often hormone-driven, and the laser can stimulate growth in that area. For the face we offer electrolysis, which treats each hair individually."
+     },
+     {
+      "q": "Can it be done in summer?",
+      "a": "Yes, if the area is covered by clothing and you are not tanning. For exposed areas — legs, arms, shoulders — summer means SPF and no tanning for two weeks before and after a session."
+     },
+     {
+      "q": "What about ingrown hairs?",
+      "a": "They usually go along with the course: the hair stops growing, so there is nothing to grow in. Early in the course a gentle scrub helps, as does swapping the razor for a trimmer between sessions."
      }
     ],
     "priceGroups": [],
@@ -159,39 +361,105 @@
     "intro": "La depilación láser es el método más eficaz para la eliminación permanente del vello oscuro. El láser de diodo actúa con precisión sobre la melanina sin dañar la piel circundante.",
     "sections": [
      {
-      "h": "¿Cómo funciona?",
-      "p": "El haz de láser es absorbido por la melanina. La energía térmica destruye el folículo, previniendo el crecimiento futuro."
+      "title": "Cómo funciona el láser",
+      "paras": [
+       "El haz del láser lo absorbe la melanina, el pigmento del interior del vello. Esa energía se convierte en calor y daña el folículo. Cuanto más oscuro y grueso es el vello, más melanina tiene y mejor funciona el método.",
+       "Un detalle marca toda la pauta: el láser solo actúa sobre el vello en fase activa de crecimiento. En cada momento solo una parte del vello de la zona está en esa fase; el resto está en reposo y no responderá ese día. Por eso una sola sesión no resuelve el problema, y no es cuestión del aparato."
+      ]
      },
      {
-      "h": "¿Para quién es?",
-      "p": "Ideal para vello oscuro y piel clara. Para vello claro, pelirrojo o cano recomendamos la electrodepilación."
+      "title": "Para quién es",
+      "p": "El método funciona mejor en vello oscuro. El vello rubio, pelirrojo y canoso no tiene melanina suficiente: ahí es más eficaz la electrólisis, y lo decimos con claridad en lugar de vender una pauta que no va a funcionar.",
+      "list": [
+       "vello oscuro del cuerpo: axilas, ingles, piernas, brazos, espalda, pecho",
+       "vello enquistado e irritación por el afeitado",
+       "zonas masculinas: espalda, pecho, hombros, cuello, abdomen",
+       "no hacemos láser en el rostro femenino: ahí el vello suele depender de las hormonas y el láser puede estimular su crecimiento; para la cara ofrecemos electrólisis"
+      ]
      },
      {
-      "h": "La sesión",
-      "p": "15–60 minutos según la zona. La sensación es como un chasquido de goma. Recomendamos 6–10 sesiones con intervalos de 4–8 semanas."
+      "title": "Cómo es la sesión",
+      "steps": [
+       "revisión de la zona y de las contraindicaciones, ajuste de parámetros según piel y vello",
+       "gafas de protección y aplicación de gel",
+       "pasada con el cabezal por la zona: se siente como un chasquido caliente y breve, el frío del cabezal lo suaviza",
+       "producto calmante al terminar",
+       "15–60 minutos según la zona"
+      ]
      },
      {
-      "h": "Preparación y cuidados",
-      "p": "Aféitate la zona el día anterior. Evita el sol 2 semanas antes y después. Aplica crema calmante tras la sesión."
+      "title": "Cómo se arma la pauta",
+      "paras": [
+       "Trabajamos para un resultado, no para sesiones de mantenimiento infinitas. La pauta se espacia para alcanzar distintos grupos de vello en fase de crecimiento: las primeras sesiones van cada 4–6 semanas y luego el intervalo se alarga: 8, 10, 12 semanas o más.",
+       "Alargar el intervalo no es estirar la pauta, es su lógica: cuanto menos vello queda, más tiempo hace falta para que el restante entre en fase activa. Venir antes no sirve: la sesión sería casi en balde.",
+       "Cuántas sesiones harán falta en total nadie lo puede decir con exactitud por adelantado. En la mayoría se ve un aclarado tras 2–3 sesiones y la pauta ocupa 6–10 sesiones o más, según la zona, las hormonas, la densidad y el color del vello. No prometemos «eliminación completa en seis sesiones»: esa promesa no se puede cumplir con honestidad."
+      ],
+      "note": "Después de la pauta, a algunas clientas el vello les vuelve en parte, normalmente junto con cambios hormonales: embarazo, empezar o dejar una medicación, problemas de tiroides. No es un fallo de la pauta sino cómo funciona el cuerpo; en esos casos bastan sesiones sueltas de mantenimiento."
+     },
+     {
+      "title": "Preparación",
+      "list": [
+       "afeita la zona 12–24 horas antes: el vello debe estar en el folículo, no sobre la piel",
+       "dos semanas sin sol, rayos UVA ni autobronceador",
+       "2–4 semanas sin depilar con pinzas, cera ni azúcar: el folículo tiene que estar ahí",
+       "el día de la sesión, nada de cremas, desodorante ni aceites en la zona",
+       "avísanos de la medicación: algunos fármacos aumentan la fotosensibilidad"
+      ]
+     },
+     {
+      "title": "Cuidado posterior",
+      "list": [
+       "el enrojecimiento y una ligera hinchazón alrededor de los folículos son normales y bajan en unas horas",
+       "1–2 días sin sauna, piscina ni baño caliente",
+       "dos semanas sin sol ni UVA; SPF obligatorio en las zonas descubiertas",
+       "3–4 días sin frotar la zona con esponja ni exfoliante",
+       "a las 1–2 semanas el vello empieza a caer: es lo esperado y un exfoliante suave ayuda",
+       "desodorante tras las axilas: al día siguiente"
+      ]
+     },
+     {
+      "title": "Contraindicaciones",
+      "list": [
+       "embarazo y lactancia",
+       "bronceado reciente, incluido el autobronceador",
+       "enfermedades oncológicas, epilepsia",
+       "heridas, inflamación o brotes en la zona a tratar",
+       "medicación que aumenta la fotosensibilidad, incluida la isotretinoína",
+       "lunares y tatuajes en la zona: los rodeamos",
+       "herpes en fase activa al tratar rostro o ingles"
+      ],
+      "note": "La lista completa se revisa en la valoración previa a la primera sesión, que es gratuita."
      }
     ],
     "faqTitle": "Preguntas frecuentes",
     "faq": [
      {
       "q": "¿Duele la depilación láser?",
-      "a": "La sensación es como un chasquido de goma. Los equipos tienen refrigeración para reducir la incomodidad."
+      "a": "Se siente como un chasquido caliente y breve. El frío del cabezal lo suaviza bastante. Las zonas de piel fina —ingles y axilas— son las más sensibles; las primeras sesiones se notan más y luego cuesta menos, porque queda menos vello."
      },
      {
-      "q": "¿Cuántas sesiones necesito?",
-      "a": "De media 6–10 sesiones según la zona y el tipo de vello."
+      "q": "¿Cuántas sesiones hacen falta?",
+      "a": "Normalmente 6–10, a veces más. Nadie puede darte una cifra exacta con honestidad: el láser solo actúa sobre el vello en fase activa, y esa proporción varía de una persona a otra. El aclarado suele verse ya tras 2–3 sesiones."
      },
      {
-      "q": "¿Cuánto duran los resultados?",
-      "a": "Tras el tratamiento completo los resultados son permanentes."
+      "q": "¿Por qué se alargan los intervalos entre sesiones?",
+      "a": "Porque cada vez queda menos vello y el que queda necesita más tiempo para entrar en fase activa. Venir antes de tiempo hace que la sesión se aproveche a medias."
      },
      {
-      "q": "¿Cuándo veré los primeros resultados?",
-      "a": "Tras 2–3 sesiones reducción significativa. Después del tratamiento — hasta un 90%."
+      "q": "¿El resultado es para siempre?",
+      "a": "Un folículo tratado no se recupera. Pero en la piel hay folículos que estaban inactivos durante la pauta y las hormonas pueden activarlos: embarazo, tiroides, medicación. Entonces bastan sesiones sueltas de mantenimiento, no una pauta nueva."
+     },
+     {
+      "q": "¿Hacéis láser en el rostro femenino?",
+      "a": "No. El vello facial en mujeres suele depender de las hormonas y el láser puede estimular su crecimiento en esa zona. Para la cara ofrecemos electrólisis, que trata cada vello por separado."
+     },
+     {
+      "q": "¿Se puede hacer en verano?",
+      "a": "Sí, si la zona va cubierta por la ropa y no tomas el sol. En zonas descubiertas —piernas, brazos, hombros— en verano hace falta SPF y no broncearse dos semanas antes y después."
+     },
+     {
+      "q": "¿Y el vello enquistado?",
+      "a": "Suele desaparecer con la pauta: si el vello deja de crecer, no hay nada que se enquiste. Al principio ayuda un exfoliante suave y cambiar la cuchilla por una recortadora entre sesiones."
      }
     ],
     "priceGroups": [],
@@ -202,39 +470,105 @@
     "intro": "Laserová epilace je nejefektivnější metoda pro trvalé odstranění tmavých a hustých chlupů. Diodový laser cílí na melanin, folikul ničí tepelnou energií bez poranění pokožky.",
     "sections": [
      {
-      "h": "Jak to funguje?",
-      "p": "Laserový paprsek pohlcuje melanin v chlupu. Tepelná energie ničí folikul a zabraňuje dalšímu růstu."
+      "title": "Jak laser funguje",
+      "paras": [
+       "Laserový paprsek pohlcuje melanin — pigment uvnitř chloupku. Energie se mění v teplo a poškodí vlasový folikul. Čím tmavší a silnější chloupek je, tím víc melaninu obsahuje a tím lépe metoda funguje.",
+       "Důležitý detail, na kterém stojí celá kúra: laser působí jen na chloupky v aktivní fázi růstu. V každém okamžiku je v této fázi jen část chloupků v dané zóně — zbytek „spí“ a na tomto sezení nezareaguje. Jedním ošetřením se tedy úkol v principu vyřešit nedá, a není to otázka přístroje."
+      ]
      },
      {
-      "h": "Komu je určen?",
-      "p": "Ideální pro tmavé chlupy na světlé pokožce. Pro světlé, zrzavé nebo šedé chlupy doporučujeme elektroepilaci."
+      "title": "Pro koho je vhodná",
+      "p": "Nejlépe metoda funguje na tmavých chloupcích. U světlých, zrzavých a šedivých melanin nestačí — tam je účinnější elektroepilace, a řekneme to na rovinu místo toho, abychom prodali kúru, která nezabere.",
+      "list": [
+       "tmavé chloupky na těle: podpaží, bikiny, nohy, ruce, záda, hrudník",
+       "zarůstající chloupky a podráždění po holení",
+       "mužské zóny: záda, hrudník, ramena, krk, břicho",
+       "ženský obličej laserem neděláme — chloupky tam častěji souvisejí s hormony a laser může mít opačný efekt; na obličej nabízíme elektroepilaci"
+      ]
      },
      {
-      "h": "Průběh sezení",
-      "p": "15–60 minut dle zóny. Pocit jako cvaknutí gumičkou. Doporučujeme 6–10 sezení po 4–8 týdnech."
+      "title": "Jak sezení probíhá",
+      "steps": [
+       "prohlídka zóny, kontrola kontraindikací, volba parametrů podle typu pleti a chloupků",
+       "ochranné brýle, nanesení gelu",
+       "přejezd přístrojem po zóně: pocit jako krátké horké cvrnknutí, chlazení hlavice ho zmírňuje",
+       "zklidňující přípravek po ošetření",
+       "15–60 minut podle zóny"
+      ]
      },
      {
-      "h": "Příprava a péče",
-      "p": "Den před procedurou oholte zónu. Vyhněte se opalování 2 týdny před a po. Po sezení naneste zklidňující krém."
+      "title": "Jak je kúra postavená",
+      "paras": [
+       "Pracujeme na výsledek, ne na nekonečná udržovací ošetření. Kúra je postavená tak, aby zasáhla růstové fáze různých skupin chloupků: první sezení jdou po zhruba 4–6 týdnech, pak se interval prodlužuje — 8, 10, 12 týdnů i víc.",
+       "Prodlužování intervalu není natahování kúry, ale její logika: čím méně chloupků zbývá, tím déle trvá, než ty zbylé vstoupí do aktivní fáze. Přijít dřív nemá smysl: sezení proběhne skoro naprázdno.",
+       "Kolik sezení bude celkem potřeba, dopředu přesně neřekne nikdo. U většiny je patrné prořídnutí po 2–3 ošetřeních a kúra zabere 6–10 sezení i více — podle zóny, hormonů, hustoty a barvy chloupků. Neslibujeme „úplné odstranění za 6 sezení“: takový slib nelze splnit poctivě."
+      ],
+      "note": "Po kúře se u části klientek chloupky částečně vracejí — obvykle při hormonálních změnách: v těhotenství, při nasazení nebo vysazení léků, při onemocnění štítné žlázy. Není to chyba kúry, ale vlastnost organismu; v takovém případě stačí jednotlivá udržovací sezení."
+     },
+     {
+      "title": "Příprava",
+      "list": [
+       "oholit zónu 12–24 hodin před sezením: chloupek má být ve folikulu, ne nad kůží",
+       "2 týdny bez opalování, solária a samoopalovacích přípravků",
+       "2–4 týdny nevytrhávat, nedělat vosk ani cukrovou pastu: folikul musí zůstat na místě",
+       "v den ošetření nenanášet na zónu krémy, deodorant a oleje",
+       "říct nám o lécích: některé zvyšují citlivost na světlo"
+      ]
+     },
+     {
+      "title": "Péče po ošetření",
+      "list": [
+       "zarudnutí a mírný otok kolem folikulů jsou normální reakce, odejdou za několik hodin",
+       "1–2 dny bez sauny, bazénu a horké koupele",
+       "2 týdny bez slunce a solária, SPF na odhalených partiích je povinné",
+       "3–4 dny zónu nedrhnout žínkou ani peelingem",
+       "za 1–2 týdny začnou chloupky vypadávat: to se čeká, pomáhá jemný peeling",
+       "deodorant po podpaží až druhý den"
+      ]
+     },
+     {
+      "title": "Kontraindikace",
+      "list": [
+       "těhotenství a kojení",
+       "čerstvé opálení, včetně samoopalovacího",
+       "onkologické onemocnění, epilepsie",
+       "poranění, záněty a vyrážky v ošetřované zóně",
+       "léky zvyšující citlivost na světlo, včetně isotretinoinu",
+       "znaménka a tetování v zóně: obcházíme je",
+       "herpes v aktivní fázi při ošetření obličeje a bikin"
+      ],
+      "note": "Úplný seznam projde kosmetička při vstupní prohlídce před prvním sezením — ta je zdarma."
      }
     ],
     "faqTitle": "Časté dotazy",
     "faq": [
      {
       "q": "Bolí laserová epilace?",
-      "a": "Pocit je jako cvaknutí gumičkou — moderní přístroje mají chlazení, které výrazně snižuje nepříjemné pocity."
+      "a": "Pocit připomíná krátké horké cvrnknutí. Chlazení hlavice ho výrazně zmírňuje. Nejcitlivější jsou partie s tenkou kůží — bikiny a podpaží; první sezení jsou výraznější, pak je to snazší, protože chloupků ubývá."
      },
      {
-      "q": "Kolik sezení potřebuji?",
-      "a": "Průměrně 6–10 sezení dle zóny, hustoty a barvy chlupů."
+      "q": "Kolik sezení je potřeba?",
+      "a": "Obvykle 6–10, někdy víc. Přesné číslo dopředu poctivě neřekne nikdo: laser působí jen na chloupky v aktivní fázi růstu a jejich podíl je u každého jiný. Prořídnutí bývá vidět už po 2–3 sezeních."
      },
      {
-      "q": "Jak dlouho trvá výsledek?",
-      "a": "Po dokončení kurzu jsou výsledky trvalé. Při hormonálních změnách může být potřeba jedno korekce."
+      "q": "Proč se intervaly mezi sezeními prodlužují?",
+      "a": "Protože pokaždé zbývá méně chloupků a trvá déle, než ty zbylé vstoupí do aktivní fáze. Když přijdete dřív, sezení proběhne skoro naprázdno."
      },
      {
-      "q": "Kdy uvidím první výsledky?",
-      "a": "Po 2–3 sezeních výrazné prořídnění, po celém kurzu až 90 % trvalého odstranění."
+      "q": "Je výsledek trvalý?",
+      "a": "Ošetřený folikul se neobnoví. V kůži ale jsou folikuly, které byly během kúry neaktivní, a může je „zapnout“ hormonální situace — těhotenství, štítná žláza, léky. Pak stačí jednotlivá udržovací sezení, ne nová kúra."
+     },
+     {
+      "q": "Děláte laserovou epilaci ženského obličeje?",
+      "a": "Ne. Chloupky na ženském obličeji častěji souvisejí s hormony a laser v této oblasti může růst zesílit. Na obličej nabízíme elektroepilaci, která pracuje s každým chloupkem zvlášť."
+     },
+     {
+      "q": "Dá se to dělat v létě?",
+      "a": "Dá, pokud je zóna krytá oblečením a neopalujete se. Na odhalené partie — nohy, ruce, ramena — je v létě potřeba SPF a dva týdny bez opalování před sezením i po něm."
+     },
+     {
+      "q": "Co se zarůstajícími chloupky?",
+      "a": "Obvykle zmizí spolu s kúrou: chloupek přestane růst, takže nemá co zarůstat. Na začátku kúry pomáhá jemný peeling a místo holicího strojku mezi sezeními používat zastřihovač."
      }
     ],
     "priceGroups": [],
@@ -277,35 +611,115 @@
     "intro": "Электроэпиляция — единственный метод, который навсегда удаляет любой волос.",
     "sections": [
      {
-      "h": "Как работает?",
-      "p": "В фолликул вводится микроигла. Результат навсегда."
+      "title": "Как работает электроэпиляция",
+      "paras": [
+       "В каждый волосяной фолликул вводится тончайшая игла, через которую подаётся разряд. Он разрушает ростковую зону волоса. Метод работает с каждым волосом отдельно — поэтому цвет волоса не имеет значения: светлые, рыжие, седые и пушковые волосы удаляются так же, как тёмные.",
+       "При правильно подобранных параметрах и корректной технике обработанный фолликул больше не даёт волос. Это единственный метод с таким результатом, но он требует времени: за минуту мастер обрабатывает ограниченное число волос, поэтому работа считается поминутно."
+      ]
      },
      {
-      "h": "Работаем в 4–10 рук одновременно",
-      "p": "Над одной зоной работают несколько мастеров сразу — то, что обычно растягивается на часы, закрывается в разы быстрее."
+      "title": "Индивидуальный подбор параметров",
+      "p": "Сила разряда, время воздействия и тип иглы подбираются под вас: под толщину волоса, глубину фолликула, тип и чувствительность кожи. Одни и те же настройки не подходят для подбородка и для голени, поэтому параметры меняются по ходу работы — мастер ориентируется на реакцию кожи, а не на единый режим."
      },
      {
-      "h": "Кому подходит?",
-      "p": "Светлые, рыжие и седые волосы."
+      "title": "Работаем в 4–10 рук",
+      "p": "Над одной зоной могут работать несколько мастеров одновременно. То, что при обычном формате растягивается на часы и несколько визитов, закрывается в разы быстрее. В прайсе есть отдельный вариант «в четыре руки» на 120 минут."
      },
      {
-      "h": "Курс",
-      "p": "Зона лица: 30–60 мин, 1 раз в 2–4 недели."
+      "title": "Кому подходит",
+      "list": [
+       "светлые, рыжие, седые и пушковые волосы, на которые лазер не действует",
+       "лицо: подбородок, щёки, над верхней губой, шея",
+       "единичные волосы, оставшиеся после курса лазера",
+       "тело: любые зоны, включая бикини и подмышки",
+       "ситуации, когда важно убрать волосы окончательно, а не прореживать"
+      ]
+     },
+     {
+      "title": "Как проходит сеанс",
+      "steps": [
+       "осмотр зоны, проверка противопоказаний, подбор параметров",
+       "обезболивание: аппликационный крем, при необходимости — другие варианты",
+       "обработка волос по одному: ощущения — короткие точечные уколы с теплом",
+       "антисептическая обработка и успокаивающее средство",
+       "оплата по таймингу аппарата, за фактически отработанное время"
+      ]
+     },
+     {
+      "title": "Как строится курс",
+      "paras": [
+       "Волос можно обработать только тогда, когда он виден и находится в активной фазе. Поэтому сеансы идут с интервалом 1–4 недели: сначала чаще, затем реже, по мере того как волос становится меньше.",
+       "Количество процедур всегда индивидуально и зависит от зоны, плотности и типа волос, гормонального фона и того, что делали с зоной раньше — выщипывание и воск годами меняют форму фолликула и усложняют работу. Ориентировочно: лицо — 10–20 сеансов, тело — 15–30 и больше. Это ориентир, а не обещание.",
+       "Между сеансами нельзя выщипывать и делать воск: волос должен отрасти до видимой длины, иначе обрабатывать нечего. Брить можно."
+      ]
+     },
+     {
+      "title": "Подготовка",
+      "list": [
+       "волос должен быть виден: 1–3 мм, это 3–5 дней после бритья",
+       "за 2–4 недели не выщипывать, не делать воск и шугаринг",
+       "не загорать за несколько дней до сеанса",
+       "в день процедуры не наносить на зону кремы и дезодорант",
+       "предупредить о приёме лекарств и о кожных заболеваниях"
+      ]
+     },
+     {
+      "title": "Уход после",
+      "paras": [
+       "Честно о реакции кожи: после электроэпиляции почти всегда есть покраснение и точечная отёчность вокруг обработанных фолликулов. У части клиенток появляются маленькие корочки — это нормальная часть заживления, и обещать, что их не будет, мы не можем: реакция зависит от кожи, зоны и количества обработанных волос."
+      ],
+      "list": [
+       "покраснение держится от нескольких часов до суток-двух",
+       "корочки, если появились, сходят сами за 5–10 дней — сдирать их нельзя, иначе остаются следы",
+       "2–3 дня без сауны, бассейна, бани и активного спорта",
+       "первые сутки не трогать зону руками, не наносить макияж на обработанное лицо",
+       "антисептик по рекомендации мастера, дальше — заживляющее средство",
+       "SPF на открытых зонах, пока кожа восстанавливается"
+      ]
+     },
+     {
+      "title": "Противопоказания",
+      "list": [
+       "беременность и грудное вскармливание",
+       "кардиостимулятор и другие электронные импланты",
+       "эпилепсия",
+       "онкологические заболевания",
+       "сахарный диабет в тяжёлой форме, нарушения свёртываемости крови",
+       "воспаления, повреждения и высыпания в зоне обработки",
+       "склонность к келоидным рубцам"
+      ],
+      "note": "Параметры и противопоказания мастер проверяет до начала работы. Пробная процедура на 30 минут по телу есть в прайсе — на ней видно, как кожа реагирует именно у вас."
      }
     ],
-    "faqTitle": "FAQ",
+    "faqTitle": "Частые вопросы",
     "faq": [
      {
       "q": "Больно ли?",
-      "a": "Умеренно неприятно — как лёгкий укол. Мастер подбирает режим под ваш порог чувствительности."
+      "a": "Ощущение — короткий точечный укол с теплом. Переносимость разная: на теле легче, на лице и в бикини чувствительнее. Используем аппликационную анестезию, параметры подбираем под ваш порог. Совсем безболезненным метод назвать нельзя, и мы об этом говорим заранее."
      },
      {
       "q": "Сколько сеансов нужно?",
-      "a": "Лицо: 10–20 сеансов, тело: 15–30 сеансов с интервалом 1–4 недели."
+      "a": "Лицо — обычно 10–20 сеансов, тело — 15–30 и больше, с интервалом 1–4 недели. Точное число зависит от зоны, плотности волос, гормонального фона и того, выщипывали ли зону раньше. Это ориентир, а не фиксированное обещание."
      },
      {
-      "q": "Можно ли удалить светлые волосы?",
-      "a": "Да! Диапазон волос — абсолютно любые, включая светлые, рыжие и седые."
+      "q": "Можно ли удалить светлые и седые волосы?",
+      "a": "Да. Электроэпиляция не зависит от пигмента: игла работает с самим фолликулом, поэтому цвет волоса значения не имеет. Это главное отличие от лазера."
+     },
+     {
+      "q": "Будут ли корочки?",
+      "a": "Могут быть — это нормальная часть заживления, особенно на лице и при плотных волосах. Сходят за 5–10 дней, сдирать нельзя. Обещать, что корочек не будет совсем, было бы нечестно: реакция кожи у всех разная."
+     },
+     {
+      "q": "Останутся ли следы и рубцы?",
+      "a": "При корректных параметрах и уходе — нет. Риск повышается, если сдирать корочки, загорать на свежую кожу или работать на воспалённой зоне. Поэтому мы не берём в работу зону с раздражением."
+     },
+     {
+      "q": "Чем платить: за зону или за время?",
+      "a": "За время — оплата поминутно по таймингу аппарата, за фактически отработанное время. Это честнее: в одной и той же зоне у разных людей разное количество волос."
+     },
+     {
+      "q": "Можно ли совмещать с лазером?",
+      "a": "Да, и это частый сценарий: лазером убираем основную массу тёмных волос, электроэпиляцией — светлые, седые и единичные оставшиеся. Порядок подбираем на консультации."
      }
     ]
    },
@@ -314,35 +728,115 @@
     "intro": "єдиний метод, що постійно видаляє будь-яке волосся.",
     "sections": [
      {
-      "h": "Як працює?",
-      "p": "Електричний імпульс назавжди знищує матрицю."
+      "title": "Як працює електроепіляція",
+      "paras": [
+       "У кожен волосяний фолікул вводиться найтонша голка, через яку подається розряд. Він руйнує ростову зону волосини. Метод працює з кожною волосиною окремо — тому колір волосся не має значення: світле, руде, сиве й пушкове волосся видаляється так само, як темне.",
+       "За правильно підібраних параметрів і коректної техніки оброблений фолікул більше не дає волосся. Це єдиний метод із таким результатом, але він потребує часу: за хвилину майстер обробляє обмежену кількість волосин, тому робота рахується похвилинно."
+      ]
      },
      {
-      "h": "Працюємо в 4–10 рук одночасно",
-      "p": "Над однією зоною працюють кілька майстринь одразу — те, що зазвичай розтягується на години, закривається значно швидше."
+      "title": "Індивідуальний підбір параметрів",
+      "p": "Сила розряду, час впливу й тип голки добираються під вас: під товщину волосини, глибину фолікула, тип і чутливість шкіри. Ті самі налаштування не підходять для підборіддя й для гомілки, тому параметри змінюються по ходу роботи — майстер орієнтується на реакцію шкіри, а не на єдиний режим."
      },
      {
-      "h": "Кому підходить?",
-      "p": "Світле, руде, блондинисте волосся."
+      "title": "Працюємо в 4–10 рук",
+      "p": "Над однією зоною можуть працювати кілька майстрів одночасно. Те, що у звичайному форматі розтягується на години й кілька візитів, закривається в рази швидше. У прайсі є окремий варіант «у чотири руки» на 120 хвилин."
      },
      {
-      "h": "Курс",
-      "p": "Зона обличчя: 30–60 хв на 2–4 тижні."
+      "title": "Кому підходить",
+      "list": [
+       "світле, руде, сиве й пушкове волосся, на яке лазер не діє",
+       "обличчя: підборіддя, щоки, над верхньою губою, шия",
+       "поодинокі волосини, що залишилися після курсу лазера",
+       "тіло: будь-які зони, включно з бікіні та пахвами",
+       "ситуації, коли важливо прибрати волосся остаточно, а не проріджувати"
+      ]
+     },
+     {
+      "title": "Як проходить сеанс",
+      "steps": [
+       "огляд зони, перевірка протипоказань, підбір параметрів",
+       "знеболення: аплікаційний крем, за потреби — інші варіанти",
+       "обробка волосин по одній: відчуття — короткі точкові уколи з теплом",
+       "антисептична обробка та заспокійливий засіб",
+       "оплата за таймінгом апарата, за фактично відпрацьований час"
+      ]
+     },
+     {
+      "title": "Як будується курс",
+      "paras": [
+       "Волосину можна обробити тільки тоді, коли вона видима й перебуває в активній фазі. Тому сеанси йдуть з інтервалом 1–4 тижні: спершу частіше, далі рідше, у міру того як волосся стає менше.",
+       "Кількість процедур завжди індивідуальна й залежить від зони, щільності та типу волосся, гормонального фону й того, що робили із зоною раніше — висмикування та віск роками змінюють форму фолікула й ускладнюють роботу. Орієнтовно: обличчя — 10–20 сеансів, тіло — 15–30 і більше. Це орієнтир, а не обіцянка.",
+       "Між сеансами не можна висмикувати й робити віск: волосина має відрости до видимої довжини, інакше обробляти нічого. Голити можна."
+      ]
+     },
+     {
+      "title": "Підготовка",
+      "list": [
+       "волосина має бути видимою: 1–3 мм, це 3–5 днів після гоління",
+       "за 2–4 тижні не висмикувати, не робити віск і шугаринг",
+       "не засмагати за кілька днів до сеансу",
+       "у день процедури не наносити на зону креми й дезодорант",
+       "попередити про прийом ліків і про шкірні захворювання"
+      ]
+     },
+     {
+      "title": "Догляд після",
+      "paras": [
+       "Чесно про реакцію шкіри: після електроепіляції майже завжди є почервоніння й точкова набряклість навколо оброблених фолікулів. У частини клієнток з’являються маленькі кірочки — це нормальна частина загоєння, і обіцяти, що їх не буде, ми не можемо: реакція залежить від шкіри, зони й кількості оброблених волосин."
+      ],
+      "list": [
+       "почервоніння тримається від кількох годин до доби-двох",
+       "кірочки, якщо з’явилися, сходять самі за 5–10 днів — здирати їх не можна, інакше залишаються сліди",
+       "2–3 дні без сауни, басейну, лазні й активного спорту",
+       "першу добу не торкатися зони руками, не наносити макіяж на оброблене обличчя",
+       "антисептик за рекомендацією майстра, далі — загоювальний засіб",
+       "SPF на відкритих зонах, поки шкіра відновлюється"
+      ]
+     },
+     {
+      "title": "Протипоказання",
+      "list": [
+       "вагітність і грудне вигодовування",
+       "кардіостимулятор та інші електронні імпланти",
+       "епілепсія",
+       "онкологічні захворювання",
+       "цукровий діабет у тяжкій формі, порушення згортання крові",
+       "запалення, пошкодження та висипання в зоні обробки",
+       "схильність до келоїдних рубців"
+      ],
+      "note": "Параметри й протипоказання майстер перевіряє до початку роботи. Пробна процедура на 30 хвилин по тілу є в прайсі — на ній видно, як шкіра реагує саме у вас."
      }
     ],
-    "faqTitle": "FAQ",
+    "faqTitle": "Часті питання",
     "faq": [
      {
       "q": "Чи боляче?",
-      "a": "Помірно неприємно — як легкий укол. Майстер підбирає режим."
+      "a": "Відчуття — короткий точковий укол із теплом. Переносимість різна: на тілі легше, на обличчі та в бікіні чутливіше. Використовуємо аплікаційну анестезію, параметри добираємо під ваш поріг. Зовсім безболісним метод назвати не можна, і ми говоримо про це заздалегідь."
      },
      {
-      "q": "Скільки сеансів?",
-      "a": "Обличчя: 10–20, тіло: 15–30 сеансів."
+      "q": "Скільки сеансів потрібно?",
+      "a": "Обличчя — зазвичай 10–20 сеансів, тіло — 15–30 і більше, з інтервалом 1–4 тижні. Точне число залежить від зони, щільності волосся, гормонального фону й того, чи висмикували зону раніше. Це орієнтир, а не фіксована обіцянка."
      },
      {
-      "q": "Чи працює на світлому волоссі?",
-      "a": "Так! Це головна перевага — працює на будь-якому волоссі."
+      "q": "Чи можна видалити світле й сиве волосся?",
+      "a": "Так. Електроепіляція не залежить від пігменту: голка працює із самим фолікулом, тому колір волосини значення не має. Це головна відмінність від лазера."
+     },
+     {
+      "q": "Чи будуть кірочки?",
+      "a": "Можуть бути — це нормальна частина загоєння, особливо на обличчі та за щільного волосся. Сходять за 5–10 днів, здирати не можна. Обіцяти, що кірочок не буде зовсім, було б нечесно: реакція шкіри у всіх різна."
+     },
+     {
+      "q": "Чи залишаться сліди й рубці?",
+      "a": "За коректних параметрів і догляду — ні. Ризик зростає, якщо здирати кірочки, засмагати на свіжу шкіру або працювати на запаленій зоні. Тому ми не беремо в роботу зону з подразненням."
+     },
+     {
+      "q": "Чим платити: за зону чи за час?",
+      "a": "За час — оплата похвилинно за таймінгом апарата, за фактично відпрацьований час. Це чесніше: в одній і тій самій зоні в різних людей різна кількість волосся."
+     },
+     {
+      "q": "Чи можна поєднувати з лазером?",
+      "a": "Так, і це частий сценарій: лазером прибираємо основну масу темного волосся, електроепіляцією — світле, сиве й поодинокі залишки. Порядок добираємо на консультації."
      }
     ]
    },
@@ -351,35 +845,115 @@
     "intro": "Electrolysis is the only method that permanently removes any type of hair.",
     "sections": [
      {
-      "h": "How does it work?",
-      "p": "A fine probe destroys the follicle permanently. Hair falls out in 1–2 days."
+      "title": "How electrolysis works",
+      "paras": [
+       "A very fine needle is inserted into each follicle and delivers a discharge that destroys the hair's growth zone. The method treats every hair individually — so colour is irrelevant: blond, red, grey and fine hair comes out just as dark hair does.",
+       "With correctly chosen parameters and clean technique, a treated follicle no longer produces hair. It is the only method with that outcome, but it takes time: only a limited number of hairs can be treated per minute, which is why the work is charged by the minute."
+      ]
      },
      {
-      "h": "We work with 4–10 hands at once",
-      "p": "Several specialists work on one area simultaneously — what usually drags on for hours is finished far faster."
+      "title": "Parameters chosen for you",
+      "p": "The strength of the discharge, the contact time and the needle type are set for you: for the thickness of the hair, the depth of the follicle, your skin type and sensitivity. The same settings do not suit a chin and a shin, so parameters change as the work goes on — the specialist follows your skin's reaction rather than one fixed mode."
      },
      {
-      "h": "Who is it for?",
-      "p": "Light, blonde, red or grey hair. Ideal for facial zones."
+      "title": "Four to ten hands at once",
+      "p": "Several specialists can work on one area at the same time. What normally stretches over hours and several visits is finished several times faster. The price list has a separate four-hands option of 120 minutes."
      },
      {
-      "h": "Treatment course",
-      "p": "Facial zones: 30–60 min per session every 2–4 weeks."
+      "title": "Who it suits",
+      "list": [
+       "blond, red, grey and fine hair that the laser cannot see",
+       "the face: chin, cheeks, upper lip, neck",
+       "single hairs left after a course of laser",
+       "the body: any area, including bikini and underarms",
+       "cases where the hair needs to be gone for good, not just thinned"
+      ]
+     },
+     {
+      "title": "How a session goes",
+      "steps": [
+       "checking the area and contraindications, setting the parameters",
+       "numbing: a topical cream, other options if needed",
+       "treating hairs one by one: short pinpoint stings with warmth",
+       "antiseptic and a soothing product",
+       "charged by the device timer, for the time actually worked"
+      ]
+     },
+     {
+      "title": "How the course is built",
+      "paras": [
+       "A hair can only be treated when it is visible and in its active phase. Sessions therefore run 1–4 weeks apart: more often at first, then less as the amount of hair drops.",
+       "The number of sessions is always individual and depends on the area, hair density and type, hormones, and what has been done to the area before — years of plucking and waxing distort the follicle and make the work harder. As a guide: the face takes 10–20 sessions, the body 15–30 or more. That is a guide, not a promise.",
+       "Between sessions, no plucking and no waxing: the hair has to grow to a visible length, otherwise there is nothing to treat. Shaving is fine."
+      ]
+     },
+     {
+      "title": "How to prepare",
+      "list": [
+       "the hair must be visible: 1–3 mm, which is 3–5 days after shaving",
+       "no plucking, waxing or sugaring for 2–4 weeks",
+       "no tanning in the days before the session",
+       "no creams or deodorant on the area on the day",
+       "tell us about medication and any skin conditions"
+      ]
+     },
+     {
+      "title": "Aftercare",
+      "paras": [
+       "Honestly about how skin reacts: after electrolysis there is almost always redness and pinpoint swelling around the treated follicles. Some clients develop small crusts — a normal part of healing, and we cannot promise they will not appear: the reaction depends on your skin, the area and how many hairs were treated."
+      ],
+      "list": [
+       "redness lasts from a few hours up to a day or two",
+       "any crusts fall away on their own within 5–10 days — do not pick them or marks can remain",
+       "2–3 days without sauna, pool or intense training",
+       "do not touch the area on the first day and keep make-up off a treated face",
+       "antiseptic as advised, then a healing product",
+       "SPF on exposed areas while the skin recovers"
+      ]
+     },
+     {
+      "title": "Contraindications",
+      "list": [
+       "pregnancy and breastfeeding",
+       "a pacemaker or other electronic implants",
+       "epilepsy",
+       "cancer",
+       "severe diabetes, blood clotting disorders",
+       "inflammation, wounds or breakouts in the treated area",
+       "a tendency to keloid scarring"
+      ],
+      "note": "Parameters and contraindications are checked before the work starts. The price list includes a 30-minute trial on the body — it shows how your own skin responds."
      }
     ],
-    "faqTitle": "FAQ",
+    "faqTitle": "Common questions",
     "faq": [
      {
       "q": "Does it hurt?",
-      "a": "Mildly uncomfortable — like a gentle pinprick. Your specialist adjusts intensity to your pain threshold."
+      "a": "It feels like a short pinpoint sting with warmth. Tolerance varies: the body is easier, the face and bikini more sensitive. We use topical numbing and set the parameters to your threshold. It is not a painless method, and we say so upfront."
      },
      {
-      "q": "How many sessions?",
-      "a": "Face: 10–20 sessions, body: 15–30 sessions every 1–4 weeks."
+      "q": "How many sessions will I need?",
+      "a": "The face usually takes 10–20 sessions and the body 15–30 or more, spaced 1–4 weeks apart. The exact number depends on the area, hair density, hormones and whether the area was plucked in the past. It is a guide, not a fixed promise."
      },
      {
-      "q": "Can it remove light hair?",
-      "a": "Yes! That's the main advantage — works on any hair type including light, red and grey."
+      "q": "Can blond and grey hair be removed?",
+      "a": "Yes. Electrolysis does not depend on pigment: the needle works on the follicle itself, so hair colour is irrelevant. That is the key difference from laser."
+     },
+     {
+      "q": "Will there be crusts?",
+      "a": "There can be — a normal part of healing, particularly on the face and with coarse hair. They clear in 5–10 days and must not be picked. Promising no crusts at all would not be honest: skin reacts differently in everyone."
+     },
+     {
+      "q": "Will it leave marks or scars?",
+      "a": "Not with correct parameters and aftercare. The risk rises if crusts are picked, if fresh skin is tanned, or if the work is done on an inflamed area — which is why we do not treat an irritated area."
+     },
+     {
+      "q": "Do I pay per area or per time?",
+      "a": "Per time — by the minute, on the device timer, for the time actually worked. It is fairer: the same area holds a different amount of hair on different people."
+     },
+     {
+      "q": "Can it be combined with laser?",
+      "a": "Yes, and it often is: the laser clears the bulk of the dark hair, electrolysis handles the blond, grey and remaining single hairs. We set the order at the consultation."
      }
     ]
    },
@@ -388,35 +962,115 @@
     "intro": "El único método que elimina permanentemente cualquier tipo de vello.",
     "sections": [
      {
-      "h": "¿Cómo funciona?",
-      "p": "Un impulso eléctrico destruye el folículo permanentemente."
+      "title": "Cómo funciona la electrólisis",
+      "paras": [
+       "En cada folículo se introduce una aguja muy fina que transmite una descarga y destruye la zona de crecimiento del vello. El método trata cada pelo por separado, así que el color no importa: el vello rubio, pelirrojo, canoso y fino se elimina igual que el oscuro.",
+       "Con los parámetros bien elegidos y una técnica limpia, el folículo tratado ya no vuelve a dar vello. Es el único método con ese resultado, pero requiere tiempo: por minuto se trata un número limitado de pelos, y por eso el trabajo se cobra por minutos."
+      ]
      },
      {
-      "h": "Trabajamos a 4–10 manos a la vez",
-      "p": "Varias especialistas trabajan en una zona al mismo tiempo: lo que suele llevar horas se termina mucho más rápido."
+      "title": "Parámetros ajustados a ti",
+      "p": "La intensidad de la descarga, el tiempo de acción y el tipo de aguja se eligen para ti: según el grosor del vello, la profundidad del folículo y el tipo y la sensibilidad de tu piel. Los mismos ajustes no sirven para el mentón y para la pierna, así que los parámetros cambian durante la sesión: la especialista sigue la reacción de la piel, no un modo fijo."
      },
      {
-      "h": "¿Para quién?",
-      "p": "Vello claro, rubio, rojo o gris. Ideal para zonas faciales."
+      "title": "Trabajamos a 4–10 manos",
+      "p": "Varias especialistas pueden trabajar a la vez en una misma zona. Lo que en formato normal se alarga durante horas y varias visitas se cierra mucho más rápido. En la tarifa hay una opción «a cuatro manos» de 120 minutos."
      },
      {
-      "h": "Curso",
-      "p": "30–60 min por sesión, cada 2–4 semanas."
+      "title": "Para quién es",
+      "list": [
+       "vello rubio, pelirrojo, canoso y fino, al que el láser no llega",
+       "rostro: mentón, mejillas, labio superior, cuello",
+       "pelos sueltos que quedan tras una pauta de láser",
+       "cuerpo: cualquier zona, incluidas ingles y axilas",
+       "casos en los que hay que eliminar el vello de forma definitiva y no solo aclararlo"
+      ]
+     },
+     {
+      "title": "Cómo es la sesión",
+      "steps": [
+       "revisión de la zona y las contraindicaciones, ajuste de parámetros",
+       "anestesia: crema tópica y, si hace falta, otras opciones",
+       "tratamiento pelo a pelo: pinchazos breves con sensación de calor",
+       "antiséptico y producto calmante",
+       "cobro por el temporizador del aparato, por el tiempo realmente trabajado"
+      ]
+     },
+     {
+      "title": "Cómo se arma la pauta",
+      "paras": [
+       "Un pelo solo se puede tratar cuando se ve y está en fase activa. Por eso las sesiones van cada 1–4 semanas: más seguidas al principio y más espaciadas a medida que queda menos vello.",
+       "El número de sesiones es siempre individual y depende de la zona, la densidad y el tipo de vello, las hormonas y de lo que se haya hecho antes en la zona: años de pinzas y cera deforman el folículo y complican el trabajo. Como referencia: el rostro lleva 10–20 sesiones y el cuerpo 15–30 o más. Es una referencia, no una promesa.",
+       "Entre sesiones no se puede depilar con pinzas ni con cera: el pelo tiene que crecer hasta verse, si no, no hay nada que tratar. Afeitar sí se puede."
+      ]
+     },
+     {
+      "title": "Preparación",
+      "list": [
+       "el pelo debe verse: 1–3 mm, es decir, 3–5 días después de afeitar",
+       "2–4 semanas sin pinzas, cera ni azúcar",
+       "no tomar el sol los días previos a la sesión",
+       "el día de la sesión, sin cremas ni desodorante en la zona",
+       "avísanos de la medicación y de cualquier enfermedad de la piel"
+      ]
+     },
+     {
+      "title": "Cuidado posterior",
+      "paras": [
+       "Con franqueza sobre la reacción de la piel: tras la electrólisis casi siempre hay enrojecimiento e hinchazón puntual alrededor de los folículos tratados. A algunas clientas les salen costritas pequeñas, parte normal de la cicatrización, y no podemos prometer que no aparezcan: la reacción depende de la piel, la zona y la cantidad de pelos tratados."
+      ],
+      "list": [
+       "el enrojecimiento dura de unas horas a uno o dos días",
+       "las costritas, si salen, se caen solas en 5–10 días: no se arrancan, o quedan marcas",
+       "2–3 días sin sauna, piscina ni deporte intenso",
+       "el primer día no tocar la zona con las manos ni maquillar un rostro tratado",
+       "antiséptico según indicación y después un producto cicatrizante",
+       "SPF en zonas descubiertas mientras la piel se recupera"
+      ]
+     },
+     {
+      "title": "Contraindicaciones",
+      "list": [
+       "embarazo y lactancia",
+       "marcapasos y otros implantes electrónicos",
+       "epilepsia",
+       "enfermedades oncológicas",
+       "diabetes grave, trastornos de la coagulación",
+       "inflamación, heridas o brotes en la zona a tratar",
+       "tendencia a cicatrices queloides"
+      ],
+      "note": "Los parámetros y las contraindicaciones se revisan antes de empezar. En la tarifa hay una sesión de prueba de 30 minutos en el cuerpo: sirve para ver cómo responde tu piel."
      }
     ],
-    "faqTitle": "FAQ",
+    "faqTitle": "Preguntas frecuentes",
     "faq": [
      {
       "q": "¿Duele?",
-      "a": "Moderadamente incómodo — como un leve pinchazo. El especialista adapta la intensidad."
+      "a": "Se siente como un pinchazo breve con calor. La tolerancia varía: en el cuerpo es más llevadero y en rostro e ingles más sensible. Usamos crema anestésica y ajustamos los parámetros a tu umbral. No es un método indoloro y lo decimos de antemano."
      },
      {
-      "q": "¿Cuántas sesiones?",
-      "a": "Cara: 10–20 sesiones, cuerpo: 15–30 sesiones cada 1–4 semanas."
+      "q": "¿Cuántas sesiones hacen falta?",
+      "a": "El rostro suele llevar 10–20 sesiones y el cuerpo 15–30 o más, cada 1–4 semanas. El número exacto depende de la zona, la densidad del vello, las hormonas y de si antes se depilaba con pinzas. Es una referencia, no una promesa cerrada."
      },
      {
-      "q": "¿Puede eliminar vello claro?",
-      "a": "¡Sí! Esa es la principal ventaja — funciona con cualquier tipo de vello."
+      "q": "¿Se puede eliminar el vello rubio y canoso?",
+      "a": "Sí. La electrólisis no depende del pigmento: la aguja trabaja sobre el folículo, así que el color del vello da igual. Esa es la diferencia principal con el láser."
+     },
+     {
+      "q": "¿Saldrán costritas?",
+      "a": "Pueden salir: forman parte normal de la cicatrización, sobre todo en el rostro y con vello grueso. Se van en 5–10 días y no se arrancan. Prometer que no aparecerán no sería honesto: cada piel reacciona distinto."
+     },
+     {
+      "q": "¿Quedan marcas o cicatrices?",
+      "a": "Con parámetros correctos y buen cuidado, no. El riesgo sube si se arrancan las costritas, si se toma el sol con la piel reciente o si se trabaja sobre una zona inflamada; por eso no tratamos zonas irritadas."
+     },
+     {
+      "q": "¿Se paga por zona o por tiempo?",
+      "a": "Por tiempo: por minutos, según el temporizador del aparato y el tiempo realmente trabajado. Es más justo, porque en una misma zona cada persona tiene una cantidad de vello distinta."
+     },
+     {
+      "q": "¿Se puede combinar con el láser?",
+      "a": "Sí, y es lo habitual: el láser retira el grueso del vello oscuro y la electrólisis se ocupa del rubio, el canoso y los pelos sueltos que quedan. El orden se decide en la consulta."
      }
     ]
    },
@@ -425,35 +1079,115 @@
     "intro": "Elektroepilace je jediná metoda, která trvalě odstraňuje jakýkoli chloupek — včetně světlých, zrzavých a šedých.",
     "sections": [
      {
-      "h": "Jak funguje?",
-      "p": "Do vlasového folikulu se zavádí mikrojehla. Elektrický impuls ničí matrix folikulu navždy. Chloupek vypadá do 1–2 dnů."
+      "title": "Jak elektroepilace funguje",
+      "paras": [
+       "Do každého folikulu se zavede velmi tenká jehla, kterou projde výboj. Ten zničí růstovou část chloupku. Metoda pracuje s každým chloupkem zvlášť — barva proto nehraje roli: světlé, zrzavé, šedivé i jemné chloupky se odstraňují stejně jako tmavé.",
+       "Při správně zvolených parametrech a čisté technice už ošetřený folikul chloupek nevytvoří. Je to jediná metoda s takovým výsledkem, ale potřebuje čas: za minutu zvládne kosmetička jen omezený počet chloupků, proto se práce počítá po minutách."
+      ]
      },
      {
-      "h": "Pracujeme ve 4–10 rukou najednou",
-      "p": "Na jedné zóně pracuje několik specialistek současně — co obvykle zabere hodiny, je hotové mnohem rychleji."
+      "title": "Individuální nastavení parametrů",
+      "p": "Síla výboje, doba působení i typ jehly se volí pro vás: podle tloušťky chloupku, hloubky folikulu, typu a citlivosti pleti. Stejné nastavení nesedí na bradu a na lýtko, takže se parametry během práce mění — kosmetička sleduje reakci pokožky, ne jeden pevný režim."
      },
      {
-      "h": "Komu je určen?",
-      "p": "Kadému, kdo má světlé, blondýnské, zrzavé nebo šedé chloupky. Ideální pro zóny obličeje."
+      "title": "Pracujeme ve 4–10 rukou",
+      "p": "Na jedné zóně může pracovat několik kosmetiček najednou. Co se běžně protáhne na hodiny a několik návštěv, zvládneme několikrát rychleji. V ceníku je samostatná varianta „ve čtyřech rukou“ na 120 minut."
      },
      {
-      "h": "Průběh kurzu",
-      "p": "Zóna obličeje: obvykle 30–60 minut, 1× za 2–4 týdny."
+      "title": "Pro koho je vhodná",
+      "list": [
+       "světlé, zrzavé, šedivé a jemné chloupky, na které laser nepůsobí",
+       "obličej: brada, tváře, nad horním rtem, krk",
+       "jednotlivé chloupky, které zbyly po laserové kúře",
+       "tělo: jakékoli partie včetně bikin a podpaží",
+       "situace, kdy je potřeba chloupky odstranit natrvalo, ne jen prořídnout"
+      ]
+     },
+     {
+      "title": "Jak sezení probíhá",
+      "steps": [
+       "prohlídka zóny, kontrola kontraindikací, nastavení parametrů",
+       "znecitlivění: krém, podle potřeby další možnosti",
+       "zpracování chloupků jeden po druhém: pocit krátkých bodnutí s teplem",
+       "dezinfekce a zklidňující přípravek",
+       "platba podle časovače přístroje, za skutečně odpracovaný čas"
+      ]
+     },
+     {
+      "title": "Jak je kúra postavená",
+      "paras": [
+       "Chloupek lze ošetřit jen tehdy, když je vidět a je v aktivní fázi. Proto sezení jdou v intervalu 1–4 týdny: nejprve častěji, pak řidčeji, jak chloupků ubývá.",
+       "Počet ošetření je vždy individuální a závisí na zóně, hustotě a typu chloupků, hormonech a na tom, co se se zónou dělalo dřív — léta vytrhávání a vosku mění tvar folikulu a práci komplikují. Orientačně: obličej 10–20 sezení, tělo 15–30 i více. Je to orientace, ne slib.",
+       "Mezi sezeními se nesmí vytrhávat ani dělat vosk: chloupek musí dorůst do viditelné délky, jinak není co ošetřit. Holit se dá."
+      ]
+     },
+     {
+      "title": "Příprava",
+      "list": [
+       "chloupek musí být vidět: 1–3 mm, tedy 3–5 dní po holení",
+       "2–4 týdny nevytrhávat, nedělat vosk ani cukrovou pastu",
+       "několik dní před sezením se neopalovat",
+       "v den ošetření nenanášet na zónu krémy a deodorant",
+       "říct nám o lécích a o kožních onemocněních"
+      ]
+     },
+     {
+      "title": "Péče po ošetření",
+      "paras": [
+       "Na rovinu o reakci pleti: po elektroepilaci je téměř vždy zarudnutí a tečkovaný otok kolem ošetřených folikulů. U části klientek se objeví drobné krustičky — to je normální součást hojení a slíbit, že nebudou, nemůžeme: reakce závisí na pleti, zóně a počtu ošetřených chloupků."
+      ],
+      "list": [
+       "zarudnutí drží od několika hodin do jednoho až dvou dnů",
+       "krustičky, pokud vzniknou, odejdou samy za 5–10 dní — strhávat se nesmějí, jinak zůstanou stopy",
+       "2–3 dny bez sauny, bazénu a náročného sportu",
+       "první den se zóny nedotýkat rukama, na ošetřený obličej nenanášet make-up",
+       "dezinfekce podle doporučení, pak hojivý přípravek",
+       "SPF na odhalených partiích, dokud se pleť hojí"
+      ]
+     },
+     {
+      "title": "Kontraindikace",
+      "list": [
+       "těhotenství a kojení",
+       "kardiostimulátor a jiné elektronické implantáty",
+       "epilepsie",
+       "onkologické onemocnění",
+       "těžká cukrovka, poruchy srážlivosti krve",
+       "záněty, poranění a vyrážky v ošetřované zóně",
+       "sklon ke keloidním jizvám"
+      ],
+      "note": "Parametry i kontraindikace kosmetička zkontroluje před začátkem. V ceníku je zkušební ošetření na 30 minut na těle — na něm je vidět, jak reaguje právě vaše pokožka."
      }
     ],
-    "faqTitle": "FAQ",
+    "faqTitle": "Časté dotazy",
     "faq": [
      {
-      "q": "Bolí elektroepilace?",
-      "a": "Mírně nepomílubná — jako jedné pichnutí. Odborník práci přizpůsobí vašemu prahu bolesti."
+      "q": "Bolí to?",
+      "a": "Pocit je jako krátké bodnutí s teplem. Snášenlivost se liší: na těle je to snazší, na obličeji a v bikinách citlivější. Používáme znecitlivující krém a parametry volíme podle vašeho prahu. Zcela bezbolestná metoda to není a říkáme to dopředu."
      },
      {
-      "q": "Kolik sezení potřebuji?",
-      "a": "Záleží na zóně. Obličej: 10–20 sezení, tělo: 15–30 sezení po 1–4 týdnech."
+      "q": "Kolik sezení je potřeba?",
+      "a": "Obličej obvykle 10–20 sezení, tělo 15–30 i více, v intervalu 1–4 týdny. Přesné číslo závisí na zóně, hustotě chloupků, hormonech a na tom, zda se zóna dříve vytrhávala. Je to orientace, ne pevný slib."
      },
      {
-      "q": "Může odstranit světlé chlupy?",
-      "a": "Ano! To je hlavní výhoda — funguje na jakýkoliv typ chlupu."
+      "q": "Dají se odstranit světlé a šedivé chloupky?",
+      "a": "Ano. Elektroepilace nezávisí na pigmentu: jehla pracuje se samotným folikulem, takže barva chloupku nehraje roli. To je hlavní rozdíl oproti laseru."
+     },
+     {
+      "q": "Budou krustičky?",
+      "a": "Mohou být — je to normální součást hojení, zejména na obličeji a u silnějších chloupků. Odejdou za 5–10 dní a nesmějí se strhávat. Slibovat, že nebudou vůbec, by nebylo poctivé: pleť reaguje u každé jinak."
+     },
+     {
+      "q": "Zůstanou stopy nebo jizvy?",
+      "a": "Při správných parametrech a péči ne. Riziko stoupá, když se krustičky strhávají, když se čerstvá pokožka opaluje nebo když se pracuje na podrážděné zóně. Proto zónu s podrážděním do práce nebereme."
+     },
+     {
+      "q": "Platí se za zónu, nebo za čas?",
+      "a": "Za čas — po minutách podle časovače přístroje, za skutečně odpracovaný čas. Je to férovější: ve stejné zóně má každý jiný počet chloupků."
+     },
+     {
+      "q": "Lze kombinovat s laserem?",
+      "a": "Ano, a je to častý postup: laserem odstraníme hlavní množství tmavých chloupků a elektroepilací světlé, šedivé a jednotlivé zbývající. Pořadí nastavíme na konzultaci."
      }
     ]
    }
@@ -961,17 +1695,66 @@
     "intro": "Диагностика волос и кожи головы с помощью трихоскопа. Составляем индивидуальный лечебный протокол.",
     "sections": [
      {
-      "h": "Что включает?",
-      "p": "Трихоскопическое исследование, диагностика, первая процедура — всё за один сеанс."
+      "title": "С чем к нам приходят",
+      "p": "Чаще всего — с выпадением, которое длится дольше месяца. Но проблемы кожи головы шире: зуд, шелушение, перхоть, жирность корней, чувство стянутости, истончение волос и потеря объёма. Часто всё это связано между собой, и начинать имеет смысл с кожи головы, а не с покупки нового шампуня.",
+      "list": [
+       "волосы выпадают сильнее обычного дольше месяца",
+       "объём уменьшился, волосы стали тоньше",
+       "зуд, шелушение, перхоть, корочки",
+       "жирные корни при сухих длинах",
+       "выпадение после родов, болезни, строгой диеты или стресса"
+      ]
      },
      {
-      "h": "Кому подходит?",
-      "p": "Для всех, кто столкнулся с выпадением волос, перхотью, жирной или сухой кожей головы."
+      "title": "Что делаем на приёме",
+      "steps": [
+       "разговор: когда началось, что менялось в здоровье, какие препараты принимаете",
+       "трихоскопия: смотрим кожу головы и волосы под увеличением по зонам",
+       "оценка: плотность волос, состояние фолликулов, соотношение тонких и толстых волос, воспаление",
+       "разбор домашнего ухода: шампунь, частота мытья, укладки, окрашивания",
+       "первая процедура и план: уход, интервалы и, если нужно, обследование"
+      ]
+     },
+     {
+      "title": "Где заканчивается уход и начинается медицина",
+      "paras": [
+       "Мы работаем с кожей головы: очищение, снятие воспаления, уход, процедуры для питания фолликулов. Это косметологическая часть, и она действительно помогает — но только когда причина выпадения в состоянии кожи головы или в уходе.",
+       "Если выпадение связано с дефицитом железа, щитовидной железой, гормональными изменениями, приёмом лекарств или кожным заболеванием, никакие процедуры причину не уберут. В таком случае мы честно говорим, что нужны анализы и консультация врача, и уже потом подбираем уход — чтобы вы не платили за курс, который не может сработать."
+      ]
+     },
+     {
+      "title": "План ухода",
+      "p": "После осмотра составляем план: какие процедуры и с каким интервалом, что поменять в домашнем уходе, когда прийти на контроль. Результат оценивается по трихоскопии через 2–3 месяца — раньше судить нельзя: волос растёт медленно, и любые изменения становятся видны только через цикл."
      }
     ],
     "equipment": [],
-    "faqTitle": "",
-    "faq": [],
+    "faqTitle": "Частые вопросы",
+    "faq": [
+     {
+      "q": "Почему выпадают волосы?",
+      "a": "Причин много, и чаще всего их несколько сразу: дефицит железа и витамина D, нарушения щитовидной железы, гормональные изменения, в том числе после родов, стресс и недосып, строгие диеты, перенесённые болезни, приём некоторых лекарств, а также состояние самой кожи головы. Поэтому мы начинаем с осмотра, а не с назначения процедур."
+     },
+     {
+      "q": "Когда обращаться к трихологу?",
+      "a": "Если усиленное выпадение держится дольше месяца, если заметно уменьшился объём, если есть зуд, шелушение или корочки, а также если выпадение началось после родов, болезни или резкого похудения. Чем раньше — тем проще: восстановить плотность легче, чем вернуть уже утраченные фолликулы."
+     },
+     {
+      "q": "Нужно ли сдавать анализы?",
+      "a": "Не всегда, но часто. Если трихоскопия показывает картину, типичную для дефицитов или гормональных причин, без анализов дальше идти бессмысленно. Какие именно — скажем на приёме; обычно это ферритин, витамин D, показатели щитовидной железы и общий анализ крови."
+     },
+     {
+      "q": "Когда можно ожидать результат?",
+      "a": "Первые изменения видны через 2–3 месяца, заметный результат — через 4–6. Это не медленная работа клиники, а цикл роста волоса: новый волос отрастает примерно на сантиметр в месяц. Если кто-то обещает результат через две недели, речь идёт о внешнем виде длин, а не о корнях."
+     },
+     {
+      "q": "Поможет ли мезотерапия кожи головы?",
+      "a": "Она хорошо работает как часть плана, когда понятна причина. Как единственная мера при дефиците железа или проблемах щитовидной железы она даст временный эффект, а выпадение вернётся. Поэтому процедуру назначаем после осмотра, а не по запросу."
+     },
+     {
+      "q": "Нужно ли мыть голову перед приёмом?",
+      "a": "Приходите с обычной для вас головой — лучше не мыть в день приёма. Так видно реальное состояние кожи, жирность корней и шелушение."
+     }
+    ],
     "priceGroups": [
      {
       "title": "Прайс",
@@ -988,17 +1771,66 @@
     "intro": "Діагностика волосся та шкіри голови за допомогою трихоскопа.",
     "sections": [
      {
-      "h": "Що включає?",
-      "p": "Трихоскопія шкіри, діагностика, перша процедура — все за один сеанс."
+      "title": "З чим до нас приходять",
+      "p": "Найчастіше — з випадінням, яке триває довше місяця. Але проблеми шкіри голови ширші: зуд, злущування, лупа, жирність коренів, відчуття стягнутості, стоншення волосся і втрата обʼєму. Часто все це повʼязано між собою, і починати має сенс зі шкіри голови, а не з купівлі нового шампуню.",
+      "list": [
+       "волосся випадає сильніше за звичайне довше місяця",
+       "обʼєм зменшився, волосся стало тоншим",
+       "зуд, злущування, лупа, кірочки",
+       "жирні корені при сухих довжинах",
+       "випадіння після пологів, хвороби, суворої дієти або стресу"
+      ]
      },
      {
-      "h": "Кому підходить?",
-      "p": "Для всіх, хто стикається з випадінням волосся, лупою, жирною або сухою шкірою."
+      "title": "Що робимо на прийомі",
+      "steps": [
+       "розмова: коли почалося, що змінювалося у здоровʼї, які препарати приймаєте",
+       "трихоскопія: дивимося шкіру голови й волосся під збільшенням по зонах",
+       "оцінка: щільність волосся, стан фолікулів, співвідношення тонких і товстих волосин, запалення",
+       "розбір домашнього догляду: шампунь, частота миття, укладання, фарбування",
+       "перша процедура і план: догляд, інтервали і, якщо потрібно, обстеження"
+      ]
+     },
+     {
+      "title": "Де закінчується догляд і починається медицина",
+      "paras": [
+       "Ми працюємо зі шкірою голови: очищення, зняття запалення, догляд, процедури для живлення фолікулів. Це косметологічна частина, і вона справді допомагає — але лише коли причина випадіння у стані шкіри голови або в догляді.",
+       "Якщо випадіння повʼязане з дефіцитом заліза, щитоподібною залозою, гормональними змінами, прийомом ліків або шкірним захворюванням, жодні процедури причину не приберуть. У такому разі ми чесно говоримо, що потрібні аналізи й консультація лікаря, і вже потім добираємо догляд — щоб ви не платили за курс, який не може спрацювати."
+      ]
+     },
+     {
+      "title": "План догляду",
+      "p": "Після огляду складаємо план: які процедури і з яким інтервалом, що змінити в домашньому догляді, коли прийти на контроль. Результат оцінюється за трихоскопією через 2–3 місяці — раніше судити не можна: волосина росте повільно, і будь-які зміни стають видно лише через цикл."
      }
     ],
     "equipment": [],
-    "faqTitle": "",
-    "faq": [],
+    "faqTitle": "Часті питання",
+    "faq": [
+     {
+      "q": "Чому випадає волосся?",
+      "a": "Причин багато, і найчастіше їх кілька одразу: дефіцит заліза та вітаміну D, порушення щитоподібної залози, гормональні зміни, зокрема після пологів, стрес і недосип, суворі дієти, перенесені хвороби, прийом деяких ліків, а також стан самої шкіри голови. Тому ми починаємо з огляду, а не з призначення процедур."
+     },
+     {
+      "q": "Коли звертатися до трихолога?",
+      "a": "Якщо посилене випадіння триває довше місяця, якщо помітно зменшився обʼєм, якщо є зуд, злущування чи кірочки, а також якщо випадіння почалося після пологів, хвороби або різкого схуднення. Що раніше — то простіше: відновити щільність легше, ніж повернути вже втрачені фолікули."
+     },
+     {
+      "q": "Чи потрібно здавати аналізи?",
+      "a": "Не завжди, але часто. Якщо трихоскопія показує картину, типову для дефіцитів або гормональних причин, без аналізів далі йти безглуздо. Які саме — скажемо на прийомі; зазвичай це феритин, вітамін D, показники щитоподібної залози та загальний аналіз крові."
+     },
+     {
+      "q": "Коли можна очікувати результат?",
+      "a": "Перші зміни видно через 2–3 місяці, помітний результат — через 4–6. Це не повільна робота клініки, а цикл росту волосини: нове волосся відростає приблизно на сантиметр на місяць. Якщо хтось обіцяє результат через два тижні, ідеться про вигляд довжин, а не про корені."
+     },
+     {
+      "q": "Чи допоможе мезотерапія шкіри голови?",
+      "a": "Вона добре працює як частина плану, коли зрозуміла причина. Як єдиний захід при дефіциті заліза чи проблемах щитоподібної залози вона дасть тимчасовий ефект, а випадіння повернеться. Тому процедуру призначаємо після огляду, а не на запит."
+     },
+     {
+      "q": "Чи потрібно мити голову перед прийомом?",
+      "a": "Приходьте зі звичайною для вас головою — краще не мити в день прийому. Так видно реальний стан шкіри, жирність коренів і злущування."
+     }
+    ],
     "priceGroups": [
      {
       "title": "Прайс",
@@ -1015,17 +1847,66 @@
     "intro": "Hair and scalp diagnostics using a trichoscope. We create an individual treatment protocol for each client.",
     "sections": [
      {
-      "h": "What's included?",
-      "p": "Trichoscopic scalp examination, diagnosis, first treatment — all in one session."
+      "title": "What people come with",
+      "p": "Most often with shedding that has lasted more than a month. But scalp problems go wider: itching, flaking, dandruff, greasy roots, a tight feeling, thinning hair and lost volume. These are often connected, and it makes sense to start with the scalp rather than with another new shampoo.",
+      "list": [
+       "hair shedding more than usual for over a month",
+       "volume has dropped, the hair has become finer",
+       "itching, flaking, dandruff, crusts",
+       "greasy roots with dry lengths",
+       "shedding after childbirth, illness, a strict diet or stress"
+      ]
      },
      {
-      "h": "Who is it for?",
-      "p": "For anyone dealing with hair loss, dandruff, oily or dry scalp."
+      "title": "What happens at the appointment",
+      "steps": [
+       "a conversation: when it started, what changed in your health, what you take",
+       "trichoscopy: the scalp and hair examined under magnification, area by area",
+       "assessment: hair density, follicle condition, the ratio of fine to thick hairs, inflammation",
+       "going through home care: shampoo, washing frequency, styling, colouring",
+       "a first treatment and a plan: care, intervals and, if needed, medical tests"
+      ]
+     },
+     {
+      "title": "Where care ends and medicine begins",
+      "paras": [
+       "We work with the scalp: cleansing, settling inflammation, care, treatments that feed the follicles. That is the cosmetic side, and it genuinely helps — but only when the cause of the shedding lies in the scalp or in your routine.",
+       "If the shedding is driven by iron deficiency, the thyroid, hormonal change, medication or a skin condition, no treatment will remove the cause. In that case we say plainly that tests and a doctor are needed, and only then choose the care — so that you do not pay for a course that cannot work."
+      ]
+     },
+     {
+      "title": "The care plan",
+      "p": "After the assessment we set out a plan: which treatments and how far apart, what to change at home, when to come back for a review. Results are judged on trichoscopy after 2–3 months — earlier is not meaningful: hair grows slowly, and change only becomes visible over a full cycle."
      }
     ],
     "equipment": [],
-    "faqTitle": "",
-    "faq": [],
+    "faqTitle": "Common questions",
+    "faq": [
+     {
+      "q": "Why does hair fall out?",
+      "a": "There are many causes and usually several at once: iron and vitamin D deficiency, thyroid problems, hormonal change including after childbirth, stress and poor sleep, strict diets, recent illness, certain medications, and the condition of the scalp itself. That is why we start with an examination rather than by booking treatments."
+     },
+     {
+      "q": "When should I see a trichologist?",
+      "a": "If heavier shedding has lasted more than a month, if volume has visibly dropped, if there is itching, flaking or crusting, or if shedding started after childbirth, illness or rapid weight loss. The sooner the better: holding on to density is easier than bringing back follicles that are already gone."
+     },
+     {
+      "q": "Do I need blood tests?",
+      "a": "Not always, but often. If trichoscopy shows a picture typical of deficiencies or hormonal causes, going further without tests is pointless. We will say which ones at the appointment; usually ferritin, vitamin D, thyroid markers and a full blood count."
+     },
+     {
+      "q": "When can I expect results?",
+      "a": "The first changes show after 2–3 months, a clear result after 4–6. That is not the clinic being slow — it is the hair cycle: new hair grows about a centimetre a month. Anyone promising results in two weeks is talking about how the lengths look, not about the roots."
+     },
+     {
+      "q": "Will scalp mesotherapy help?",
+      "a": "It works well as part of a plan once the cause is clear. As the only measure against iron deficiency or a thyroid problem it gives a temporary effect and the shedding returns. That is why we prescribe it after an examination rather than on request."
+     },
+     {
+      "q": "Should I wash my hair before the appointment?",
+      "a": "Come with your hair in its usual state — better not to wash it on the day. That way the real condition of the scalp, the oiliness at the roots and any flaking are visible."
+     }
+    ],
     "priceGroups": [
      {
       "title": "Price",
@@ -1042,17 +1923,66 @@
     "intro": "Diagnóstico del cabello y cuero cabelludo con tricoscopio. Protocolo de tratamiento individual.",
     "sections": [
      {
-      "h": "¿Qué incluye?",
-      "p": "Examen tricoscópico, diagnóstico y primer tratamiento — todo en una sesión."
+      "title": "Con qué llegan las clientas",
+      "p": "Casi siempre con una caída que dura más de un mes. Pero los problemas del cuero cabelludo son más amplios: picor, descamación, caspa, raíces grasas, sensación de tirantez, cabello más fino y pérdida de volumen. Suelen estar relacionados, y tiene sentido empezar por el cuero cabelludo y no por comprar otro champú.",
+      "list": [
+       "el pelo cae más de lo normal desde hace más de un mes",
+       "has perdido volumen y el cabello se ha afinado",
+       "picor, descamación, caspa, costras",
+       "raíces grasas con medios y puntas secos",
+       "caída tras el parto, una enfermedad, una dieta estricta o estrés"
+      ]
      },
      {
-      "h": "¿Para quién?",
-      "p": "Para cualquiera que tenga caída del cabello, caspa o cuero cabelludo graso o seco."
+      "title": "Qué hacemos en la consulta",
+      "steps": [
+       "una conversación: cuándo empezó, qué cambió en tu salud, qué tomas",
+       "tricoscopia: cuero cabelludo y cabello con aumento, zona por zona",
+       "valoración: densidad, estado de los folículos, proporción de cabellos finos y gruesos, inflamación",
+       "revisión del cuidado en casa: champú, frecuencia de lavado, peinados, tintes",
+       "un primer tratamiento y un plan: cuidado, intervalos y, si hace falta, analíticas"
+      ]
+     },
+     {
+      "title": "Dónde acaba la estética y empieza la medicina",
+      "paras": [
+       "Trabajamos con el cuero cabelludo: limpieza, calmar la inflamación, cuidado y tratamientos que nutren los folículos. Es la parte estética y ayuda de verdad, pero solo cuando la causa de la caída está en el cuero cabelludo o en la rutina.",
+       "Si la caída viene de un déficit de hierro, de la tiroides, de cambios hormonales, de una medicación o de una enfermedad de la piel, ningún tratamiento elimina la causa. En ese caso decimos con franqueza que hacen falta analíticas y un médico, y elegimos el cuidado después, para que no pagues por una pauta que no puede funcionar."
+      ]
+     },
+     {
+      "title": "El plan de cuidado",
+      "p": "Tras la valoración fijamos un plan: qué tratamientos y con qué intervalos, qué cambiar en casa y cuándo volver a revisión. El resultado se evalúa con tricoscopia a los 2–3 meses; antes no tiene sentido juzgar: el pelo crece despacio y los cambios solo se ven a lo largo de un ciclo completo."
      }
     ],
     "equipment": [],
-    "faqTitle": "",
-    "faq": [],
+    "faqTitle": "Preguntas frecuentes",
+    "faq": [
+     {
+      "q": "¿Por qué se cae el pelo?",
+      "a": "Hay muchas causas y normalmente varias a la vez: déficit de hierro y de vitamina D, problemas de tiroides, cambios hormonales incluido el posparto, estrés y falta de sueño, dietas estrictas, enfermedades recientes, algunos medicamentos y el propio estado del cuero cabelludo. Por eso empezamos con una valoración y no reservando tratamientos."
+     },
+     {
+      "q": "¿Cuándo acudir a un tricólogo?",
+      "a": "Si la caída intensa dura más de un mes, si has perdido volumen de forma visible, si hay picor, descamación o costras, o si la caída empezó tras el parto, una enfermedad o una bajada rápida de peso. Cuanto antes, mejor: mantener la densidad es más fácil que recuperar folículos ya perdidos."
+     },
+     {
+      "q": "¿Hay que hacerse analíticas?",
+      "a": "No siempre, pero a menudo sí. Si la tricoscopia muestra un patrón típico de déficits o de causas hormonales, seguir sin analítica no tiene sentido. Diremos cuáles en la consulta; suelen ser ferritina, vitamina D, tiroides y hemograma."
+     },
+     {
+      "q": "¿Cuándo se ven resultados?",
+      "a": "Los primeros cambios a los 2–3 meses y un resultado claro a los 4–6. No es que la clínica vaya lenta: es el ciclo del cabello, que crece alrededor de un centímetro al mes. Quien promete resultados en dos semanas habla del aspecto de los largos, no de la raíz."
+     },
+     {
+      "q": "¿Sirve la mesoterapia capilar?",
+      "a": "Funciona bien como parte de un plan cuando la causa está clara. Como única medida frente a un déficit de hierro o a un problema de tiroides da un efecto temporal y la caída vuelve. Por eso la indicamos tras la valoración y no a petición."
+     },
+     {
+      "q": "¿Debo lavarme el pelo antes de la cita?",
+      "a": "Ven con el pelo como lo llevas normalmente; mejor no lavarlo ese día. Así se ve el estado real del cuero cabelludo, la grasa en las raíces y la descamación."
+     }
+    ],
     "priceGroups": [
      {
       "title": "Price",
@@ -1069,17 +1999,66 @@
     "intro": "Diagnostika stavu vlasů a pokožky hlavy pomocí trichoskopu. Sestavujeme individuální léčebný protokol pro každého klienta.",
     "sections": [
      {
-      "h": "Co zahrnuje?",
-      "p": "Trichoskopické vyšetření vlasové pokožky, diagnostika, první léčebné ošetření — vše v jednom sezení."
+      "title": "S čím k nám klientky chodí",
+      "p": "Nejčastěji s padáním vlasů, které trvá déle než měsíc. Potíže pokožky hlavy jsou ale širší: svědění, olupování, lupy, mastné kořínky, pocit napětí, ztenčování vlasů a ztráta objemu. Často spolu souvisejí a má smysl začít pokožkou hlavy, ne nákupem dalšího šamponu.",
+      "list": [
+       "vlasy padají víc než obvykle déle než měsíc",
+       "objem se zmenšil, vlasy jsou tenčí",
+       "svědění, olupování, lupy, krustičky",
+       "mastné kořínky při suchých délkách",
+       "padání po porodu, nemoci, přísné dietě nebo stresu"
+      ]
      },
      {
-      "h": "Pro koho?",
-      "p": "Pro kohokoli, kdo řeší vypadávání vlasů, lupy, mastné nebo suché vlasové pokožce."
+      "title": "Co na návštěvě děláme",
+      "steps": [
+       "rozhovor: kdy to začalo, co se změnilo ve zdraví, jaké léky berete",
+       "trichoskopie: pokožku hlavy a vlasy si prohlédneme pod zvětšením po zónách",
+       "zhodnocení: hustota vlasů, stav folikulů, poměr tenkých a silných vlasů, zánět",
+       "rozbor domácí péče: šampon, frekvence mytí, úpravy, barvení",
+       "první ošetření a plán: péče, intervaly a podle potřeby vyšetření"
+      ]
+     },
+     {
+      "title": "Kde končí péče a začíná medicína",
+      "paras": [
+       "Pracujeme s pokožkou hlavy: čištění, zklidnění zánětu, péče, ošetření pro výživu folikulů. To je kosmetická část a opravdu pomáhá — ale jen tehdy, když příčina padání je ve stavu pokožky hlavy nebo v péči.",
+       "Pokud padání souvisí s nedostatkem železa, se štítnou žlázou, s hormonálními změnami, s léky nebo s kožním onemocněním, žádné ošetření příčinu neodstraní. V takovém případě na rovinu řekneme, že je potřeba vyšetření a lékař, a péči volíme až potom — abyste neplatila za kúru, která nemůže zabrat."
+      ]
+     },
+     {
+      "title": "Plán péče",
+      "p": "Po vyšetření sestavíme plán: která ošetření a v jakých intervalech, co změnit v domácí péči a kdy přijít na kontrolu. Výsledek hodnotíme podle trichoskopie za 2–3 měsíce — dřív to posoudit nelze: vlas roste pomalu a změny jsou vidět až po celém cyklu."
      }
     ],
     "equipment": [],
-    "faqTitle": "",
-    "faq": [],
+    "faqTitle": "Časté dotazy",
+    "faq": [
+     {
+      "q": "Proč vlasy padají?",
+      "a": "Příčin je mnoho a obvykle je jich několik naráz: nedostatek železa a vitaminu D, porucha štítné žlázy, hormonální změny včetně období po porodu, stres a nedostatek spánku, přísné diety, prodělané nemoci, některé léky a také stav samotné pokožky hlavy. Proto začínáme vyšetřením, ne objednáním ošetření."
+     },
+     {
+      "q": "Kdy jít k trichologovi?",
+      "a": "Když zvýšené padání trvá déle než měsíc, když se viditelně zmenšil objem, když je svědění, olupování nebo krustičky, a také když padání začalo po porodu, nemoci nebo rychlém zhubnutí. Čím dřív, tím lépe: udržet hustotu je snazší než vracet už ztracené folikuly."
+     },
+     {
+      "q": "Je potřeba jít na odběry?",
+      "a": "Ne vždy, ale často. Pokud trichoskopie ukáže obraz typický pro nedostatky nebo hormonální příčiny, bez vyšetření nemá smysl pokračovat. Které konkrétně, řekneme na návštěvě; obvykle feritin, vitamin D, hodnoty štítné žlázy a krevní obraz."
+     },
+     {
+      "q": "Kdy lze čekat výsledek?",
+      "a": "První změny jsou vidět za 2–3 měsíce, výraznější výsledek za 4–6. Není to pomalá práce kliniky, ale cyklus růstu vlasu: nový vlas vyroste zhruba o centimetr za měsíc. Když někdo slibuje výsledek za dva týdny, mluví o vzhledu délek, ne o kořínkách."
+     },
+     {
+      "q": "Pomůže mezoterapie vlasové pokožky?",
+      "a": "Funguje dobře jako část plánu, když je jasná příčina. Jako jediné opatření při nedostatku železa nebo potížích se štítnou žlázou přinese jen dočasný efekt a padání se vrátí. Proto ji nasazujeme po vyšetření, ne na přání."
+     },
+     {
+      "q": "Mám si před návštěvou umýt hlavu?",
+      "a": "Přijďte s vlasy ve svém běžném stavu — v den návštěvy raději nemyjte. Je tak vidět skutečný stav pokožky, mastnota kořínků i olupování."
+     }
+    ],
     "priceGroups": [
      {
       "title": "Ceník",
