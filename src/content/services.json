@@ -140,7 +140,8 @@
      }
     ],
     "priceGroups": [],
-    "note": ""
+    "note": "",
+    "seoTitle": "Лазерная эпиляция {in_city} — цены и курс"
    },
    "uk": {
     "title": "Лазерна епіляція",
@@ -253,7 +254,8 @@
      }
     ],
     "priceGroups": [],
-    "note": ""
+    "note": "",
+    "seoTitle": "Лазерна епіляція {in_city} — ціни та курс"
    },
    "en": {
     "title": "Laser epilation",
@@ -366,7 +368,8 @@
      }
     ],
     "priceGroups": [],
-    "note": ""
+    "note": "",
+    "seoTitle": "Laser hair removal {in_city} — prices and course"
    },
    "es": {
     "title": "Depilación láser",
@@ -479,7 +482,8 @@
      }
     ],
     "priceGroups": [],
-    "note": ""
+    "note": "",
+    "seoTitle": "Depilación láser {in_city} — precios y pauta"
    },
    "cs": {
     "title": "Laserová epilace",
@@ -592,7 +596,8 @@
      }
     ],
     "priceGroups": [],
-    "note": ""
+    "note": "",
+    "seoTitle": "Laserová epilace {city} — ceník a trvalý výsledek"
    }
   }
  },
@@ -741,7 +746,8 @@
       "q": "Можно ли совмещать с лазером?",
       "a": "Да, и это частый сценарий: лазером убираем основную массу тёмных волос, электроэпиляцией — светлые, седые и единичные оставшиеся. Порядок подбираем на консультации."
      }
-    ]
+    ],
+    "seoTitle": "Электроэпиляция {in_city} — цена за минуту"
    },
    "uk": {
     "title": "Електроепіляція",
@@ -858,7 +864,8 @@
       "q": "Чи можна поєднувати з лазером?",
       "a": "Так, і це частий сценарій: лазером прибираємо основну масу темного волосся, електроепіляцією — світле, сиве й поодинокі залишки. Порядок добираємо на консультації."
      }
-    ]
+    ],
+    "seoTitle": "Електроепіляція {in_city} — ціна за хвилину"
    },
    "en": {
     "title": "Electrolysis",
@@ -975,7 +982,8 @@
       "q": "Can it be combined with laser?",
       "a": "Yes, and it often is: the laser clears the bulk of the dark hair, electrolysis handles the blond, grey and remaining single hairs. We set the order at the consultation."
      }
-    ]
+    ],
+    "seoTitle": "Electrolysis {in_city} — price per minute"
    },
    "es": {
     "title": "Electrólisis",
@@ -1092,7 +1100,8 @@
       "q": "¿Se puede combinar con el láser?",
       "a": "Sí, y es lo habitual: el láser retira el grueso del vello oscuro y la electrólisis se ocupa del rubio, el canoso y los pelos sueltos que quedan. El orden se decide en la consulta."
      }
-    ]
+    ],
+    "seoTitle": "Electrólisis {in_city} — precio por minuto"
    },
    "cs": {
     "title": "Elektroepilace",
@@ -1209,7 +1218,8 @@
       "q": "Lze kombinovat s laserem?",
       "a": "Ano, a je to častý postup: laserem odstraníme hlavní množství tmavých chloupků a elektroepilací světlé, šedivé a jednotlivé zbývající. Pořadí nastavíme na konzultaci."
      }
-    ]
+    ],
+    "seoTitle": "Elektroepilace {city} — cena za minutu, i světlé chloupky"
    }
   }
  },
@@ -1452,7 +1462,8 @@
       ]
      }
     ],
-    "note": ""
+    "note": "",
+    "seoTitle": "Косметолог {in_city} — чистки, пилинги, уход за лицом"
    },
    "uk": {
     "title": "Косметологія",
@@ -1494,7 +1505,8 @@
       ]
      }
     ],
-    "note": ""
+    "note": "",
+    "seoTitle": "Косметолог {in_city} — чистки, пілінги, догляд"
    },
    "en": {
     "title": "Cosmetology",
@@ -1546,7 +1558,8 @@
       ]
      }
     ],
-    "note": ""
+    "note": "",
+    "seoTitle": "Cosmetologist {in_city} — facials, peels, skincare"
    },
    "es": {
     "title": "Cosmetología",
@@ -1592,7 +1605,8 @@
       ]
      }
     ],
-    "note": ""
+    "note": "",
+    "seoTitle": "Cosmetóloga {in_city} — limpiezas, peelings, cuidado"
    },
    "cs": {
     "title": "Kosmetologie",
@@ -1644,7 +1658,8 @@
       ]
      }
     ],
-    "note": ""
+    "note": "",
+    "seoTitle": "Kosmetika {city} 8 — čištění pleti, peelingy, ošetření"
    }
   }
  },
@@ -1784,7 +1799,8 @@
       ]
      }
     ],
-    "note": ""
+    "note": "",
+    "seoTitle": "Трихолог {in_city} — трихоскопия и выпадение волос"
    },
    "uk": {
     "title": "Трихологія",
@@ -1860,7 +1876,8 @@
       ]
      }
     ],
-    "note": ""
+    "note": "",
+    "seoTitle": "Трихолог {in_city} — трихоскопія та випадіння волосся"
    },
    "en": {
     "title": "Trichology",
@@ -1936,7 +1953,8 @@
       ]
      }
     ],
-    "note": ""
+    "note": "",
+    "seoTitle": "Trichologist {in_city} — trichoscopy and hair loss"
    },
    "es": {
     "title": "Tricología",
@@ -2012,7 +2030,8 @@
       ]
      }
     ],
-    "note": ""
+    "note": "",
+    "seoTitle": "Tricólogo {in_city} — tricoscopia y caída del cabello"
    },
    "cs": {
     "title": "Trichologie",
@@ -2088,7 +2107,8 @@
       ]
      }
     ],
-    "note": ""
+    "note": "",
+    "seoTitle": "Tricholog {city} — trichoskopie a padání vlasů"
    }
   }
  },

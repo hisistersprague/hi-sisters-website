@@ -1922,13 +1922,15 @@ def with_city(title, desc, lang, city):
     """У Праги и Валенсии разные страницы — заголовок и описание не должны совпадать."""
     nm = studios[city]['city'].get(lang, studios[city]['city']['en'])
     low = nm.lower()
-    if low not in title.lower():
+    # «в Праге» — тоже упоминание города, второй раз дописывать не нужно
+    forms = [low, IN_CITY[city][lang].lower()]
+    if not any(f in title.lower() for f in forms):
         if ' — Hi Sisters' in title:
             title = title.replace(' — Hi Sisters', ', %s — Hi Sisters' % nm, 1)
         else:
             title = '%s, %s' % (title, nm)
     tail = desc.rstrip().rstrip('.').lower()
-    if not tail.endswith(low):
+    if not any(f in tail for f in forms):
         room = 166 - len(nm)
         base = desc.rstrip()
         if len(base) > room:
@@ -1944,6 +1946,9 @@ def doc(lang, city, rel, current, title, desc, main, cta=None, other_rel=None,
     label = cta or HERO[lang]['cta']
     sticky = ('<div class="sticky"><a class="btn btn-gold" href="%s" data-book>%s</a></div>'
               % (book_href(lang, city), e(label))) if with_band else ''
+    # Google показывает около 60 знаков: длинный хвост с названием клиники только мешает
+    if len(title) > 65 and ', Hi Sisters Clinic' in title:
+        title = title.replace(', Hi Sisters Clinic', '')
     return (head(lang, city, title, desc, rel, langs=langs)
             + header(lang, city, rel, current, other_rel, langs=langs)
             + '\n<main>' + main + (band(lang, city) if with_band else '') + '</main>'
@@ -3607,7 +3612,10 @@ def build_service(lang, city, key):
   <div class="more-list">{zone_links}{sib_links}</div>
 </div></section>
 """
-    title = '%s — %s, Hi Sisters Clinic' % (pg.get('title') or card['title'], cityname)
+    # заголовок для поиска можно задать отдельно: в выдаче важны слова, которые ищут
+    title = (pg['seoTitle'].replace('{city}', cityname)
+                              .replace('{in_city}', IN_CITY[city][lang]) if pg.get('seoTitle')
+             else '%s — %s, Hi Sisters Clinic' % (pg.get('title') or card['title'], cityname))
     desc = (pg.get('intro') or card['desc'])[:300]
     nm = pg.get('title') or card['title']
     sch = (service_schema(lang, city, key, price_min(SERVICE_GROUP.get(city, {}).get(key, ''), lang))
