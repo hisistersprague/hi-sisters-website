@@ -65,7 +65,7 @@
       "paras": [
        "Мы работаем на результат, а не на бесконечные поддерживающие процедуры. Курс строится так, чтобы попасть в фазы роста разных групп волос: первые сеансы идут с интервалом около 4–6 недель, затем интервал увеличивается — 8, 10, 12 недель и больше.",
        "Увеличение интервала — не затягивание курса, а его логика: чем меньше волос остаётся, тем дольше нужно ждать, пока оставшиеся войдут в активную фазу. Приходить раньше смысла нет: сеанс будет почти вхолостую.",
-       "Сколько всего понадобится сеансов, заранее точно не скажет никто. У большинства заметное прореживание начинается после 2–3 процедур, а курс занимает 6–10 сеансов и больше — это зависит от зоны, гормонального фона, плотности и цвета волос. Мы не обещаем «полное удаление за 6 сеансов»: такое обещание невозможно выполнить честно."
+       "У большинства заметное прореживание начинается после 2–3 процедур, а весь курс занимает обычно 6–10 сеансов и больше — это зависит от зоны, гормонального фона, плотности и цвета волос. Поэтому мы не называем фиксированное число сеансов заранее. Но если лазерная эпиляция вам подходит, результат мы гарантируем и доводим курс до конца: на консультации косметолог прямо скажет, подходит метод или нет, и если нет — предложит электроэпиляцию, а не продаст курс наугад."
       ],
       "note": "После курса у части клиенток волосы возвращаются частично — обычно на фоне гормональных изменений: беременности, отмены или начала приёма препаратов, заболеваний щитовидной железы. Это не ошибка курса, а свойство организма; в таких случаях нужны единичные поддерживающие сеансы."
      },
@@ -107,12 +107,16 @@
     "faqTitle": "Часто задаваемые вопросы",
     "faq": [
      {
+      "q": "Даёте ли вы гарантию результата?",
+      "a": "Да — если лазерная эпиляция вам подходит. На консультации мы смотрим тип и цвет волос, состояние кожи и выясняем, нет ли гормональных причин роста. Если метод подходит, мы ведём курс до результата. Если не подходит — говорим об этом сразу и предлагаем электроэпиляцию, которая работает с волосом любого цвета."
+     },
+     {
       "q": "Больно ли делать лазерную эпиляцию?",
       "a": "Ощущение похоже на короткий горячий щелчок. Охлаждение насадки заметно его смягчает. Чувствительнее всего зоны с тонкой кожей — бикини и подмышки; в первые сеансы ощутимее, дальше легче, потому что волос становится меньше."
      },
      {
       "q": "Сколько сеансов нужно?",
-      "a": "Обычно 6–10, иногда больше. Точное число заранее не назовёт никто честно: лазер работает только по волосам в активной фазе роста, а их доля у всех разная. Прореживание обычно видно уже после 2–3 сеансов."
+      "a": "Обычно 6–10, иногда больше: лазер работает только по волосам в активной фазе роста, а их доля у всех разная, поэтому фиксированное число заранее не называем. Прореживание обычно видно уже после 2–3 сеансов, а результат гарантируем, если метод вам подходит."
      },
      {
       "q": "Почему интервалы между сеансами увеличиваются?",
@@ -174,7 +178,7 @@
       "paras": [
        "Ми працюємо на результат, а не на безкінечні підтримувальні процедури. Курс будується так, щоб потрапити у фази росту різних груп волосся: перші сеанси йдуть з інтервалом близько 4–6 тижнів, далі інтервал збільшується — 8, 10, 12 тижнів і більше.",
        "Збільшення інтервалу — не затягування курсу, а його логіка: чим менше волосся залишається, тим довше треба чекати, поки решта увійде в активну фазу. Приходити раніше сенсу немає: сеанс буде майже вхолосту.",
-       "Скільки всього знадобиться сеансів, заздалегідь точно не скаже ніхто. У більшості помітне прорідження починається після 2–3 процедур, а курс займає 6–10 сеансів і більше — це залежить від зони, гормонального фону, щільності й кольору волосся. Ми не обіцяємо «повне видалення за 6 сеансів»: таку обіцянку неможливо виконати чесно."
+       "У більшості помітне прорідження починається після 2–3 процедур, а весь курс триває зазвичай 6–10 сеансів і більше — це залежить від зони, гормонального фону, щільності й кольору волосся. Тому ми не називаємо фіксовану кількість сеансів наперед. Але якщо лазерна епіляція вам підходить, результат ми гарантуємо і доводимо курс до кінця: на консультації косметолог прямо скаже, підходить метод чи ні, і якщо ні — запропонує електроепіляцію, а не продасть курс навмання."
       ],
       "note": "Після курсу в частини клієнток волосся повертається частково — зазвичай на тлі гормональних змін: вагітності, відміни чи початку прийому препаратів, захворювань щитоподібної залози. Це не помилка курсу, а властивість організму; у таких випадках потрібні поодинокі підтримувальні сеанси."
      },
@@ -216,12 +220,16 @@
     "faqTitle": "Часті запитання",
     "faq": [
      {
+      "q": "Чи даєте ви гарантію результату?",
+      "a": "Так — якщо лазерна епіляція вам підходить. На консультації ми дивимося тип і колір волосся, стан шкіри й зʼясовуємо, чи немає гормональних причин росту. Якщо метод підходить, ми ведемо курс до результату. Якщо не підходить — говоримо про це одразу і пропонуємо електроепіляцію, яка працює з волосся будь-якого кольору."
+     },
+     {
       "q": "Чи боляче робити лазерну епіляцію?",
       "a": "Відчуття схоже на короткий гарячий щиглик. Охолодження насадки помітно його пом’якшує. Найчутливіші зони з тонкою шкірою — бікіні та пахви; у перші сеанси відчутніше, далі легше, бо волосся стає менше."
      },
      {
       "q": "Скільки сеансів потрібно?",
-      "a": "Зазвичай 6–10, іноді більше. Точне число заздалегідь чесно не назве ніхто: лазер працює лише по волоссю в активній фазі росту, а його частка у всіх різна. Прорідження зазвичай видно вже після 2–3 сеансів."
+      "a": "Зазвичай 6–10, іноді більше: лазер працює лише по волоссю в активній фазі росту, а його частка у всіх різна, тому фіксовану кількість наперед не називаємо. Прорідження зазвичай видно вже після 2–3 сеансів, а результат гарантуємо, якщо метод вам підходить."
      },
      {
       "q": "Чому інтервали між сеансами збільшуються?",
@@ -283,7 +291,7 @@
       "paras": [
        "We work towards a result, not towards endless maintenance sessions. The course is spaced to catch different groups of hair in their growth phase: the first sessions are about 4–6 weeks apart, then the interval grows — 8, 10, 12 weeks and more.",
        "A longer interval is not us stretching the course; it is the logic of it. The fewer hairs remain, the longer it takes for the rest to enter the active phase. Coming earlier is pointless: the session would largely be wasted.",
-       "No one can honestly tell you the exact number of sessions in advance. Most people see visible thinning after 2–3 treatments, and a course runs 6–10 sessions or more, depending on the area, hormones, hair density and colour. We do not promise complete removal in six sessions, because that promise cannot be kept honestly."
+       "Most people see clear thinning after 2–3 sessions, and a full course usually runs 6–10 sessions or more, depending on the area, hormones, hair density and colour. That is why we do not quote a fixed number of sessions in advance. But if laser hair removal is right for you, we guarantee the result and see the course through: at the consultation the specialist will tell you plainly whether the method suits you, and if it does not, she will offer electrolysis rather than sell a course on spec."
       ],
       "note": "After a course some clients see hair partly return, usually alongside hormonal change: pregnancy, starting or stopping medication, thyroid conditions. That is not a failure of the course but how the body works; in those cases single maintenance sessions are enough."
      },
@@ -325,12 +333,16 @@
     "faqTitle": "FAQ",
     "faq": [
      {
+      "q": "Do you guarantee the result?",
+      "a": "Yes — if laser hair removal is right for you. At the consultation we look at the type and colour of your hair, the condition of your skin, and whether hormones are driving the growth. If the method suits you, we see the course through to the result. If it does not, we say so immediately and offer electrolysis, which works on hair of any colour."
+     },
+     {
       "q": "Does laser hair removal hurt?",
       "a": "It feels like a short hot flick. The cooled tip softens it noticeably. The most sensitive areas are those with thin skin — bikini and underarms; the first sessions are sharper, then it gets easier as there is less hair."
      },
      {
       "q": "How many sessions will I need?",
-      "a": "Usually 6–10, sometimes more. Nobody can give you an exact number honestly in advance: the laser only works on hair in the active growth phase, and that share differs from person to person. Thinning is usually visible after 2–3 sessions."
+      "a": "Usually 6–10, sometimes more: the laser only works on hair in the active growth phase and that share differs from person to person, so we do not quote a fixed number in advance. Thinning is usually visible after 2–3 sessions, and we guarantee the result if the method suits you."
      },
      {
       "q": "Why do the intervals between sessions get longer?",
@@ -392,7 +404,7 @@
       "paras": [
        "Trabajamos para un resultado, no para sesiones de mantenimiento infinitas. La pauta se espacia para alcanzar distintos grupos de vello en fase de crecimiento: las primeras sesiones van cada 4–6 semanas y luego el intervalo se alarga: 8, 10, 12 semanas o más.",
        "Alargar el intervalo no es estirar la pauta, es su lógica: cuanto menos vello queda, más tiempo hace falta para que el restante entre en fase activa. Venir antes no sirve: la sesión sería casi en balde.",
-       "Cuántas sesiones harán falta en total nadie lo puede decir con exactitud por adelantado. En la mayoría se ve un aclarado tras 2–3 sesiones y la pauta ocupa 6–10 sesiones o más, según la zona, las hormonas, la densidad y el color del vello. No prometemos «eliminación completa en seis sesiones»: esa promesa no se puede cumplir con honestidad."
+       "En la mayoría se ve un aclarado claro tras 2–3 sesiones y la pauta completa suele llevar 6–10 sesiones o más, según la zona, las hormonas, la densidad y el color del vello. Por eso no damos un número cerrado de sesiones por adelantado. Pero si la depilación láser es adecuada para ti, garantizamos el resultado y llevamos la pauta hasta el final: en la consulta te diremos con claridad si el método te conviene y, si no, te propondremos electrólisis en lugar de venderte una pauta a ciegas."
       ],
       "note": "Después de la pauta, a algunas clientas el vello les vuelve en parte, normalmente junto con cambios hormonales: embarazo, empezar o dejar una medicación, problemas de tiroides. No es un fallo de la pauta sino cómo funciona el cuerpo; en esos casos bastan sesiones sueltas de mantenimiento."
      },
@@ -434,12 +446,16 @@
     "faqTitle": "Preguntas frecuentes",
     "faq": [
      {
+      "q": "¿Garantizáis el resultado?",
+      "a": "Sí, si la depilación láser es adecuada para ti. En la consulta miramos el tipo y el color del vello, el estado de la piel y si hay causas hormonales detrás del crecimiento. Si el método te conviene, llevamos la pauta hasta el resultado. Si no, te lo decimos de inmediato y te proponemos electrólisis, que funciona con vello de cualquier color."
+     },
+     {
       "q": "¿Duele la depilación láser?",
       "a": "Se siente como un chasquido caliente y breve. El frío del cabezal lo suaviza bastante. Las zonas de piel fina —ingles y axilas— son las más sensibles; las primeras sesiones se notan más y luego cuesta menos, porque queda menos vello."
      },
      {
       "q": "¿Cuántas sesiones hacen falta?",
-      "a": "Normalmente 6–10, a veces más. Nadie puede darte una cifra exacta con honestidad: el láser solo actúa sobre el vello en fase activa, y esa proporción varía de una persona a otra. El aclarado suele verse ya tras 2–3 sesiones."
+      "a": "Normalmente 6–10, a veces más: el láser solo actúa sobre el vello en fase activa y esa proporción varía de una persona a otra, así que no damos un número cerrado por adelantado. El aclarado suele verse tras 2–3 sesiones y garantizamos el resultado si el método te conviene."
      },
      {
       "q": "¿Por qué se alargan los intervalos entre sesiones?",
@@ -501,7 +517,7 @@
       "paras": [
        "Pracujeme na výsledek, ne na nekonečná udržovací ošetření. Kúra je postavená tak, aby zasáhla růstové fáze různých skupin chloupků: první sezení jdou po zhruba 4–6 týdnech, pak se interval prodlužuje — 8, 10, 12 týdnů i víc.",
        "Prodlužování intervalu není natahování kúry, ale její logika: čím méně chloupků zbývá, tím déle trvá, než ty zbylé vstoupí do aktivní fáze. Přijít dřív nemá smysl: sezení proběhne skoro naprázdno.",
-       "Kolik sezení bude celkem potřeba, dopředu přesně neřekne nikdo. U většiny je patrné prořídnutí po 2–3 ošetřeních a kúra zabere 6–10 sezení i více — podle zóny, hormonů, hustoty a barvy chloupků. Neslibujeme „úplné odstranění za 6 sezení“: takový slib nelze splnit poctivě."
+       "U většiny je patrné prořídnutí po 2–3 ošetřeních a celá kúra obvykle zabere 6–10 sezení i více — podle zóny, hormonů, hustoty a barvy chloupků. Proto dopředu neuvádíme pevný počet sezení. Pokud je ale laserová epilace pro vás vhodná, výsledek garantujeme a kúru dotáhneme do konce: na konzultaci kosmetička na rovinu řekne, zda je metoda vhodná, a pokud ne, nabídne elektroepilaci místo toho, aby prodala kúru naslepo."
       ],
       "note": "Po kúře se u části klientek chloupky částečně vracejí — obvykle při hormonálních změnách: v těhotenství, při nasazení nebo vysazení léků, při onemocnění štítné žlázy. Není to chyba kúry, ale vlastnost organismu; v takovém případě stačí jednotlivá udržovací sezení."
      },
@@ -543,12 +559,16 @@
     "faqTitle": "Časté dotazy",
     "faq": [
      {
+      "q": "Dáváte garanci výsledku?",
+      "a": "Ano — pokud je pro vás laserová epilace vhodná. Na konzultaci se díváme na typ a barvu chloupků, na stav pleti a zjišťujeme, zda za růstem nestojí hormony. Když je metoda vhodná, kúru dovedeme k výsledku. Když vhodná není, řekneme to hned a nabídneme elektroepilaci, která zvládne chloupky jakékoli barvy."
+     },
+     {
       "q": "Bolí laserová epilace?",
       "a": "Pocit připomíná krátké horké cvrnknutí. Chlazení hlavice ho výrazně zmírňuje. Nejcitlivější jsou partie s tenkou kůží — bikiny a podpaží; první sezení jsou výraznější, pak je to snazší, protože chloupků ubývá."
      },
      {
       "q": "Kolik sezení je potřeba?",
-      "a": "Obvykle 6–10, někdy víc. Přesné číslo dopředu poctivě neřekne nikdo: laser působí jen na chloupky v aktivní fázi růstu a jejich podíl je u každého jiný. Prořídnutí bývá vidět už po 2–3 sezeních."
+      "a": "Obvykle 6–10, někdy víc: laser působí jen na chloupky v aktivní fázi růstu a jejich podíl je u každého jiný, proto dopředu neuvádíme pevný počet. Prořídnutí bývá vidět už po 2–3 sezeních a výsledek garantujeme, pokud je metoda pro vás vhodná."
      },
      {
       "q": "Proč se intervaly mezi sezeními prodlužují?",
