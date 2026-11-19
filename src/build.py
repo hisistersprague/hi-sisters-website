@@ -818,11 +818,19 @@ img{max-width:100%}
       background-color:var(--navy);
       background-image:linear-gradient(168deg,rgba(30,22,112,.62) 0%,rgba(19,11,86,.72) 46%,
         rgba(10,7,56,.90) 100%),url(/assets/photos/hero-bg.jpg);
+      background-image:linear-gradient(168deg,rgba(30,22,112,.62) 0%,rgba(19,11,86,.72) 46%,
+        rgba(10,7,56,.90) 100%),
+        image-set(url(/assets/photos/hero-bg.webp) type("image/webp"),
+                  url(/assets/photos/hero-bg.jpg) type("image/jpeg"));
       background-size:cover,cover;background-position:center,58% 34%;
       background-repeat:no-repeat,no-repeat}
 @media(max-width:720px){
   .hero{background-image:linear-gradient(176deg,rgba(19,11,86,.80) 0%,rgba(19,11,86,.72) 34%,
           rgba(10,7,56,.52) 72%,rgba(10,7,56,.60) 100%),url(/assets/photos/hero-bg-m.jpg);
+        background-image:linear-gradient(176deg,rgba(19,11,86,.80) 0%,rgba(19,11,86,.72) 34%,
+          rgba(10,7,56,.52) 72%,rgba(10,7,56,.60) 100%),
+          image-set(url(/assets/photos/hero-bg-m.webp) type("image/webp"),
+                    url(/assets/photos/hero-bg-m.jpg) type("image/jpeg"));
         background-position:center,center 28%}
 }
 .hero::before{content:'';position:absolute;top:-240px;right:-180px;width:620px;height:620px;
@@ -939,6 +947,9 @@ section{padding:50px 0}
 .rose-photo::before{content:'';position:absolute;inset:0;pointer-events:none;
    background-image:linear-gradient(180deg,rgba(248,237,230,.88),rgba(248,237,230,.93)),
      url(/assets/photos/why-bg.jpg);
+   background-image:linear-gradient(180deg,rgba(248,237,230,.88),rgba(248,237,230,.93)),
+     image-set(url(/assets/photos/why-bg.webp) type("image/webp"),
+               url(/assets/photos/why-bg.jpg) type("image/jpeg"));
    background-size:cover,cover;background-position:center,center 22%;
    background-repeat:no-repeat,no-repeat}
 .rose-photo>.wrap{position:relative;z-index:1}
@@ -1048,6 +1059,7 @@ section{padding:50px 0}
 /* фото-полоса: студийный кадр под навью, золото сверху текста */
 .photo-band{position:relative;background:var(--navy-deep);color:#fff;border:0;overflow:hidden}
 .photo-band::before{content:"";position:absolute;inset:0;background-image:var(--pb-img);
+   background-image:image-set(var(--pb-img-w) type("image/webp"),var(--pb-img) type("image/jpeg"));
    background-size:cover;background-position:center 28%;
    filter:grayscale(.2) contrast(1.06) brightness(.72) saturate(.92);opacity:.62}
 .photo-band::after{content:"";position:absolute;inset:0;
@@ -1092,6 +1104,9 @@ section{padding:50px 0}
 .dark-photo::before{content:'';position:absolute;inset:0;pointer-events:none;
    background-image:linear-gradient(170deg,rgba(19,11,86,.84),rgba(10,7,56,.90)),
      url(/assets/photos/what-bg.jpg);
+   background-image:linear-gradient(170deg,rgba(19,11,86,.84),rgba(10,7,56,.90)),
+     image-set(url(/assets/photos/what-bg.webp) type("image/webp"),
+               url(/assets/photos/what-bg.jpg) type("image/jpeg"));
    background-size:cover,cover;background-position:center,30% 32%;
    background-repeat:no-repeat,no-repeat}
 .dark-photo>.wrap{position:relative;z-index:1}
@@ -1395,6 +1410,9 @@ section{padding:50px 0}
 .pslide::before{content:'';position:absolute;inset:0;
    background-image:linear-gradient(168deg,rgba(19,11,86,.80),rgba(10,7,56,.93)),
      url(/assets/photos/hero-bg.jpg);
+   background-image:linear-gradient(168deg,rgba(19,11,86,.80),rgba(10,7,56,.93)),
+     image-set(url(/assets/photos/hero-bg.webp) type("image/webp"),
+               url(/assets/photos/hero-bg.jpg) type("image/jpeg"));
    background-size:cover,cover;background-position:center,58% 34%}
 .pslide-in{position:relative;z-index:1;padding:22px 20px 24px;display:flex;flex-direction:column;flex:1}
 .pslide-kick{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold-ui);
@@ -1475,6 +1493,10 @@ section{padding:50px 0}
 .prow-a:hover{color:var(--accent);border-color:var(--accent)}
 .prow-h{background:var(--cream);font-weight:600}
 .prow-h span:first-child{font-size:16px}
+.proc-idx{margin-bottom:26px}
+.proc-idx h3{font-family:'Cormorant Garamond',serif;font-size:23px;font-weight:600;margin:0 0 10px}
+.proc-idx h3 a{color:var(--accent);text-decoration:none}
+.proc-idx h3 a:hover{text-decoration:underline}
 .proc-sub{font-family:'Cormorant Garamond',serif;font-size:26px;font-weight:600;
   margin:38px 0 14px;color:var(--accent)}
 .proc-sub:first-child{margin-top:0}
@@ -1589,6 +1611,9 @@ def biz_schema(lang, city):
                     'addressCountry': st['country']},
         'geo': {'@type': 'GeoCoordinates', 'latitude': st['lat'], 'longitude': st['lng']},
         'openingHoursSpecification': hours,
+        'areaServed': {'@type': 'City', 'name': st['city_en']},
+        'knowsLanguage': ['ru', 'uk', 'cs', 'en', 'es'],
+        'paymentAccepted': 'Cash, Credit Card',
         'sameAs': ['https://instagram.com/' + h for h in st.get('instagram', [])]
                   + ([st['maps']] if st.get('maps') else []),
         'hasMap': st.get('maps', ''),
@@ -1674,7 +1699,7 @@ def head(lang, city, title, desc, rel='', langs=None):
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="{base}/assets/og.jpg">
-<meta name="twitter:card" content="summary_large_image">
+
 {alts}
   <link rel="alternate" hreflang="x-default" href="{base}/{'cs' if 'cs' in ls_ else ls_[0]}/prague/{rel}">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -2268,7 +2293,7 @@ def photo_band(lang, city, img='/assets/photos/band-gold.jpg'):
     kick, head_, text = PHOTO_BAND[lang]
     h = HERO[lang]
     return f"""
-<section class="photo-band" style="--pb-img:url('{img}')"><div class="wrap">
+<section class="photo-band" style="--pb-img:url('{img}');--pb-img-w:url('{img.replace('.jpg', '.webp')}')"><div class="wrap">
   <div class="pb-in">
     <div class="pb-kicker">{e(kick)}</div>
     <h2>{e(head_)}</h2>
@@ -2285,8 +2310,10 @@ def split_block(img, alt, head_, paras, points=(), sec_class='alt', rev=False):
     """Текст и фотография в две колонки: фото справа, если не указано иначе."""
     ps = ''.join('<p>%s</p>' % e(x) for x in paras)
     li = ''.join('<li>%s</li>' % e(x) for x in points)
-    pic = ('<figure class="split-img"><img src="%s" alt="%s" loading="lazy" width="1100" height="780">'
-           '</figure>' % (e(img), e(alt)))
+    pic = ('<figure class="split-img"><picture>'
+           '<source srcset="%s" type="image/webp">'
+           '<img src="%s" alt="%s" loading="lazy" width="1100" height="780">'
+           '</picture></figure>' % (e(img.replace('.jpg', '.webp')), e(img), e(alt)))
     txt = ('<div class="split-txt"><h2>%s</h2>%s%s</div>'
            % (e(head_), ps, ('<ul>%s</ul>' % li) if li else ''))
     inner = (pic + txt) if rev else (txt + pic)
@@ -2530,6 +2557,35 @@ def service_blocks(lang, city):
             '<div class="svc-blocks">%s</div></div></section>' % (e(t), out))
 
 
+PROC_INDEX = {'ru': 'Процедуры по направлениям',
+              'uk': 'Процедури за напрямами',
+              'cs': 'Procedury podle oborů',
+              'en': 'Treatments by area',
+              'es': 'Tratamientos por área'}
+
+
+def procedures_index(lang, city):
+    """Перечень всех процедур города со ссылками: и клиенту удобнее, и поиску понятнее."""
+    out = ''
+    for key, svc in services.items():
+        if city not in svc.get('cities', []) or not svc.get('page', {}).get(lang):
+            continue
+        items = proc_list(key, city, lang)
+        if not items:
+            continue
+        card = svc['card'].get(lang) or svc['card']['ru']
+        links = ''.join('<a href="/%s/%s/%s">%s</a>' % (lang, city, proc_rel(it), e(it['title'][lang]))
+                        for it in items)
+        out += ('<div class="proc-idx"><h3><a href="/%s/%s/%s/">%s</a></h3>'
+                '<div class="more-list">%s</div></div>'
+                % (lang, city, key, e(card['title']), links))
+    if not out:
+        return ''
+    return ('<section class="tint"><div class="wrap">'
+            '<div class="sec-head"><h2>%s</h2></div>%s</div></section>'
+            % (e(PROC_INDEX[lang]), out))
+
+
 def build_services(lang, city):
     """Все услуги города и полный прайс одной страницей."""
     st = studios[city]
@@ -2592,6 +2648,7 @@ def build_services(lang, city):
   {blocks}
 </div></section>
 
+{procedures_index(lang, city)}
 {service_blocks(lang, city)}
 {'<section class="alt"><div class="wrap"><div class="sec-head"><h2>' + e(u_faq.get('title','')) + '</h2></div><div class="faq">' + faqs + '</div></div></section>' if faqs else ''}
 """
@@ -3891,7 +3948,23 @@ def build_training(lang, city):
 
 
 
-def sitemap(pages):
+def page_dates(pages_html):
+    """Дата последнего изменения страницы: меняется только когда менялось содержимое."""
+    import datetime
+    f = os.path.join(C, 'page-dates.json')
+    old = json.load(io.open(f, encoding='utf-8')) if os.path.isfile(f) else {}
+    today = datetime.date.today().isoformat()
+    out = {}
+    for url, html_ in pages_html.items():
+        body = re.sub(r'\?v=[0-9a-f]+', '', html_)
+        h = hashlib.md5(body.encode('utf-8')).hexdigest()
+        prev = old.get(url)
+        out[url] = {'h': h, 'd': prev['d'] if prev and prev.get('h') == h else today}
+    io.open(f, 'w', encoding='utf-8').write(json.dumps(out, ensure_ascii=False, indent=1))
+    return {u: v['d'] for u, v in out.items()}
+
+
+def sitemap(pages, dates=None):
     """Карта сайта: каждая страница один раз, со ссылками на свои языки.
     Так Google понимает, что это переводы, а не копии."""
     groups = {}
@@ -3909,8 +3982,10 @@ def sitemap(pages):
         for l in LANGS:
             if l not in langs:
                 continue
-            out.append('<url><loc>%s/%s/%s/%s</loc><priority>%s</priority>%s</url>'
-                       % (BASE, l, city, rel, prio, alts))
+            loc = '%s/%s/%s/%s' % (BASE, l, city, rel)
+            lm = ('<lastmod>%s</lastmod>' % dates[loc]) if dates and loc in dates else ''
+            out.append('<url><loc>%s</loc>%s<priority>%s</priority>%s</url>'
+                       % (loc, lm, prio, alts))
     out.append('</urlset>')
     return '\n'.join(out)
 
@@ -4000,6 +4075,41 @@ def root_redirect():
             '<script>%s</script></body></html>' % (BASE, alts, GTAG, links, js))
 
 
+NOT_FOUND = {
+ 'cs': ('Stránka nenalezena', 'Tahle adresa u nás není. Zkuste jeden z hlavních oddílů:'),
+ 'ru': ('Страница не найдена', 'Такого адреса у нас нет. Попробуйте один из разделов:'),
+ 'uk': ('Сторінку не знайдено', 'Такої адреси в нас немає. Спробуйте один із розділів:'),
+ 'en': ('Page not found', 'That address does not exist here. Try one of the main sections:'),
+ 'es': ('Página no encontrada', 'Esa dirección no existe. Prueba una de las secciones:'),
+}
+
+
+def not_found_page():
+    """404 для GitHub Pages: не бросаем человека, а уводим в разделы на его языке."""
+    blocks = ''
+    for l in LANGS:
+        t, p_ = NOT_FOUND[l]
+        links = ''.join('<a href="/%s/prague/%s">%s</a>'
+                        % (l, REL[k] if k in REL else '', e(nav_label(k, l)))
+                        for k in ('home', 'services', 'cosmetics', 'contacts'))
+        blocks += ('<section lang="%s"><h2>%s</h2><p>%s</p><div class="l">%s</div></section>'
+                   % (l, e(t), e(p_), links))
+    return ('<!doctype html><html lang="cs"><head><meta charset="utf-8">'
+            '<meta name="viewport" content="width=device-width,initial-scale=1">'
+            '<title>404 — Hi Sisters Clinic</title>'
+            '<meta name="robots" content="noindex,follow">'
+            '<link rel="icon" href="/favicon.svg">' + GTAG +
+            '<style>body{font-family:system-ui,-apple-system,sans-serif;background:#130B56;color:#fff;'
+            'margin:0;padding:40px 20px;line-height:1.6}'
+            'main{max-width:680px;margin:0 auto}h1{font-size:30px;margin:0 0 6px}'
+            'section{margin:26px 0;padding-top:18px;border-top:1px solid rgba(239,217,180,.25)}'
+            'h2{font-size:19px;margin:0 0 4px;color:#EFD9B4}p{margin:0 0 10px;opacity:.85}'
+            '.l{display:flex;flex-wrap:wrap;gap:8px}'
+            'a{color:#130B56;background:#EFD9B4;text-decoration:none;padding:7px 14px;'
+            'border-radius:999px;font-size:14px}a:hover{background:#fff}</style></head>'
+            '<body><main><h1>Hi Sisters Clinic</h1>' + blocks + '</main></body></html>')
+
+
 ROBOTS = """User-agent: *
 Allow: /
 Disallow: /admin/
@@ -4011,9 +4121,15 @@ Sitemap: %s/sitemap.xml
 
 
 # ───────────────────────────────── сборка ─────────────────────────────────
+PAGE_HTML = {}
+
+
 def write(path, text):
     os.makedirs(os.path.dirname(path), exist_ok=True)
     io.open(path, 'w', encoding='utf-8').write(text)
+    rel = os.path.relpath(path, OUT).replace(os.sep, '/')
+    if rel.endswith('index.html'):
+        PAGE_HTML[BASE + '/' + rel[:-len('index.html')]] = text
 
 
 if __name__ == '__main__':
@@ -4097,8 +4213,10 @@ if __name__ == '__main__':
                 pages.append('/%s/%s/laser/%s/' % (lang, city, zkey))
                 seo_pages.append((lang, city, 'laser/%s/' % zkey))
 
-    io.open(os.path.join(OUT, 'sitemap.xml'), 'w', encoding='utf-8').write(sitemap(seo_pages))
+    io.open(os.path.join(OUT, 'sitemap.xml'), 'w', encoding='utf-8').write(
+        sitemap(seo_pages, page_dates(PAGE_HTML)))
     io.open(os.path.join(OUT, 'robots.txt'), 'w', encoding='utf-8').write(ROBOTS)
+    io.open(os.path.join(OUT, '404.html'), 'w', encoding='utf-8').write(not_found_page())
     io.open(os.path.join(OUT, 'index.html'), 'w', encoding='utf-8').write(root_redirect())
     # массажа тела больше нет: старый адрес уводит на косметологию, а не висит пустым
     for l in LANGS:
