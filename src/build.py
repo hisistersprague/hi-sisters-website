@@ -1006,6 +1006,8 @@ section{padding:50px 0}
 .pcol h3{font-size:22px;margin-bottom:12px}
 
 /* отзывы */
+.smap{margin:14px 0 4px;border-radius:12px;overflow:hidden;border:1px solid var(--line)}
+.smap iframe{display:block;width:100%;height:220px;border:0}
 .rev-car{position:relative}
 .rc-track{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;
   scroll-behavior:smooth;padding:2px 2px 10px;scrollbar-width:none;-ms-overflow-style:none}
@@ -1702,7 +1704,7 @@ def head(lang, city, title, desc, rel='', langs=None):
 
 {alts}
   <link rel="alternate" hreflang="x-default" href="{base}/{'cs' if 'cs' in ls_ else ls_[0]}/prague/{rel}">
-<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preload" as="image" media="(max-width:720px)" href="/assets/photos/hero-bg-m.webp" type="image/webp"><link rel="preload" as="image" media="(min-width:721px)" href="/assets/photos/hero-bg.webp" type="image/webp"><link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/app.css?v={CSSVER}">
@@ -3357,6 +3359,8 @@ def build_contacts(lang, city):
           <dt>{e(MAIL_LBL[lang])}</dt><dd><a href="mailto:{s.get('email','')}">{e(s.get('email',''))}</a></dd>
           <dt>Instagram</dt><dd>{igs}</dd>
         </dl>
+        <div class="smap"><iframe title="{e(nm)}" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.google.com/maps?q={quote(s['address'])}&z=16&hl={lang}&output=embed"></iframe></div>
         <div class="studio-cta">
           <a class="btn btn-gold" href="/{lang}/{cc}/booking/" data-book="{cc}">{e(cp['book'])}</a>
           {'<a class="btn btn-ghost btn-sm" href="' + s['maps'] + '" target="_blank" rel="noopener">' + e(cp['route']) + '</a>' if s.get('maps') else ''}
