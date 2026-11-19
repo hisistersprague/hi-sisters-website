@@ -1,4 +1,7 @@
 User-agent: *
 Allow: /
+Disallow: /admin/
+Disallow: /src/
+Disallow: /new/
 
 Sitemap: https://hi-sisters.clinic/sitemap.xml
