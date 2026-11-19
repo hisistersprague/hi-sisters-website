@@ -1,0 +1,199 @@
+[
+ {
+  "photo": "anna",
+  "name": {
+   "ru": "Анна Ничипорук",
+   "uk": "Анна Ничипорук",
+   "cs": "Anna Nichyporuk",
+   "en": "Anna Nichyporuk",
+   "es": "Anna Nichyporuk"
+  },
+  "role": {
+   "ru": "Основательница клиники",
+   "uk": "Засновниця клініки",
+   "cs": "Zakladatelka kliniky",
+   "en": "Founder",
+   "es": "Fundadora"
+  },
+  "desc": {
+   "ru": "Действующий специалист по лазерной и электроэпиляции с аккредитацией в Европе. Руководит двумя клиниками — в Праге и Валенсии — и лично отвечает за то, чтобы каждая процедура была безопасной и давала результат.",
+   "uk": "Чинна спеціалістка з лазерної та електроепіляції з акредитацією в Європі. Керує двома клініками — у Празі та Валенсії — й особисто відповідає за те, щоб кожна процедура була безпечною і давала результат.",
+   "cs": "Aktivní specialistka na laserovou epilaci a elektroepilaci s evropskou akreditací. Vede dvě kliniky — v Praze a ve Valencii — a osobně ručí za to, aby každé ošetření bylo bezpečné a mělo výsledek.",
+   "en": "A practising laser and electrolysis specialist accredited across Europe. She runs both clinics — Prague and Valencia — and personally vouches that every treatment is safe and delivers.",
+   "es": "Especialista en activo en depilación láser y electrólisis, acreditada en Europa. Dirige las dos clínicas — Praga y Valencia — y responde personalmente de que cada tratamiento sea seguro y dé resultado."
+  },
+  "img": "face4.jpg",
+  "cities": [
+   "prague",
+   "valencia"
+  ]
+ },
+ {
+  "photo": "maria",
+  "name": {
+   "ru": "Мария",
+   "uk": "Марія",
+   "cs": "Maria",
+   "en": "Maria",
+   "es": "María"
+  },
+  "role": {
+   "ru": "Врач-дерматолог-косметолог",
+   "uk": "Лікарка-дерматологиня-косметологиня",
+   "cs": "Lékařka dermatoložka a kosmetoložka",
+   "en": "Dermatologist and cosmetologist",
+   "es": "Médica dermatóloga y cosmetóloga"
+  },
+  "desc": {
+   "ru": "Высшее медицинское образование, в профессии с 2022 года. Консультации и лечение акне у подростков и взрослых, мезотерапия лица, шеи и кожи головы, разглаживание морщин и коррекция овала.",
+   "uk": "Вища медична освіта, у професії з 2022 року. Консультації та лікування акне у підлітків і дорослих, мезотерапія обличчя, шиї та шкіри голови, розгладження зморшок і корекція овалу.",
+   "cs": "Vysokoškolské lékařské vzdělání, v oboru od roku 2022. Konzultace a léčba akné u dospívajících i dospělých, mezoterapie obličeje, krku a pokožky hlavy, vyhlazení vrásek a korekce oválu.",
+   "en": "A medical degree and in the field since 2022. Consultations and acne treatment for teenagers and adults, mesotherapy for the face, neck and scalp, wrinkle smoothing and facial contouring.",
+   "es": "Titulación médica y en la profesión desde 2022. Consultas y tratamiento del acné en adolescentes y adultos, mesoterapia facial, de cuello y de cuero cabelludo, alisado de arrugas y corrección del óvalo facial."
+  },
+  "img": "face5.jpg",
+  "cities": [
+   "prague"
+  ]
+ },
+ {
+  "photo": "valeria",
+  "name": {
+   "ru": "Валерия",
+   "uk": "Валерія",
+   "cs": "Valeria",
+   "en": "Valeria",
+   "es": "Valeria"
+  },
+  "role": {
+   "ru": "Трихолог-косметолог",
+   "uk": "Трихологиня-косметологиня",
+   "cs": "Tricholožka a kosmetoložka",
+   "en": "Trichologist & cosmetologist",
+   "es": "Tricóloga y cosmetóloga"
+  },
+  "desc": {
+   "ru": "В профессии с 2016 года. Трихология и косметология: чистки, пилинги, лечение акне, мезотерапия дермапеном, карбокситерапия и биоревитализация, массаж и микротоки лица и шеи.",
+   "uk": "У професії з 2016 року. Трихологія та косметологія: чистки, пілінги, лікування акне, мезотерапія дермапеном, карбокситерапія та біоревіталізація, масаж і мікроструми обличчя та шиї.",
+   "cs": "V oboru od roku 2016. Trichologie a kosmetologie: čištění, peelingy, léčba akné, mezoterapie dermapenem, karboxyterapie, masáž a mikroproudy obličeje a krku.",
+   "en": "In the field since 2016. Trichology and skincare: cleansing, peels, acne treatment, dermapen mesotherapy, carboxytherapy and biorevitalisation, facial and neck massage and microcurrent.",
+   "es": "En la profesión desde 2016. Tricología y cosmetología: limpiezas, peelings, tratamiento del acné, mesoterapia con dermapen, carboxiterapia y biorrevitalización, masaje y microcorrientes de rostro y cuello."
+  },
+  "img": "face6.jpg",
+  "cities": [
+   "prague"
+  ]
+ },
+ {
+  "photo": "julianna",
+  "name": {
+   "ru": "Юлианна",
+   "uk": "Юліанна",
+   "cs": "Julianna",
+   "en": "Julianna",
+   "es": "Julianna"
+  },
+  "role": {
+   "ru": "Универсальный мастер",
+   "uk": "Універсальна майстриня",
+   "cs": "Univerzální specialistka",
+   "en": "All-round specialist",
+   "es": "Especialista polivalente"
+  },
+  "desc": {
+   "ru": "В команде с 2024 года. Лазерная эпиляция (Hunter, Luna) и электроэпиляция (Apilus), консультации по уходу, чистки и пилинги, мезотерапия, массаж и микротоки лица и шеи.",
+   "uk": "У команді з 2024 року. Лазерна епіляція (Hunter, Luna) та електроепіляція (Apilus), консультації з догляду, чистки й пілінги, мезотерапія, масаж і мікроструми обличчя та шиї.",
+   "cs": "V týmu od roku 2024. Laserová epilace (Hunter, Luna) a elektroepilace (Apilus), konzultace péče, čištění a peelingy, mezoterapie, masáž a mikroproudy obličeje a krku.",
+   "en": "With the team since 2024. Laser hair removal (Hunter, Luna) and electrolysis (Apilus), skincare consultations, cleansing and peels, mesotherapy, facial and neck massage and microcurrent.",
+   "es": "En el equipo desde 2024. Depilación láser (Hunter, Luna) y electrólisis (Apilus), consultas de cuidado facial, limpiezas y peelings, mesoterapia, masaje y microcorrientes de rostro y cuello."
+  },
+  "img": "face1.jpg",
+  "cities": [
+   "prague"
+  ]
+ },
+ {
+  "photo": "natalia",
+  "name": {
+   "ru": "Наталья",
+   "uk": "Наталія",
+   "cs": "Natálie",
+   "en": "Natalia",
+   "es": "Natalia"
+  },
+  "role": {
+   "ru": "Мастер лазерной и электроэпиляции",
+   "uk": "Майстриня лазерної та електроепіляції",
+   "cs": "Specialistka na laser a elektroepilaci",
+   "en": "Laser & electrolysis specialist",
+   "es": "Especialista en láser y electrólisis"
+  },
+  "desc": {
+   "ru": "В команде с 2024 года. Лазерная эпиляция (Hunter, Luna) и электроэпиляция (Apilus). Обучает практикующих мастеров на курсах клиники.",
+   "uk": "У команді з 2024 року. Лазерна епіляція (Hunter, Luna) та електроепіляція (Apilus). Навчає практикуючих майстрів на курсах клініки.",
+   "cs": "V týmu od roku 2024. Laserová epilace (Hunter, Luna) a elektroepilace (Apilus). Školí praktikující specialistky v kurzech kliniky.",
+   "en": "With the team since 2024. Laser hair removal (Hunter, Luna) and electrolysis (Apilus). She also trains working specialists on the clinic’s courses.",
+   "es": "En el equipo desde 2024. Depilación láser (Hunter, Luna) y electrólisis (Apilus). Además forma a profesionales en los cursos de la clínica."
+  },
+  "img": "face3.jpg",
+  "cities": [
+   "prague"
+  ]
+ },
+ {
+  "photo": "olga",
+  "name": {
+   "ru": "Ольга",
+   "uk": "Ольга",
+   "cs": "Olga",
+   "en": "Olga",
+   "es": "Olga"
+  },
+  "role": {
+   "ru": "Мастер по электроэпиляции и эстетическим процедурам",
+   "uk": "Майстриня з електроепіляції та естетичних процедур",
+   "cs": "Specialistka na elektroepilaci a estetické procedury",
+   "en": "Electrolysis and aesthetic procedures specialist",
+   "es": "Especialista en electrólisis y procedimientos estéticos"
+  },
+  "desc": {
+   "ru": "В команде с 2023 года. Электроэпиляция Apilus: точное и бережное удаление волос любых типов, включая светлые и седые.",
+   "uk": "У команді з 2023 року. Електроепіляція Apilus: точне й дбайливе видалення волосся будь-яких типів, зокрема світлого та сивого.",
+   "cs": "V týmu od roku 2023. Elektroepilace Apilus: přesné a šetrné odstranění chloupků všech typů, včetně světlých a šedivých.",
+   "en": "With the team since 2023. Apilus electrolysis: precise, gentle removal of any hair type, including light and grey.",
+   "es": "En el equipo desde 2023. Electrólisis Apilus: eliminación precisa y cuidadosa de cualquier tipo de vello, incluido el claro y el canoso."
+  },
+  "img": "face7.jpg",
+  "cities": [
+   "prague"
+  ]
+ },
+ {
+  "photo": "diana",
+  "name": {
+   "ru": "Диана",
+   "uk": "Діана",
+   "cs": "Diana",
+   "en": "Diana",
+   "es": "Diana"
+  },
+  "role": {
+   "ru": "Мастер лазерной и электроэпиляции",
+   "uk": "Майстриня лазерної та електроепіляції",
+   "cs": "Specialistka na laser a elektroepilaci",
+   "en": "Laser & electrolysis specialist",
+   "es": "Especialista en láser y electrólisis"
+  },
+  "desc": {
+   "ru": "Новое пополнение команды. Лазерная эпиляция (Hunter, Luna) — эффективное и комфортное удаление нежелательных волос — и электроэпиляция Apilus.",
+   "uk": "Нове поповнення команди. Лазерна епіляція (Hunter, Luna) — ефективне й комфортне видалення небажаного волосся — та електроепіляція Apilus.",
+   "cs": "Nová posila týmu. Laserová epilace (Hunter, Luna) — účinné a pohodlné odstranění nežádoucích chloupků — a elektroepilace Apilus.",
+   "en": "The newest addition to the team. Laser hair removal (Hunter, Luna) — effective and comfortable — and Apilus electrolysis.",
+   "es": "La última incorporación al equipo. Depilación láser (Hunter, Luna) — eficaz y cómoda — y electrólisis Apilus."
+  },
+  "img": "face2.jpg",
+  "cities": [
+   "prague"
+  ]
+ }
+]

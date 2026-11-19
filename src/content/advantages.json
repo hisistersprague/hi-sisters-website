@@ -1,0 +1,62 @@
+{
+  "title": {
+    "ru": "Чем мы отличаемся",
+    "uk": "Чим ми відрізняємося",
+    "cs": "Čím se lišíme",
+    "en": "What makes us different",
+    "es": "En qué nos diferenciamos"
+  },
+  "items": [
+    {
+      "key": "intervals",
+      "title": {
+        "ru": "Интервалы от двух месяцев",
+        "uk": "Інтервали від двох місяців",
+        "cs": "Intervaly od dvou měsíců",
+        "en": "Intervals of two months and more",
+        "es": "Intervalos de dos meses o más"
+      },
+      "desc": {
+        "ru": "После первой процедуры следующая — не раньше чем через два месяца. За первый год курса получается 4–5 сеансов, а не визит каждый месяц.",
+        "uk": "Після першої процедури наступна — не раніше ніж за два місяці. За перший рік курсу виходить 4–5 сеансів, а не візит щомісяця.",
+        "cs": "Po prvním ošetření přijde další nejdříve za dva měsíce. Za první rok kúry to vyjde na 4–5 sezení, ne na návštěvu každý měsíc.",
+        "en": "After the first session the next one comes no sooner than two months later. The first year of a course is 4–5 sessions, not a visit every month.",
+        "es": "Tras la primera sesión, la siguiente no llega antes de dos meses. El primer año del curso son 4–5 sesiones, no una visita cada mes."
+      }
+    },
+    {
+      "key": "guarantee",
+      "title": {
+        "ru": "Гарантия на удаление волоса",
+        "uk": "Гарантія на видалення волосся",
+        "cs": "Záruka na odstranění chloupků",
+        "en": "A guarantee on hair removal",
+        "es": "Garantía sobre la eliminación del vello"
+      },
+      "desc": {
+        "ru": "Если вы приходите с нуля, раньше не делали эпиляцию и соблюдаете рекомендации — мы отвечаем за результат. Курс рассчитан закончиться, а не продлеваться.",
+        "uk": "Якщо ви приходите з нуля, раніше не робили епіляцію і дотримуєтесь рекомендацій — ми відповідаємо за результат. Курс розрахований завершитися, а не тривати нескінченно.",
+        "cs": "Pokud přicházíte od nuly, epilaci jste dřív nedělali a držíte se doporučení, ručíme za výsledek. Kúra je nastavená tak, aby skončila, ne aby se prodlužovala.",
+        "en": "If you start from scratch, have not had hair removal before and follow the aftercare, we stand behind the result. A course is meant to end, not to be extended.",
+        "es": "Si empiezas desde cero, no te has depilado antes y sigues las recomendaciones, respondemos por el resultado. El curso está pensado para terminar, no para alargarse."
+      }
+    },
+    {
+      "key": "parameters",
+      "title": {
+        "ru": "Параметры подбираем каждый раз",
+        "uk": "Параметри добираємо щоразу",
+        "cs": "Parametry volíme pokaždé znovu",
+        "en": "Settings chosen anew each time",
+        "es": "Parámetros ajustados en cada sesión"
+      },
+      "desc": {
+        "ru": "Мощность и режим меняются от сеанса к сеансу — под ваш тип волос, состояние кожи и то, как она ответила в прошлый раз.",
+        "uk": "Потужність і режим змінюються від сеансу до сеансу — під ваш тип волосся, стан шкіри й те, як вона відповіла минулого разу.",
+        "cs": "Výkon i režim se mění od sezení k sezení — podle typu chloupků, stavu pleti a toho, jak zareagovala minule.",
+        "en": "Power and mode change from session to session — for your hair type, your skin and how it responded last time.",
+        "es": "La potencia y el modo cambian de sesión en sesión, según tu tipo de vello, tu piel y cómo respondió la vez anterior."
+      }
+    }
+  ]
+}

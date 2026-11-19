@@ -1,0 +1,377 @@
+{
+  "active": true,
+  "cities": [
+    "prague"
+  ],
+  "currency": "Kč",
+  "ui": {
+    "ru": {
+      "label": "Black Friday",
+      "dates": "23–29 ноября",
+      "title": "8 специальных предложений на процедуры, которые вы давно хотели",
+      "save": "экономия",
+      "old": "вместо",
+      "note": "Предложение на лазер действует на первый сеанс эпиляции.",
+      "cta": "Записаться по акции",
+      "terms": "Условия",
+      "gallery": "Посмотреть предложения в картинках",
+      "close": "Закрыть"
+    },
+    "uk": {
+      "label": "Black Friday",
+      "dates": "23–29 листопада",
+      "title": "8 спеціальних пропозицій на процедури, які ви давно хотіли",
+      "save": "економія",
+      "old": "замість",
+      "note": "Пропозиція на лазер діє на перший сеанс епіляції.",
+      "cta": "Записатися за акцією",
+      "terms": "Умови",
+      "gallery": "Переглянути пропозиції в картинках",
+      "close": "Закрити"
+    },
+    "cs": {
+      "label": "Black Friday",
+      "dates": "23.–29. listopadu",
+      "title": "8 speciálních nabídek na procedury, které jste si už dlouho přáli",
+      "save": "úspora",
+      "old": "místo",
+      "note": "Nabídka na laser platí pouze na první ošetření epilace.",
+      "cta": "Objednat se na akci",
+      "terms": "Podmínky",
+      "gallery": "Prohlédnout nabídky v obrázcích",
+      "close": "Zavřít"
+    },
+    "en": {
+      "label": "Black Friday",
+      "dates": "23–29 November",
+      "title": "8 special offers on the treatments you have been putting off",
+      "save": "you save",
+      "old": "instead of",
+      "note": "The laser offer applies to your first hair-removal session.",
+      "cta": "Book at the sale price",
+      "terms": "Terms",
+      "gallery": "See the offers as images",
+      "close": "Close"
+    },
+    "es": {
+      "label": "Black Friday",
+      "dates": "23–29 de noviembre",
+      "title": "8 ofertas especiales en los tratamientos que llevas tiempo queriendo",
+      "save": "ahorras",
+      "old": "en vez de",
+      "note": "La oferta de láser se aplica a la primera sesión de depilación.",
+      "cta": "Reservar con la oferta",
+      "terms": "Condiciones",
+      "gallery": "Ver las ofertas en imágenes",
+      "close": "Cerrar"
+    }
+  },
+  "offers": [
+    {
+      "key": "laser",
+      "was": 9300,
+      "now": 5600,
+      "note": true,
+      "title": {
+        "ru": "Лазерная эпиляция: подмышки + глубокое бикини",
+        "uk": "Лазерна епіляція: пахви + глибоке бікіні",
+        "cs": "Laserová epilace: podpaží + hluboké bikiny",
+        "en": "Laser hair removal: underarms + deep bikini",
+        "es": "Depilación láser: axilas + ingles completas"
+      },
+      "desc": {
+        "ru": "Помогает надолго избавиться от нежелательных волос, уменьшить раздражение кожи и забыть о постоянном бритье.",
+        "uk": "Допомагає надовго позбутися небажаного волосся, зменшити подразнення шкіри й забути про постійне гоління.",
+        "cs": "Pomáhá dlouhodobě odstranit nežádoucí chloupky, zmírnit podráždění pokožky a zapomenout na neustálé holení.",
+        "en": "Helps you get rid of unwanted hair for good, reduces irritation and ends the constant shaving.",
+        "es": "Ayuda a eliminar el vello no deseado a largo plazo, reduce la irritación y te libra del afeitado constante."
+      }
+    },
+    {
+      "key": "electro",
+      "was": 3300,
+      "now": 2300,
+      "title": {
+        "ru": "Электроэпиляция: 300 минут",
+        "uk": "Електроепіляція: 300 хвилин",
+        "cs": "Elektroepilace: 300 minut",
+        "en": "Electrolysis: 300 minutes",
+        "es": "Electrólisis: 300 minutos"
+      },
+      "desc": {
+        "ru": "Позволяет навсегда удалять волосы любого цвета и типа, в том числе светлые и седые.",
+        "uk": "Дозволяє назавжди видаляти волосся будь-якого кольору й типу, зокрема світле та сиве.",
+        "cs": "Umožňuje trvalé odstranění chloupků jakékoli barvy a typu, včetně světlých a šedivých.",
+        "en": "Removes hair of any colour and type for good, including light and grey.",
+        "es": "Elimina de forma permanente vello de cualquier color y tipo, incluido el claro y el canoso."
+      },
+      "bullets": {
+        "ru": [
+          "Только для новых клиентов",
+          "Можно использовать на разные зоны тела",
+          "Иглы и анестезия включены",
+          "Срок действия пакета — 1 месяц"
+        ],
+        "uk": [
+          "Лише для нових клієнтів",
+          "Можна використати на різні зони тіла",
+          "Голки та анестезія входять у вартість",
+          "Термін дії пакета — 1 місяць"
+        ],
+        "cs": [
+          "Lze využít na různé partie těla",
+          "Jehly a anestezie jsou zahrnuty v ceně",
+          "Platnost balíčku – 1 měsíc"
+        ],
+        "en": [
+          "New clients only",
+          "Can be split across different areas",
+          "Needles and anaesthetic included",
+          "The package is valid for one month"
+        ],
+        "es": [
+          "Solo para clientas nuevas",
+          "Se puede repartir entre varias zonas",
+          "Agujas y anestesia incluidas",
+          "El paquete es válido un mes"
+        ]
+      }
+    },
+    {
+      "key": "trichology",
+      "was": 2000,
+      "now": 1500,
+      "title": {
+        "ru": "Первичная консультация трихолога",
+        "uk": "Первинна консультація трихолога",
+        "cs": "Vstupní konzultace u trichologa",
+        "en": "First trichologist consultation",
+        "es": "Primera consulta con la tricóloga"
+      },
+      "desc": {
+        "ru": "Помогает разобраться в причинах выпадения волос, оценить состояние кожи головы и подобрать индивидуальный план ухода и лечения.",
+        "uk": "Допомагає розібратися в причинах випадіння волосся, оцінити стан шкіри голови та дібрати індивідуальний план догляду й лікування.",
+        "cs": "Pomáhá odhalit příčiny vypadávání vlasů, posoudit stav pokožky hlavy a sestavit individuální plán péče a léčby.",
+        "en": "Helps find the causes of hair loss, assess the scalp and build an individual care and treatment plan.",
+        "es": "Ayuda a encontrar las causas de la caída del cabello, valorar el cuero cabelludo y crear un plan individual de cuidado y tratamiento."
+      }
+    },
+    {
+      "key": "cleaning",
+      "was": 1700,
+      "now": 1500,
+      "title": {
+        "ru": "Комбинированная чистка лица",
+        "uk": "Комбінована чистка обличчя",
+        "cs": "Kombinované čištění pleti",
+        "en": "Combined facial cleansing",
+        "es": "Limpieza facial combinada"
+      },
+      "desc": {
+        "ru": "Очищает поры, удаляет загрязнения и комедоны, делает кожу более гладкой и свежей.",
+        "uk": "Очищає пори, видаляє забруднення й комедони, робить шкіру гладенькою та свіжою.",
+        "cs": "Čistí póry, odstraňuje nečistoty a komedony, zanechává pleť hladší a svěžejší.",
+        "en": "Clears the pores, removes impurities and comedones, leaves the skin smoother and fresher.",
+        "es": "Limpia los poros, elimina impurezas y comedones y deja la piel más lisa y fresca."
+      }
+    },
+    {
+      "key": "enzyme",
+      "was": 1500,
+      "now": 1200,
+      "title": {
+        "ru": "Ферментотерапия",
+        "uk": "Ферментотерапія",
+        "cs": "Enzymoterapie",
+        "en": "Enzyme therapy",
+        "es": "Enzimoterapia"
+      },
+      "desc": {
+        "ru": "Мягко обновляет кожу, улучшает её текстуру, способствует выравниванию тона и возвращает сияние.",
+        "uk": "М’яко оновлює шкіру, покращує її текстуру, вирівнює тон і повертає сяйво.",
+        "cs": "Jemně obnovuje pleť, zlepšuje její texturu, pomáhá sjednotit tón a navrací jí zářivý vzhled.",
+        "en": "Gently renews the skin, improves its texture, evens out the tone and brings back radiance.",
+        "es": "Renueva la piel con suavidad, mejora su textura, unifica el tono y le devuelve la luminosidad."
+      }
+    },
+    {
+      "key": "botox",
+      "was": 3700,
+      "now": 3200,
+      "langs": [
+        "ru"
+      ],
+      "title": {
+        "ru": "Ботокс: лоб + межбровье",
+        "uk": "",
+        "cs": "",
+        "en": "",
+        "es": ""
+      },
+      "desc": {
+        "ru": "Расслабляет мышцы, разглаживает морщины на лбу и между бровями, предотвращает углубление мимических заломов.",
+        "uk": "",
+        "cs": "",
+        "en": "",
+        "es": ""
+      }
+    },
+    {
+      "key": "lips",
+      "was": 6000,
+      "now": 5000,
+      "langs": [
+        "ru"
+      ],
+      "title": {
+        "ru": "Увеличение губ",
+        "uk": "",
+        "cs": "",
+        "en": "",
+        "es": ""
+      },
+      "desc": {
+        "ru": "Придаёт губам желаемый объём, улучшает форму и контур, помогает скорректировать асимметрию.",
+        "uk": "",
+        "cs": "",
+        "en": "",
+        "es": ""
+      }
+    },
+    {
+      "key": "biorevit",
+      "was": 5200,
+      "now": 4000,
+      "langs": [
+        "ru"
+      ],
+      "title": {
+        "ru": "Биоревитализация",
+        "uk": "",
+        "cs": "",
+        "en": "",
+        "es": ""
+      },
+      "desc": {
+        "ru": "Интенсивно увлажняет кожу, повышает её упругость, улучшает тон и придаёт здоровое сияние.",
+        "uk": "",
+        "cs": "",
+        "en": "",
+        "es": ""
+      }
+    },
+    {
+      "key": "microcurrent",
+      "was": 1700,
+      "now": 1200,
+      "langs": [
+        "uk",
+        "cs",
+        "en",
+        "es"
+      ],
+      "title": {
+        "ru": "",
+        "uk": "Мікрострумова терапія",
+        "cs": "Mikroproudová terapie",
+        "en": "Microcurrent therapy",
+        "es": "Terapia con microcorrientes"
+      },
+      "desc": {
+        "ru": "",
+        "uk": "Допомагає зменшити набряки, покращити тонус шкіри та надати обличчю свіжішого, відпочилого вигляду.",
+        "cs": "Pomáhá zmírnit otoky, zlepšit tonus pleti a dodat obličeji svěžejší, odpočatější vzhled.",
+        "en": "Helps reduce puffiness, improves skin tone and gives the face a fresher, rested look.",
+        "es": "Ayuda a reducir la hinchazón, mejora el tono de la piel y da al rostro un aspecto más fresco y descansado."
+      }
+    },
+    {
+      "key": "dermapen",
+      "was": 3000,
+      "now": 2000,
+      "langs": [
+        "uk",
+        "cs",
+        "en",
+        "es"
+      ],
+      "title": {
+        "ru": "",
+        "uk": "Дермапен",
+        "cs": "Dermapen",
+        "en": "Dermapen",
+        "es": "Dermapen"
+      },
+      "desc": {
+        "ru": "",
+        "uk": "Стимулює вироблення колагену, допомагає пом’якшити сліди після акне та вирівняти рельєф шкіри.",
+        "cs": "Stimuluje tvorbu kolagenu, pomáhá zjemnit jizvičky po akné a vyhladit nerovnosti pleti.",
+        "en": "Stimulates collagen, helps soften acne scars and smooth out uneven skin.",
+        "es": "Estimula el colágeno, ayuda a suavizar las marcas del acné y a alisar la piel."
+      }
+    },
+    {
+      "key": "massage",
+      "was": 1500,
+      "now": 1000,
+      "langs": [
+        "uk",
+        "cs",
+        "en",
+        "es"
+      ],
+      "title": {
+        "ru": "",
+        "uk": "Масаж обличчя",
+        "cs": "Masáž obličeje",
+        "en": "Facial massage",
+        "es": "Masaje facial"
+      },
+      "desc": {
+        "ru": "",
+        "uk": "Знімає напруження, покращує кровообіг і допомагає зменшити набряки — обличчя виглядає свіжішим.",
+        "cs": "Uvolňuje napětí, podporuje prokrvení a pomáhá zmírnit otoky pro svěžejší vzhled.",
+        "en": "Releases tension, improves circulation and helps reduce puffiness for a fresher look.",
+        "es": "Libera tensión, mejora la circulación y ayuda a reducir la hinchazón para un aspecto más fresco."
+      }
+    }
+  ],
+  "terms": {
+    "ru": [
+      "Записаться по акции можно с 23 по 29 ноября",
+      "Предложения действуют для новых клиентов",
+      "Воспользоваться записью нужно в течение месяца",
+      "Цены указаны за одну процедуру, если не указано иное",
+      "Предложение на лазер действует на первый сеанс эпиляции"
+    ],
+    "uk": [
+      "Записатися за акцією можна з 23 до 29 листопада",
+      "Пропозиції діють для нових клієнтів",
+      "Скористатися записом потрібно протягом місяця",
+      "Ціни вказані за одну процедуру, якщо не зазначено інше",
+      "Пропозиція на лазер діє на перший сеанс епіляції"
+    ],
+    "cs": [
+      "Objednat se za akční cenu lze od 23. do 29. listopadu",
+      "Nabídky platí pro nové klientky",
+      "Termín je potřeba využít do jednoho měsíce",
+      "Ceny jsou za jedno ošetření, není-li uvedeno jinak",
+      "Nabídka na laser platí na první ošetření epilace"
+    ],
+    "en": [
+      "Book at the sale price between 23 and 29 November",
+      "The offers are for new clients",
+      "The appointment has to be used within one month",
+      "Prices are per treatment unless stated otherwise",
+      "The laser offer applies to your first hair-removal session"
+    ],
+    "es": [
+      "Puedes reservar con la oferta del 23 al 29 de noviembre",
+      "Las ofertas son para clientas nuevas",
+      "La cita debe usarse dentro de un mes",
+      "Los precios son por sesión salvo que se indique lo contrario",
+      "La oferta de láser se aplica a la primera sesión de depilación"
+    ]
+  },
+  "gallery": []
+}

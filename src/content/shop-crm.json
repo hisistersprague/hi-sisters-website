@@ -1,0 +1,920 @@
+[
+ {
+  "crm": 230,
+  "brand": "DSD",
+  "raw": "2.1:ANTIDANDRUFF SHAMPOO 200ML",
+  "volume": "200 ml",
+  "price": 800,
+  "qty": 0,
+  "stock": "pre"
+ },
+ {
+  "crm": 231,
+  "brand": "DSD",
+  "raw": "3.4.3A:FRESH CELLS DE LUXE WONDERCELL LOTION 50 +10 ML.,",
+  "volume": "10 ml",
+  "price": 1300,
+  "qty": 0,
+  "stock": "pre"
+ },
+ {
+  "crm": 238,
+  "brand": "DSD",
+  "raw": "4.1 KERATIN TREATMENT SHAMPOO 500 ML.",
+  "volume": "500 ml",
+  "price": 1200,
+  "qty": 1,
+  "stock": "in"
+ },
+ {
+  "crm": 232,
+  "brand": "DSD",
+  "raw": "4.1.1:DIXIDOX DE LUXE VIOLET SHAMPOO 500 ML",
+  "volume": "500 ml",
+  "price": 1200,
+  "qty": 0,
+  "stock": "pre"
+ },
+ {
+  "crm": 233,
+  "brand": "DSD",
+  "raw": "4.1:KERATINN TREATMENT SHAMPOO 200 ML.,",
+  "volume": "200 ml",
+  "price": 800,
+  "qty": 0,
+  "stock": "pre"
+ },
+ {
+  "crm": 241,
+  "brand": "DSD",
+  "raw": "4.4.1. LOTION 150ML",
+  "volume": "150 ml",
+  "price": 1000,
+  "qty": 3,
+  "stock": "in"
+ },
+ {
+  "crm": 236,
+  "brand": "DSD",
+  "raw": "DSD 3.4.1 CREXEPIL DE LUXE FORTE LOTION 10 ML X 10",
+  "volume": "10 ml × 10",
+  "price": 1100,
+  "qty": 0,
+  "stock": "pre"
+ },
+ {
+  "crm": 235,
+  "brand": "DSD",
+  "raw": "DSD 3.4.5A DE LUXE LOTION 35 ML.X 3",
+  "volume": "35 ml × 3",
+  "price": 1600,
+  "qty": 1,
+  "stock": "in"
+ },
+ {
+  "crm": 234,
+  "brand": "DSD",
+  "raw": "DSD 3.4.5B 7 DE LUXE ESSENTIAN OIL 35 ML",
+  "volume": "35 ml",
+  "price": 1000,
+  "qty": 0,
+  "stock": "pre"
+ },
+ {
+  "crm": 237,
+  "brand": "DSD",
+  "raw": "DSD 4.2 TRIPLE ACTION CONDICIONER 500 ML",
+  "volume": "500 ml",
+  "price": 1200,
+  "qty": 0,
+  "stock": "pre"
+ },
+ {
+  "crm": 208,
+  "brand": "DSD",
+  "raw": "DSD 4.2 TTIPLE ACTION CONDITIONER 200 ML.",
+  "volume": "200 ml",
+  "price": 800,
+  "qty": 2,
+  "stock": "in"
+ },
+ {
+  "crm": 209,
+  "brand": "DSD",
+  "raw": "DSD 4.3 KERATIN TREATMENT MASK 200 ML.",
+  "volume": "200 ml",
+  "price": 1200,
+  "qty": 1,
+  "stock": "in"
+ },
+ {
+  "crm": 229,
+  "brand": "DSD",
+  "raw": "DSD 4.3 KERATIN TREATMENT MASK 50 ML",
+  "volume": "50 ml",
+  "price": 300,
+  "qty": 3,
+  "stock": "in"
+ },
+ {
+  "crm": 210,
+  "brand": "DSD",
+  "raw": "DSD 5.2.1 BOTOX HAIR THERAPY DE LUXE BALSAM 150 ML",
+  "volume": "150 ml",
+  "price": 900,
+  "qty": 0,
+  "stock": "pre"
+ },
+ {
+  "crm": 156,
+  "brand": "DSD",
+  "raw": "DSD CAPIXYL + PLACENTA SHOCK DE LUXE LOTION 3.4.4.- 100ML",
+  "volume": "100 ml",
+  "price": 1000,
+  "qty": 1,
+  "stock": "in"
+ },
+ {
+  "crm": 155,
+  "brand": "DSD",
+  "raw": "DSD CREXEPIL DE LUXE CLASSIC LOTION 3.4.2. - 100ML",
+  "volume": "100 ml",
+  "price": 715,
+  "qty": 3,
+  "stock": "in"
+ },
+ {
+  "crm": 154,
+  "brand": "DSD",
+  "raw": "DSD DIXIDOX DE LUXE INTENSE SHAMPOO 3.1- 200ML",
+  "volume": "200 ml",
+  "price": 800,
+  "qty": 5,
+  "stock": "in"
+ },
+ {
+  "crm": 153,
+  "brand": "DSD",
+  "raw": "DSD DIXIDOX DE LUXE PEELING 1.3 - 200ML",
+  "volume": "200 ml",
+  "price": 800,
+  "qty": 1,
+  "stock": "in"
+ },
+ {
+  "crm": 190,
+  "brand": "Bao-Med",
+  "raw": "BAO-MED LUXURIATE HAIR MASK 200ML",
+  "volume": "200 ml",
+  "price": 901,
+  "qty": 1,
+  "stock": "in"
+ },
+ {
+  "crm": 189,
+  "brand": "Bao-Med",
+  "raw": "BAO-MED LUXURIATE CONDITIONER 250ML",
+  "volume": "250 ml",
+  "price": 709,
+  "qty": 1,
+  "stock": "in"
+ },
+ {
+  "crm": 186,
+  "brand": "Bao-Med",
+  "raw": "BAO-MED ВИТАМИНЫ ДЛЯ ВОЛОС/КОЖИ/НОГТЕЙ 60 КАПСУЛ( MEDICEUTICALS)",
+  "volume": "60 капс.",
+  "price": 800,
+  "qty": 7,
+  "stock": "in"
+ },
+ {
+  "crm": 174,
+  "brand": "Mediceuticals",
+  "raw": "BIOCLENZ ŠAMPON 250ML",
+  "volume": "250 ml",
+  "price": 600,
+  "qty": 2,
+  "stock": "in"
+ },
+ {
+  "crm": 218,
+  "brand": "Mediceuticals",
+  "raw": "DEFEND PRO OCHRANU A UHLAZENI VLASU 250 ML",
+  "volume": "250 ml",
+  "price": 900,
+  "qty": 3,
+  "stock": "in"
+ },
+ {
+  "crm": 176,
+  "brand": "Mediceuticals",
+  "raw": "FOLLIGEN ŠAMPON 250ML",
+  "volume": "250 ml",
+  "price": 600,
+  "qty": 4,
+  "stock": "in"
+ },
+ {
+  "crm": 213,
+  "brand": "Mediceuticals",
+  "raw": "HYDROCLENZ ŠAMPON 250 ML",
+  "volume": "250 ml",
+  "price": 600,
+  "qty": 8,
+  "stock": "in"
+ },
+ {
+  "crm": 184,
+  "brand": "Mediceuticals",
+  "raw": "MEDICEUTICALS DUAL MOIST (KRÉM NA TĚLO) 180ML",
+  "volume": "180 ml",
+  "price": 600,
+  "qty": 5,
+  "stock": "in"
+ },
+ {
+  "crm": 206,
+  "brand": "Mediceuticals",
+  "raw": "MEDICEUTICALS DUAL MOIST (KRÉM NA TĚLO) 475 ML.",
+  "volume": "475 ml",
+  "price": 1127,
+  "qty": 0,
+  "stock": "pre"
+ },
+ {
+  "crm": 180,
+  "brand": "Mediceuticals",
+  "raw": "MEDICEUTICALS HYDRATAČNÍ KONDICIONÉR MOIST-CYTE 250ML",
+  "volume": "250 ml",
+  "price": 800,
+  "qty": 2,
+  "stock": "in"
+ },
+ {
+  "crm": 185,
+  "brand": "Mediceuticals",
+  "raw": "MEDICEUTICALS MX DUAL THERAPY (MASKA NA VLASY) 150ML",
+  "volume": "150 ml",
+  "price": 900,
+  "qty": 2,
+  "stock": "in"
+ },
+ {
+  "crm": 214,
+  "brand": "Mediceuticals",
+  "raw": "MEDICEUTICALS STIMULAČNÍ SÉRUM NUMINOX 250 ML",
+  "volume": "250 ml",
+  "price": 1700,
+  "qty": 0,
+  "stock": "pre"
+ },
+ {
+  "crm": 188,
+  "brand": "Mediceuticals",
+  "raw": "MEDICEUTICALS НАБОР (FOLLIGEN 250ML, VITATIN 250ML, CELLAGEN 125ML)",
+  "volume": "250 ml",
+  "price": 1900,
+  "qty": 1,
+  "stock": "in"
+ },
+ {
+  "crm": 179,
+  "brand": "Mediceuticals",
+  "raw": "MEDICEUTICALS НАБОР (SATURATE 250ML, VITATIN 250ML, CELLAGEN 125ML)",
+  "volume": "250 ml",
+  "price": 1900,
+  "qty": 1,
+  "stock": "in"
+ },
+ {
+  "crm": 220,
+  "brand": "Mediceuticals",
+  "raw": "MEDICEUTICALS НАБОР (X-FOLATE 250 ML, THERAPEUTIC 250 ML, THERARX 250 ML)",
+  "volume": "250 ml",
+  "price": 1800,
+  "qty": 0,
+  "stock": "pre"
+ },
+ {
+  "crm": 177,
+  "brand": "Mediceuticals",
+  "raw": "SATURATE ŠAMPON 250ML",
+  "volume": "250 ml",
+  "price": 600,
+  "qty": 4,
+  "stock": "in"
+ },
+ {
+  "crm": 219,
+  "brand": "Mediceuticals",
+  "raw": "SOLV-X SAMPON PRO MASTNOU POKOZKU HLAVY 250 ML",
+  "volume": "250 ml",
+  "price": 700,
+  "qty": 1,
+  "stock": "in"
+ },
+ {
+  "crm": 178,
+  "brand": "Mediceuticals",
+  "raw": "STIMULAČNÍ SÉRUM CELLAGEN 125ML",
+  "volume": "125 ml",
+  "price": 900,
+  "qty": 3,
+  "stock": "in"
+ },
+ {
+  "crm": 217,
+  "brand": "Mediceuticals",
+  "raw": "STIMULAČNÍ SÉRUM CELLAGEN 250ML",
+  "volume": "250 ml",
+  "price": 1700,
+  "qty": 3,
+  "stock": "in"
+ },
+ {
+  "crm": 175,
+  "brand": "Mediceuticals",
+  "raw": "STIMULAČNÍ SÉRUM NUMINOX 125ML",
+  "volume": "125 ml",
+  "price": 900,
+  "qty": 0,
+  "stock": "pre"
+ },
+ {
+  "crm": 183,
+  "brand": "Mediceuticals",
+  "raw": "THERAPEUTIC UKLIDŇUJÍCÍ KONDICIONÉR 250ML",
+  "volume": "250 ml",
+  "price": 800,
+  "qty": 14,
+  "stock": "in"
+ },
+ {
+  "crm": 181,
+  "brand": "Mediceuticals",
+  "raw": "THERARX 250 ML",
+  "volume": "250 ml",
+  "price": 800,
+  "qty": 6,
+  "stock": "in"
+ },
+ {
+  "crm": 240,
+  "brand": "Mediceuticals",
+  "raw": "TRICHOGENIX SCALP SERUM 15 ML.",
+  "volume": "15 ml",
+  "price": 1200,
+  "qty": 1,
+  "stock": "in"
+ },
+ {
+  "crm": 215,
+  "brand": "Mediceuticals",
+  "raw": "VITATIN KONDICIONER PRO ŽENY 250 ML",
+  "volume": "250 ml",
+  "price": 700,
+  "qty": 3,
+  "stock": "in"
+ },
+ {
+  "crm": 239,
+  "brand": "Mediceuticals",
+  "raw": "VIVID ŠAMPON PRO ČIŠTÉNI A DETIXIKACI 1000 ML",
+  "volume": "1000 ml",
+  "price": 1430,
+  "qty": 1,
+  "stock": "in"
+ },
+ {
+  "crm": 216,
+  "brand": "Mediceuticals",
+  "raw": "VIVID ŠAMPON PRO ČIŠTÉNI A DETIXIKACI 250 ML",
+  "volume": "250 ml",
+  "price": 600,
+  "qty": 3,
+  "stock": "in"
+ },
+ {
+  "crm": 205,
+  "brand": "Mediceuticals",
+  "raw": "X-DERMA SHAMPOO 250ML",
+  "volume": "250 ml",
+  "price": 700,
+  "qty": 3,
+  "stock": "in"
+ },
+ {
+  "crm": 182,
+  "brand": "Mediceuticals",
+  "raw": "X-FOLATE ŠAMPON 250ML",
+  "volume": "250 ml",
+  "price": 700,
+  "qty": 1,
+  "stock": "in"
+ },
+ {
+  "crm": 144,
+  "brand": "DMK",
+  "raw": "DMK ACU CRÈME 50 МЛ",
+  "volume": "50 ml",
+  "price": 1800,
+  "qty": 2,
+  "stock": "in"
+ },
+ {
+  "crm": 142,
+  "brand": "DMK",
+  "raw": "DMK ACU KLENZ 180 Г",
+  "volume": "180 г",
+  "price": 1500,
+  "qty": 1,
+  "stock": "in"
+ },
+ {
+  "crm": 145,
+  "brand": "DMK",
+  "raw": "DMK ACU MIST 120 МЛ",
+  "volume": "120 ml",
+  "price": 1500,
+  "qty": 2,
+  "stock": "in"
+ },
+ {
+  "crm": 138,
+  "brand": "DMK",
+  "raw": "DMK BETA GEL 30 МЛ",
+  "volume": "30 ml",
+  "price": 2500,
+  "qty": 4,
+  "stock": "in"
+ },
+ {
+  "crm": 143,
+  "brand": "DMK",
+  "raw": "DMK BETAGEN CREAM 30 МЛ",
+  "volume": "30 ml",
+  "price": 2000,
+  "qty": 2,
+  "stock": "in"
+ },
+ {
+  "crm": 161,
+  "brand": "DMK",
+  "raw": "DMK CITRIQUE CREME 50ML",
+  "volume": "50 ml",
+  "price": 1600,
+  "qty": 0,
+  "stock": "pre"
+ },
+ {
+  "crm": 137,
+  "brand": "DMK",
+  "raw": "DMK DEEP PORE CLEANSER 180 МЛ",
+  "volume": "180 ml",
+  "price": 1600,
+  "qty": 2,
+  "stock": "in"
+ },
+ {
+  "crm": 139,
+  "brand": "DMK",
+  "raw": "DMK DIRECT DELIVERY VITAMIN C 30 МЛ",
+  "volume": "30 ml",
+  "price": 3000,
+  "qty": 1,
+  "stock": "in"
+ },
+ {
+  "crm": 140,
+  "brand": "DMK",
+  "raw": "DMK HERB & MINERAL SPRAY 120 МЛ",
+  "volume": "120 ml",
+  "price": 1500,
+  "qty": 1,
+  "stock": "in"
+ },
+ {
+  "crm": 141,
+  "brand": "DMK",
+  "raw": "DMK HERB & MINERAL SPRAY 60 МЛ (TRAVEL)",
+  "volume": "60 ml",
+  "price": 900,
+  "qty": 2,
+  "stock": "in"
+ },
+ {
+  "crm": 228,
+  "brand": "DMK",
+  "raw": "DMK MELANOTECH DROPS 30 ML",
+  "volume": "30 ml",
+  "price": 2800,
+  "qty": 0,
+  "stock": "pre"
+ },
+ {
+  "crm": 162,
+  "brand": "DMK",
+  "raw": "DMK MILKY CLEANSER 180ML",
+  "volume": "180 ml",
+  "price": 1600,
+  "qty": 2,
+  "stock": "in"
+ },
+ {
+  "crm": 160,
+  "brand": "DMK",
+  "raw": "DMK NUTRASCREEN SPF 30 50ML",
+  "volume": "50 ml",
+  "price": 1700,
+  "qty": 1,
+  "stock": "in"
+ },
+ {
+  "crm": 147,
+  "brand": "DMK",
+  "raw": "DMK PRO AMINO CREME 50ML",
+  "volume": "50 ml",
+  "price": 2100,
+  "qty": 1,
+  "stock": "in"
+ },
+ {
+  "crm": 146,
+  "brand": "DMK",
+  "raw": "DMK ULTRASCREEN 50SPF (65ML)",
+  "volume": "65 ml",
+  "price": 2100,
+  "qty": 8,
+  "stock": "in"
+ },
+ {
+  "crm": 165,
+  "brand": "Jan Marini",
+  "raw": "MARINI C-ESTA CLEANSING GEL 178ML",
+  "volume": "178 ml",
+  "price": 1200,
+  "qty": 1,
+  "stock": "in"
+ },
+ {
+  "crm": 167,
+  "brand": "Jan Marini",
+  "raw": "MARINI HYLA3D FACE SERUM 30ML",
+  "volume": "30 ml",
+  "price": 3300,
+  "qty": 1,
+  "stock": "in"
+ },
+ {
+  "crm": 163,
+  "brand": "Jan Marini",
+  "raw": "MARINI AGE INTERVENTION GENTLE CLEANSER 178ML",
+  "volume": "178 ml",
+  "price": 1200,
+  "qty": 1,
+  "stock": "in"
+ },
+ {
+  "crm": 171,
+  "brand": "Jan Marini",
+  "raw": "MARINI AGE INTERVENTION PEPTIDE EXTREME 30ML",
+  "volume": "30 ml",
+  "price": 3500,
+  "qty": 0,
+  "stock": "pre"
+ },
+ {
+  "crm": 169,
+  "brand": "Jan Marini",
+  "raw": "MARINI BIOCLEAR FACE CREAM 28G",
+  "volume": "28 g",
+  "price": 2650,
+  "qty": 0,
+  "stock": "pre"
+ },
+ {
+  "crm": 168,
+  "brand": "Jan Marini",
+  "raw": "MARINI BIOCLEAR FACE LOTION 30ML",
+  "volume": "30 ml",
+  "price": 2650,
+  "qty": 0,
+  "stock": "pre"
+ },
+ {
+  "crm": 164,
+  "brand": "Jan Marini",
+  "raw": "MARINI BIOGLYCOLIC FACE CLEANSER 178ML",
+  "volume": "178 ml",
+  "price": 1200,
+  "qty": 0,
+  "stock": "pre"
+ },
+ {
+  "crm": 166,
+  "brand": "Jan Marini",
+  "raw": "MARINI C-ESTA FACE SERUM 30ML",
+  "volume": "30 ml",
+  "price": 3800,
+  "qty": 1,
+  "stock": "in"
+ },
+ {
+  "crm": 196,
+  "brand": "Jan Marini",
+  "raw": "MARINI DUALITI XC 28G",
+  "volume": "28 g",
+  "price": 3800,
+  "qty": 2,
+  "stock": "in"
+ },
+ {
+  "crm": 173,
+  "brand": "Jan Marini",
+  "raw": "MARINI PHYSICAL PROTECTANT SPF30 TINTED LIGHT TO MEDIUM 57G",
+  "volume": "57 g",
+  "price": 1700,
+  "qty": 2,
+  "stock": "in"
+ },
+ {
+  "crm": 172,
+  "brand": "Jan Marini",
+  "raw": "MARINI TRANSFORMATION EYE CREAM 14G",
+  "volume": "14 g",
+  "price": 1347,
+  "qty": 0,
+  "stock": "pre"
+ },
+ {
+  "crm": 170,
+  "brand": "Jan Marini",
+  "raw": "MARINI TRANSFORMATION FACE CREAM 28G",
+  "volume": "28 g",
+  "price": 3500,
+  "qty": 1,
+  "stock": "in"
+ },
+ {
+  "crm": 53,
+  "brand": "Epilax",
+  "raw": "EPILAX SOS ПУДРА 50 Г",
+  "volume": "50 г",
+  "price": 400,
+  "qty": 9,
+  "stock": "in"
+ },
+ {
+  "crm": 128,
+  "brand": "Epilax",
+  "raw": "PREBIOTIC SHOWER GEL EPILAX",
+  "volume": "",
+  "price": 300,
+  "qty": 0,
+  "stock": "pre"
+ },
+ {
+  "crm": 110,
+  "brand": "Epilax",
+  "raw": "ИНТИМНАЯ ГИГИЕНИЧЕСКАЯ ПЕНКА С ПРОБИОТИКОМ",
+  "volume": "",
+  "price": 300,
+  "qty": 0,
+  "stock": "pre"
+ },
+ {
+  "crm": 73,
+  "brand": "Epilax",
+  "raw": "ЛОСЬОН ДЛЯ ТЕЛА С ПЕПТИДАМИ 250МЛ",
+  "volume": "250 ml",
+  "price": 350,
+  "qty": 0,
+  "stock": "pre"
+ },
+ {
+  "crm": 54,
+  "brand": "Epilax",
+  "raw": "ЛОСЬОН ДЛЯ ТЕЛА С ПЕПТИДАМИ НЗФ 500ML",
+  "volume": "500 ml",
+  "price": 800,
+  "qty": 0,
+  "stock": "pre"
+ },
+ {
+  "crm": 131,
+  "brand": "Epilax",
+  "raw": "МОЛОЧКО ДЛЯ ТЕЛА С ПАНТЕНОЛОМ ALOE GREEN TEA SPF15",
+  "volume": "",
+  "price": 350,
+  "qty": 0,
+  "stock": "pre"
+ },
+ {
+  "crm": 130,
+  "brand": "Epilax",
+  "raw": "МОЛОЧКО ДЛЯ ТЕЛА С ПАНТЕНОЛОМ BUBBLE GUM SPF15",
+  "volume": "",
+  "price": 350,
+  "qty": 0,
+  "stock": "pre"
+ },
+ {
+  "crm": 122,
+  "brand": "Epilax",
+  "raw": "МОЛОЧКО ДЛЯ ТЕЛА С ПАНТЕНОЛОМ MACAROON SPF15",
+  "volume": "",
+  "price": 350,
+  "qty": 0,
+  "stock": "pre"
+ },
+ {
+  "crm": 55,
+  "brand": "Epilax",
+  "raw": "ЭНЗИМНАЯ ПУДРА 120 Г",
+  "volume": "120 г",
+  "price": 450,
+  "qty": 0,
+  "stock": "pre"
+ },
+ {
+  "crm": 72,
+  "brand": "Epilax",
+  "raw": "ЭНЗИМНАЯ ПУДРА 50 ГРАММ EPILAX",
+  "volume": "50 г",
+  "price": 250,
+  "qty": 0,
+  "stock": "pre"
+ },
+ {
+  "crm": 134,
+  "brand": "Happy Intim",
+  "raw": "HAPPY INTIM REBIRTH CREAM",
+  "volume": "",
+  "price": 1600,
+  "qty": -1,
+  "stock": "pre"
+ },
+ {
+  "crm": 69,
+  "brand": "Happy Intim",
+  "raw": "КРЕМ ГЕЛЬ ДЛЯ ТЕЛА С SPF 50 200 ML",
+  "volume": "200 ml",
+  "price": 1000,
+  "qty": 1,
+  "stock": "in"
+ },
+ {
+  "crm": 30,
+  "brand": "Happy Intim",
+  "raw": "КРЕМ-МАСЛО ДЛЯ ТЕЛА BODY BUTTER 200МЛ",
+  "volume": "200 ml",
+  "price": 1600,
+  "qty": 0,
+  "stock": "pre"
+ },
+ {
+  "crm": 29,
+  "brand": "Happy Intim",
+  "raw": "ОСВЕТЛЯЮЩИЙ КРЕМ HAPPY INTIM 50ML",
+  "volume": "50 ml",
+  "price": 1600,
+  "qty": 1,
+  "stock": "in"
+ },
+ {
+  "crm": 31,
+  "brand": "Happy Intim",
+  "raw": "ОЧИЩАЮЩАЯ ПЕНКА ДЛЯ ТЕЛА BODY PEEL 150 МЛ",
+  "volume": "150 ml",
+  "price": 1600,
+  "qty": 0,
+  "stock": "pre"
+ },
+ {
+  "crm": 68,
+  "brand": "Happy Intim",
+  "raw": "ФЛЮИД ДЛЯ ЛИЦА SPF 50 40 ML",
+  "volume": "40 ml",
+  "price": 800,
+  "qty": 1,
+  "stock": "in"
+ },
+ {
+  "crm": 243,
+  "brand": "Skinderma",
+  "raw": "PURIFIER COMPLEX CREAM 50ML",
+  "volume": "50 ml",
+  "price": 1250,
+  "qty": 1,
+  "stock": "in"
+ },
+ {
+  "crm": 242,
+  "brand": "Skinderma",
+  "raw": "SKINDERMA TONIC LOTION SOLUTION 200 ML",
+  "volume": "200 ml",
+  "price": 399,
+  "qty": -1,
+  "stock": "pre"
+ },
+ {
+  "crm": 203,
+  "brand": "Forlle'd",
+  "raw": "HYALOGY AC CLEAR CREAM 50 ML",
+  "volume": "50 ml",
+  "price": 2350,
+  "qty": 0,
+  "stock": "pre"
+ },
+ {
+  "crm": 202,
+  "brand": "Forlle'd",
+  "raw": "HYALOGY P-EFFECT RE-PURERANCE WASH 100 G",
+  "volume": "100 g",
+  "price": 1850,
+  "qty": 0,
+  "stock": "pre"
+ },
+ {
+  "crm": 104,
+  "brand": "Epilax",
+  "raw": "EPICALM 300ML",
+  "volume": "300 ml",
+  "price": 1000,
+  "qty": 0,
+  "stock": "pre"
+ },
+ {
+  "crm": 57,
+  "brand": "Epilax",
+  "raw": "EPICALM 50 ML",
+  "volume": "50 ml",
+  "price": 450,
+  "qty": 0,
+  "stock": "pre"
+ },
+ {
+  "crm": 102,
+  "brand": "Epilax",
+  "raw": "EPICALM 500ML",
+  "volume": "500 ml",
+  "price": 1500,
+  "qty": 0,
+  "stock": "pre"
+ },
+ {
+  "crm": 129,
+  "brand": "AlphaScience",
+  "raw": "SPF ALPHASCIENCE",
+  "volume": "",
+  "price": 1600,
+  "qty": 0,
+  "stock": "pre"
+ },
+ {
+  "crm": 61,
+  "brand": "Epilax",
+  "raw": "ГЕЛЬ ДЛЯ УМЫВАНИЯ ENZYCLEAN 100 ML",
+  "volume": "100 ml",
+  "price": 450,
+  "qty": 0,
+  "stock": "pre"
+ },
+ {
+  "crm": 83,
+  "brand": "Epilax",
+  "raw": "НАБОР №1: EPICALM, SENSILIS SPF 50+ ДЛЯ ТЕЛА, ENZYCLEAN",
+  "volume": "",
+  "price": 1650,
+  "qty": 0,
+  "stock": "pre"
+ },
+ {
+  "crm": 84,
+  "brand": "Epilax",
+  "raw": "НАБОР №2: МАТИРУЮЩИЙ КРЕМ SPF50, ОКТЕНИСЕПТ 30 МЛ, SOS ПУДРА EPILAX",
+  "volume": "30 ml",
+  "price": 1250,
+  "qty": 0,
+  "stock": "pre"
+ },
+ {
+  "crm": 159,
+  "brand": "Epilax",
+  "raw": "ОКТЕНИСЕПТ 30 МЛ",
+  "volume": "30 ml",
+  "price": 250,
+  "qty": -16,
+  "stock": "pre"
+ },
+ {
+  "crm": 47,
+  "brand": "Epilax",
+  "raw": "ОКТЕНИСЕПТ 60 МЛ",
+  "volume": "60 ml",
+  "price": 350,
+  "qty": 0,
+  "stock": "pre"
+ }
+]

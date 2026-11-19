@@ -1,0 +1,81 @@
+{
+ "prague": {
+  "city": {
+   "ru": "Прага",
+   "uk": "Прага",
+   "en": "Prague",
+   "es": "Praga",
+   "cs": "Praha"
+  },
+  "address": "Chlumčanského 497/5, Praha 8-Libeň, 180 00",
+  "phone": "+420 702 192 946",
+  "booking": "https://cbox.mobi/go/hi-sisters",
+  "instagram": [
+   "hi.sisters_cz",
+   "hi.sisters.clinic"
+  ],
+  "maps": "https://www.google.com/maps?cid=17098057881509158110",
+  "currency": "Kč",
+  "hours": {
+   "ru": "Ежедневно 10:00–19:00",
+   "uk": "Щодня 10:00–19:00",
+   "cs": "Denně 10:00–19:00",
+   "en": "Daily 10:00–19:00",
+   "es": "Todos los días 10:00–19:00"
+  },
+  "rating": "5,0",
+  "reviews": 211,
+  "trial": {
+   "price": 500,
+   "minutes": 30
+  },
+  "lat": 50.1146579,
+  "lng": 14.4676295,
+  "zip": "180 00",
+  "city_en": "Prague",
+  "country": "CZ",
+  "street": "Chlumčanského 497/5",
+  "opens": "10:00",
+  "closes": "19:00",
+  "days": "Mo,Tu,We,Th,Fr,Sa,Su",
+  "email": "hi.sisters.prague@gmail.com"
+ },
+ "valencia": {
+  "city": {
+   "ru": "Валенсия",
+   "uk": "Валенсія",
+   "en": "Valencia",
+   "es": "Valencia",
+   "cs": "Valencie"
+  },
+  "address": "Carrer de Pere Aleixandre, 34, 46004 València",
+  "phone": "+34 637 02 47 59",
+  "booking": "https://dikidi.app/1743011",
+  "instagram": [
+   "hi.sisters_valencia",
+   "hi.sisters_vlc"
+  ],
+  "currency": "€",
+  "hours": {
+   "ru": "Пн–Сб 10:00–20:00",
+   "uk": "Пн–Сб 10:00–20:00",
+   "cs": "Po–So 10:00–20:00",
+   "en": "Mon–Sat 10:00–20:00",
+   "es": "Lun–Sáb 10:00–20:00"
+  },
+  "maps": "https://www.google.com/maps/search/Carrer+de+Pere+Aleixandre,+34,+46004+Val%C3%A8ncia",
+  "rating": "4,8",
+  "reviews": 24,
+  "lat": 39.4600337,
+  "lng": -0.3623039,
+  "zip": "46004",
+  "city_en": "Valencia",
+  "country": "ES",
+  "street": "Carrer de Pere Aleixandre, 34",
+  "opens": "10:00",
+  "closes": "20:00",
+  "days": "Mo,Tu,We,Th,Fr,Sa",
+  "email": "hi.sisters.prague@gmail.com",
+  "threads": "hi.sisters_valencia"
+ }
+}

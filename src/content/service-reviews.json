@@ -1,0 +1,181 @@
+{
+  "sectionTitle": {
+    "ru": "Отзывы об этой услуге",
+    "uk": "Відгуки про цю послугу",
+    "cs": "Recenze na tuto službu",
+    "en": "Reviews of this service",
+    "es": "Reseñas de este servicio"
+  },
+  "items": {
+    "laser": {
+      "prague": [
+        {
+          "name": "Daria Kyrylets",
+          "text": {
+            "ru": "Профессиональный подход, современное оборудование и дружелюбный персонал. Результаты видны уже после нескольких посещений.",
+            "uk": "Професійний підхід, сучасне обладнання та привітний персонал. Результати помітні вже після кількох відвідувань.",
+            "cs": "Profesionální přístup, moderní přístroje a milý personál. Výsledky jsou vidět už po několika návštěvách.",
+            "en": "A professional approach, modern equipment and friendly staff. You can see the results after just a few visits.",
+            "es": "Enfoque profesional, aparatología moderna y un equipo amable. Los resultados se ven ya tras unas pocas visitas."
+          }
+        },
+        {
+          "name": "Tetiana Dudla",
+          "text": {
+            "ru": "Была на лазере — подмышки и бикини. Даже во время обработки интимной зоны мне было комфортно: девушка очень приятная.",
+            "uk": "Була на лазері — пахви та бікіні. Навіть під час обробки інтимної зони мені було комфортно: дівчина дуже приємна.",
+            "cs": "Byla jsem na laseru — podpaží a bikiny. I při intimní zóně mi bylo příjemně, slečna byla moc milá.",
+            "en": "I had laser on my underarms and bikini line. Even the intimate area was comfortable — the specialist was lovely.",
+            "es": "Me hice láser en axilas e ingles. Incluso en la zona íntima estuve cómoda: la especialista es encantadora."
+          }
+        },
+        {
+          "name": "Olha Korinna",
+          "text": {
+            "ru": "Прохожу курс лазерной эпиляции и очень довольна результатом. Индивидуальный подход чувствуется с первого визита.",
+            "uk": "Проходжу курс лазерної епіляції й дуже задоволена результатом. Індивідуальний підхід відчувається з першого візиту.",
+            "cs": "Absolvuji kúru laserové epilace a s výsledkem jsem moc spokojená. Individuální přístup je znát od první návštěvy.",
+            "en": "I am going through a course of laser hair removal and I am very happy with the result. The individual approach shows from the first visit.",
+            "es": "Estoy haciendo un curso de depilación láser y estoy muy contenta con el resultado. El trato personalizado se nota desde la primera visita."
+          }
+        }
+      ],
+      "valencia": [
+        {
+          "name": "Александра Фроюк",
+          "text": {
+            "ru": "Это тот случай, когда тебе не впарят процедуры, чтобы заработать. Всё чётко и по показаниям.",
+            "uk": "Це той випадок, коли тобі не нав’яжуть процедури, щоб заробити. Усе чітко й за показаннями.",
+            "cs": "Tohle je ten případ, kdy vám nikdo nevnucuje zákroky kvůli tržbě. Všechno jasně a podle potřeby.",
+            "en": "This is the kind of place where nobody pushes extra treatments to make money. Everything is clear and based on what you actually need.",
+            "es": "Es de esos sitios donde no te endosan tratamientos para facturar. Todo claro y según lo que de verdad necesitas."
+          }
+        },
+        {
+          "name": "Анастасія Антощук",
+          "text": {
+            "ru": "Результат после первой процедуры видно сразу — это очень радует. Буду советовать всем.",
+            "uk": "Результат після першої процедури видно одразу — це дуже тішить. Раджу всім.",
+            "cs": "Výsledek je vidět hned po první proceduře, což moc potěší. Budu doporučovat všem.",
+            "en": "You can see the result right after the first session, which is a real joy. I will be recommending it to everyone.",
+            "es": "El resultado se ve justo después de la primera sesión, y eso se agradece mucho. Lo voy a recomendar a todas."
+          }
+        },
+        {
+          "name": "Anna Akhtyrtseva",
+          "text": {
+            "ru": "Чисто, уютно и приятно. Процедуру провели очень аккуратно, всё подробно объяснили и ответили на все вопросы.",
+            "uk": "Чисто, затишно і приємно. Процедуру провели дуже акуратно, усе докладно пояснили та відповіли на всі питання.",
+            "cs": "Čisto, útulně a příjemně. Zákrok proběhl velmi pečlivě, vše mi podrobně vysvětlili a odpověděli na všechny dotazy.",
+            "en": "Clean, cosy and pleasant. The treatment was done very carefully, everything was explained in detail and all my questions were answered.",
+            "es": "Limpio, acogedor y agradable. El tratamiento fue muy cuidadoso, me lo explicaron todo con detalle y respondieron a todas mis preguntas."
+          }
+        }
+      ]
+    },
+    "electro": {
+      "prague": [
+        {
+          "name": "Оля Зварич",
+          "text": {
+            "ru": "Процедура прошла комфортно, мастер внимательный, всё стерильно и аккуратно. Результат заметен уже после первого сеанса.",
+            "uk": "Процедура пройшла комфортно, майстриня уважна, усе стерильно й акуратно. Результат помітний уже після першого сеансу.",
+            "cs": "Zákrok byl příjemný, specialistka pozorná, všechno sterilní a pečlivé. Výsledek je znát už po prvním sezení.",
+            "en": "The session was comfortable, the specialist attentive, everything sterile and neat. The result shows after the very first session.",
+            "es": "La sesión fue cómoda, la especialista muy atenta, todo estéril y cuidadoso. El resultado se nota ya desde la primera sesión."
+          }
+        },
+        {
+          "name": "Valeriia Solianikova",
+          "text": {
+            "ru": "Сначала я делала лазерную эпиляцию, теперь — электроэпиляцию. Процесс долгий, но оно того стоит: волос стало намного меньше.",
+            "uk": "Спершу я робила лазерну епіляцію, тепер — електроепіляцію. Процес довгий, але воно того варте: волосся стало значно менше.",
+            "cs": "Nejdřív jsem chodila na laser, teď na elektroepilaci. Je to běh na dlouhou trať, ale stojí to za to — chloupků je výrazně méně.",
+            "en": "I started with laser and moved on to electrolysis. It is a long process, but it is worth it: there is far less hair now.",
+            "es": "Empecé con láser y ahora hago electrólisis. Es un proceso largo, pero merece la pena: ahora tengo muchísimo menos vello."
+          }
+        },
+        {
+          "name": "Anastasiya Zhy",
+          "text": {
+            "ru": "Чрезвычайно внимательные специалисты по электроэпиляции, которые всегда стремятся к наилучшему результату.",
+            "uk": "Надзвичайно уважні спеціалістки з електроепіляції, які завжди прагнуть найкращого результату.",
+            "cs": "Mimořádně pozorné specialistky na elektroepilaci, které vždy jdou za nejlepším výsledkem.",
+            "en": "Exceptionally attentive electrolysis specialists who always aim for the best possible result.",
+            "es": "Especialistas en electrólisis sumamente atentas, que siempre buscan el mejor resultado posible."
+          }
+        }
+      ],
+      "valencia": [
+        {
+          "name": "Кристина Токаренко",
+          "text": {
+            "ru": "Хожу на электроэпиляцию: процедуры проходят быстро и аккуратно, всегда чувствую себя комфортно.",
+            "uk": "Ходжу на електроепіляцію: процедури проходять швидко й акуратно, завжди почуваюся комфортно.",
+            "cs": "Chodím na elektroepilaci: zákroky jsou rychlé a pečlivé, vždycky se cítím příjemně.",
+            "en": "I come for electrolysis: the sessions are quick and careful, and I always feel comfortable.",
+            "es": "Vengo a hacerme electrólisis: las sesiones son rápidas y cuidadosas, y siempre me siento cómoda."
+          }
+        },
+        {
+          "name": "Sandra Gil",
+          "text": {
+            "ru": "Обратилась, чтобы сделать электроэпиляцию. Очень профессионально и пунктуально — довольна результатом.",
+            "uk": "Звернулася, щоб зробити електроепіляцію. Дуже професійно й пунктуально — задоволена результатом.",
+            "cs": "Přišla jsem na elektroepilaci. Velmi profesionální a dochvilné — s výsledkem jsem spokojená.",
+            "en": "I came in for electrolysis. Very professional and punctual — I am happy with the result.",
+            "es": "Vine al centro a hacerme electrólisis. Muy profesional y puntual; estoy muy contenta con los resultados."
+          }
+        }
+      ]
+    },
+    "cosmetology": {
+      "prague": [
+        {
+          "name": "Кристина Ус",
+          "text": {
+            "ru": "Была на чистке лица: процедура комфортная, восстановление быстрое, а уход подобрали идеально под мои потребности.",
+            "uk": "Була на чистці обличчя: процедура комфортна, відновлення швидке, а догляд підібрали ідеально під мої потреби.",
+            "cs": "Byla jsem na čištění pleti: zákrok příjemný, regenerace rychlá a péči mi vybrali přesně na míru.",
+            "en": "I had a facial cleansing: the treatment was comfortable, recovery was quick, and the aftercare was chosen perfectly for my needs.",
+            "es": "Me hice una limpieza facial: el tratamiento fue cómodo, la recuperación rápida y el cuidado posterior lo eligieron justo para lo que necesitaba."
+          }
+        },
+        {
+          "name": "Karina",
+          "text": {
+            "ru": "Комбинированная чистка лица: мастер отлично справилась, кожа на второй день после процедуры шелковая и здоровая.",
+            "uk": "Комбінована чистка обличчя: майстриня чудово впоралася, шкіра на другий день після процедури шовкова та здорова.",
+            "cs": "Kombinované čištění pleti: specialistka odvedla skvělou práci, druhý den po zákroku je pleť hebká a zdravá.",
+            "en": "A combined facial cleansing: the specialist did a great job — two days later my skin is silky and healthy.",
+            "es": "Una limpieza facial combinada: la especialista lo hizo genial; al segundo día la piel está sedosa y sana."
+          }
+        }
+      ]
+    },
+    "trichology": {
+      "prague": [
+        {
+          "name": "Lana Horska",
+          "text": {
+            "ru": "Обращалась к трихологу. Мне всё подробно разложили по полочкам, успокоили и подобрали понятный план лечения.",
+            "uk": "Зверталася до трихологині. Мені все докладно розклали по поличках, заспокоїли та підібрали зрозумілий план лікування.",
+            "cs": "Byla jsem u tricholožky. Všechno mi srozumitelně vysvětlili, uklidnili mě a sestavili jasný plán léčby.",
+            "en": "I saw the trichologist. Everything was explained to me step by step, I was reassured, and I got a clear treatment plan.",
+            "es": "Fui a la tricóloga. Me lo explicaron todo punto por punto, me tranquilizaron y me dieron un plan de tratamiento claro."
+          }
+        },
+        {
+          "name": "Rusya Ruslana",
+          "text": {
+            "ru": "Профессиональный и человеческий подход, подробная консультация и полезные рекомендации по уходу за волосами.",
+            "uk": "Професійний і людяний підхід, докладна консультація та корисні рекомендації з догляду за волоссям.",
+            "cs": "Profesionální a zároveň lidský přístup, podrobná konzultace a užitečná doporučení k péči o vlasy.",
+            "en": "A professional and genuinely human approach, a detailed consultation and useful hair-care recommendations.",
+            "es": "Un trato profesional y a la vez cercano, una consulta detallada y recomendaciones útiles para cuidar el pelo."
+          }
+        }
+      ]
+    }
+  }
+}

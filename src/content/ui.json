@@ -1,0 +1,1268 @@
+{
+  "nav": {
+    "ru": {
+      "home": "Главная",
+      "services": "Услуги",
+      "training": "Обучение",
+      "about": "О нас",
+      "contacts": "Контакты",
+      "book": "Записаться онлайн"
+    },
+    "uk": {
+      "home": "Головна",
+      "services": "Послуги",
+      "training": "Навчання",
+      "about": "Про нас",
+      "contacts": "Контакти",
+      "book": "Записатися онлайн"
+    },
+    "en": {
+      "home": "Home",
+      "services": "Services",
+      "training": "Training",
+      "about": "About",
+      "contacts": "Contacts",
+      "book": "Book online"
+    },
+    "es": {
+      "home": "Inicio",
+      "services": "Servicios",
+      "training": "Formación",
+      "about": "Nosotras",
+      "contacts": "Contacto",
+      "book": "Reservar online"
+    },
+    "cs": {
+      "home": "Domů",
+      "services": "Služby",
+      "training": "Školení",
+      "about": "O nás",
+      "contacts": "Kontakty",
+      "book": "Rezervovat online"
+    }
+  },
+  "hero": {
+    "ru": {
+      "eyebrow": "Hi Sisters Clinic — эпиляция и эстетика",
+      "title": "Гладкая кожа — не временный эффект, а результат, на который можно положиться",
+      "subtitle": "Лазерная и электроэпиляция, уход за кожей и обучение для специалистов — в Валенсии и Праге",
+      "cta": "Записаться на консультацию"
+    },
+    "uk": {
+      "eyebrow": "Hi Sisters Clinic — епіляція та естетика",
+      "title": "Гладка шкіра — не тимчасовий ефект, а результат, на який можна покластися",
+      "subtitle": "Лазерна та електроепіляція, догляд за шкірою та навчання для фахівців — у Валенсії та Празі",
+      "cta": "Записатися на консультацію"
+    },
+    "en": {
+      "eyebrow": "Hi Sisters Clinic — Laser Hair Removal & Electrolysis Clinic",
+      "title": "Smooth skin isn't a temporary effect — it's a result you can rely on",
+      "subtitle": "Laser and electrolysis hair removal, skin care and training for specialists — in Valencia and Prague",
+      "cta": "Book online"
+    },
+    "es": {
+      "eyebrow": "Hi Sisters Clinic — depilación y estética",
+      "title": "La piel lisa no es un efecto temporal, es un resultado en el que puedes confiar",
+      "subtitle": "Depilación láser y electroepilación, cuidado de la piel y formación para profesionales — en Valencia y Praga",
+      "cta": "Reservar consulta"
+    },
+    "cs": {
+      "eyebrow": "Hi Sisters Clinic — epilace a estetika",
+      "title": "Hladká pokožka není dočasný efekt, je to výsledek, na který se můžete spolehnout",
+      "subtitle": "Laserová a elektroepilace, péče o pokožku a školení pro specialisty — ve Valencii a Praze",
+      "cta": "Rezervovat konzultaci"
+    }
+  },
+  "about": {
+    "ru": {
+      "eyebrow": "О НАС",
+      "title": "Мы делаем эпиляцию иначе",
+      "text1": "Hi Sisters — студия нового поколения.",
+      "text2": "Наша команда — сертифицированные специалисты.",
+      "stat1": "лет в эпиляции",
+      "stat2": "клиентов",
+      "stat3": "студии",
+      "valuesTitle": "Наши принципы",
+      "teamTitle": "Наша команда",
+      "values": [
+        {
+          "title": "Результат, а не абонемент",
+          "desc": "Мы не назначаем бесконечные курсы процедур — подбираем параметры так, чтобы проблема была решена."
+        },
+        {
+          "title": "Честная консультация",
+          "desc": "До старта вы знаете количество сеансов, стоимость курса и какой результат ожидать."
+        },
+        {
+          "title": "Сертифицированные специалисты",
+          "desc": "Проверенное оборудование и протоколы, подобранные под ваш тип кожи и волос."
+        }
+      ]
+    },
+    "uk": {
+      "eyebrow": "ПРО НАС",
+      "title": "Ми робимо епіляцію інакше",
+      "text1": "Hi Sisters — студія нового покоління.",
+      "text2": "Наша команда — сертифіковані спеціалісти.",
+      "stat1": "років в епіляції",
+      "stat2": "клієнтів",
+      "stat3": "студії",
+      "valuesTitle": "Наші цінності",
+      "teamTitle": "Наша команда",
+      "values": [
+        {
+          "title": "Результат, а не абонемент",
+          "desc": "Ми не призначаємо нескінченні курси процедур — добираємо параметри так, щоб проблему було вирішено."
+        },
+        {
+          "title": "Чесна консультація",
+          "desc": "До старту ви знаєте кількість сеансів, вартість курсу та який результат очікувати."
+        },
+        {
+          "title": "Сертифіковані спеціалісти",
+          "desc": "Перевірене обладнання та протоколи, дібрані під ваш тип шкіри й волосся."
+        }
+      ]
+    },
+    "en": {
+      "eyebrow": "ABOUT US",
+      "title": "We do epilation differently",
+      "text1": "Hi Sisters is a new-generation epilation studio.",
+      "text2": "Our team consists of certified specialists.",
+      "stat1": "years in epilation",
+      "stat2": "happy clients",
+      "stat3": "studios",
+      "valuesTitle": "Our values",
+      "teamTitle": "Our team",
+      "values": [
+        {
+          "title": "A result, not a subscription",
+          "desc": "We do not prescribe endless courses of treatments — we set the parameters so the problem is actually solved."
+        },
+        {
+          "title": "An honest consultation",
+          "desc": "Before you start you know the number of sessions, the price of the course and the result to expect."
+        },
+        {
+          "title": "Certified specialists",
+          "desc": "Proven equipment and protocols matched to your skin and hair type."
+        }
+      ]
+    },
+    "es": {
+      "eyebrow": "NOSOTRAS",
+      "title": "Hacemos la depilación de otra manera",
+      "text1": "Hi Sisters es un estudio de nueva generación.",
+      "text2": "Nuestro equipo son especialistas certificadas.",
+      "stat1": "años en depilación",
+      "stat2": "clientas",
+      "stat3": "estudios",
+      "valuesTitle": "Nuestros valores",
+      "teamTitle": "Nuestro equipo",
+      "values": [
+        {
+          "title": "Un resultado, no una suscripción",
+          "desc": "No recetamos cursos interminables de sesiones: ajustamos los parámetros para resolver el problema."
+        },
+        {
+          "title": "Una consulta honesta",
+          "desc": "Antes de empezar sabes cuántas sesiones necesitas, el precio del curso y qué resultado esperar."
+        },
+        {
+          "title": "Especialistas certificadas",
+          "desc": "Equipos contrastados y protocolos adaptados a tu tipo de piel y de vello."
+        }
+      ]
+    },
+    "cs": {
+      "eyebrow": "O NÁS",
+      "title": "Děláme epilaci jinak",
+      "text1": "Hi Sisters je studio nové generace.",
+      "text2": "Náš tým jsou certifikované specialistky.",
+      "stat1": "let v epilaci",
+      "stat2": "spokojených klientů",
+      "stat3": "studia",
+      "valuesTitle": "Naše hodnoty",
+      "teamTitle": "Náš tým",
+      "values": [
+        {
+          "title": "Výsledek, ne předplatné",
+          "desc": "Nepředepisujeme nekonečné série ošetření — nastavíme parametry tak, aby byl problém vyřešen."
+        },
+        {
+          "title": "Poctivá konzultace",
+          "desc": "Než začnete, víte počet sezení, cenu kurzu i jaký výsledek očekávat."
+        },
+        {
+          "title": "Certifikované specialistky",
+          "desc": "Ověřené přístroje a protokoly zvolené podle vašeho typu pleti a chloupků."
+        }
+      ]
+    }
+  },
+  "contacts": {
+    "ru": {
+      "eyebrow": "КОНТАКТЫ",
+      "title": "Выберите удобную студию",
+      "subtitle": "Приходите — будем рады",
+      "bookOnlineBtn": "Записаться онлайн",
+      "addressLabel": "Адрес",
+      "phoneLabel": "Телефон",
+      "hoursLabel": "Часы работы",
+      "igBtn": "Instagram"
+    },
+    "uk": {
+      "eyebrow": "КОНТАКТИ",
+      "title": "Оберіть студію",
+      "subtitle": "Приходьте — будемо раді",
+      "bookOnlineBtn": "Записатися онлайн",
+      "addressLabel": "Адреса",
+      "phoneLabel": "Телефон",
+      "hoursLabel": "Години роботи",
+      "igBtn": "Instagram"
+    },
+    "en": {
+      "eyebrow": "CONTACTS",
+      "title": "Choose your studio",
+      "subtitle": "Come in — we'd love to welcome you",
+      "bookOnlineBtn": "Book online",
+      "addressLabel": "Address",
+      "phoneLabel": "Phone",
+      "hoursLabel": "Opening hours",
+      "igBtn": "Instagram"
+    },
+    "es": {
+      "eyebrow": "CONTACTO",
+      "title": "Elige tu estudio",
+      "subtitle": "Ven — te esperamos",
+      "bookOnlineBtn": "Reservar online",
+      "addressLabel": "Dirección",
+      "phoneLabel": "Teléfono",
+      "hoursLabel": "Horario",
+      "igBtn": "Instagram"
+    },
+    "cs": {
+      "eyebrow": "KONTAKTY",
+      "title": "Vyberte si studio",
+      "subtitle": "Přijďte — rádi vás přivítáme",
+      "bookOnlineBtn": "Rezervovat online",
+      "addressLabel": "Adresa",
+      "phoneLabel": "Telefon",
+      "hoursLabel": "Otevírací doba",
+      "igBtn": "Instagram"
+    }
+  },
+  "footer": {
+    "ru": {
+      "countriesTitle": "Наши студии",
+      "valencia": {
+        "label": "Валенсия, Испания",
+        "note": "Лазер · Электро · Пилинги · Косметика"
+      },
+      "prague": {
+        "label": "Прага, Чехия",
+        "note": "Лазер · Электро · Пилинги · Прессотерапия"
+      },
+      "follow": "Следите за нами",
+      "rights": "© 2025 Hi Sisters Clinic"
+    },
+    "uk": {
+      "countriesTitle": "Наші студії",
+      "valencia": {
+        "label": "Валенсія, Іспанія",
+        "note": "Лазер · Електро · Пілінги · Косметика"
+      },
+      "prague": {
+        "label": "Прага, Чехія",
+        "note": "Лазер · Електро · Пілінги · Пресотерапія"
+      },
+      "follow": "Слідкуйте за нами",
+      "rights": "© 2025 Hi Sisters Clinic"
+    },
+    "en": {
+      "countriesTitle": "Our studios",
+      "valencia": {
+        "label": "Valencia, Spain",
+        "note": "Laser · Electro · Peelings · Cosmetics"
+      },
+      "prague": {
+        "label": "Prague, Czech Republic",
+        "note": "Laser · Electro · Peelings · Pressotherapy"
+      },
+      "follow": "Follow us",
+      "rights": "© 2025 Hi Sisters Clinic"
+    },
+    "es": {
+      "countriesTitle": "Nuestros estudios",
+      "valencia": {
+        "label": "Valencia, España",
+        "note": "Láser · Electro · Peelings · Cosmética"
+      },
+      "prague": {
+        "label": "Praga, República Checa",
+        "note": "Láser · Electro · Peelings · Presoterapia"
+      },
+      "follow": "Síguenos",
+      "rights": "© 2025 Hi Sisters Clinic"
+    },
+    "cs": {
+      "countriesTitle": "Naše studia",
+      "valencia": {
+        "label": "Valencie, Španělsko",
+        "note": "Laser · Elektro · Peelingy · Kosmetika"
+      },
+      "prague": {
+        "label": "Praha, Česká republika",
+        "note": "Laser · Elektro · Peelingy · Presoterapie"
+      },
+      "follow": "Sledujte nás",
+      "rights": "© 2025 Hi Sisters Clinic"
+    }
+  },
+  "cart": {
+    "ru": {
+      "addBtn": "Добавить",
+      "addedBtn": "Добавлено ✓",
+      "total": "Итого:",
+      "orderVia": "Заказать через",
+      "whatsapp": "WhatsApp",
+      "telegram": "Telegram",
+      "msgGreeting": "Здравствуйте! Хочу на обучение:",
+      "msgTotal": "Итого:",
+      "msgQuestion": "Контакт:",
+      "empty": "Корзина пуста",
+      "format": "Формат",
+      "price": "Цена",
+      "trainer": "Тренер"
+    },
+    "uk": {
+      "addBtn": "Додати",
+      "addedBtn": "Додано ✓",
+      "total": "Разом:",
+      "orderVia": "Замовити через",
+      "whatsapp": "WhatsApp",
+      "telegram": "Telegram",
+      "msgGreeting": "Доброго дня! Записуюсь на:",
+      "msgTotal": "Разом:",
+      "msgQuestion": "Контакт:",
+      "empty": "Кошик порожній",
+      "format": "Формат",
+      "price": "Ціна",
+      "trainer": "Тренер"
+    },
+    "en": {
+      "addBtn": "Add",
+      "addedBtn": "Added ✓",
+      "total": "Total:",
+      "orderVia": "Order via",
+      "whatsapp": "WhatsApp",
+      "telegram": "Telegram",
+      "msgGreeting": "Hello! I'd like to enroll:",
+      "msgTotal": "Total:",
+      "msgQuestion": "My contact:",
+      "empty": "Cart is empty",
+      "format": "Format",
+      "price": "Price",
+      "trainer": "Trainer"
+    },
+    "es": {
+      "addBtn": "Añadir",
+      "addedBtn": "Añadido ✓",
+      "total": "Total:",
+      "orderVia": "Pedir vía",
+      "whatsapp": "WhatsApp",
+      "telegram": "Telegram",
+      "msgGreeting": "¡Hola! Me inscribo en:",
+      "msgTotal": "Total:",
+      "msgQuestion": "Mi contacto:",
+      "empty": "Carrito vacío",
+      "format": "Formato",
+      "price": "Precio",
+      "trainer": "Formadora"
+    },
+    "cs": {
+      "addBtn": "Přidat",
+      "addedBtn": "Přidáno ✓",
+      "total": "Celkem:",
+      "orderVia": "Objednat přes",
+      "whatsapp": "WhatsApp",
+      "telegram": "Telegram",
+      "msgGreeting": "Dobrý den! Přihlašuji se na:",
+      "msgTotal": "Celkem:",
+      "msgQuestion": "Kontakt:",
+      "empty": "Košík je prázdný",
+      "format": "Formát",
+      "price": "Cena",
+      "trainer": "Lektorka"
+    }
+  },
+  "countrySelect": {
+    "ru": {
+      "title": "Выберите страну",
+      "subtitle": "Покажем адрес клиники",
+      "spain": "Испания · Валенсия",
+      "czech": "Чехия · Прага",
+      "skip": "Пропустить"
+    },
+    "uk": {
+      "title": "Оберіть країну",
+      "subtitle": "Покажемо адресу клініки",
+      "spain": "Іспанія · Валенсія",
+      "czech": "Чехія · Прага",
+      "skip": "Пропустити"
+    },
+    "en": {
+      "title": "Choose your country",
+      "subtitle": "We'll show the clinic address",
+      "spain": "Spain · Valencia",
+      "czech": "Czech Republic · Prague",
+      "skip": "Skip"
+    },
+    "es": {
+      "title": "Elige tu país",
+      "subtitle": "Te mostramos la dirección",
+      "spain": "España · Valencia",
+      "czech": "República Checa · Praga",
+      "skip": "Omitir"
+    },
+    "cs": {
+      "title": "Vyberte zemi",
+      "subtitle": "Ukážeme adresu kliniky",
+      "spain": "Španělsko · Valencie",
+      "czech": "Česká republika · Praha",
+      "skip": "Přeskočit"
+    }
+  },
+  "collab": {
+    "ru": {
+      "eyebrow": "СОТРУДНИЧЕСТВО",
+      "title": "Партнёрство с Hi Sisters",
+      "subtitle": "Работаем с компаниями, бьюти-брендами и блогерами, которым близки наши ценности",
+      "b2b": {
+        "title": "Бизнесу и компаниям",
+        "desc": "Программы заботы о сотрудниках, корпоративные бонусы, бьюти-мероприятия. Специальные условия для компаний."
+      },
+      "influencer": {
+        "title": "Блогерам и авторам",
+        "desc": "Честный контент, обзоры, амбассадорские программы. Нам важны реальные истории."
+      },
+      "brands": {
+        "title": "Бьюти-брендам",
+        "desc": "Знакомство с продуктом, совместные проекты, обучающие мероприятия для специалистов."
+      },
+      "btn": "Напишите нам"
+    },
+    "uk": {
+      "eyebrow": "СПІВПРАЦЯ",
+      "title": "Партнерство з Hi Sisters",
+      "subtitle": "Працюємо з компаніями, б'юті-брендами та блогерами, яким близькі наші цінності",
+      "b2b": {
+        "title": "Бізнесу та компаніям",
+        "desc": "Програми турботи про співробітників, корпоративні бонуси, б'юті-заходи. Спеціальні умови для компаній."
+      },
+      "influencer": {
+        "title": "Блогерам і авторам",
+        "desc": "Чесний контент, огляди, амбасадорські програми. Нам важливі справжні історії."
+      },
+      "brands": {
+        "title": "Б'юті-брендам",
+        "desc": "Знайомство з продуктом, спільні проєкти, навчальні заходи для спеціалістів."
+      },
+      "btn": "Напишіть нам"
+    },
+    "en": {
+      "eyebrow": "COLLABORATION",
+      "title": "Partner with Hi Sisters",
+      "subtitle": "We collaborate with businesses, beauty brands and influencers who share our values",
+      "b2b": {
+        "title": "B2B & Corporate",
+        "desc": "Corporate wellness programs, employee benefits, beauty events. Special rates for companies."
+      },
+      "influencer": {
+        "title": "Influencers & Content",
+        "desc": "Authentic content creation, review partnerships, ambassador programs. We value real stories."
+      },
+      "brands": {
+        "title": "Beauty Brands",
+        "desc": "Product introductions, co-branding, educational events for professionals."
+      },
+      "btn": "Write to us"
+    },
+    "es": {
+      "eyebrow": "COLABORACIÓN",
+      "title": "Colabora con Hi Sisters",
+      "subtitle": "Trabajamos con empresas, marcas de belleza y creadoras que comparten nuestros valores",
+      "b2b": {
+        "title": "Empresas y corporativo",
+        "desc": "Programas de bienestar para empleados, beneficios corporativos, eventos de belleza. Condiciones especiales para empresas."
+      },
+      "influencer": {
+        "title": "Creadoras de contenido",
+        "desc": "Contenido honesto, reseñas, programas de embajadoras. Valoramos las historias reales."
+      },
+      "brands": {
+        "title": "Marcas de belleza",
+        "desc": "Presentación de producto, proyectos conjuntos, eventos formativos para profesionales."
+      },
+      "btn": "Escríbenos"
+    },
+    "cs": {
+      "eyebrow": "SPOLUPRÁCE",
+      "title": "Partnerství s Hi Sisters",
+      "subtitle": "Spolupracujeme s firmami, beauty značkami a tvůrci, kterým jsou blízké naše hodnoty",
+      "b2b": {
+        "title": "Firmám a korporacím",
+        "desc": "Programy péče o zaměstnance, firemní benefity, beauty akce. Zvláštní podmínky pro firmy."
+      },
+      "influencer": {
+        "title": "Tvůrcům a influencerkám",
+        "desc": "Poctivý obsah, recenze, ambasadorské programy. Záleží nám na skutečných příbězích."
+      },
+      "brands": {
+        "title": "Beauty značkám",
+        "desc": "Představení produktu, společné projekty, vzdělávací akce pro odbornice."
+      },
+      "btn": "Napište nám"
+    }
+  },
+  "training": {
+    "ru": {
+      "eyebrow": "ОБУЧЕНИЕ",
+      "title": "Для специалистов, которым важен результат",
+      "ctaNote": "Выберите курсы:",
+      "items": [
+        {
+          "id": "laser-basic",
+          "title": "Лазерная эпиляция — базовый курс",
+          "format": "2 дня очно · Прага или Валенсия",
+          "price": "25 000 Kč / 1 000 €",
+          "trainer": "Анна Ничипорук",
+          "desc": "Теория и практика лазерной эпиляции"
+        },
+        {
+          "id": "laser-adv",
+          "title": "Лазерная эпиляция — продвинутый",
+          "format": "3 дня очно",
+          "price": "35 000 Kč / 1 400 €",
+          "trainer": "Анна Ничипорук",
+          "desc": "Сложные зоны, типы кожи, бизнес"
+        },
+        {
+          "id": "laser-online",
+          "title": "Лазерная эпиляция — онлайн",
+          "format": "Онлайн · 8 часов",
+          "price": "8 000 Kč / 320 €",
+          "trainer": "Анна Ничипорук",
+          "desc": "Теория. Доступ 6 месяцев"
+        },
+        {
+          "id": "peeling-course",
+          "title": "Интимные пилинги",
+          "format": "1 день очно",
+          "price": "15 000 Kč / 600 €",
+          "trainer": "Анна Ничипорук",
+          "desc": "Пигментация и огрубевшая кожа"
+        },
+        {
+          "id": "electro-start",
+          "title": "Электроэпиляция — старт",
+          "format": "3 дня очно",
+          "price": "28 000 Kč / 1 100 €",
+          "trainer": "Наталья / Ольга",
+          "desc": "Базовый курс электроэпиляции"
+        },
+        {
+          "id": "electro-full",
+          "title": "Электроэпиляция — полный курс",
+          "format": "5 дней очно",
+          "price": "45 000 Kč / 1 800 €",
+          "trainer": "Наталья / Ольга",
+          "desc": "Полная программа с практикой"
+        },
+        {
+          "id": "electro-adv",
+          "title": "Электроэпиляция — мастер-класс",
+          "format": "2 дня очно",
+          "price": "22 000 Kč / 880 €",
+          "trainer": "Наталья / Ольга",
+          "desc": "Сложные случаи"
+        },
+        {
+          "id": "hire-course",
+          "title": "Стажировка в Hi Sisters",
+          "format": "Индивидуально",
+          "price": "По запросу",
+          "trainer": "Команда Hi Sisters",
+          "desc": "Практика с реальными клиентами"
+        }
+      ]
+    },
+    "uk": {
+      "eyebrow": "НАВЧАННЯ",
+      "title": "Для спеціалістів, яким важливий результат",
+      "ctaNote": "Оберіть курси:",
+      "items": [
+        {
+          "id": "laser-basic",
+          "title": "Лазерна епіляція — базовий",
+          "format": "2 дні очно",
+          "price": "25 000 Kč / 1 000 €",
+          "trainer": "Анна Ніщипорук",
+          "desc": "Теорія та практика"
+        },
+        {
+          "id": "laser-adv",
+          "title": "Лазерна епіляція — просунутий",
+          "format": "3 дні очно",
+          "price": "35 000 Kč / 1 400 €",
+          "trainer": "Анна Ніщипорук",
+          "desc": "Складні зони та типи шкіри"
+        },
+        {
+          "id": "laser-online",
+          "title": "Лазерна епіляція — онлайн",
+          "format": "Онлайн · 8 годин",
+          "price": "8 000 Kč / 320 €",
+          "trainer": "Анна Ніщипорук",
+          "desc": "Теорія. Доступ 6 місяців"
+        },
+        {
+          "id": "peeling-course",
+          "title": "Інтимні пілінги",
+          "format": "1 день очно",
+          "price": "15 000 Kč / 600 €",
+          "trainer": "Анна Ніщипорук",
+          "desc": "Пігментація та загрубіла шкіра"
+        },
+        {
+          "id": "electro-start",
+          "title": "Електроепіляція — старт",
+          "format": "3 дні очно",
+          "price": "28 000 Kč / 1 100 €",
+          "trainer": "Наталія / Ольга",
+          "desc": "Базовий курс"
+        },
+        {
+          "id": "electro-full",
+          "title": "Електроепіляція — повний",
+          "format": "5 днів очно",
+          "price": "45 000 Kč / 1 800 €",
+          "trainer": "Наталія / Ольга",
+          "desc": "Повна програма"
+        },
+        {
+          "id": "electro-adv",
+          "title": "Електроепіляція — майстер",
+          "format": "2 дні очно",
+          "price": "22 000 Kč / 880 €",
+          "trainer": "Наталія / Ольга",
+          "desc": "Складні випадки"
+        },
+        {
+          "id": "hire-course",
+          "title": "Стажування в Hi Sisters",
+          "format": "Індивідуально",
+          "price": "За запитом",
+          "trainer": "Команда",
+          "desc": "Практика з реальними клієнтами"
+        }
+      ]
+    },
+    "en": {
+      "eyebrow": "TRAINING",
+      "title": "For professionals who care about results",
+      "ctaNote": "Choose courses:",
+      "items": [
+        {
+          "id": "laser-basic",
+          "title": "Laser Hair Removal — Basic",
+          "format": "2 days in-person · Prague or Valencia",
+          "price": "25 000 Kč / €1 000",
+          "trainer": "Anna Nichyporuk",
+          "desc": "Theory and practice of laser hair removal"
+        },
+        {
+          "id": "laser-adv",
+          "title": "Laser Hair Removal — Advanced",
+          "format": "3 days in-person",
+          "price": "35 000 Kč / €1 400",
+          "trainer": "Anna Nichyporuk",
+          "desc": "Complex zones, skin types, business"
+        },
+        {
+          "id": "laser-online",
+          "title": "Laser Hair Removal — Online",
+          "format": "Online · 8 hours",
+          "price": "8 000 Kč / €320",
+          "trainer": "Anna Nichyporuk",
+          "desc": "Theory online. 6 months access"
+        },
+        {
+          "id": "peeling-course",
+          "title": "Intimate Peelings",
+          "format": "1 day in-person",
+          "price": "15 000 Kč / €600",
+          "trainer": "Anna Nichyporuk",
+          "desc": "Pigmentation and rough skin"
+        },
+        {
+          "id": "electro-start",
+          "title": "Electrolysis — Starter",
+          "format": "3 days in-person",
+          "price": "28 000 Kč / €1 100",
+          "trainer": "Natalie / Olha",
+          "desc": "Basic electrolysis course"
+        },
+        {
+          "id": "electro-full",
+          "title": "Electrolysis — Full Course",
+          "format": "5 days in-person",
+          "price": "45 000 Kč / €1 800",
+          "trainer": "Natalie / Olha",
+          "desc": "Complete program with practice"
+        },
+        {
+          "id": "electro-adv",
+          "title": "Electrolysis — Master Class",
+          "format": "2 days in-person",
+          "price": "22 000 Kč / €880",
+          "trainer": "Natalie / Olha",
+          "desc": "Complex cases"
+        },
+        {
+          "id": "hire-course",
+          "title": "Internship at Hi Sisters",
+          "format": "Individual",
+          "price": "On request",
+          "trainer": "Hi Sisters Team",
+          "desc": "Practice with real clients"
+        }
+      ]
+    },
+    "es": {
+      "eyebrow": "FORMACIÓN",
+      "title": "Para profesionales que valoran los resultados",
+      "ctaNote": "Elige los cursos:",
+      "items": [
+        {
+          "id": "laser-basic",
+          "title": "Depilación láser — Básico",
+          "format": "2 días presencial",
+          "price": "25 000 Kč / 1 000 €",
+          "trainer": "Anna Nichyporuk",
+          "desc": "Teoría y práctica de depilación láser"
+        },
+        {
+          "id": "laser-adv",
+          "title": "Depilación láser — Avanzado",
+          "format": "3 días presencial",
+          "price": "35 000 Kč / 1 400 €",
+          "trainer": "Anna Nichyporuk",
+          "desc": "Zonas complejas, tipos de piel"
+        },
+        {
+          "id": "laser-online",
+          "title": "Depilación láser — Online",
+          "format": "Online · 8 horas",
+          "price": "8 000 Kč / 320 €",
+          "trainer": "Anna Nichyporuk",
+          "desc": "Teoría online. Acceso 6 meses"
+        },
+        {
+          "id": "peeling-course",
+          "title": "Peelings íntimos",
+          "format": "1 día presencial",
+          "price": "15 000 Kč / 600 €",
+          "trainer": "Anna Nichyporuk",
+          "desc": "Pigmentación y piel rugosa"
+        },
+        {
+          "id": "electro-start",
+          "title": "Electrólisis — Inicio",
+          "format": "3 días presencial",
+          "price": "28 000 Kč / 1 100 €",
+          "trainer": "Natalie / Olha",
+          "desc": "Curso básico"
+        },
+        {
+          "id": "electro-full",
+          "title": "Electrólisis — Completo",
+          "format": "5 días presencial",
+          "price": "45 000 Kč / 1 800 €",
+          "trainer": "Natalie / Olha",
+          "desc": "Programa completo"
+        },
+        {
+          "id": "electro-adv",
+          "title": "Electrólisis — Master",
+          "format": "2 días presencial",
+          "price": "22 000 Kč / 880 €",
+          "trainer": "Natalie / Olha",
+          "desc": "Casos complejos"
+        },
+        {
+          "id": "hire-course",
+          "title": "Prácticas en Hi Sisters",
+          "format": "Individual",
+          "price": "Consultar",
+          "trainer": "Equipo",
+          "desc": "Práctica con clientes reales"
+        }
+      ]
+    },
+    "cs": {
+      "eyebrow": "ŠKOLENÍ",
+      "title": "Pro specialisty, kteří si zakládají na výsledcích",
+      "ctaNote": "Vyberte kurzy:",
+      "items": [
+        {
+          "id": "laser-basic",
+          "title": "Laserová epilace — základní kurz",
+          "format": "2 dny prezenčně · Praha nebo Valencie",
+          "price": "25 000 Kč / 1 000 €",
+          "trainer": "Anna Nichyporuk",
+          "desc": "Teorie a praxe laserové epilace"
+        },
+        {
+          "id": "laser-adv",
+          "title": "Laserová epilace — pokročilý",
+          "format": "3 dny prezenčně",
+          "price": "35 000 Kč / 1 400 €",
+          "trainer": "Anna Nichyporuk",
+          "desc": "Složité zóny, typy pleti, byznys"
+        },
+        {
+          "id": "laser-online",
+          "title": "Laserová epilace — online",
+          "format": "Online · 8 hodin",
+          "price": "8 000 Kč / 320 €",
+          "trainer": "Anna Nichyporuk",
+          "desc": "Teorie online. Přístup 6 měsíců"
+        },
+        {
+          "id": "peeling-course",
+          "title": "Intimní peelingy",
+          "format": "1 den prezenčně",
+          "price": "15 000 Kč / 600 €",
+          "trainer": "Anna Nichyporuk",
+          "desc": "Pigmentace a zdrsněná kůže"
+        },
+        {
+          "id": "electro-start",
+          "title": "Elektroepilace — start",
+          "format": "3 dny prezenčně",
+          "price": "28 000 Kč / 1 100 €",
+          "trainer": "Natalie / Olha",
+          "desc": "Základní kurz"
+        },
+        {
+          "id": "electro-full",
+          "title": "Elektroepilace — kompletní",
+          "format": "5 dní prezenčně",
+          "price": "45 000 Kč / 1 800 €",
+          "trainer": "Natalie / Olha",
+          "desc": "Kompletní program"
+        },
+        {
+          "id": "electro-adv",
+          "title": "Elektroepilace — mistrovský",
+          "format": "2 dny prezenčně",
+          "price": "22 000 Kč / 880 €",
+          "trainer": "Natalie / Olha",
+          "desc": "Složité případy"
+        },
+        {
+          "id": "hire-course",
+          "title": "Stáž v Hi Sisters",
+          "format": "Individuálně",
+          "price": "Na vyžádání",
+          "trainer": "Tým Hi Sisters",
+          "desc": "Praxe s reálnými klienty"
+        }
+      ]
+    }
+  },
+  "values": {
+    "ru": [
+      {
+        "title": "7+ лет в эпиляции",
+        "desc": "Точные параметры и реальный результат — а не бесконечные абонементы"
+      },
+      {
+        "title": "Два метода — один результат",
+        "desc": "Лазер и электро дополняют друг друга, закрывая любой тип волос"
+      },
+      {
+        "title": "Подход для каждой кожи",
+        "desc": "Пилинги и микронидлинг для деликатных и чувствительных зон"
+      }
+    ],
+    "uk": [
+      {
+        "title": "7+ років в епіляції",
+        "desc": "Точні параметри та реальний результат — а не нескінченні абонементи"
+      },
+      {
+        "title": "Два методи — один результат",
+        "desc": "Лазер і електро доповнюють одне одного, охоплюючи будь-який тип волосся"
+      },
+      {
+        "title": "Підхід для кожної шкіри",
+        "desc": "Пілінги та мікронідлінг для делікатних і чутливих зон"
+      }
+    ],
+    "en": [
+      {
+        "title": "7+ years in epilation",
+        "desc": "Precise parameters and real results — not endless subscriptions"
+      },
+      {
+        "title": "Two methods, one result",
+        "desc": "Laser and electrolysis complement each other, covering every hair type"
+      },
+      {
+        "title": "An approach for every skin",
+        "desc": "Peelings and microneedling for delicate, sensitive areas"
+      }
+    ],
+    "es": [
+      {
+        "title": "Más de 7 años en depilación",
+        "desc": "Parámetros precisos y resultados reales, no bonos interminables"
+      },
+      {
+        "title": "Dos métodos, un mismo resultado",
+        "desc": "El láser y la electrólisis se complementan, cubriendo cualquier tipo de vello"
+      },
+      {
+        "title": "Un enfoque para cada piel",
+        "desc": "Peelings y microneedling para zonas delicadas y sensibles"
+      }
+    ],
+    "cs": [
+      {
+        "title": "Více než 7 let v epilaci",
+        "desc": "Přesné parametry a skutečné výsledky, ne nekonečné permanentky"
+      },
+      {
+        "title": "Dvě metody, jeden výsledek",
+        "desc": "Laser a elektroepilace se vzájemně doplňují a pokrývají každý typ chloupků"
+      },
+      {
+        "title": "Přístup pro každou pokožku",
+        "desc": "Peelingy a microneedling pro citlivé a delikátní oblasti"
+      }
+    ]
+  },
+  "servicesSection": {
+    "ru": {
+      "eyebrow": "Услуги",
+      "title": "Чем мы занимаемся",
+      "priceNote": "Цена по запросу",
+      "priceBtn": "Актуальный прайс",
+      "detailBtnLabel": "Подробно об услуге"
+    },
+    "uk": {
+      "eyebrow": "Послуги",
+      "title": "Чим ми займаємось",
+      "priceNote": "Ціна за запитом",
+      "priceBtn": "Актуальний прайс",
+      "detailBtnLabel": "Детально про послугу"
+    },
+    "en": {
+      "eyebrow": "Services",
+      "title": "What we do",
+      "priceNote": "Price on request",
+      "priceBtn": "View price list",
+      "detailBtnLabel": "About the service"
+    },
+    "es": {
+      "eyebrow": "Servicios",
+      "title": "Lo que hacemos",
+      "priceNote": "Precio a consultar",
+      "priceBtn": "Ver precios",
+      "detailBtnLabel": "Sobre el servicio"
+    },
+    "cs": {
+      "eyebrow": "Služby",
+      "title": "Co děláme",
+      "priceNote": "Cena na vyžádání",
+      "priceBtn": "Zobrazit ceník",
+      "detailBtnLabel": "O službě"
+    }
+  },
+  "howItWorks": {
+    "ru": {
+      "title": "4 шага к постоянной гладкости",
+      "steps": [
+        {
+          "n": "01",
+          "t": "Бесплатная консультация",
+          "d": "20 минут — составляем план для вас."
+        },
+        {
+          "n": "02",
+          "t": "Первая процедура",
+          "d": "Тестируем параметры на вашей коже."
+        },
+        {
+          "n": "03",
+          "t": "Курс процедур",
+          "d": "Обычно курс составляет 6–10 сеансов, но точное количество процедур определяется индивидуально для каждого клиента."
+        },
+        {
+          "n": "04",
+          "t": "Постоянный результат",
+          "d": "Волосы исчезают навсегда."
+        }
+      ]
+    },
+    "uk": {
+      "title": "4 кроки до постійної гладкості",
+      "steps": [
+        {
+          "n": "01",
+          "t": "Безкоштовна консультація",
+          "d": "20 хв — складаємо план."
+        },
+        {
+          "n": "02",
+          "t": "Перша процедура",
+          "d": "Тестуємо параметри."
+        },
+        {
+          "n": "03",
+          "t": "Курс процедур",
+          "d": "Зазвичай курс складається з 6–10 сеансів, але точна кількість процедур визначається індивідуально для кожного клієнта."
+        },
+        {
+          "n": "04",
+          "t": "Постійний результат",
+          "d": "Волосся зникають назавжди."
+        }
+      ]
+    },
+    "en": {
+      "title": "4 steps to permanent smoothness",
+      "steps": [
+        {
+          "n": "01",
+          "t": "Free Consultation",
+          "d": "20 min — we choose the method and create your plan."
+        },
+        {
+          "n": "02",
+          "t": "First Session",
+          "d": "We test parameters on your skin. Painless and gentle."
+        },
+        {
+          "n": "03",
+          "t": "Course of Treatments",
+          "d": "A course usually consists of 6–10 sessions, but the exact number of procedures is determined individually for each client."
+        },
+        {
+          "n": "04",
+          "t": "Permanent Result",
+          "d": "Hair disappears forever."
+        }
+      ]
+    },
+    "es": {
+      "title": "4 pasos hacia la suavidad permanente",
+      "steps": [
+        {
+          "n": "01",
+          "t": "Consulta gratuita",
+          "d": "20 minutos — creamos tu plan personalizado."
+        },
+        {
+          "n": "02",
+          "t": "Primera sesión",
+          "d": "Probamos los parámetros en tu piel."
+        },
+        {
+          "n": "03",
+          "t": "Curso de tratamientos",
+          "d": "Normalmente el curso consta de 6–10 sesiones, pero el número exacto de procedimientos se determina individualmente para cada cliente."
+        },
+        {
+          "n": "04",
+          "t": "Resultado permanente",
+          "d": "El vello desaparece para siempre."
+        }
+      ]
+    },
+    "cs": {
+      "title": "4 kroky k trvalé hladkosti",
+      "steps": [
+        {
+          "n": "01",
+          "t": "Bezplatná konzultace",
+          "d": "20 minut — vybereme metodu a sestavíme plán pro vás."
+        },
+        {
+          "n": "02",
+          "t": "První procedura",
+          "d": "Testujeme parametry na vaší pokožce. Bezbolestnou a šetrou."
+        },
+        {
+          "n": "03",
+          "t": "Kurz procedur",
+          "d": "Obvykle kurz zahrnuje 6–10 sezení, ale přesný počet procedur se stanovuje individuálně pro každého klienta."
+        },
+        {
+          "n": "04",
+          "t": "Trvalý výsledek",
+          "d": "Chloupky mizí navždy. Žádné nekonečné permanentky."
+        }
+      ]
+    }
+  },
+  "faq": {
+    "ru": {
+      "title": "Ответы на ваши вопросы",
+      "faq": [
+        {
+          "q": "Больно ли?",
+          "a": "Лазер практически безболезнен."
+        },
+        {
+          "q": "Сколько процедур?",
+          "a": "Обычно 6–10 сеансов каждые 4–8 недель."
+        },
+        {
+          "q": "Можно при загаре?",
+          "a": "За 4 недели до SPF после."
+        },
+        {
+          "q": "Длительность?",
+          "a": "Подмышки 15–20, ноги 40–60 мин."
+        },
+        {
+          "q": "Когда результат?",
+          "a": "После 1ой процедуры на 20–30% меньше."
+        },
+        {
+          "q": "Как подготовиться?",
+          "a": "Побрейтесь за 2–3 дня. Не воскируйте."
+        }
+      ]
+    },
+    "uk": {
+      "title": "Відповіді на ваші запитання",
+      "faq": [
+        {
+          "q": "Чи боляче?",
+          "a": "Лазерна епіляція практично безболісна."
+        },
+        {
+          "q": "Скільки процедур?",
+          "a": "6–10 сеансів кожні 4–8 тижні."
+        },
+        {
+          "q": "Можна загаріли?",
+          "a": "За 4 тижні до. SPF після."
+        },
+        {
+          "q": "Довжина процедури?",
+          "a": "Підпахви 15–20, ноги 40–60 хв."
+        },
+        {
+          "q": "Коли результат?",
+          "a": "Після 1ї процедури на 20–30% менше."
+        },
+        {
+          "q": "Як підготуватись?",
+          "a": "Голіться за 2–3 дні. Не воскуйте."
+        }
+      ]
+    },
+    "en": {
+      "title": "Answers to your questions",
+      "faq": [
+        {
+          "q": "Is it painful?",
+          "a": "Laser epilation is practically painless."
+        },
+        {
+          "q": "How many sessions?",
+          "a": "Usually 6–10 laser sessions every 4–8 weeks."
+        },
+        {
+          "q": "Can I epilate with a tan?",
+          "a": "Avoid sun for 4 weeks before. Use SPF after."
+        },
+        {
+          "q": "How long is one session?",
+          "a": "Underarms 15–20 min, legs 40–60 min, full body 90–120 min."
+        },
+        {
+          "q": "When will I see results?",
+          "a": "20–30% less hair after the first session."
+        },
+        {
+          "q": "How to prepare?",
+          "a": "Shave 2–3 days before. No waxing."
+        }
+      ]
+    },
+    "es": {
+      "title": "Respuestas a tus preguntas",
+      "faq": [
+        {
+          "q": "¿Es doloroso?",
+          "a": "La depilación láser es prácticamente indolora."
+        },
+        {
+          "q": "¿Cuántas sesiones?",
+          "a": "6–10 sesiones láser cada 4–8 semanas."
+        },
+        {
+          "q": "¿Puedo depilarme bronceada?",
+          "a": "Evita el sol 4 semanas antes. SPF después."
+        },
+        {
+          "q": "¿Cuánto dura una sesión?",
+          "a": "Axilas 15–20, piernas 40–60 min."
+        },
+        {
+          "q": "¿Cuándo veré resultados?",
+          "a": "20–30% menos vello tras la primera sesión."
+        },
+        {
+          "q": "¿Cómo prepararme?",
+          "a": "Aféitate 2–3 días antes."
+        }
+      ]
+    },
+    "cs": {
+      "title": "Odpovědi na vaše otázky",
+      "faq": [
+        {
+          "q": "Je epilace bolestivá?",
+          "a": "Laserová epilace je prakticky bezbolestná — pociťujete jen mírné teplo."
+        },
+        {
+          "q": "Kolik procedur je potřeba?",
+          "a": "Pro laser: obvykle 6–10 sezení každé 4–8 týdnů."
+        },
+        {
+          "q": "Lze epilovat při opalování?",
+          "a": "4 týdny vyhýbejte opalování. Po proceduře SPF krém."
+        },
+        {
+          "q": "Jak dlouho trvá procedura?",
+          "a": "Podpaží 15–20 min, nohy 40–60 min, celé tělo 90–120 min."
+        },
+        {
+          "q": "Kdy uvidím výsledky?",
+          "a": "Po první proceduře o 20–30% méně chloupků."
+        },
+        {
+          "q": "Jak se připravit?",
+          "a": "Oholte se 2–3 dny před sezením. Nevoskujte."
+        }
+      ]
+    }
+  }
+}

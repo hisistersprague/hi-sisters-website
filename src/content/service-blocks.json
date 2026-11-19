@@ -1,0 +1,210 @@
+{
+ "title": {
+  "ru": "Подробно о каждой услуге",
+  "uk": "Докладно про кожну послугу",
+  "cs": "Podrobně o každé službě",
+  "en": "Each service in detail",
+  "es": "Cada servicio en detalle"
+ },
+ "more": {
+  "ru": "Подробнее",
+  "uk": "Детальніше",
+  "cs": "Více",
+  "en": "More",
+  "es": "Más"
+ },
+ "items": [
+  {
+   "key": "laser",
+   "ru": {
+    "h": "Лазерная эпиляция",
+    "p": "Убирает тёмный и плотный волос. Мощность и длину импульса подбираем под фототип кожи и жёсткость волоса, поэтому «пять процедур всем» мы не обещаем.",
+    "li": [
+     "Первый перерыв — около месяца, дальше интервалы растут до двух–трёх",
+     "Курс обычно 4–8 процедур, точное число называем после осмотра",
+     "На светлый, рыжий и седой волос лазер не действует — там электроэпиляция"
+    ]
+   },
+   "uk": {
+    "h": "Лазерна епіляція",
+    "p": "Прибирає темне і щільне волосся. Потужність та довжину імпульсу добираємо під фототип шкіри й жорсткість волосся, тому «п’ять процедур усім» ми не обіцяємо.",
+    "li": [
+     "Перша перерва — близько місяця, далі інтервали зростають до двох–трьох",
+     "Курс зазвичай 4–8 процедур, точне число називаємо після огляду",
+     "На світле, руде та сиве волосся лазер не діє — там електроепіляція"
+    ]
+   },
+   "cs": {
+    "h": "Laserová epilace",
+    "p": "Odstraňuje tmavé a silné chloupky. Výkon a délku pulzu volíme podle fototypu pleti a tvrdosti chloupku, proto neslibujeme „pět procedur pro všechny“.",
+    "li": [
+     "První pauza je zhruba měsíc, dál se intervaly prodlužují na dva až tři",
+     "Kurz bývá 4–8 procedur, přesný počet řekneme po vyšetření",
+     "Na světlé, rezavé a šedivé chloupky laser nezabírá — tam je elektroepilace"
+    ]
+   },
+   "en": {
+    "h": "Laser hair removal",
+    "p": "Removes dark, coarse hair. Power and pulse length are set to your skin phototype and hair thickness, which is why we never promise “five sessions for everyone”.",
+    "li": [
+     "The first gap is about a month, then intervals grow to two or three",
+     "A course is usually 4–8 sessions; we name the number after examining you",
+     "Laser does not work on light, red or grey hair — electrolysis does"
+    ]
+   },
+   "es": {
+    "h": "Depilación láser",
+    "p": "Elimina el vello oscuro y grueso. La potencia y la duración del pulso se ajustan a tu fototipo y al grosor del vello, por eso nunca prometemos «cinco sesiones para todas».",
+    "li": [
+     "La primera pausa es de un mes; después los intervalos crecen a dos o tres",
+     "El curso suele ser de 4 a 8 sesiones; el número exacto lo decimos tras valorarte",
+     "El láser no actúa sobre el vello claro, pelirrojo o canoso — ahí va la electrólisis"
+    ]
+   }
+  },
+  {
+   "key": "electro",
+   "ru": {
+    "h": "Электроэпиляция",
+    "p": "Единственный метод, который удаляет волос любого цвета — светлый, рыжий, седой. Оплата поминутно, по таймингу аппарата: платите за фактически отработанное время.",
+    "li": [
+     "Доступна работа в 4, 6 и 8 рук — зона закрывается в разы быстрее",
+     "Аппликационная анестезия по желанию, можно нанести до визита",
+     "Подходит там, где лазер бессилен, и для единичных волос после курса лазера"
+    ]
+   },
+   "uk": {
+    "h": "Електроепіляція",
+    "p": "Єдиний метод, що прибирає волосся будь-якого кольору — світле, руде, сиве. Оплата похвилинна, за таймінгом апарата: платите за фактично відпрацьований час.",
+    "li": [
+     "Доступна робота в 4, 6 і 8 рук — зона закривається в рази швидше",
+     "Аплікаційна анестезія за бажанням, можна нанести до візиту",
+     "Підходить там, де лазер безсилий, і для поодинокого волосся після курсу лазера"
+    ]
+   },
+   "cs": {
+    "h": "Elektroepilace",
+    "p": "Jediná metoda, která odstraní chloupek jakékoli barvy — světlý, rezavý i šedivý. Platí se po minutách podle časovače přístroje, tedy za skutečně odpracovaný čas.",
+    "li": [
+     "Lze pracovat ve 4, 6 i 8 rukou — zóna je hotová několikanásobně rychleji",
+     "Znecitlivující krém na přání, nanést se dá i před návštěvou",
+     "Hodí se tam, kde laser nestačí, i na jednotlivé chloupky po laserovém kurzu"
+    ]
+   },
+   "en": {
+    "h": "Electrolysis",
+    "p": "The only method that removes hair of any colour — blond, red or grey. You pay by the minute, on the machine’s own timer, for the time actually worked.",
+    "li": [
+     "Can be done with 4, 6 or 8 hands — an area is finished several times faster",
+     "Topical anaesthetic on request; you can apply it before you arrive",
+     "For areas where laser cannot help, and for single hairs after a laser course"
+    ]
+   },
+   "es": {
+    "h": "Electrólisis",
+    "p": "El único método que elimina vello de cualquier color: rubio, pelirrojo o canoso. Se paga por minutos, según el temporizador del equipo, por el tiempo realmente trabajado.",
+    "li": [
+     "Se puede trabajar a 4, 6 u 8 manos: la zona se termina mucho antes",
+     "Anestesia tópica si la quieres; puedes aplicarla antes de venir",
+     "Para zonas donde el láser no llega y para pelos sueltos tras un curso de láser"
+    ]
+   }
+  },
+  {
+   "key": "cosmetology",
+   "ru": {
+    "h": "Косметология",
+    "p": "Эстетическая и инъекционная. Перед процедурой смотрим на состояние кожи, а не на список популярных услуг: от этого зависит, что подойдёт сейчас, а что лучше отложить.",
+    "li": [
+     "Чистки, пилинги, ферментотерапия и уход на DMK",
+     "Лечение акне у подростков и взрослых",
+     "Биоревитализация, мезотерапия и ботулинотерапия — у врача-дерматолога"
+    ]
+   },
+   "uk": {
+    "h": "Косметологія",
+    "p": "Естетична та ін’єкційна. Перед процедурою дивимось на стан шкіри, а не на список популярних послуг: від цього залежить, що підійде зараз, а що краще відкласти.",
+    "li": [
+     "Чистки, пілінги, ферментотерапія та догляд на DMK",
+     "Лікування акне у підлітків і дорослих",
+     "Біоревіталізація, мезотерапія та ботулінотерапія — у лікарки-дерматологині"
+    ]
+   },
+   "cs": {
+    "h": "Kosmetologie",
+    "p": "Před procedurou se díváme na stav pleti, ne na seznam oblíbených služeb: podle toho se pozná, co se hodí teď a co je lepší odložit.",
+    "li": [
+     "Čištění pleti, peelingy, enzymoterapie a péče DMK",
+     "Léčba akné u dospívajících i dospělých",
+     "Ošetření vede lékařka dermatoložka"
+    ]
+   },
+   "en": {
+    "h": "Skincare",
+    "p": "Before a treatment we look at the state of your skin rather than a list of popular services: that is how we know what fits now and what is better postponed.",
+    "li": [
+     "Cleansing, peels, enzyme therapy and DMK protocols",
+     "Acne treatment for teenagers and adults",
+     "Treatments are carried out by our dermatologist"
+    ]
+   },
+   "es": {
+    "h": "Cosmetología",
+    "p": "Antes del tratamiento miramos el estado de la piel y no una lista de servicios populares: así se ve qué conviene ahora y qué es mejor posponer.",
+    "li": [
+     "Limpiezas, peelings, terapia enzimática y protocolos DMK",
+     "Tratamiento del acné en adolescentes y adultos",
+     "Los tratamientos los realiza la médica dermatóloga"
+    ]
+   }
+  },
+  {
+   "key": "trichology",
+   "ru": {
+    "h": "Трихология",
+    "p": "Диагностика и лечение выпадения волос. Начинаем с трихоскопии, а не с назначения шампуня: сначала понимаем причину, потом подбираем схему.",
+    "li": [
+     "Консультация, трихоскопия и план лечения за один приём",
+     "Мезотерапия кожи головы, когда она действительно нужна",
+     "Домашний уход подбираем под результат диагностики, а не «на всякий случай»"
+    ]
+   },
+   "uk": {
+    "h": "Трихологія",
+    "p": "Діагностика та лікування випадіння волосся. Починаємо з трихоскопії, а не з призначення шампуню: спершу розуміємо причину, потім добираємо схему.",
+    "li": [
+     "Консультація, трихоскопія та план лікування за один прийом",
+     "Мезотерапія шкіри голови, коли вона справді потрібна",
+     "Домашній догляд добираємо під результат діагностики, а не «про всяк випадок»"
+    ]
+   },
+   "cs": {
+    "h": "Trichologie",
+    "p": "Diagnostika a léčba vypadávání vlasů. Začínáme trichoskopií, ne předepsáním šamponu: nejdřív zjistíme příčinu, pak sestavíme postup.",
+    "li": [
+     "Konzultace, trichoskopie a plán léčby během jedné návštěvy",
+     "Mezoterapie vlasové pokožky, když má opravdu smysl",
+     "Domácí péči volíme podle výsledku diagnostiky, ne „pro jistotu“"
+    ]
+   },
+   "en": {
+    "h": "Trichology",
+    "p": "Diagnosis and treatment of hair loss. We start with trichoscopy rather than prescribing a shampoo: first the cause, then the plan.",
+    "li": [
+     "Consultation, trichoscopy and a treatment plan in one visit",
+     "Scalp mesotherapy when it genuinely makes sense",
+     "Home care chosen from the diagnosis, not “just in case”"
+    ]
+   },
+   "es": {
+    "h": "Tricología",
+    "p": "Diagnóstico y tratamiento de la caída del cabello. Empezamos por la tricoscopia y no por recetar un champú: primero la causa, después el plan.",
+    "li": [
+     "Consulta, tricoscopia y plan de tratamiento en una sola visita",
+     "Mesoterapia del cuero cabelludo cuando de verdad hace falta",
+     "El cuidado en casa se elige según el diagnóstico, no «por si acaso»"
+    ]
+   }
+  }
+ ]
+}

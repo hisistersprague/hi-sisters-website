@@ -1,0 +1,704 @@
+{
+ "_": "Фрагменты описаний каталога: тип средства и назначение на пяти языках.",
+ "type": {
+  "shampoo": [
+   "Шампунь",
+   "Шампунь",
+   "Šampon",
+   "Shampoo",
+   "Champú"
+  ],
+  "mask": [
+   "Маска",
+   "Маска",
+   "Maska",
+   "Mask",
+   "Mascarilla"
+  ],
+  "lotion": [
+   "Лосьон",
+   "Лосьйон",
+   "Lotion",
+   "Lotion",
+   "Loción"
+  ],
+  "ampoules": [
+   "Ампулы",
+   "Ампули",
+   "Ampule",
+   "Ampoules",
+   "Ampollas"
+  ],
+  "conditioner": [
+   "Кондиционер",
+   "Кондиціонер",
+   "Kondicionér",
+   "Conditioner",
+   "Acondicionador"
+  ],
+  "serum": [
+   "Сыворотка",
+   "Сироватка",
+   "Sérum",
+   "Serum",
+   "Sérum"
+  ],
+  "cream": [
+   "Крем",
+   "Крем",
+   "Krém",
+   "Cream",
+   "Crema"
+  ],
+  "eyecream": [
+   "Крем для век",
+   "Крем для повік",
+   "Oční krém",
+   "Eye cream",
+   "Crema de ojos"
+  ],
+  "eyegel": [
+   "Гель для век",
+   "Гель для повік",
+   "Oční gel",
+   "Eye gel",
+   "Gel de ojos"
+  ],
+  "gel": [
+   "Гель",
+   "Гель",
+   "Gel",
+   "Gel",
+   "Gel"
+  ],
+  "foam": [
+   "Пенка",
+   "Пінка",
+   "Pěna",
+   "Foam",
+   "Espuma"
+  ],
+  "mousse": [
+   "Мусс",
+   "Мус",
+   "Pěna",
+   "Mousse",
+   "Mousse"
+  ],
+  "oil": [
+   "Масло",
+   "Олія",
+   "Olej",
+   "Oil",
+   "Aceite"
+  ],
+  "fluid": [
+   "Флюид",
+   "Флюїд",
+   "Fluid",
+   "Fluid",
+   "Fluido"
+  ],
+  "tonic": [
+   "Тоник",
+   "Тонік",
+   "Tonikum",
+   "Tonic",
+   "Tónico"
+  ],
+  "peeling": [
+   "Пилинг",
+   "Пілінг",
+   "Peeling",
+   "Peel",
+   "Peeling"
+  ],
+  "scrub": [
+   "Скраб",
+   "Скраб",
+   "Peeling",
+   "Scrub",
+   "Exfoliante"
+  ],
+  "cleanser": [
+   "Очищающее средство",
+   "Засіб для очищення",
+   "Čisticí přípravek",
+   "Cleanser",
+   "Limpiador"
+  ],
+  "remover": [
+   "Средство для демакияжа",
+   "Засіб для демакіяжу",
+   "Odličovač",
+   "Make-up remover",
+   "Desmaquillante"
+  ],
+  "spray": [
+   "Спрей",
+   "Спрей",
+   "Sprej",
+   "Spray",
+   "Spray"
+  ],
+  "balm": [
+   "Бальзам",
+   "Бальзам",
+   "Balzám",
+   "Balm",
+   "Bálsamo"
+  ],
+  "wax": [
+   "Воск",
+   "Віск",
+   "Vosk",
+   "Wax",
+   "Cera"
+  ],
+  "set": [
+   "Набор",
+   "Набір",
+   "Sada",
+   "Set",
+   "Set"
+  ],
+  "capsules": [
+   "Капсулы",
+   "Капсули",
+   "Tobolky",
+   "Capsules",
+   "Cápsulas"
+  ],
+  "spf": [
+   "Крем с SPF",
+   "Крем із SPF",
+   "Krém s SPF",
+   "SPF cream",
+   "Crema con SPF"
+  ],
+  "handcream": [
+   "Крем для рук",
+   "Крем для рук",
+   "Krém na ruce",
+   "Hand cream",
+   "Crema de manos"
+  ],
+  "lipcare": [
+   "Уход за губами",
+   "Догляд за губами",
+   "Péče o rty",
+   "Lip care",
+   "Cuidado labial"
+  ],
+  "booster": [
+   "Бустер",
+   "Бустер",
+   "Booster",
+   "Booster",
+   "Booster"
+  ],
+  "concentrate": [
+   "Концентрат",
+   "Концентрат",
+   "Koncentrát",
+   "Concentrate",
+   "Concentrado"
+  ],
+  "powder": [
+   "Пудра",
+   "Пудра",
+   "Pudr",
+   "Powder",
+   "Polvo"
+  ],
+  "mist": [
+   "Спрей-мист",
+   "Спрей-міст",
+   "Mist",
+   "Mist",
+   "Bruma"
+  ],
+  "bodycream": [
+   "Крем для тела",
+   "Крем для тіла",
+   "Tělový krém",
+   "Body cream",
+   "Crema corporal"
+  ]
+ },
+ "purpose": {
+  "hairloss": [
+   "против выпадения волос",
+   "проти випадіння волосся",
+   "proti padání vlasů",
+   "against hair loss",
+   "anticaída del cabello"
+  ],
+  "dandruff": [
+   "против перхоти",
+   "проти лупи",
+   "proti lupům",
+   "anti-dandruff",
+   "anticaspa"
+  ],
+  "greasy": [
+   "для жирной кожи головы",
+   "для жирної шкіри голови",
+   "pro mastnou pokožku hlavy",
+   "for oily scalp",
+   "para cuero cabelludo graso"
+  ],
+  "seborrhea": [
+   "при себорее",
+   "при себореї",
+   "při seboree",
+   "for seborrhoea",
+   "para la seborrea"
+  ],
+  "sensitive-scalp": [
+   "для чувствительной кожи головы",
+   "для чутливої шкіри голови",
+   "pro citlivou pokožku hlavy",
+   "for sensitive scalp",
+   "para cuero cabelludo sensible"
+  ],
+  "repair": [
+   "для восстановления волос",
+   "для відновлення волосся",
+   "pro obnovu vlasů",
+   "for hair repair",
+   "para reparar el cabello"
+  ],
+  "volume": [
+   "для объёма и плотности волос",
+   "для об'єму та щільності волосся",
+   "pro objem a hustotu vlasů",
+   "for volume and density",
+   "para volumen y densidad"
+  ],
+  "colour": [
+   "для защиты цвета окрашенных волос",
+   "для захисту кольору фарбованого волосся",
+   "pro ochranu barvy vlasů",
+   "for colour protection",
+   "para proteger el color"
+  ],
+  "moisture-hair": [
+   "для увлажнения волос",
+   "для зволоження волосся",
+   "pro hydrataci vlasů",
+   "for hair hydration",
+   "para hidratar el cabello"
+  ],
+  "shine": [
+   "для блеска волос",
+   "для блиску волосся",
+   "pro lesk vlasů",
+   "for hair shine",
+   "para el brillo del cabello"
+  ],
+  "scalp-clean": [
+   "для глубокого очищения кожи головы",
+   "для глибокого очищення шкіри голови",
+   "pro hloubkové čištění pokožky hlavy",
+   "for deep scalp cleansing",
+   "para limpieza profunda del cuero cabelludo"
+  ],
+  "styling": [
+   "для укладки",
+   "для укладання",
+   "pro styling",
+   "for styling",
+   "para el peinado"
+  ],
+  "men-hair": [
+   "мужской уход за волосами",
+   "чоловічий догляд за волоссям",
+   "pánská péče o vlasy",
+   "men's hair care",
+   "cuidado capilar masculino"
+  ],
+  "baby": [
+   "для детей",
+   "для дітей",
+   "pro děti",
+   "for children",
+   "para niños"
+  ],
+  "keratin": [
+   "для реструктуризации волос",
+   "для реструктуризації волосся",
+   "pro restrukturalizaci vlasů",
+   "for hair restructuring",
+   "para reestructurar el cabello"
+  ],
+  "lashes": [
+   "для роста ресниц и бровей",
+   "для росту вій та брів",
+   "pro růst řas a obočí",
+   "for lash and brow growth",
+   "para el crecimiento de pestañas y cejas"
+  ],
+  "cleanse": [
+   "для очищения кожи",
+   "для очищення шкіри",
+   "pro čištění pleti",
+   "for cleansing",
+   "para limpiar la piel"
+  ],
+  "acne": [
+   "для проблемной кожи и акне",
+   "для проблемної шкіри та акне",
+   "pro problematickou pleť a akné",
+   "for acne-prone skin",
+   "para piel con acné"
+  ],
+  "oily-skin": [
+   "для жирной и комбинированной кожи",
+   "для жирної та комбінованої шкіри",
+   "pro mastnou a smíšenou pleť",
+   "for oily and combination skin",
+   "para piel grasa y mixta"
+  ],
+  "hydrate": [
+   "для увлажнения кожи",
+   "для зволоження шкіри",
+   "pro hydrataci pleti",
+   "for skin hydration",
+   "para hidratar la piel"
+  ],
+  "antiage": [
+   "антивозрастной уход",
+   "антивіковий догляд",
+   "anti-age péče",
+   "anti-ageing care",
+   "cuidado antiedad"
+  ],
+  "lifting": [
+   "для лифтинга и упругости",
+   "для ліфтингу та пружності",
+   "pro lifting a pevnost",
+   "for lifting and firmness",
+   "para lifting y firmeza"
+  ],
+  "brighten": [
+   "против пигментации, для сияния кожи",
+   "проти пігментації, для сяяння шкіри",
+   "proti pigmentaci, pro rozjasnění pleti",
+   "for pigmentation and radiance",
+   "contra la pigmentación, para la luminosidad"
+  ],
+  "antiox": [
+   "антиоксидантная защита",
+   "антиоксидантний захист",
+   "antioxidační ochrana",
+   "antioxidant protection",
+   "protección antioxidante"
+  ],
+  "sun": [
+   "защита от солнца",
+   "захист від сонця",
+   "ochrana před sluncem",
+   "sun protection",
+   "protección solar"
+  ],
+  "eyes": [
+   "уход за кожей вокруг глаз",
+   "догляд за шкірою навколо очей",
+   "péče o oční okolí",
+   "eye-area care",
+   "cuidado del contorno de ojos"
+  ],
+  "sensitive": [
+   "для чувствительной кожи и купероза",
+   "для чутливої шкіри та куперозу",
+   "pro citlivou pleť a kuperózu",
+   "for sensitive skin and couperose",
+   "para piel sensible y cuperosis"
+  ],
+  "renew": [
+   "для обновления и выравнивания кожи",
+   "для оновлення та вирівнювання шкіри",
+   "pro obnovu a vyhlazení pleti",
+   "for resurfacing and smoothing",
+   "para renovar y alisar la piel"
+  ],
+  "nourish": [
+   "для питания и восстановления кожи",
+   "для живлення та відновлення шкіри",
+   "pro výživu a obnovu pleti",
+   "for nourishing and repair",
+   "para nutrir y reparar la piel"
+  ],
+  "post": [
+   "уход после процедур",
+   "догляд після процедур",
+   "péče po zákrocích",
+   "post-procedure care",
+   "cuidado post-tratamiento"
+  ],
+  "body": [
+   "уход за телом",
+   "догляд за тілом",
+   "péče o tělo",
+   "body care",
+   "cuidado corporal"
+  ],
+  "cellulite": [
+   "против целлюлита",
+   "проти целюліту",
+   "proti celulitidě",
+   "anti-cellulite",
+   "anticelulítico"
+  ],
+  "hands": [
+   "уход за руками",
+   "догляд за руками",
+   "péče o ruce",
+   "hand care",
+   "cuidado de manos"
+  ],
+  "neck": [
+   "уход за шеей и декольте",
+   "догляд за шиєю та декольте",
+   "péče o krk a dekolt",
+   "neck and décolleté care",
+   "cuidado de cuello y escote"
+  ],
+  "lips": [
+   "уход за губами",
+   "догляд за губами",
+   "péče o rty",
+   "lip care",
+   "cuidado labial"
+  ],
+  "men-skin": [
+   "мужской уход за кожей",
+   "чоловічий догляд за шкірою",
+   "pánská péče o pleť",
+   "men's skincare",
+   "cuidado facial masculino"
+  ],
+  "supplement": [
+   "пищевая добавка для волос и кожи",
+   "дієтична добавка для волосся та шкіри",
+   "doplněk stravy pro vlasy a pleť",
+   "supplement for hair and skin",
+   "complemento para cabello y piel"
+  ]
+ },
+ "labels": {
+  "ing": [
+   "Ключевые компоненты",
+   "Ключові компоненти",
+   "Klíčové složky",
+   "Key ingredients",
+   "Componentes clave"
+  ],
+  "more": [
+   "Подробнее",
+   "Детальніше",
+   "Více",
+   "More",
+   "Más"
+  ]
+ },
+ "effects": {
+  "hydratuje": [
+   "увлажняет",
+   "зволожує",
+   "hydratuje",
+   "hydrates",
+   "hidrata"
+  ],
+  "vyživuje": [
+   "питает",
+   "живить",
+   "vyživuje",
+   "nourishes",
+   "nutre"
+  ],
+  "regeneruje": [
+   "восстанавливает",
+   "відновлює",
+   "regeneruje",
+   "regenerates",
+   "regenera"
+  ],
+  "rozjasňuje": [
+   "выравнивает тон",
+   "вирівнює тон",
+   "rozjasňuje",
+   "brightens",
+   "ilumina"
+  ],
+  "zmírňuje": [
+   "снимает раздражение",
+   "знімає подразнення",
+   "zklidňuje podráždění",
+   "soothes irritation",
+   "calma la irritación"
+  ],
+  "zklidňuje": [
+   "успокаивает",
+   "заспокоює",
+   "zklidňuje",
+   "soothes",
+   "calma"
+  ],
+  "posiluje": [
+   "укрепляет",
+   "зміцнює",
+   "posiluje",
+   "strengthens",
+   "fortalece"
+  ],
+  "tonizuje": [
+   "тонизирует",
+   "тонізує",
+   "tonizuje",
+   "tones",
+   "tonifica"
+  ],
+  "stimuluje": [
+   "стимулирует обновление",
+   "стимулює оновлення",
+   "stimuluje obnovu",
+   "stimulates renewal",
+   "estimula la renovación"
+  ],
+  "normalizuje": [
+   "нормализует работу сальных желёз",
+   "нормалізує роботу сальних залоз",
+   "normalizuje mazové žlázy",
+   "balances sebum",
+   "normaliza la grasa"
+  ],
+  "čistící": [
+   "очищает",
+   "очищує",
+   "čistí",
+   "cleanses",
+   "limpia"
+  ],
+  "čistí": [
+   "очищает",
+   "очищує",
+   "čistí",
+   "cleanses",
+   "limpia"
+  ],
+  "antibakteriální": [
+   "антибактериальное действие",
+   "антибактеріальна дія",
+   "antibakteriální účinek",
+   "antibacterial action",
+   "acción antibacteriana"
+  ],
+  "antiseptické": [
+   "антисептическое действие",
+   "антисептична дія",
+   "antiseptický účinek",
+   "antiseptic action",
+   "acción antiséptica"
+  ],
+  "protizánětliv": [
+   "снимает воспаление",
+   "знімає запалення",
+   "působí protizánětlivě",
+   "anti-inflammatory",
+   "antiinflamatorio"
+  ],
+  "antioxidač": [
+   "антиоксидант",
+   "антиоксидант",
+   "antioxidant",
+   "antioxidant",
+   "antioxidante"
+  ],
+  "hojiv": [
+   "заживляет",
+   "загоює",
+   "hojí",
+   "heals",
+   "cicatriza"
+  ],
+  "lifting": [
+   "даёт эффект лифтинга",
+   "дає ефект ліфтингу",
+   "liftingový efekt",
+   "lifting effect",
+   "efecto lifting"
+  ],
+  "vrásk": [
+   "разглаживает морщины",
+   "розгладжує зморшки",
+   "vyhlazuje vrásky",
+   "smooths wrinkles",
+   "alisa las arrugas"
+  ],
+  "otoky": [
+   "убирает отёки",
+   "прибирає набряки",
+   "odstraňuje otoky",
+   "reduces puffiness",
+   "reduce la hinchazón"
+  ],
+  "kolagen": [
+   "поддерживает синтез коллагена",
+   "підтримує синтез колагену",
+   "podporuje tvorbu kolagenu",
+   "supports collagen",
+   "apoya el colágeno"
+  ],
+  "mikrocirkulaci": [
+   "улучшает микроциркуляцию",
+   "покращує мікроциркуляцію",
+   "zlepšuje mikrocirkulaci",
+   "improves microcirculation",
+   "mejora la microcirculación"
+  ],
+  "mikrobiom": [
+   "восстанавливает микробиом кожи",
+   "відновлює мікробіом шкіри",
+   "obnovuje mikrobiom pleti",
+   "restores the skin microbiome",
+   "restaura el microbioma"
+  ],
+  "elasticitu": [
+   "повышает упругость",
+   "підвищує пружність",
+   "zlepšuje elasticitu",
+   "improves elasticity",
+   "mejora la elasticidad"
+  ],
+  "pigment": [
+   "работает с пигментацией",
+   "працює з пігментацією",
+   "pracuje s pigmentací",
+   "targets pigmentation",
+   "actúa sobre la pigmentación"
+  ],
+  "akné": [
+   "помогает при акне",
+   "допомагає при акне",
+   "pomáhá při akné",
+   "helps with acne",
+   "ayuda con el acné"
+  ],
+  "detox": [
+   "выводит токсины",
+   "виводить токсини",
+   "odvádí toxiny",
+   "removes toxins",
+   "elimina toxinas"
+  ],
+  "ochran": [
+   "защищает кожу",
+   "захищає шкіру",
+   "chrání pleť",
+   "protects the skin",
+   "protege la piel"
+  ]
+ }
+}

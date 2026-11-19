@@ -1,0 +1,1487 @@
+{
+  "ru": {
+    "detailBtn": "Подробнее об услуге →",
+    "intro": "Лазерная эпиляция в Hi Sisters Epil Clinic — это современная процедура удаления нежелательных волос с долгосрочным результатом и высоким уровнем комфорта.",
+    "equipment": "Мы работаем на профессиональных лазерных системах Laser Technology — диодных лазерах Luna (1200 W) и Hunter (2000 W). Это позволяет работать эффективно, безопасно и комфортно для клиента.",
+    "howTitle": "Как работает лазерная эпиляция",
+    "how": [
+      "Лазерный луч проникает в верхние слои кожи и воздействует на меланин — пигмент в волосе.",
+      "Энергия лазера разрушает структуру волосяного фолликула в активной фазе роста.",
+      "Лазер действует избирательно: не затрагивает окружающие ткани, только пигмент волоса.",
+      "После разрушения фолликула волос перестаёт расти и больше не восстанавливается."
+    ],
+    "guaranteeTitle": "Гарантия результата",
+    "guarantee": "Если вы приходите к нам с нуля, ранее не делали эпиляцию и соблюдаете рекомендации специалиста — мы гарантируем результат. Мы не назначаем бесконечные поддерживающие процедуры. Наша задача — полностью решить проблему нежелательных волос. В нашей практике есть завершённые кейсы клиентов, которые прошли полный курс и больше не нуждаются в процедурах.",
+    "courseTitle": "Как проходит курс",
+    "course": [
+      "Курс в среднем длится 1,5–2 года.",
+      "В первый год проводится 4–5 процедур.",
+      "Интервалы между процедурами — от 2 до 6 месяцев, в зависимости от индивидуального цикла роста.",
+      "Мы работаем исключительно по активной фазе роста волос."
+    ],
+    "resultTitle": "Когда виден результат",
+    "result": [
+      "Первые изменения заметны уже после первой процедуры.",
+      "Волосы начинают выпадать на 10–14 день после процедуры.",
+      "С каждой следующей процедурой количество волос значительно уменьшается.",
+      "Интервалы между процедурами становятся шире."
+    ],
+    "whoTitle": "Кому подходит лазер",
+    "who": "Лазерная эпиляция наиболее эффективна при тёмных, достаточно плотных волосах с контрастом между цветом волос и кожей.",
+    "zonesWomenTitle": "Рекомендуемые зоны у женщин",
+    "zonesWomen": [
+      "Подмышечные впадины",
+      "Классическое бикини",
+      "Глубокое бикини",
+      "Голени",
+      "Ноги полностью"
+    ],
+    "zonesNotWomenTitle": "Где эффективнее электроэпиляция",
+    "zonesNotWomen": [
+      "Лицо",
+      "Шея",
+      "Грудь",
+      "Живот",
+      "Спина",
+      "Поясница",
+      "Ареолы"
+    ],
+    "zonesNotNote": "На этих зонах волосы часто имеют гормональную природу или недостаточную плотность — здесь эффективнее электроэпиляция.",
+    "zonesMenTitle": "Зоны у мужчин",
+    "zonesMen": [
+      "Лицо (1 зона)",
+      "Шея",
+      "Подмышки",
+      "Плечи",
+      "Грудь",
+      "Живот",
+      "Торс",
+      "Лопатки",
+      "Поясница",
+      "Спина",
+      "Ягодицы",
+      "Бикини",
+      "Ноги",
+      "Руки"
+    ],
+    "whyNotTitle": "Почему лазер иногда не даёт результат",
+    "whyNot": [
+      "Слишком светлые или пушковые волосы",
+      "Гормональные особенности организма",
+      "Неправильно подобранные параметры лазера",
+      "Слишком частые процедуры",
+      "Несоблюдение рекомендаций специалиста"
+    ],
+    "contraTitle": "Противопоказания",
+    "contra": [
+      "Беременность и лактация",
+      "Заболевания сердечно-сосудистой системы",
+      "Эпилепсия",
+      "Онкологические заболевания",
+      "Приём фотосенсибилизирующих препаратов и ретинола",
+      "Сахарный диабет",
+      "Острые вирусные и инфекционные заболевания",
+      "Герпес в стадии обострения",
+      "Воспалительные процессы и повышенная температура",
+      "Острые и хронические заболевания кожи",
+      "Нарушение целостности кожи",
+      "Фотодерматоз",
+      "Аутоиммунные заболевания",
+      "Варикоз последних стадий"
+    ],
+    "prepTitle": "Подготовка к процедуре",
+    "prep": [
+      "За сутки необходимо сбрить волосы",
+      "После загара должно пройти минимум 14 дней",
+      "За 3 дня нельзя делать пилинг и скраб",
+      "За 14 дней нельзя наносить автозагар",
+      "За 2 месяца исключить шугаринг, воск и эпилятор — во время курса только бритьё"
+    ],
+    "afterTitle": "Уход после процедуры",
+    "after": [
+      "3 дня не посещать сауны, бани и бассейны",
+      "Не принимать горячие ванны",
+      "Использовать восстанавливающий крем, увлажнять кожу",
+      "Не загорать 7 дней",
+      "Использовать SPF 30+"
+    ],
+    "faqTitle": "Частые вопросы",
+    "faq": [
+      {
+        "q": "Сколько процедур нужно?",
+        "a": "Количество зависит от зоны, плотности волос и гормональных особенностей. В среднем курс — 4–5 процедур в первый год с интервалами 2–6 месяцев."
+      },
+      {
+        "q": "Когда появится результат?",
+        "a": "Первые изменения заметны после первой процедуры. Волосы начинают выпадать на 10–14 день. С каждой следующей процедурой их становится значительно меньше, интервалы — шире."
+      },
+      {
+        "q": "Кому подходит лазер?",
+        "a": "Лазер наиболее эффективен при тёмных, достаточно плотных волосах с контрастом между цветом волос и кожей."
+      },
+      {
+        "q": "Почему лазер иногда не работает?",
+        "a": "Возможные причины: слишком светлые или гормональные волосы, неправильно подобранные параметры, слишком частые процедуры или несоблюдение рекомендаций."
+      },
+      {
+        "q": "Как подготовиться к процедуре?",
+        "a": "За сутки сбрейте волосы. Исключите загар — за 14 дней, пилинги — за 3 дня, воск/шугаринг/эпилятор — за 2 месяца до курса."
+      },
+      {
+        "q": "Можно ли загорать после?",
+        "a": "Загар запрещён в течение 7 дней после процедуры. Обязательно использование SPF 30+."
+      },
+      {
+        "q": "Можно ли совмещать лазер и электроэпиляцию?",
+        "a": "Да, мы комбинируем методы при необходимости — это позволяет довести клиента до тотальной гладкости кожи."
+      }
+    ],
+    "pricePragueTitle": "Прайс · Прага (Kč)",
+    "priceValenciaTitle": "Прайс · Валенсия (€)",
+    "womenLabel": "Для женщин",
+    "menLabel": "Для мужчин",
+    "packagesLabel": "Комплексы со скидкой",
+    "packagesNote": "Комплексы со скидкой действуют только на женский прайс.",
+    "equipmentTitle": "Наше оборудование",
+    "wasLabel": "вместо",
+    "consultTitle": "Бесплатная консультация",
+    "consultText": "Чтобы определить лучший метод удаления волос именно для вас — приглашаем на бесплатную консультацию специалиста.",
+    "laserWomenEs": [
+      {
+        "label": "Подмышки",
+        "price": "30 €"
+      },
+      {
+        "label": "Бикини полное",
+        "price": "80 €"
+      },
+      {
+        "label": "Бикини классическое (пах)",
+        "price": "60 €"
+      },
+      {
+        "label": "Ягодицы",
+        "price": "60 €"
+      },
+      {
+        "label": "Голени",
+        "price": "80 €"
+      },
+      {
+        "label": "Ноги полностью",
+        "price": "140 €"
+      },
+      {
+        "label": "Бёдра полностью",
+        "price": "80 €"
+      },
+      {
+        "label": "Задняя поверхность бёдер",
+        "price": "40 €"
+      },
+      {
+        "label": "Предплечья (полруки)",
+        "price": "45 €"
+      },
+      {
+        "label": "Руки полностью",
+        "price": "65 €"
+      },
+      {
+        "label": "Белая линия живота",
+        "price": "20 €"
+      },
+      {
+        "label": "Живот полностью",
+        "price": "45 €"
+      }
+    ],
+    "laserMenEs": [
+      {
+        "label": "Лицо полностью",
+        "price": "20 €"
+      },
+      {
+        "label": "Шея полностью",
+        "price": "60 €"
+      },
+      {
+        "label": "Шея (половина)",
+        "price": "30 €"
+      },
+      {
+        "label": "Подмышки",
+        "price": "35 €"
+      },
+      {
+        "label": "Плечи",
+        "price": "35 €"
+      },
+      {
+        "label": "Грудь",
+        "price": "70 €"
+      },
+      {
+        "label": "Живот полностью",
+        "price": "70 €"
+      },
+      {
+        "label": "Ареолы",
+        "price": "25 €"
+      },
+      {
+        "label": "Торс полностью",
+        "price": "140 €"
+      },
+      {
+        "label": "Лопатки",
+        "price": "70 €"
+      },
+      {
+        "label": "Поясница",
+        "price": "70 €"
+      },
+      {
+        "label": "Спина полностью",
+        "price": "140 €"
+      },
+      {
+        "label": "Бикини классическое",
+        "price": "95 €"
+      },
+      {
+        "label": "Бикини полное",
+        "price": "140 €"
+      },
+      {
+        "label": "Голени",
+        "price": "88 €"
+      },
+      {
+        "label": "Бёдра",
+        "price": "88 €"
+      },
+      {
+        "label": "Ноги полностью",
+        "price": "170 €"
+      },
+      {
+        "label": "Руки до локтя",
+        "price": "80 €"
+      },
+      {
+        "label": "Руки полностью",
+        "price": "130 €"
+      },
+      {
+        "label": "Ягодицы",
+        "price": "70 €"
+      }
+    ],
+    "complexesEs": [
+      {
+        "label": "Подмышки + бикини полное",
+        "was": "110 €",
+        "now": "88 €"
+      },
+      {
+        "label": "Подмышки + полное бикини + голени (с коленями)",
+        "was": "190 €",
+        "now": "152 €"
+      },
+      {
+        "label": "Подмышки + бикини полное + ноги полностью",
+        "was": "250 €",
+        "now": "200 €"
+      }
+    ]
+  },
+  "uk": {
+    "detailBtn": "Детальніше →",
+    "intro": "Лазерна епіляція в Hi Sisters Epil Clinic — це сучасна процедура видалення небажаного волосся з довгостроковим результатом і високим рівнем комфорту.",
+    "equipment": "Ми працюємо на професійних лазерних системах Laser Technology — діодних лазерах Luna (1200 W) та Hunter (2000 W). Це дозволяє працювати ефективно, безпечно та комфортно.",
+    "howTitle": "Як працює лазерна епіляція",
+    "how": [
+      "Лазерний промінь проникає у верхні шари шкіри і впливає на меланін — пігмент у волосі.",
+      "Енергія лазера руйнує структуру волосяного фолікула в активній фазі росту.",
+      "Лазер діє вибірково: не зачіпає навколишні тканини, лише пігмент волосся.",
+      "Після руйнування фолікула волосся перестає рости і більше не відновлюється."
+    ],
+    "guaranteeTitle": "Гарантія результату",
+    "guarantee": "Якщо ви приходите до нас з нуля, раніше не виконували епіляцію та дотримуєтеся рекомендацій спеціаліста — ми гарантуємо результат. Ми не призначаємо нескінченні підтримувальні процедури. Наше завдання — повністю вирішити проблему небажаного волосся.",
+    "courseTitle": "Як проходить курс",
+    "course": [
+      "Курс у середньому триває 1,5–2 роки.",
+      "У перший рік проводиться 4–5 процедур.",
+      "Інтервали між процедурами — від 2 до 6 місяців залежно від індивідуального циклу росту волосся.",
+      "Ми працюємо виключно по активній фазі росту волосся."
+    ],
+    "resultTitle": "Коли видно результат",
+    "result": [
+      "Перші зміни помітні вже після першої процедури.",
+      "Волосся починає випадати на 10–14 день після процедури.",
+      "З кожною наступною процедурою кількість волосся значно зменшується.",
+      "Інтервали між процедурами стають ширшими."
+    ],
+    "whoTitle": "Кому підходить лазер",
+    "who": "Лазерна епіляція найбільш ефективна при темному, достатньо щільному волоссі з контрастом між кольором волосся та тоном шкіри.",
+    "zonesWomenTitle": "Рекомендовані зони у жінок",
+    "zonesWomen": [
+      "Пахви",
+      "Часткове бікіні",
+      "Глибоке бікіні",
+      "Гомілки",
+      "Ноги повністю"
+    ],
+    "zonesNotWomenTitle": "Де ефективніша електроепіляція",
+    "zonesNotWomen": [
+      "Обличчя",
+      "Шия",
+      "Груди",
+      "Живіт",
+      "Спина",
+      "Поперек",
+      "Ареоли"
+    ],
+    "zonesNotNote": "На цих зонах волосся часто має гормональну природу або недостатню щільність — тут ефективніша електроепіляція.",
+    "zonesMenTitle": "Зони у чоловіків",
+    "zonesMen": [
+      "Обличчя (1 зона)",
+      "Шия",
+      "Пахви",
+      "Плечі",
+      "Груди",
+      "Живіт",
+      "Торс",
+      "Лопатки",
+      "Поперек",
+      "Спина",
+      "Сідниці",
+      "Бікіні",
+      "Ноги",
+      "Руки"
+    ],
+    "whyNotTitle": "Чому лазер іноді не дає результату",
+    "whyNot": [
+      "Надто світле або пушкове волосся",
+      "Гормональні особливості організму",
+      "Неправильно підібрані параметри лазера",
+      "Надто часті процедури",
+      "Недотримання рекомендацій спеціаліста"
+    ],
+    "contraTitle": "Протипоказання",
+    "contra": [
+      "Вагітність і лактація",
+      "Захворювання серцево-судинної системи",
+      "Епілепсія",
+      "Онкологічні захворювання",
+      "Приймання фотосенсибілізуючих препаратів та ретинолу",
+      "Цукровий діабет",
+      "Гострі вірусні та інфекційні захворювання",
+      "Герпес у стадії загострення",
+      "Запальні процеси та підвищена температура",
+      "Гострі та хронічні захворювання шкіри",
+      "Порушення цілісності шкіри",
+      "Фотодерматоз",
+      "Аутоімунні захворювання",
+      "Варикоз останніх стадій"
+    ],
+    "prepTitle": "Підготовка до процедури",
+    "prep": [
+      "За добу необхідно поголити волосся",
+      "Після засмаги має пройти мінімум 14 днів",
+      "За 3 дні не можна робити пілінг та скраб",
+      "За 14 днів не можна наносити автозасмагу",
+      "За 2 місяці виключити шугаринг, віск та епілятор — під час курсу лише гоління"
+    ],
+    "afterTitle": "Догляд після процедури",
+    "after": [
+      "3 дні не відвідувати сауни, лазні та басейни",
+      "Не приймати гарячі ванни",
+      "Використовувати відновлювальний крем, зволожувати шкіру",
+      "Не засмагати 7 днів",
+      "Використовувати SPF 30+"
+    ],
+    "faqTitle": "Часті запитання",
+    "faq": [
+      {
+        "q": "Скільки процедур потрібно?",
+        "a": "Кількість залежить від зони, щільності волосся та гормональних особливостей. У середньому курс — 4–5 процедур у перший рік з інтервалами 2–6 місяців."
+      },
+      {
+        "q": "Коли з’явиться результат?",
+        "a": "Перші зміни помітні після першої процедури. Волосся починає випадати на 10–14 день. З кожною наступною процедурою його стає значно менше."
+      },
+      {
+        "q": "Кому підходить лазер?",
+        "a": "Лазер найефективніший при темному, щільному волоссі з чітким контрастом між кольором волосся та тоном шкіри."
+      },
+      {
+        "q": "Чому лазер іноді не працює?",
+        "a": "Можливі причини: надто світле або гормональне волосся, неправильні параметри, надто часті процедури або недотримання рекомендацій."
+      },
+      {
+        "q": "Як підготуватися?",
+        "a": "За добу поголіть волосся. Виключіть засмагу — за 14 днів, пілінги — за 3 дні, віск/шугаринг/епілятор — за 2 місяці до курсу."
+      },
+      {
+        "q": "Чи можна засмагати після?",
+        "a": "Засмага заборонена протягом 7 днів після кожної процедури. Обов’язково використовувати SPF 30+."
+      },
+      {
+        "q": "Чи можна поєднувати лазер та електроепіляцію?",
+        "a": "Так, ми поєднуємо методи за необхідності — це дозволяє досягти тотальної гладкості шкіри."
+      }
+    ],
+    "pricePragueTitle": "Прайс · Прага (Kč)",
+    "priceValenciaTitle": "Прайс · Валенсія (€)",
+    "womenLabel": "Для жінок",
+    "menLabel": "Для чоловіків",
+    "packagesLabel": "Комплекси зі знижкою",
+    "packagesNote": "Комплекси зі знижкою діють лише на жіночий прайс.",
+    "equipmentTitle": "Наше обладнання",
+    "wasLabel": "замість",
+    "consultTitle": "Безкоштовна консультація",
+    "consultText": "Щоб визначити найкращий метод видалення волосся саме для вас — запрошуємо на безкоштовну консультацію спеціаліста.",
+    "laserWomenEs": [
+      {
+        "label": "Пахви",
+        "price": "30 €"
+      },
+      {
+        "label": "Бікіні повне",
+        "price": "80 €"
+      },
+      {
+        "label": "Бікіні часткове",
+        "price": "60 €"
+      },
+      {
+        "label": "Сідниці",
+        "price": "60 €"
+      },
+      {
+        "label": "Гомілки",
+        "price": "80 €"
+      },
+      {
+        "label": "Ноги повністю",
+        "price": "140 €"
+      },
+      {
+        "label": "Стегна повністю",
+        "price": "80 €"
+      },
+      {
+        "label": "Задня поверхня стегон",
+        "price": "40 €"
+      },
+      {
+        "label": "Передпліччя",
+        "price": "45 €"
+      },
+      {
+        "label": "Руки повністю",
+        "price": "65 €"
+      },
+      {
+        "label": "Біла лінія живота",
+        "price": "20 €"
+      },
+      {
+        "label": "Живіт повністю",
+        "price": "45 €"
+      }
+    ],
+    "laserMenEs": [
+      {
+        "label": "Обличчя повністю",
+        "price": "20 €"
+      },
+      {
+        "label": "Шия повністю",
+        "price": "60 €"
+      },
+      {
+        "label": "Шия (половина)",
+        "price": "30 €"
+      },
+      {
+        "label": "Пахви",
+        "price": "35 €"
+      },
+      {
+        "label": "Плечі",
+        "price": "35 €"
+      },
+      {
+        "label": "Груди",
+        "price": "70 €"
+      },
+      {
+        "label": "Живіт повністю",
+        "price": "70 €"
+      },
+      {
+        "label": "Ареоли",
+        "price": "25 €"
+      },
+      {
+        "label": "Торс повністю",
+        "price": "140 €"
+      },
+      {
+        "label": "Лопатки",
+        "price": "70 €"
+      },
+      {
+        "label": "Поперек",
+        "price": "70 €"
+      },
+      {
+        "label": "Спина повністю",
+        "price": "140 €"
+      },
+      {
+        "label": "Класичне бікіні",
+        "price": "95 €"
+      },
+      {
+        "label": "Повне бікіні",
+        "price": "140 €"
+      },
+      {
+        "label": "Гомілки",
+        "price": "88 €"
+      },
+      {
+        "label": "Стегна",
+        "price": "88 €"
+      },
+      {
+        "label": "Ноги повністю",
+        "price": "170 €"
+      },
+      {
+        "label": "Руки по лікоть",
+        "price": "80 €"
+      },
+      {
+        "label": "Руки повністю",
+        "price": "130 €"
+      },
+      {
+        "label": "Сідниці",
+        "price": "70 €"
+      }
+    ],
+    "complexesEs": [
+      {
+        "label": "Пахви + повне бікіні",
+        "was": "110 €",
+        "now": "88 €"
+      },
+      {
+        "label": "Пахви + повне бікіні + гомілки",
+        "was": "190 €",
+        "now": "152 €"
+      },
+      {
+        "label": "Пахви + повне бікіні + ноги повністю",
+        "was": "250 €",
+        "now": "200 €"
+      }
+    ]
+  },
+  "en": {
+    "detailBtn": "Learn more →",
+    "intro": "Laser hair removal at Hi Sisters Epil Clinic is a modern procedure for the permanent removal of unwanted hair with long-lasting results and a high level of comfort.",
+    "equipment": "We use professional Laser Technology diode systems — Luna (1200 W) and Hunter (2000 W). These cutting-edge lasers allow us to work effectively, safely and comfortably for every client.",
+    "howTitle": "How laser hair removal works",
+    "how": [
+      "The laser beam penetrates the upper skin layers and targets melanin — the pigment in the hair.",
+      "The laser energy destroys the structure of the hair follicle in its active growth phase.",
+      "The laser acts selectively: it does not affect surrounding tissue, only the hair pigment.",
+      "Once the follicle is destroyed, the hair stops growing and does not regenerate."
+    ],
+    "guaranteeTitle": "Guaranteed results",
+    "guarantee": "If you come to us from scratch, have not had epilation before and follow the specialist's recommendations — we guarantee results. We do not prescribe endless maintenance treatments. Our goal is to fully solve the problem of unwanted hair, not to create dependency on procedures. We have completed cases of clients who have finished their course and no longer need treatments.",
+    "courseTitle": "How the course works",
+    "course": [
+      "On average the course lasts 1.5–2 years.",
+      "4–5 sessions are carried out in the first year.",
+      "Intervals between sessions range from 2 to 6 months, depending on the individual hair growth cycle.",
+      "We work exclusively with the active hair growth phase."
+    ],
+    "resultTitle": "When will results appear",
+    "result": [
+      "First changes are visible after the very first session.",
+      "Hair begins to fall out 10–14 days after each session.",
+      "With each subsequent session the amount of hair decreases significantly.",
+      "Intervals between sessions gradually become longer."
+    ],
+    "whoTitle": "Who is laser suitable for",
+    "who": "Laser hair removal is most effective for dark, sufficiently dense hair with good contrast between the hair colour and skin tone.",
+    "zonesWomenTitle": "Recommended zones for women",
+    "zonesWomen": [
+      "Armpits",
+      "Partial bikini",
+      "Deep bikini",
+      "Shins",
+      "Full legs"
+    ],
+    "zonesNotWomenTitle": "Where electrolysis works better",
+    "zonesNotWomen": [
+      "Face",
+      "Neck",
+      "Chest",
+      "Abdomen",
+      "Back",
+      "Lower back",
+      "Areolas"
+    ],
+    "zonesNotNote": "In these zones hair often has a hormonal origin or insufficient density — electrolysis is more effective here.",
+    "zonesMenTitle": "Zones for men",
+    "zonesMen": [
+      "Face (1 zone)",
+      "Neck",
+      "Armpits",
+      "Shoulders",
+      "Chest",
+      "Abdomen",
+      "Torso",
+      "Shoulder blades",
+      "Lower back",
+      "Back",
+      "Buttocks",
+      "Bikini",
+      "Legs",
+      "Arms"
+    ],
+    "whyNotTitle": "Why laser sometimes doesn't give results",
+    "whyNot": [
+      "Hair that is too light or vellus",
+      "Hormonal characteristics",
+      "Incorrect laser parameters",
+      "Sessions too frequent",
+      "Not following specialist's recommendations"
+    ],
+    "contraTitle": "Contraindications",
+    "contra": [
+      "Pregnancy and breastfeeding",
+      "Cardiovascular disease",
+      "Epilepsy",
+      "Oncological conditions",
+      "Use of photosensitising drugs or retinol",
+      "Diabetes mellitus",
+      "Acute viral or infectious illness",
+      "Active herpes outbreak",
+      "Inflammatory processes or elevated temperature",
+      "Acute or chronic skin conditions",
+      "Broken skin integrity",
+      "Photodermatosis",
+      "Autoimmune conditions",
+      "Advanced varicose veins"
+    ],
+    "prepTitle": "How to prepare",
+    "prep": [
+      "Shave the area 24 hours before the session",
+      "At least 14 days must pass after sun exposure or tanning",
+      "No peeling or scrubs for 3 days before",
+      "No self-tanner for 14 days before",
+      "Avoid waxing, sugaring and epilators for 2 months — shaving only throughout the course"
+    ],
+    "afterTitle": "Aftercare",
+    "after": [
+      "Avoid saunas, steam rooms and pools for 3 days",
+      "No hot baths",
+      "Apply a soothing cream and moisturise the skin",
+      "No sun exposure for 7 days",
+      "Use SPF 30+"
+    ],
+    "faqTitle": "Frequently asked questions",
+    "faq": [
+      {
+        "q": "How many sessions are needed?",
+        "a": "It depends on the zone, hair density and hormonal factors. On average the course is 4–5 sessions in the first year, with 2–6 month intervals."
+      },
+      {
+        "q": "When will I see results?",
+        "a": "First changes are visible after the very first session. Hair starts to fall out on days 10–14. With each session the amount reduces significantly."
+      },
+      {
+        "q": "Who is laser suitable for?",
+        "a": "Laser works best on dark, dense hair with a clear contrast between hair colour and skin tone."
+      },
+      {
+        "q": "Why doesn't laser always work?",
+        "a": "Possible reasons: hair that is too light or hormonal, incorrect parameters, sessions too close together, or not following recommendations."
+      },
+      {
+        "q": "How do I prepare?",
+        "a": "Shave 24 hours before. Avoid sun for 14 days, peels for 3 days, wax/sugaring/epilator for 2 months before the first session."
+      },
+      {
+        "q": "Can I sunbathe after?",
+        "a": "No sun exposure for 7 days after each session. Always use SPF 30+."
+      },
+      {
+        "q": "Can laser and electrolysis be combined?",
+        "a": "Yes, we combine methods when needed — this allows us to achieve total smooth skin for every client."
+      }
+    ],
+    "pricePragueTitle": "Price list · Prague (Kč)",
+    "priceValenciaTitle": "Price list · Valencia (€)",
+    "womenLabel": "Women",
+    "menLabel": "Men",
+    "packagesLabel": "Package deals",
+    "packagesNote": "Discounted packages apply to the women's price list only.",
+    "equipmentTitle": "Our equipment",
+    "wasLabel": "instead of",
+    "consultTitle": "Free consultation",
+    "consultText": "To determine the best hair removal method for you — we invite you to a free specialist consultation.",
+    "laserWomenEs": [
+      {
+        "label": "Armpits",
+        "price": "30 €"
+      },
+      {
+        "label": "Full bikini",
+        "price": "80 €"
+      },
+      {
+        "label": "Partial bikini",
+        "price": "60 €"
+      },
+      {
+        "label": "Buttocks",
+        "price": "60 €"
+      },
+      {
+        "label": "Shins",
+        "price": "80 €"
+      },
+      {
+        "label": "Full legs",
+        "price": "140 €"
+      },
+      {
+        "label": "Full thighs",
+        "price": "80 €"
+      },
+      {
+        "label": "Back of thighs",
+        "price": "40 €"
+      },
+      {
+        "label": "Forearms",
+        "price": "45 €"
+      },
+      {
+        "label": "Full arms",
+        "price": "65 €"
+      },
+      {
+        "label": "White line of abdomen",
+        "price": "20 €"
+      },
+      {
+        "label": "Full abdomen",
+        "price": "45 €"
+      }
+    ],
+    "laserMenEs": [
+      {
+        "label": "Full face",
+        "price": "20 €"
+      },
+      {
+        "label": "Full neck",
+        "price": "60 €"
+      },
+      {
+        "label": "Half neck",
+        "price": "30 €"
+      },
+      {
+        "label": "Armpits",
+        "price": "35 €"
+      },
+      {
+        "label": "Shoulders",
+        "price": "35 €"
+      },
+      {
+        "label": "Chest",
+        "price": "70 €"
+      },
+      {
+        "label": "Full abdomen",
+        "price": "70 €"
+      },
+      {
+        "label": "Areolas",
+        "price": "25 €"
+      },
+      {
+        "label": "Full torso",
+        "price": "140 €"
+      },
+      {
+        "label": "Shoulder blades",
+        "price": "70 €"
+      },
+      {
+        "label": "Lower back",
+        "price": "70 €"
+      },
+      {
+        "label": "Full back",
+        "price": "140 €"
+      },
+      {
+        "label": "Classic bikini",
+        "price": "95 €"
+      },
+      {
+        "label": "Full bikini",
+        "price": "140 €"
+      },
+      {
+        "label": "Shins",
+        "price": "88 €"
+      },
+      {
+        "label": "Thighs",
+        "price": "88 €"
+      },
+      {
+        "label": "Full legs",
+        "price": "170 €"
+      },
+      {
+        "label": "Arms to elbow",
+        "price": "80 €"
+      },
+      {
+        "label": "Full arms",
+        "price": "130 €"
+      },
+      {
+        "label": "Buttocks",
+        "price": "70 €"
+      }
+    ],
+    "complexesEs": [
+      {
+        "label": "Armpits + full bikini",
+        "was": "110 €",
+        "now": "88 €"
+      },
+      {
+        "label": "Armpits + full bikini + shins",
+        "was": "190 €",
+        "now": "152 €"
+      },
+      {
+        "label": "Armpits + full bikini + full legs",
+        "was": "250 €",
+        "now": "200 €"
+      }
+    ]
+  },
+  "es": {
+    "detailBtn": "Más información →",
+    "intro": "La depilación láser en Hi Sisters Epil Clinic es un procedimiento moderno para la eliminación permanente del vello no deseado con resultados duraderos y un alto nivel de comodidad.",
+    "equipment": "Trabajamos con sistemas láser profesionales Laser Technology — láseres de diodo Luna (1200 W) y Hunter (2000 W). Esto nos permite trabajar de forma eficaz, segura y cómoda.",
+    "howTitle": "Cómo funciona la depilación láser",
+    "how": [
+      "El haz de láser penetra en las capas superiores de la piel y actúa sobre la melanina, el pigmento del vello.",
+      "La energía del láser destruye la estructura del folículo piloso en su fase activa de crecimiento.",
+      "El láser actúa de forma selectiva: no afecta a los tejidos circundantes, solo al pigmento del vello.",
+      "Tras la destrucción del folículo, el vello deja de crecer y no se regenera."
+    ],
+    "guaranteeTitle": "Garantía de resultados",
+    "guarantee": "Si acudes desde cero, no has realizado procedimientos de depilación anteriormente y sigues las recomendaciones del especialista, garantizamos el resultado. No prescribimos interminables tratamientos de mantenimiento. Nuestro objetivo es eliminar completamente el problema del vello no deseado.",
+    "courseTitle": "Cómo es el curso",
+    "course": [
+      "El curso dura de media 1,5 a 2 años.",
+      "En el primer año se realizan 4–5 sesiones.",
+      "Los intervalos entre sesiones van de 2 a 6 meses según el ciclo individual de crecimiento del vello.",
+      "Trabajamos exclusivamente en la fase activa de crecimiento del vello."
+    ],
+    "resultTitle": "Cuándo se verán los resultados",
+    "result": [
+      "Los primeros cambios son visibles tras la primera sesión.",
+      "El vello comienza a caer entre los días 10 y 14 tras la sesión.",
+      "Con cada sesión siguiente la cantidad de vello disminuye significativamente.",
+      "Los intervalos entre sesiones se van ampliando."
+    ],
+    "whoTitle": "Para quién es adecuado el láser",
+    "who": "La depilación láser es más eficaz con vello oscuro y suficientemente denso, con buen contraste entre el color del vello y el tono de la piel.",
+    "zonesWomenTitle": "Zonas recomendadas para mujeres",
+    "zonesWomen": [
+      "Axilas",
+      "Bikini parcial",
+      "Bikini brasileño",
+      "Gemelos",
+      "Piernas completas"
+    ],
+    "zonesNotWomenTitle": "Donde es más eficaz la electrólisis",
+    "zonesNotWomen": [
+      "Rostro",
+      "Cuello",
+      "Pecho",
+      "Abdomen",
+      "Espalda",
+      "Zona lumbar",
+      "Areolas"
+    ],
+    "zonesNotNote": "En estas zonas el vello suele tener un origen hormonal o densidad insuficiente — la electrólisis es más eficaz aquí.",
+    "zonesMenTitle": "Zonas para hombres",
+    "zonesMen": [
+      "Rostro (1 zona)",
+      "Cuello",
+      "Axilas",
+      "Hombros",
+      "Pecho",
+      "Abdomen",
+      "Torso",
+      "Omóplatos",
+      "Zona lumbar",
+      "Espalda",
+      "Glúteos",
+      "Bikini",
+      "Piernas",
+      "Brazos"
+    ],
+    "whyNotTitle": "Por qué el láser a veces no da resultados",
+    "whyNot": [
+      "Vello demasiado claro o vello fino",
+      "Características hormonales del organismo",
+      "Parámetros de láser mal ajustados",
+      "Sesiones demasiado frecuentes",
+      "No seguir las recomendaciones del especialista"
+    ],
+    "contraTitle": "Contraindicaciones",
+    "contra": [
+      "Embarazo y lactancia",
+      "Enfermedades cardiovasculares",
+      "Epilepsia",
+      "Enfermedades oncológicas",
+      "Uso de fármacos fotosensibilizantes o retinol",
+      "Diabetes mellitus",
+      "Enfermedades virales o infecciosas agudas",
+      "Herpes en fase activa",
+      "Procesos inflamatorios o temperatura elevada",
+      "Enfermedades cutáneas agudas o crónicas",
+      "Alteración de la integridad cutánea",
+      "Fotodermatosis",
+      "Enfermedades autoinmunes",
+      "Varices en estadios avanzados"
+    ],
+    "prepTitle": "Preparación",
+    "prep": [
+      "Afeitar la zona 24 horas antes",
+      "Deben pasar al menos 14 días desde la última exposición solar",
+      "Sin peeling ni exfoliante 3 días antes",
+      "Sin autobronceador 14 días antes",
+      "Evitar cera, azúcar y depiladora 2 meses antes — solo afeitado durante el curso"
+    ],
+    "afterTitle": "Cuidados posteriores",
+    "after": [
+      "Evitar saunas, baños de vapor y piscinas durante 3 días",
+      "Sin baños calientes",
+      "Aplicar crema calmante e hidratar la piel",
+      "Sin exposición solar 7 días",
+      "Usar SPF 30+"
+    ],
+    "faqTitle": "Preguntas frecuentes",
+    "faq": [
+      {
+        "q": "¿Cuántas sesiones necesito?",
+        "a": "Depende de la zona, la densidad del vello y los factores hormonales. De media, el curso es de 4–5 sesiones en el primer año, con intervalos de 2 a 6 meses."
+      },
+      {
+        "q": "¿Cuándo veré los resultados?",
+        "a": "Los primeros cambios son visibles tras la primera sesión. El vello comienza a caer en los días 10–14. Con cada sesión la cantidad se reduce significativamente."
+      },
+      {
+        "q": "¿Para quién es adecuado el láser?",
+        "a": "El láser funciona mejor con vello oscuro y denso, con buen contraste entre el color del vello y el tono de piel."
+      },
+      {
+        "q": "¿Por qué el láser a veces no funciona?",
+        "a": "Posibles causas: vello demasiado claro o de origen hormonal, parámetros incorrectos, sesiones demasiado seguidas o no seguir las recomendaciones."
+      },
+      {
+        "q": "¿Cómo prepararme?",
+        "a": "Afeita 24 horas antes. Evita el sol 14 días, peeling 3 días, cera/azúcar/depiladora 2 meses antes de la primera sesión."
+      },
+      {
+        "q": "¿Puedo tomar el sol después?",
+        "a": "No durante 7 días tras cada sesión. Usar siempre SPF 30+."
+      },
+      {
+        "q": "¿Se puede combinar láser y electrólisis?",
+        "a": "Sí, combinamos métodos cuando es necesario para lograr una piel completamente lisa."
+      }
+    ],
+    "pricePragueTitle": "Precios · Praga (Kč)",
+    "priceValenciaTitle": "Precios · Valencia (€)",
+    "womenLabel": "Mujeres",
+    "menLabel": "Hombres",
+    "packagesLabel": "Paquetes con descuento",
+    "packagesNote": "Los paquetes con descuento se aplican solo a la lista de precios para mujeres.",
+    "equipmentTitle": "Nuestro equipo",
+    "wasLabel": "en vez de",
+    "consultTitle": "Consulta gratuita",
+    "consultText": "Para determinar el mejor método de depilación para ti — te invitamos a una consulta gratuita con nuestro especialista.",
+    "laserWomenEs": [
+      {
+        "label": "Axilas",
+        "price": "30 €"
+      },
+      {
+        "label": "Bikini brasileño",
+        "price": "80 €"
+      },
+      {
+        "label": "Bikini parcial",
+        "price": "60 €"
+      },
+      {
+        "label": "Glúteos",
+        "price": "60 €"
+      },
+      {
+        "label": "Gemelos",
+        "price": "80 €"
+      },
+      {
+        "label": "Piernas completas",
+        "price": "140 €"
+      },
+      {
+        "label": "Muslos completos",
+        "price": "80 €"
+      },
+      {
+        "label": "Parte posterior de muslos",
+        "price": "40 €"
+      },
+      {
+        "label": "Antebrazos",
+        "price": "45 €"
+      },
+      {
+        "label": "Brazos completos",
+        "price": "65 €"
+      },
+      {
+        "label": "Línea alba del abdomen",
+        "price": "20 €"
+      },
+      {
+        "label": "Abdomen completo",
+        "price": "45 €"
+      }
+    ],
+    "laserMenEs": [
+      {
+        "label": "Rostro completo",
+        "price": "20 €"
+      },
+      {
+        "label": "Cuello completo",
+        "price": "60 €"
+      },
+      {
+        "label": "Cuello (mitad)",
+        "price": "30 €"
+      },
+      {
+        "label": "Axilas",
+        "price": "35 €"
+      },
+      {
+        "label": "Hombros",
+        "price": "35 €"
+      },
+      {
+        "label": "Pecho",
+        "price": "70 €"
+      },
+      {
+        "label": "Abdomen completo",
+        "price": "70 €"
+      },
+      {
+        "label": "Areolas",
+        "price": "25 €"
+      },
+      {
+        "label": "Torso completo",
+        "price": "140 €"
+      },
+      {
+        "label": "Omóplatos",
+        "price": "70 €"
+      },
+      {
+        "label": "Zona lumbar",
+        "price": "70 €"
+      },
+      {
+        "label": "Espalda completa",
+        "price": "140 €"
+      },
+      {
+        "label": "Bikini clásico",
+        "price": "95 €"
+      },
+      {
+        "label": "Bikini completo",
+        "price": "140 €"
+      },
+      {
+        "label": "Gemelos",
+        "price": "88 €"
+      },
+      {
+        "label": "Muslos",
+        "price": "88 €"
+      },
+      {
+        "label": "Piernas completas",
+        "price": "170 €"
+      },
+      {
+        "label": "Brazos hasta el codo",
+        "price": "80 €"
+      },
+      {
+        "label": "Brazos completos",
+        "price": "130 €"
+      },
+      {
+        "label": "Glúteos",
+        "price": "70 €"
+      }
+    ],
+    "complexesEs": [
+      {
+        "label": "Axilas + bikini brasileño",
+        "was": "110 €",
+        "now": "88 €"
+      },
+      {
+        "label": "Axilas + bikini brasileño + gemelos",
+        "was": "190 €",
+        "now": "152 €"
+      },
+      {
+        "label": "Axilas + bikini brasileño + piernas completas",
+        "was": "250 €",
+        "now": "200 €"
+      }
+    ]
+  },
+  "cs": {
+    "detailBtn": "Více o službě →",
+    "intro": "Laserová epilace v Hi Sisters Epil Clinic je moderní procedura pro trvalé odstranění nežádoucích chloupků s dlouhodobými výsledky a vysokým komfortem.",
+    "equipment": "Pracujeme s profesionálními laserovými systémy Laser Technology — diodovými lasery Luna (1200 W) a Hunter (2000 W). To nám umožňuje pracovat efektivně, bezpečně a pohodlně.",
+    "howTitle": "Jak funguje laserová epilace",
+    "how": [
+      "Laserový paprsek proniká do svrchních vrstev kůže a působí na melanin — pigment ve vlasu.",
+      "Energie laseru ničí strukturu vlasového folikulu v jeho aktivní fázi růstu.",
+      "Laser působí selektivně: neovlivňuje okolní tkáně, pouze pigment vlasu.",
+      "Po zničení folikulu vlas přestane růst a již se neobnoví."
+    ],
+    "guaranteeTitle": "Záruka výsledků",
+    "guarantee": "Pokud k nám přicházíte od začátku, dříve jste epilaci nepodstupovali a dodržujete doporučení specialisty — garantujeme výsledek. Nepředepisujeme nekonečné udržovací procedury. Naším cílem je zcela vyřešit problém nežádoucích chloupků.",
+    "courseTitle": "Průběh kurzu",
+    "course": [
+      "Kurz trvá průměrně 1,5–2 roky.",
+      "V prvním roce se provádí 4–5 procedur.",
+      "Intervaly mezi procedurou jsou 2–6 měsíců podle individuálního cyklu růstu vlasů.",
+      "Pracujeme výhradně s aktivní fází růstu vlasů."
+    ],
+    "resultTitle": "Kdy uvidíte výsledky",
+    "result": [
+      "První změny jsou patrné již po první proceduře.",
+      "Chloupky začínají vypadávat 10–14 dní po proceduře.",
+      "S každou další procedurou se množství chloupků výrazně snižuje.",
+      "Intervaly mezi procedurou se postupně prodlužují."
+    ],
+    "whoTitle": "Pro koho je laser vhodný",
+    "who": "Laserová epilace je nejúčinnější při tmavých, dostatečně hustých chloupkách s dobrým kontrastem mezi barvou chloupků a tónem pleti.",
+    "zonesWomenTitle": "Doporučené zóny pro ženy",
+    "zonesWomen": [
+      "Podpaží",
+      "Částečné bikiny",
+      "Hluboké bikiny",
+      "Lýtka",
+      "Celé nohy"
+    ],
+    "zonesNotWomenTitle": "Kde je účinnější elektroepilace",
+    "zonesNotWomen": [
+      "Obličej",
+      "Krk",
+      "Hrudník",
+      "Břicho",
+      "Záda",
+      "Bedra",
+      "Dvorce"
+    ],
+    "zonesNotNote": "V těchto zónách mají chloupky často hormonální původ nebo nedostatečnou hustotu — zde je účinnější elektroepilace.",
+    "zonesMenTitle": "Zóny pro muže",
+    "zonesMen": [
+      "Obličej (1 zóna)",
+      "Krk",
+      "Podpaží",
+      "Ramena",
+      "Hrudník",
+      "Břicho",
+      "Trup",
+      "Lopatky",
+      "Bedra",
+      "Záda",
+      "Hýždě",
+      "Bikiny",
+      "Nohy",
+      "Ruce"
+    ],
+    "whyNotTitle": "Proč laser někdy nepřináší výsledky",
+    "whyNot": [
+      "Příliš světlé nebo jemné chloupky",
+      "Hormonální specifika organismu",
+      "Špatně nastavené parametry laseru",
+      "Příliš časté procedury",
+      "Nedodržení doporučení specialisty"
+    ],
+    "contraTitle": "Kontraindikace",
+    "contra": [
+      "Těhotenství a kojení",
+      "Kardiovaskulární onemocnění",
+      "Epilepsie",
+      "Onkologická onemocnění",
+      "Užívání fotosenzibilizujících léků nebo retinolu",
+      "Diabetes mellitus",
+      "Akutní virová nebo infekční onemocnění",
+      "Herpes v aktivní fázi",
+      "Zánětlivé procesy nebo zvýšená teplota",
+      "Akutní nebo chronická kožní onemocnění",
+      "Narušení celistvosti kůže",
+      "Fotodermatóza",
+      "Autoimunitní onemocnění",
+      "Křečové žíly v pokročilém stadiu"
+    ],
+    "prepTitle": "Příprava na proceduru",
+    "prep": [
+      "24 hodin před procedurou je nutné oholit chloupky",
+      "Po opalování musí uplynout minimálně 14 dní",
+      "3 dny před procedurou nepoužívat peeling ani scrub",
+      "14 dní před procedurou nepoužívat samoopalovač",
+      "2 měsíce před kurzem vynechat cukrování, vosk a epilátor — v průběhu kurzu pouze holení"
+    ],
+    "afterTitle": "Péče po proceduře",
+    "after": [
+      "3 dny nenavštěvovat sauny, parní lázně ani bazény",
+      "Nevyužívat horké koupele",
+      "Používat zklidňující krém a hydratovat pokožku",
+      "7 dní se vyhýbat opalování",
+      "Používat SPF 30+"
+    ],
+    "faqTitle": "Časté dotazy",
+    "faq": [
+      {
+        "q": "Kolik procedur potřebuji?",
+        "a": "Záleží na zóně, hustotě chloupků a hormonálních specifikách. Průměrně kurz zahrnuje 4–5 procedur v prvním roce s intervaly 2–6 měsíců."
+      },
+      {
+        "q": "Kdy uvidím výsledky?",
+        "a": "První změny jsou viditelné již po první proceduře. Chloupky začínají vypadávat 10.–14. den. S každou procedurou se jejich množství výrazně snižuje."
+      },
+      {
+        "q": "Pro koho je laser vhodný?",
+        "a": "Laser je nejúčinnější při tmavých, hustých chloupkách s dobrým kontrastem mezi chloupkem a tónem pleti."
+      },
+      {
+        "q": "Proč laser někdy nefunguje?",
+        "a": "Možné důvody: příliš světlé nebo hormonální chloupky, špatné parametry, příliš časté procedury nebo nedodržení doporučení."
+      },
+      {
+        "q": "Jak se připravit?",
+        "a": "Oholte se 24 hodin předem. Vyhněte se opalování 14 dní, peelingům 3 dny, vosku/cukrování/epilátoru 2 měsíce před kurzem."
+      },
+      {
+        "q": "Mohu se opalovat po proceduře?",
+        "a": "Opalování je zakázáno 7 dní po každé proceduře. Vždy používejte SPF 30+."
+      },
+      {
+        "q": "Lze kombinovat laser a elektroepilaci?",
+        "a": "Ano, metody kombinujeme dle potřeby — to nám umožňuje dosáhnout totální hladkosti pokožky."
+      }
+    ],
+    "pricePragueTitle": "Ceník · Praha (Kč)",
+    "priceValenciaTitle": "Ceník · Valencie (€)",
+    "womenLabel": "Ženy",
+    "menLabel": "Muži",
+    "packagesLabel": "Zvýhodněné balíčky",
+    "packagesNote": "Zvýhodněné balíčky platí pouze pro ceník pro ženy.",
+    "equipmentTitle": "Naše vybavení",
+    "wasLabel": "místo",
+    "consultTitle": "Bezplatná konzultace",
+    "consultText": "Pro určení nejlepší metody odstranění chloupků právě pro vás — zveme vás na bezplatnou konzultaci se specialistou.",
+    "laserWomenEs": [
+      {
+        "label": "Podpaží",
+        "price": "30 €"
+      },
+      {
+        "label": "Bikiny (celé)",
+        "price": "80 €"
+      },
+      {
+        "label": "Bikiny (částečné)",
+        "price": "60 €"
+      },
+      {
+        "label": "Hýždě",
+        "price": "60 €"
+      },
+      {
+        "label": "Lýtka",
+        "price": "80 €"
+      },
+      {
+        "label": "Celé nohy",
+        "price": "140 €"
+      },
+      {
+        "label": "Celá stehna",
+        "price": "80 €"
+      },
+      {
+        "label": "Zadní část stehen",
+        "price": "40 €"
+      },
+      {
+        "label": "Předloktí",
+        "price": "45 €"
+      },
+      {
+        "label": "Celé ruce",
+        "price": "65 €"
+      },
+      {
+        "label": "Bílá čára břicha",
+        "price": "20 €"
+      },
+      {
+        "label": "Celé břicho",
+        "price": "45 €"
+      }
+    ],
+    "laserMenEs": [
+      {
+        "label": "Celý obličej",
+        "price": "20 €"
+      },
+      {
+        "label": "Celý krk",
+        "price": "60 €"
+      },
+      {
+        "label": "Půlka krku",
+        "price": "30 €"
+      },
+      {
+        "label": "Podpaží",
+        "price": "35 €"
+      },
+      {
+        "label": "Ramena",
+        "price": "35 €"
+      },
+      {
+        "label": "Hrudník",
+        "price": "70 €"
+      },
+      {
+        "label": "Celé břicho",
+        "price": "70 €"
+      },
+      {
+        "label": "Dvorce",
+        "price": "25 €"
+      },
+      {
+        "label": "Celý trup",
+        "price": "140 €"
+      },
+      {
+        "label": "Lopatky",
+        "price": "70 €"
+      },
+      {
+        "label": "Bedra",
+        "price": "70 €"
+      },
+      {
+        "label": "Celá záda",
+        "price": "140 €"
+      },
+      {
+        "label": "Klasické bikiny",
+        "price": "95 €"
+      },
+      {
+        "label": "Celé bikiny",
+        "price": "140 €"
+      },
+      {
+        "label": "Lýtka",
+        "price": "88 €"
+      },
+      {
+        "label": "Stehna",
+        "price": "88 €"
+      },
+      {
+        "label": "Celé nohy",
+        "price": "170 €"
+      },
+      {
+        "label": "Ruce po loket",
+        "price": "80 €"
+      },
+      {
+        "label": "Celé ruce",
+        "price": "130 €"
+      },
+      {
+        "label": "Hýždě",
+        "price": "70 €"
+      }
+    ],
+    "complexesEs": [
+      {
+        "label": "Podpaží + celé bikiny",
+        "was": "110 €",
+        "now": "88 €"
+      },
+      {
+        "label": "Podpaží + celé bikiny + lýtka",
+        "was": "190 €",
+        "now": "152 €"
+      },
+      {
+        "label": "Podpaží + celé bikiny + celé nohy",
+        "was": "250 €",
+        "now": "200 €"
+      }
+    ]
+  }
+}

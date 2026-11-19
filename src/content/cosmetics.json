@@ -1,0 +1,455 @@
+{
+ "head": {
+  "ru": {
+   "h1": "Косметика для дома",
+   "lead": "Профессиональные средства, которыми мы работаем в клинике. Подбираем после консультации, а не продаём «на всякий случай»."
+  },
+  "uk": {
+   "h1": "Косметика для дому",
+   "lead": "Професійні засоби, якими ми працюємо в клініці. Підбираємо після консультації, а не продаємо «про запас»."
+  },
+  "cs": {
+   "h1": "Kosmetika pro domácí péči",
+   "lead": "Profesionální přípravky, se kterými pracujeme na klinice. Vybíráme je po konzultaci, neprodáváme je „pro jistotu“."
+  },
+  "en": {
+   "h1": "Home-care cosmetics",
+   "lead": "The professional products we use at the clinic. Chosen for you at a consultation — never sold just in case."
+  },
+  "es": {
+   "h1": "Cosmética para casa",
+   "lead": "Los productos profesionales con los que trabajamos en la clínica. Se eligen en la consulta, no se venden «por si acaso»."
+  }
+ },
+ "ui": {
+  "ru": {
+   "eyebrow": "Домашний уход",
+   "title": "Косметика для волос и кожи головы",
+   "subtitle": "Профессиональные средства, которыми мы работаем в клинике. Подбираем индивидуально после консультации трихолога.",
+   "note": "Цены в CZK. Косметика в наличии в клинике: Bulovka Medical & Business Centre, Praha 8.",
+   "cta": "Подобрать уход с трихологом",
+   "cats": {
+    "loss": "Против выпадения волос",
+    "scalp": "Шампуни по типу кожи головы",
+    "care": "Уход и питание"
+   }
+  },
+  "uk": {
+   "eyebrow": "Домашній догляд",
+   "title": "Косметика для волосся та шкіри голови",
+   "subtitle": "Професійні засоби, якими ми працюємо в клініці. Підбираємо індивідуально після консультації трихолога.",
+   "note": "Ціни в CZK. Косметика в наявності в клініці: Bulovka Medical & Business Centre, Praha 8.",
+   "cta": "Підібрати догляд з трихологом",
+   "cats": {
+    "loss": "Проти випадіння волосся",
+    "scalp": "Шампуні за типом шкіри голови",
+    "care": "Догляд і живлення"
+   }
+  },
+  "cs": {
+   "eyebrow": "Domácí péče",
+   "title": "Kosmetika pro vlasy a pokožku hlavy",
+   "subtitle": "Profesionální přípravky, se kterými pracujeme na klinice. Vybíráme individuálně po konzultaci s trichologem.",
+   "note": "Ceny v CZK. K dostání na klinice: Bulovka Medical & Business Centre, Praha 8.",
+   "cta": "Vybrat péči s trichologem",
+   "cats": {
+    "loss": "Proti vypadávání vlasů",
+    "scalp": "Šampony podle typu pokožky hlavy",
+    "care": "Péče a výživa"
+   }
+  },
+  "en": {
+   "eyebrow": "Home care",
+   "title": "Hair & scalp home care",
+   "subtitle": "Professional products we use at the clinic, selected individually after a trichologist consultation.",
+   "note": "Prices in CZK. Available at the clinic: Bulovka Medical & Business Centre, Praha 8.",
+   "cta": "Get a trichologist’s advice",
+   "cats": {
+    "loss": "Against hair loss",
+    "scalp": "Shampoos by scalp type",
+    "care": "Care & nutrition"
+   }
+  },
+  "es": {
+   "eyebrow": "Cuidado en casa",
+   "title": "Cosmética para el cabello y el cuero cabelludo",
+   "subtitle": "Productos profesionales con los que trabajamos en la clínica, seleccionados tras una consulta tricológica.",
+   "note": "Precios en CZK. Disponible en la clínica: Bulovka Medical & Business Centre, Praga 8.",
+   "cta": "Elegir el cuidado con la tricóloga",
+   "cats": {
+    "loss": "Contra la caída del cabello",
+    "scalp": "Champús según el tipo de cuero cabelludo",
+    "care": "Cuidado y nutrición"
+   }
+  }
+ },
+ "cats": [
+  "loss",
+  "scalp",
+  "care"
+ ],
+ "products": [
+  {
+   "brand": "Mediceuticals",
+   "name": "Bioclenz",
+   "volume": "250 ml",
+   "price": 600,
+   "cat": "scalp",
+   "desc": {
+    "ru": "Антиоксидантный шампунь для нормальной кожи головы",
+    "uk": "Антиоксидантний шампунь для нормальної шкіри голови",
+    "cs": "Antioxidační šampon pro normální pokožku hlavy",
+    "en": "Antioxidant shampoo for normal scalp",
+    "es": "Champú antioxidante para cuero cabelludo normal"
+   },
+   "img": "bioclenz.jpg",
+   "stock": "in",
+   "crm": 174
+  },
+  {
+   "brand": "Mediceuticals",
+   "name": "Hydroclenz",
+   "volume": "250 ml",
+   "price": 600,
+   "cat": "scalp",
+   "desc": {
+    "ru": "Увлажняющий шампунь для сухой кожи головы",
+    "uk": "Зволожувальний шампунь для сухої шкіри голови",
+    "cs": "Hydratační šampon pro suchou pokožku hlavy",
+    "en": "Moisturising shampoo for dry scalp",
+    "es": "Champú hidratante para cuero cabelludo seco"
+   },
+   "img": "hydroclenz.jpg",
+   "stock": "in",
+   "crm": 213
+  },
+  {
+   "brand": "Mediceuticals",
+   "name": "Vivid",
+   "volume": "250 ml",
+   "price": 600,
+   "cat": "scalp",
+   "desc": {
+    "ru": "Шампунь глубокого очищения",
+    "uk": "Шампунь глибокого очищення",
+    "cs": "Hloubkově čisticí šampon",
+    "en": "Natural purifying deep-cleanse shampoo",
+    "es": "Champú de limpieza profunda"
+   },
+   "img": "vivid.jpg",
+   "stock": "in",
+   "crm": 216
+  },
+  {
+   "brand": "Mediceuticals",
+   "name": "Solv-X",
+   "volume": "250 ml",
+   "price": 700,
+   "cat": "scalp",
+   "desc": {
+    "ru": "Шампунь для жирной кожи головы",
+    "uk": "Шампунь для жирної шкіри голови",
+    "cs": "Šampon pro mastnou pokožku hlavy",
+    "en": "Shampoo for oily scalp",
+    "es": "Champú para cuero cabelludo graso"
+   },
+   "img": "solv-x.jpg",
+   "stock": "in",
+   "crm": 219
+  },
+  {
+   "brand": "Mediceuticals",
+   "name": "X-Folate",
+   "volume": "250 ml",
+   "price": 700,
+   "cat": "scalp",
+   "desc": {
+    "ru": "Шампунь против перхоти",
+    "uk": "Шампунь проти лупи",
+    "cs": "Šampon proti lupům",
+    "en": "Anti-dandruff shampoo",
+    "es": "Champú anticaspa"
+   },
+   "img": "x-folate.jpg",
+   "stock": "in",
+   "crm": 182
+  },
+  {
+   "brand": "Mediceuticals",
+   "name": "Folligen",
+   "volume": "250 ml",
+   "price": 600,
+   "cat": "scalp",
+   "desc": {
+    "ru": "Женский шампунь для нормальной кожи головы",
+    "uk": "Жіночий шампунь для нормальної шкіри голови",
+    "cs": "Dámský šampon pro normální pokožku hlavy",
+    "en": "Women’s shampoo for normal scalp",
+    "es": "Champú femenino para cuero cabelludo normal"
+   },
+   "img": "folligen.jpg",
+   "stock": "in",
+   "crm": 176
+  },
+  {
+   "brand": "Mediceuticals",
+   "name": "Saturate",
+   "volume": "250 ml",
+   "price": 600,
+   "cat": "scalp",
+   "desc": {
+    "ru": "Женский увлажняющий шампунь для сухой кожи головы",
+    "uk": "Жіночий зволожувальний шампунь для сухої шкіри голови",
+    "cs": "Dámský hydratační šampon pro suchou pokožku hlavy",
+    "en": "Women’s moisturising shampoo for dry scalp",
+    "es": "Champú hidratante femenino para cuero cabelludo seco"
+   },
+   "img": "saturate.jpg",
+   "stock": "in",
+   "crm": 177
+  },
+  {
+   "brand": "Mediceuticals",
+   "name": "Moist-Cyte",
+   "volume": "250 ml",
+   "price": 800,
+   "cat": "care",
+   "desc": {
+    "ru": "Увлажняющая терапия для кожи головы",
+    "uk": "Зволожувальна терапія шкіри голови",
+    "cs": "Hydratační terapie pokožky hlavy",
+    "en": "Hydrating scalp therapy",
+    "es": "Terapia hidratante del cuero cabelludo"
+   },
+   "img": "moist-cyte.jpg",
+   "stock": "in",
+   "crm": 180
+  },
+  {
+   "brand": "Mediceuticals",
+   "name": "Defend",
+   "volume": "250 ml",
+   "price": 900,
+   "cat": "care",
+   "desc": {
+    "ru": "Несмываемый кондиционер для защиты волос",
+    "uk": "Незмивний кондиціонер для захисту волосся",
+    "cs": "Bezoplachový ochranný kondicionér",
+    "en": "Leave-in protective conditioner",
+    "es": "Acondicionador protector sin aclarado"
+   },
+   "img": "defend.jpg",
+   "stock": "in",
+   "crm": 218
+  },
+  {
+   "brand": "Mediceuticals",
+   "name": "Therapeutic",
+   "volume": "250 ml",
+   "price": 800,
+   "cat": "care",
+   "desc": {
+    "ru": "Ополаскиватель-уход для кожи головы и волос",
+    "uk": "Ополіскувач-догляд для шкіри голови та волосся",
+    "cs": "Ošetřující oplach pro pokožku hlavy a vlasy",
+    "en": "Scalp & hair treatment rinse",
+    "es": "Enjuague tratante para cuero cabelludo y cabello"
+   },
+   "img": "therapeutic.jpg",
+   "stock": "in",
+   "crm": 183
+  },
+  {
+   "brand": "Mediceuticals",
+   "name": "TheraRx",
+   "volume": "250 ml",
+   "price": 800,
+   "cat": "care",
+   "desc": {
+    "ru": "Лечебное очищение раздражённой кожи головы и тела",
+    "uk": "Лікувальне очищення подразненої шкіри голови та тіла",
+    "cs": "Léčebné mytí podrážděné pokožky hlavy a těla",
+    "en": "Therapeutic wash for irritated scalp and skin",
+    "es": "Limpieza terapéutica para piel irritada"
+   },
+   "img": "therarx.jpg",
+   "stock": "in",
+   "crm": 181
+  },
+  {
+   "brand": "Mediceuticals",
+   "name": "MX Dual Therapy",
+   "volume": "150 ml",
+   "price": 900,
+   "cat": "care",
+   "desc": {
+    "ru": "Двойная терапия кожи головы",
+    "uk": "Подвійна терапія шкіри голови",
+    "cs": "Duální terapie pokožky hlavy",
+    "en": "Dual scalp therapy",
+    "es": "Terapia dual del cuero cabelludo"
+   },
+   "img": "mx-dual-therapy.jpg",
+   "stock": "in",
+   "crm": 185
+  },
+  {
+   "brand": "Bao-Med",
+   "name": "Hair · Skin · Nails",
+   "volume": "60 caps",
+   "price": 800,
+   "cat": "care",
+   "desc": {
+    "ru": "Витамины для волос, кожи и ногтей: баобаб, биотин, цинк",
+    "uk": "Вітаміни для волосся, шкіри та нігтів: баобаб, біотин, цинк",
+    "cs": "Doplněk stravy pro vlasy, pleť a nehty: baobab, biotin, zinek",
+    "en": "Hair, skin and nails supplement: baobab, biotin, zinc",
+    "es": "Suplemento para cabello, piel y uñas: baobab, biotina, zinc"
+   },
+   "img": "bao-med.jpg",
+   "stock": "in",
+   "crm": 186
+  },
+  {
+   "brand": "Mediceuticals",
+   "name": "Numinox",
+   "volume": "250 ml",
+   "price": 1700,
+   "cat": "loss",
+   "desc": {
+    "ru": "Ревитализатор фолликулов против выпадения волос",
+    "uk": "Ревіталізатор фолікулів проти випадіння волосся",
+    "cs": "Revitalizér folikulů proti vypadávání vlasů",
+    "en": "Follicle revitalizer against hair loss",
+    "es": "Revitalizador folicular contra la caída del cabello"
+   },
+   "img": "numinox.jpg",
+   "stock": "pre",
+   "crm": 214
+  },
+  {
+   "brand": "Mediceuticals",
+   "name": "Cellagen",
+   "volume": "250 ml",
+   "price": 1700,
+   "cat": "loss",
+   "desc": {
+    "ru": "Ревитализатор фолликулов для женщин",
+    "uk": "Ревіталізатор фолікулів для жінок",
+    "cs": "Revitalizér folikulů pro ženy",
+    "en": "Follicle revitalizer for women",
+    "es": "Revitalizador folicular para mujeres"
+   },
+   "img": "cellagen.jpg",
+   "stock": "in",
+   "crm": 217
+  },
+  {
+   "brand": "Mediceuticals",
+   "name": "Trichogenix",
+   "volume": "15 ml",
+   "price": 1200,
+   "cat": "loss",
+   "desc": {
+    "ru": "Интенсивная сыворотка для кожи головы",
+    "uk": "Інтенсивна сироватка для шкіри голови",
+    "cs": "Intenzivní sérum pro pokožku hlavy",
+    "en": "Intense hair and scalp serum",
+    "es": "Sérum intensivo para el cuero cabelludo"
+   },
+   "img": "trichogenix.jpg",
+   "stock": "in",
+   "crm": 240
+  },
+  {
+   "brand": "DSD de Luxe",
+   "name": "3.4.5A Science-7",
+   "volume": "35 ml × 3",
+   "price": 1600,
+   "cat": "loss",
+   "desc": {
+    "ru": "Лосьон против выпадения волос",
+    "uk": "Лосьйон проти випадіння волосся",
+    "cs": "Lotion proti vypadávání vlasů",
+    "en": "Hair loss treatment lotion",
+    "es": "Loción contra la caída del cabello"
+   },
+   "img": "dsd-science-7.jpg",
+   "stock": "in",
+   "crm": 235
+  }
+ ],
+ "bodyText": {
+  "ru": {
+   "title": "Уход за телом",
+   "desc": "Линейка для домашнего продолжения курса эпиляции: мягкий пилинг, питание и выравнивание тона кожи."
+  },
+  "uk": {
+   "title": "Догляд за тілом",
+   "desc": "Лінійка для домашнього продовження курсу епіляції: м’який пілінг, живлення та вирівнювання тону шкіри."
+  },
+  "cs": {
+   "title": "Péče o tělo",
+   "desc": "Řada pro domácí pokračování epilační kúry: jemný peeling, výživa a sjednocení tónu pleti."
+  },
+  "en": {
+   "title": "Body care",
+   "desc": "A line to continue your epilation course at home: gentle peeling, nourishment and an even skin tone."
+  },
+  "es": {
+   "title": "Cuidado corporal",
+   "desc": "Una línea para continuar en casa tu curso de depilación: peeling suave, nutrición y tono uniforme."
+  }
+ },
+ "body": {
+  "prague": [
+   {
+    "name": "Body Butter",
+    "price": 1600,
+    "brand": "Happy Intim",
+    "volume": "200 ml",
+    "stock": "pre",
+    "crm": 30
+   },
+   {
+    "name": "Body Peel",
+    "price": 1600,
+    "brand": "Happy Intim",
+    "volume": "150 ml",
+    "stock": "pre",
+    "crm": 31
+   },
+   {
+    "name": "Cream Lightening",
+    "price": 1600,
+    "brand": "Happy Intim",
+    "volume": "50 ml",
+    "stock": "in",
+    "crm": 29
+   }
+  ],
+  "valencia": [
+   {
+    "name": "Body Butter",
+    "price": 65,
+    "brand": "Happy Intim",
+    "volume": "200 ml",
+    "crm": 30
+   },
+   {
+    "name": "Body Peel",
+    "price": 65,
+    "brand": "Happy Intim",
+    "volume": "150 ml",
+    "crm": 31
+   },
+   {
+    "name": "Cream Lightening",
+    "price": 65,
+    "brand": "Happy Intim",
+    "volume": "50 ml",
+    "crm": 29
+   }
+  ]
+ }
+}

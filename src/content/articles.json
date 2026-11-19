@@ -1,0 +1,147 @@
+{
+ "_": "Разъяснительные тексты: статья про лазер и электро идёт на страницы этих услуг, про выбор мастера — на «О нас».",
+ "methods": {
+  "ru": {
+   "h": "Лазер и электроэпиляция — не конкуренты",
+   "lead": "Это два разных инструмента. Лазер быстро убирает основную массу волос, электроэпиляция закрывает то, что лазеру не по зубам. Почти всегда правильный ответ — не «или», а «сначала одно, потом другое».",
+   "items": [
+    {"h": "Лазер видит пигмент",
+     "p": "Луч поглощается меланином внутри волоса и нагревает фолликул. Поэтому лазер отлично справляется с тёмными и густыми волосами и обрабатывает большие зоны за один сеанс: ноги целиком — около часа. Но на седых, рыжих и светлом пушке меланина почти нет — лазер их просто не видит, сколько сеансов ни делай."},
+    {"h": "Электроэпиляция работает с каждым волосом отдельно",
+     "p": "В фолликул вводится тончайшая игла, разряд разрушает зону роста. Цвет волоса не имеет значения — метод одинаково работает на седых, светлых и пушковых. Платить за это приходится временем: мастер идёт волос за волосом, поэтому для больших зон электроэпиляция неудобна, а для лица, ареол и единичных волос — единственный способ убрать их навсегда."},
+    {"h": "Обычный маршрут — лазер, потом электро",
+     "p": "Сначала курс лазера: 6–8 сеансов с интервалом 4–6 недель на теле, 3–4 недели на лице. Он снимает 80–90 % волос. Остаётся то, что лазер не берёт: отдельные светлые и посветлевшие после курса волоски. Их добирает электроэпиляция — это уже недолгие сеансы раз в несколько недель, а не новый большой курс."},
+    {"h": "Что мы скажем на консультации",
+     "p": "Мы смотрим на цвет и плотность волос, тип кожи и гормональный фон — и честно говорим, что даст лазер, а что придётся доделывать иглой. Если волосы светлые изначально, мы не будем продавать вам курс лазера: это выброшенные деньги. Количество сеансов и интервалы вы узнаёте до того, как заплатите за первый."}
+   ]
+  },
+  "uk": {
+   "h": "Лазер і електроепіляція — не конкуренти",
+   "lead": "Це два різні інструменти. Лазер швидко прибирає основну масу волосся, електроепіляція закриває те, що лазеру не під силу. Майже завжди правильна відповідь — не «або», а «спочатку одне, потім інше».",
+   "items": [
+    {"h": "Лазер бачить пігмент",
+     "p": "Промінь поглинається меланіном усередині волосини і нагріває фолікул. Тому лазер чудово дає раду темному та густому волоссю й обробляє великі зони за один сеанс: ноги повністю — близько години. Але в сивому, рудому та світлому пушку меланіну майже немає — лазер їх просто не бачить, скільки сеансів не роби."},
+    {"h": "Електроепіляція працює з кожною волосиною окремо",
+     "p": "У фолікул вводиться найтонша голка, розряд руйнує зону росту. Колір волосся не має значення — метод однаково працює на сивому, світлому та пушковому. Платити за це доводиться часом: майстриня йде волосина за волосиною, тому для великих зон електроепіляція незручна, а для обличчя, ареол і поодиноких волосин — єдиний спосіб прибрати їх назавжди."},
+    {"h": "Звичайний маршрут — лазер, потім електро",
+     "p": "Спершу курс лазера: 6–8 сеансів з інтервалом 4–6 тижнів на тілі, 3–4 тижні на обличчі. Він знімає 80–90 % волосся. Лишається те, що лазер не бере: окремі світлі й посвітлілі після курсу волосини. Їх добирає електроепіляція — це вже недовгі сеанси раз на кілька тижнів, а не новий великий курс."},
+    {"h": "Що ми скажемо на консультації",
+     "p": "Ми дивимося на колір і щільність волосся, тип шкіри та гормональний фон — і чесно кажемо, що дасть лазер, а що доведеться доробляти голкою. Якщо волосся світле від початку, ми не продаватимемо вам курс лазера: це викинуті гроші. Кількість сеансів та інтервали ви дізнаєтеся до того, як заплатите за перший."}
+   ]
+  },
+  "cs": {
+   "h": "Laser a elektrolýza nejsou konkurenti",
+   "lead": "Jsou to dva různé nástroje. Laser rychle odstraní hlavní množství chloupků, elektrolýza dořeší to, na co laser nestačí. Správná odpověď skoro nikdy není „buď, anebo“, ale „nejdřív jedno, potom druhé“.",
+   "items": [
+    {"h": "Laser vidí pigment",
+     "p": "Paprsek pohltí melanin uvnitř chloupku a zahřeje folikul. Proto si laser skvěle poradí s tmavými a hustými chloupky a zvládne velké plochy v jednom sezení: celé nohy asi za hodinu. V šedivých, zrzavých a světlých chmýřových chloupcích ale melanin téměř není — laser je prostě nevidí, ať uděláte sezení kolik chcete."},
+    {"h": "Elektrolýza pracuje s každým chloupkem zvlášť",
+     "p": "Do folikulu se zavádí velmi tenká jehla a výboj zničí růstovou zónu. Na barvě chloupku nezáleží — metoda funguje stejně na šedivých, světlých i chmýřových. Platí se za to časem: specialistka jde chloupek po chloupku, takže pro velké plochy je elektrolýza nepraktická, zato pro obličej, dvorce a jednotlivé chloupky je to jediný způsob, jak se jich zbavit natrvalo."},
+    {"h": "Obvyklá cesta — nejdřív laser, pak elektrolýza",
+     "p": "Nejprve kúra laserem: 6–8 sezení s odstupem 4–6 týdnů na těle a 3–4 týdny na obličeji. Odstraní 80–90 % chloupků. Zůstane to, co laser nebere: jednotlivé světlé a po kúře zesvětlené chloupky. Ty dořeší elektrolýza — už jen krátká sezení jednou za několik týdnů, ne nová velká kúra."},
+    {"h": "Co vám řekneme na konzultaci",
+     "p": "Díváme se na barvu a hustotu chloupků, typ pleti a hormonální pozadí — a na rovinu řekneme, co zvládne laser a co bude potřeba dodělat jehlou. Pokud máte chloupky světlé od začátku, kúru laserem vám prodávat nebudeme: byly by to vyhozené peníze. Počet sezení i odstupy se dozvíte dřív, než zaplatíte za první."}
+   ]
+  },
+  "en": {
+   "h": "Laser and electrolysis are not rivals",
+   "lead": "They are two different tools. Laser quickly clears the bulk of the hair; electrolysis finishes what laser cannot reach. The right answer is almost never “either, or” — it is “first one, then the other”.",
+   "items": [
+    {"h": "Laser sees pigment",
+     "p": "The beam is absorbed by the melanin inside the hair and heats the follicle. That is why laser handles dark, dense hair so well and covers large areas in one session: full legs take about an hour. Grey, red and fine light hair carries almost no melanin, so the laser simply does not see it, however many sessions you book."},
+    {"h": "Electrolysis treats every hair separately",
+     "p": "A very fine probe is placed into the follicle and a current destroys the growth zone. Hair colour is irrelevant — the method works the same on grey, blonde and vellus hair. You pay for that in time: the specialist works hair by hair, so electrolysis is impractical for large areas, while for the face, areolas and single stubborn hairs it is the only way to remove them permanently."},
+    {"h": "The usual route is laser first, electrolysis after",
+     "p": "Start with a laser course: 6–8 sessions, 4–6 weeks apart on the body and 3–4 weeks on the face. It removes 80–90 % of the hair. What remains is what the laser does not take: individual light hairs and hairs that lightened during the course. Electrolysis picks those up — short sessions every few weeks, not another long course."},
+    {"h": "What we will tell you at the consultation",
+     "p": "We look at hair colour and density, skin type and hormonal background, and tell you honestly what laser will do and what will have to be finished with a probe. If your hair is light to begin with, we will not sell you a laser course — that is money thrown away. You learn the number of sessions and the intervals before you pay for the first one."}
+   ]
+  },
+  "es": {
+   "h": "El láser y la electrólisis no compiten",
+   "lead": "Son dos herramientas distintas. El láser elimina rápido la mayor parte del vello; la electrólisis termina lo que el láser no alcanza. La respuesta correcta casi nunca es «uno u otro», sino «primero uno y después el otro».",
+   "items": [
+    {"h": "El láser ve el pigmento",
+     "p": "El haz lo absorbe la melanina del interior del vello y calienta el folículo. Por eso el láser funciona tan bien con el vello oscuro y denso y cubre zonas grandes en una sesión: las piernas enteras, alrededor de una hora. En las canas, el vello pelirrojo y el vello claro casi no hay melanina: el láser sencillamente no lo ve, por muchas sesiones que haga."},
+    {"h": "La electrólisis trata cada vello por separado",
+     "p": "Se introduce una aguja muy fina en el folículo y la descarga destruye la zona de crecimiento. El color del vello no importa: el método funciona igual en canas, vello rubio y vello fino. Se paga con tiempo: la especialista va vello a vello, así que para zonas grandes resulta poco práctica, mientras que para el rostro, las areolas y los vellos sueltos es la única forma de eliminarlos de forma definitiva."},
+    {"h": "El recorrido habitual: primero láser, después electrólisis",
+     "p": "Se empieza con un curso de láser: 6–8 sesiones cada 4–6 semanas en el cuerpo y cada 3–4 semanas en el rostro. Elimina entre el 80 y el 90 % del vello. Queda lo que el láser no toma: vellos claros sueltos y los que se aclararon durante el curso. De eso se encarga la electrólisis, con sesiones cortas cada pocas semanas, no con un curso largo nuevo."},
+    {"h": "Qué le diremos en la consulta",
+     "p": "Miramos el color y la densidad del vello, el tipo de piel y el fondo hormonal, y le decimos con franqueza qué hará el láser y qué habrá que terminar con aguja. Si su vello es claro desde el principio, no le venderemos un curso de láser: sería dinero tirado. El número de sesiones y los intervalos los sabrá antes de pagar la primera."}
+   ]
+  }
+ },
+ "choose": {
+  "ru": {
+   "h": "Как выбрать мастера по эпиляции",
+   "lead": "Хорошего мастера видно по вопросам, которые он задаёт вам, а не по фотографиям аппарата. Вот что стоит проверить до того, как вы ляжете на кушетку.",
+   "items": [
+    {"h": "Вас спрашивают о здоровье",
+     "p": "До первой вспышки мастер обязан спросить про гормональные нарушения, беременность, лекарства, которые вы принимаете, загар за последние две недели и реакции на прошлые процедуры. Если анкеты и разговора не было, а вас сразу зовут на кушетку — это не экономия вашего времени, это риск ожога."},
+    {"h": "Параметры подбирают под вас",
+     "p": "Одни и те же настройки для всех не работают: мощность зависит от фототипа кожи, толщины и цвета волоса, зоны и даже сезона. Спросите, какие параметры будут на вашей зоне и почему. Нормальный ответ звучит конкретно; «у нас стандартная программа» — повод насторожиться."},
+    {"h": "Вам называют число сеансов и интервалы",
+     "p": "До начала курса вы должны знать, сколько сеансов планируется, через сколько недель приходить и что будет, если пропустить. Обещание «уберём навсегда за три раза» — неправда: волосы растут циклами, и за один сеанс обрабатываются только те, что в фазе роста."},
+    {"h": "Показывают свои работы и говорят о неприятном",
+     "p": "Просите фотографии их собственных клиентов до и после, а не картинки от производителя. И слушайте, как описывают ощущения: честный мастер скажет, что на бикини и подмышках чувствительнее, что возможно покраснение на пару часов, и объяснит, чего делать нельзя в первые сутки."}
+   ]
+  },
+  "uk": {
+   "h": "Як обрати майстриню з епіляції",
+   "lead": "Хорошу майстриню видно за питаннями, які вона ставить вам, а не за фотографіями апарата. Ось що варто перевірити до того, як ви ляжете на кушетку.",
+   "items": [
+    {"h": "Вас питають про здоров'я",
+     "p": "До першого спалаху майстриня зобов'язана запитати про гормональні порушення, вагітність, ліки, які ви приймаєте, засмагу за останні два тижні й реакції на попередні процедури. Якщо анкети та розмови не було, а вас одразу кличуть на кушетку — це не економія вашого часу, це ризик опіку."},
+    {"h": "Параметри добирають під вас",
+     "p": "Однакові налаштування для всіх не працюють: потужність залежить від фототипу шкіри, товщини та кольору волосини, зони й навіть сезону. Запитайте, які параметри будуть на вашій зоні та чому. Нормальна відповідь звучить конкретно; «у нас стандартна програма» — привід насторожитися."},
+    {"h": "Вам називають кількість сеансів та інтервали",
+     "p": "До початку курсу ви маєте знати, скільки сеансів планується, через скільки тижнів приходити і що буде, якщо пропустити. Обіцянка «приберемо назавжди за три рази» — неправда: волосся росте циклами, і за один сеанс обробляються лише ті, що у фазі росту."},
+    {"h": "Показують свої роботи й говорять про неприємне",
+     "p": "Просіть фотографії їхніх власних клієнток до і після, а не картинки від виробника. І слухайте, як описують відчуття: чесна майстриня скаже, що на бікіні та під пахвами чутливіше, що можливе почервоніння на пару годин, і пояснить, чого не можна робити першу добу."}
+   ]
+  },
+  "cs": {
+   "h": "Jak si vybrat specialistku na epilaci",
+   "lead": "Dobrou specialistku poznáte podle otázek, které položí vám, ne podle fotek přístroje. Tohle si ověřte dřív, než si lehnete na lehátko.",
+   "items": [
+    {"h": "Ptají se vás na zdraví",
+     "p": "Před prvním zábleskem se vás specialistka musí zeptat na hormonální poruchy, těhotenství, léky, které užíváte, opalování za poslední dva týdny a reakce na předchozí ošetření. Pokud nebyl žádný dotazník ani rozhovor a rovnou vás zvou na lehátko, není to šetření vašeho času, ale riziko popálení."},
+    {"h": "Parametry nastavují podle vás",
+     "p": "Stejné nastavení pro všechny nefunguje: výkon závisí na fototypu pleti, síle a barvě chloupku, na ošetřované oblasti i na ročním období. Zeptejte se, jaké parametry použijí u vás a proč. Normální odpověď je konkrétní; „máme standardní program“ je důvod zbystřit."},
+    {"h": "Řeknou vám počet sezení i odstupy",
+     "p": "Před začátkem kúry máte vědět, kolik sezení se plánuje, za kolik týdnů přijít a co se stane, když termín vynecháte. Slib „zbavíme vás chloupků navždy za tři návštěvy“ není pravda: chloupky rostou v cyklech a při jednom sezení se ošetří jen ty ve fázi růstu."},
+    {"h": "Ukážou vlastní práci a mluví i o nepříjemném",
+     "p": "Chtějte fotky jejich vlastních klientek před a po, ne obrázky od výrobce. A poslouchejte, jak popisují pocity: poctivá specialistka řekne, že v tříslech a v podpaží je to citlivější, že zarudnutí na pár hodin je běžné, a vysvětlí, co první den nedělat."}
+   ]
+  },
+  "en": {
+   "h": "How to choose a hair-removal specialist",
+   "lead": "You recognise a good specialist by the questions they ask you, not by photos of the machine. Here is what to check before you lie down on the couch.",
+   "items": [
+    {"h": "They ask about your health",
+     "p": "Before the first pulse the specialist must ask about hormonal conditions, pregnancy, any medication you take, sun exposure in the past two weeks and reactions to previous treatments. If there was no form and no conversation and you are sent straight to the couch, that is not saving your time — it is a burn risk."},
+    {"h": "Settings are chosen for you",
+     "p": "One setting for everybody does not work: the energy depends on your skin phototype, on hair thickness and colour, on the area and even on the season. Ask which settings will be used on your area and why. A sound answer is specific; “we have a standard programme” is a reason to be wary."},
+    {"h": "You are told the number of sessions and the intervals",
+     "p": "Before the course starts you should know how many sessions are planned, how many weeks apart to come, and what happens if you miss one. A promise of “gone forever in three visits” is untrue: hair grows in cycles, and one session only treats the hairs currently in the growth phase."},
+    {"h": "They show their own work and mention the unpleasant parts",
+     "p": "Ask for before-and-after photos of their own clients, not pictures from the manufacturer. And listen to how they describe the sensation: an honest specialist will say that the bikini line and underarms are more sensitive, that redness for a couple of hours is normal, and will explain what not to do for the first day."}
+   ]
+  },
+  "es": {
+   "h": "Cómo elegir a la especialista en depilación",
+   "lead": "A una buena especialista se la reconoce por las preguntas que le hace a usted, no por las fotos del aparato. Esto conviene comprobarlo antes de tumbarse en la camilla.",
+   "items": [
+    {"h": "Le preguntan por su salud",
+     "p": "Antes del primer disparo, la especialista debe preguntar por alteraciones hormonales, embarazo, medicación que toma, exposición al sol en las últimas dos semanas y reacciones a tratamientos anteriores. Si no hubo cuestionario ni conversación y la llevan directa a la camilla, eso no es ahorrarle tiempo: es riesgo de quemadura."},
+    {"h": "Los parámetros se ajustan a usted",
+     "p": "Los mismos ajustes para todas no funcionan: la potencia depende del fototipo de piel, del grosor y el color del vello, de la zona e incluso de la época del año. Pregunte qué parámetros usarán en su zona y por qué. Una respuesta seria es concreta; «tenemos un programa estándar» es motivo para desconfiar."},
+    {"h": "Le dicen cuántas sesiones y cada cuánto",
+     "p": "Antes de empezar el curso debe saber cuántas sesiones se planean, cada cuántas semanas acudir y qué pasa si se salta una. La promesa de «se lo quitamos para siempre en tres veces» no es cierta: el vello crece por ciclos y en cada sesión solo se tratan los que están en fase de crecimiento."},
+    {"h": "Enseñan su propio trabajo y hablan también de lo incómodo",
+     "p": "Pida fotos de antes y después de sus propias clientas, no imágenes del fabricante. Y escuche cómo describen las sensaciones: una especialista honesta le dirá que la ingle y las axilas son más sensibles, que un enrojecimiento de un par de horas es normal, y le explicará qué no hacer el primer día."}
+   ]
+  }
+ }
+}

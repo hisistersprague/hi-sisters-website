@@ -1,0 +1,173 @@
+{
+ "_": "Топовые позиции: показываем первыми и помечаем значком. names — по продажам из СРМ за 12 месяцев (отчёт «движение товаров», расход), rules — указания Анны по брендам.",
+ "rules": [
+  {
+   "brand": "DSD",
+   "cat": [
+    "hair-wash"
+   ],
+   "why": "умывалки и шампуни DSD — указание Анны"
+  },
+  {
+   "brand": "Mediceuticals",
+   "cat": [
+    "hair-loss",
+    "hair-wash",
+    "hair-care"
+   ],
+   "why": "лечение кожи головы — указание Анны"
+  }
+ ],
+ "names": [
+  {
+   "brand": "Epilax",
+   "name": "SOS-пудра",
+   "sold": 171
+  },
+  {
+   "brand": "Epilax",
+   "name": "Epicalm",
+   "sold": 132
+  },
+  {
+   "brand": "Mediceuticals",
+   "name": "TheraRx",
+   "sold": 72
+  },
+  {
+   "brand": "Mediceuticals",
+   "name": "X-Folate",
+   "sold": 69
+  },
+  {
+   "brand": "Mediceuticals",
+   "name": "Набор X-Folate + Therapeutic + TheraRx",
+   "sold": 25
+  },
+  {
+   "brand": "Epilax",
+   "name": "Энзимная пудра",
+   "sold": 25
+  },
+  {
+   "brand": "Mediceuticals",
+   "name": "Therapeutic",
+   "sold": 21
+  },
+  {
+   "brand": "Bao-Med",
+   "name": "Bao-Med Hair · Skin · Nails",
+   "sold": 17
+  },
+  {
+   "brand": "Epilax",
+   "name": "Лосьон для тела с пептидами",
+   "sold": 16
+  },
+  {
+   "brand": "Happy Intim",
+   "name": "Cream Lightening",
+   "sold": 16
+  },
+  {
+   "brand": "Epilax",
+   "name": "Октенисепт",
+   "sold": 16
+  },
+  {
+   "brand": "Epilax",
+   "name": "Prebiotic Shower Gel",
+   "sold": 14
+  },
+  {
+   "brand": "Mediceuticals",
+   "name": "Folligen",
+   "sold": 13
+  },
+  {
+   "brand": "Mediceuticals",
+   "name": "Dual Moist",
+   "sold": 13
+  },
+  {
+   "brand": "DSD",
+   "name": "DSD 5.2.1 Botox Hair Therapy Balsam",
+   "sold": 10
+  },
+  {
+   "brand": "Happy Intim",
+   "name": "Body Butter",
+   "sold": 10
+  },
+  {
+   "brand": "Happy Intim",
+   "name": "Body Peel",
+   "sold": 10
+  },
+  {
+   "brand": "Epilax",
+   "name": "Enzyclean",
+   "sold": 10
+  },
+  {
+   "brand": "Mediceuticals",
+   "name": "Набор Saturate + Vitatin + Cellagen",
+   "sold": 8
+  },
+  {
+   "brand": "Epilax",
+   "name": "Epicalm",
+   "sold": 8
+  },
+  {
+   "brand": "DSD",
+   "name": "DSD 3.4.4 Capixyl + Placenta Shock",
+   "sold": 7
+  },
+  {
+   "brand": "DSD",
+   "name": "DSD 3.4.2 Crexepil Classic",
+   "sold": 7
+  },
+  {
+   "brand": "Mediceuticals",
+   "name": "Bioclenz",
+   "sold": 7
+  },
+  {
+   "brand": "Epilax",
+   "name": "Молочко для тела Bubble Gum SPF 15",
+   "sold": 7
+  },
+  {
+   "brand": "DSD",
+   "name": "DSD 1.3 Dixidox Peeling",
+   "sold": 6
+  },
+  {
+   "brand": "Mediceuticals",
+   "name": "Saturate",
+   "sold": 6
+  },
+  {
+   "brand": "Mediceuticals",
+   "name": "Solv-X",
+   "sold": 6
+  },
+  {
+   "brand": "DMK",
+   "name": "DMK Herb & Mineral Mist",
+   "sold": 6
+  },
+  {
+   "brand": "Epilax",
+   "name": "Интимная пенка с пробиотиком",
+   "sold": 6
+  },
+  {
+   "brand": "Happy Intim",
+   "name": "Happy Intim Rebirth Cream",
+   "sold": 6
+  }
+ ]
+}

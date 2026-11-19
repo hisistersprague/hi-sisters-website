@@ -1,0 +1,1399 @@
+{
+ "_": "Компоненты косметики: русский термин → uk, cs, en, es. Пустая строка = нет перевода.",
+ "plants": {
+  "ромашки": [
+   "ромашки",
+   "heřmánku",
+   "chamomile",
+   "manzanilla"
+  ],
+  "алоэ": [
+   "алое",
+   "aloe",
+   "aloe vera",
+   "aloe vera"
+  ],
+  "зеленого чая": [
+   "зеленого чаю",
+   "zeleného čaje",
+   "green tea",
+   "té verde"
+  ],
+  "зелёного чая": [
+   "зеленого чаю",
+   "zeleného čaje",
+   "green tea",
+   "té verde"
+  ],
+  "красного чая": [
+   "червоного чаю",
+   "rooibosu",
+   "red tea",
+   "té rojo"
+  ],
+  "граната": [
+   "гранату",
+   "granátového jablka",
+   "pomegranate",
+   "granada"
+  ],
+  "папайи": [
+   "папаї",
+   "papáji",
+   "papaya",
+   "papaya"
+  ],
+  "киви": [
+   "ківі",
+   "kiwi",
+   "kiwi",
+   "kiwi"
+  ],
+  "петрушки": [
+   "петрушки",
+   "petrželi",
+   "parsley",
+   "perejil"
+  ],
+  "липы": [
+   "липи",
+   "lípy",
+   "linden",
+   "tilo"
+  ],
+  "маки перуанской": [
+   "маки перуанської",
+   "peruánské maky",
+   "maca root",
+   "maca peruana"
+  ],
+  "центеллы азиатской": [
+   "центели азіатської",
+   "centelly asijské",
+   "centella asiatica",
+   "centella asiática"
+  ],
+  "коры белой ивы": [
+   "кори білої верби",
+   "kůry bílé vrby",
+   "white willow bark",
+   "corteza de sauce blanco"
+  ],
+  "коры ивы": [
+   "кори верби",
+   "vrbové kůry",
+   "willow bark",
+   "corteza de sauce"
+  ],
+  "солодки": [
+   "солодки",
+   "lékořice",
+   "licorice",
+   "regaliz"
+  ],
+  "корня солодки": [
+   "кореня солодки",
+   "kořene lékořice",
+   "licorice root",
+   "raíz de regaliz"
+  ],
+  "мыльнянки": [
+   "мильнянки",
+   "mydlice",
+   "soapwort",
+   "jabonera"
+  ],
+  "тимьяна": [
+   "чебрецю",
+   "tymiánu",
+   "thyme",
+   "tomillo"
+  ],
+  "шлемника байкальского": [
+   "шоломниці байкальської",
+   "šišáku bajkalského",
+   "baikal skullcap",
+   "escutelaria"
+  ],
+  "конского каштана": [
+   "кінського каштана",
+   "jírovce",
+   "horse chestnut",
+   "castaño de Indias"
+  ],
+  "виноградных косточек": [
+   "виноградних кісточок",
+   "hroznových jader",
+   "grape seed",
+   "semilla de uva"
+  ],
+  "черники": [
+   "чорниці",
+   "borůvky",
+   "bilberry",
+   "arándano"
+  ],
+  "черной смородины": [
+   "чорної смородини",
+   "černého rybízu",
+   "blackcurrant",
+   "grosella negra"
+  ],
+  "планктона": [
+   "планктону",
+   "planktonu",
+   "plankton",
+   "plancton"
+  ],
+  "спирулины": [
+   "спіруліни",
+   "spiruliny",
+   "spirulina",
+   "espirulina"
+  ],
+  "крапивы": [
+   "кропиви",
+   "kopřivy",
+   "nettle",
+   "ortiga"
+  ],
+  "шалфея": [
+   "шавлії",
+   "šalvěje",
+   "sage",
+   "salvia"
+  ],
+  "лопуха": [
+   "лопуха",
+   "lopuchu",
+   "burdock",
+   "bardana"
+  ],
+  "мяты перечной": [
+   "м'яти перцевої",
+   "máty peprné",
+   "peppermint",
+   "menta"
+  ],
+  "исландского мха": [
+   "ісландського моху",
+   "islandského lišejníku",
+   "iceland moss",
+   "musgo de Islandia"
+  ],
+  "куркумы": [
+   "куркуми",
+   "kurkumy",
+   "turmeric",
+   "cúrcuma"
+  ],
+  "гамамелиса": [
+   "гамамелісу",
+   "vilínu",
+   "witch hazel",
+   "hamamelis"
+  ],
+  "календулы": [
+   "календули",
+   "měsíčku",
+   "calendula",
+   "caléndula"
+  ],
+  "розмарина": [
+   "розмарину",
+   "rozmarýnu",
+   "rosemary",
+   "romero"
+  ],
+  "лаванды": [
+   "лаванди",
+   "levandule",
+   "lavender",
+   "lavanda"
+  ],
+  "облепихи": [
+   "обліпихи",
+   "rakytníku",
+   "sea buckthorn",
+   "espino amarillo"
+  ],
+  "авокадо": [
+   "авокадо",
+   "avokáda",
+   "avocado",
+   "aguacate"
+  ],
+  "жожоба": [
+   "жожоба",
+   "jojoby",
+   "jojoba",
+   "jojoba"
+  ],
+  "ши": [
+   "ши",
+   "bambucké",
+   "shea",
+   "karité"
+  ],
+  "кокоса": [
+   "кокоса",
+   "kokosu",
+   "coconut",
+   "coco"
+  ],
+  "оливы": [
+   "оливи",
+   "olivy",
+   "olive",
+   "oliva"
+  ],
+  "сладкого миндаля": [
+   "солодкого мигдалю",
+   "sladkých mandlí",
+   "sweet almond",
+   "almendras dulces"
+  ],
+  "бабассу": [
+   "бабасу",
+   "babassu",
+   "babassu",
+   "babasú"
+  ],
+  "герани": [
+   "герані",
+   "pelargonie",
+   "geranium",
+   "geranio"
+  ],
+  "чайного дерева": [
+   "чайного дерева",
+   "tea tree",
+   "tea tree",
+   "árbol de té"
+  ],
+  "семян подсолнечника": [
+   "насіння соняшнику",
+   "slunečnicových semen",
+   "sunflower seed",
+   "semilla de girasol"
+  ],
+  "семян манго": [
+   "насіння манго",
+   "mangových semen",
+   "mango seed",
+   "semilla de mango"
+  ],
+  "семян лугового пенника": [
+   "насіння лугового пінника",
+   "semen luční pěnice",
+   "meadowfoam seed",
+   "semilla de meadowfoam"
+  ],
+  "арганы": [
+   "аргани",
+   "arganu",
+   "argan",
+   "argán"
+  ],
+  "риса": [
+   "рису",
+   "rýže",
+   "rice",
+   "arroz"
+  ],
+  "пшеницы": [
+   "пшениці",
+   "pšenice",
+   "wheat",
+   "trigo"
+  ],
+  "сои": [
+   "сої",
+   "sóji",
+   "soy",
+   "soja"
+  ],
+  "красного клевера": [
+   "червоної конюшини",
+   "jetele lučního",
+   "red clover",
+   "trébol rojo"
+  ],
+  "шелка": [
+   "шовку",
+   "hedvábí",
+   "silk",
+   "seda"
+  ],
+  "конопли": [
+   "конопель",
+   "konopí",
+   "hemp",
+   "cáñamo"
+  ],
+  "миндаля": [
+   "мигдалю",
+   "mandlí",
+   "almond",
+   "almendra"
+  ]
+ },
+ "acids": {
+  "гиалуроновая": [
+   "гіалуронова",
+   "hyaluronová",
+   "hyaluronic",
+   "hialurónico"
+  ],
+  "салициловая": [
+   "саліцилова",
+   "salicylová",
+   "salicylic",
+   "salicílico"
+  ],
+  "гликолевая": [
+   "гліколева",
+   "glykolová",
+   "glycolic",
+   "glicólico"
+  ],
+  "гликолиевая": [
+   "гліколева",
+   "glykolová",
+   "glycolic",
+   "glicólico"
+  ],
+  "азелаиновая": [
+   "азелаїнова",
+   "azelaová",
+   "azelaic",
+   "azelaico"
+  ],
+  "молочная": [
+   "молочна",
+   "mléčná",
+   "lactic",
+   "láctico"
+  ],
+  "фитиновая": [
+   "фітинова",
+   "fytová",
+   "phytic",
+   "fítico"
+  ],
+  "таниновая": [
+   "танінова",
+   "tříslová",
+   "tannic",
+   "tánico"
+  ],
+  "феруловая": [
+   "ферулова",
+   "ferulová",
+   "ferulic",
+   "ferúlico"
+  ],
+  "лимонная": [
+   "лимонна",
+   "citronová",
+   "citric",
+   "cítrico"
+  ],
+  "l-аскорбиновая": [
+   "L-аскорбінова",
+   "L-askorbová",
+   "L-ascorbic",
+   "L-ascórbico"
+  ],
+  "аскорбиновая": [
+   "аскорбінова",
+   "askorbová",
+   "ascorbic",
+   "ascórbico"
+  ],
+  "альфа-липоевая": [
+   "альфа-ліпоєва",
+   "alfa-lipoová",
+   "alpha-lipoic",
+   "alfa-lipoico"
+  ],
+  "койевая": [
+   "коєва",
+   "kojová",
+   "kojic",
+   "kójico"
+  ],
+  "миндальная": [
+   "мигдалева",
+   "mandlová",
+   "mandelic",
+   "mandélico"
+  ],
+  "транексамовая": [
+   "транексамова",
+   "tranexamová",
+   "tranexamic",
+   "tranexámico"
+  ]
+ },
+ "simple": {
+  "бисаболол": [
+   "бісаболол",
+   "bisabolol",
+   "bisabolol",
+   "bisabolol"
+  ],
+  "альфа-бисаболол": [
+   "альфа-бісаболол",
+   "alfa-bisabolol",
+   "alpha-bisabolol",
+   "alfa-bisabolol"
+  ],
+  "ниацинамид": [
+   "ніацинамід",
+   "niacinamid",
+   "niacinamide",
+   "niacinamida"
+  ],
+  "д-пантенол": [
+   "Д-пантенол",
+   "D-panthenol",
+   "D-panthenol",
+   "D-pantenol"
+  ],
+  "пантенол": [
+   "пантенол",
+   "panthenol",
+   "panthenol",
+   "pantenol"
+  ],
+  "аллантоин": [
+   "алантоїн",
+   "alantoin",
+   "allantoin",
+   "alantoína"
+  ],
+  "сквалан": [
+   "сквалан",
+   "skvalan",
+   "squalane",
+   "escualano"
+  ],
+  "кофеин": [
+   "кофеїн",
+   "kofein",
+   "caffeine",
+   "cafeína"
+  ],
+  "коллаген": [
+   "колаген",
+   "kolagen",
+   "collagen",
+   "colágeno"
+  ],
+  "гидролизованный коллаген": [
+   "гідролізований колаген",
+   "hydrolyzovaný kolagen",
+   "hydrolysed collagen",
+   "colágeno hidrolizado"
+  ],
+  "эластин": [
+   "еластин",
+   "elastin",
+   "elastin",
+   "elastina"
+  ],
+  "ретинол": [
+   "ретинол",
+   "retinol",
+   "retinol",
+   "retinol"
+  ],
+  "all-trans ретинол": [
+   "all-trans ретинол",
+   "all-trans retinol",
+   "all-trans retinol",
+   "retinol all-trans"
+  ],
+  "ретинил пальмитат": [
+   "ретиніл пальмітат",
+   "retinyl palmitát",
+   "retinyl palmitate",
+   "palmitato de retinilo"
+  ],
+  "коэнзим q10": [
+   "коензим Q10",
+   "koenzym Q10",
+   "coenzyme Q10",
+   "coenzima Q10"
+  ],
+  "убихинон": [
+   "убіхінон",
+   "ubichinon",
+   "ubiquinone",
+   "ubiquinona"
+  ],
+  "глицин": [
+   "гліцин",
+   "glycin",
+   "glycine",
+   "glicina"
+  ],
+  "таурин": [
+   "таурин",
+   "taurin",
+   "taurine",
+   "taurina"
+  ],
+  "бетаин": [
+   "бетаїн",
+   "betain",
+   "betaine",
+   "betaína"
+  ],
+  "сорбитол": [
+   "сорбітол",
+   "sorbitol",
+   "sorbitol",
+   "sorbitol"
+  ],
+  "глицерин": [
+   "гліцерин",
+   "glycerin",
+   "glycerin",
+   "glicerina"
+  ],
+  "мочевина": [
+   "сечовина",
+   "urea",
+   "urea",
+   "urea"
+  ],
+  "арбутин": [
+   "арбутин",
+   "arbutin",
+   "arbutin",
+   "arbutina"
+  ],
+  "альфа-арбутин": [
+   "альфа-арбутин",
+   "alfa-arbutin",
+   "alpha-arbutin",
+   "alfa-arbutina"
+  ],
+  "гексилрезорцинол": [
+   "гексилрезорцинол",
+   "hexylresorcinol",
+   "hexylresorcinol",
+   "hexilresorcinol"
+  ],
+  "троксерутин": [
+   "троксерутин",
+   "troxerutin",
+   "troxerutin",
+   "troxerutina"
+  ],
+  "хризин": [
+   "хризин",
+   "chrysin",
+   "chrysin",
+   "crisina"
+  ],
+  "каламин": [
+   "каламін",
+   "kalamín",
+   "calamine",
+   "calamina"
+  ],
+  "камфора": [
+   "камфора",
+   "kafr",
+   "camphor",
+   "alcanfor"
+  ],
+  "сера": [
+   "сірка",
+   "síra",
+   "sulphur",
+   "azufre"
+  ],
+  "сульфур": [
+   "сірка",
+   "síra",
+   "sulphur",
+   "azufre"
+  ],
+  "кремний": [
+   "кремній",
+   "křemík",
+   "silicon",
+   "silicio"
+  ],
+  "цинк": [
+   "цинк",
+   "zinek",
+   "zinc",
+   "zinc"
+  ],
+  "оксид цинка": [
+   "оксид цинку",
+   "oxid zinečnatý",
+   "zinc oxide",
+   "óxido de zinc"
+  ],
+  "диоксид титана": [
+   "діоксид титану",
+   "oxid titaničitý",
+   "titanium dioxide",
+   "dióxido de titanio"
+  ],
+  "авобензон": [
+   "авобензон",
+   "avobenzon",
+   "avobenzone",
+   "avobenzona"
+  ],
+  "фитомеланин": [
+   "фітомеланін",
+   "fytomelanin",
+   "phytomelanin",
+   "fitomelanina"
+  ],
+  "ментол": [
+   "ментол",
+   "mentol",
+   "menthol",
+   "mentol"
+  ],
+  "dmae": [
+   "DMAE",
+   "DMAE",
+   "DMAE",
+   "DMAE"
+  ],
+  "msm": [
+   "MSM",
+   "MSM",
+   "MSM",
+   "MSM"
+  ],
+  "метилсульфонилметан (msm)": [
+   "метилсульфонілметан (MSM)",
+   "methylsulfonylmethan (MSM)",
+   "methylsulfonylmethane (MSM)",
+   "metilsulfonilmetano (MSM)"
+  ],
+  "изофлавоны": [
+   "ізофлавони",
+   "izoflavony",
+   "isoflavones",
+   "isoflavonas"
+  ],
+  "керамиды": [
+   "керaміди",
+   "ceramidy",
+   "ceramides",
+   "ceramidas"
+  ],
+  "церамиды": [
+   "кераміди",
+   "ceramidy",
+   "ceramides",
+   "ceramidas"
+  ],
+  "пептиды": [
+   "пептиди",
+   "peptidy",
+   "peptides",
+   "péptidos"
+  ],
+  "антивозрастные пептиды": [
+   "антивікові пептиди",
+   "anti-age peptidy",
+   "anti-ageing peptides",
+   "péptidos antiedad"
+  ],
+  "полинуклеотиды": [
+   "полінуклеотиди",
+   "polynukleotidy",
+   "polynucleotides",
+   "polinucleótidos"
+  ],
+  "аденозин": [
+   "аденозин",
+   "adenosin",
+   "adenosine",
+   "adenosina"
+  ],
+  "экдистерон": [
+   "екдистерон",
+   "ekdysteron",
+   "ecdysterone",
+   "ecdisterona"
+  ],
+  "биотин": [
+   "біотин",
+   "biotin",
+   "biotin",
+   "biotina"
+  ],
+  "кератин": [
+   "кератин",
+   "keratin",
+   "keratin",
+   "queratina"
+  ],
+  "аргинин": [
+   "аргінін",
+   "arginin",
+   "arginine",
+   "arginina"
+  ],
+  "гиалуронат натрия": [
+   "гіалуронат натрію",
+   "hyaluronan sodný",
+   "sodium hyaluronate",
+   "hialuronato de sodio"
+  ],
+  "гиалуронат na": [
+   "гіалуронат натрію",
+   "hyaluronan sodný",
+   "sodium hyaluronate",
+   "hialuronato de sodio"
+  ],
+  "глицирризинат калия": [
+   "гліциризинат калію",
+   "glycyrrhizinát draselný",
+   "potassium glycyrrhizinate",
+   "glicirricinato de potasio"
+  ],
+  "незаменимые жирные кислоты": [
+   "незамінні жирні кислоти",
+   "esenciální mastné kyseliny",
+   "essential fatty acids",
+   "ácidos grasos esenciales"
+  ],
+  "аминокислоты": [
+   "амінокислоти",
+   "aminokyseliny",
+   "amino acids",
+   "aminoácidos"
+  ],
+  "мелатонин": [
+   "мелатонін",
+   "melatonin",
+   "melatonin",
+   "melatonina"
+  ],
+  "экдизон": [
+   "екдизон",
+   "ekdyson",
+   "ecdysone",
+   "ecdisona"
+  ],
+  "азелоглицин": [
+   "азелогліцин",
+   "azeloglycin",
+   "azeloglycine",
+   "azeloglicina"
+  ],
+  "пребиотики": [
+   "пребіотики",
+   "prebiotika",
+   "prebiotics",
+   "prebióticos"
+  ],
+  "пробиотики": [
+   "пробіотики",
+   "probiotika",
+   "probiotics",
+   "probióticos"
+  ],
+  "гидролизованные протеины": [
+   "гідролізовані протеїни",
+   "hydrolyzované proteiny",
+   "hydrolysed proteins",
+   "proteínas hidrolizadas"
+  ],
+  "стволовые клетки": [
+   "стовбурові клітини",
+   "kmenové buňky",
+   "stem cells",
+   "células madre"
+  ],
+  "экзосомы": [
+   "екзосоми",
+   "exozomy",
+   "exosomes",
+   "exosomas"
+  ],
+  "медь": [
+   "мідь",
+   "měď",
+   "copper",
+   "cobre"
+  ],
+  "магний": [
+   "магній",
+   "hořčík",
+   "magnesium",
+   "magnesio"
+  ],
+  "селен": [
+   "селен",
+   "selen",
+   "selenium",
+   "selenio"
+  ]
+ },
+ "vitamins": {
+  "а": [
+   "А",
+   "A",
+   "A",
+   "A"
+  ],
+  "е": [
+   "Е",
+   "E",
+   "E",
+   "E"
+  ],
+  "с": [
+   "С",
+   "C",
+   "C",
+   "C"
+  ],
+  "b5": [
+   "B5",
+   "B5",
+   "B5",
+   "B5"
+  ],
+  "b3": [
+   "B3",
+   "B3",
+   "B3",
+   "B3"
+  ],
+  "f": [
+   "F",
+   "F",
+   "F",
+   "F"
+  ],
+  "а и е": [
+   "А і Е",
+   "A a E",
+   "A and E",
+   "A y E"
+  ]
+ },
+ "heads": {
+  "экстракт": [
+   "екстракт",
+   "extrakt z",
+   "extract",
+   "extracto de"
+  ],
+  "экстракты": [
+   "екстракти",
+   "extrakty z",
+   "extracts",
+   "extractos de"
+  ],
+  "масло": [
+   "олія",
+   "olej z",
+   "oil",
+   "aceite de"
+  ],
+  "эфирное масло": [
+   "ефірна олія",
+   "esenciální olej z",
+   "essential oil",
+   "aceite esencial de"
+  ],
+  "эфирные масла": [
+   "ефірні олії",
+   "esenciální oleje z",
+   "essential oils",
+   "aceites esenciales de"
+  ],
+  "протеины": [
+   "протеїни",
+   "proteiny z",
+   "proteins",
+   "proteínas de"
+  ],
+  "сок листьев": [
+   "сік листя",
+   "šťáva z listů",
+   "leaf juice",
+   "jugo de hojas de"
+  ],
+  "витамин": [
+   "вітамін",
+   "vitamin",
+   "vitamin",
+   "vitamina"
+  ],
+  "витамины": [
+   "вітаміни",
+   "vitaminy",
+   "vitamins",
+   "vitaminas"
+  ],
+  "кислота": [
+   "кислота",
+   "kyselina",
+   "acid",
+   "ácido"
+  ],
+  "кислоты": [
+   "кислоти",
+   "kyseliny",
+   "acids",
+   "ácidos"
+  ]
+ },
+ "orising": {
+  "екстракт лопуха": [
+   "Экстракт лопуха",
+   "Екстракт лопуха",
+   "Extrakt z lopuchu",
+   "Burdock extract",
+   "Extracto de bardana"
+  ],
+  "екстракт кореня лопуха": [
+   "Экстракт корня лопуха",
+   "Екстракт кореня лопуха",
+   "Extrakt z kořene lopuchu",
+   "Burdock root extract",
+   "Extracto de raíz de bardana"
+  ],
+  "олія перцевої м'яти": [
+   "Масло перечной мяты",
+   "Олія перцевої м'яти",
+   "Olej z máty peprné",
+   "Peppermint oil",
+   "Aceite de menta"
+  ],
+  "ефірна олія м’яти перцевої": [
+   "Эфирное масло перечной мяты",
+   "Ефірна олія м'яти перцевої",
+   "Esenciální olej z máty peprné",
+   "Peppermint essential oil",
+   "Aceite esencial de menta"
+  ],
+  "олія м’яти": [
+   "Масло мяты",
+   "Олія м'яти",
+   "Olej z máty",
+   "Mint oil",
+   "Aceite de menta"
+  ],
+  "перцева м'ята": [
+   "Перечная мята",
+   "Перцева м'ята",
+   "Máta peprná",
+   "Peppermint",
+   "Menta piperita"
+  ],
+  "екстракт яблука": [
+   "Экстракт яблока",
+   "Екстракт яблука",
+   "Extrakt z jablka",
+   "Apple extract",
+   "Extracto de manzana"
+  ],
+  "гідролізат винограду": [
+   "Гидролизат винограда",
+   "Гідролізат винограду",
+   "Hydrolyzát z hroznů",
+   "Grape hydrolysate",
+   "Hidrolizado de uva"
+  ],
+  "екстракт листя мучниці": [
+   "Экстракт толокнянки",
+   "Екстракт мучниці",
+   "Extrakt z medvědice",
+   "Bearberry extract",
+   "Extracto de gayuba"
+  ],
+  "екстракт лимона": [
+   "Экстракт лимона",
+   "Екстракт лимона",
+   "Extrakt z citronu",
+   "Lemon extract",
+   "Extracto de limón"
+  ],
+  "олія чайного дерева": [
+   "Масло чайного дерева",
+   "Олія чайного дерева",
+   "Tea tree olej",
+   "Tea tree oil",
+   "Aceite de árbol de té"
+  ],
+  "екстракт мати": [
+   "Экстракт мать-и-мачехи",
+   "Екстракт мати-й-мачухи",
+   "Extrakt z podbělu",
+   "Coltsfoot extract",
+   "Extracto de tusilago"
+  ],
+  "екстракт кори хінного дерева": [
+   "Экстракт коры хинного дерева",
+   "Екстракт кори хінного дерева",
+   "Extrakt z chinovníkové kůry",
+   "Cinchona bark extract",
+   "Extracto de corteza de quina"
+  ],
+  "порошок кісточок абрикоса": [
+   "Порошок абрикосовых косточек",
+   "Порошок кісточок абрикоса",
+   "Prášek z meruňkových jader",
+   "Apricot kernel powder",
+   "Polvo de hueso de albaricoque"
+  ],
+  "екстракт ромашки": [
+   "Экстракт ромашки",
+   "Екстракт ромашки",
+   "Extrakt z heřmánku",
+   "Chamomile extract",
+   "Extracto de manzanilla"
+  ],
+  "деревій": [
+   "Тысячелистник",
+   "Деревій",
+   "Řebříček",
+   "Yarrow",
+   "Milenrama"
+  ],
+  "екстракт лісової мальви": [
+   "Экстракт лесной мальвы",
+   "Екстракт лісової мальви",
+   "Extrakt ze slézu",
+   "Mallow extract",
+   "Extracto de malva"
+  ],
+  "екстракт звіробою": [
+   "Экстракт зверобоя",
+   "Екстракт звіробою",
+   "Extrakt z třezalky",
+   "St John's wort extract",
+   "Extracto de hipérico"
+  ],
+  "екстракт кропиви": [
+   "Экстракт крапивы",
+   "Екстракт кропиви",
+   "Extrakt z kopřivy",
+   "Nettle extract",
+   "Extracto de ortiga"
+  ],
+  "екстракт моркви": [
+   "Экстракт моркови",
+   "Екстракт моркви",
+   "Extrakt z mrkve",
+   "Carrot extract",
+   "Extracto de zanahoria"
+  ],
+  "екстракт лаванди": [
+   "Экстракт лаванды",
+   "Екстракт лаванди",
+   "Extrakt z levandule",
+   "Lavender extract",
+   "Extracto de lavanda"
+  ],
+  "лаванда": [
+   "Лаванда",
+   "Лаванда",
+   "Levandule",
+   "Lavender",
+   "Lavanda"
+  ],
+  "рисовий екстракт": [
+   "Экстракт риса",
+   "Екстракт рису",
+   "Extrakt z rýže",
+   "Rice extract",
+   "Extracto de arroz"
+  ],
+  "просо звичайне": [
+   "Просо",
+   "Просо звичайне",
+   "Proso",
+   "Millet",
+   "Mijo"
+  ],
+  "яблуня садова": [
+   "Стволовые клетки яблони",
+   "Стовбурові клітини яблуні",
+   "Kmenové buňky jabloně",
+   "Apple stem cells",
+   "Células madre de manzana"
+  ],
+  "стовбурові клітини яблуні": [
+   "Стволовые клетки яблони",
+   "Стовбурові клітини яблуні",
+   "Kmenové buňky jabloně",
+   "Apple stem cells",
+   "Células madre de manzana"
+  ],
+  "екстракт зеленого чаю": [
+   "Экстракт зелёного чая",
+   "Екстракт зеленого чаю",
+   "Extrakt ze zeleného čaje",
+   "Green tea extract",
+   "Extracto de té verde"
+  ],
+  "олія шавлії лікарської": [
+   "Масло шалфея",
+   "Олія шавлії лікарської",
+   "Šalvějový olej",
+   "Sage oil",
+   "Aceite de salvia"
+  ],
+  "екстракт шавлії лікарської": [
+   "Экстракт шалфея",
+   "Екстракт шавлії лікарської",
+   "Extrakt ze šalvěje",
+   "Sage extract",
+   "Extracto de salvia"
+  ],
+  "екстракт гінко білоба": [
+   "Экстракт гинкго билоба",
+   "Екстракт гінкго білоба",
+   "Extrakt z ginkgo biloba",
+   "Ginkgo biloba extract",
+   "Extracto de ginkgo biloba"
+  ],
+  "бузок звичайний": [
+   "Экстракт сирени",
+   "Екстракт бузку",
+   "Extrakt ze šeříku",
+   "Lilac extract",
+   "Extracto de lila"
+  ],
+  "ефірна олія мандарина": [
+   "Эфирное масло мандарина",
+   "Ефірна олія мандарина",
+   "Esenciální olej z mandarinky",
+   "Mandarin essential oil",
+   "Aceite esencial de mandarina"
+  ],
+  "чебрець": [
+   "Тимьян",
+   "Чебрець",
+   "Tymián",
+   "Thyme",
+   "Tomillo"
+  ],
+  "ісландський лишайник (мох)": [
+   "Исландский мох",
+   "Ісландський мох",
+   "Islandský lišejník",
+   "Iceland moss",
+   "Musgo de Islandia"
+  ],
+  "екстракт ісландського моху ( лишайника )": [
+   "Экстракт исландского мха",
+   "Екстракт ісландського моху",
+   "Extrakt z islandského lišejníku",
+   "Iceland moss extract",
+   "Extracto de musgo de Islandia"
+  ],
+  "біла глина": [
+   "Белая глина",
+   "Біла глина",
+   "Bílý jíl",
+   "White clay",
+   "Arcilla blanca"
+  ],
+  "масло андироба": [
+   "Масло андиробы",
+   "Олія андіроби",
+   "Andirobový olej",
+   "Andiroba oil",
+   "Aceite de andiroba"
+  ],
+  "кокосове масло": [
+   "Кокосовое масло",
+   "Кокосова олія",
+   "Kokosový olej",
+   "Coconut oil",
+   "Aceite de coco"
+  ],
+  "екстракт вівса": [
+   "Экстракт овса",
+   "Екстракт вівса",
+   "Extrakt z ovsa",
+   "Oat extract",
+   "Extracto de avena"
+  ],
+  "протеїни рису": [
+   "Протеины риса",
+   "Протеїни рису",
+   "Rýžové proteiny",
+   "Rice proteins",
+   "Proteínas de arroz"
+  ],
+  "рисовий протеїн": [
+   "Протеины риса",
+   "Протеїни рису",
+   "Rýžové proteiny",
+   "Rice proteins",
+   "Proteínas de arroz"
+  ],
+  "протеїни мигдалю": [
+   "Протеины миндаля",
+   "Протеїни мигдалю",
+   "Mandlové proteiny",
+   "Almond proteins",
+   "Proteínas de almendra"
+  ],
+  "протеїни солодкого мигдалю": [
+   "Протеины сладкого миндаля",
+   "Протеїни солодкого мигдалю",
+   "Proteiny ze sladkých mandlí",
+   "Sweet almond proteins",
+   "Proteínas de almendra dulce"
+  ],
+  "екстракт вівсяних висівок": [
+   "Экстракт овсяных отрубей",
+   "Екстракт вівсяних висівок",
+   "Extrakt z ovesných otrub",
+   "Oat bran extract",
+   "Extracto de salvado de avena"
+  ],
+  "екстракт бавовника": [
+   "Экстракт хлопка",
+   "Екстракт бавовника",
+   "Extrakt z bavlníku",
+   "Cotton extract",
+   "Extracto de algodón"
+  ],
+  "екстракт алое": [
+   "Экстракт алоэ",
+   "Екстракт алое",
+   "Extrakt z aloe",
+   "Aloe extract",
+   "Extracto de aloe"
+  ],
+  "алое вера": [
+   "Алоэ вера",
+   "Алое вера",
+   "Aloe vera",
+   "Aloe vera",
+   "Aloe vera"
+  ],
+  "heliogenol": [
+   "Heliogenol — экстракт семян подсолнечника",
+   "Heliogenol — екстракт насіння соняшнику",
+   "Heliogenol — extrakt ze slunečnicových semen",
+   "Heliogenol — sunflower seed extract",
+   "Heliogenol — extracto de semilla de girasol"
+  ],
+  "екстракт ламінарії": [
+   "Экстракт ламинарии",
+   "Екстракт ламінарії",
+   "Extrakt z chaluhy",
+   "Kelp extract",
+   "Extracto de laminaria"
+  ],
+  "арганова олія": [
+   "Аргановое масло",
+   "Арганова олія",
+   "Arganový olej",
+   "Argan oil",
+   "Aceite de argán"
+  ],
+  "екстракт лічі": [
+   "Экстракт личи",
+   "Екстракт лічі",
+   "Extrakt z liči",
+   "Lychee extract",
+   "Extracto de lichi"
+  ],
+  "хвоща польового": [
+   "Экстракт полевого хвоща",
+   "Екстракт хвоща польового",
+   "Extrakt z přesličky",
+   "Horsetail extract",
+   "Extracto de cola de caballo"
+  ],
+  "протеїни пшениці": [
+   "Протеины пшеницы",
+   "Протеїни пшениці",
+   "Pšeničné proteiny",
+   "Wheat proteins",
+   "Proteínas de trigo"
+  ],
+  "екстракт гранату": [
+   "Экстракт граната",
+   "Екстракт гранату",
+   "Extrakt z granátového jablka",
+   "Pomegranate extract",
+   "Extracto de granada"
+  ],
+  "екстракт опунцій, зібраних виключно на сицилії": [
+   "Экстракт сицилийской опунции",
+   "Екстракт сицилійської опунції",
+   "Extrakt z opuncie",
+   "Prickly pear extract",
+   "Extracto de higo chumbo"
+  ]
+ },
+ "dsd": {
+  "capixyl": [
+   "Capixyl, экстракт плаценты",
+   "Capixyl, екстракт плаценти",
+   "Capixyl, placentární extrakt",
+   "Capixyl, placenta extract",
+   "Capixyl, extracto de placenta"
+  ],
+  "royal": [
+   "Маточное молочко, кислородный комплекс Green O2",
+   "Маточне молочко, кисневий комплекс Green O2",
+   "Mateří kašička, kyslíkový komplex Green O2",
+   "Royal jelly, Green O2 oxygen complex",
+   "Jalea real, complejo de oxígeno Green O2"
+  ],
+  "keratin": [
+   "Кератин",
+   "Кератин",
+   "Keratin",
+   "Keratin",
+   "Queratina"
+  ],
+  "freshcells": [
+   "Растительные стволовые клетки",
+   "Рослинні стовбурові клітини",
+   "Rostlinné kmenové buňky",
+   "Plant stem cells",
+   "Células madre vegetales"
+  ],
+  "oils": [
+   "Комплекс эфирных масел",
+   "Комплекс ефірних олій",
+   "Komplex esenciálních olejů",
+   "Essential oil complex",
+   "Complejo de aceites esenciales"
+  ],
+  "melatonin": [
+   "Аминопиррол, мелатонин",
+   "Амінопірол, мелатонін",
+   "Aminopyrrol, melatonin",
+   "Aminopyrrole, melatonin",
+   "Aminopirrol, melatonina"
+  ],
+  "exosomes": [
+   "Экзосомы, факторы роста",
+   "Екзосоми, фактори росту",
+   "Exozomy, růstové faktory",
+   "Exosomes, growth factors",
+   "Exosomas, factores de crecimiento"
+  ]
+ }
+}

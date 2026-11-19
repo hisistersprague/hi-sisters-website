@@ -1,0 +1,1736 @@
+[
+ {
+  "crm": 230,
+  "brand": "DSD",
+  "name": "DSD 2.1 Antidandruff Shampoo",
+  "volume": "200 ml",
+  "price": 800,
+  "cat": "hair-wash",
+  "stock": "pre",
+  "img": "dsd-2-1-antidandruff.jpg",
+  "desc": {
+   "ru": "Шампунь — против перхоти",
+   "uk": "Шампунь — проти лупи",
+   "cs": "Šampon — proti lupům",
+   "en": "Shampoo — anti-dandruff",
+   "es": "Champú — anticaspa"
+  }
+ },
+ {
+  "crm": 231,
+  "brand": "DSD",
+  "name": "DSD 3.4.3A Fresh Cells Wondercell",
+  "volume": "10 ml",
+  "price": 1300,
+  "cat": "hair-loss",
+  "stock": "pre",
+  "img": "dsd-3-4-3a-wondercell.jpg",
+  "desc": {
+   "ru": "Лосьон — против выпадения волос",
+   "uk": "Лосьйон — проти випадіння волосся",
+   "cs": "Lotion — proti vypadávání vlasů",
+   "en": "Lotion — against hair loss",
+   "es": "Loción — anticaída del cabello"
+  }
+ },
+ {
+  "crm": 238,
+  "brand": "DSD",
+  "name": "DSD 4.1 Keratin Treatment Shampoo",
+  "volume": "500 ml",
+  "price": 1200,
+  "cat": "hair-wash",
+  "stock": "in",
+  "img": "dsd-4-1-keratin-shampoo.jpg",
+  "desc": {
+   "ru": "Шампунь — восстановление и кератиновый уход",
+   "uk": "Шампунь — відновлення та кератиновий догляд",
+   "cs": "Šampon — regenerace a keratinová péče",
+   "en": "Shampoo — repair and keratin care",
+   "es": "Champú — reparación y cuidado con queratina"
+  }
+ },
+ {
+  "crm": 232,
+  "brand": "DSD",
+  "name": "DSD 4.1.1 Violet Shampoo",
+  "volume": "500 ml",
+  "price": 1200,
+  "cat": "hair-wash",
+  "stock": "pre",
+  "img": "",
+  "desc": {
+   "ru": "Шампунь — защита и гладкость волос",
+   "uk": "Шампунь — захист і гладкість волосся",
+   "cs": "Šampon — ochrana a hladkost vlasů",
+   "en": "Shampoo — protection and smoothness",
+   "es": "Champú — protección y suavidad"
+  }
+ },
+ {
+  "crm": 233,
+  "brand": "DSD",
+  "name": "DSD 4.1 Keratin Treatment Shampoo",
+  "volume": "200 ml",
+  "price": 800,
+  "cat": "hair-wash",
+  "stock": "pre",
+  "img": "dsd-4-1-keratin-shampoo.jpg",
+  "desc": {
+   "ru": "Шампунь — восстановление и кератиновый уход",
+   "uk": "Шампунь — відновлення та кератиновий догляд",
+   "cs": "Šampon — regenerace a keratinová péče",
+   "en": "Shampoo — repair and keratin care",
+   "es": "Champú — reparación y cuidado con queratina"
+  }
+ },
+ {
+  "crm": 241,
+  "brand": "DSD",
+  "name": "DSD 4.4.1 Lotion",
+  "volume": "150 ml",
+  "price": 1000,
+  "cat": "hair-loss",
+  "stock": "in",
+  "img": "",
+  "desc": {
+   "ru": "Лосьон — уход за кожей головы",
+   "uk": "Лосьйон — догляд за шкірою голови",
+   "cs": "Lotion — péče o pokožku hlavy",
+   "en": "Lotion — scalp care",
+   "es": "Loción — cuidado del cuero cabelludo"
+  }
+ },
+ {
+  "crm": 236,
+  "brand": "DSD",
+  "name": "DSD 3.4.1 Crexepil Forte",
+  "volume": "10 ml × 10",
+  "price": 1100,
+  "cat": "hair-loss",
+  "stock": "pre",
+  "img": "dsd-3-4-1-crexepil-forte.jpg",
+  "desc": {
+   "ru": "Лосьон — против выпадения волос",
+   "uk": "Лосьйон — проти випадіння волосся",
+   "cs": "Lotion — proti vypadávání vlasů",
+   "en": "Lotion — against hair loss",
+   "es": "Loción — anticaída del cabello"
+  }
+ },
+ {
+  "crm": 235,
+  "brand": "DSD",
+  "name": "DSD 3.4.5A Science-7",
+  "volume": "35 ml × 3",
+  "price": 1600,
+  "cat": "hair-loss",
+  "stock": "in",
+  "img": "dsd-science-7.jpg",
+  "desc": {
+   "ru": "Лосьон — против выпадения волос",
+   "uk": "Лосьйон — проти випадіння волосся",
+   "cs": "Lotion — proti vypadávání vlasů",
+   "en": "Lotion — against hair loss",
+   "es": "Loción — anticaída del cabello"
+  }
+ },
+ {
+  "crm": 234,
+  "brand": "DSD",
+  "name": "DSD 3.4.5B Essential Oil",
+  "volume": "35 ml",
+  "price": 1000,
+  "cat": "hair-loss",
+  "stock": "pre",
+  "img": "",
+  "desc": {
+   "ru": "Масло — уход за кожей головы",
+   "uk": "Олія — догляд за шкірою голови",
+   "cs": "Olej — péče o pokožku hlavy",
+   "en": "Oil — scalp care",
+   "es": "Aceite — cuidado del cuero cabelludo"
+  }
+ },
+ {
+  "crm": 237,
+  "brand": "DSD",
+  "name": "DSD 4.2 Triple Action Conditioner",
+  "volume": "500 ml",
+  "price": 1200,
+  "cat": "hair-care",
+  "stock": "pre",
+  "img": "dsd-4-2-triple-conditioner.jpg",
+  "desc": {
+   "ru": "Кондиционер — восстановление и кератиновый уход",
+   "uk": "Кондиціонер — відновлення та кератиновий догляд",
+   "cs": "Kondicionér — regenerace a keratinová péče",
+   "en": "Conditioner — repair and keratin care",
+   "es": "Acondicionador — reparación y cuidado con queratina"
+  }
+ },
+ {
+  "crm": 208,
+  "brand": "DSD",
+  "name": "DSD 4.2 Triple Action Conditioner",
+  "volume": "200 ml",
+  "price": 800,
+  "cat": "hair-care",
+  "stock": "in",
+  "img": "dsd-4-2-triple-conditioner.jpg",
+  "desc": {
+   "ru": "Кондиционер — восстановление и кератиновый уход",
+   "uk": "Кондиціонер — відновлення та кератиновий догляд",
+   "cs": "Kondicionér — regenerace a keratinová péče",
+   "en": "Conditioner — repair and keratin care",
+   "es": "Acondicionador — reparación y cuidado con queratina"
+  }
+ },
+ {
+  "crm": 209,
+  "brand": "DSD",
+  "name": "DSD 4.3 Keratin Treatment Mask",
+  "volume": "200 ml",
+  "price": 1200,
+  "cat": "hair-care",
+  "stock": "in",
+  "img": "dsd-4-3-keratin-mask.jpg",
+  "desc": {
+   "ru": "Маска — восстановление и кератиновый уход",
+   "uk": "Маска — відновлення та кератиновий догляд",
+   "cs": "Maska — regenerace a keratinová péče",
+   "en": "Mask — repair and keratin care",
+   "es": "Mascarilla — reparación y cuidado con queratina"
+  }
+ },
+ {
+  "crm": 229,
+  "brand": "DSD",
+  "name": "DSD 4.3 Keratin Treatment Mask",
+  "volume": "50 ml",
+  "price": 300,
+  "cat": "hair-care",
+  "stock": "in",
+  "img": "dsd-4-3-keratin-mask.jpg",
+  "desc": {
+   "ru": "Маска — восстановление и кератиновый уход",
+   "uk": "Маска — відновлення та кератиновий догляд",
+   "cs": "Maska — regenerace a keratinová péče",
+   "en": "Mask — repair and keratin care",
+   "es": "Mascarilla — reparación y cuidado con queratina"
+  }
+ },
+ {
+  "crm": 210,
+  "brand": "DSD",
+  "name": "DSD 5.2.1 Botox Hair Therapy Balsam",
+  "volume": "150 ml",
+  "price": 900,
+  "cat": "hair-care",
+  "stock": "pre",
+  "img": "dsd-5-2-1-botox-balsam.jpg",
+  "desc": {
+   "ru": "Бальзам — защита и гладкость волос",
+   "uk": "Бальзам — захист і гладкість волосся",
+   "cs": "Balzám — ochrana a hladkost vlasů",
+   "en": "Balm — protection and smoothness",
+   "es": "Bálsamo — protección y suavidad"
+  }
+ },
+ {
+  "crm": 156,
+  "brand": "DSD",
+  "name": "DSD 3.4.4 Capixyl + Placenta Shock",
+  "volume": "100 ml",
+  "price": 1000,
+  "cat": "hair-loss",
+  "stock": "in",
+  "img": "dsd-3-4-4-capixyl.jpg",
+  "desc": {
+   "ru": "Лосьон — против выпадения волос",
+   "uk": "Лосьйон — проти випадіння волосся",
+   "cs": "Lotion — proti vypadávání vlasů",
+   "en": "Lotion — against hair loss",
+   "es": "Loción — anticaída del cabello"
+  }
+ },
+ {
+  "crm": 155,
+  "brand": "DSD",
+  "name": "DSD 3.4.2 Crexepil Classic",
+  "volume": "100 ml",
+  "price": 715,
+  "cat": "hair-loss",
+  "stock": "in",
+  "img": "dsd-3-4-2-crexepil-classic.jpg",
+  "desc": {
+   "ru": "Лосьон — против выпадения волос",
+   "uk": "Лосьйон — проти випадіння волосся",
+   "cs": "Lotion — proti vypadávání vlasů",
+   "en": "Lotion — against hair loss",
+   "es": "Loción — anticaída del cabello"
+  }
+ },
+ {
+  "crm": 154,
+  "brand": "DSD",
+  "name": "DSD 3.1 Dixidox Intense Shampoo",
+  "volume": "200 ml",
+  "price": 800,
+  "cat": "hair-wash",
+  "stock": "in",
+  "img": "dsd-3-1-intense-shampoo.jpg",
+  "desc": {
+   "ru": "Шампунь — против выпадения волос",
+   "uk": "Шампунь — проти випадіння волосся",
+   "cs": "Šampon — proti vypadávání vlasů",
+   "en": "Shampoo — against hair loss",
+   "es": "Champú — anticaída del cabello"
+  }
+ },
+ {
+  "crm": 153,
+  "brand": "DSD",
+  "name": "DSD 1.3 Dixidox Peeling",
+  "volume": "200 ml",
+  "price": 800,
+  "cat": "hair-wash",
+  "stock": "in",
+  "img": "dsd-1-3-peeling.jpg",
+  "desc": {
+   "ru": "Очищающее средство — глубокое очищение",
+   "uk": "Очищувальний засіб — глибоке очищення",
+   "cs": "Čisticí přípravek — hloubkové čištění",
+   "en": "Cleanser — deep cleansing",
+   "es": "Limpiador — limpieza profunda"
+  }
+ },
+ {
+  "crm": 190,
+  "brand": "Bao-Med",
+  "name": "Bao-Med Luxuriate Hair Mask",
+  "volume": "200 ml",
+  "price": 901,
+  "cat": "hair-care",
+  "stock": "in",
+  "img": "crm-bao-med-bao-med-luxuriate-hair-mask-200-ml.jpg",
+  "desc": {
+   "ru": "Маска — восстановление и кератиновый уход",
+   "uk": "Маска — відновлення та кератиновий догляд",
+   "cs": "Maska — regenerace a keratinová péče",
+   "en": "Mask — repair and keratin care",
+   "es": "Mascarilla — reparación y cuidado con queratina"
+  }
+ },
+ {
+  "crm": 189,
+  "brand": "Bao-Med",
+  "name": "Bao-Med Luxuriate Conditioner",
+  "volume": "250 ml",
+  "price": 709,
+  "cat": "hair-care",
+  "stock": "in",
+  "img": "crm-bao-med-bao-med-luxuriate-conditioner-250-ml.jpg",
+  "desc": {
+   "ru": "Кондиционер — защита и гладкость волос",
+   "uk": "Кондиціонер — захист і гладкість волосся",
+   "cs": "Kondicionér — ochrana a hladkost vlasů",
+   "en": "Conditioner — protection and smoothness",
+   "es": "Acondicionador — protección y suavidad"
+  }
+ },
+ {
+  "crm": 186,
+  "brand": "Bao-Med",
+  "name": "Bao-Med Hair · Skin · Nails",
+  "volume": "60 капс.",
+  "price": 800,
+  "cat": "hair-loss",
+  "stock": "in",
+  "img": "bao-med.jpg",
+  "desc": {
+   "ru": "Капсулы — для волос, кожи и ногтей",
+   "uk": "Капсули — для волосся, шкіри та нігтів",
+   "cs": "Kapsle — pro vlasy, pokožku a nehty",
+   "en": "Capsules — for hair, skin and nails",
+   "es": "Cápsulas — para cabello, piel y uñas"
+  }
+ },
+ {
+  "crm": 174,
+  "brand": "Mediceuticals",
+  "name": "Bioclenz",
+  "volume": "250 ml",
+  "price": 600,
+  "cat": "hair-wash",
+  "stock": "in",
+  "img": "bioclenz.jpg",
+  "desc": {
+   "ru": "Шампунь — для нормальной кожи головы",
+   "uk": "Шампунь — для нормальної шкіри голови",
+   "cs": "Šampon — pro normální pokožku hlavy",
+   "en": "Shampoo — for normal scalp",
+   "es": "Champú — para cuero cabelludo normal"
+  }
+ },
+ {
+  "crm": 218,
+  "brand": "Mediceuticals",
+  "name": "Defend",
+  "volume": "250 ml",
+  "price": 900,
+  "cat": "hair-care",
+  "stock": "in",
+  "img": "defend.jpg",
+  "desc": {
+   "ru": "Спрей — защита и гладкость волос",
+   "uk": "Спрей — захист і гладкість волосся",
+   "cs": "Sprej — ochrana a hladkost vlasů",
+   "en": "Spray — protection and smoothness",
+   "es": "Spray — protección y suavidad"
+  }
+ },
+ {
+  "crm": 176,
+  "brand": "Mediceuticals",
+  "name": "Folligen",
+  "volume": "250 ml",
+  "price": 600,
+  "cat": "hair-loss",
+  "stock": "in",
+  "img": "folligen.jpg",
+  "desc": {
+   "ru": "Шампунь — против выпадения волос, для женщин",
+   "uk": "Шампунь — проти випадіння волосся, для жінок",
+   "cs": "Šampon — proti vypadávání vlasů, pro ženy",
+   "en": "Shampoo — against hair loss, for women",
+   "es": "Champú — anticaída del cabello, para mujeres"
+  }
+ },
+ {
+  "crm": 213,
+  "brand": "Mediceuticals",
+  "name": "Hydroclenz",
+  "volume": "250 ml",
+  "price": 600,
+  "cat": "hair-wash",
+  "stock": "in",
+  "img": "hydroclenz.jpg",
+  "desc": {
+   "ru": "Шампунь — для сухой кожи головы",
+   "uk": "Шампунь — для сухої шкіри голови",
+   "cs": "Šampon — pro suchou pokožku hlavy",
+   "en": "Shampoo — for dry scalp",
+   "es": "Champú — para cuero cabelludo seco"
+  }
+ },
+ {
+  "crm": 184,
+  "brand": "Mediceuticals",
+  "name": "Dual Moist",
+  "volume": "180 ml",
+  "price": 600,
+  "cat": "hair-care",
+  "stock": "in",
+  "img": "crm-mediceuticals-dual-moist-180-ml.jpg",
+  "desc": {
+   "ru": "Крем — увлажнение тела",
+   "uk": "Крем — зволоження тіла",
+   "cs": "Krém — hydratace těla",
+   "en": "Cream — body hydration",
+   "es": "Crema — hidratación corporal"
+  }
+ },
+ {
+  "crm": 206,
+  "brand": "Mediceuticals",
+  "name": "Dual Moist",
+  "volume": "475 ml",
+  "price": 1127,
+  "cat": "hair-care",
+  "stock": "pre",
+  "img": "crm-mediceuticals-dual-moist-475-ml.jpg",
+  "desc": {
+   "ru": "Крем — увлажнение тела",
+   "uk": "Крем — зволоження тіла",
+   "cs": "Krém — hydratace těla",
+   "en": "Cream — body hydration",
+   "es": "Crema — hidratación corporal"
+  }
+ },
+ {
+  "crm": 180,
+  "brand": "Mediceuticals",
+  "name": "Moist-Cyte",
+  "volume": "250 ml",
+  "price": 800,
+  "cat": "hair-care",
+  "stock": "in",
+  "img": "moist-cyte.jpg",
+  "desc": {
+   "ru": "Кондиционер — увлажнение кожи",
+   "uk": "Кондиціонер — зволоження шкіри",
+   "cs": "Kondicionér — hydratace pleti",
+   "en": "Conditioner — skin hydration",
+   "es": "Acondicionador — hidratación de la piel"
+  }
+ },
+ {
+  "crm": 185,
+  "brand": "Mediceuticals",
+  "name": "MX Dual Therapy",
+  "volume": "150 ml",
+  "price": 900,
+  "cat": "hair-care",
+  "stock": "in",
+  "img": "mx-dual-therapy.jpg",
+  "desc": {
+   "ru": "Маска — уход за кожей головы",
+   "uk": "Маска — догляд за шкірою голови",
+   "cs": "Maska — péče o pokožku hlavy",
+   "en": "Mask — scalp care",
+   "es": "Mascarilla — cuidado del cuero cabelludo"
+  }
+ },
+ {
+  "crm": 214,
+  "brand": "Mediceuticals",
+  "name": "Numinox",
+  "volume": "250 ml",
+  "price": 1700,
+  "cat": "hair-loss",
+  "stock": "pre",
+  "img": "numinox.jpg",
+  "desc": {
+   "ru": "Сыворотка — против выпадения волос",
+   "uk": "Сироватка — проти випадіння волосся",
+   "cs": "Sérum — proti vypadávání vlasů",
+   "en": "Serum — against hair loss",
+   "es": "Sérum — anticaída del cabello"
+  }
+ },
+ {
+  "crm": 188,
+  "brand": "Mediceuticals",
+  "name": "Набор Folligen + Vitatin + Cellagen",
+  "volume": "250 ml",
+  "price": 1900,
+  "cat": "hair-loss",
+  "stock": "in",
+  "img": "",
+  "desc": {
+   "ru": "Набор — против выпадения волос, для женщин",
+   "uk": "Набір — проти випадіння волосся, для жінок",
+   "cs": "Sada — proti vypadávání vlasů, pro ženy",
+   "en": "Set — against hair loss, for women",
+   "es": "Set — anticaída del cabello, para mujeres"
+  }
+ },
+ {
+  "crm": 179,
+  "brand": "Mediceuticals",
+  "name": "Набор Saturate + Vitatin + Cellagen",
+  "volume": "250 ml",
+  "price": 1900,
+  "cat": "hair-loss",
+  "stock": "in",
+  "img": "",
+  "desc": {
+   "ru": "Набор — против выпадения волос, для женщин",
+   "uk": "Набір — проти випадіння волосся, для жінок",
+   "cs": "Sada — proti vypadávání vlasů, pro ženy",
+   "en": "Set — against hair loss, for women",
+   "es": "Set — anticaída del cabello, para mujeres"
+  }
+ },
+ {
+  "crm": 220,
+  "brand": "Mediceuticals",
+  "name": "Набор X-Folate + Therapeutic + TheraRx",
+  "volume": "250 ml",
+  "price": 1800,
+  "cat": "hair-loss",
+  "stock": "pre",
+  "img": "",
+  "desc": {
+   "ru": "Набор — против перхоти",
+   "uk": "Набір — проти лупи",
+   "cs": "Sada — proti lupům",
+   "en": "Set — anti-dandruff",
+   "es": "Set — anticaspa"
+  }
+ },
+ {
+  "crm": 177,
+  "brand": "Mediceuticals",
+  "name": "Saturate",
+  "volume": "250 ml",
+  "price": 600,
+  "cat": "hair-loss",
+  "stock": "in",
+  "img": "saturate.jpg",
+  "desc": {
+   "ru": "Шампунь — для сухой кожи головы",
+   "uk": "Шампунь — для сухої шкіри голови",
+   "cs": "Šampon — pro suchou pokožku hlavy",
+   "en": "Shampoo — for dry scalp",
+   "es": "Champú — para cuero cabelludo seco"
+  }
+ },
+ {
+  "crm": 219,
+  "brand": "Mediceuticals",
+  "name": "Solv-X",
+  "volume": "250 ml",
+  "price": 700,
+  "cat": "hair-wash",
+  "stock": "in",
+  "img": "solv-x.jpg",
+  "desc": {
+   "ru": "Шампунь — для жирной кожи головы",
+   "uk": "Шампунь — для жирної шкіри голови",
+   "cs": "Šampon — pro mastnou pokožku hlavy",
+   "en": "Shampoo — for oily scalp",
+   "es": "Champú — para cuero cabelludo graso"
+  }
+ },
+ {
+  "crm": 178,
+  "brand": "Mediceuticals",
+  "name": "Cellagen",
+  "volume": "125 ml",
+  "price": 900,
+  "cat": "hair-loss",
+  "stock": "in",
+  "img": "cellagen.jpg",
+  "desc": {
+   "ru": "Сыворотка — против выпадения волос, для женщин",
+   "uk": "Сироватка — проти випадіння волосся, для жінок",
+   "cs": "Sérum — proti vypadávání vlasů, pro ženy",
+   "en": "Serum — against hair loss, for women",
+   "es": "Sérum — anticaída del cabello, para mujeres"
+  }
+ },
+ {
+  "crm": 217,
+  "brand": "Mediceuticals",
+  "name": "Cellagen",
+  "volume": "250 ml",
+  "price": 1700,
+  "cat": "hair-loss",
+  "stock": "in",
+  "img": "cellagen.jpg",
+  "desc": {
+   "ru": "Сыворотка — против выпадения волос, для женщин",
+   "uk": "Сироватка — проти випадіння волосся, для жінок",
+   "cs": "Sérum — proti vypadávání vlasů, pro ženy",
+   "en": "Serum — against hair loss, for women",
+   "es": "Sérum — anticaída del cabello, para mujeres"
+  }
+ },
+ {
+  "crm": 175,
+  "brand": "Mediceuticals",
+  "name": "Numinox",
+  "volume": "125 ml",
+  "price": 900,
+  "cat": "hair-loss",
+  "stock": "pre",
+  "img": "numinox.jpg",
+  "desc": {
+   "ru": "Сыворотка — против выпадения волос",
+   "uk": "Сироватка — проти випадіння волосся",
+   "cs": "Sérum — proti vypadávání vlasů",
+   "en": "Serum — against hair loss",
+   "es": "Sérum — anticaída del cabello"
+  }
+ },
+ {
+  "crm": 183,
+  "brand": "Mediceuticals",
+  "name": "Therapeutic",
+  "volume": "250 ml",
+  "price": 800,
+  "cat": "hair-care",
+  "stock": "in",
+  "img": "therapeutic.jpg",
+  "desc": {
+   "ru": "Кондиционер — уход за кожей головы",
+   "uk": "Кондиціонер — догляд за шкірою голови",
+   "cs": "Kondicionér — péče o pokožku hlavy",
+   "en": "Conditioner — scalp care",
+   "es": "Acondicionador — cuidado del cuero cabelludo"
+  }
+ },
+ {
+  "crm": 181,
+  "brand": "Mediceuticals",
+  "name": "TheraRx",
+  "volume": "250 ml",
+  "price": 800,
+  "cat": "hair-care",
+  "stock": "in",
+  "img": "therarx.jpg",
+  "desc": {
+   "ru": "Очищающее средство — для раздражённой кожи головы",
+   "uk": "Очищувальний засіб — для подразненої шкіри голови",
+   "cs": "Čisticí přípravek — pro podrážděnou pokožku hlavy",
+   "en": "Cleanser — for irritated scalp",
+   "es": "Limpiador — para cuero cabelludo irritado"
+  }
+ },
+ {
+  "crm": 240,
+  "brand": "Mediceuticals",
+  "name": "Trichogenix",
+  "volume": "15 ml",
+  "price": 1200,
+  "cat": "hair-loss",
+  "stock": "in",
+  "img": "trichogenix.jpg",
+  "desc": {
+   "ru": "Сыворотка — уход за кожей головы",
+   "uk": "Сироватка — догляд за шкірою голови",
+   "cs": "Sérum — péče o pokožku hlavy",
+   "en": "Serum — scalp care",
+   "es": "Sérum — cuidado del cuero cabelludo"
+  }
+ },
+ {
+  "crm": 215,
+  "brand": "Mediceuticals",
+  "name": "Vitatin",
+  "volume": "250 ml",
+  "price": 700,
+  "cat": "hair-care",
+  "stock": "in",
+  "img": "crm-mediceuticals-vitatin-250-ml.jpg",
+  "desc": {
+   "ru": "Кондиционер — плотность и объём волос",
+   "uk": "Кондиціонер — щільність та обʼєм волосся",
+   "cs": "Kondicionér — hustota a objem vlasů",
+   "en": "Conditioner — hair density and volume",
+   "es": "Acondicionador — densidad y volumen del cabello"
+  }
+ },
+ {
+  "crm": 239,
+  "brand": "Mediceuticals",
+  "name": "Vivid",
+  "volume": "1000 ml",
+  "price": 1430,
+  "cat": "hair-wash",
+  "stock": "in",
+  "img": "crm-mediceuticals-vivid-1000-ml.jpg",
+  "desc": {
+   "ru": "Шампунь — глубокое очищение",
+   "uk": "Шампунь — глибоке очищення",
+   "cs": "Šampon — hloubkové čištění",
+   "en": "Shampoo — deep cleansing",
+   "es": "Champú — limpieza profunda"
+  }
+ },
+ {
+  "crm": 216,
+  "brand": "Mediceuticals",
+  "name": "Vivid",
+  "volume": "250 ml",
+  "price": 600,
+  "cat": "hair-wash",
+  "stock": "in",
+  "img": "vivid.jpg",
+  "desc": {
+   "ru": "Шампунь — глубокое очищение",
+   "uk": "Шампунь — глибоке очищення",
+   "cs": "Šampon — hloubkové čištění",
+   "en": "Shampoo — deep cleansing",
+   "es": "Champú — limpieza profunda"
+  }
+ },
+ {
+  "crm": 205,
+  "brand": "Mediceuticals",
+  "name": "X-Derma",
+  "volume": "250 ml",
+  "price": 700,
+  "cat": "hair-loss",
+  "stock": "in",
+  "img": "crm-mediceuticals-x-derma-250-ml.jpg",
+  "desc": {
+   "ru": "Шампунь — для раздражённой кожи головы",
+   "uk": "Шампунь — для подразненої шкіри голови",
+   "cs": "Šampon — pro podrážděnou pokožku hlavy",
+   "en": "Shampoo — for irritated scalp",
+   "es": "Champú — para cuero cabelludo irritado"
+  }
+ },
+ {
+  "crm": 182,
+  "brand": "Mediceuticals",
+  "name": "X-Folate",
+  "volume": "250 ml",
+  "price": 700,
+  "cat": "hair-loss",
+  "stock": "in",
+  "img": "x-folate.jpg",
+  "desc": {
+   "ru": "Шампунь — против перхоти",
+   "uk": "Шампунь — проти лупи",
+   "cs": "Šampon — proti lupům",
+   "en": "Shampoo — anti-dandruff",
+   "es": "Champú — anticaspa"
+  }
+ },
+ {
+  "crm": 144,
+  "brand": "DMK",
+  "name": "DMK Acu Crème",
+  "volume": "50 ml",
+  "price": 1800,
+  "cat": "face",
+  "stock": "in",
+  "img": "dmk-acu-creme.jpg",
+  "desc": {
+   "ru": "Крем — уход при акне",
+   "uk": "Крем — догляд при акне",
+   "cs": "Krém — péče při akné",
+   "en": "Cream — for acne-prone skin",
+   "es": "Crema — para piel con acné"
+  }
+ },
+ {
+  "crm": 142,
+  "brand": "DMK",
+  "name": "DMK Acu Klenz",
+  "volume": "180 г",
+  "price": 1500,
+  "cat": "face",
+  "stock": "in",
+  "img": "dmk-acu-klenz.jpg",
+  "desc": {
+   "ru": "Очищающее средство — уход при акне",
+   "uk": "Очищувальний засіб — догляд при акне",
+   "cs": "Čisticí přípravek — péče při akné",
+   "en": "Cleanser — for acne-prone skin",
+   "es": "Limpiador — para piel con acné"
+  }
+ },
+ {
+  "crm": 145,
+  "brand": "DMK",
+  "name": "DMK Acu Mist",
+  "volume": "120 ml",
+  "price": 1500,
+  "cat": "face",
+  "stock": "in",
+  "img": "dmk-acu-mist.jpg",
+  "desc": {
+   "ru": "Спрей — уход при акне",
+   "uk": "Спрей — догляд при акне",
+   "cs": "Sprej — péče při akné",
+   "en": "Spray — for acne-prone skin",
+   "es": "Spray — para piel con acné"
+  }
+ },
+ {
+  "crm": 138,
+  "brand": "DMK",
+  "name": "DMK Beta Gel",
+  "volume": "30 ml",
+  "price": 2500,
+  "cat": "face",
+  "stock": "in",
+  "img": "dmk-beta-gel.jpg",
+  "desc": {
+   "ru": "Гель — успокоение кожи",
+   "uk": "Гель — заспокоєння шкіри",
+   "cs": "Gel — zklidnění pleti",
+   "en": "Gel — skin soothing",
+   "es": "Gel — calmado de la piel"
+  }
+ },
+ {
+  "crm": 143,
+  "brand": "DMK",
+  "name": "DMK BetaGen Cream",
+  "volume": "30 ml",
+  "price": 2000,
+  "cat": "face",
+  "stock": "in",
+  "img": "dmk-betagen-cream.jpg",
+  "desc": {
+   "ru": "Крем — успокоение кожи",
+   "uk": "Крем — заспокоєння шкіри",
+   "cs": "Krém — zklidnění pleti",
+   "en": "Cream — skin soothing",
+   "es": "Crema — calmado de la piel"
+  }
+ },
+ {
+  "crm": 161,
+  "brand": "DMK",
+  "name": "DMK Crème Citrique",
+  "volume": "50 ml",
+  "price": 1600,
+  "cat": "face",
+  "stock": "pre",
+  "img": "dmk-creme-citrique.jpg",
+  "desc": {
+   "ru": "Крем — выравнивание тона",
+   "uk": "Крем — вирівнювання тону",
+   "cs": "Krém — sjednocení tónu",
+   "en": "Cream — evening out skin tone",
+   "es": "Crema — unificación del tono"
+  }
+ },
+ {
+  "crm": 137,
+  "brand": "DMK",
+  "name": "DMK Deep Pore Cleanser",
+  "volume": "180 ml",
+  "price": 1600,
+  "cat": "face",
+  "stock": "in",
+  "img": "dmk-deep-pore-cleanser.jpg",
+  "desc": {
+   "ru": "Очищающее средство — глубокое очищение",
+   "uk": "Очищувальний засіб — глибоке очищення",
+   "cs": "Čisticí přípravek — hloubkové čištění",
+   "en": "Cleanser — deep cleansing",
+   "es": "Limpiador — limpieza profunda"
+  }
+ },
+ {
+  "crm": 139,
+  "brand": "DMK",
+  "name": "DMK Direct Delivery Vitamin C",
+  "volume": "30 ml",
+  "price": 3000,
+  "cat": "face",
+  "stock": "in",
+  "img": "dmk-direct-delivery-c.jpg",
+  "desc": {
+   "ru": "Сыворотка — витамин C и антиоксидантная защита",
+   "uk": "Сироватка — вітамін C та антиоксидантний захист",
+   "cs": "Sérum — vitamin C a antioxidační ochrana",
+   "en": "Serum — vitamin C and antioxidant protection",
+   "es": "Sérum — vitamina C y protección antioxidante"
+  }
+ },
+ {
+  "crm": 140,
+  "brand": "DMK",
+  "name": "DMK Herb & Mineral Mist",
+  "volume": "120 ml",
+  "price": 1500,
+  "cat": "face",
+  "stock": "in",
+  "img": "dmk-herb-mineral-mist.jpg",
+  "desc": {
+   "ru": "Спрей — увлажнение кожи",
+   "uk": "Спрей — зволоження шкіри",
+   "cs": "Sprej — hydratace pleti",
+   "en": "Spray — skin hydration",
+   "es": "Spray — hidratación de la piel"
+  }
+ },
+ {
+  "crm": 141,
+  "brand": "DMK",
+  "name": "DMK Herb & Mineral Mist",
+  "volume": "60 ml",
+  "price": 900,
+  "cat": "face",
+  "stock": "in",
+  "img": "dmk-herb-mineral-mist-60.jpg",
+  "desc": {
+   "ru": "Спрей — увлажнение кожи",
+   "uk": "Спрей — зволоження шкіри",
+   "cs": "Sprej — hydratace pleti",
+   "en": "Spray — skin hydration",
+   "es": "Spray — hidratación de la piel"
+  }
+ },
+ {
+  "crm": 228,
+  "brand": "DMK",
+  "name": "DMK Melanotech Drops",
+  "volume": "30 ml",
+  "price": 2800,
+  "cat": "face",
+  "stock": "pre",
+  "img": "dmk-melanotech-drops.jpg",
+  "desc": {
+   "ru": "Капли — выравнивание тона",
+   "uk": "Краплі — вирівнювання тону",
+   "cs": "Kapky — sjednocení tónu",
+   "en": "Drops — evening out skin tone",
+   "es": "Gotas — unificación del tono"
+  }
+ },
+ {
+  "crm": 162,
+  "brand": "DMK",
+  "name": "DMK Milky Cleanser",
+  "volume": "180 ml",
+  "price": 1600,
+  "cat": "face",
+  "stock": "in",
+  "img": "dmk-milk-cleanser.jpg",
+  "desc": {
+   "ru": "Очищающее средство — очищение лица",
+   "uk": "Очищувальний засіб — очищення обличчя",
+   "cs": "Čisticí přípravek — čištění pleti",
+   "en": "Cleanser — facial cleansing",
+   "es": "Limpiador — limpieza facial"
+  }
+ },
+ {
+  "crm": 160,
+  "brand": "DMK",
+  "name": "DMK Nutrascreen SPF 30",
+  "volume": "50 ml",
+  "price": 1700,
+  "cat": "face",
+  "stock": "in",
+  "img": "dmk-nutrascreen.jpg",
+  "desc": {
+   "ru": "Солнцезащитный крем — защита SPF 30",
+   "uk": "Сонцезахисний крем — захист SPF 30",
+   "cs": "Opalovací krém — ochrana SPF 30",
+   "en": "Sunscreen — SPF 30 protection",
+   "es": "Protector solar — protección SPF 30"
+  }
+ },
+ {
+  "crm": 147,
+  "brand": "DMK",
+  "name": "DMK Pro Amino Crème",
+  "volume": "50 ml",
+  "price": 2100,
+  "cat": "face",
+  "stock": "in",
+  "img": "dmk-pro-amino-creme.jpg",
+  "desc": {
+   "ru": "Крем — возрастной уход",
+   "uk": "Крем — віковий догляд",
+   "cs": "Krém — péče proti stárnutí",
+   "en": "Cream — anti-ageing care",
+   "es": "Crema — cuidado antiedad"
+  }
+ },
+ {
+  "crm": 146,
+  "brand": "DMK",
+  "name": "DMK Ultrascreen SPF 50",
+  "volume": "65 ml",
+  "price": 2100,
+  "cat": "face",
+  "stock": "in",
+  "img": "",
+  "desc": {
+   "ru": "Солнцезащитный крем — защита SPF 50",
+   "uk": "Сонцезахисний крем — захист SPF 50",
+   "cs": "Opalovací krém — ochrana SPF 50",
+   "en": "Sunscreen — SPF 50 protection",
+   "es": "Protector solar — protección SPF 50"
+  }
+ },
+ {
+  "crm": 165,
+  "brand": "Jan Marini",
+  "name": "C-ESTA Cleansing Gel",
+  "volume": "178 ml",
+  "price": 1200,
+  "cat": "face",
+  "stock": "in",
+  "img": "marini-c-esta-cleansing-gel.jpg",
+  "desc": {
+   "ru": "Гель — очищение лица",
+   "uk": "Гель — очищення обличчя",
+   "cs": "Gel — čištění pleti",
+   "en": "Gel — facial cleansing",
+   "es": "Gel — limpieza facial"
+  }
+ },
+ {
+  "crm": 167,
+  "brand": "Jan Marini",
+  "name": "Hyla3D Face Serum",
+  "volume": "30 ml",
+  "price": 3300,
+  "cat": "face",
+  "stock": "in",
+  "img": "marini-hyla3d-serum.jpg",
+  "desc": {
+   "ru": "Сыворотка — увлажнение кожи",
+   "uk": "Сироватка — зволоження шкіри",
+   "cs": "Sérum — hydratace pleti",
+   "en": "Serum — skin hydration",
+   "es": "Sérum — hidratación de la piel"
+  }
+ },
+ {
+  "crm": 163,
+  "brand": "Jan Marini",
+  "name": "Age Intervention Gentle Cleanser",
+  "volume": "178 ml",
+  "price": 1200,
+  "cat": "face",
+  "stock": "in",
+  "img": "",
+  "desc": {
+   "ru": "Очищающее средство — очищение лица",
+   "uk": "Очищувальний засіб — очищення обличчя",
+   "cs": "Čisticí přípravek — čištění pleti",
+   "en": "Cleanser — facial cleansing",
+   "es": "Limpiador — limpieza facial"
+  }
+ },
+ {
+  "crm": 171,
+  "brand": "Jan Marini",
+  "name": "Age Intervention Peptide Extreme",
+  "volume": "30 ml",
+  "price": 3500,
+  "cat": "face",
+  "stock": "pre",
+  "img": "marini-peptide-extreme.jpg",
+  "desc": {
+   "ru": "Сыворотка — возрастной уход",
+   "uk": "Сироватка — віковий догляд",
+   "cs": "Sérum — péče proti stárnutí",
+   "en": "Serum — anti-ageing care",
+   "es": "Sérum — cuidado antiedad"
+  }
+ },
+ {
+  "crm": 169,
+  "brand": "Jan Marini",
+  "name": "Bioclear Face Cream",
+  "volume": "28 g",
+  "price": 2650,
+  "cat": "face",
+  "stock": "pre",
+  "img": "marini-bioclear-cream.jpg",
+  "desc": {
+   "ru": "Крем — уход при акне",
+   "uk": "Крем — догляд при акне",
+   "cs": "Krém — péče při akné",
+   "en": "Cream — for acne-prone skin",
+   "es": "Crema — para piel con acné"
+  }
+ },
+ {
+  "crm": 168,
+  "brand": "Jan Marini",
+  "name": "Bioclear Face Lotion",
+  "volume": "30 ml",
+  "price": 2650,
+  "cat": "face",
+  "stock": "pre",
+  "img": "marini-bioclear-lotion.jpg",
+  "desc": {
+   "ru": "Лосьон — уход при акне",
+   "uk": "Лосьйон — догляд при акне",
+   "cs": "Lotion — péče při akné",
+   "en": "Lotion — for acne-prone skin",
+   "es": "Loción — para piel con acné"
+  }
+ },
+ {
+  "crm": 164,
+  "brand": "Jan Marini",
+  "name": "Bioglycolic Face Cleanser",
+  "volume": "178 ml",
+  "price": 1200,
+  "cat": "face",
+  "stock": "pre",
+  "img": "marini-bioglycolic-cleanser.jpg",
+  "desc": {
+   "ru": "Очищающее средство — мягкое отшелушивание",
+   "uk": "Очищувальний засіб — мʼяке відлущення",
+   "cs": "Čisticí přípravek — jemné odlupování",
+   "en": "Cleanser — gentle exfoliation",
+   "es": "Limpiador — exfoliación suave"
+  }
+ },
+ {
+  "crm": 166,
+  "brand": "Jan Marini",
+  "name": "C-ESTA Face Serum",
+  "volume": "30 ml",
+  "price": 3800,
+  "cat": "face",
+  "stock": "in",
+  "img": "marini-c-esta-serum.jpg",
+  "desc": {
+   "ru": "Сыворотка — витамин C и антиоксидантная защита",
+   "uk": "Сироватка — вітамін C та антиоксидантний захист",
+   "cs": "Sérum — vitamin C a antioxidační ochrana",
+   "en": "Serum — vitamin C and antioxidant protection",
+   "es": "Sérum — vitamina C y protección antioxidante"
+  }
+ },
+ {
+  "crm": 196,
+  "brand": "Jan Marini",
+  "name": "Duality XC",
+  "volume": "28 g",
+  "price": 3800,
+  "cat": "face",
+  "stock": "in",
+  "img": "marini-duality-xc.jpg",
+  "desc": {
+   "ru": "Крем — возрастной уход",
+   "uk": "Крем — віковий догляд",
+   "cs": "Krém — péče proti stárnutí",
+   "en": "Cream — anti-ageing care",
+   "es": "Crema — cuidado antiedad"
+  }
+ },
+ {
+  "crm": 173,
+  "brand": "Jan Marini",
+  "name": "Physical Protectant SPF 30",
+  "volume": "57 g",
+  "price": 1700,
+  "cat": "face",
+  "stock": "in",
+  "img": "",
+  "desc": {
+   "ru": "Солнцезащитный крем — защита SPF 30",
+   "uk": "Сонцезахисний крем — захист SPF 30",
+   "cs": "Opalovací krém — ochrana SPF 30",
+   "en": "Sunscreen — SPF 30 protection",
+   "es": "Protector solar — protección SPF 30"
+  }
+ },
+ {
+  "crm": 172,
+  "brand": "Jan Marini",
+  "name": "Transformation Eye Cream",
+  "volume": "14 g",
+  "price": 1347,
+  "cat": "face",
+  "stock": "pre",
+  "img": "marini-transformation-eye.jpg",
+  "desc": {
+   "ru": "Крем — уход за кожей вокруг глаз",
+   "uk": "Крем — догляд за шкірою навколо очей",
+   "cs": "Krém — péče o oční okolí",
+   "en": "Cream — eye-area care",
+   "es": "Crema — cuidado del contorno de ojos"
+  }
+ },
+ {
+  "crm": 170,
+  "brand": "Jan Marini",
+  "name": "Transformation Face Cream",
+  "volume": "28 g",
+  "price": 3500,
+  "cat": "face",
+  "stock": "in",
+  "img": "marini-transformation-cream.jpg",
+  "desc": {
+   "ru": "Крем — возрастной уход",
+   "uk": "Крем — віковий догляд",
+   "cs": "Krém — péče proti stárnutí",
+   "en": "Cream — anti-ageing care",
+   "es": "Crema — cuidado antiedad"
+  }
+ },
+ {
+  "crm": 53,
+  "brand": "Epilax",
+  "name": "SOS-пудра",
+  "volume": "50 г",
+  "price": 400,
+  "cat": "body",
+  "stock": "in",
+  "img": "ep-sos-50.jpg",
+  "desc": {
+   "ru": "Пудра — уход после депиляции",
+   "uk": "Пудра — догляд після депіляції",
+   "cs": "Pudr — péče po depilaci",
+   "en": "Powder — aftercare for hair removal",
+   "es": "Polvo — cuidado tras la depilación"
+  }
+ },
+ {
+  "crm": 128,
+  "brand": "Epilax",
+  "name": "Prebiotic Shower Gel",
+  "volume": "",
+  "price": 300,
+  "cat": "body",
+  "stock": "pre",
+  "img": "",
+  "desc": {
+   "ru": "Гель — уход после депиляции",
+   "uk": "Гель — догляд після депіляції",
+   "cs": "Gel — péče po depilaci",
+   "en": "Gel — aftercare for hair removal",
+   "es": "Gel — cuidado tras la depilación"
+  }
+ },
+ {
+  "crm": 110,
+  "brand": "Epilax",
+  "name": "Интимная пенка с пробиотиком",
+  "volume": "",
+  "price": 300,
+  "cat": "body",
+  "stock": "pre",
+  "img": "ep-.jpg",
+  "desc": {
+   "ru": "Пенка — интимный уход",
+   "uk": "Пінка — інтимний догляд",
+   "cs": "Pěna — intimní péče",
+   "en": "Foam — intimate care",
+   "es": "Espuma — cuidado íntimo"
+  }
+ },
+ {
+  "crm": 73,
+  "brand": "Epilax",
+  "name": "Лосьон для тела с пептидами",
+  "volume": "250 ml",
+  "price": 350,
+  "cat": "body",
+  "stock": "pre",
+  "img": "ep-250-ml.jpg",
+  "desc": {
+   "ru": "Лосьон — увлажнение тела",
+   "uk": "Лосьйон — зволоження тіла",
+   "cs": "Lotion — hydratace těla",
+   "en": "Lotion — body hydration",
+   "es": "Loción — hidratación corporal"
+  }
+ },
+ {
+  "crm": 54,
+  "brand": "Epilax",
+  "name": "Лосьон для тела с пептидами",
+  "volume": "500 ml",
+  "price": 800,
+  "cat": "body",
+  "stock": "pre",
+  "img": "ep-500-ml.jpg",
+  "desc": {
+   "ru": "Лосьон — увлажнение тела",
+   "uk": "Лосьйон — зволоження тіла",
+   "cs": "Lotion — hydratace těla",
+   "en": "Lotion — body hydration",
+   "es": "Loción — hidratación corporal"
+  }
+ },
+ {
+  "crm": 131,
+  "brand": "Epilax",
+  "name": "Молочко для тела Aloe Green Tea SPF 15",
+  "volume": "",
+  "price": 350,
+  "cat": "body",
+  "stock": "pre",
+  "img": "ep-aloe-green-tea-spf-15.jpg",
+  "desc": {
+   "ru": "Молочко для тела — защита SPF 15",
+   "uk": "Молочко для тіла — захист SPF 15",
+   "cs": "Tělové mléko — ochrana SPF 15",
+   "en": "Body milk — SPF 15 protection",
+   "es": "Leche corporal — protección SPF 15"
+  }
+ },
+ {
+  "crm": 130,
+  "brand": "Epilax",
+  "name": "Молочко для тела Bubble Gum SPF 15",
+  "volume": "",
+  "price": 350,
+  "cat": "body",
+  "stock": "pre",
+  "img": "ep-bubble-gum-spf-15.jpg",
+  "desc": {
+   "ru": "Молочко для тела — защита SPF 15",
+   "uk": "Молочко для тіла — захист SPF 15",
+   "cs": "Tělové mléko — ochrana SPF 15",
+   "en": "Body milk — SPF 15 protection",
+   "es": "Leche corporal — protección SPF 15"
+  }
+ },
+ {
+  "crm": 122,
+  "brand": "Epilax",
+  "name": "Молочко для тела Macaroon SPF 15",
+  "volume": "",
+  "price": 350,
+  "cat": "body",
+  "stock": "pre",
+  "img": "ep-macaroon-spf-15.jpg",
+  "desc": {
+   "ru": "Молочко для тела — защита SPF 15",
+   "uk": "Молочко для тіла — захист SPF 15",
+   "cs": "Tělové mléko — ochrana SPF 15",
+   "en": "Body milk — SPF 15 protection",
+   "es": "Leche corporal — protección SPF 15"
+  }
+ },
+ {
+  "crm": 55,
+  "brand": "Epilax",
+  "name": "Энзимная пудра",
+  "volume": "120 г",
+  "price": 450,
+  "cat": "body",
+  "stock": "pre",
+  "img": "ep-120.jpg",
+  "desc": {
+   "ru": "Пудра — мягкое отшелушивание",
+   "uk": "Пудра — мʼяке відлущення",
+   "cs": "Pudr — jemné odlupování",
+   "en": "Powder — gentle exfoliation",
+   "es": "Polvo — exfoliación suave"
+  }
+ },
+ {
+  "crm": 72,
+  "brand": "Epilax",
+  "name": "Энзимная пудра",
+  "volume": "50 г",
+  "price": 250,
+  "cat": "body",
+  "stock": "pre",
+  "img": "ep-50.jpg",
+  "desc": {
+   "ru": "Пудра — мягкое отшелушивание",
+   "uk": "Пудра — мʼяке відлущення",
+   "cs": "Pudr — jemné odlupování",
+   "en": "Powder — gentle exfoliation",
+   "es": "Polvo — exfoliación suave"
+  }
+ },
+ {
+  "crm": 134,
+  "brand": "Happy Intim",
+  "name": "Happy Intim Rebirth Cream",
+  "volume": "",
+  "price": 1600,
+  "cat": "intimate",
+  "stock": "pre",
+  "img": "",
+  "desc": {
+   "ru": "Крем — интимный уход",
+   "uk": "Крем — інтимний догляд",
+   "cs": "Krém — intimní péče",
+   "en": "Cream — intimate care",
+   "es": "Crema — cuidado íntimo"
+  }
+ },
+ {
+  "crm": 69,
+  "brand": "Happy Intim",
+  "name": "Крем-гель для тела SPF 50",
+  "volume": "200 ml",
+  "price": 1000,
+  "cat": "body",
+  "stock": "in",
+  "img": "",
+  "desc": {
+   "ru": "Крем — защита SPF 50",
+   "uk": "Крем — захист SPF 50",
+   "cs": "Krém — ochrana SPF 50",
+   "en": "Cream — SPF 50 protection",
+   "es": "Crema — protección SPF 50"
+  }
+ },
+ {
+  "crm": 30,
+  "brand": "Happy Intim",
+  "name": "Body Butter",
+  "volume": "200 ml",
+  "price": 1600,
+  "cat": "body",
+  "stock": "pre",
+  "img": "",
+  "desc": {
+   "ru": "Крем-масло для тела — увлажнение тела",
+   "uk": "Крем-олія для тіла — зволоження тіла",
+   "cs": "Tělové máslo — hydratace těla",
+   "en": "Body butter — body hydration",
+   "es": "Manteca corporal — hidratación corporal"
+  }
+ },
+ {
+  "crm": 29,
+  "brand": "Happy Intim",
+  "name": "Cream Lightening",
+  "volume": "50 ml",
+  "price": 1600,
+  "cat": "intimate",
+  "stock": "in",
+  "img": "",
+  "desc": {
+   "ru": "Крем — осветление интимных зон",
+   "uk": "Крем — освітлення інтимних зон",
+   "cs": "Krém — zesvětlení intimních partií",
+   "en": "Cream — intimate area brightening",
+   "es": "Crema — aclarado de zonas íntimas"
+  }
+ },
+ {
+  "crm": 31,
+  "brand": "Happy Intim",
+  "name": "Body Peel",
+  "volume": "150 ml",
+  "price": 1600,
+  "cat": "body",
+  "stock": "pre",
+  "img": "",
+  "desc": {
+   "ru": "Пенка — мягкий пилинг тела",
+   "uk": "Пінка — мʼякий пілінг тіла",
+   "cs": "Pěna — jemný tělový peeling",
+   "en": "Foam — gentle body peel",
+   "es": "Espuma — peeling corporal suave"
+  }
+ },
+ {
+  "crm": 68,
+  "brand": "Happy Intim",
+  "name": "Флюид для лица SPF 50",
+  "volume": "40 ml",
+  "price": 800,
+  "cat": "body",
+  "stock": "in",
+  "img": "",
+  "desc": {
+   "ru": "Крем — защита SPF 50",
+   "uk": "Крем — захист SPF 50",
+   "cs": "Krém — ochrana SPF 50",
+   "en": "Cream — SPF 50 protection",
+   "es": "Crema — protección SPF 50"
+  }
+ },
+ {
+  "crm": 243,
+  "brand": "Skinderma",
+  "name": "Purifier Complex Cream",
+  "volume": "50 ml",
+  "price": 1250,
+  "cat": "face",
+  "stock": "in",
+  "img": "",
+  "desc": {
+   "ru": "Крем — уход при акне",
+   "uk": "Крем — догляд при акне",
+   "cs": "Krém — péče při akné",
+   "en": "Cream — for acne-prone skin",
+   "es": "Crema — para piel con acné"
+  }
+ },
+ {
+  "crm": 242,
+  "brand": "Skinderma",
+  "name": "Tonic Lotion Solution",
+  "volume": "200 ml",
+  "price": 399,
+  "cat": "face",
+  "stock": "pre",
+  "img": "",
+  "desc": {
+   "ru": "Лосьон — очищение лица",
+   "uk": "Лосьйон — очищення обличчя",
+   "cs": "Lotion — čištění pleti",
+   "en": "Lotion — facial cleansing",
+   "es": "Loción — limpieza facial"
+  }
+ },
+ {
+  "crm": 203,
+  "brand": "Forlle'd",
+  "name": "Hyalogy AC Clear Cream",
+  "volume": "50 ml",
+  "price": 2350,
+  "cat": "face",
+  "stock": "pre",
+  "img": "",
+  "desc": {
+   "ru": "Крем — уход при акне",
+   "uk": "Крем — догляд при акне",
+   "cs": "Krém — péče při akné",
+   "en": "Cream — for acne-prone skin",
+   "es": "Crema — para piel con acné"
+  }
+ },
+ {
+  "crm": 202,
+  "brand": "Forlle'd",
+  "name": "Hyalogy P-Effect Re-Purerance Wash",
+  "volume": "100 g",
+  "price": 1850,
+  "cat": "face",
+  "stock": "pre",
+  "img": "",
+  "desc": {
+   "ru": "Пенка — очищение лица",
+   "uk": "Пінка — очищення обличчя",
+   "cs": "Pěna — čištění pleti",
+   "en": "Foam — facial cleansing",
+   "es": "Espuma — limpieza facial"
+  }
+ },
+ {
+  "crm": 104,
+  "brand": "Epilax",
+  "name": "Epicalm",
+  "volume": "300 ml",
+  "price": 1000,
+  "cat": "body",
+  "stock": "pre",
+  "img": "",
+  "desc": {
+   "ru": "Крем — успокоение кожи",
+   "uk": "Крем — заспокоєння шкіри",
+   "cs": "Krém — zklidnění pleti",
+   "en": "Cream — skin soothing",
+   "es": "Crema — calmado de la piel"
+  }
+ },
+ {
+  "crm": 57,
+  "brand": "Epilax",
+  "name": "Epicalm",
+  "volume": "50 ml",
+  "price": 450,
+  "cat": "body",
+  "stock": "pre",
+  "img": "",
+  "desc": {
+   "ru": "Крем — успокоение кожи",
+   "uk": "Крем — заспокоєння шкіри",
+   "cs": "Krém — zklidnění pleti",
+   "en": "Cream — skin soothing",
+   "es": "Crema — calmado de la piel"
+  }
+ },
+ {
+  "crm": 102,
+  "brand": "Epilax",
+  "name": "Epicalm",
+  "volume": "500 ml",
+  "price": 1500,
+  "cat": "body",
+  "stock": "pre",
+  "img": "",
+  "desc": {
+   "ru": "Крем — успокоение кожи",
+   "uk": "Крем — заспокоєння шкіри",
+   "cs": "Krém — zklidnění pleti",
+   "en": "Cream — skin soothing",
+   "es": "Crema — calmado de la piel"
+  }
+ },
+ {
+  "crm": 129,
+  "brand": "AlphaScience",
+  "name": "SPF AlphaScience",
+  "volume": "",
+  "price": 1600,
+  "cat": "face",
+  "stock": "pre",
+  "img": "",
+  "desc": {
+   "ru": "Солнцезащитный крем — защита SPF 50",
+   "uk": "Сонцезахисний крем — захист SPF 50",
+   "cs": "Opalovací krém — ochrana SPF 50",
+   "en": "Sunscreen — SPF 50 protection",
+   "es": "Protector solar — protección SPF 50"
+  }
+ },
+ {
+  "crm": 61,
+  "brand": "Epilax",
+  "name": "Enzyclean",
+  "volume": "100 ml",
+  "price": 450,
+  "cat": "body",
+  "stock": "pre",
+  "img": "",
+  "desc": {
+   "ru": "Гель — очищение лица",
+   "uk": "Гель — очищення обличчя",
+   "cs": "Gel — čištění pleti",
+   "en": "Gel — facial cleansing",
+   "es": "Gel — limpieza facial"
+  }
+ },
+ {
+  "crm": 83,
+  "brand": "Epilax",
+  "name": "Набор № 1: Epicalm, SPF 50+, Enzyclean",
+  "volume": "",
+  "price": 1650,
+  "cat": "body",
+  "stock": "pre",
+  "img": "",
+  "desc": {
+   "ru": "Набор — уход после депиляции",
+   "uk": "Набір — догляд після депіляції",
+   "cs": "Sada — péče po depilaci",
+   "en": "Set — aftercare for hair removal",
+   "es": "Set — cuidado tras la depilación"
+  }
+ },
+ {
+  "crm": 84,
+  "brand": "Epilax",
+  "name": "Набор № 2: матирующий крем SPF 50, Октенисепт, SOS-пудра",
+  "volume": "30 ml",
+  "price": 1250,
+  "cat": "body",
+  "stock": "pre",
+  "img": "",
+  "desc": {
+   "ru": "Набор — уход после депиляции",
+   "uk": "Набір — догляд після депіляції",
+   "cs": "Sada — péče po depilaci",
+   "en": "Set — aftercare for hair removal",
+   "es": "Set — cuidado tras la depilación"
+  }
+ },
+ {
+  "crm": 159,
+  "brand": "Epilax",
+  "name": "Октенисепт",
+  "volume": "30 ml",
+  "price": 250,
+  "cat": "body",
+  "stock": "pre",
+  "img": "ep-.jpg",
+  "desc": {
+   "ru": "Антисептик — обеззараживание кожи",
+   "uk": "Антисептик — знезараження шкіри",
+   "cs": "Antiseptikum — dezinfekce pokožky",
+   "en": "Antiseptic — skin disinfection",
+   "es": "Antiséptico — desinfección de la piel"
+  }
+ },
+ {
+  "crm": 47,
+  "brand": "Epilax",
+  "name": "Октенисепт",
+  "volume": "60 ml",
+  "price": 350,
+  "cat": "body",
+  "stock": "pre",
+  "img": "ep-.jpg",
+  "desc": {
+   "ru": "Антисептик — обеззараживание кожи",
+   "uk": "Антисептик — знезараження шкіри",
+   "cs": "Antiseptikum — dezinfekce pokožky",
+   "en": "Antiseptic — skin disinfection",
+   "es": "Antiséptico — desinfección de la piel"
+  }
+ }
+]

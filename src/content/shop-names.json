@@ -1,0 +1,95 @@
+{
+ "_": "Русские названия из СРМ на остальных языках витрины.",
+ "names": {
+  "SOS-пудра": {
+   "uk": "SOS-пудра",
+   "cs": "SOS Powder",
+   "en": "SOS Powder",
+   "es": "SOS Powder"
+  },
+  "Энзимная пудра": {
+   "uk": "Ензимна пудра",
+   "cs": "Enzyme Powder",
+   "en": "Enzyme Powder",
+   "es": "Enzyme Powder"
+  },
+  "Интимная пенка с пробиотиком": {
+   "uk": "Інтимна пінка з пробіотиком",
+   "cs": "Intimate Hygiene Foam",
+   "en": "Intimate Hygiene Foam",
+   "es": "Intimate Hygiene Foam"
+  },
+  "Лосьон для тела с пептидами": {
+   "uk": "Лосьйон для тіла з пептидами",
+   "cs": "Body Lotion",
+   "en": "Body Lotion",
+   "es": "Body Lotion"
+  },
+  "Молочко для тела Aloe Green Tea SPF 15": {
+   "uk": "Молочко для тіла Aloe Green Tea SPF 15",
+   "cs": "Body Milk Aloe & Green Tea SPF 15",
+   "en": "Body Milk Aloe & Green Tea SPF 15",
+   "es": "Body Milk Aloe & Green Tea SPF 15"
+  },
+  "Молочко для тела Bubble Gum SPF 15": {
+   "uk": "Молочко для тіла Bubble Gum SPF 15",
+   "cs": "Body Milk Bubble Gum SPF 15",
+   "en": "Body Milk Bubble Gum SPF 15",
+   "es": "Body Milk Bubble Gum SPF 15"
+  },
+  "Молочко для тела Macaroon SPF 15": {
+   "uk": "Молочко для тіла Macaroon SPF 15",
+   "cs": "Body Milk Macaroon SPF 15",
+   "en": "Body Milk Macaroon SPF 15",
+   "es": "Body Milk Macaroon SPF 15"
+  },
+  "Октенисепт": {
+   "uk": "Октенісепт",
+   "cs": "Octenisept",
+   "en": "Octenisept",
+   "es": "Octenisept"
+  },
+  "Набор № 1: Epicalm, SPF 50+, Enzyclean": {
+   "uk": "Набір № 1: Epicalm, SPF 50+, Enzyclean",
+   "cs": "Sada č. 1: Epicalm, SPF 50+, Enzyclean",
+   "en": "Set No. 1: Epicalm, SPF 50+, Enzyclean",
+   "es": "Set n.º 1: Epicalm, SPF 50+, Enzyclean"
+  },
+  "Набор № 2: матирующий крем SPF 50, Октенисепт, SOS-пудра": {
+   "uk": "Набір № 2: матувальний крем SPF 50, Октенісепт, SOS-пудра",
+   "cs": "Sada č. 2: matující krém SPF 50, Octenisept, SOS Powder",
+   "en": "Set No. 2: mattifying cream SPF 50, Octenisept, SOS Powder",
+   "es": "Set n.º 2: crema matificante SPF 50, Octenisept, SOS Powder"
+  },
+  "Крем-гель для тела SPF 50": {
+   "uk": "Крем-гель для тіла SPF 50",
+   "cs": "Tělový krém-gel SPF 50",
+   "en": "Body cream-gel SPF 50",
+   "es": "Crema-gel corporal SPF 50"
+  },
+  "Флюид для лица SPF 50": {
+   "uk": "Флюїд для обличчя SPF 50",
+   "cs": "Pleťový fluid SPF 50",
+   "en": "Face fluid SPF 50",
+   "es": "Fluido facial SPF 50"
+  },
+  "Набор Folligen + Vitatin + Cellagen": {
+   "uk": "Набір Folligen + Vitatin + Cellagen",
+   "cs": "Sada Folligen + Vitatin + Cellagen",
+   "en": "Folligen + Vitatin + Cellagen set",
+   "es": "Set Folligen + Vitatin + Cellagen"
+  },
+  "Набор Saturate + Vitatin + Cellagen": {
+   "uk": "Набір Saturate + Vitatin + Cellagen",
+   "cs": "Sada Saturate + Vitatin + Cellagen",
+   "en": "Saturate + Vitatin + Cellagen set",
+   "es": "Set Saturate + Vitatin + Cellagen"
+  },
+  "Набор X-Folate + Therapeutic + TheraRx": {
+   "uk": "Набір X-Folate + Therapeutic + TheraRx",
+   "cs": "Sada X-Folate + Therapeutic + TheraRx",
+   "en": "X-Folate + Therapeutic + TheraRx set",
+   "es": "Set X-Folate + Therapeutic + TheraRx"
+  }
+ }
+}

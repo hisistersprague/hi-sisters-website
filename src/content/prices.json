@@ -1,0 +1,4013 @@
+{
+ "groups": {
+  "complexes": {
+   "ru": [
+    {
+     "label": "Подмышки + глубокое бикини",
+     "was": 3300,
+     "now": 2640
+    },
+    {
+     "label": "Подмышки + глубокое бикини + ноги полностью",
+     "was": 7300,
+     "now": 5840
+    },
+    {
+     "label": "Подмышки + глубокое бикини + голени с коленями",
+     "was": 5700,
+     "now": 4560
+    }
+   ],
+   "uk": [
+    {
+     "label": "Пахви + глибоке бікіні",
+     "was": 3300,
+     "now": 2640
+    },
+    {
+     "label": "Пахви + глибоке бікіні + ноги повністю",
+     "was": 7300,
+     "now": 5840
+    },
+    {
+     "label": "Пахви + глибоке бікіні + гомілки з колінами",
+     "was": 5700,
+     "now": 4560
+    }
+   ],
+   "en": [
+    {
+     "label": "Armpits + deep bikini",
+     "was": 3300,
+     "now": 2640
+    },
+    {
+     "label": "Armpits + deep bikini + legs completely",
+     "was": 7300,
+     "now": 5840
+    },
+    {
+     "label": "Armpits + deep bikini + shins with knees",
+     "was": 5700,
+     "now": 4560
+    }
+   ],
+   "es": [
+    {
+     "label": "Axilas + bikini brasileño",
+     "was": 3300,
+     "now": 2640
+    },
+    {
+     "label": "Axilas + bikini brasileño + piernas completas",
+     "was": 7300,
+     "now": 5840
+    },
+    {
+     "label": "Axilas + bikini brasileño + gemelos con rodillas",
+     "was": 5700,
+     "now": 4560
+    }
+   ],
+   "cs": [
+    {
+     "label": "Podpaží + celé bikiny",
+     "was": 3300,
+     "now": 2640
+    },
+    {
+     "label": "Podpaží + celé bikiny + celé nohy",
+     "was": 7300,
+     "now": 5840
+    },
+    {
+     "label": "Podpaží + celé bikiny + lýtka a kolena",
+     "was": 5700,
+     "now": 4560
+    }
+   ]
+  },
+  "laserWomen": {
+   "ru": [
+    {
+     "label": "Подмышки",
+     "price": 900
+    },
+    {
+     "label": "Глубокое бикини",
+     "price": 2400
+    },
+    {
+     "label": "Частичное бикини",
+     "price": 2000
+    },
+    {
+     "label": "Голени с коленями",
+     "price": 2400
+    },
+    {
+     "label": "Ноги полностью",
+     "price": 4000
+    },
+    {
+     "label": "Бёдра полностью",
+     "price": 2200
+    },
+    {
+     "label": "Бёдра, задняя часть",
+     "price": 1700
+    },
+    {
+     "label": "Руки по локоть",
+     "price": 1500
+    },
+    {
+     "label": "Руки полностью",
+     "price": 2000
+    },
+    {
+     "label": "Ареолы",
+     "price": 600
+    },
+    {
+     "label": "Белая линия живота",
+     "price": 600
+    },
+    {
+     "label": "Ягодицы",
+     "price": 1700
+    },
+    {
+     "label": "Лицо (1 зона)",
+     "price": 550
+    },
+    {
+     "label": "Задняя часть шеи",
+     "price": 550
+    }
+   ],
+   "uk": [
+    {
+     "label": "Пахви",
+     "price": 900
+    },
+    {
+     "label": "Глибоке бікіні",
+     "price": 2400
+    },
+    {
+     "label": "Часткове бікіні",
+     "price": 2000
+    },
+    {
+     "label": "Гомілки з колінами",
+     "price": 2400
+    },
+    {
+     "label": "Ноги повністю",
+     "price": 4000
+    },
+    {
+     "label": "Стегна повністю",
+     "price": 2200
+    },
+    {
+     "label": "Стегна, задня частина",
+     "price": 1700
+    },
+    {
+     "label": "Руки по лікоть",
+     "price": 1500
+    },
+    {
+     "label": "Руки повністю",
+     "price": 2000
+    },
+    {
+     "label": "Ареоли",
+     "price": 600
+    },
+    {
+     "label": "Біла лінія живота",
+     "price": 600
+    },
+    {
+     "label": "Сідниці",
+     "price": 1700
+    },
+    {
+     "label": "Обличчя (1 зона)",
+     "price": 550
+    },
+    {
+     "label": "Задня частина шиї",
+     "price": 550
+    }
+   ],
+   "en": [
+    {
+     "label": "Armpits",
+     "price": 900
+    },
+    {
+     "label": "Deep bikini",
+     "price": 2400
+    },
+    {
+     "label": "Partial bikini",
+     "price": 2000
+    },
+    {
+     "label": "Shins with knees",
+     "price": 2400
+    },
+    {
+     "label": "Legs completely",
+     "price": 4000
+    },
+    {
+     "label": "Thighs completely",
+     "price": 2200
+    },
+    {
+     "label": "Back of the thighs",
+     "price": 1700
+    },
+    {
+     "label": "Arms to the elbows",
+     "price": 1500
+    },
+    {
+     "label": "Arms completely",
+     "price": 2000
+    },
+    {
+     "label": "Areolas",
+     "price": 600
+    },
+    {
+     "label": "White line of the abdomen",
+     "price": 600
+    },
+    {
+     "label": "Buttocks",
+     "price": 1700
+    },
+    {
+     "label": "Face (1 area)",
+     "price": 550
+    },
+    {
+     "label": "Back of neck",
+     "price": 550
+    }
+   ],
+   "es": [
+    {
+     "label": "Axilas",
+     "price": 900
+    },
+    {
+     "label": "Bikini brasileño",
+     "price": 2400
+    },
+    {
+     "label": "Bikini parcial",
+     "price": 2000
+    },
+    {
+     "label": "Gemelos con rodillas",
+     "price": 2400
+    },
+    {
+     "label": "Piernas completas",
+     "price": 4000
+    },
+    {
+     "label": "Muslos completos",
+     "price": 2200
+    },
+    {
+     "label": "Parte posterior de los muslos",
+     "price": 1700
+    },
+    {
+     "label": "Brazos hasta el codo",
+     "price": 1500
+    },
+    {
+     "label": "Brazos completos",
+     "price": 2000
+    },
+    {
+     "label": "Areolas",
+     "price": 600
+    },
+    {
+     "label": "Línea alba del abdomen",
+     "price": 600
+    },
+    {
+     "label": "Glúteos",
+     "price": 1700
+    },
+    {
+     "label": "Rostro (1 zona)",
+     "price": 550
+    },
+    {
+     "label": "Parte posterior del cuello",
+     "price": 550
+    }
+   ],
+   "cs": [
+    {
+     "label": "Podpaží",
+     "price": 900
+    },
+    {
+     "label": "Hluboké bikini",
+     "price": 2400
+    },
+    {
+     "label": "Částečné bikini",
+     "price": 2000
+    },
+    {
+     "label": "Lýtka s koleny",
+     "price": 2400
+    },
+    {
+     "label": "Nohy celé",
+     "price": 4000
+    },
+    {
+     "label": "Stehna celé",
+     "price": 2200
+    },
+    {
+     "label": "Zadní strana stehen",
+     "price": 1700
+    },
+    {
+     "label": "Ruce po loket",
+     "price": 1500
+    },
+    {
+     "label": "Ruce celé",
+     "price": 2000
+    },
+    {
+     "label": "Dvorce",
+     "price": 600
+    },
+    {
+     "label": "Bílá čára břicha",
+     "price": 600
+    },
+    {
+     "label": "Hýždě",
+     "price": 1700
+    },
+    {
+     "label": "Obličej (1 oblast)",
+     "price": 550
+    },
+    {
+     "label": "Zadní část krku",
+     "price": 550
+    }
+   ]
+  },
+  "laserMen": {
+   "ru": [
+    {
+     "label": "Подмышки",
+     "price": 1200
+    },
+    {
+     "label": "Плечи",
+     "price": 1200
+    },
+    {
+     "label": "Грудь",
+     "price": 2300
+    },
+    {
+     "label": "Живот полностью",
+     "price": 2300
+    },
+    {
+     "label": "Ареолы",
+     "price": 1000
+    },
+    {
+     "label": "Торс полностью",
+     "price": 4200
+    },
+    {
+     "label": "Лопатки",
+     "price": 2300
+    },
+    {
+     "label": "Поясница",
+     "price": 2300
+    },
+    {
+     "label": "Спина полностью",
+     "price": 4200
+    },
+    {
+     "label": "Частичное бикини",
+     "price": 3000
+    },
+    {
+     "label": "Тотальное бикини",
+     "price": 4300
+    },
+    {
+     "label": "Ягодицы",
+     "price": 2300
+    },
+    {
+     "label": "Голени с коленями",
+     "price": 3000
+    },
+    {
+     "label": "Ноги полностью",
+     "price": 5200
+    },
+    {
+     "label": "Бёдра",
+     "price": 3000
+    },
+    {
+     "label": "Руки по локоть",
+     "price": 2500
+    },
+    {
+     "label": "Руки полностью",
+     "price": 3800
+    },
+    {
+     "label": "Белая линия живота",
+     "price": 950
+    },
+    {
+     "label": "Задняя часть шеи",
+     "price": 1200
+    },
+    {
+     "label": "Шея полностью",
+     "price": 2000
+    },
+    {
+     "label": "Лицо (1 зона)",
+     "price": 800
+    }
+   ],
+   "uk": [
+    {
+     "label": "Пахви",
+     "price": 1200
+    },
+    {
+     "label": "Плечі",
+     "price": 1200
+    },
+    {
+     "label": "Груди",
+     "price": 2300
+    },
+    {
+     "label": "Живіт повністю",
+     "price": 2300
+    },
+    {
+     "label": "Ареоли",
+     "price": 1000
+    },
+    {
+     "label": "Торс повністю",
+     "price": 4200
+    },
+    {
+     "label": "Лопатки",
+     "price": 2300
+    },
+    {
+     "label": "Поперек",
+     "price": 2300
+    },
+    {
+     "label": "Спина повністю",
+     "price": 4200
+    },
+    {
+     "label": "Часткове бікіні",
+     "price": 3000
+    },
+    {
+     "label": "Тотальне бікіні",
+     "price": 4300
+    },
+    {
+     "label": "Сідниці",
+     "price": 2300
+    },
+    {
+     "label": "Гомілки з колінами",
+     "price": 3000
+    },
+    {
+     "label": "Ноги повністю",
+     "price": 5200
+    },
+    {
+     "label": "Стегна",
+     "price": 3000
+    },
+    {
+     "label": "Руки по лікоть",
+     "price": 2500
+    },
+    {
+     "label": "Руки повністю",
+     "price": 3800
+    },
+    {
+     "label": "Біла лінія живота",
+     "price": 950
+    },
+    {
+     "label": "Задня частина шиї",
+     "price": 1200
+    },
+    {
+     "label": "Шия повністю",
+     "price": 2000
+    },
+    {
+     "label": "Обличчя (1 зона)",
+     "price": 800
+    }
+   ],
+   "en": [
+    {
+     "label": "Armpits",
+     "price": 1200
+    },
+    {
+     "label": "Shoulders",
+     "price": 1200
+    },
+    {
+     "label": "Chest",
+     "price": 2300
+    },
+    {
+     "label": "Stomach completely",
+     "price": 2300
+    },
+    {
+     "label": "Areolas",
+     "price": 1000
+    },
+    {
+     "label": "Torso completely",
+     "price": 4200
+    },
+    {
+     "label": "Shoulder blades",
+     "price": 2300
+    },
+    {
+     "label": "Lower back",
+     "price": 2300
+    },
+    {
+     "label": "Back completely",
+     "price": 4200
+    },
+    {
+     "label": "Partial bikini",
+     "price": 3000
+    },
+    {
+     "label": "Total bikini",
+     "price": 4300
+    },
+    {
+     "label": "Buttocks",
+     "price": 2300
+    },
+    {
+     "label": "Shins with knees",
+     "price": 3000
+    },
+    {
+     "label": "Legs completely",
+     "price": 5200
+    },
+    {
+     "label": "Hips",
+     "price": 3000
+    },
+    {
+     "label": "Arms to the elbows",
+     "price": 2500
+    },
+    {
+     "label": "Arms completely",
+     "price": 3800
+    },
+    {
+     "label": "Linea alba",
+     "price": 950
+    },
+    {
+     "label": "Back of the neck",
+     "price": 1200
+    },
+    {
+     "label": "Full neck",
+     "price": 2000
+    },
+    {
+     "label": "Face (1 area)",
+     "price": 800
+    }
+   ],
+   "es": [
+    {
+     "label": "Axilas",
+     "price": 1200
+    },
+    {
+     "label": "Hombros",
+     "price": 1200
+    },
+    {
+     "label": "Pecho",
+     "price": 2300
+    },
+    {
+     "label": "Abdomen completo",
+     "price": 2300
+    },
+    {
+     "label": "Areolas",
+     "price": 1000
+    },
+    {
+     "label": "Torso completo",
+     "price": 4200
+    },
+    {
+     "label": "Omóplatos",
+     "price": 2300
+    },
+    {
+     "label": "Zona lumbar",
+     "price": 2300
+    },
+    {
+     "label": "Espalda completa",
+     "price": 4200
+    },
+    {
+     "label": "Bikini parcial",
+     "price": 3000
+    },
+    {
+     "label": "Bikini total",
+     "price": 4300
+    },
+    {
+     "label": "Glúteos",
+     "price": 2300
+    },
+    {
+     "label": "Gemelos con rodillas",
+     "price": 3000
+    },
+    {
+     "label": "Piernas completas",
+     "price": 5200
+    },
+    {
+     "label": "Muslos",
+     "price": 3000
+    },
+    {
+     "label": "Brazos hasta el codo",
+     "price": 2500
+    },
+    {
+     "label": "Brazos completos",
+     "price": 3800
+    },
+    {
+     "label": "Línea alba",
+     "price": 950
+    },
+    {
+     "label": "Parte posterior del cuello",
+     "price": 1200
+    },
+    {
+     "label": "Cuello completo",
+     "price": 2000
+    },
+    {
+     "label": "Rostro (1 zona)",
+     "price": 800
+    }
+   ],
+   "cs": [
+    {
+     "label": "Podpaží",
+     "price": 1200
+    },
+    {
+     "label": "Ramena",
+     "price": 1200
+    },
+    {
+     "label": "Hrudník",
+     "price": 2300
+    },
+    {
+     "label": "Břicho celé",
+     "price": 2300
+    },
+    {
+     "label": "Dvorce",
+     "price": 1000
+    },
+    {
+     "label": "Hrudník celý",
+     "price": 4200
+    },
+    {
+     "label": "Lopatky",
+     "price": 2300
+    },
+    {
+     "label": "Bedra",
+     "price": 2300
+    },
+    {
+     "label": "Celá záda",
+     "price": 4200
+    },
+    {
+     "label": "Brazilská epilace (horní část a intimní partie)",
+     "price": 3000
+    },
+    {
+     "label": "Totální bikini",
+     "price": 4300
+    },
+    {
+     "label": "Hýždě",
+     "price": 2300
+    },
+    {
+     "label": "Lýtka s koleny",
+     "price": 3000
+    },
+    {
+     "label": "Celé nohy",
+     "price": 5200
+    },
+    {
+     "label": "Stehna",
+     "price": 3000
+    },
+    {
+     "label": "Paže po loket",
+     "price": 2500
+    },
+    {
+     "label": "Celé paže",
+     "price": 3800
+    },
+    {
+     "label": "Střední linie břicha",
+     "price": 950
+    },
+    {
+     "label": "Zadní část krku",
+     "price": 1200
+    },
+    {
+     "label": "Celý krk",
+     "price": 2000
+    },
+    {
+     "label": "Obličej (1 část)",
+     "price": 800
+    }
+   ]
+  },
+  "homeCare": {
+   "ru": [
+    {
+     "label": "Body Peel",
+     "price": 1600
+    },
+    {
+     "label": "Body Butter",
+     "price": 1600
+    },
+    {
+     "label": "Cream Lightening",
+     "price": 1600
+    }
+   ],
+   "uk": [
+    {
+     "label": "Body Peel",
+     "price": 1600
+    },
+    {
+     "label": "Body Butter",
+     "price": 1600
+    },
+    {
+     "label": "Cream Lightening",
+     "price": 1600
+    }
+   ],
+   "en": [
+    {
+     "label": "Body Peel",
+     "price": 1600
+    },
+    {
+     "label": "Body Butter",
+     "price": 1600
+    },
+    {
+     "label": "Cream Lightening",
+     "price": 1600
+    }
+   ],
+   "es": [
+    {
+     "label": "Body Peel",
+     "price": 1600
+    },
+    {
+     "label": "Body Butter",
+     "price": 1600
+    },
+    {
+     "label": "Cream Lightening",
+     "price": 1600
+    }
+   ],
+   "cs": [
+    {
+     "label": "Body Peel",
+     "price": 1600
+    },
+    {
+     "label": "Body Butter",
+     "price": 1600
+    },
+    {
+     "label": "Cream Lightening",
+     "price": 1600
+    }
+   ]
+  },
+  "massageSessions": {
+   "ru": [
+    {
+     "label": "1 сеанс",
+     "price": 800
+    },
+    {
+     "label": "5 сеансов",
+     "price": 3600
+    },
+    {
+     "label": "10 сеансов",
+     "price": 7200
+    },
+    {
+     "label": "15 сеансов",
+     "price": 10800
+    }
+   ],
+   "uk": [
+    {
+     "label": "1 сеанс",
+     "price": 800
+    },
+    {
+     "label": "5 сеансів",
+     "price": 3600
+    },
+    {
+     "label": "10 сеансів",
+     "price": 7200
+    },
+    {
+     "label": "15 сеансів",
+     "price": 10800
+    }
+   ],
+   "en": [
+    {
+     "label": "1 session",
+     "price": 800
+    },
+    {
+     "label": "5 sessions",
+     "price": 3600
+    },
+    {
+     "label": "10 sessions",
+     "price": 7200
+    },
+    {
+     "label": "15 sessions",
+     "price": 10800
+    }
+   ],
+   "es": [
+    {
+     "label": "1 sesión",
+     "price": 800
+    },
+    {
+     "label": "5 sesiones",
+     "price": 3600
+    },
+    {
+     "label": "10 sesiones",
+     "price": 7200
+    },
+    {
+     "label": "15 sesiones",
+     "price": 10800
+    }
+   ],
+   "cs": [
+    {
+     "label": "1 sezení",
+     "price": 800
+    },
+    {
+     "label": "5 sezení",
+     "price": 3600
+    },
+    {
+     "label": "10 sezení",
+     "price": 7200
+    },
+    {
+     "label": "15 sezení",
+     "price": 10800
+    }
+   ]
+  },
+  "cosmetologyItems": {
+   "ru": [
+    {
+     "label": "Консультация + анализ кожи + подбор домашнего ухода",
+     "price": 1000
+    },
+    {
+     "label": "Консультация врача-дерматолога",
+     "price": 1500
+    },
+    {
+     "label": "Аппаратная чистка лица",
+     "price": 1000
+    },
+    {
+     "label": "Механическая чистка лица",
+     "price": 1500
+    },
+    {
+     "label": "Комбинированная чистка лица",
+     "price": 1700
+    },
+    {
+     "label": "Карбокситерапия",
+     "price": 1500
+    },
+    {
+     "label": "Ферментотерапия",
+     "price": 2200
+    },
+    {
+     "label": "Ферментотерапия + пилинг Quick Peel",
+     "price": 2500
+    },
+    {
+     "label": "Quick Peel",
+     "price": 1500
+    },
+    {
+     "label": "Пилинг PMP",
+     "price": 2500
+    },
+    {
+     "label": "Пилинг JALUPRO GLOW PEEL",
+     "price": 2500
+    },
+    {
+     "label": "Cryo Pro X PEEL",
+     "price": 1700
+    },
+    {
+     "label": "«Огонь и лёд» от DMK",
+     "price": 3000
+    },
+    {
+     "label": "Чистка лица от DMK",
+     "price": 2500
+    },
+    {
+     "label": "Маска от DMK",
+     "price": 1000
+    },
+    {
+     "label": "Мезотерапия лица",
+     "price": 3000
+    },
+    {
+     "label": "Мезотерапия шеи",
+     "price": 3000
+    },
+    {
+     "label": "Мезотерапия лица и шеи",
+     "price": 4500
+    }
+   ],
+   "uk": [
+    {
+     "label": "Консультація + аналіз шкіри + підбір домашнього догляду",
+     "price": 1000
+    },
+    {
+     "label": "Консультація лікаря-дерматолога",
+     "price": 1500
+    },
+    {
+     "label": "Апаратна чистка обличчя",
+     "price": 1000
+    },
+    {
+     "label": "Механічна чистка обличчя",
+     "price": 1500
+    },
+    {
+     "label": "Комбінована чистка обличчя",
+     "price": 1700
+    },
+    {
+     "label": "Карбокситерапія",
+     "price": 1500
+    },
+    {
+     "label": "Ферментотерапія",
+     "price": 2200
+    },
+    {
+     "label": "Ферментотерапія + пілінг Quick Peel",
+     "price": 2500
+    },
+    {
+     "label": "Quick Peel",
+     "price": 1500
+    },
+    {
+     "label": "Пілінг PMP",
+     "price": 2500
+    },
+    {
+     "label": "Пілінг JALUPRO GLOW PEEL",
+     "price": 2500
+    },
+    {
+     "label": "Cryo Pro X PEEL",
+     "price": 1700
+    },
+    {
+     "label": "«Вогонь та лід» від DMK",
+     "price": 3000
+    },
+    {
+     "label": "Чистка обличчя від DMK",
+     "price": 2500
+    },
+    {
+     "label": "Маска від DMK",
+     "price": 1000
+    },
+    {
+     "label": "Мезотерапія обличчя",
+     "price": 3000
+    },
+    {
+     "label": "Мезотерапія шиї",
+     "price": 3000
+    },
+    {
+     "label": "Мезотерапія обличчя та шиї",
+     "price": 4500
+    }
+   ],
+   "en": [
+    {
+     "label": "Consultation + skin analysis + home-care plan",
+     "price": 1000
+    },
+    {
+     "label": "Dermatologist consultation",
+     "price": 1500
+    },
+    {
+     "label": "Device-based facial cleansing",
+     "price": 1000
+    },
+    {
+     "label": "Deep Cleansing Facial",
+     "price": 1500
+    },
+    {
+     "label": "Combined Deep Cleansing Facial",
+     "price": 1700
+    },
+    {
+     "label": "Carboxy Therapy",
+     "price": 1500
+    },
+    {
+     "label": "Enzyme Therapy",
+     "price": 2200
+    },
+    {
+     "label": "Enzyme Therapy + Quick Peel",
+     "price": 2500
+    },
+    {
+     "label": "Quick Peel",
+     "price": 1500
+    },
+    {
+     "label": "PMP Peel",
+     "price": 2500
+    },
+    {
+     "label": "JALUPRO GLOW PEEL",
+     "price": 2500
+    },
+    {
+     "label": "Cryo Pro X PEEL",
+     "price": 1700
+    },
+    {
+     "label": "DMK Fire & Ice",
+     "price": 3000
+    },
+    {
+     "label": "DMK Facial Cleansing",
+     "price": 2500
+    },
+    {
+     "label": "DMK Mask",
+     "price": 1000
+    },
+    {
+     "label": "Facial Mesotherapy",
+     "price": 3000
+    },
+    {
+     "label": "Neck Mesotherapy",
+     "price": 3000
+    },
+    {
+     "label": "Face & Neck Mesotherapy",
+     "price": 4500
+    }
+   ],
+   "es": [
+    {
+     "label": "Consulta + análisis de piel + plan de cuidado en casa",
+     "price": 1000
+    },
+    {
+     "label": "Consulta con dermatólogo",
+     "price": 1500
+    },
+    {
+     "label": "Limpieza facial con aparatología",
+     "price": 1000
+    },
+    {
+     "label": "Limpieza mecánica facial",
+     "price": 1500
+    },
+    {
+     "label": "Limpieza combinada facial",
+     "price": 1700
+    },
+    {
+     "label": "Carboxiterapia",
+     "price": 1500
+    },
+    {
+     "label": "Terapia enzimática",
+     "price": 2200
+    },
+    {
+     "label": "Terapia enzimática + Quick Peel",
+     "price": 2500
+    },
+    {
+     "label": "Quick Peel",
+     "price": 1500
+    },
+    {
+     "label": "Peeling PMP",
+     "price": 2500
+    },
+    {
+     "label": "JALUPRO GLOW PEEL",
+     "price": 2500
+    },
+    {
+     "label": "Cryo Pro X PEEL",
+     "price": 1700
+    },
+    {
+     "label": "DMK Fire & Ice",
+     "price": 3000
+    },
+    {
+     "label": "Limpieza facial DMK",
+     "price": 2500
+    },
+    {
+     "label": "Mascarilla DMK",
+     "price": 1000
+    },
+    {
+     "label": "Mesoterapia facial",
+     "price": 3000
+    },
+    {
+     "label": "Mesoterapia de cuello",
+     "price": 3000
+    },
+    {
+     "label": "Mesoterapia facial y cuello",
+     "price": 4500
+    }
+   ],
+   "cs": [
+    {
+     "label": "Konzultace + analýza pleti + výběr domácí péče",
+     "price": 1000
+    },
+    {
+     "label": "Konzultace u dermatologa",
+     "price": 1500
+    },
+    {
+     "label": "Přístrojové čištění pleti",
+     "price": 1000
+    },
+    {
+     "label": "Mechanické čištění pleti",
+     "price": 1500
+    },
+    {
+     "label": "Kombinované čištění pleti",
+     "price": 1700
+    },
+    {
+     "label": "Karboxyterapie",
+     "price": 1500
+    },
+    {
+     "label": "Enzymoterapie",
+     "price": 2200
+    },
+    {
+     "label": "Enzymoterapie + peeling Quick Peel",
+     "price": 2500
+    },
+    {
+     "label": "Quick Peel",
+     "price": 1500
+    },
+    {
+     "label": "PMP peeling",
+     "price": 2500
+    },
+    {
+     "label": "JALUPRO GLOW PEEL",
+     "price": 2500
+    },
+    {
+     "label": "Cryo Pro X PEEL",
+     "price": 1700
+    },
+    {
+     "label": "Oheň a led od DMK",
+     "price": 3000
+    },
+    {
+     "label": "Čištění pleti od DMK",
+     "price": 2500
+    },
+    {
+     "label": "Maska od DMK",
+     "price": 1000
+    },
+    {
+     "label": "Mezoterapie obličeje",
+     "price": 3000
+    },
+    {
+     "label": "Mezoterapie krku",
+     "price": 3000
+    },
+    {
+     "label": "Mezoterapie obličeje a krku",
+     "price": 4500
+    }
+   ]
+  },
+  "microcurrentSessions": {
+   "ru": [
+    {
+     "label": "1 сеанс",
+     "price": 1800
+    },
+    {
+     "label": "5 сеансов",
+     "was": 9000,
+     "now": 7800
+    },
+    {
+     "label": "10 сеансов",
+     "was": 18000,
+     "now": 15000
+    },
+    {
+     "label": "15 сеансов",
+     "was": 27000,
+     "now": 23000
+    }
+   ],
+   "uk": [
+    {
+     "label": "1 сеанс",
+     "price": 1800
+    },
+    {
+     "label": "5 сеансів",
+     "was": 9000,
+     "now": 7800
+    },
+    {
+     "label": "10 сеансів",
+     "was": 18000,
+     "now": 15000
+    },
+    {
+     "label": "15 сеансів",
+     "was": 27000,
+     "now": 23000
+    }
+   ],
+   "en": [
+    {
+     "label": "1 session",
+     "price": 1800
+    },
+    {
+     "label": "5 sessions",
+     "was": 9000,
+     "now": 7800
+    },
+    {
+     "label": "10 sessions",
+     "was": 18000,
+     "now": 15000
+    },
+    {
+     "label": "15 sessions",
+     "was": 27000,
+     "now": 23000
+    }
+   ],
+   "es": [
+    {
+     "label": "1 sesión",
+     "price": 1800
+    },
+    {
+     "label": "5 sesiones",
+     "was": 9000,
+     "now": 7800
+    },
+    {
+     "label": "10 sesiones",
+     "was": 18000,
+     "now": 15000
+    },
+    {
+     "label": "15 sesiones",
+     "was": 27000,
+     "now": 23000
+    }
+   ],
+   "cs": [
+    {
+     "label": "1 ošetření",
+     "price": 1800
+    },
+    {
+     "label": "5 ošetření",
+     "was": 9000,
+     "now": 7800
+    },
+    {
+     "label": "10 ošetření",
+     "was": 18000,
+     "now": 15000
+    },
+    {
+     "label": "15 ošetření",
+     "was": 27000,
+     "now": 23000
+    }
+   ]
+  },
+  "faceMassageSessions": {
+   "ru": [
+    {
+     "label": "1 сеанс",
+     "price": 1500
+    },
+    {
+     "label": "6 сеансов",
+     "was": 9000,
+     "now": 7500
+    },
+    {
+     "label": "8 сеансов",
+     "was": 12000,
+     "now": 10000
+    },
+    {
+     "label": "10 сеансов",
+     "was": 15000,
+     "now": 12500
+    },
+    {
+     "label": "15 сеансов",
+     "was": 22500,
+     "now": 20000
+    }
+   ],
+   "uk": [
+    {
+     "label": "1 сеанс",
+     "price": 1500
+    },
+    {
+     "label": "6 сеансів",
+     "was": 9000,
+     "now": 7500
+    },
+    {
+     "label": "8 сеансів",
+     "was": 12000,
+     "now": 10000
+    },
+    {
+     "label": "10 сеансів",
+     "was": 15000,
+     "now": 12500
+    },
+    {
+     "label": "15 сеансів",
+     "was": 22500,
+     "now": 20000
+    }
+   ],
+   "en": [
+    {
+     "label": "1 session",
+     "price": 1500
+    },
+    {
+     "label": "6 sessions",
+     "was": 9000,
+     "now": 7500
+    },
+    {
+     "label": "8 sessions",
+     "was": 12000,
+     "now": 10000
+    },
+    {
+     "label": "10 sessions",
+     "was": 15000,
+     "now": 12500
+    },
+    {
+     "label": "15 sessions",
+     "was": 22500,
+     "now": 20000
+    }
+   ],
+   "es": [
+    {
+     "label": "1 sesión",
+     "price": 1500
+    },
+    {
+     "label": "6 sesiones",
+     "was": 9000,
+     "now": 7500
+    },
+    {
+     "label": "8 sesiones",
+     "was": 12000,
+     "now": 10000
+    },
+    {
+     "label": "10 sesiones",
+     "was": 15000,
+     "now": 12500
+    },
+    {
+     "label": "15 sesiones",
+     "was": 22500,
+     "now": 20000
+    }
+   ],
+   "cs": [
+    {
+     "label": "1 ošetření",
+     "price": 1500
+    },
+    {
+     "label": "6 ošetření",
+     "was": 9000,
+     "now": 7500
+    },
+    {
+     "label": "8 ošetření",
+     "was": 12000,
+     "now": 10000
+    },
+    {
+     "label": "10 ošetření",
+     "was": 15000,
+     "now": 12500
+    },
+    {
+     "label": "15 ošetření",
+     "was": 22500,
+     "now": 20000
+    }
+   ]
+  },
+  "menFaceItems": {
+   "ru": [
+    {
+     "label": "Межбровье",
+     "price": 600
+    },
+    {
+     "label": "Зона лба",
+     "price": 1000
+    },
+    {
+     "label": "Зона щек",
+     "price": 1600
+    },
+    {
+     "label": "Бакенбарды",
+     "price": 1200
+    },
+    {
+     "label": "Нижняя челюсть",
+     "price": 1000
+    },
+    {
+     "label": "Верхняя губа",
+     "price": 800
+    },
+    {
+     "label": "Подбородок",
+     "price": 800
+    }
+   ],
+   "uk": [
+    {
+     "label": "Міжбрівʼя",
+     "price": 600
+    },
+    {
+     "label": "Лоб",
+     "price": 1000
+    },
+    {
+     "label": "Щоки",
+     "price": 1600
+    },
+    {
+     "label": "Бакенбарди",
+     "price": 1200
+    },
+    {
+     "label": "Нижня щелепа",
+     "price": 1000
+    },
+    {
+     "label": "Верхня губа",
+     "price": 800
+    },
+    {
+     "label": "Підборіддя",
+     "price": 800
+    }
+   ],
+   "en": [
+    {
+     "label": "Between Eyebrows",
+     "price": 600
+    },
+    {
+     "label": "Forehead",
+     "price": 1000
+    },
+    {
+     "label": "Cheeks",
+     "price": 1600
+    },
+    {
+     "label": "Sideburns",
+     "price": 1200
+    },
+    {
+     "label": "Full Neck",
+     "price": 2000
+    },
+    {
+     "label": "Half Neck",
+     "price": 1200
+    },
+    {
+     "label": "Jawline",
+     "price": 1000
+    },
+    {
+     "label": "Upper Lip",
+     "price": 800
+    },
+    {
+     "label": "Chin",
+     "price": 800
+    }
+   ],
+   "es": [
+    {
+     "label": "Entrecejo",
+     "price": 600
+    },
+    {
+     "label": "Frente",
+     "price": 1000
+    },
+    {
+     "label": "Mejillas",
+     "price": 1600
+    },
+    {
+     "label": "Patillas",
+     "price": 1200
+    },
+    {
+     "label": "Medio cuello",
+     "price": 1200
+    },
+    {
+     "label": "Mandíbula",
+     "price": 1000
+    },
+    {
+     "label": "Labio superior",
+     "price": 800
+    },
+    {
+     "label": "Barbilla",
+     "price": 800
+    }
+   ],
+   "cs": [
+    {
+     "label": "Mezi obočím",
+     "price": 600
+    },
+    {
+     "label": "Čelo",
+     "price": 1000
+    },
+    {
+     "label": "Tváře",
+     "price": 1600
+    },
+    {
+     "label": "Kotlety",
+     "price": 1200
+    },
+    {
+     "label": "Dolní čelist",
+     "price": 1000
+    },
+    {
+     "label": "Horní ret",
+     "price": 800
+    },
+    {
+     "label": "Brada",
+     "price": 800
+    }
+   ]
+  },
+  "menFacePackages": {
+   "ru": [
+    {
+     "label": "Лб + межбровье",
+     "was": 1600,
+     "now": 1000
+    },
+    {
+     "label": "Верх. губа + подбор. + ниж. челюсть",
+     "was": 2600,
+     "now": 2000
+    },
+    {
+     "label": "Щеки + бакенбарды",
+     "was": 2800,
+     "now": 2200
+    },
+    {
+     "label": "Всь лицо (без шеи)",
+     "was": 5400,
+     "now": 4500
+    }
+   ],
+   "uk": [
+    {
+     "label": "Лоб + міжбрівʼя",
+     "was": 1600,
+     "now": 1000
+    },
+    {
+     "label": "Верх. губа + підбор. + ниж. щелепа",
+     "was": 2600,
+     "now": 2000
+    },
+    {
+     "label": "Щоки + бакенбарди",
+     "was": 2800,
+     "now": 2200
+    },
+    {
+     "label": "Усе обличчя (без шиї)",
+     "was": 5400,
+     "now": 4500
+    }
+   ],
+   "en": [
+    {
+     "label": "Forehead + Glabella",
+     "was": 1600,
+     "now": 1000
+    },
+    {
+     "label": "Upper Lip + Chin + Jawline",
+     "was": 2600,
+     "now": 2000
+    },
+    {
+     "label": "Cheeks + Sideburns",
+     "was": 2800,
+     "now": 2200
+    },
+    {
+     "label": "Full Face (no neck)",
+     "was": 5400,
+     "now": 4500
+    }
+   ],
+   "es": [
+    {
+     "label": "Frente + entrecejo",
+     "was": 1600,
+     "now": 1000
+    },
+    {
+     "label": "Labio + barbilla + mandíbula",
+     "was": 2600,
+     "now": 2000
+    },
+    {
+     "label": "Mejillas + patillas",
+     "was": 2800,
+     "now": 2200
+    },
+    {
+     "label": "Cara completa (sin cuello)",
+     "was": 5400,
+     "now": 4500
+    }
+   ],
+   "cs": [
+    {
+     "label": "Čelo + meziobočí",
+     "was": 1600,
+     "now": 1000
+    },
+    {
+     "label": "Horní ret + brada + dolní čelist",
+     "was": 2600,
+     "now": 2000
+    },
+    {
+     "label": "Tváře + kotlety",
+     "was": 2800,
+     "now": 2200
+    },
+    {
+     "label": "Celý obličej (bez krku)",
+     "was": 5400,
+     "now": 4500
+    }
+   ]
+  },
+  "homeCareEs": {
+   "ru": [
+    {
+     "label": "Cream Lightening",
+     "price": "65 €"
+    },
+    {
+     "label": "Body Peel",
+     "price": "65 €"
+    },
+    {
+     "label": "Body Butter",
+     "price": "65 €"
+    }
+   ],
+   "uk": [
+    {
+     "label": "Cream Lightening",
+     "price": "65 €"
+    },
+    {
+     "label": "Body Peel",
+     "price": "65 €"
+    },
+    {
+     "label": "Body Butter",
+     "price": "65 €"
+    }
+   ],
+   "en": [
+    {
+     "label": "Cream Lightening",
+     "price": "65 €"
+    },
+    {
+     "label": "Body Peel",
+     "price": "65 €"
+    },
+    {
+     "label": "Body Butter",
+     "price": "65 €"
+    }
+   ],
+   "es": [
+    {
+     "label": "Cream Lightening",
+     "price": "65 €"
+    },
+    {
+     "label": "Body Peel",
+     "price": "65 €"
+    },
+    {
+     "label": "Body Butter",
+     "price": "65 €"
+    }
+   ],
+   "cs": [
+    {
+     "label": "Cream Lightening",
+     "price": "65 €"
+    },
+    {
+     "label": "Body Peel",
+     "price": "65 €"
+    },
+    {
+     "label": "Body Butter",
+     "price": "65 €"
+    }
+   ]
+  },
+  "electroPackages": {
+   "ru": [
+    {
+     "label": "Тело — 60 мин",
+     "price": 1920
+    },
+    {
+     "label": "Тело — 90 мин",
+     "price": 2880
+    },
+    {
+     "label": "Тело — 120 мин",
+     "price": 3840
+    },
+    {
+     "label": "Лицо — 60 мин",
+     "price": 2040
+    },
+    {
+     "label": "Лицо — 90 мин",
+     "price": 3060
+    },
+    {
+     "label": "Лицо — 120 мин",
+     "price": 4080
+    },
+    {
+     "label": "Пробная процедура — 30 мин (тело)",
+     "price": 500
+    },
+    {
+     "label": "В четыре руки — 120 мин",
+     "price": 6370
+    }
+   ],
+   "uk": [
+    {
+     "label": "Тіло — 60 хв",
+     "price": 1920
+    },
+    {
+     "label": "Тіло — 90 хв",
+     "price": 2880
+    },
+    {
+     "label": "Тіло — 120 хв",
+     "price": 3840
+    },
+    {
+     "label": "Обличчя — 60 хв",
+     "price": 2040
+    },
+    {
+     "label": "Обличчя — 90 хв",
+     "price": 3060
+    },
+    {
+     "label": "Обличчя — 120 хв",
+     "price": 4080
+    },
+    {
+     "label": "Пробна процедура — 30 хв (тіло)",
+     "price": 500
+    },
+    {
+     "label": "У чотири руки — 120 хв",
+     "price": 6370
+    }
+   ],
+   "en": [
+    {
+     "label": "Body — 60 min",
+     "price": 1920
+    },
+    {
+     "label": "Body — 90 min",
+     "price": 2880
+    },
+    {
+     "label": "Body — 120 min",
+     "price": 3840
+    },
+    {
+     "label": "Face — 60 min",
+     "price": 2040
+    },
+    {
+     "label": "Face — 90 min",
+     "price": 3060
+    },
+    {
+     "label": "Face — 120 min",
+     "price": 4080
+    },
+    {
+     "label": "Trial session — 30 min (body)",
+     "price": 500
+    },
+    {
+     "label": "Four hands — 120 min",
+     "price": 6370
+    }
+   ],
+   "es": [
+    {
+     "label": "Cuerpo — 60 min",
+     "price": 1920
+    },
+    {
+     "label": "Cuerpo — 90 min",
+     "price": 2880
+    },
+    {
+     "label": "Cuerpo — 120 min",
+     "price": 3840
+    },
+    {
+     "label": "Rostro — 60 min",
+     "price": 2040
+    },
+    {
+     "label": "Rostro — 90 min",
+     "price": 3060
+    },
+    {
+     "label": "Rostro — 120 min",
+     "price": 4080
+    },
+    {
+     "label": "Sesión de prueba — 30 min (cuerpo)",
+     "price": 500
+    },
+    {
+     "label": "A cuatro manos — 120 min",
+     "price": 6370
+    }
+   ],
+   "cs": [
+    {
+     "label": "Tělo — 60 min",
+     "price": 1920
+    },
+    {
+     "label": "Tělo — 90 min",
+     "price": 2880
+    },
+    {
+     "label": "Tělo — 120 min",
+     "price": 3840
+    },
+    {
+     "label": "Obličej — 60 min",
+     "price": 2040
+    },
+    {
+     "label": "Obličej — 90 min",
+     "price": 3060
+    },
+    {
+     "label": "Obličej — 120 min",
+     "price": 4080
+    },
+    {
+     "label": "Zkušební procedura — 30 min (tělo)",
+     "price": 500
+    },
+    {
+     "label": "Ve čtyřech rukou — 120 min",
+     "price": 6370
+    }
+   ]
+  },
+  "trichologyItems": {
+   "ru": [
+    {
+     "label": "Консультация + трихоскоп + лечение",
+     "price": 2000
+    },
+    {
+     "label": "Мезотерапия кожи головы",
+     "price": 4500
+    },
+    {
+     "label": "Повторная консультация трихолога",
+     "price": 1500
+    }
+   ],
+   "uk": [
+    {
+     "label": "Консультація + трихоскоп + лікування",
+     "price": 2000
+    },
+    {
+     "label": "Мезотерапія шкіри голови",
+     "price": 4500
+    },
+    {
+     "label": "Повторна консультація трихолога",
+     "price": 1500
+    }
+   ],
+   "en": [
+    {
+     "label": "Consultation + trichoscope + treatment",
+     "price": 2000
+    },
+    {
+     "label": "Scalp mesotherapy",
+     "price": 4500
+    },
+    {
+     "label": "Follow-up trichologist consultation",
+     "price": 1500
+    }
+   ],
+   "es": [
+    {
+     "label": "Consulta + tricoscopio + tratamiento",
+     "price": 2000
+    },
+    {
+     "label": "Mesoterapia del cuero cabelludo",
+     "price": 4500
+    },
+    {
+     "label": "Consulta de seguimiento con la tricóloga",
+     "price": 1500
+    }
+   ],
+   "cs": [
+    {
+     "label": "Konzultace + trichoskop + léčba",
+     "price": 2000
+    },
+    {
+     "label": "Mezoterapie vlasové pokožky",
+     "price": 4500
+    },
+    {
+     "label": "Opakovaná konzultace u trichologa",
+     "price": 1500
+    }
+   ]
+  },
+  "laserWomenEs": {
+   "ru": [
+    {
+     "label": "Живот полностью",
+     "price": 45
+    },
+    {
+     "label": "Подмышки",
+     "price": 30
+    },
+    {
+     "label": "Глубокое бикини",
+     "price": 80
+    },
+    {
+     "label": "Руки полностью",
+     "price": 65
+    },
+    {
+     "label": "Ягодицы",
+     "price": 60
+    },
+    {
+     "label": "Классическое бикини",
+     "price": 60
+    },
+    {
+     "label": "Белая линия живота",
+     "price": 20
+    },
+    {
+     "label": "Голени с коленями и пальцами",
+     "price": 80
+    },
+    {
+     "label": "Руки по локоть",
+     "price": 45
+    },
+    {
+     "label": "Бёдра полностью",
+     "price": 80
+    },
+    {
+     "label": "Половина бедра",
+     "price": 40
+    },
+    {
+     "label": "Ноги полностью",
+     "price": 140
+    },
+    {
+     "label": "Лицо (1 зона)",
+     "price": 20
+    }
+   ],
+   "uk": [
+    {
+     "label": "Живіт повністю",
+     "price": 45
+    },
+    {
+     "label": "Пахви",
+     "price": 30
+    },
+    {
+     "label": "Глибоке бікіні",
+     "price": 80
+    },
+    {
+     "label": "Руки повністю",
+     "price": 65
+    },
+    {
+     "label": "Сідниці",
+     "price": 60
+    },
+    {
+     "label": "Класичне бікіні",
+     "price": 60
+    },
+    {
+     "label": "Біла лінія живота",
+     "price": 20
+    },
+    {
+     "label": "Гомілки з колінами та пальцями",
+     "price": 80
+    },
+    {
+     "label": "Руки до ліктя",
+     "price": 45
+    },
+    {
+     "label": "Стегна повністю",
+     "price": 80
+    },
+    {
+     "label": "Половина стегна",
+     "price": 40
+    },
+    {
+     "label": "Ноги повністю",
+     "price": 140
+    },
+    {
+     "label": "Обличчя (1 зона)",
+     "price": 20
+    }
+   ],
+   "cs": [
+    {
+     "label": "Celé břicho",
+     "price": 45
+    },
+    {
+     "label": "Podpaží",
+     "price": 30
+    },
+    {
+     "label": "Hluboké bikiny",
+     "price": 80
+    },
+    {
+     "label": "Celé paže",
+     "price": 65
+    },
+    {
+     "label": "Hýždě",
+     "price": 60
+    },
+    {
+     "label": "Klasické bikiny",
+     "price": 60
+    },
+    {
+     "label": "Bílá linie břicha",
+     "price": 20
+    },
+    {
+     "label": "Lýtka s koleny a prsty",
+     "price": 80
+    },
+    {
+     "label": "Paže po loket",
+     "price": 45
+    },
+    {
+     "label": "Celá stehna",
+     "price": 80
+    },
+    {
+     "label": "Polovina stehna",
+     "price": 40
+    },
+    {
+     "label": "Celé nohy",
+     "price": 140
+    },
+    {
+     "label": "Obličej (1 část)",
+     "price": 20
+    }
+   ],
+   "en": [
+    {
+     "label": "Full stomach",
+     "price": 45
+    },
+    {
+     "label": "Underarms",
+     "price": 30
+    },
+    {
+     "label": "Deep bikini",
+     "price": 80
+    },
+    {
+     "label": "Full arms",
+     "price": 65
+    },
+    {
+     "label": "Buttocks",
+     "price": 60
+    },
+    {
+     "label": "Classic bikini",
+     "price": 60
+    },
+    {
+     "label": "Linea alba",
+     "price": 20
+    },
+    {
+     "label": "Shins with knees and toes",
+     "price": 80
+    },
+    {
+     "label": "Arms to the elbow",
+     "price": 45
+    },
+    {
+     "label": "Full thighs",
+     "price": 80
+    },
+    {
+     "label": "Half thigh",
+     "price": 40
+    },
+    {
+     "label": "Full legs",
+     "price": 140
+    },
+    {
+     "label": "Face (1 area)",
+     "price": 20
+    }
+   ],
+   "es": [
+    {
+     "label": "Abdomen completo",
+     "price": 45
+    },
+    {
+     "label": "Axilas",
+     "price": 30
+    },
+    {
+     "label": "Bikini completo",
+     "price": 80
+    },
+    {
+     "label": "Brazos completos",
+     "price": 65
+    },
+    {
+     "label": "Glúteos",
+     "price": 60
+    },
+    {
+     "label": "Ingle",
+     "price": 60
+    },
+    {
+     "label": "Línea alba",
+     "price": 20
+    },
+    {
+     "label": "Medias piernas",
+     "price": 80
+    },
+    {
+     "label": "Medios brazos",
+     "price": 45
+    },
+    {
+     "label": "Muslos completos",
+     "price": 80
+    },
+    {
+     "label": "Parte posterior de los muslos",
+     "price": 40
+    },
+    {
+     "label": "Piernas completas",
+     "price": 140
+    },
+    {
+     "label": "Zona facial",
+     "price": 20
+    }
+   ]
+  },
+  "laserPackagesEs": {
+   "ru": [
+    {
+     "label": "Подмышки + глубокое бикини",
+     "price": 88
+    },
+    {
+     "label": "Подмышки + глубокое бикини + голени",
+     "price": 152
+    },
+    {
+     "label": "Подмышки + глубокое бикини + ноги полностью",
+     "price": 200
+    }
+   ],
+   "uk": [
+    {
+     "label": "Пахви + глибоке бікіні",
+     "price": 88
+    },
+    {
+     "label": "Пахви + глибоке бікіні + гомілки",
+     "price": 152
+    },
+    {
+     "label": "Пахви + глибоке бікіні + ноги повністю",
+     "price": 200
+    }
+   ],
+   "cs": [
+    {
+     "label": "Podpaží + hluboké bikiny",
+     "price": 88
+    },
+    {
+     "label": "Podpaží + hluboké bikiny + lýtka",
+     "price": 152
+    },
+    {
+     "label": "Podpaží + hluboké bikiny + celé nohy",
+     "price": 200
+    }
+   ],
+   "en": [
+    {
+     "label": "Underarms + deep bikini",
+     "price": 88
+    },
+    {
+     "label": "Underarms + deep bikini + shins",
+     "price": 152
+    },
+    {
+     "label": "Underarms + deep bikini + full legs",
+     "price": 200
+    }
+   ],
+   "es": [
+    {
+     "label": "Axilas + Bikini completo",
+     "price": 88
+    },
+    {
+     "label": "Axilas + Bikini completo + Medias piernas",
+     "price": 152
+    },
+    {
+     "label": "Axilas + Bikini completo + Piernas completas",
+     "price": 200
+    }
+   ]
+  },
+  "laserMenEs": {
+   "ru": [
+    {
+     "label": "Ареолы",
+     "price": 25
+    },
+    {
+     "label": "Подмышки",
+     "price": 35
+    },
+    {
+     "label": "Классическое бикини",
+     "price": 95
+    },
+    {
+     "label": "Бикини полностью",
+     "price": 140
+    },
+    {
+     "label": "Руки полностью",
+     "price": 130
+    },
+    {
+     "label": "Руки по локоть",
+     "price": 80
+    },
+    {
+     "label": "Половина шеи",
+     "price": 30
+    },
+    {
+     "label": "Шея полностью",
+     "price": 60
+    },
+    {
+     "label": "Лопатки",
+     "price": 70
+    },
+    {
+     "label": "Спина полностью",
+     "price": 140
+    },
+    {
+     "label": "Ягодицы",
+     "price": 70
+    },
+    {
+     "label": "Плечи",
+     "price": 35
+    },
+    {
+     "label": "Поясница",
+     "price": 70
+    },
+    {
+     "label": "Голени с коленями и пальцами",
+     "price": 88
+    },
+    {
+     "label": "Бёдра",
+     "price": 88
+    },
+    {
+     "label": "Грудь",
+     "price": 70
+    },
+    {
+     "label": "Ноги полностью",
+     "price": 170
+    },
+    {
+     "label": "Торс полностью",
+     "price": 140
+    },
+    {
+     "label": "Живот полностью",
+     "price": 70
+    }
+   ],
+   "uk": [
+    {
+     "label": "Ареоли",
+     "price": 25
+    },
+    {
+     "label": "Пахви",
+     "price": 35
+    },
+    {
+     "label": "Класичне бікіні",
+     "price": 95
+    },
+    {
+     "label": "Бікіні повністю",
+     "price": 140
+    },
+    {
+     "label": "Руки повністю",
+     "price": 130
+    },
+    {
+     "label": "Руки до ліктя",
+     "price": 80
+    },
+    {
+     "label": "Половина шиї",
+     "price": 30
+    },
+    {
+     "label": "Шия повністю",
+     "price": 60
+    },
+    {
+     "label": "Лопатки",
+     "price": 70
+    },
+    {
+     "label": "Спина повністю",
+     "price": 140
+    },
+    {
+     "label": "Сідниці",
+     "price": 70
+    },
+    {
+     "label": "Плечі",
+     "price": 35
+    },
+    {
+     "label": "Поперек",
+     "price": 70
+    },
+    {
+     "label": "Гомілки з колінами та пальцями",
+     "price": 88
+    },
+    {
+     "label": "Стегна",
+     "price": 88
+    },
+    {
+     "label": "Груди",
+     "price": 70
+    },
+    {
+     "label": "Ноги повністю",
+     "price": 170
+    },
+    {
+     "label": "Торс повністю",
+     "price": 140
+    },
+    {
+     "label": "Живіт повністю",
+     "price": 70
+    }
+   ],
+   "cs": [
+    {
+     "label": "Dvorce",
+     "price": 25
+    },
+    {
+     "label": "Podpaží",
+     "price": 35
+    },
+    {
+     "label": "Klasické bikiny",
+     "price": 95
+    },
+    {
+     "label": "Celé bikiny",
+     "price": 140
+    },
+    {
+     "label": "Celé paže",
+     "price": 130
+    },
+    {
+     "label": "Paže po loket",
+     "price": 80
+    },
+    {
+     "label": "Polovina krku",
+     "price": 30
+    },
+    {
+     "label": "Celý krk",
+     "price": 60
+    },
+    {
+     "label": "Lopatky",
+     "price": 70
+    },
+    {
+     "label": "Celá záda",
+     "price": 140
+    },
+    {
+     "label": "Hýždě",
+     "price": 70
+    },
+    {
+     "label": "Ramena",
+     "price": 35
+    },
+    {
+     "label": "Bedra",
+     "price": 70
+    },
+    {
+     "label": "Lýtka s koleny a prsty",
+     "price": 88
+    },
+    {
+     "label": "Stehna",
+     "price": 88
+    },
+    {
+     "label": "Hrudník",
+     "price": 70
+    },
+    {
+     "label": "Celé nohy",
+     "price": 170
+    },
+    {
+     "label": "Celý trup",
+     "price": 140
+    },
+    {
+     "label": "Celé břicho",
+     "price": 70
+    }
+   ],
+   "en": [
+    {
+     "label": "Areolas",
+     "price": 25
+    },
+    {
+     "label": "Underarms",
+     "price": 35
+    },
+    {
+     "label": "Classic bikini",
+     "price": 95
+    },
+    {
+     "label": "Full bikini",
+     "price": 140
+    },
+    {
+     "label": "Full arms",
+     "price": 130
+    },
+    {
+     "label": "Arms to the elbow",
+     "price": 80
+    },
+    {
+     "label": "Half neck",
+     "price": 30
+    },
+    {
+     "label": "Full neck",
+     "price": 60
+    },
+    {
+     "label": "Shoulder blades",
+     "price": 70
+    },
+    {
+     "label": "Full back",
+     "price": 140
+    },
+    {
+     "label": "Buttocks",
+     "price": 70
+    },
+    {
+     "label": "Shoulders",
+     "price": 35
+    },
+    {
+     "label": "Lower back",
+     "price": 70
+    },
+    {
+     "label": "Shins with knees and toes",
+     "price": 88
+    },
+    {
+     "label": "Thighs",
+     "price": 88
+    },
+    {
+     "label": "Chest",
+     "price": 70
+    },
+    {
+     "label": "Full legs",
+     "price": 170
+    },
+    {
+     "label": "Full torso",
+     "price": 140
+    },
+    {
+     "label": "Full stomach",
+     "price": 70
+    }
+   ],
+   "es": [
+    {
+     "label": "Areolas",
+     "price": 25
+    },
+    {
+     "label": "Axilas",
+     "price": 35
+    },
+    {
+     "label": "Bikini clásico",
+     "price": 95
+    },
+    {
+     "label": "Bikini total",
+     "price": 140
+    },
+    {
+     "label": "Brazos completos",
+     "price": 130
+    },
+    {
+     "label": "Brazos hasta codo",
+     "price": 80
+    },
+    {
+     "label": "Cuello (mitad)",
+     "price": 30
+    },
+    {
+     "label": "Cuello completo",
+     "price": 60
+    },
+    {
+     "label": "Escápulas",
+     "price": 70
+    },
+    {
+     "label": "Espalda completa",
+     "price": 140
+    },
+    {
+     "label": "Glúteos",
+     "price": 70
+    },
+    {
+     "label": "Hombros",
+     "price": 35
+    },
+    {
+     "label": "Lumbares",
+     "price": 70
+    },
+    {
+     "label": "Medias piernas",
+     "price": 88
+    },
+    {
+     "label": "Muslos",
+     "price": 88
+    },
+    {
+     "label": "Pecho",
+     "price": 70
+    },
+    {
+     "label": "Piernas completas",
+     "price": 170
+    },
+    {
+     "label": "Torso completo",
+     "price": 140
+    },
+    {
+     "label": "Vientre completo",
+     "price": 70
+    }
+   ]
+  },
+  "electroEs": {
+   "ru": [
+    {
+     "label": "Зона лица · 30 мин",
+     "price": 45
+    },
+    {
+     "label": "Зона лица · 60 мин",
+     "price": 90
+    },
+    {
+     "label": "Зона лица · 90 мин",
+     "price": 135
+    },
+    {
+     "label": "Зона лица · 120 мин",
+     "price": 180
+    },
+    {
+     "label": "Зона тела · 60 мин",
+     "price": 72
+    },
+    {
+     "label": "Зона тела · 90 мин",
+     "price": 108
+    },
+    {
+     "label": "Зона тела · 120 мин",
+     "price": 144
+    }
+   ],
+   "uk": [
+    {
+     "label": "Зона обличчя · 30 хв",
+     "price": 45
+    },
+    {
+     "label": "Зона обличчя · 60 хв",
+     "price": 90
+    },
+    {
+     "label": "Зона обличчя · 90 хв",
+     "price": 135
+    },
+    {
+     "label": "Зона обличчя · 120 хв",
+     "price": 180
+    },
+    {
+     "label": "Зона тіла · 60 хв",
+     "price": 72
+    },
+    {
+     "label": "Зона тіла · 90 хв",
+     "price": 108
+    },
+    {
+     "label": "Зона тіла · 120 хв",
+     "price": 144
+    }
+   ],
+   "cs": [
+    {
+     "label": "Zóna obličeje · 30 min",
+     "price": 45
+    },
+    {
+     "label": "Zóna obličeje · 60 min",
+     "price": 90
+    },
+    {
+     "label": "Zóna obličeje · 90 min",
+     "price": 135
+    },
+    {
+     "label": "Zóna obličeje · 120 min",
+     "price": 180
+    },
+    {
+     "label": "Zóna těla · 60 min",
+     "price": 72
+    },
+    {
+     "label": "Zóna těla · 90 min",
+     "price": 108
+    },
+    {
+     "label": "Zóna těla · 120 min",
+     "price": 144
+    }
+   ],
+   "en": [
+    {
+     "label": "Face area · 30 min",
+     "price": 45
+    },
+    {
+     "label": "Face area · 60 min",
+     "price": 90
+    },
+    {
+     "label": "Face area · 90 min",
+     "price": 135
+    },
+    {
+     "label": "Face area · 120 min",
+     "price": 180
+    },
+    {
+     "label": "Body area · 60 min",
+     "price": 72
+    },
+    {
+     "label": "Body area · 90 min",
+     "price": 108
+    },
+    {
+     "label": "Body area · 120 min",
+     "price": 144
+    }
+   ],
+   "es": [
+    {
+     "label": "Zonas del rostro · 30 min",
+     "price": 45
+    },
+    {
+     "label": "Zonas del rostro · 60 min",
+     "price": 90
+    },
+    {
+     "label": "Zonas del rostro · 90 min",
+     "price": 135
+    },
+    {
+     "label": "Zonas del rostro · 120 min",
+     "price": 180
+    },
+    {
+     "label": "Zonas del cuerpo · 60 min",
+     "price": 72
+    },
+    {
+     "label": "Zonas del cuerpo · 90 min",
+     "price": 108
+    },
+    {
+     "label": "Zonas del cuerpo · 120 min",
+     "price": 144
+    }
+   ]
+  },
+  "electroExtrasEs": {
+   "ru": [
+    {
+     "label": "Одноразовая игла или зонд",
+     "price": 6
+    },
+    {
+     "label": "Нанесение анестезии (одна зона)",
+     "price": 5
+    }
+   ],
+   "uk": [
+    {
+     "label": "Одноразова голка або зонд",
+     "price": 6
+    },
+    {
+     "label": "Нанесення анестезії (одна зона)",
+     "price": 5
+    }
+   ],
+   "cs": [
+    {
+     "label": "Jednorázová jehla nebo sonda",
+     "price": 6
+    }
+   ],
+   "en": [
+    {
+     "label": "Single-use needle or probe",
+     "price": 6
+    },
+    {
+     "label": "Anaesthetic application (one area)",
+     "price": 5
+    }
+   ],
+   "es": [
+    {
+     "label": "Aguja desechable",
+     "price": 6
+    },
+    {
+     "label": "Aplicación de anestesia (una zona)",
+     "price": 5
+    }
+   ]
+  },
+  "intimateWhitening": {
+   "ru": [
+    {
+     "label": "Лобок",
+     "price": 3000
+    },
+    {
+     "label": "Бёдра",
+     "price": 3000
+    },
+    {
+     "label": "Половые губы",
+     "price": 2000
+    },
+    {
+     "label": "Межъягодичная складка",
+     "price": 2000
+    },
+    {
+     "label": "Подмышки",
+     "price": 2000
+    }
+   ],
+   "uk": [
+    {
+     "label": "Лобок",
+     "price": 3000
+    },
+    {
+     "label": "Стегна",
+     "price": 3000
+    },
+    {
+     "label": "Статеві губи",
+     "price": 2000
+    },
+    {
+     "label": "Міжсідничні складка",
+     "price": 2000
+    },
+    {
+     "label": "Пахви",
+     "price": 2000
+    }
+   ],
+   "en": [
+    {
+     "label": "Pubic area",
+     "price": 3000
+    },
+    {
+     "label": "Groin",
+     "price": 3000
+    },
+    {
+     "label": "Labia",
+     "price": 2000
+    },
+    {
+     "label": "Intergluteal area",
+     "price": 2000
+    },
+    {
+     "label": "Underarms",
+     "price": 2000
+    }
+   ],
+   "es": [
+    {
+     "label": "Zona púbica",
+     "price": 3000
+    },
+    {
+     "label": "Ingles",
+     "price": 3000
+    },
+    {
+     "label": "Labios mayores",
+     "price": 2000
+    },
+    {
+     "label": "Zona interglútea",
+     "price": 2000
+    },
+    {
+     "label": "Axilas",
+     "price": 2000
+    }
+   ],
+   "cs": [
+    {
+     "label": "Horní část bikin",
+     "price": 3000
+    },
+    {
+     "label": "Třísla",
+     "price": 3000
+    },
+    {
+     "label": "Stydké pysky",
+     "price": 2000
+    },
+    {
+     "label": "Konečník",
+     "price": 2000
+    },
+    {
+     "label": "Podpaží",
+     "price": 2000
+    }
+   ]
+  },
+  "injections": {
+   "ru": [
+    {
+     "label": "Биоревитализация REJURAN I",
+     "price": 4800
+    },
+    {
+     "label": "Биоревитализация REJURAN HB",
+     "price": 4500
+    },
+    {
+     "label": "Биоревитализация JALUPRO Super Hydro",
+     "price": 5000
+    },
+    {
+     "label": "Биоревитализация JALUPRO HMW",
+     "price": 4200
+    },
+    {
+     "label": "Биоревитализация JALUPRO Young Eye",
+     "price": 4500
+    },
+    {
+     "label": "Биоревитализация PolyPhil NEXT",
+     "price": 4500
+    },
+    {
+     "label": "Биоревитализация REVOK",
+     "price": 6000
+    },
+    {
+     "label": "Контурная пластика губ Stylage XXL",
+     "price": 6600
+    },
+    {
+     "label": "Растворение препарата, частичное",
+     "price": 2000
+    },
+    {
+     "label": "Растворение препарата, полное",
+     "price": 3000
+    }
+   ],
+   "uk": [
+    {
+     "label": "Біоревіталізація REJURAN I",
+     "price": 4800
+    },
+    {
+     "label": "Біоревіталізація REJURAN HB",
+     "price": 4500
+    },
+    {
+     "label": "Біоревіталізація JALUPRO Super Hydro",
+     "price": 5000
+    },
+    {
+     "label": "Біоревіталізація JALUPRO HMW",
+     "price": 4200
+    },
+    {
+     "label": "Біоревіталізація JALUPRO Young Eye",
+     "price": 4500
+    },
+    {
+     "label": "Біоревіталізація PolyPhil NEXT",
+     "price": 4500
+    },
+    {
+     "label": "Біоревіталізація REVOK",
+     "price": 6000
+    },
+    {
+     "label": "Контурна пластика губ Stylage XXL",
+     "price": 6600
+    },
+    {
+     "label": "Розчинення препарату, часткове",
+     "price": 2000
+    },
+    {
+     "label": "Розчинення препарату, повне",
+     "price": 3000
+    }
+   ],
+   "en": [
+    {
+     "label": "REJURAN I biorevitalisation",
+     "price": 4800
+    },
+    {
+     "label": "REJURAN HB biorevitalisation",
+     "price": 4500
+    },
+    {
+     "label": "JALUPRO Super Hydro biorevitalisation",
+     "price": 5000
+    },
+    {
+     "label": "JALUPRO HMW biorevitalisation",
+     "price": 4200
+    },
+    {
+     "label": "JALUPRO Young Eye biorevitalisation",
+     "price": 4500
+    },
+    {
+     "label": "PolyPhil NEXT biorevitalisation",
+     "price": 4500
+    },
+    {
+     "label": "REVOK biorevitalisation",
+     "price": 6000
+    },
+    {
+     "label": "Lip filler, Stylage XXL",
+     "price": 6600
+    },
+    {
+     "label": "Filler dissolving, partial",
+     "price": 2000
+    },
+    {
+     "label": "Filler dissolving, full",
+     "price": 3000
+    }
+   ],
+   "es": [
+    {
+     "label": "Biorrevitalización REJURAN I",
+     "price": 4800
+    },
+    {
+     "label": "Biorrevitalización REJURAN HB",
+     "price": 4500
+    },
+    {
+     "label": "Biorrevitalización JALUPRO Super Hydro",
+     "price": 5000
+    },
+    {
+     "label": "Biorrevitalización JALUPRO HMW",
+     "price": 4200
+    },
+    {
+     "label": "Biorrevitalización JALUPRO Young Eye",
+     "price": 4500
+    },
+    {
+     "label": "Biorrevitalización PolyPhil NEXT",
+     "price": 4500
+    },
+    {
+     "label": "Biorrevitalización REVOK",
+     "price": 6000
+    },
+    {
+     "label": "Aumento de labios, Stylage XXL",
+     "price": 6600
+    },
+    {
+     "label": "Disolución del relleno, parcial",
+     "price": 2000
+    },
+    {
+     "label": "Disolución del relleno, completa",
+     "price": 3000
+    }
+   ]
+  },
+  "intimatePeelingEs": {
+   "ru": [
+    {
+     "label": "Лобок",
+     "price": 120
+    },
+    {
+     "label": "Половые губы",
+     "price": 80
+    },
+    {
+     "label": "Межъягодичная складка",
+     "price": 80
+    },
+    {
+     "label": "Подмышки",
+     "price": 80
+    }
+   ],
+   "uk": [
+    {
+     "label": "Лобок",
+     "price": 120
+    },
+    {
+     "label": "Статеві губи",
+     "price": 80
+    },
+    {
+     "label": "Міжсіднична складка",
+     "price": 80
+    },
+    {
+     "label": "Пахви",
+     "price": 80
+    }
+   ],
+   "en": [
+    {
+     "label": "Pubic area",
+     "price": 120
+    },
+    {
+     "label": "Labia",
+     "price": 80
+    },
+    {
+     "label": "Intergluteal area",
+     "price": 80
+    },
+    {
+     "label": "Underarms",
+     "price": 80
+    }
+   ],
+   "es": [
+    {
+     "label": "Zona púbica",
+     "price": 120
+    },
+    {
+     "label": "Labios mayores",
+     "price": 80
+    },
+    {
+     "label": "Zona interglútea",
+     "price": 80
+    },
+    {
+     "label": "Axilas",
+     "price": 80
+    }
+   ],
+   "cs": [
+    {
+     "label": "Horní část bikin",
+     "price": 120
+    },
+    {
+     "label": "Stydké pysky",
+     "price": 80
+    },
+    {
+     "label": "Mezihýžďová rýha",
+     "price": 80
+    },
+    {
+     "label": "Podpaží",
+     "price": 80
+    }
+   ]
+  },
+  "botox": {
+   "ru": [
+    {
+     "label": "Одна зона",
+     "price": 2600
+    },
+    {
+     "label": "Лоб и межбровье",
+     "price": 3700
+    },
+    {
+     "label": "Верхняя треть лица",
+     "price": 5500
+    },
+    {
+     "label": "Жевательные мышцы",
+     "price": 6350
+    },
+    {
+     "label": "Full face (без жевательных)",
+     "price": 12500
+    },
+    {
+     "label": "Full face (с жевательными)",
+     "price": 16500
+    },
+    {
+     "label": "Платизма / Нефертити",
+     "price": 7500
+    },
+    {
+     "label": "Губы",
+     "price": 2500
+    },
+    {
+     "label": "ДАО (Depressor Anguli Oris)",
+     "price": 2000
+    },
+    {
+     "label": "Нос — кончик",
+     "price": 2000
+    },
+    {
+     "label": "Нос — морщины",
+     "price": 2000
+    },
+    {
+     "label": "Глаза",
+     "price": 3500
+    },
+    {
+     "label": "TRAP-TOX (шея и холка)",
+     "price": 5600
+    },
+    {
+     "label": "Гипергидроз — подмышки",
+     "price": 10000
+    },
+    {
+     "label": "Гипергидроз — ладони",
+     "price": 12000
+    },
+    {
+     "label": "Гипергидроз — стопы",
+     "price": 12000
+    }
+   ],
+   "uk": [
+    {
+     "label": "Одна зона",
+     "price": 2600
+    },
+    {
+     "label": "Лоб і міжбрів’я",
+     "price": 3700
+    },
+    {
+     "label": "Верхня третина обличчя",
+     "price": 5500
+    },
+    {
+     "label": "Жувальні м’язи",
+     "price": 6350
+    },
+    {
+     "label": "Full face (без жувальних)",
+     "price": 12500
+    },
+    {
+     "label": "Full face (із жувальними)",
+     "price": 16500
+    },
+    {
+     "label": "Платизма / Нефертіті",
+     "price": 7500
+    },
+    {
+     "label": "Губи",
+     "price": 2500
+    },
+    {
+     "label": "ДАО (Depressor Anguli Oris)",
+     "price": 2000
+    },
+    {
+     "label": "Ніс — кінчик",
+     "price": 2000
+    },
+    {
+     "label": "Ніс — зморшки",
+     "price": 2000
+    },
+    {
+     "label": "Очі",
+     "price": 3500
+    },
+    {
+     "label": "TRAP-TOX (шия і холка)",
+     "price": 5600
+    },
+    {
+     "label": "Гіпергідроз — пахви",
+     "price": 10000
+    },
+    {
+     "label": "Гіпергідроз — долоні",
+     "price": 12000
+    },
+    {
+     "label": "Гіпергідроз — стопи",
+     "price": 12000
+    }
+   ]
+  }
+ },
+ "labels": {
+  "modalTitleLaser": {
+   "ru": "Лазерная эпиляция — прайс",
+   "uk": "Лазерна епіляція — прайс",
+   "en": "Laser hair removal — price list",
+   "es": "Depilación láser — lista de precios",
+   "cs": "Laserová epilace — ceník"
+  },
+  "modalTitleMassage": {
+   "ru": "Лимфодренажный массаж — прайс",
+   "uk": "Лімфодренажний масаж — прайс",
+   "en": "Lymphatic drainage massage — price list",
+   "es": "Drenaje linfático — lista de precios",
+   "cs": "Lymfomasáž — ceník"
+  },
+  "tabComplexes": {
+   "ru": "Комплексы",
+   "uk": "Комплекси",
+   "en": "Complexes",
+   "es": "Combos",
+   "cs": "Balíčky"
+  },
+  "tabWomen": {
+   "ru": "Женский",
+   "uk": "Жіночий",
+   "en": "Women",
+   "es": "Mujer",
+   "cs": "Ženy"
+  },
+  "tabMen": {
+   "ru": "Мужской",
+   "uk": "Чоловічий",
+   "en": "Men",
+   "es": "Hombre",
+   "cs": "Muži"
+  },
+  "viewPriceBtn": {
+   "ru": "Посмотреть прайс →",
+   "uk": "Переглянути прайс →",
+   "en": "View price list →",
+   "es": "Ver lista de precios →",
+   "cs": "Zobrazit ceník →"
+  },
+  "pragueNote": {
+   "ru": "Цены актуальны для клиники в Праге",
+   "uk": "Ціни актуальні для клініки в Празі",
+   "en": "Prices apply to the Prague clinic",
+   "es": "Precios válidos para la clínica de Praga",
+   "cs": "Ceny platí pro kliniku v Praze"
+  },
+  "homeCareTitle": {
+   "ru": "Домашний уход",
+   "uk": "Домашній догляд",
+   "en": "Home care",
+   "es": "Cuidado en casa",
+   "cs": "Domácí péče"
+  },
+  "homeCareNote": {
+   "ru": "Cream Lightening обязателен в домашнем уходе при прохождении курса пилингов",
+   "uk": "Cream Lightening обов’язковий у домашньому догляді при проходженні курсу пілінгів",
+   "en": "Cream Lightening is required for home care during a course of peels",
+   "es": "Cream Lightening es obligatorio en el cuidado en casa durante un curso de peelings",
+   "cs": "Cream Lightening je povinné v domácí péči při absolvování kurzu peelingu"
+  },
+  "massageTitle": {
+   "ru": "Лимфодренажный массаж / Прессотерапия",
+   "uk": "Лімфодренажний масаж / Пресотерапія",
+   "en": "Lymphatic drainage massage / Pressotherapy",
+   "es": "Drenaje linfático / Presoterapia",
+   "cs": "Lymfomasáž / Presoterapie"
+  },
+  "cosmetologyTitle": {
+   "ru": "Косметология",
+   "uk": "Косметологія",
+   "en": "Cosmetology",
+   "es": "Cosmetología",
+   "cs": "Kosmetologické ošetření"
+  },
+  "cosmetologyDesc": {
+   "ru": "Профессиональный уход за кожей.",
+   "uk": "Професійний догляд за шкірою. Очищення та відновлення.",
+   "en": "Professional skincare to deeply cleanse, renew and revitalize.",
+   "es": "Tratamientos profesionales para la piel (solo Praga).",
+   "cs": "Profesionální péče o pleť, hloubkové čištění a regenerace."
+  },
+  "microcurrentTitle": {
+   "ru": "Микротоковая терапия лица",
+   "uk": "Мікрострумова терапія обличчя",
+   "en": "Microcurrent Facial Therapy",
+   "es": "Terapia de Microcorrientes",
+   "cs": "Mikroproudová terapie obličeje"
+  },
+  "microcurrentDesc": {
+   "ru": "Мягкая неинвазивная процедура. Лифтинг без инъекций.",
+   "uk": "М’яка процедура. Ліфтинг без ін’єкцій.",
+   "en": "Gentle non-invasive treatment. Natural lifting without injections.",
+   "es": "Lifting natural sin inyecciones (solo Praga).",
+   "cs": "Jemná neinvazivní procedura. Přirozený lifting efekt bez injekcí."
+  },
+  "microcurrentDuration": {
+   "ru": "Продолжительность: 60 минут",
+   "uk": "Тривалість: 60 хвилин",
+   "en": "Treatment duration: 60 minutes",
+   "es": "Duración: 60 minutos",
+   "cs": "Délka procedury: 60 minut"
+  },
+  "faceMassageTitle": {
+   "ru": "Массаж лица «Голливудский лифтинг»",
+   "uk": "Масаж обличчя «Голлівудський ліфтинг»",
+   "en": "Hollywood Facial Lifting",
+   "es": "Masaje Facial «Hollywood Lifting»",
+   "cs": "Hollywoodský lifting obličeje"
+  },
+  "faceMassageDesc": {
+   "ru": "Авторская техника массажа для подтянутого овала лица без инъекций и операций. Уже после первой процедуры лицо выглядит свежее, отдохнувшим и более подтянутым. Массаж сочетает лимфодренаж, глубокую работу с мышцами лица и техники релаксации.",
+   "uk": "Авторська техніка масажу для підтягнутого овалу обличчя без ін’єкцій та операцій. Уже після першого сеансу обличчя виглядає свіжіше та більш підтягнутим.",
+   "en": "Signature facial massage technique for a lifted, sculpted face without injections or surgery. Visible results after the very first session.",
+   "es": "Técnica de masaje para un óvalo facial levantado sin inyecciones ni cirugía. Resultados visibles desde la primera sesión.",
+   "cs": "Autorská technika masáže pro pevnější kontury obličeje bez injekcí a operací. Viditelné výsledky již po prvním ošetření."
+  },
+  "faceMassageDuration": {
+   "ru": "Продолжительность процедуры: 90 минут",
+   "uk": "Тривалість процедури: 90 хвилин",
+   "en": "Duration: 90 minutes",
+   "es": "Duración: 90 minutos",
+   "cs": "Délka procedury: 90 minut"
+  },
+  "menFaceTitle": {
+   "ru": "Мужская эпиляция лица",
+   "uk": "Чоловіча епіляція обличчя",
+   "en": "Men's Facial Laser Epilation",
+   "es": "Depilación Facial Masculina",
+   "cs": "Mužská epilace obličeje"
+  },
+  "menFacePackagesTitle": {
+   "ru": "Комплексы мужское лицо",
+   "uk": "Комплекси чол. обличчя",
+   "en": "Men's Face Packages",
+   "es": "Paquetes faciales masc.",
+   "cs": "Balíčky m. obličej"
+  },
+  "electroTitle": {
+   "ru": "Электроэпиляция",
+   "uk": "Електроепіляція",
+   "en": "Electrolysis",
+   "es": "Electrólisis",
+   "cs": "Elektroepilace"
+  },
+  "electroNote": {
+   "ru": "Оплата поминутно, за фактически отработанное время по таймингу аппарата",
+   "uk": "Оплата похвилинно, за фактично відпрацьований час по таймінгу апарату",
+   "en": "Billed per minute of actual device working time",
+   "es": "Pago por minuto del tiempo real trabajado según el temporizador del equipo",
+   "cs": "Platba za minutu skutečně odpracovaného času podle časovače přístroje"
+  },
+  "electroBodyLabel": {
+   "ru": "Тело",
+   "uk": "Тіло",
+   "en": "Body",
+   "es": "Cuerpo",
+   "cs": "Tělo"
+  },
+  "electroFaceLabel": {
+   "ru": "Лицо (губы, носогубный треугольник, подбородок, брови)",
+   "uk": "Обличчя (губи, носогубний трикутник, підборіддя, брови)",
+   "en": "Face (lips, nasolabial, chin, brows)",
+   "es": "Rostro (labios, zona nasolabial, barbilla, cejas)",
+   "cs": "Obličej (rty, nasolabial, brada, obočí)"
+  },
+  "electroNeedleLabel": {
+   "ru": "Одноразовая игла",
+   "uk": "Одноразова голка",
+   "en": "Single-use needle",
+   "es": "Aguja desechable",
+   "cs": "Jednorázová jehla"
+  },
+  "electro4HandsLabel": {
+   "ru": "Услуга в 4 руки (+/мастер)",
+   "uk": "Послуга в 4 руки (+/майстер)",
+   "en": "4-Hands service (+/master)",
+   "es": "Servicio 4 manos (+/especialista)",
+   "cs": "Služba 4 ruce (+/specialistka)"
+  },
+  "electroAnesthLabel": {
+   "ru": "Аппликационная анестезия (за 1 зону)",
+   "uk": "Аплікаційна анестезія (за 1 зону)",
+   "en": "Topical anaesthesia (per zone)",
+   "es": "Anestesia tópica (por zona)",
+   "cs": "Topická anestezie (za 1 zónu)"
+  },
+  "electroPerMin": {
+   "ru": "Kč/мин",
+   "uk": "Kč/хв",
+   "en": "Kč/min",
+   "es": "Kč/min",
+   "cs": "Kč/min"
+  },
+  "electroPerHour": {
+   "ru": "Kč/час",
+   "uk": "Kč/год",
+   "en": "Kč/hr",
+   "es": "Kč/h",
+   "cs": "Kč/hod"
+  },
+  "electroCurrencyEs": {
+   "ru": "€/мин",
+   "uk": "€/хв",
+   "en": "€/min",
+   "es": "€/min",
+   "cs": "€/min"
+  },
+  "electroSpec1Name": {
+   "ru": "Natalie (с мая 2024)",
+   "uk": "Natalie (з травня 2024)",
+   "en": "Natalie (from May 2024)",
+   "es": "Natalie (desde mayo 2024)",
+   "cs": "Natalie (od května 2024)"
+  },
+  "electroSpec1Body": {
+   "ru": 23,
+   "uk": 23,
+   "en": 23,
+   "es": 23,
+   "cs": 23
+  },
+  "electroSpec1Face": {
+   "ru": 26,
+   "uk": 26,
+   "en": 26,
+   "es": 26,
+   "cs": 26
+  },
+  "electroSpec2Name": {
+   "ru": "Olha (с мая 2023)",
+   "uk": "Olha (з травня 2023)",
+   "en": "Olha (from May 2023)",
+   "es": "Olha (desde mayo 2023)",
+   "cs": "Olha (od května 2023)"
+  },
+  "electroSpec2Body": {
+   "ru": 27,
+   "uk": 27,
+   "en": 27,
+   "es": 27,
+   "cs": 27
+  },
+  "electroSpec2Face": {
+   "ru": 30,
+   "uk": 30,
+   "en": 30,
+   "es": 30,
+   "cs": 30
+  },
+  "electroSpec3Name": {
+   "ru": "Diana",
+   "uk": "Diana",
+   "en": "Diana",
+   "es": "Diana",
+   "cs": "Diana"
+  },
+  "electroSpec3Body": {
+   "ru": 18,
+   "uk": 18,
+   "en": 18,
+   "es": 18,
+   "cs": 18
+  },
+  "electroSpec3Face": {
+   "ru": 21,
+   "uk": 21,
+   "en": 21,
+   "es": 21,
+   "cs": 21
+  },
+  "electroSpec4Name": {
+   "ru": "Yulianna",
+   "uk": "Yulianna",
+   "en": "Yulianna",
+   "es": "Yulianna",
+   "cs": "Yulianna"
+  },
+  "electroSpec4Body": {
+   "ru": 12,
+   "uk": 12,
+   "en": 12,
+   "es": 12,
+   "cs": 12
+  },
+  "electroNeedle": {
+   "ru": 130,
+   "uk": 130,
+   "en": 130,
+   "es": 130,
+   "cs": 130
+  },
+  "electro4Hands": {
+   "ru": 185,
+   "uk": 185,
+   "en": 185,
+   "es": 185,
+   "cs": 185
+  },
+  "electroAnesthesia": {
+   "ru": 185,
+   "uk": 185,
+   "en": 185,
+   "es": 185,
+   "cs": 185
+  },
+  "electroBodyEs": {
+   "ru": 1.2,
+   "uk": 1.2,
+   "en": 1.2,
+   "es": 1.2,
+   "cs": 1.2
+  },
+  "electroFaceEs": {
+   "ru": 1.5,
+   "uk": 1.5,
+   "en": 1.5,
+   "es": 1.5,
+   "cs": 1.5
+  },
+  "electroNeedleEs": {
+   "ru": 6,
+   "uk": 6,
+   "en": 6,
+   "es": 6,
+   "cs": 6
+  },
+  "electroTitleEs": {
+   "ru": "Электроэпиляция (Валенсия)",
+   "uk": "Електроепіляція (Валенсія)",
+   "en": "Electrolysis (Valencia)",
+   "es": "Electrólisis (Valencia)",
+   "cs": "Elektroepilace (Valencie)"
+  },
+  "electroBodyRate": {
+   "ru": 32,
+   "uk": 32,
+   "en": 32,
+   "es": 32,
+   "cs": 32
+  },
+  "electroFaceRate": {
+   "ru": 34,
+   "uk": 34,
+   "en": 34,
+   "es": 34,
+   "cs": 34
+  },
+  "electroPackagesTitle": {
+   "ru": "Пакеты (онлайн-запись)",
+   "uk": "Пакети (онлайн-запис)",
+   "en": "Packages (online booking)",
+   "es": "Paquetes (reserva online)",
+   "cs": "Balíčky (online rezervace)"
+  },
+  "electroExtrasTitle": {
+   "ru": "Доп. услуги",
+   "uk": "Дод. послуги",
+   "en": "Extras",
+   "es": "Extras",
+   "cs": "Doplňkové služby"
+  },
+  "electroIncludedNote": {
+   "ru": "Одноразовые иглы и зонды включены в стоимость",
+   "uk": "Одноразові голки та зонди включені у вартість",
+   "en": "Single-use needles and probes are included",
+   "es": "Agujas y sondas desechables incluidas",
+   "cs": "Jednorázové jehly a sondy jsou v ceně"
+  },
+  "trichologyTitle": {
+   "ru": "Трихология",
+   "uk": "Трихологія",
+   "en": "Trichology",
+   "es": "Tricología",
+   "cs": "Trichologie"
+  },
+  "trichologyDesc": {
+   "ru": "Диагностика волос и кожи головы с помощью трихоскопа. Составляем индивидуальный лечебный протокол.",
+   "uk": "Діагностика волосся та шкіри голови за допомогою трихоскопа.",
+   "en": "Hair and scalp diagnostics using a trichoscope. We create an individual treatment protocol for each client.",
+   "es": "Diagnóstico del cabello y cuero cabelludo con tricoscopio. Protocolo de tratamiento individual.",
+   "cs": "Diagnostika stavu vlasů a pokožky hlavy pomocí trichoskopu. Sestavujeme individuální léčebný protokol pro každého klienta."
+  }
+ }
+}
