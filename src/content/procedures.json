@@ -1070,22 +1070,27 @@
    },
    "body": {
     "ru": [
+     "Quick Peel — пилинг системы DMK, поэтому его часто ставят в связке с другими протоколами этого бренда: ферментотерапией, чисткой или маской.",
      "Состав работает в пределах верхних слоёв кожи: ускоряет отшелушивание, за счёт этого лицо выглядит свежее, поры становятся чище, мелкие неровности сглаживаются. Это именно «быстрый» вариант — его часто берут как первый пилинг или как поддержку между более серьёзными процедурами.",
      "Сильную пигментацию, рубцы и глубокие морщины поверхностный пилинг не убирает. Если задача такая, честнее сразу обсудить курс или другие процедуры — одним Quick Peel вопрос не решить."
     ],
     "uk": [
+     "Quick Peel — пілінг системи DMK, тому його часто ставлять у зв’язці з іншими протоколами цього бренду: ферментотерапією, чисткою або маскою.",
      "Склад працює в межах верхніх шарів шкіри: прискорює відлущування, завдяки цьому обличчя виглядає свіжіше, пори стають чистішими, дрібні нерівності згладжуються. Це саме «швидкий» варіант — його часто беруть як перший пілінг або як підтримку між серйознішими процедурами.",
      "Сильну пігментацію, рубці та глибокі зморшки поверхневий пілінг не прибирає. Якщо задача така, чесніше одразу обговорити курс або інші процедури — одним Quick Peel питання не вирішити."
     ],
     "cs": [
+     "Quick Peel je peeling systému DMK, proto se často kombinuje s dalšími protokoly této značky: enzymoterapií, čištěním nebo maskou.",
      "Přípravek pracuje v horních vrstvách pleti: zrychlí odlupování, díky čemu tvář vypadá svěžeji, póry jsou čistší a drobné nerovnosti se vyhladí. Je to opravdu „rychlá“ varianta — často se bere jako první peeling nebo jako doplnění mezi náročnějšími ošetřeními.",
      "Výraznou pigmentaci, jizvy a hluboké vrásky povrchový peeling neodstraní. Pokud je cílem tohle, je čistší hned probrat kúru nebo jiná ošetření — samotný Quick Peel to nevyřeší."
     ],
     "en": [
+     "Quick Peel belongs to the DMK system, so it is often paired with other protocols from that brand: enzyme therapy, a cleanse or a mask.",
      "The formula works within the upper layers of the skin: it speeds up exfoliation, so the face looks fresher, pores read cleaner and fine unevenness smooths out. This is genuinely the quick option — often chosen as a first peel or as a top-up between heavier treatments.",
      "A superficial peel will not remove strong pigmentation, scars or deep wrinkles. If that is the goal, it is more honest to discuss a course or other treatments right away — Quick Peel alone will not get you there."
     ],
     "es": [
+     "Quick Peel pertenece al sistema DMK, por eso suele combinarse con otros protocolos de la marca: enzimoterapia, limpieza o mascarilla.",
      "La fórmula actúa en las capas superiores de la piel: acelera la exfoliación, de modo que el rostro se ve más fresco, los poros más limpios y las irregularidades finas se suavizan. Es de verdad la opción rápida: se suele elegir como primer peeling o como refuerzo entre tratamientos más intensos.",
      "Un peeling superficial no elimina la pigmentación marcada, las cicatrices ni las arrugas profundas. Si ese es el objetivo, es más honesto hablar de una pauta o de otros tratamientos: con Quick Peel solo no se consigue."
     ]
@@ -2768,7 +2773,7 @@
   },
   {
    "slug": "mesotherapy",
-   "sub": "meso",
+   "sub": "device",
    "service": "cosmetology",
    "group": "cosmetologyItems",
    "rows": [
@@ -2776,77 +2781,185 @@
     16,
     17
    ],
+   "duration": 60,
    "title": {
-    "ru": "Мезотерапия лица и шеи",
-    "uk": "Мезотерапія обличчя та шиї"
+    "ru": "Мезотерапия на дермапене (микронидлинг)",
+    "uk": "Мезотерапія на дермапені (мікронідлінг)",
+    "cs": "Mezoterapie dermapenem (microneedling)",
+    "en": "Dermapen mesotherapy (microneedling)",
+    "es": "Mesoterapia con Dermapen (microneedling)"
    },
    "lead": {
-    "ru": "Микроинъекции коктейля с витаминами, аминокислотами и гиалуроновой кислотой. Работает с качеством кожи: увлажнённостью, тоном, плотностью.",
-    "uk": "Мікроінʼєкції коктейлю з вітамінами, амінокислотами та гіалуроновою кислотою. Працює з якістю шкіри: зволоженістю, тоном, щільністю."
+    "ru": "Процедуру проводим аппаратом Dermapen: тончайшие иглы создают микроканалы, через которые в кожу попадает коктейль. Без шприцевых инъекций.",
+    "uk": "Процедуру проводимо апаратом Dermapen: найтонші голки створюють мікроканали, через які в шкіру потрапляє коктейль. Без шприцевих інʼєкцій.",
+    "cs": "Ošetření děláme přístrojem Dermapen: velmi tenké jehličky vytvoří mikrokanálky, kterými se do pleti dostane koktejl. Bez injekcí stříkačkou.",
+    "en": "We do this with a Dermapen: very fine needles create micro-channels through which the cocktail reaches the skin. No syringe injections.",
+    "es": "Lo hacemos con Dermapen: unas agujas muy finas crean microcanales por los que el cóctel llega a la piel. Sin inyecciones con jeringa."
    },
    "body": {
     "ru": [
-     "Препарат вводят очень тонкой иглой на небольшую глубину по всей зоне: лицо, шея или лицо вместе с шеей. Коктейль подбирают под задачу — увлажнение, тусклый тон, снижение плотности, профилактика возрастных изменений. Ощущения терпимые, но это именно инъекции: будут точечные уколы, возможны небольшие папулы, которые расходятся в течение суток.",
-     "Мезотерапия работает курсом: обычно 4–6 процедур с интервалом 1–2 недели, затем поддержка. Одна процедура даёт эффект увлажнения, но накопительного результата по плотности и тону от неё ждать не стоит — об этом говорим до начала, а не после."
+     "Аппарат с одноразовой насадкой проходит по коже, делая множество микропроколов заданной глубины. Глубину косметолог выставляет по зоне и задаче: под глазами и на шее кожа тоньше, на щеках и лбу плотнее. Через эти микроканалы в кожу вводится коктейль с витаминами, аминокислотами и гиалуроновой кислотой.",
+     "Работают два механизма сразу: сам коктейль и реакция кожи на контролируемое повреждение — она отвечает усилением обновления и выработкой коллагена. Поэтому результат развивается не в день процедуры, а в течение 3–4 недель, и усиливается с каждым повторением.",
+     "В прайсе три варианта: лицо, шея и лицо вместе с шеей. Коктейль подбираем на осмотре — под обезвоженность, тусклый тон, снижение плотности или следы постакне."
     ],
     "uk": [
-     "Препарат вводять дуже тонкою іглою на невелику глибину по всій зоні: обличчя, шия або обличчя разом із шиєю. Коктейль підбирають під задачу — зволоження, тьмяний тон, зниження щільності, профілактика вікових змін. Відчуття терпимі, але це саме інʼєкції: будуть точкові уколи, можливі невеликі папули, які розходяться протягом доби.",
-     "Мезотерапія працює курсом: зазвичай 4–6 процедур з інтервалом 1–2 тижні, далі підтримка. Одна процедура дає ефект зволоження, але накопичувального результату за щільністю й тоном від неї чекати не варто — про це говоримо до початку, а не після."
+     "Апарат з одноразовою насадкою проходить по шкірі, роблячи безліч мікропроколів заданої глибини. Глибину косметолог виставляє за зоною і задачею: під очима і на шиї шкіра тонша, на щоках і лобі щільніша. Через ці мікроканали у шкіру вводиться коктейль із вітамінами, амінокислотами та гіалуроновою кислотою.",
+     "Працюють два механізми одразу: сам коктейль і реакція шкіри на контрольоване пошкодження — вона відповідає посиленням оновлення і виробленням колагену. Тому результат розвивається не в день процедури, а протягом 3–4 тижнів, і посилюється з кожним повторенням.",
+     "У прайсі три варіанти: обличчя, шия та обличчя разом із шиєю. Коктейль добираємо на огляді — під зневоднення, тьмяний тон, зниження щільності або сліди постакне."
+    ],
+    "cs": [
+     "Přístroj s jednorázovou hlavicí přejíždí po pleti a dělá množství mikrovpichů v nastavené hloubce. Hloubku kosmetoložka volí podle zóny a cíle: pod očima a na krku je kůže tenčí, na tvářích a čele hutnější. Těmito mikrokanálky se do pleti dostane koktejl s vitaminy, aminokyselinami a kyselinou hyaluronovou.",
+     "Pracují dva mechanismy najednou: samotný koktejl a reakce pleti na řízené podráždění — odpoví zrychlenou obnovou a tvorbou kolagenu. Výsledek se proto nerozvíjí v den ošetření, ale během 3–4 týdnů, a s každým opakováním sílí.",
+     "V ceníku jsou tři varianty: obličej, krk a obličej s krkem. Koktejl volíme při vyšetření — podle dehydratace, šedivého tónu, nižší hustoty nebo stop po akné."
+    ],
+    "en": [
+     "A device with a single-use tip passes over the skin, making many micro-punctures at a set depth. The cosmetologist chooses the depth by area and goal: the skin under the eyes and on the neck is thinner, on the cheeks and forehead denser. Through these micro-channels a cocktail of vitamins, amino acids and hyaluronic acid enters the skin.",
+     "Two mechanisms work at once: the cocktail itself and the skin's response to controlled micro-injury, which it answers with faster renewal and collagen production. The result therefore develops over 3–4 weeks rather than on the day, and builds with each repetition.",
+     "The price list has three options: face, neck, and face with neck. The cocktail is chosen at the appointment — for dehydration, a dull tone, loss of density or post-acne marks."
+    ],
+    "es": [
+     "Un aparato con cabezal de un solo uso recorre la piel haciendo multitud de micropunciones a una profundidad fijada. La cosmetóloga elige la profundidad según la zona y el objetivo: bajo los ojos y en el cuello la piel es más fina; en mejillas y frente, más gruesa. Por esos microcanales entra un cóctel de vitaminas, aminoácidos y ácido hialurónico.",
+     "Actúan dos mecanismos a la vez: el propio cóctel y la respuesta de la piel a una microlesión controlada, que responde acelerando la renovación y produciendo colágeno. Por eso el resultado se desarrolla a lo largo de 3–4 semanas y no el mismo día, y se refuerza con cada repetición.",
+     "En la tarifa hay tres opciones: rostro, cuello y rostro con cuello. El cóctel se elige en la consulta: para deshidratación, tono apagado, pérdida de densidad o marcas de acné."
     ]
    },
    "who": {
     "ru": [
-     "обезвоженная кожа, чувство стянутости",
-     "тусклый тон, мелкие морщинки",
-     "снижение плотности кожи, первые возрастные изменения",
-     "подготовка кожи к событию за 2–3 недели",
-     "шея и зона под подбородком, где кожа тоньше"
+     "обезвоженная кожа, чувство стянутости, тусклый тон",
+     "снижение плотности и упругости, первые возрастные изменения",
+     "следы постакне и неровная текстура",
+     "расширенные поры",
+     "шея и зона под подбородком, где кожа тоньше",
+     "вы не хотите шприцевых инъекций"
     ],
     "uk": [
-     "зневоднена шкіра, відчуття стягнутості",
-     "тьмяний тон, дрібні зморшки",
-     "зниження щільності шкіри, перші вікові зміни",
-     "підготовка шкіри до події за 2–3 тижні",
-     "шия та зона під підборіддям, де шкіра тонша"
+     "зневоднена шкіра, відчуття стягнутості, тьмяний тон",
+     "зниження щільності та пружності, перші вікові зміни",
+     "сліди постакне і нерівна текстура",
+     "розширені пори",
+     "шия та зона під підборіддям, де шкіра тонша",
+     "ви не хочете шприцевих інʼєкцій"
+    ],
+    "cs": [
+     "dehydratovaná pleť, pocit napětí, šedivý tón",
+     "nižší hustota a pružnost, první projevy stárnutí",
+     "stopy po akné a nerovná textura",
+     "rozšířené póry",
+     "krk a oblast pod bradou, kde je kůže tenčí",
+     "nechcete injekce stříkačkou"
+    ],
+    "en": [
+     "dehydrated skin, tightness, a dull tone",
+     "loss of density and firmness, early signs of ageing",
+     "post-acne marks and uneven texture",
+     "enlarged pores",
+     "the neck and under the chin, where the skin is thinner",
+     "you would rather avoid syringe injections"
+    ],
+    "es": [
+     "piel deshidratada, tirantez, tono apagado",
+     "pérdida de densidad y firmeza, primeros signos de edad",
+     "marcas de acné y textura irregular",
+     "poros dilatados",
+     "cuello y zona bajo el mentón, donde la piel es más fina",
+     "prefieres evitar las inyecciones con jeringa"
     ]
    },
    "how": {
     "ru": [
-     "осмотр, подбор коктейля и зоны",
-     "обработка кожи антисептиком, при необходимости — анестезирующий крем",
-     "микроинъекции по зоне",
-     "успокаивающий уход",
-     "рекомендации на 2–3 дня"
+     "осмотр, выбор коктейля, зоны и глубины",
+     "очищение и обезжиривание кожи",
+     "аппликационная анестезия по необходимости",
+     "проход дермапеном по зоне одноразовой стерильной насадкой",
+     "нанесение коктейля и успокаивающей маски",
+     "SPF и рекомендации на несколько дней"
     ],
     "uk": [
-     "огляд, підбір коктейлю та зони",
-     "обробка шкіри антисептиком, за потреби — анестезуючий крем",
-     "мікроінʼєкції по зоні",
-     "заспокійливий догляд",
-     "рекомендації на 2–3 дні"
+     "огляд, вибір коктейлю, зони та глибини",
+     "очищення й обезжирення шкіри",
+     "аплікаційна анестезія за потреби",
+     "прохід дермапеном по зоні одноразовою стерильною насадкою",
+     "нанесення коктейлю та заспокійливої маски",
+     "SPF і рекомендації на кілька днів"
+    ],
+    "cs": [
+     "vyšetření, volba koktejlu, zóny a hloubky",
+     "čištění a odmaštění pleti",
+     "znecitlivující krém podle potřeby",
+     "přejezd dermapenem po zóně jednorázovou sterilní hlavicí",
+     "nanesení koktejlu a zklidňující masky",
+     "SPF a doporučení na několik dní"
+    ],
+    "en": [
+     "assessment, choosing the cocktail, the area and the depth",
+     "cleansing and degreasing the skin",
+     "topical numbing if needed",
+     "passing the Dermapen over the area with a sterile single-use tip",
+     "applying the cocktail and a soothing mask",
+     "SPF and guidance for the next few days"
+    ],
+    "es": [
+     "valoración, elección del cóctel, la zona y la profundidad",
+     "limpieza y desengrasado de la piel",
+     "anestesia tópica si hace falta",
+     "pasada con el Dermapen por la zona con cabezal estéril de un solo uso",
+     "aplicación del cóctel y mascarilla calmante",
+     "SPF y pautas para los días siguientes"
     ]
    },
    "after": {
     "ru": [
-     "точечные следы от инъекций и небольшие папулы расходятся за несколько часов — сутки",
-     "возможны небольшие синячки, особенно в зоне шеи",
-     "2–3 дня без сауны, бассейна, бани и активного спорта",
-     "в день процедуры не трогать кожу руками и не наносить макияж",
-     "SPF обязателен",
-     "процедура не проводится при беременности, кормлении, активных воспалениях и нарушениях свёртываемости крови"
+     "выраженное покраснение в первые часы, иногда до следующего дня — это ожидаемая реакция",
+     "лёгкая отёчность и чувство стянутости, иногда мелкое шелушение на 2–4-й день",
+     "сутки не наносить макияж и не трогать лицо руками",
+     "3–5 дней без сауны, бассейна, бани и активного спорта",
+     "SPF обязателен: кожа после микропроколов легко даёт пигментацию",
+     "кислоты, скрабы и ретинол дома — через 5–7 дней",
+     "процедуру не делаем при активных воспалениях, герпесе в фазе обострения, беременности, нарушениях свёртываемости крови и склонности к келоидным рубцам"
     ],
     "uk": [
-     "точкові сліди від інʼєкцій і невеликі папули розходяться за кілька годин — добу",
-     "можливі невеликі синячки, особливо в зоні шиї",
-     "2–3 дні без сауни, басейну, лазні й активного спорту",
-     "у день процедури не торкатися шкіри руками й не наносити макіяж",
-     "SPF обов’язковий",
-     "процедура не проводиться при вагітності, годуванні, активних запаленнях і порушеннях згортання крові"
+     "виражене почервоніння в перші години, іноді до наступного дня — це очікувана реакція",
+     "легка набряклість і відчуття стягнутості, іноді дрібне злущування на 2–4-й день",
+     "добу не наносити макіяж і не торкатися обличчя руками",
+     "3–5 днів без сауни, басейну, лазні й активного спорту",
+     "SPF обов’язковий: шкіра після мікропроколів легко дає пігментацію",
+     "кислоти, скраби й ретинол удома — через 5–7 днів",
+     "процедуру не робимо при активних запаленнях, герпесі у фазі загострення, вагітності, порушеннях згортання крові та схильності до келоїдних рубців"
+    ],
+    "cs": [
+     "výrazné zarudnutí v prvních hodinách, někdy do druhého dne — to je očekávaná reakce",
+     "mírný otok a pocit napětí, někdy drobné olupování 2.–4. den",
+     "jeden den nenanášet make-up a nesahat si na obličej",
+     "3–5 dní bez sauny, bazénu a náročného sportu",
+     "SPF je povinné: pleť po mikrovpiších snadno zapigmentuje",
+     "kyseliny, peelingy a retinol doma za 5–7 dní",
+     "ošetření neděláme při aktivních zánětech, při herpesu ve fázi vzplanutí, v těhotenství, při poruchách srážlivosti a sklonu ke keloidním jizvám"
+    ],
+    "en": [
+     "marked redness for the first hours, sometimes into the next day — an expected reaction",
+     "slight swelling and tightness, sometimes fine flaking on days 2–4",
+     "no make-up and no touching the face for 24 hours",
+     "3–5 days without sauna, pool or intense training",
+     "SPF is a must: skin pigments easily after micro-punctures",
+     "acids, scrubs and retinol at home after 5–7 days",
+     "we do not perform it with active inflammation, an active herpes outbreak, in pregnancy, with clotting disorders or a tendency to keloid scarring"
+    ],
+    "es": [
+     "enrojecimiento marcado las primeras horas, a veces hasta el día siguiente: es la reacción esperada",
+     "ligera hinchazón y tirantez, a veces descamación fina del día 2 al 4",
+     "24 horas sin maquillaje y sin tocarse la cara",
+     "3–5 días sin sauna, piscina ni deporte intenso",
+     "SPF obligatorio: tras las micropunciones la piel pigmenta con facilidad",
+     "ácidos, exfoliantes y retinol en casa a los 5–7 días",
+     "no lo hacemos con inflamación activa, herpes en brote, embarazo, trastornos de la coagulación ni tendencia a cicatrices queloides"
     ]
    },
    "freq": {
-    "ru": "Курс 4–6 процедур с интервалом 1–2 недели, затем поддержка раз в 1–2 месяца. Зоны можно комбинировать: лицо, шея или лицо и шея вместе — цены в прайсе выше.",
-    "uk": "Курс 4–6 процедур з інтервалом 1–2 тижні, далі підтримка раз на 1–2 місяці. Зони можна комбінувати: обличчя, шия або обличчя й шия разом — ціни в прайсі вище."
+    "ru": "Курс 4–6 процедур с интервалом 2–4 недели, затем поддержка раз в 2–3 месяца. Результат оценивают через 3–4 недели после процедуры: коже нужно время на выработку коллагена.",
+    "uk": "Курс 4–6 процедур з інтервалом 2–4 тижні, далі підтримка раз на 2–3 місяці. Результат оцінюють через 3–4 тижні після процедури: шкірі потрібен час на вироблення колагену.",
+    "cs": "Kúra 4–6 ošetření v intervalu 2–4 týdny, pak udržovací jednou za 2–3 měsíce. Výsledek se hodnotí 3–4 týdny po ošetření: pleť potřebuje čas na tvorbu kolagenu.",
+    "en": "A course of 4–6 sessions 2–4 weeks apart, then maintenance every 2–3 months. The result is judged 3–4 weeks after a session: the skin needs time to build collagen.",
+    "es": "Pauta de 4–6 sesiones cada 2–4 semanas y después mantenimiento cada 2–3 meses. El resultado se valora 3–4 semanas después: la piel necesita tiempo para generar colágeno."
    }
   },
   {
