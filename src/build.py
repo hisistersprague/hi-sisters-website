@@ -3758,6 +3758,7 @@ def build_zone(lang, city, key):
 </div></section>
 
 <section><div class="wrap arts">{arts}</div></section>
+{video_block(z, lang, title_city)}
 
 {'<section class="tint"><div class="wrap"><div class="sec-head"><h2>' + e(ui_z['price']) + '</h2></div><div class="ptable">' + table + '</div><div class="more-list"><a href="/' + lang + '/' + city + '/laser/">' + e(ui_z['all']) + '</a></div></div></section>' if table else ''}
 

@@ -515,6 +515,17 @@
      "Se decide en la consulta: según el estadio y la ubicación de las venas, rodeamos la zona o recomendamos acudir antes a un flebólogo."
     ]
    ]
+  },
+  "video": {
+   "src": "/assets/video/laser-nohy-2.mp4",
+   "poster": "/assets/video/laser-nohy-2.jpg",
+   "title": {
+    "ru": "Лазерная эпиляция ног: как это выглядит",
+    "uk": "Лазерна епіляція ніг: як це виглядає",
+    "cs": "Laserová epilace nohou: jak to vypadá",
+    "en": "Laser hair removal on legs: what it looks like",
+    "es": "Depilación láser de piernas: cómo se ve"
+   }
   }
  },
  "arms": {
