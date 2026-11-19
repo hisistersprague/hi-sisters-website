@@ -27,7 +27,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/assets/app.css?v=3e2d0eff">
+<link rel="stylesheet" href="/assets/app.css?v=83922065">
 <link rel="icon" href="/favicon.svg">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-K921K357QH"></script>
 <script>
@@ -50,7 +50,7 @@ addEventListener('click',function(ev){
     <a class="top-tel" href="tel:+420702192946">+420 702 192 946</a>
     <a class="btn btn-sm" href="/uk/prague/booking/" data-book>Записатися</a>
   </div>
-  <div class="nav-row"><div class="wrap"><nav class="mainnav"><a href="/uk/prague/">Головна</a><a href="/uk/prague/services/">Послуги</a><a href="/uk/prague/training/">Навчання</a><a href="/uk/prague/cosmetics/">Косметика</a><a href="/uk/prague/about/">Про нас</a><a href="/uk/prague/contacts/">Контакти</a></nav></div></div>
+  <div class="nav-row"><div class="wrap"><nav class="mainnav"><span class="nav-i"><a class="nav-a" href="/uk/prague/">Головна</a></span><span class="nav-i has-sub"><a class="nav-a" href="/uk/prague/services/">Послуги</a><button class="nav-x" type="button" aria-expanded="false" aria-label="Послуги"></button><span class="nav-sub"><a href="/uk/prague/cosmetology/">Косметологія</a><a href="/uk/prague/laser/">Лазерна епіляція</a><a href="/uk/prague/electro/">Електроепіляція</a><a href="/uk/prague/trichology/">Трихологія</a><a href="/uk/prague/injections/">Ін’єкційна косметологія</a><a href="/uk/prague/services/">Усі послуги</a></span></span><span class="nav-i"><a class="nav-a" href="/uk/prague/training/">Навчання</a></span><span class="nav-i"><a class="nav-a" href="/uk/prague/cosmetics/">Косметика</a></span><span class="nav-i"><a class="nav-a" href="/uk/prague/about/">Про нас</a></span><span class="nav-i"><a class="nav-a" href="/uk/prague/contacts/">Контакти</a></span></nav></div></div>
 </header>
 <main>
 <section class="hero hero-sm"><div class="wrap">
@@ -89,5 +89,21 @@ addEventListener('click',function(ev){
     </div>
   </div>
   <nav class="foot-nav"><a href="/uk/prague/">Головна</a><a href="/uk/prague/services/">Послуги</a><a href="/uk/prague/training/">Навчання</a><a href="/uk/prague/cosmetics/">Косметика</a><a href="/uk/prague/about/">Про нас</a><a href="/uk/prague/contacts/">Контакти</a></nav>
-</div></footer>
+</div></footer><script>(function(){
+  var subs=[].slice.call(document.querySelectorAll('.has-sub'));
+  subs.forEach(function(el){
+    var btn=el.querySelector('.nav-x');
+    if(!btn) return;
+    btn.addEventListener('click',function(ev){
+      ev.preventDefault();
+      var open=el.classList.toggle('is-open');
+      btn.setAttribute('aria-expanded',open?'true':'false');
+    });
+  });
+  document.addEventListener('click',function(ev){
+    subs.forEach(function(el){
+      if(!el.contains(ev.target)) el.classList.remove('is-open');
+    });
+  });
+})();</script>
 </body></html>

@@ -27,7 +27,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/assets/app.css?v=3e2d0eff">
+<link rel="stylesheet" href="/assets/app.css?v=83922065">
 <link rel="icon" href="/favicon.svg">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-K921K357QH"></script>
 <script>
@@ -50,7 +50,7 @@ addEventListener('click',function(ev){
     <a class="top-tel" href="tel:+34637024759">+34 637 02 47 59</a>
     <a class="btn btn-sm" href="/ru/valencia/booking/" data-book>Записаться</a>
   </div>
-  <div class="nav-row"><div class="wrap"><nav class="mainnav"><a href="/ru/valencia/" aria-current="page">Главная</a><a href="/ru/valencia/services/">Услуги</a><a href="/ru/valencia/training/">Обучение</a><a href="/ru/valencia/cosmetics/">Косметика</a><a href="/ru/valencia/about/">О нас</a><a href="/ru/valencia/contacts/">Контакты</a></nav></div></div>
+  <div class="nav-row"><div class="wrap"><nav class="mainnav"><span class="nav-i"><a class="nav-a" href="/ru/valencia/" aria-current="page">Главная</a></span><span class="nav-i has-sub"><a class="nav-a" href="/ru/valencia/services/">Услуги</a><button class="nav-x" type="button" aria-expanded="false" aria-label="Услуги"></button><span class="nav-sub"><a href="/ru/valencia/laser/">Лазерная эпиляция</a><a href="/ru/valencia/electro/">Электроэпиляция</a><a href="/ru/valencia/services/">Все услуги</a></span></span><span class="nav-i"><a class="nav-a" href="/ru/valencia/training/">Обучение</a></span><span class="nav-i"><a class="nav-a" href="/ru/valencia/cosmetics/">Косметика</a></span><span class="nav-i"><a class="nav-a" href="/ru/valencia/about/">О нас</a></span><span class="nav-i"><a class="nav-a" href="/ru/valencia/contacts/">Контакты</a></span></nav></div></div>
 </header>
 <main>
 <section class="hero"><div class="wrap"><div class="hero-grid"><div>
@@ -138,5 +138,21 @@ addEventListener('click',function(ev){
     </div>
   </div>
   <nav class="foot-nav"><a href="/ru/valencia/">Главная</a><a href="/ru/valencia/services/">Услуги</a><a href="/ru/valencia/training/">Обучение</a><a href="/ru/valencia/cosmetics/">Косметика</a><a href="/ru/valencia/about/">О нас</a><a href="/ru/valencia/contacts/">Контакты</a></nav>
-</div></footer><div class="sticky"><a class="btn btn-gold" href="/ru/valencia/booking/" data-book>Записаться</a></div><script type="application/ld+json">{"@context":"https://schema.org","@type":"HealthAndBeautyBusiness","@id":"https://hi-sisters.clinic/ru/valencia/#business","name":"Hi Sisters Clinic Валенсия","url":"https://hi-sisters.clinic/ru/valencia/","image":"https://hi-sisters.clinic/assets/laser.jpg","telephone":"+34 637 02 47 59","email":"hi.sisters.prague@gmail.com","priceRange":"$$","currenciesAccepted":"EUR","address":{"@type":"PostalAddress","streetAddress":"Carrer de Pere Aleixandre, 34","addressLocality":"Valencia","postalCode":"46004","addressCountry":"ES"},"geo":{"@type":"GeoCoordinates","latitude":39.4600337,"longitude":-0.3623039},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["https://schema.org/Monday","https://schema.org/Tuesday","https://schema.org/Wednesday","https://schema.org/Thursday","https://schema.org/Friday","https://schema.org/Saturday"],"opens":"10:00","closes":"20:00"}],"sameAs":["https://instagram.com/hi.sisters_valencia","https://instagram.com/hi.sisters_vlc","https://www.google.com/maps/search/Carrer+de+Pere+Aleixandre,+34,+46004+Val%C3%A8ncia"],"hasMap":"https://www.google.com/maps/search/Carrer+de+Pere+Aleixandre,+34,+46004+Val%C3%A8ncia","makesOffer":[{"@type":"Offer","itemOffered":{"@type":"Service","name":"Лазерная эпиляция"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Электроэпиляция"}}]}</script>
+</div></footer><div class="sticky"><a class="btn btn-gold" href="/ru/valencia/booking/" data-book>Записаться</a></div><script type="application/ld+json">{"@context":"https://schema.org","@type":"HealthAndBeautyBusiness","@id":"https://hi-sisters.clinic/ru/valencia/#business","name":"Hi Sisters Clinic Валенсия","url":"https://hi-sisters.clinic/ru/valencia/","image":"https://hi-sisters.clinic/assets/laser.jpg","telephone":"+34 637 02 47 59","email":"hi.sisters.prague@gmail.com","priceRange":"$$","currenciesAccepted":"EUR","address":{"@type":"PostalAddress","streetAddress":"Carrer de Pere Aleixandre, 34","addressLocality":"Valencia","postalCode":"46004","addressCountry":"ES"},"geo":{"@type":"GeoCoordinates","latitude":39.4600337,"longitude":-0.3623039},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["https://schema.org/Monday","https://schema.org/Tuesday","https://schema.org/Wednesday","https://schema.org/Thursday","https://schema.org/Friday","https://schema.org/Saturday"],"opens":"10:00","closes":"20:00"}],"sameAs":["https://instagram.com/hi.sisters_valencia","https://instagram.com/hi.sisters_vlc","https://www.google.com/maps/search/Carrer+de+Pere+Aleixandre,+34,+46004+Val%C3%A8ncia"],"hasMap":"https://www.google.com/maps/search/Carrer+de+Pere+Aleixandre,+34,+46004+Val%C3%A8ncia","makesOffer":[{"@type":"Offer","itemOffered":{"@type":"Service","name":"Лазерная эпиляция"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Электроэпиляция"}}]}</script><script>(function(){
+  var subs=[].slice.call(document.querySelectorAll('.has-sub'));
+  subs.forEach(function(el){
+    var btn=el.querySelector('.nav-x');
+    if(!btn) return;
+    btn.addEventListener('click',function(ev){
+      ev.preventDefault();
+      var open=el.classList.toggle('is-open');
+      btn.setAttribute('aria-expanded',open?'true':'false');
+    });
+  });
+  document.addEventListener('click',function(ev){
+    subs.forEach(function(el){
+      if(!el.contains(ev.target)) el.classList.remove('is-open');
+    });
+  });
+})();</script>
 </body></html>
