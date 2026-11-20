@@ -922,7 +922,7 @@ body[data-page="services"] .more-list a:hover{border-color:var(--accent);color:v
 
 /* до и после */
 .ba-grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(400px,1fr))}
-.ba-card{background:#fff;border:1px solid var(--line);border-radius:18px;overflow:hidden;
+.ba-card{background:#fff;border:1px solid var(--line);border-radius:18px;overflow:hidden;max-width:640px;
   box-shadow:0 14px 34px rgba(19,11,86,.08)}
 .ba-pair{display:grid;grid-template-columns:1fr 1fr;gap:2px;background:var(--line)}
 .ba-pair figure{margin:0;position:relative;background:#fff}
