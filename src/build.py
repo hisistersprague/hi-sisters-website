@@ -889,7 +889,7 @@ img{max-width:100%}
 .hero .btn-ghost{background:transparent;color:var(--gold-ui);border-color:var(--gold-ui)}
 .hero .btn-ghost:hover{background:rgba(212,184,150,.14)}
 .fact{display:flex;align-items:baseline;gap:7px;padding:9px 15px;background:#fff;
-      border:1px solid var(--line);border-radius:999px;font-size:14.5px}
+      color:var(--ink);border:1px solid var(--line);border-radius:999px;font-size:14.5px}
 .fact b{font-family:'Cormorant Garamond',serif;font-size:19px;font-weight:600}
 .cta-row{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-bottom:26px}
 .free{font-size:14px;color:var(--muted)}
@@ -1502,7 +1502,8 @@ section{padding:50px 0}
   .vband video{height:auto;width:min(280px,76vw);margin:0 auto;justify-self:center}
   .vband h2{max-width:none}}
 @media(prefers-reduced-motion:reduce){.vband video{display:none}}
-.hero-v{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0;opacity:.35}
+.hero-v{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0;opacity:.42}
+@media(prefers-reduced-motion:reduce){.hero-v{display:none}}
 .hero{position:relative}
 .hero .wrap{position:relative;z-index:1}
 .ba{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:0 0 14px}
@@ -3654,7 +3655,7 @@ def build_service(lang, city, key):
                                 SPLIT_COSM[lang][1], sec_class='tint', rev=True)
 
     main = f"""
-<section class="hero hero-sm"><div class="wrap">
+<section class="hero hero-sm">{hero_video(svc)}<div class="wrap">
   <div class="kicker"><a href="/{lang}/{city}/services/">{e(nav_label('services', lang))}</a> · {e(cityname)}</div>
   <h1>{e((pg.get('title') or card['title']) + ' ' + IN_CITY[city][lang])}</h1>
   <p class="lead">{e(pg.get('intro') or card['desc'])}</p>

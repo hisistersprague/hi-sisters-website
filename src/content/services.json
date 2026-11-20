@@ -1672,6 +1672,10 @@
     "note": "",
     "seoTitle": "Kosmetika {city} 8 — čištění pleti, peelingy, ošetření"
    }
+  },
+  "heroVideo": {
+   "src": "/assets/video/kosmetologie-hero.mp4",
+   "poster": "/assets/video/kosmetologie-hero.jpg"
   }
  },
  "microcurrent": {
