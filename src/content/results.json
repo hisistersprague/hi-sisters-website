@@ -50,6 +50,13 @@
    "cs": "Bikiny",
    "en": "Bikini",
    "es": "Ingles"
+  },
+  "chin": {
+   "ru": "Подбородок",
+   "uk": "Підборіддя",
+   "cs": "Brada",
+   "en": "Chin",
+   "es": "Mentón"
   }
  },
  "items": [
@@ -82,6 +89,43 @@
    "base": "laser-bikini-5b",
    "zone": "bikini",
    "sessions": 5
+  },
+  {
+   "service": "electro",
+   "base": "electro-chin",
+   "zone": "chin",
+   "sessions": 12
+  },
+  {
+   "service": "injections",
+   "base": "injections-botox-1",
+   "cap": {
+    "ru": "Ботулинотерапия · межбровье",
+    "uk": "Ботулінотерапія · міжбрів'я",
+    "cs": "Botulotoxin · oblast mezi obočím",
+    "en": "Botulinum therapy · glabella",
+    "es": "Toxina botulínica · entrecejo"
+   }
+  },
+  {
+   "service": "injections",
+   "base": "injections-botox-2",
+   "cap": {
+    "ru": "Ботулинотерапия · лоб и межбровье",
+    "uk": "Ботулінотерапія · чоло та міжбрів'я",
+    "cs": "Botulotoxin · čelo a mezi obočím",
+    "en": "Botulinum therapy · forehead and glabella",
+    "es": "Toxina botulínica · frente y entrecejo"
+   }
   }
- ]
+ ],
+ "notes": {
+  "injections": {
+   "ru": "Фотографии наших клиенток. Результат зависит от исходной мимики, дозировки и индивидуальной реакции — он у всех разный.",
+   "uk": "Фотографії наших клієнток. Результат залежить від вихідної міміки, дозування та індивідуальної реакції — він у всіх різний.",
+   "cs": "Fotografie našich klientek. Výsledek závisí na výchozí mimice, dávkování a individuální reakci — u každé je jiný.",
+   "en": "Photographs of our clients. The result depends on the starting expression lines, the dose and the individual response — it differs for everyone.",
+   "es": "Fotografías de nuestras clientas. El resultado depende de la mímica inicial, la dosis y la reacción individual: es distinto en cada caso."
+  }
+ }
 }

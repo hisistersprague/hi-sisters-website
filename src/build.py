@@ -887,8 +887,10 @@ def results_block(key, lang):
         return ''
     u = results['ui']
     cards = ''
+    note = (results.get('notes', {}).get(key) or u['note'])[lang]
     for it in items:
-        cap = u['pattern'][lang] % (results['zones'][it['zone']][lang], it['sessions'])
+        cap = (it['cap'][lang] if it.get('cap')
+               else u['pattern'][lang] % (results['zones'][it['zone']][lang], it['sessions']))
         pair = ''
         for suf, lab in (('before', u['before'][lang]), ('after', u['after'][lang])):
             src = '/assets/results/%s-%s.jpg' % (it['base'], suf)
@@ -900,7 +902,7 @@ def results_block(key, lang):
     return ('\n<section class="alt"><div class="wrap">'
             '<div class="sec-head"><h2>%s</h2><p>%s</p></div>'
             '<div class="ba-grid">%s</div></div></section>'
-            % (e(u['title'][lang]), e(u['note'][lang]), cards))
+            % (e(u['title'][lang]), e(note), cards))
 
 
 def gallery_block(svc, lang, alt=''):
@@ -1874,7 +1876,7 @@ body[data-page="services"] .more-list a:hover{border-color:var(--accent);color:v
 
 /* до и после */
 .ba-grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(400px,1fr))}
-.ba-card{background:#fff;border:1px solid var(--line);border-radius:18px;overflow:hidden;
+.ba-card{background:#fff;border:1px solid var(--line);border-radius:18px;overflow:hidden;max-width:640px;
   box-shadow:0 14px 34px rgba(19,11,86,.08)}
 .ba-pair{display:grid;grid-template-columns:1fr 1fr;gap:2px;background:var(--line)}
 .ba-pair figure{margin:0;position:relative;background:#fff}
