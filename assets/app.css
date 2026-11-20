@@ -723,6 +723,7 @@ section{padding:50px 0}
 @media(max-width:620px){.shop-lbl{min-width:100%}}
 .prod{padding:20px;background:#fff;border:1px solid var(--line-gold);border-radius:12px;
       display:flex;flex-direction:column}
+.prod[hidden],[hidden]{display:none!important}
 .alt .prod{background:var(--cream)}
 .prod .brand{font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--gold-dark)}
 .prod h3{font-size:21px;margin:5px 0 6px}
