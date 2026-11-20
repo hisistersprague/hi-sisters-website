@@ -80,7 +80,7 @@
   "price": 1200,
   "cat": "hair-wash",
   "stock": "pre",
-  "img": "",
+  "img": "catalog/dsd-411-violet-shampoo-500ml.jpg",
   "desc": {
    "ru": "Шампунь — защита и гладкость волос",
    "uk": "Шампунь — захист і гладкість волосся",
@@ -129,7 +129,7 @@
   "price": 1000,
   "cat": "hair-loss",
   "stock": "in",
-  "img": "",
+  "img": "catalog/dsd-441-royal-jelly-green-o2-150ml.jpg",
   "desc": {
    "ru": "Лосьон — уход за кожей головы",
    "uk": "Лосьйон — догляд за шкірою голови",
@@ -203,7 +203,7 @@
   "price": 1000,
   "cat": "hair-loss",
   "stock": "pre",
-  "img": "",
+  "img": "catalog/dsd-345b-essential-oil-35ml.jpg",
   "desc": {
    "ru": "Масло — уход за кожей головы",
    "uk": "Олія — догляд за шкірою голови",
@@ -2149,11 +2149,11 @@
   "crm": 129,
   "brand": "AlphaScience",
   "name": "SPF AlphaScience",
-  "volume": "",
+  "volume": "40 ml",
   "price": 1600,
   "cat": "face",
   "stock": "pre",
-  "img": "",
+  "img": "catalog/as-ultra-shield-spf-50-40ml.jpg",
   "desc": {
    "ru": "Солнцезащитный крем — защита SPF 50",
    "uk": "Сонцезахисний крем — захист SPF 50",

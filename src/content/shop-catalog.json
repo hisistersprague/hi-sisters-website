@@ -295,7 +295,7 @@
   "cur": "CZK",
   "cat": "hair-care",
   "stock": "pre",
-  "img": "",
+  "img": "catalog/or-lotion-grasso-100ml.jpg",
   "dupe": false,
   "code": "",
   "desc": {
@@ -400,7 +400,7 @@
   "cur": "CZK",
   "cat": "hair-care",
   "stock": "pre",
-  "img": "",
+  "img": "catalog/or-olio-sebo-30ml.jpg",
   "dupe": false,
   "code": "",
   "desc": {
@@ -583,7 +583,7 @@
   "cur": "CZK",
   "cat": "hair-loss",
   "stock": "pre",
-  "img": "",
+  "img": "catalog/or-olio-forfora-secca-30ml.jpg",
   "dupe": false,
   "code": "",
   "desc": {
@@ -896,7 +896,7 @@
   "cur": "CZK",
   "cat": "hair-care",
   "stock": "pre",
-  "img": "",
+  "img": "catalog/or-maska-hg-system-125ml.jpg",
   "dupe": false,
   "code": "",
   "desc": {
@@ -1132,7 +1132,7 @@
   "cur": "CZK",
   "cat": "hair-wash",
   "stock": "pre",
-  "img": "",
+  "img": "catalog/or-shampoo-aha-250ml.jpg",
   "dupe": false,
   "code": "",
   "desc": {
@@ -1170,7 +1170,7 @@
   "cur": "CZK",
   "cat": "hair-wash",
   "stock": "pre",
-  "img": "",
+  "img": "catalog/or-shampoo-filler-volume-250ml.jpg",
   "dupe": false,
   "code": "",
   "desc": {
@@ -1248,7 +1248,7 @@
   "cur": "CZK",
   "cat": "hair-wash",
   "stock": "pre",
-  "img": "",
+  "img": "catalog/or-hair-filler-100ml.jpg",
   "dupe": false,
   "code": "",
   "desc": {
@@ -1404,7 +1404,7 @@
   "cur": "CZK",
   "cat": "hair-wash",
   "stock": "pre",
-  "img": "",
+  "img": "catalog/or-sea-complex-1-250ml.jpg",
   "dupe": false,
   "code": "",
   "desc": {
@@ -1430,7 +1430,7 @@
   "cur": "CZK",
   "cat": "hair-care",
   "stock": "pre",
-  "img": "",
+  "img": "catalog/or-sea-complex-2-125ml.jpg",
   "dupe": false,
   "code": "",
   "desc": {
@@ -1456,7 +1456,7 @@
   "cur": "CZK",
   "cat": "hair-care",
   "stock": "pre",
-  "img": "",
+  "img": "catalog/or-sea-complex-3-125ml.jpg",
   "dupe": false,
   "code": "",
   "desc": {
@@ -1482,7 +1482,7 @@
   "cur": "CZK",
   "cat": "hair-wash",
   "stock": "pre",
-  "img": "",
+  "img": "catalog/or-luce-24k-shampoo-250ml.jpg",
   "dupe": false,
   "code": "",
   "desc": {
@@ -1508,7 +1508,7 @@
   "cur": "CZK",
   "cat": "hair-care",
   "stock": "pre",
-  "img": "",
+  "img": "catalog/or-luce-24k-maska-125ml.jpg",
   "dupe": false,
   "code": "",
   "desc": {
@@ -1534,7 +1534,7 @@
   "cur": "CZK",
   "cat": "hair-wash",
   "stock": "pre",
-  "img": "",
+  "img": "catalog/or-luce-lamination-500ml.jpg",
   "dupe": false,
   "code": "",
   "desc": {
@@ -1561,7 +1561,7 @@
   "cur": "CZK",
   "cat": "hair-wash",
   "stock": "pre",
-  "img": "",
+  "img": "catalog/or-shampoo-argorising-250ml.jpg",
   "dupe": false,
   "code": "",
   "desc": {
@@ -1613,7 +1613,7 @@
   "cur": "CZK",
   "cat": "hair-care",
   "stock": "pre",
-  "img": "",
+  "img": "catalog/or-lotion-argorising-amp.jpg",
   "dupe": false,
   "code": "",
   "desc": {
@@ -1640,7 +1640,7 @@
   "cur": "CZK",
   "cat": "hair-care",
   "stock": "pre",
-  "img": "",
+  "img": "catalog/or-olio-argan-30ml.jpg",
   "dupe": false,
   "code": "",
   "desc": {
@@ -1692,7 +1692,7 @@
   "cur": "CZK",
   "cat": "hair-care",
   "stock": "pre",
-  "img": "",
+  "img": "catalog/or-helianthi-maska-250ml.jpg",
   "dupe": false,
   "code": "",
   "desc": {
@@ -1718,7 +1718,7 @@
   "cur": "CZK",
   "cat": "hair-care",
   "stock": "pre",
-  "img": "",
+  "img": "catalog/or-helianthi-maska-75ml.jpg",
   "dupe": false,
   "code": "",
   "desc": {
@@ -1964,7 +1964,7 @@
   "cur": "CZK",
   "cat": "hair-wash",
   "stock": "pre",
-  "img": "",
+  "img": "catalog/or-shampoo-purifying-250ml.jpg",
   "dupe": false,
   "code": "",
   "desc": {
@@ -1990,7 +1990,7 @@
   "cur": "CZK",
   "cat": "hair-wash",
   "stock": "pre",
-  "img": "",
+  "img": "catalog/or-shampoo-purifying-100ml.jpg",
   "dupe": false,
   "code": "",
   "desc": {
@@ -2016,7 +2016,7 @@
   "cur": "CZK",
   "cat": "hair-care",
   "stock": "pre",
-  "img": "",
+  "img": "catalog/or-purifying-maska-125ml.jpg",
   "dupe": false,
   "code": "",
   "desc": {
@@ -2094,7 +2094,7 @@
   "cur": "CZK",
   "cat": "hair-loss",
   "stock": "pre",
-  "img": "",
+  "img": "catalog/or-hair-loss-system-amp-7ml.jpg",
   "dupe": false,
   "code": "",
   "desc": {
@@ -2433,7 +2433,7 @@
   "cur": "CZK",
   "cat": "hair-care",
   "stock": "pre",
-  "img": "",
+  "img": "catalog/or-fluido-modellante-150ml.jpg",
   "dupe": false,
   "code": "",
   "desc": {
@@ -2452,7 +2452,7 @@
   "cur": "CZK",
   "cat": "hair-care",
   "stock": "pre",
-  "img": "",
+  "img": "catalog/or-mousse-extra-strong-200ml.jpg",
   "dupe": false,
   "code": "",
   "desc": {
@@ -2471,7 +2471,7 @@
   "cur": "CZK",
   "cat": "hair-care",
   "stock": "pre",
-  "img": "",
+  "img": "catalog/or-hairspray-extra-strong-350ml.jpg",
   "dupe": false,
   "code": "",
   "desc": {
@@ -2509,7 +2509,7 @@
   "cur": "CZK",
   "cat": "hair-care",
   "stock": "pre",
-  "img": "",
+  "img": "catalog/or-luce-fluido-illuminante-60ml.jpg",
   "dupe": false,
   "code": "",
   "desc": {
@@ -2710,7 +2710,7 @@
   "cur": "CZK",
   "cat": "hair-wash",
   "stock": "pre",
-  "img": "",
+  "img": "catalog/or-shampoo-sportime-300ml.jpg",
   "dupe": false,
   "code": "",
   "desc": {
@@ -2762,7 +2762,7 @@
   "cur": "CZK",
   "cat": "hair-care",
   "stock": "pre",
-  "img": "",
+  "img": "catalog/or-toscana-hand-cream-75ml.jpg",
   "dupe": false,
   "code": "",
   "desc": {
@@ -3131,7 +3131,7 @@
   "cur": "CZK",
   "cat": "hair-loss",
   "stock": "pre",
-  "img": "",
+  "img": "catalog/dsd-343b-fresh-cells-concentrate-amp.jpg",
   "dupe": false,
   "code": "3.4.3B",
   "desc": {
@@ -3342,8 +3342,8 @@
   "cur": "CZK",
   "cat": "hair-loss",
   "stock": "pre",
-  "img": "",
-  "dupe": false,
+  "img": "catalog/dsd-411-violet-shampoo-500ml.jpg",
+  "dupe": true,
   "code": "4.1.1L",
   "desc": {
    "ru": "Шампунь — против выпадения волос",
@@ -3501,7 +3501,7 @@
   "cur": "CZK",
   "cat": "hair-loss",
   "stock": "pre",
-  "img": "",
+  "img": "catalog/dsd-44-keratin-lotion-amp.jpg",
   "dupe": false,
   "code": "4.4",
   "desc": {
@@ -3528,8 +3528,8 @@
   "cur": "CZK",
   "cat": "hair-loss",
   "stock": "pre",
-  "img": "",
-  "dupe": false,
+  "img": "catalog/dsd-441-royal-jelly-green-o2-150ml.jpg",
+  "dupe": true,
   "code": "4.4.1",
   "desc": {
    "ru": "Лосьон — против выпадения волос",
@@ -5369,7 +5369,7 @@
   "cur": "CZK",
   "cat": "face",
   "stock": "pre",
-  "img": "",
+  "img": "catalog/rn-peel-lotion-vitamin-c-250ml.jpg",
   "dupe": false,
   "code": "2202250",
   "desc": {
@@ -7031,7 +7031,7 @@
   "cat": "face",
   "stock": "pre",
   "img": "catalog/as-ultra-shield-spf-50-40ml.jpg",
-  "dupe": false,
+  "dupe": true,
   "code": "425233",
   "desc": {
    "ru": "Крем с SPF — защита от солнца",
@@ -7530,7 +7530,7 @@
   "cur": "CZK",
   "cat": "face",
   "stock": "pre",
-  "img": "",
+  "img": "catalog/dmk-enbioment-mist-100ml.jpg",
   "code": "",
   "desc": {
    "ru": "Успокаивает, восстанавливает микробиом кожи",
@@ -7582,7 +7582,7 @@
   "cur": "CZK",
   "cat": "face",
   "stock": "pre",
-  "img": "",
+  "img": "catalog/dmk-elevate-50ml.jpg",
   "code": "",
   "desc": {
    "ru": "Даёт эффект лифтинга, поддерживает синтез коллагена, улучшает микроциркуляцию",
@@ -7608,7 +7608,7 @@
   "cur": "CZK",
   "cat": "face",
   "stock": "pre",
-  "img": "",
+  "img": "catalog/dmk-eye-web-15ml.jpg",
   "code": "",
   "desc": {
    "ru": "Крем для век — уход за кожей вокруг глаз",
@@ -7634,7 +7634,7 @@
   "cur": "CZK",
   "cat": "face",
   "stock": "pre",
-  "img": "",
+  "img": "catalog/dmk-firmatrix-30ml.jpg",
   "code": "",
   "desc": {
    "ru": "Сыворотка — для питания и восстановления кожи",
@@ -7660,7 +7660,7 @@
   "cur": "CZK",
   "cat": "face",
   "stock": "pre",
-  "img": "",
+  "img": "catalog/dmk-transgenesis-50ml.jpg",
   "code": "",
   "desc": {
    "ru": "Крем — для лифтинга и упругости",
@@ -7686,7 +7686,7 @@
   "cur": "CZK",
   "cat": "face",
   "stock": "pre",
-  "img": "",
+  "img": "catalog/dmk-wetter-than-water-100ml.jpg",
   "code": "",
   "desc": {
    "ru": "Спрей-мист — для питания и восстановления кожи",
@@ -7738,7 +7738,7 @@
   "cur": "CZK",
   "cat": "body",
   "stock": "pre",
-  "img": "",
+  "img": "catalog/dmk-body-sculpting-120ml.jpg",
   "code": "",
   "desc": {
    "ru": "Увлажняет, питает, тонизирует",
@@ -8077,7 +8077,7 @@
   "cur": "CZK",
   "cat": "face",
   "stock": "pre",
-  "img": "",
+  "img": "catalog/dmk-aminodine-spray-120ml.jpg",
   "code": "",
   "desc": {
    "ru": "Выравнивает тон, тонизирует",
@@ -8195,7 +8195,7 @@
   "cur": "CZK",
   "cat": "face",
   "stock": "pre",
-  "img": "",
+  "img": "catalog/dmk-deep-pore-cleanser-60ml.jpg",
   "code": "",
   "desc": {
    "ru": "Очищающее средство — для жирной и комбинированной кожи",
