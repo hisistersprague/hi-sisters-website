@@ -879,6 +879,20 @@ def compare_block(key, lang):
             % (e(compare['title'][lang]), e(compare['lead'][lang]), head, body))
 
 
+def gallery_block(svc, lang, alt=''):
+    """Несколько фотографий услуги в ряд — чтобы страница не была только текстом."""
+    gs = svc.get('gallery') or []
+    if not gs:
+        return ''
+    pics = ''.join('<figure><picture><source srcset="%s" type="image/webp">'
+                   '<img src="%s" alt="%s" loading="lazy" width="760" height="760">'
+                   '</picture></figure>'
+                   % (e(g.replace('.jpg', '.webp')), e(g), e(alt))
+                   for g in gs)
+    return ('\n<section class="tint"><div class="wrap"><div class="gal">%s</div></div></section>'
+            % pics)
+
+
 def proc_blocks(key, city, lang):
     """Описания процедур раздела — с собственными ссылками на каждую."""
     u = PROC_UI[lang]
@@ -1833,6 +1847,14 @@ body[data-page="services"] .more-list a:hover{border-color:var(--accent);color:v
 .cmp-sm th,.cmp-sm td{padding:11px 14px;font-size:14.6px}
 .cmp-sm tbody th{width:150px;font-weight:600}
 .dark .cmp-sm{background:rgba(255,255,255,.04)}
+
+/* фотографии услуги */
+.gal{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
+.gal figure{margin:0}
+.gal img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:18px;display:block;
+  box-shadow:0 14px 34px rgba(19,11,86,.1)}
+@media(max-width:560px){.gal{grid-template-columns:1fr 1fr;gap:10px}
+  .gal img{border-radius:14px}}
 
 /* строка прайса, которая раскрывается описанием */
 .prow-d{border-bottom:1px solid var(--line)}
@@ -4202,6 +4224,7 @@ def build_service(lang, city, key):
 {equip_band}
 {methods_block}
 {video_block(svc, lang, card['title'])}
+{gallery_block(svc, lang, card['title'])}
 {price_block}
 {faq_block}
 

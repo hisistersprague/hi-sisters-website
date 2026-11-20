@@ -645,7 +645,13 @@
     "en": "What a laser session looks like",
     "es": "Cómo es una sesión de láser"
    }
-  }
+  },
+  "heroImage": "/assets/photos/hero-laser.jpg",
+  "gallery": [
+   "/assets/photos/g-laser-1.jpg",
+   "/assets/photos/g-laser-2.jpg",
+   "/assets/photos/g-laser-3.jpg"
+  ]
  },
  "electro": {
   "image": "assets/electro.jpg",
@@ -1312,7 +1318,14 @@
     ],
     "seoTitle": "Elektroepilace {city} — cena za minutu, i světlé chloupky"
    }
-  }
+  },
+  "heroImage": "/assets/photos/hero-electro.jpg",
+  "gallery": [
+   "/assets/photos/g-electro-apilus.jpg",
+   "/assets/photos/g-electro-1.jpg",
+   "/assets/photos/g-electro-2.jpg",
+   "/assets/photos/g-electro-3.jpg"
+  ]
  },
  "massage": {
   "image": "assets/massage.jpg",
@@ -2250,7 +2263,13 @@
     "note": "",
     "seoTitle": "Tricholog {city} — trichoskopie a padání vlasů"
    }
-  }
+  },
+  "heroImage": "/assets/photos/hero-tricho.jpg",
+  "gallery": [
+   "/assets/photos/g-tricho-1.jpg",
+   "/assets/photos/g-tricho-2.jpg",
+   "/assets/photos/g-tricho-3.jpg"
+  ]
  },
  "cosmetics": {
   "image": "assets/cosmetics.jpg",
@@ -2494,6 +2513,6 @@
     "note": ""
    }
   },
-  "heroImage": "/assets/photos/hero-inject-doc.jpg"
+  "heroImage": "/assets/photos/hero-inject-face.jpg"
  }
 }
