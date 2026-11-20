@@ -63,107 +63,8 @@ addEventListener('click',function(ev){
   </div>
 </div></section>
 
-<section class="tint"><div class="wrap">
-  <div class="sec-head"><h2>Cuidado corporal</h2><p>Una línea que mantiene la pauta de depilación entre visitas: exfoliación suave, nutrición y tono uniforme.</p></div>
-</div></section>
 
-<section class="rose"><div class="wrap">
-  <div class="sec-head"><h2>Catálogo</h2></div>
-  <div class="shop-bar"><div class="shop-row shop-find"><input type="search" id="shop-q" placeholder="Buscar por nombre o marca" autocomplete="off" aria-label="Buscar por nombre o marca"><button class="chip shop-toggle" type="button" id="shop-more" aria-expanded="false" aria-controls="shop-rows">Filtros</button></div><div class="shop-rows" id="shop-rows"><div class="shop-row"><label class="shop-lbl" for="shop-sort">Orden</label><select class="shop-sort" id="shop-sort"><option value="def">Recomendado</option><option value="asc">Precio, de menor a mayor</option><option value="desc">Precio, de mayor a menor</option></select></div></div></div>
-  <div class="shop-count">Productos: <span id="shop-n">3</span></div>
-  <div class="prods" id="shop-grid" data-msg="¡Hola! Me gustaría pedir: {p}" data-msgpre="¡Hola! Me gustaría reservar: {p}"><article class="prod" data-brand="Happy Intim" data-cat="body"
-data-stock="" data-top=""
-data-price="65" data-ord="0">
-<figure class="prod-pic" data-q="happy intim body butter 200 ml"><span class="prod-cat">Cuerpo</span><span class="prod-ph">BO</span></figure>
-<div class="brand">Happy Intim</div>
-<h3>Body Butter</h3>
-<p class="prod-for"></p>
-<div class="pm"><span>200 ml</span><b>65 €</b></div>
-<a class="btn btn-sm btn-gold prod-order" href="https://wa.me/34637024759" data-p="Happy Intim Body Butter, 200 ml"
-target="_blank" rel="noopener">Pedir</a>
-</article><article class="prod" data-brand="Happy Intim" data-cat="body"
-data-stock="" data-top=""
-data-price="65" data-ord="1">
-<figure class="prod-pic" data-q="happy intim body peel 150 ml"><span class="prod-cat">Cuerpo</span><span class="prod-ph">BO</span></figure>
-<div class="brand">Happy Intim</div>
-<h3>Body Peel</h3>
-<p class="prod-for"></p>
-<div class="pm"><span>150 ml</span><b>65 €</b></div>
-<a class="btn btn-sm btn-gold prod-order" href="https://wa.me/34637024759" data-p="Happy Intim Body Peel, 150 ml"
-target="_blank" rel="noopener">Pedir</a>
-</article><article class="prod" data-brand="Happy Intim" data-cat="body"
-data-stock="" data-top=""
-data-price="65" data-ord="2">
-<figure class="prod-pic" data-q="happy intim cream lightening 50 ml"><span class="prod-cat">Cuerpo</span><span class="prod-ph">CR</span></figure>
-<div class="brand">Happy Intim</div>
-<h3>Cream Lightening</h3>
-<p class="prod-for"></p>
-<div class="pm"><span>50 ml</span><b>65 €</b></div>
-<a class="btn btn-sm btn-gold prod-order" href="https://wa.me/34637024759" data-p="Happy Intim Cream Lightening, 50 ml"
-target="_blank" rel="noopener">Pedir</a>
-</article></div>
-  <p class="shop-empty" id="shop-empty" hidden>Nada coincide con estos filtros: quita uno.</p>
-</div></section>
-<script>
-(function(){
-  var grid=document.getElementById('shop-grid'); if(!grid) return;
-  var cards=[].slice.call(grid.children);
-  var nEl=document.getElementById('shop-n');
-  var empty=document.getElementById('shop-empty');
-  var sel=document.getElementById('shop-sort');
-  var f={brand:'',cat:'',stock:'',top:'',q:[]};
-  cards.forEach(function(c){
-    var a=c.querySelector('.prod-order'); if(!a) return;
-    var tpl=grid.dataset[c.dataset.stock==='pre'?'msgpre':'msg']||'{p}';
-    a.href=a.getAttribute('href')+'?text='+encodeURIComponent(tpl.replace('{p}',a.dataset.p));
-  });
-  var more=document.getElementById('shop-more'), rowsEl=document.getElementById('shop-rows');
-  if(more&&rowsEl){ more.addEventListener('click',function(){
-    var open=rowsEl.classList.toggle('is-open');
-    more.setAttribute('aria-expanded',open?'true':'false');
-    more.classList.toggle('is-on',open); }); }
-  var q=document.getElementById('shop-q');
-  function stem(w){ return w.length>5?w.slice(0,w.length-2):(w.length>3?w.slice(0,w.length-1):w); }
-  function terms(v){
-    return v.toLowerCase().replace(/[^0-9a-zа-яёіїєáčďéěíňóřšťúůýžäöüñ]+/g,' ')
-            .split(' ').filter(function(w){return w.length>1;}).map(stem);
-  }
-  if(q){ var t; q.addEventListener('input',function(){
-    clearTimeout(t); t=setTimeout(function(){ f.q=terms(q.value); apply(); },150); }); }
-  function apply(){
-    var n=0;
-    cards.forEach(function(c){
-      var ok=(!f.brand||c.dataset.brand===f.brand)&&(!f.cat||c.dataset.cat===f.cat)
-             &&(!f.stock||c.dataset.stock===f.stock)&&(!f.top||c.dataset.top==='1')
-             &&(!f.q||!f.q.length||f.q.every(function(w){
-                 return (c.querySelector('.prod-pic').dataset.q||'').indexOf(w)>=0; }));
-      c.hidden=!ok; if(ok) n++;
-    });
-    if(nEl) nEl.textContent=n;
-    if(empty) empty.hidden=n>0;
-  }
-  function sort(){
-    var v=sel?sel.value:'def';
-    var a=cards.slice();
-    if(v==='asc') a.sort(function(x,y){return x.dataset.price-y.dataset.price;});
-    else if(v==='desc') a.sort(function(x,y){return y.dataset.price-x.dataset.price;});
-    else a.sort(function(x,y){return x.dataset.ord-y.dataset.ord;});
-    a.forEach(function(c){grid.appendChild(c);});
-  }
-  [].forEach.call(document.querySelectorAll('.chips'),function(box){
-    box.addEventListener('click',function(ev){
-      var b=ev.target.closest('.chip'); if(!b) return;
-      [].forEach.call(box.children,function(x){x.classList.remove('is-on');});
-      b.classList.add('is-on');
-      f[box.dataset.f]=b.dataset.v||'';
-      apply();
-    });
-  });
-  if(sel) sel.addEventListener('change',sort);
-  apply();
-})();
-</script>
-<section class="alt"><div class="wrap"><p class="note">La línea corporal está disponible en el estudio de Valencia. La cosmética para el cabello y el cuero cabelludo está en la clínica de Praga.</p></div></section>
+<section class=""><div class="wrap"><p class="note">En el estudio de Valencia elegimos los productos durante la consulta. La estantería de cosmética para casa está en la clínica de Praga.</p></div></section>
 
 <section class="band"><div class="wrap">
   <h2>Reserva hoy mismo</h2>
@@ -195,7 +96,7 @@ target="_blank" rel="noopener">Pedir</a>
     </div>
   </div>
   <nav class="foot-nav"><a href="/es/valencia/">Inicio</a><a href="/es/valencia/services/">Servicios</a><a href="/es/valencia/training/">Formación</a><a href="/es/valencia/cosmetics/">Cosmética</a><a href="/es/valencia/about/">Nosotras</a><a href="/es/valencia/contacts/">Contacto</a></nav>
-</div></footer><div class="sticky"><a class="btn btn-gold" href="/es/valencia/booking/" data-book>Reservar</a></div><script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Hi Sisters Clinic","item":"https://hi-sisters.clinic/es/valencia/"},{"@type":"ListItem","position":2,"name":"Cosmética profesional","item":"https://hi-sisters.clinic/es/valencia/cosmetics/"}]}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"ItemList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"Product","name":"Happy Intim Body Butter","offers":{"@type":"Offer","price":"65","priceCurrency":"EUR","url":"https://hi-sisters.clinic/es/valencia/cosmetics/"},"brand":{"@type":"Brand","name":"Happy Intim"}}},{"@type":"ListItem","position":2,"item":{"@type":"Product","name":"Happy Intim Body Peel","offers":{"@type":"Offer","price":"65","priceCurrency":"EUR","url":"https://hi-sisters.clinic/es/valencia/cosmetics/"},"brand":{"@type":"Brand","name":"Happy Intim"}}},{"@type":"ListItem","position":3,"item":{"@type":"Product","name":"Happy Intim Cream Lightening","offers":{"@type":"Offer","price":"65","priceCurrency":"EUR","url":"https://hi-sisters.clinic/es/valencia/cosmetics/"},"brand":{"@type":"Brand","name":"Happy Intim"}}}]}</script><script>(function(){
+</div></footer><div class="sticky"><a class="btn btn-gold" href="/es/valencia/booking/" data-book>Reservar</a></div><script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Hi Sisters Clinic","item":"https://hi-sisters.clinic/es/valencia/"},{"@type":"ListItem","position":2,"name":"Cosmética profesional","item":"https://hi-sisters.clinic/es/valencia/cosmetics/"}]}</script><script>(function(){
   var cars=[].slice.call(document.querySelectorAll('[data-car]'));
   cars.forEach(function(car){
     var track=car.querySelector('.rc-track');
