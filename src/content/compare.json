@@ -1,0 +1,238 @@
+{
+ "title": {
+  "ru": "Лазер или электроэпиляция",
+  "uk": "Лазер чи електроепіляція",
+  "cs": "Laser, nebo elektroepilace",
+  "en": "Laser or electrolysis",
+  "es": "Láser o electrólisis"
+ },
+ "lead": {
+  "ru": "Методы не конкурируют, а закрывают разные задачи. Если метод вам не подходит, мы скажем об этом на консультации.",
+  "uk": "Методи не конкурують, а закривають різні задачі. Якщо метод вам не підходить, ми скажемо про це на консультації.",
+  "cs": "Metody si nekonkurují, řeší různé situace. Pokud vám metoda nesedí, řekneme to na konzultaci.",
+  "en": "The two methods do not compete — they solve different tasks. If a method is not right for you, we say so at the consultation.",
+  "es": "Los dos métodos no compiten: resuelven tareas distintas. Si un método no te conviene, te lo decimos en la consulta."
+ },
+ "cols": {
+  "ru": [
+   "",
+   "Лазерная эпиляция",
+   "Электроэпиляция"
+  ],
+  "uk": [
+   "",
+   "Лазерна епіляція",
+   "Електроепіляція"
+  ],
+  "cs": [
+   "",
+   "Laserová epilace",
+   "Elektroepilace"
+  ],
+  "en": [
+   "",
+   "Laser epilation",
+   "Electrolysis"
+  ],
+  "es": [
+   "",
+   "Depilación láser",
+   "Electrólisis"
+  ]
+ },
+ "rows": [
+  {
+   "ru": [
+    "Какие волосы",
+    "тёмные и густые: метод работает по меланину",
+    "любые, включая светлые, рыжие, седые и пушковые"
+   ],
+   "uk": [
+    "Яке волосся",
+    "темне й густе: метод працює по меланіну",
+    "будь-яке, зокрема світле, руде, сиве й пушкове"
+   ],
+   "cs": [
+    "Jaké chloupky",
+    "tmavé a husté: metoda pracuje s melaninem",
+    "jakékoli, včetně světlých, zrzavých, šedivých a jemných"
+   ],
+   "en": [
+    "Which hair",
+    "dark and dense: the method works through melanin",
+    "any, including blond, red, grey and fine hair"
+   ],
+   "es": [
+    "Qué vello",
+    "oscuro y denso: el método actúa sobre la melanina",
+    "cualquiera, incluido rubio, pelirrojo, canoso y fino"
+   ]
+  },
+  {
+   "ru": [
+    "Как действует",
+    "луч нагревает меланин внутри волоса и повреждает фолликул",
+    "в фолликул вводится игла, разряд разрушает ростковую зону"
+   ],
+   "uk": [
+    "Як діє",
+    "промінь нагріває меланін усередині волосини й ушкоджує фолікул",
+    "у фолікул вводиться голка, розряд руйнує ростову зону"
+   ],
+   "cs": [
+    "Jak působí",
+    "paprsek zahřeje melanin uvnitř chloupku a poškodí folikul",
+    "do folikulu se zavede jehla, výboj zničí růstovou zónu"
+   ],
+   "en": [
+    "How it works",
+    "the beam heats the melanin inside the hair and damages the follicle",
+    "a fine needle enters the follicle and a discharge destroys its growth zone"
+   ],
+   "es": [
+    "Cómo actúa",
+    "el haz calienta la melanina del pelo y daña el folículo",
+    "una aguja fina entra en el folículo y la descarga destruye su zona de crecimiento"
+   ]
+  },
+  {
+   "ru": [
+    "Зоны",
+    "тело: подмышки, бикини, ноги, руки, спина, грудь",
+    "лицо и тело: подбородок, щёки, шея, бикини, подмышки"
+   ],
+   "uk": [
+    "Зони",
+    "тіло: пахви, бікіні, ноги, руки, спина, груди",
+    "обличчя й тіло: підборіддя, щоки, шия, бікіні, пахви"
+   ],
+   "cs": [
+    "Oblasti",
+    "tělo: podpaží, bikiny, nohy, ruce, záda, hrudník",
+    "obličej i tělo: brada, tváře, krk, bikiny, podpaží"
+   ],
+   "en": [
+    "Areas",
+    "body: underarms, bikini, legs, arms, back, chest",
+    "face and body: chin, cheeks, neck, bikini, underarms"
+   ],
+   "es": [
+    "Zonas",
+    "cuerpo: axilas, ingles, piernas, brazos, espalda, pecho",
+    "rostro y cuerpo: mentón, mejillas, cuello, ingles, axilas"
+   ]
+  },
+  {
+   "ru": [
+    "Женское лицо",
+    "не делаем: волосы там чаще связаны с гормонами",
+    "основной метод для лица"
+   ],
+   "uk": [
+    "Жіноче обличчя",
+    "не робимо: волосся там частіше пов’язане з гормонами",
+    "основний метод для обличчя"
+   ],
+   "cs": [
+    "Ženský obličej",
+    "neděláme: chloupky tam častěji souvisí s hormony",
+    "hlavní metoda pro obličej"
+   ],
+   "en": [
+    "A woman’s face",
+    "we do not treat it: facial hair is more often hormonal",
+    "the method of choice for the face"
+   ],
+   "es": [
+    "Rostro femenino",
+    "no lo tratamos: ese vello suele ser hormonal",
+    "el método principal para el rostro"
+   ]
+  },
+  {
+   "ru": [
+    "Интервалы",
+    "4–6 недель вначале, затем 8, 10, 12 недель и больше",
+    "1–4 недели: сначала чаще, потом реже"
+   ],
+   "uk": [
+    "Інтервали",
+    "4–6 тижнів спочатку, далі 8, 10, 12 тижнів і більше",
+    "1–4 тижні: спочатку частіше, потім рідше"
+   ],
+   "cs": [
+    "Intervaly",
+    "nejdřív 4–6 týdnů, pak 8, 10, 12 týdnů i více",
+    "1–4 týdny: zpočátku častěji, potom méně často"
+   ],
+   "en": [
+    "Intervals",
+    "4–6 weeks at first, then 8, 10, 12 weeks and longer",
+    "1–4 weeks: more often at first, then less often"
+   ],
+   "es": [
+    "Intervalos",
+    "4–6 semanas al principio, luego 8, 10, 12 semanas o más",
+    "1–4 semanas: más seguido al principio y luego menos"
+   ]
+  },
+  {
+   "ru": [
+    "Как считается",
+    "за сеанс по зоне",
+    "по времени сеанса; есть формат «в четыре руки»"
+   ],
+   "uk": [
+    "Як рахується",
+    "за сеанс по зоні",
+    "за часом сеансу; є формат «у чотири руки»"
+   ],
+   "cs": [
+    "Jak se počítá",
+    "za sezení podle oblasti",
+    "podle času sezení; je i varianta „ve čtyřech rukou“"
+   ],
+   "en": [
+    "How it is charged",
+    "per session, by area",
+    "by session time; there is a “four hands” format"
+   ],
+   "es": [
+    "Cómo se cobra",
+    "por sesión y zona",
+    "por tiempo de sesión; existe el formato «a cuatro manos»"
+   ]
+  },
+  {
+   "ru": [
+    "Когда выбирают",
+    "тёмные волосы, большие зоны тела",
+    "светлые и седые волосы, лицо, единичные волосы после курса лазера"
+   ],
+   "uk": [
+    "Коли обирають",
+    "темне волосся, великі зони тіла",
+    "світле й сиве волосся, обличчя, поодинокі волосини після курсу лазера"
+   ],
+   "cs": [
+    "Kdy ji volit",
+    "tmavé chloupky, velké plochy těla",
+    "světlé a šedivé chloupky, obličej, jednotlivé chloupky po kúře laseru"
+   ],
+   "en": [
+    "When it is chosen",
+    "dark hair, large body areas",
+    "blond and grey hair, the face, single hairs left after a laser course"
+   ],
+   "es": [
+    "Cuándo se elige",
+    "vello oscuro, zonas amplias del cuerpo",
+    "vello rubio y canoso, el rostro, pelos sueltos tras un curso de láser"
+   ]
+  }
+ ],
+ "services": [
+  "laser",
+  "electro"
+ ]
+}

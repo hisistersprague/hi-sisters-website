@@ -3531,6 +3531,213 @@
    "freq": {
     "ru": "Курс обычно 3–4 процедуры с интервалом 2–4 недели, дальше поддержка раз в 3–6 месяцев. Точную схему назначает врач после осмотра. Процедура не проводится при беременности, кормлении, активных воспалениях в зоне, нарушениях свёртываемости крови и аутоиммунных обострениях.",
     "uk": "Курс зазвичай 3–4 процедури з інтервалом 2–4 тижні, далі підтримка раз на 3–6 місяців. Точну схему призначає лікар після огляду. Процедура не проводиться при вагітності, годуванні, активних запаленнях у зоні, порушеннях згортання крові та аутоімунних загостреннях."
+   },
+   "prep": {
+    "ru": {
+     "title": "Чем отличаются препараты",
+     "head": [
+      "Препарат",
+      "Что внутри",
+      "На какую задачу"
+     ],
+     "note": "Какой препарат подойдёт именно вам, врач решает на осмотре.",
+     "rows": [
+      [
+       "Rejuran I",
+       "полинуклеотиды из ДНК лосося (PharmaResearch, Корея)",
+       "тонкая кожа: зона вокруг глаз"
+      ],
+      [
+       "Rejuran HB",
+       "полинуклеотиды и гиалуроновая кислота",
+       "лицо целиком: плотность плюс увлажнение"
+      ],
+      [
+       "Jalupro HMW",
+       "гиалуроновая кислота высокой молекулярной массы и аминокислоты (Professional Derma, Швейцария)",
+       "увлажнение и поддержка коллагена, без объёма"
+      ],
+      [
+       "Jalupro Super Hydro",
+       "гиалуроновая кислота двух молекулярных масс, семь аминокислот и пептиды",
+       "сухость, тусклость, уставшая кожа"
+      ],
+      [
+       "Jalupro Young Eye",
+       "гиалуроновая кислота с аминокислотами в формате для зоны вокруг глаз",
+       "кожа век и периорбитальная зона"
+      ],
+      [
+       "PolyPhil NEXT",
+       "полинуклеотиды PN-HPT с несшитой гиалуроновой кислотой и маннитолом (Croma-Pharma, Австрия)",
+       "лицо, шея и декольте"
+      ]
+     ]
+    },
+    "uk": {
+     "title": "Чим відрізняються препарати",
+     "head": [
+      "Препарат",
+      "Що всередині",
+      "На яке завдання"
+     ],
+     "note": "Який препарат підійде саме вам, лікарка вирішує на огляді.",
+     "rows": [
+      [
+       "Rejuran I",
+       "полінуклеотиди з ДНК лосося (PharmaResearch, Корея)",
+       "тонка шкіра: зона навколо очей"
+      ],
+      [
+       "Rejuran HB",
+       "полінуклеотиди та гіалуронова кислота",
+       "обличчя цілком: щільність плюс зволоження"
+      ],
+      [
+       "Jalupro HMW",
+       "гіалуронова кислота високої молекулярної маси та амінокислоти (Professional Derma, Швейцарія)",
+       "зволоження і підтримка колагену, без обʼєму"
+      ],
+      [
+       "Jalupro Super Hydro",
+       "гіалуронова кислота двох молекулярних мас, сім амінокислот і пептиди",
+       "сухість, тьмяність, втомлена шкіра"
+      ],
+      [
+       "Jalupro Young Eye",
+       "гіалуронова кислота з амінокислотами у форматі для зони навколо очей",
+       "шкіра повік і періорбітальна зона"
+      ],
+      [
+       "PolyPhil NEXT",
+       "полінуклеотиди PN-HPT з незшитою гіалуроновою кислотою та манітолом (Croma-Pharma, Австрія)",
+       "обличчя, шия і декольте"
+      ]
+     ]
+    },
+    "cs": {
+     "title": "Čím se přípravky liší",
+     "head": [
+      "Přípravek",
+      "Co obsahuje",
+      "Na jaký úkol"
+     ],
+     "note": "Který přípravek je vhodný právě pro vás, rozhodne lékařka při vyšetření.",
+     "rows": [
+      [
+       "Rejuran I",
+       "polynukleotidy z lososí DNA (PharmaResearch, Korea)",
+       "tenká pleť: oblast kolem očí"
+      ],
+      [
+       "Rejuran HB",
+       "polynukleotidy a kyselina hyaluronová",
+       "celý obličej: hustota i hydratace"
+      ],
+      [
+       "Jalupro HMW",
+       "kyselina hyaluronová s vysokou molekulovou hmotností a aminokyseliny (Professional Derma, Švýcarsko)",
+       "hydratace a podpora kolagenu, bez objemu"
+      ],
+      [
+       "Jalupro Super Hydro",
+       "kyselina hyaluronová dvou molekulových hmotností, sedm aminokyselin a peptidy",
+       "suchost, šedý tón, unavená pleť"
+      ],
+      [
+       "Jalupro Young Eye",
+       "kyselina hyaluronová s aminokyselinami ve formátu pro okolí očí",
+       "pleť víček a periorbitální oblast"
+      ],
+      [
+       "PolyPhil NEXT",
+       "polynukleotidy PN-HPT s nezesíťovanou kyselinou hyaluronovou a mannitolem (Croma-Pharma, Rakousko)",
+       "obličej, krk a dekolt"
+      ]
+     ]
+    },
+    "en": {
+     "title": "How the products differ",
+     "head": [
+      "Product",
+      "What is inside",
+      "What it is for"
+     ],
+     "note": "Which product suits you is decided by the doctor at the appointment.",
+     "rows": [
+      [
+       "Rejuran I",
+       "polynucleotides from salmon DNA (PharmaResearch, Korea)",
+       "thin skin: the eye area"
+      ],
+      [
+       "Rejuran HB",
+       "polynucleotides with hyaluronic acid",
+       "the whole face: density plus hydration"
+      ],
+      [
+       "Jalupro HMW",
+       "high molecular weight hyaluronic acid and amino acids (Professional Derma, Switzerland)",
+       "hydration and collagen support, no volume"
+      ],
+      [
+       "Jalupro Super Hydro",
+       "hyaluronic acid of two molecular weights, seven amino acids and peptides",
+       "dryness, dull tone, tired skin"
+      ],
+      [
+       "Jalupro Young Eye",
+       "hyaluronic acid with amino acids in a format for the eye area",
+       "eyelid skin and the periorbital area"
+      ],
+      [
+       "PolyPhil NEXT",
+       "PN-HPT polynucleotides with non-crosslinked hyaluronic acid and mannitol (Croma-Pharma, Austria)",
+       "face, neck and décolleté"
+      ]
+     ]
+    },
+    "es": {
+     "title": "En qué se diferencian los productos",
+     "head": [
+      "Producto",
+      "Qué contiene",
+      "Para qué"
+     ],
+     "note": "Qué producto te conviene lo decide la doctora en la consulta.",
+     "rows": [
+      [
+       "Rejuran I",
+       "polinucleótidos de ADN de salmón (PharmaResearch, Corea)",
+       "piel fina: el contorno de ojos"
+      ],
+      [
+       "Rejuran HB",
+       "polinucleótidos con ácido hialurónico",
+       "todo el rostro: densidad e hidratación"
+      ],
+      [
+       "Jalupro HMW",
+       "ácido hialurónico de alto peso molecular y aminoácidos (Professional Derma, Suiza)",
+       "hidratación y apoyo al colágeno, sin volumen"
+      ],
+      [
+       "Jalupro Super Hydro",
+       "ácido hialurónico de dos pesos moleculares, siete aminoácidos y péptidos",
+       "sequedad, tono apagado, piel cansada"
+      ],
+      [
+       "Jalupro Young Eye",
+       "ácido hialurónico con aminoácidos en formato para el contorno de ojos",
+       "piel de los párpados y zona periorbitaria"
+      ],
+      [
+       "PolyPhil NEXT",
+       "polinucleótidos PN-HPT con ácido hialurónico no reticulado y manitol (Croma-Pharma, Austria)",
+       "rostro, cuello y escote"
+      ]
+     ]
+    }
    }
   },
   {
@@ -3553,10 +3760,12 @@
    "body": {
     "ru": [
      "Врач вводит филлер в губы, ориентируясь на вашу анатомию: форму лица, пропорции, исходную асимметрию. Задачу формулируем до процедуры — увлажнить и подчеркнуть контур, добавить немного объёма, выровнять асимметрию. Количество препарата зависит от задачи, а не от желания «сделать побольше за те же деньги».",
+     "Препарат подбираем на осмотре: под задачу — увлажнить, добавить лёгкий объём или поправить форму, — под плотность тканей и под то, что вводилось раньше. В работе Stylage и другие линейки филлеров на гиалуроновой кислоте; какой именно препарат и сколько, врач называет до процедуры, а не по ходу.",
      "Мы не обещаем «как на фото из интернета»: губы у всех разные, и результат зависит от исходной формы, толщины тканей и того, как кожа держит препарат. Если задача нереалистична, врач скажет об этом до процедуры, а не после."
     ],
     "uk": [
      "Лікар вводить філер у губи, орієнтуючись на вашу анатомію: форму обличчя, пропорції, початкову асиметрію. Задачу формулюємо до процедури — зволожити й підкреслити контур, додати трохи обʼєму, вирівняти асиметрію. Кількість препарату залежить від задачі, а не від бажання «зробити побільше за ті самі гроші».",
+     "Препарат добираємо на огляді: під завдання — зволожити, додати легкий обʼєм чи поправити форму, — під щільність тканин і під те, що вводили раніше. У роботі Stylage та інші лінійки філерів на гіалуроновій кислоті; який саме препарат і скільки, лікарка називає до процедури, а не по ходу.",
      "Ми не обіцяємо «як на фото з інтернету»: губи у всіх різні, і результат залежить від початкової форми, товщини тканин і того, як шкіра тримає препарат. Якщо задача нереалістична, лікар скаже про це до процедури, а не після."
     ]
    },

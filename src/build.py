@@ -26,6 +26,7 @@ ui, prices, services = L('ui.json'), L('prices.json'), L('services.json')
 studios, reviews, team = L('studios.json'), L('reviews.json'), L('team.json')
 courses, cosm = L('courses.json'), L('cosmetics.json')
 equip = L('equipment.json')
+compare = L('compare.json')
 advant = L('advantages.json')
 svcblocks = L('service-blocks.json')
 articles = L('articles.json')
@@ -307,6 +308,7 @@ OTHER_CITY = {
 FOOT = {'ru':'Наши студии','uk':'Наші студії','cs':'Naše studia','en':'Our studios','es':'Nuestros estudios'}
 MORE_LABEL = {'ru':'Подробнее','uk':'Детальніше','cs':'Více','en':'Details','es':'Más info'}
 BACK = {'ru':'На главную','uk':'На головну','cs':'Zpět na hlavní','en':'Back to home','es':'Volver al inicio'}
+UP_LABEL = {'ru':'Наверх','uk':'Нагору','cs':'Nahoru','en':'Back to top','es':'Arriba'}
 LANGNAME = {'ru': 'RU', 'uk': 'UA', 'cs': 'CS', 'en': 'EN', 'es': 'ES'}
 
 KICKER = {
@@ -642,6 +644,7 @@ def proc_price_tables(key, city, lang):
                 if _num(r) is not None] for g in groups}
     used = set()
     out = ''
+    u = PROC_UI[lang]
     for sub in PROC_SUBS:
         title = (sub.get('title') or {}).get(lang)
         if not title:
@@ -653,17 +656,47 @@ def proc_price_tables(key, city, lang):
             rows = [(i, r) for i, r in mine[it['group']] if i in it['rows']]
             if not rows:
                 continue
-            multi = len(rows) > 1
-            # если название процедуры совпадает с названием подраздела, не дублируем
-            if multi and it['title'][lang].strip().lower() != title.strip().lower():
-                body += ('<div class="prow prow-h"><span><a class="prow-a" href="#p-%s">%s</a></span>'
-                         '<span></span></div>'
-                         % (it['slug'], e(it['title'][lang])))
-            for i, r in rows:
+            for i, _r in rows:
                 used.add((it['group'], i))
-                lab = e(r['label']) if multi else row_label(it['group'], i, r, city, lang, 'anchor')
-                body += ('<div class="prow"><span>%s</span><span>%s</span></div>'
-                         % (lab, e(row_val(r, city))))
+            multi = len(rows) > 1
+            has_text = bool((it.get('title') or {}).get(lang)) and (
+                (it.get('body') or {}).get(lang) or (it.get('how') or {}).get(lang)
+                or (it.get('who') or {}).get(lang) or (it.get('lead') or {}).get(lang))
+            # цена в строке: одна — как есть, несколько — «от N»
+            if multi:
+                vals = [n for n in (_num(r) for _i, r in rows) if n]
+                price = ('%s %d %s' % (PRICE_FROM[lang], min(vals), studios[city]['currency'])
+                         if vals else '')
+            else:
+                price = row_val(rows[0][1], city)
+            if not has_text:
+                for i, r in rows:
+                    body += ('<div class="prow"><span>%s</span><span>%s</span></div>'
+                             % (e(r['label']) if multi else
+                                row_label(it['group'], i, r, city, lang), e(row_val(r, city))))
+                continue
+            # цена и описание в одной строке: нажал — раскрылось
+            variants = ''
+            if multi:
+                variants = ('<div class="ptable ptable-in">%s</div>'
+                            % ''.join('<div class="prow"><span>%s</span><span>%s</span></div>'
+                                      % (e(r['label']), e(row_val(r, city))) for _i, r in rows))
+            meta = proc_meta_dur(it, lang)
+            body += ('<details class="prow-d proc" id="p-%s">'
+                     '<summary class="prow prow-sum">'
+                     '<span class="prow-name">%s%s</span>'
+                     '<span class="prow-price">%s</span></summary>'
+                     '<div class="prow-body">%s<p class="lead">%s</p>%s'
+                     '<div class="more-list"><a href="%s" data-book>%s</a>'
+                     '<a href="%s" target="_blank" rel="noopener" data-wa>%s</a>'
+                     '<a href="/%s/%s/%s">%s</a></div></div></details>'
+                     % (it['slug'], e(it['title'][lang]),
+                        ('<span class="prow-dur">%s</span>' % e(meta)) if meta else '',
+                        e(price), variants,
+                        e((it.get('lead') or {}).get(lang, '')), proc_body(it, lang),
+                        book_href(lang, city), e(HERO[lang]['cta']),
+                        wa_book(lang, city, it['title'][lang]), e(WA_BOOK[lang]['btn']),
+                        lang, city, proc_rel(it), e(u['own'])))
         if body:
             out += '<h3 class="ptab-h">%s</h3><div class="ptable">%s</div>' % (e(title), body)
     # остальное — как было, под названием своей группы
@@ -680,19 +713,50 @@ def proc_price_tables(key, city, lang):
 
 
 def proc_body(it, lang, h='h4'):
-    """Текст процедуры: абзацы, кому подходит, как проходит, после, как часто."""
+    """Текст процедуры по смыслу: рассказ — абзацами, ход приёма — схемой шагов,
+    «кому подходит» и «после» — карточками, частота — сноской."""
     u = PROC_UI[lang]
     out = ''.join('<p>%s</p>' % e(x) for x in (it.get('body') or {}).get(lang, []))
-    for fld, tag in (('who', 'ul'), ('how', 'ol'), ('after', 'ul')):
+
+    how = (it.get('how') or {}).get(lang) or []
+    if how:
+        out += ('<%s>%s</%s><ol class="steps steps-sm">%s</ol>'
+                % (h, e(u['how']), h,
+                   ''.join('<li>%s</li>' % e(x) for x in how)))
+
+    prep = (it.get('prep') or {}).get(lang)
+    if prep:
+        head = ''.join('<th>%s</th>' % e(x) for x in prep['head'])
+        body = ''.join('<tr><th scope="row">%s</th>%s</tr>'
+                       % (e(r[0]), ''.join('<td>%s</td>' % e(c) for c in r[1:]))
+                       for r in prep['rows'])
+        out += ('<%s>%s</%s><div class="cmp-wrap"><table class="cmp cmp-sm">'
+                '<thead><tr>%s</tr></thead><tbody>%s</tbody></table></div>'
+                % (h, e(prep['title']), h, head, body))
+        if prep.get('note'):
+            out += '<p class="note">%s</p>' % e(prep['note'])
+
+    cards = ''
+    for fld, kind in (('who', 'fits'), ('after', 'after')):
         xs = (it.get(fld) or {}).get(lang) or []
         if xs:
-            out += ('<%s>%s</%s><%s>%s</%s>'
-                    % (h, e(u[fld]), h, tag,
-                       ''.join('<li>%s</li>' % e(x) for x in xs), tag))
+            cards += ('<article class="infocard ic-%s"><h2>%s%s</h2><ul>%s</ul></article>'
+                      % (kind, ic_icon(kind), e(u[fld]),
+                         ''.join('<li>%s</li>' % e(x) for x in xs)))
+    if cards:
+        out += '<div class="infogrid infogrid-sm">%s</div>' % cards
+
     fr = (it.get('freq') or {}).get(lang)
     if fr:
         out += '<p class="note"><b>%s.</b> %s</p>' % (e(u['freq']), e(fr))
     return out
+
+
+def proc_meta_dur(it, lang):
+    """Только длительность — цена в прайсе стоит рядом отдельной колонкой."""
+    if not it.get('duration'):
+        return ''
+    return '%d %s' % (it['duration'], PROC_UI[lang]['min'])
 
 
 def proc_meta(it, city, lang):
@@ -704,6 +768,115 @@ def proc_meta(it, city, lang):
     if pr:
         bits.append(pr)
     return ' · '.join(bits)
+
+
+IC_SVG = {
+ 'fits': '<path d="M20 6 9 17l-5-5"/>',
+ 'prep': '<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>',
+ 'after': '<path d="M12 3s6 6.4 6 10a6 6 0 0 1-12 0c0-3.6 6-10 6-10Z"/>',
+ 'contra': '<path d="M12 3 2.5 20h19L12 3Z"/><path d="M12 9.5v4.5"/><path d="M12 17.2h.01"/>',
+}
+
+
+def ic_icon(kind):
+    """Значок у карточки: галочка, часы, капля или знак внимания."""
+    d = IC_SVG.get(kind)
+    if not d:
+        return ''
+    return ('<span class="ic-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" '
+            'stroke="currentColor" stroke-width="1.9" stroke-linecap="round" '
+            'stroke-linejoin="round">%s</svg></span>' % d)
+
+
+SEC_SURFACE = {'steps': 'tint', 'info': ''}
+
+
+def sections_html(secs):
+    """Текст услуги по смыслу: рассказ — абзацами, порядок действий — схемой шагов,
+    списки «кому подходит», «подготовка», «после» и «противопоказания» — карточками."""
+    def art(s_):
+        t_ = s_.get('title') or s_.get('h')
+        body = ''
+        if s_.get('p'):
+            body += '<p>%s</p>' % e(s_['p'])
+        for x in s_.get('paras', []) or []:
+            body += '<p>%s</p>' % e(x)
+        if s_.get('list'):
+            body += '<ul>%s</ul>' % ''.join('<li>%s</li>' % e(x) for x in s_['list'])
+        if s_.get('note'):
+            body += '<p class="note">%s</p>' % e(s_['note'])
+        return ('<div class="art"><h2>%s</h2>%s</div>' % (e(t_ or ''), body)) if (t_ or body) else ''
+
+    def steps_sec(s_):
+        lead = ('<p class="lead">%s</p>' % e(s_['p'])) if s_.get('p') else ''
+        items = ''.join('<li>%s</li>' % e(x) for x in s_.get('steps', []))
+        note = ('<p class="note">%s</p>' % e(s_['note'])) if s_.get('note') else ''
+        return ('<section class="dark"><div class="wrap">'
+                '<div class="sec-head"><h2>%s</h2></div>%s<ol class="steps">%s</ol>%s'
+                '</div></section>'
+                % (e(s_.get('title') or s_.get('h') or ''), lead, items, note))
+
+    def info_card(s_):
+        kind = s_.get('kind')
+        lead = ('<p>%s</p>' % e(s_['p'])) if s_.get('p') else ''
+        for x in s_.get('paras', []) or []:
+            lead += '<p>%s</p>' % e(x)
+        items = ''.join('<li>%s</li>' % e(x) for x in s_.get('list', []) or [])
+        note = ('<p class="ic-note">%s</p>' % e(s_['note'])) if s_.get('note') else ''
+        return ('<article class="infocard ic-%s"><h2>%s%s</h2>%s%s%s</article>'
+                % (kind, ic_icon(kind), e(s_.get('title') or s_.get('h') or ''), lead,
+                   ('<ul>%s</ul>' % items) if items else '', note))
+
+    parts, buf, cards = [], '', []
+
+    def flush_text():
+        nonlocal buf
+        if buf:
+            parts.append('<section><div class="wrap arts">%s</div></section>' % buf)
+            buf = ''
+
+    def flush_cards():
+        if cards:
+            parts.append('<section class="alt"><div class="wrap"><div class="infogrid">%s</div></div></section>'
+                         % ''.join(cards))
+            cards.clear()
+
+    for s_ in secs:
+        kind = s_.get('kind') or ('steps' if s_.get('steps') else 'text')
+        if kind in ('fits', 'prep', 'after', 'contra'):
+            flush_text()
+            cards.append(info_card(s_))
+            continue
+        flush_cards()
+        if kind == 'steps':
+            flush_text()
+            parts.append(steps_sec(s_))
+        else:
+            buf += art(s_)
+    flush_text()
+    flush_cards()
+    return '\n'.join(parts)
+
+
+def compare_block(key, lang):
+    """Таблица «лазер или электроэпиляция»: на обеих страницах одна и та же."""
+    if key not in compare.get('services', []):
+        return ''
+    cols = compare['cols'][lang]
+    head = ''.join('<th%s>%s</th>' % (' class="cmp-k"' if i == 0 else '', e(c))
+                   for i, c in enumerate(cols))
+    body = ''
+    for r in compare['rows']:
+        cells = r[lang]
+        body += ('<tr><th scope="row">%s</th><td%s>%s</td><td%s>%s</td></tr>'
+                 % (e(cells[0]),
+                    ' class="is-this"' if key == 'laser' else '', e(cells[1]),
+                    ' class="is-this"' if key == 'electro' else '', e(cells[2])))
+    return ('\n<section class="dark"><div class="wrap">'
+            '<div class="sec-head"><h2>%s</h2><p>%s</p></div>'
+            '<div class="cmp-wrap"><table class="cmp"><thead><tr>%s</tr></thead>'
+            '<tbody>%s</tbody></table></div></div></section>'
+            % (e(compare['title'][lang]), e(compare['lead'][lang]), head, body))
 
 
 def proc_blocks(key, city, lang):
@@ -720,17 +893,20 @@ def proc_blocks(key, city, lang):
             continue
         out += '<h3 class="proc-sub">%s</h3>' % e(title)
         for it in part:
-            out += ('<div class="proc" id="p-%s"><h2>%s</h2>'
-                    '<p class="proc-meta">%s</p><p class="lead">%s</p>%s'
+            # каждая процедура раскрывается по клику: список читается, а не сливается в полотно
+            out += ('<details class="proc" id="p-%s">'
+                    '<summary><span class="proc-name">%s</span>'
+                    '<span class="proc-meta">%s</span></summary>'
+                    '<div class="proc-in"><p class="lead">%s</p>%s'
                     '<div class="more-list"><a href="%s" data-book>%s</a>'
                     '<a href="%s" target="_blank" rel="noopener" data-wa>%s</a>'
-                    '<a href="/%s/%s/%s">%s</a></div></div>'
+                    '<a href="/%s/%s/%s">%s</a></div></div></details>'
                     % (it['slug'], e(it['title'][lang]), e(proc_meta(it, city, lang)),
                        e((it.get('lead') or {}).get(lang, '')), proc_body(it, lang),
                        book_href(lang, city), e(HERO[lang]['cta']),
                        wa_book(lang, city, it['title'][lang]), e(WA_BOOK[lang]['btn']),
                        lang, city, proc_rel(it), e(u['own'])))
-    return ('<section class="alt"><div class="wrap arts">'
+    return ('<section class="alt"><div class="wrap procs">'
             '<div class="sec-head"><h2>%s</h2></div>%s</div></section>'
             % (e(u['descTitle']), out))
 
@@ -742,10 +918,13 @@ def css():
   --gold:#D6B57D; --gold-light:#F2DDD0; --gold-dark:#A8895A;
   --accent:#F2B5E8;            /* розовый из сторис — на кнопках и активных элементах */
   --accent-ink:#2B0F55;
+  --cta:#E8C6B0; --cta-ink:#0A0738;   /* кнопка записи: один цвет на всём сайте */
+  --accent-10:rgba(242,181,232,.12); --accent-20:rgba(242,181,232,.2);
+  --accent-30:rgba(242,181,232,.32);
   --gold-ui:#E8C6B0;           /* розовое золото: тёплое, но без желтизны */
-  --blush:#FBF1F8;             /* светло-розовый фон для чередования секций */
-  --lilac:#F3F0FB;             /* светло-сиреневый фон */
-  --rose:#F8EDE6;              /* бежево-розовый фон секций */
+  --blush:#F8EDE6;             /* тот же фон, что на главной: чередование секций */
+  --lilac:#FFFFFF;             /* второй фон чередования — белый */
+  --rose:#F8EDE6;              /* фон секций главной */
   --rose-line:rgba(212,184,150,.48);
   --cream:#FAF6EF; --cream-deep:#F1EADC;
   --ink:#1A1530; --muted:#6B6580; --line:#E4DCCB;
@@ -813,8 +992,8 @@ img{max-width:100%}
 .btn-ghost:hover{border-color:var(--navy);opacity:1}
 .btn-gold{background:var(--navy);border-color:var(--navy);color:#fff}
 .top .btn{background:var(--gold-ui);border-color:var(--gold-ui);color:var(--navy-deep)}
-.dark .btn-gold{background:var(--accent);border-color:var(--accent);
-                                color:var(--accent-ink)}
+.dark .btn-gold{background:var(--cta);border-color:var(--cta);
+                                color:var(--cta-ink)}
 .band .btn-gold:hover,.top .btn:hover{opacity:.9}
 
 /* ─── первый экран: тёмный, в цвет логотипа ─── */
@@ -828,6 +1007,18 @@ img{max-width:100%}
                   url(/assets/photos/hero-bg.jpg) type("image/jpeg"));
       background-size:cover,cover;background-position:center,58% 34%;
       background-repeat:no-repeat,no-repeat}
+@media(max-width:430px){
+  .top-in{padding-left:14px;padding-right:14px;gap:7px 8px}
+  .langs a{padding:5px 4px;font-size:11px}
+  .socs{gap:6px}
+  .soc{width:29px;height:29px;border-radius:9px}
+  .soc svg{width:16px;height:16px}
+  .city-sw{font-size:11.5px;padding:5px 8px}
+  /* на узком экране языки и мессенджеры не помещаются в одну строку —
+     мессенджеры уводим в свою строку по центру */
+  .socs{flex:1 0 100%;justify-content:center;border-top:0;padding-top:2px}
+  .mainnav a.nav-a{font-size:13.5px;padding:11px 2px}
+}
 @media(max-width:720px){
   .hero{background-image:linear-gradient(176deg,rgba(19,11,86,.80) 0%,rgba(19,11,86,.72) 34%,
           rgba(10,7,56,.52) 72%,rgba(10,7,56,.60) 100%),url(/assets/photos/hero-bg-m.jpg);
@@ -876,7 +1067,7 @@ img{max-width:100%}
         margin-bottom:14px}
 .kicker a{color:var(--gold-ui)}
 .hero h1{font-size:clamp(30px,6vw,52px);margin-bottom:18px;max-width:17em;color:#fff}
-.hero-sm h1{font-size:clamp(34px,7vw,56px)}
+.hero-sm h1{font-size:clamp(36px,7.2vw,60px);letter-spacing:-.02em}
 .hero .h1-seo{font-family:'Jost',sans-serif;font-size:15px;font-weight:500;letter-spacing:.14em;
         text-transform:uppercase;color:var(--gold-ui);margin-bottom:16px;max-width:30em;
         line-height:1.55}
@@ -895,7 +1086,7 @@ img{max-width:100%}
 .free{font-size:14px;color:var(--muted)}
 .proof{display:flex;flex-wrap:wrap;align-items:center;gap:18px 26px;
        padding-top:22px;border-top:1px solid rgba(212,184,150,.3)}
-.stars{color:var(--gold-dark);letter-spacing:.08em}
+.stars{color:#9A7A45;letter-spacing:.08em}
 .hero-badge{display:inline-flex;align-items:center;gap:13px;padding:10px 22px 10px 12px;
             background:rgba(255,255,255,.1);backdrop-filter:blur(12px);
             border:1px solid var(--gold-ui);border-radius:60px;
@@ -930,22 +1121,22 @@ img{max-width:100%}
 
 /* ─── секции ─── */
 section{padding:50px 0}
-.sec-head{margin-bottom:26px}
-.sec-head h2{font-size:clamp(28px,5vw,40px);margin-bottom:8px}
-.sec-head h2::before{content:'';display:block;width:38px;height:2px;
-                     background:var(--gold-ui);margin-bottom:14px}
+.sec-head{margin-bottom:30px}
+.sec-head h2{font-size:clamp(32px,5.4vw,48px);margin-bottom:10px;letter-spacing:-.015em}
+.sec-head h2::before{content:'';display:block;width:54px;height:3px;border-radius:2px;
+                     background:var(--accent);margin-bottom:16px}
 .dark .sec-head h2::before{background:var(--accent)}
 .band h2::before{background:var(--gold-ui)}
 .sec-head p{color:var(--muted);max-width:34em}
 .alt{background:#fff;border-block:1px solid var(--line)}
-.tint{background:var(--blush);border-block:1px solid rgba(242,181,232,.4)}
+.tint{background:var(--blush);border-block:1px solid var(--line)}
 .tint .card,.tint .ptable,.tint .studio,.tint .prod,.tint .mate,.tint .svc-card,
 .tint .offer,.tint .course{background:#fff}
-.lilac{background:var(--lilac);border-block:1px solid rgba(120,100,200,.14)}
+.lilac{background:var(--lilac);border-block:1px solid var(--line)}
 .rose{background:var(--rose);border-block:1px solid var(--rose-line)}
 .rose .card,.rose .offer,.rose .rev,.rose .studio{background:#fff}
 .rose .rev{border-color:var(--rose-line)}
-.rose .btn-gold{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.rose .btn-gold{background:var(--cta);border-color:var(--cta);color:var(--cta-ink)}
 .rose .btn-ghost{color:var(--navy);border-color:var(--navy)}
 .rose-photo{position:relative;background-color:var(--rose)}
 .rose-photo::before{content:'';position:absolute;inset:0;pointer-events:none;
@@ -1056,8 +1247,8 @@ section{padding:50px 0}
 .band{background:var(--navy);color:#fff;border:0}
 .band h2{font-size:clamp(28px,5vw,42px);margin-bottom:10px}
 .band p{color:#CFC9E6;max-width:34em;margin-bottom:22px}
-.band .btn-gold{background:var(--gold-ui);border-color:var(--gold-ui);color:var(--navy-deep)}
-.band .btn-ghost{color:var(--gold-ui);border-color:var(--gold-ui)}
+.band .btn-gold{background:var(--cta);border-color:var(--cta);color:var(--cta-ink)}
+.band .btn-ghost{color:var(--cta);border-color:var(--cta)}
 .band h2{color:var(--gold-light)}
 .band .b-meta{margin-top:20px;font-size:14.5px;color:#CFC9E6;line-height:1.9}
 .band .b-meta a{color:var(--gold-ui)}
@@ -1077,7 +1268,7 @@ section{padding:50px 0}
 .photo-band h2{font-family:'Cormorant Garamond',serif;font-weight:600;
    font-size:clamp(28px,4.6vw,42px);line-height:1.12;color:#fff;margin-bottom:12px}
 .photo-band p{color:#E4DFF3;margin-bottom:22px}
-.photo-band .btn-gold{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.photo-band .btn-gold{background:var(--cta);border-color:var(--cta);color:var(--cta-ink)}
 .photo-band .free{color:#CFC9E6}
 @media(max-width:700px){.photo-band::before{background-position:62% 22%;opacity:.5}
    .photo-band::after{background:linear-gradient(180deg,rgba(10,7,56,.80),rgba(10,7,56,.94))}}
@@ -1124,7 +1315,7 @@ section{padding:50px 0}
 .svc-list span{display:block;font-size:14px;color:var(--muted);line-height:1.45}
 /* на синем: названия белым, подписи сиреневым, рамки розовым */
 .dark .svc-list a,.dark .svc-list div{background:rgba(255,255,255,.06);
-   border-color:rgba(242,181,232,.4)}
+   border-color:var(--accent-30)}
 .dark .svc-list a:hover{border-color:var(--accent);background:rgba(255,255,255,.11)}
 .dark .svc-list b{color:#fff}
 .dark .svc-list span{color:#CFC9E6}
@@ -1216,10 +1407,10 @@ section{padding:50px 0}
 .bf h2{font-family:'Jost',sans-serif;font-weight:500;text-transform:uppercase;line-height:1.2;
        font-size:clamp(22px,3.6vw,32px);color:#fff;max-width:20em;letter-spacing:.01em}
 .bf h2::before{display:none}
-.bf-rows{border-top:1px solid rgba(242,181,232,.28);background:rgba(10,7,56,.62);
+.bf-rows{border-top:1px solid var(--accent-30);background:rgba(10,7,56,.62);
    border-radius:16px;padding:0 18px;backdrop-filter:blur(2px)}
 .bf-row{display:flex;flex-wrap:wrap;align-items:flex-start;justify-content:space-between;gap:12px 24px;
-        padding:20px 0;border-bottom:1px solid rgba(242,181,232,.28)}
+        padding:20px 0;border-bottom:1px solid var(--accent-30)}
 .bf-main{flex:1 1 300px}
 .bf-row h3{font-family:'Jost',sans-serif;font-weight:500;text-transform:uppercase;font-size:17px;
            letter-spacing:.02em;color:#fff;margin-bottom:7px}
@@ -1232,7 +1423,7 @@ section{padding:50px 0}
 .bf-price s{display:block;font-size:14px;color:rgba(242,181,232,.65);margin-top:2px}
 .bf-save{display:inline-block;margin-top:7px;font-size:12.5px;color:#2B0F55;
          background:var(--bf-pink);padding:2px 10px;border-radius:999px}
-.bf-terms{margin:22px 0 24px;padding:18px 20px;border:1px solid rgba(242,181,232,.3);
+.bf-terms{margin:22px 0 24px;padding:18px 20px;border:1px solid var(--accent-30);
           border-radius:12px;background:rgba(255,255,255,.04)}
 .bf-terms h3{font-family:'Jost',sans-serif;font-weight:500;text-transform:uppercase;
              font-size:13px;letter-spacing:.18em;color:var(--bf-pink);margin-bottom:10px}
@@ -1241,7 +1432,7 @@ section{padding:50px 0}
 .bf-cta{background:var(--bf-pink);border-color:var(--bf-pink);color:#2B0F55}
 .bf-gal-btn{background:transparent;border-color:var(--bf-pink);color:var(--bf-pink);
             margin-right:12px;margin-bottom:10px}
-.bf-gal-btn:hover{background:rgba(242,181,232,.14)}
+.bf-gal-btn:hover{background:var(--accent-10)}
 .bf-gal{border:0;border-radius:14px;padding:0;max-width:min(96vw,1000px);width:100%;
         background:#150C5E;color:#fff}
 .bf-gal::backdrop{background:rgba(10,7,40,.82)}
@@ -1322,7 +1513,7 @@ section{padding:50px 0}
    font-family:'Jost',system-ui,sans-serif;font-size:11px;line-height:1.3;font-weight:500;
    letter-spacing:.03em;white-space:nowrap;max-width:50%;overflow:hidden;text-overflow:ellipsis}
 .prod-stock.is-in{background:#E8F5EC;border:1px solid #9FCCAE;color:#1F6B3A}
-.prod-stock.is-pre{background:#FBF1F8;border:1px solid var(--accent);color:#8A3C7C}
+.prod-stock.is-pre{background:var(--cream);border:1px solid var(--line-gold);color:var(--navy)}
 .prod[data-stock="pre"] .prod-order{background:transparent;border-color:var(--navy);color:var(--navy)}
 .prod-cat{position:absolute;top:10px;left:10px;z-index:2;padding:4px 10px;border-radius:999px;
    background:rgba(255,255,255,.94);border:1px solid var(--line-gold);
@@ -1479,30 +1670,47 @@ section{padding:50px 0}
 .vframe{position:relative;padding-top:56.25%;border-radius:14px;overflow:hidden}
 .vframe iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
 .vfile{width:auto;max-width:100%;max-height:70vh;border-radius:14px;display:block;margin:0 auto}
-/* Видео внутри блока: играет само, без звука и без кнопки «пуск».
-   Съёмка вертикальная и небольшая, поэтому фоном идёт её же кадр в размытии,
-   а сам ролик показываем в родном размере — иначе он мылится. */
-.vband{position:relative;overflow:hidden;background:var(--navy) center/cover no-repeat;color:#fff}
-.vband::before{content:'';position:absolute;inset:-60px;background:inherit;background-size:cover;
-  filter:blur(34px) brightness(.52) saturate(.85);transform:scale(1.06)}
-.vband::after{content:'';position:absolute;inset:0;
-  background:linear-gradient(180deg,rgba(10,7,56,.55) 0%,rgba(10,7,56,.34) 45%,rgba(10,7,56,.66) 100%)}
-.vband .wrap{position:relative;z-index:1;display:grid;align-items:center;
-  grid-template-columns:minmax(0,1fr) auto;gap:clamp(22px,4vw,54px);
-  padding-top:clamp(30px,4vw,48px);padding-bottom:clamp(30px,4vw,48px)}
-.vband h2{color:#fff;margin:0;font-size:clamp(25px,3.2vw,40px);max-width:14em;
-  text-shadow:0 2px 20px rgba(8,5,40,.5)}
-.vband p{color:rgba(255,255,255,.93);margin:14px 0 0;max-width:32em;
-  text-shadow:0 1px 14px rgba(8,5,40,.55)}
-.vband video{height:clamp(280px,42vh,420px);width:auto;aspect-ratio:9/16;object-fit:cover;
-  display:block;border-radius:18px;justify-self:end;
-  background:rgba(255,255,255,.06);box-shadow:0 20px 54px rgba(5,3,30,.5)}
+/* Видео фоном блока: растянуто на всю ширину, под лёгкой дымкой. */
+.vband{position:relative;overflow:hidden;isolation:isolate;
+  min-height:clamp(330px,46vh,500px);display:flex;align-items:center;
+  background:var(--navy) center/cover no-repeat;color:#fff}
+.vband video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;
+  filter:blur(3px) saturate(1.05) brightness(.92);transform:scale(1.08)}
+.vband::before{content:'';position:absolute;inset:0;z-index:-1;
+  background:linear-gradient(90deg,rgba(10,7,56,.84) 0%,rgba(10,7,56,.62) 46%,rgba(10,7,56,.34) 100%)}
+.vband::after{content:'';position:absolute;inset:0;z-index:-1;
+  background:linear-gradient(180deg,rgba(10,7,56,.34) 0%,rgba(10,7,56,0) 36%,rgba(10,7,56,.46) 100%)}
+.vband .wrap{position:relative;z-index:1;
+  padding-top:clamp(34px,5vw,62px);padding-bottom:clamp(34px,5vw,62px)}
+.vband h2{color:#fff;margin:0;font-size:clamp(26px,3.6vw,44px);max-width:15em;
+  text-shadow:0 2px 26px rgba(8,5,40,.55)}
+.vband p{color:rgba(255,255,255,.93);margin:14px 0 0;max-width:33em;
+  font-size:clamp(15.5px,1.4vw,18px);text-shadow:0 1px 16px rgba(8,5,40,.6)}
+@media(max-width:760px){.vband{min-height:320px}.vband h2{max-width:none}}
+
+/* Вертикальный вариант: ролик стоит рядом с текстом в своих пропорциях,
+   ничего не обрезается — так показываем съёмку обучения. */
+.vband-por{min-height:0;align-items:stretch}
+.vband-por video{position:static;inset:auto;width:100%;height:auto;max-height:min(74vh,660px);
+  aspect-ratio:9/16;object-fit:cover;filter:none;transform:none;border-radius:20px;
+  box-shadow:0 26px 64px rgba(5,3,30,.5);justify-self:end}
+.vband-por::before{background:linear-gradient(90deg,rgba(10,7,56,.9) 0%,rgba(10,7,56,.72) 60%,rgba(10,7,56,.6) 100%)}
+.vband-por .wrap{display:grid;grid-template-columns:minmax(0,1fr) clamp(280px,32vw,400px);
+  gap:clamp(24px,4vw,56px);align-items:center}
+.vband-por .vb-bg{position:absolute;inset:-70px;z-index:-3;background:inherit;background-size:cover;
+  background-position:center;filter:blur(40px) brightness(.46) saturate(.85);transform:scale(1.06)}
 @media(max-width:760px){
-  .vband .wrap{grid-template-columns:1fr;gap:22px}
-  .vband video{height:auto;width:min(280px,76vw);margin:0 auto;justify-self:center}
-  .vband h2{max-width:none}}
+  .vband-por .wrap{grid-template-columns:1fr;gap:20px}
+  .vband-por video{max-height:none;width:min(320px,82vw);margin:0 auto;justify-self:center}
+}
 @media(prefers-reduced-motion:reduce){.vband video{display:none}}
-.hero-v{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0;opacity:.42}
+.hero-v{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0}
+.hero-v-tint{position:absolute;inset:0;z-index:0;pointer-events:none;
+  background:linear-gradient(180deg,rgba(10,7,56,.74) 0%,rgba(19,11,86,.5) 45%,rgba(10,7,56,.8) 100%)}
+/* если в шапке есть видео — фотографию из-под него убираем */
+.hero.has-v{background-image:none;background-color:var(--navy-deep)}
+@media(max-width:720px){.hero.has-v{background-image:none}
+  .hero.has-img{background-image:inherit}}
 @media(prefers-reduced-motion:reduce){.hero-v{display:none}}
 .hero{position:relative}
 .hero .wrap{position:relative;z-index:1}
@@ -1531,15 +1739,256 @@ section{padding:50px 0}
 .proc-sub{font-family:'Cormorant Garamond',serif;font-size:26px;font-weight:600;
   margin:38px 0 14px;color:var(--accent)}
 .proc-sub:first-child{margin-top:0}
-.proc{padding:22px 0 8px;border-top:1px solid var(--line);scroll-margin-top:24px}
-.proc h2{font-size:24px;margin:0 0 6px}
+/* Страницы услуг: ярко-розовый акцент и высокий контраст. */
+body[data-page="services"]{
+  --accent:#FF2E88; --accent-ink:#FFFFFF;
+  --accent-10:rgba(255,46,136,.1); --accent-20:rgba(255,46,136,.18);
+  --accent-30:rgba(255,46,136,.3);
+}
+body[data-page="services"] .infocard li::before{background:var(--accent);color:#fff}
+body[data-page="services"] .steps li::before{background:var(--accent);color:#fff}
+body[data-page="services"] .sec-head h2::before,
+body[data-page="services"] .art h2::before{background:var(--accent);height:4px;width:58px}
+body[data-page="services"] .ptab-h::before{background:var(--accent);height:4px;width:26px}
+body[data-page="services"] .ptab-h{color:var(--navy);font-size:15px}
+body[data-page="services"] .dark .ptab-h{color:#fff}
+body[data-page="services"] .prow-d[open]>summary .prow-price,
+body[data-page="services"] .dark .prow-d[open]>summary .prow-price{color:var(--accent)}
+body[data-page="services"] .cmp td.is-this{background:var(--accent-20)}
+body[data-page="services"] .dark .cmp tbody th{color:var(--accent)}
+body[data-page="services"] .note{border-left-color:var(--accent)}
+body[data-page="services"] .more-list a:hover{border-color:var(--accent);color:var(--accent)}
+
+/* прайс на тёмно-синем: строки прозрачные, цены розовым */
+.dark .ptable{background:rgba(255,255,255,.05);border-color:rgba(255,255,255,.18)}
+.dark .prow{border-bottom-color:rgba(255,255,255,.12);color:#EDEAF6}
+.dark .prow span:last-child{color:#fff}
+.dark .ptab-h{color:#fff}
+.dark .ptab-h::before{background:var(--accent)}
+.dark .prow-d{border-bottom-color:rgba(255,255,255,.14)}
+.dark .prow-d>summary:hover{background:var(--accent-10)}
+.dark .prow-d[open]>summary{background:var(--accent-20)}
+.dark .prow-d[open]>summary .prow-price{color:var(--accent)}
+.dark .prow-dur{color:var(--accent)}
+.dark .prow-price{color:#fff}
+.dark .prow-body{background:rgba(255,255,255,.05);border-radius:12px;margin:0 10px 14px;
+  padding:16px 18px 20px;color:#EDEAF6}
+.dark .prow-body p{color:#D8D3EA}
+.dark .prow-body h4{color:#fff}
+.dark .prow-body .infocard{background:#fff}
+.dark .prow-body .infocard li,.dark .prow-body .infocard p{color:var(--ink)}
+.dark .prow-body .ic-note{color:var(--muted)}
+.dark .ptable-in{background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.16)}
+.dark .ptable-in .prow span:last-child{color:var(--accent)}
+.dark .more-list a{border-color:var(--accent);color:var(--accent)}
+.dark .proc-name{color:#fff}
+
+/* цветные шапки карточек — плотнее */
+.infocard.ic-fits h2{background:var(--accent);color:var(--navy-deep);border-bottom-color:transparent}
+.infocard.ic-prep h2{background:var(--navy);color:#fff;border-bottom-color:transparent}
+.infocard.ic-after h2{background:var(--gold-ui);color:var(--navy-deep);border-bottom-color:transparent}
+.infocard.ic-contra h2{background:#B9736B;color:#fff;border-bottom-color:transparent}
+.infocard.ic-fits .ic-ico{background:rgba(10,7,56,.18);color:var(--navy-deep)}
+.infocard.ic-prep .ic-ico{background:rgba(255,255,255,.2);color:#fff}
+.infocard.ic-after .ic-ico{background:rgba(19,11,86,.16);color:var(--navy-deep)}
+.infocard.ic-contra .ic-ico{background:rgba(255,255,255,.26);color:#fff}
+.infocard{border-top-width:1px}
+
+/* страницы услуг — больше цвета: заголовки групп, цветные шапки карточек */
+.ptab-h{display:flex;align-items:center;gap:10px;font-family:'Jost',sans-serif;font-weight:600;
+  font-size:14.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--navy);
+  margin:34px 0 12px}
+.ptab-h::before{content:'';width:22px;height:3px;border-radius:2px;background:var(--accent)}
+.prow-price{font-weight:600;color:var(--navy)}
+.prow-d[open]>summary .prow-price{color:#8A3C7C}
+.infocard{padding:0;overflow:hidden}
+.infocard h2{margin:0;padding:16px 22px;background:var(--accent-20);
+  border-bottom:1px solid var(--accent-30)}
+.infocard>p,.infocard>ul,.infocard .ic-note{margin-left:22px;margin-right:22px}
+.infocard>p{margin-top:16px}
+.infocard>ul{margin-top:16px;margin-bottom:18px}
+.infocard .ic-note{margin-bottom:18px}
+.note{border-left:3px solid var(--accent)}
+@media(max-width:560px){
+  .infocard h2{padding:14px 18px}
+  .infocard>p,.infocard>ul,.infocard .ic-note{margin-left:18px;margin-right:18px}}
+
+/* строка прайса не должна получать вид карточки из старого блока процедур */
+.prow-d.proc{background:transparent;border:0;border-bottom:1px solid var(--line);
+  border-radius:0;box-shadow:none;margin:0;overflow:visible}
+.prow-d.proc:last-child{border-bottom:0}
+.dark .prow-d.proc{border-bottom-color:rgba(255,255,255,.16)}
+.dark .prow-name{color:#fff;font-weight:500}
+.dark .prow,.dark .prow span{color:#F2F0F9}
+.dark .prow-body p{color:#E6E2F3}
+.dark .prow-body .lead{color:#fff;font-size:17px}
+.dark .prow-body h4{color:var(--accent)}
+
+.dark .prow-a{color:#fff;text-decoration-color:var(--accent)}
+.dark .prow-a:hover{color:var(--accent)}
+.dark .prow-h{color:#fff}
+.dark .ptab-h,.dark .sec-head p{color:#D8D3EA}
+
+.cmp-sm{min-width:540px;font-size:14.6px}
+.cmp-sm th,.cmp-sm td{padding:11px 14px;font-size:14.6px}
+.cmp-sm tbody th{width:150px;font-weight:600}
+.dark .cmp-sm{background:rgba(255,255,255,.04)}
+
+/* строка прайса, которая раскрывается описанием */
+.prow-d{border-bottom:1px solid var(--line)}
+.prow-d:last-child{border-bottom:0}
+.prow-d>summary{list-style:none;cursor:pointer;position:relative;padding-right:34px;
+  transition:background .15s}
+.prow-d>summary::-webkit-details-marker{display:none}
+.prow-d>summary:hover{background:var(--accent-10)}
+.prow-d[open]>summary{background:var(--accent-20)}
+.prow-d>summary::after{content:'';position:absolute;right:14px;top:50%;width:8px;height:8px;
+  margin-top:-6px;border-right:2px solid var(--accent);border-bottom:2px solid var(--accent);
+  transform:rotate(45deg);transition:transform .2s}
+.prow-d[open]>summary::after{transform:rotate(-135deg);margin-top:-2px}
+.prow-name{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;font-weight:500}
+.prow-dur{font-size:13px;color:var(--gold-dark);letter-spacing:.04em;white-space:nowrap}
+.prow-price{white-space:nowrap}
+.prow-body{padding:6px 18px 22px;background:#fff}
+.ptable-in{margin:0 0 16px;border:1px solid var(--line);border-radius:12px;background:var(--cream)}
+.ptable-in .prow{padding:10px 14px;font-size:14.6px}
+@media(max-width:600px){.prow-body{padding:4px 12px 18px}}
+
+/* процедура — раскрывающаяся строка списка */
+.proc{background:#fff;border:1px solid var(--line);border-radius:14px;margin-bottom:10px;
+  scroll-margin-top:90px;overflow:hidden}
+.proc[open]{border-color:var(--line-gold);box-shadow:0 14px 34px rgba(19,11,86,.07)}
+.proc>summary{list-style:none;cursor:pointer;display:flex;align-items:baseline;gap:14px;
+  flex-wrap:wrap;padding:17px 52px 17px 22px;position:relative;transition:background .15s}
+.proc>summary::-webkit-details-marker{display:none}
+.proc>summary:hover{background:var(--cream)}
+.proc>summary::after{content:'';position:absolute;right:22px;top:50%;width:9px;height:9px;
+  margin-top:-6px;border-right:2px solid var(--accent);border-bottom:2px solid var(--accent);
+  transform:rotate(45deg);transition:transform .2s}
+.proc[open]>summary::after{transform:rotate(-135deg);margin-top:-2px}
+.proc[open]>summary{background:var(--cream)}
+.proc-name{font-family:'Cormorant Garamond',Georgia,serif;font-size:clamp(19px,2.1vw,23px);
+  font-weight:600;line-height:1.2;color:var(--navy)}
+.proc-meta{font-size:14px;color:var(--gold-dark);letter-spacing:.04em;white-space:nowrap}
+.proc-in{padding:4px 22px 22px}
 .proc h4{font-family:'Cormorant Garamond',serif;font-size:19px;font-weight:600;margin:20px 0 8px}
-.proc-meta{font-size:14.5px;color:var(--gold-dark);letter-spacing:.04em;margin:0 0 12px}
 .proc ul,.proc ol{margin:0 0 6px;padding-left:20px}
 .proc li{margin-bottom:6px;font-size:15.5px;line-height:1.6}
+.proc .infocard li{padding-left:26px}
+.proc-sub{font-size:clamp(17px,2vw,20px);color:var(--gold-dark);letter-spacing:.08em;
+  text-transform:uppercase;font-family:'Jost',sans-serif;font-weight:500;margin:30px 0 12px}
+@media(max-width:600px){
+  .proc>summary{padding:15px 44px 15px 16px;gap:4px 10px}
+  .proc-in{padding:2px 16px 18px}}
+/* ─── таблица сравнения методов ─── */
+.cmp-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin-top:18px;
+  -webkit-mask-image:linear-gradient(90deg,#000 94%,transparent 100%);
+  mask-image:linear-gradient(90deg,#000 94%,transparent 100%)}
+@media(min-width:760px){.cmp-wrap{-webkit-mask-image:none;mask-image:none}}
+.cmp{width:100%;border-collapse:separate;border-spacing:0;background:#fff;
+  border:1px solid var(--line);border-radius:16px;overflow:hidden;min-width:620px}
+.cmp th,.cmp td{padding:14px 18px;text-align:left;vertical-align:top;font-size:15.3px;
+  line-height:1.52;border-bottom:1px solid var(--line)}
+.cmp thead th{background:var(--navy);color:#fff;font-family:'Cormorant Garamond',serif;
+  font-size:19px;font-weight:600;border-bottom:0}
+.cmp thead th.cmp-k{background:var(--navy-deep)}
+.cmp tbody th{width:168px;font-weight:500;color:var(--navy);background:var(--cream);
+  font-size:14.6px;letter-spacing:.01em}
+.cmp tbody tr:last-child th,.cmp tbody tr:last-child td{border-bottom:0}
+.cmp td.is-this{background:rgba(232,198,176,.16)}
+@media(max-width:620px){
+  .cmp{min-width:560px}
+  .cmp th,.cmp td{padding:12px 13px;font-size:14.4px}
+  .cmp tbody th{width:128px}
+}
+
+/* ─── схема шагов: «как проходит сеанс» ─── */
+.steps{list-style:none;counter-reset:st;display:grid;gap:12px;margin:18px 0 0;padding:0}
+.steps li{counter-increment:st;position:relative;background:#fff;border:1px solid var(--line);
+  border-radius:14px;padding:16px 18px 16px 58px;font-size:15.5px;line-height:1.58}
+.steps li::before{content:counter(st);position:absolute;left:16px;top:14px;
+  width:28px;height:28px;border-radius:50%;background:var(--navy);color:var(--gold-ui);
+  display:grid;place-items:center;font-family:'Jost',sans-serif;font-size:14px;font-weight:600}
+@media(min-width:900px){
+  .steps{grid-template-columns:repeat(auto-fit,minmax(186px,1fr));gap:12px}
+  .steps li{padding:52px 20px 20px}
+  .steps li::before{top:18px;left:20px}
+  .steps li:not(:last-child)::after{content:'';position:absolute;right:-9px;top:31px;width:10px;height:2px;
+    background:var(--line-gold)}
+}
+
+.steps-sm li{font-size:15px;padding:14px 16px 14px 52px}
+.steps-sm li::before{width:25px;height:25px;font-size:13px;left:14px;top:13px}
+@media(min-width:900px){
+  .steps-sm{grid-template-columns:repeat(auto-fit,minmax(170px,1fr))}
+  .steps-sm li{padding:46px 16px 16px}
+  .steps-sm li::before{top:15px;left:16px}
+}
+.infogrid-sm{margin:18px 0 6px}
+.infogrid-sm .infocard{padding:18px 20px}
+.infogrid-sm .infocard h2{font-size:19px}
+.procs .proc>p,.procs .proc>.lead{max-width:72ch}
+
+/* розовый акцент из главной — на карточках и шагах страниц услуг */
+.infocard{border-top-color:var(--accent)}
+.infocard li::before{background:var(--accent-30);color:var(--accent-ink)}
+.ic-prep{border-top-color:var(--navy-light)}
+.ic-after{border-top-color:var(--gold-ui)}
+.ic-contra{border-top-color:#B9736B}
+.steps li::before{background:var(--accent);color:var(--accent-ink)}
+.cmp thead th{background:var(--navy)}
+.cmp td.is-this{background:var(--accent-10)}
+.dark .steps li::before{background:var(--accent);color:var(--accent-ink)}
+.dark .cmp td.is-this{background:var(--accent-20)}
+.dark .cmp tbody th{color:var(--accent)}
+.dark .steps li:not(:last-child)::after{background:rgba(242,181,232,.5)}
+
+/* тёмные вставки: схема шагов и таблица сравнения */
+.dark .steps li{background:rgba(255,255,255,.07);border-color:rgba(255,255,255,.16);color:#fff}
+.dark .steps li::before{background:var(--gold-ui);color:var(--navy-deep)}
+.dark .steps li:not(:last-child)::after{background:rgba(232,198,176,.5)}
+.dark .lead{color:#CFC9E6}
+.dark .note{background:rgba(255,255,255,.07);border-color:rgba(255,255,255,.18);color:#D8D3EA}
+.dark .cmp{background:transparent;border-color:rgba(255,255,255,.18)}
+.dark .cmp thead th{background:rgba(255,255,255,.08);color:#fff}
+.dark .cmp thead th.cmp-k{background:rgba(255,255,255,.04)}
+.dark .cmp tbody th{background:rgba(255,255,255,.05);color:var(--gold-ui)}
+.dark .cmp th,.dark .cmp td{border-bottom-color:rgba(255,255,255,.14);color:#EDEAF6}
+.dark .cmp td.is-this{background:rgba(232,198,176,.13)}
+
+/* ─── карточки: кому подходит · подготовка · после · противопоказания ─── */
+.infogrid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(290px,1fr))}
+.infocard{background:#fff;border:1px solid var(--line);border-top:3px solid var(--gold-ui);
+  border-radius:16px;padding:22px 24px}
+.infocard h2{font-size:clamp(21px,2.5vw,26px);margin:0 0 14px;letter-spacing:-.01em;
+  display:flex;align-items:center;gap:11px}
+.ic-ico{flex:0 0 auto;width:32px;height:32px;border-radius:10px;display:grid;place-items:center;
+  background:var(--accent-30);color:var(--accent-ink)}
+.ic-ico svg{width:18px;height:18px;display:block}
+.ic-prep .ic-ico{background:rgba(30,22,112,.1);color:var(--navy-light)}
+.ic-after .ic-ico{background:rgba(212,184,150,.22);color:var(--gold-dark)}
+.ic-contra .ic-ico{background:#F6EDEA;color:#A85B52}
+.infocard p{font-size:15.5px;color:var(--muted);margin:0 0 12px;line-height:1.6;max-width:68ch}
+.infocard ul{list-style:none;margin:0;padding:0}
+.infocard li{position:relative;padding-left:26px;margin-bottom:9px;font-size:15.5px;line-height:1.55;max-width:68ch}
+.infocard li::before{content:'✓';position:absolute;left:0;top:0;width:18px;height:18px;
+  border-radius:50%;background:var(--accent-30);color:var(--accent-ink);
+  display:grid;place-items:center;font-size:11px;font-weight:700;margin-top:3px}
+.infocard .ic-note{margin:12px 0 0;font-size:14.5px;color:var(--muted);
+  padding-top:12px;border-top:1px dashed var(--line)}
+.ic-contra{border-top-color:#B9736B}
+.ic-contra li::before{content:'✕';background:#F6EDEA;color:#A85B52}
+.ic-prep{border-top-color:var(--navy-light)}
+.ic-prep li::before{color:var(--navy-light)}
+.ic-after{border-top-color:var(--gold-dark)}
+@media(max-width:560px){.infocard{padding:18px 18px}}
+
 .arts{max-width:760px}
-.art{margin-bottom:30px}
-.art h2{font-size:clamp(24px,4vw,32px);margin-bottom:12px}
+.art{margin-bottom:34px}
+.art h2{font-size:clamp(26px,4.2vw,36px);margin-bottom:14px;letter-spacing:-.015em;
+        position:relative;padding-top:16px}
+.art h2::before{content:'';position:absolute;top:0;left:0;width:40px;height:3px;border-radius:2px;
+        background:var(--accent)}
 .art p{margin-bottom:12px}
 .art ul,.art ol{margin:0 0 12px 20px}
 .art li{margin-bottom:7px}
@@ -1577,6 +2026,18 @@ footer a{color:#fff;text-decoration:none}
           padding-top:20px;border-top:1px solid rgba(212,184,150,.32)}
 .foot-nav a{text-decoration:none;opacity:.85}
 
+/* кнопка «наверх»: появляется, когда страница прокручена */
+.gotop{position:fixed;right:clamp(14px,2.4vw,28px);bottom:clamp(18px,3vw,32px);z-index:61;
+  width:46px;height:46px;border:1px solid var(--line-gold);border-radius:50%;cursor:pointer;
+  background:rgba(19,11,86,.88);color:var(--gold-ui);display:grid;place-items:center;
+  box-shadow:0 10px 26px rgba(10,7,56,.3);backdrop-filter:blur(8px);
+  opacity:0;visibility:hidden;transform:translateY(10px);transition:opacity .22s,transform .22s,visibility .22s}
+.gotop.is-on{opacity:1;visibility:visible;transform:none}
+.gotop:hover{background:var(--navy);color:#fff}
+.gotop svg{width:19px;height:19px;display:block}
+@media(max-width:720px){.gotop{bottom:calc(74px + env(safe-area-inset-bottom));width:42px;height:42px}}
+@media(prefers-reduced-motion:reduce){.gotop{transition:none}}
+
 /* липкая кнопка на телефоне */
 .sticky{position:fixed;left:0;right:0;bottom:0;z-index:60;padding:10px 16px calc(10px + env(safe-area-inset-bottom));
         background:rgba(255,255,255,.96);backdrop-filter:blur(10px);border-top:1px solid var(--line-gold);display:none}
@@ -1584,20 +2045,40 @@ footer a{color:#fff;text-decoration:none}
 .sticky .btn{width:100%}
 @media(max-width:720px){
   body{font-size:16px;overflow-x:hidden}
-  .top-in{height:56px;gap:10px}
-  .brand{width:82px;height:39px}
-  .brand .brand-top{height:29px}
-  .brand .brand-sub{top:29px;height:10px;-webkit-mask-position:0 -29px;mask-position:0 -29px}
+  /* шапка на телефоне: первая строка — логотип, город и языки,
+     вторая — мессенджеры во всю ширину, ниже — меню ровной сеткой 3×2 */
+  .top-in{height:auto;min-height:56px;flex-wrap:wrap;gap:8px 10px;padding:9px 20px 7px}
+  .brand{width:84px;height:40px}
+  .brand .brand-top{height:30px}
+  .brand .brand-sub{top:30px;height:10px;-webkit-mask-position:0 -30px;mask-position:0 -30px}
   .hero{padding:32px 0 28px}
   .hero-sm{padding:26px 0 20px}
   .top-tel{display:none}
   .top-in>.btn{display:none}        /* кнопка живёт в липкой панели внизу */
-  .langs a{padding:5px 6px;font-size:12px}
-  .city-sw{padding:4px 8px;font-size:12px}
-  .city-sw span{display:none}
+  .top-sp{flex:0 0 100%;height:0;order:3}   /* перенос строки: языки и мессенджеры идут ниже */
+  /* первая строка — логотип и переключатель города, вторая — языки и мессенджеры */
+  .city-sw{margin-right:auto;padding:5px 10px;font-size:12.5px;
+           display:inline-flex;align-items:center;gap:5px}
+  .city-sw span{display:inline;color:var(--gold-ui)}
+  .city-sw::after{content:"⇄";font-size:12px;opacity:.85}
+  .langs{order:4;gap:1px;flex:0 0 auto;margin-right:auto;padding-top:7px;
+         border-top:1px solid rgba(226,193,120,.22)}
+  .langs a{padding:6px 7px;font-size:12.5px}
+  .socs{order:5;flex:1 1 auto;justify-content:flex-end;gap:10px;padding-top:7px;
+        border-top:1px solid rgba(226,193,120,.22)}
+  .soc{width:34px;height:34px;border-radius:11px;background:rgba(255,255,255,.08)}
+  .soc svg{width:19px;height:19px}
+  .socs{flex-wrap:nowrap}
   .top{position:static}              /* на телефоне шапка не липнет: внизу есть кнопка */
-  .mainnav{flex-wrap:wrap;overflow:visible;gap:0;padding-bottom:3px}
-  .mainnav a{padding:9px 10px;font-size:14.5px}
+  .nav-row{position:relative}
+  .mainnav{display:flex;flex-wrap:wrap;overflow:visible;gap:0;padding:0}
+  .nav-i{position:static;flex:1 0 33.333%;justify-content:center;align-items:center}
+  .mainnav a.nav-a{flex:1;padding:11px 4px;font-size:14px;text-align:center}
+  .has-sub{width:auto;flex-wrap:nowrap}
+  .nav-sub{position:absolute;left:0;right:0;top:100%;width:auto;min-width:0;margin:0;padding:6px 0;z-index:45;
+    background:var(--navy-light);border:0;border-top:1px solid rgba(226,193,120,.35);
+    border-radius:0 0 12px 12px;box-shadow:0 16px 30px rgba(10,7,56,.3)}
+  .nav-sub a{padding:11px 16px;text-align:left}
   .sticky{display:block}
   section{padding:40px 0}
   footer{padding-bottom:84px}
@@ -1706,7 +2187,7 @@ CSSVER = hashlib.md5(css().encode('utf-8')).hexdigest()[:8]
 OG_LOCALE = {'ru': 'ru_RU', 'uk': 'uk_UA', 'cs': 'cs_CZ', 'en': 'en_GB', 'es': 'es_ES'}
 
 
-def head(lang, city, title, desc, rel='', langs=None):
+def head(lang, city, title, desc, rel='', langs=None, section=''):
     base = 'https://hi-sisters.clinic'
     ls_ = langs or LANGS
     alts = '\n'.join('  <link rel="alternate" hreflang="%s" href="%s/%s/%s/%s">' % (l, base, l, city, rel)
@@ -1748,7 +2229,7 @@ addEventListener('click',function(ev){{
 }},true);
 </script>
 </head>
-<body data-city="{city}">"""
+<body data-city="{city}" data-page="{section}">"""
 
 
 
@@ -1970,6 +2451,15 @@ def with_city(title, desc, lang, city):
     return title, desc
 
 
+def gotop_btn(lang):
+    """Кнопка «наверх»: появляется, когда страница прокручена вниз."""
+    return ('\n<button class="gotop" type="button" data-gotop aria-label="%s" title="%s">'
+            '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" '
+            'stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">'
+            '<path d="M12 19V5M5 12l7-7 7 7"/></svg></button>'
+            % (e(UP_LABEL[lang]), e(UP_LABEL[lang])))
+
+
 def doc(lang, city, rel, current, title, desc, main, cta=None, other_rel=None,
         with_band=True, schema='', langs=None, add_city=True):
     if add_city:
@@ -1980,11 +2470,11 @@ def doc(lang, city, rel, current, title, desc, main, cta=None, other_rel=None,
     # Google показывает около 60 знаков: длинный хвост с названием клиники только мешает
     if len(title) > 65 and ', Hi Sisters Clinic' in title:
         title = title.replace(', Hi Sisters Clinic', '')
-    return (head(lang, city, title, desc, rel, langs=langs)
+    return (head(lang, city, title, desc, rel, langs=langs, section=current)
             + header(lang, city, rel, current, other_rel, langs=langs)
             + '\n<main>' + main + (band(lang, city) if with_band else '') + '</main>'
             + footer(lang, city)
-            + sticky + schema + '<script>' + NAV_JS + '</script>'
+            + sticky + gotop_btn(lang) + schema + '<script>' + NAV_JS + '</script>'
             + '\n</body></html>')
 
 
@@ -2829,6 +3319,41 @@ NAV_JS = """(function(){
     });
   },{rootMargin:'300px 0px'});
   vs.forEach(function(v){ io.observe(v); });
+})();
+(function(){
+  /* ссылка из прайса ведёт к процедуре: раскрываем её и подводим к экрану */
+  function openTarget(){
+    var h=location.hash; if(!h||h.length<2) return;
+    var el=null;
+    try{ el=document.querySelector(h); }catch(e){ return; }
+    if(!el) return;
+    if(el.tagName==='DETAILS'){ el.open=true; }
+    setTimeout(function(){ el.scrollIntoView({block:'start'}); },0);
+  }
+  addEventListener('hashchange',openTarget);
+  addEventListener('load',openTarget);
+  document.addEventListener('click',function(ev){
+    var a=ev.target.closest('a[href^="#"]'); if(!a) return;
+    var id=a.getAttribute('href'); if(id.length<2) return;
+    var el=null;
+    try{ el=document.querySelector(id); }catch(e){ return; }
+    if(el&&el.tagName==='DETAILS'){ el.open=true; }
+  });
+  openTarget();
+})();
+(function(){
+  var b=document.querySelector('[data-gotop]'); if(!b) return;
+  var shown=false;
+  function sync(){
+    var need=(window.pageYOffset||document.documentElement.scrollTop)>600;
+    if(need!==shown){ shown=need; b.classList.toggle('is-on',need); }
+  }
+  addEventListener('scroll',sync,{passive:true});
+  b.addEventListener('click',function(){
+    var soft=!window.matchMedia||!window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    window.scrollTo(soft?{top:0,behavior:'smooth'}:{top:0});
+  });
+  sync();
 })();"""
 
 SHOP_JS = """
@@ -3497,15 +4022,20 @@ def video_block(obj, lang, title=''):
                  'allowfullscreen></iframe></div>' % (e(src), e(cap or title)))
         head = ('<div class="sec-head"><h2>%s</h2></div>' % e(cap)) if cap else ''
         return '<section class="alt"><div class="wrap">%s%s</div></section>' % (head, media)
-    return ('\n<section class="vband"%s><div class="wrap">'
-            '<div>%s%s</div>'
-            '<video muted loop playsinline autoplay preload="none" aria-hidden="true" tabindex="-1"'
-            ' data-vband="%s"%s></video>'
-            '</div></section>'
-            % ((' style="background-image:url(%s)"' % e(poster)) if poster else '',
-               ('<h2>%s</h2>' % e(cap)) if cap else '',
-               ('<p>%s</p>' % e(note)) if note else '',
-               e(src), (' poster="%s"' % e(poster)) if poster else ''))
+    por = (not isinstance(v, str)) and v.get('layout') == 'portrait'
+    video = ('<video muted loop playsinline autoplay preload="none" aria-hidden="true" tabindex="-1"'
+             ' data-vband="%s"%s></video>'
+             % (e(src), (' poster="%s"' % e(poster)) if poster else ''))
+    txt = ('<div>%s%s</div>' if por else '%s%s') % (
+        ('<h2>%s</h2>' % e(cap)) if cap else '',
+        ('<p>%s</p>' % e(note)) if note else '')
+    inner = ('<span class="vb-bg" aria-hidden="true"></span>'
+             '<div class="wrap">%s%s</div>') % (txt, video) if por else \
+            '%s<div class="wrap">%s</div>' % (video, txt)
+    return ('\n<section class="vband%s"%s>%s</section>'
+            % (' vband-por' if por else '',
+               (' style="background-image:url(%s)"' % e(poster)) if poster else '',
+               inner))
 
 
 def hero_video(obj):
@@ -3519,6 +4049,7 @@ def hero_video(obj):
         return ''
     return ('<video class="hero-v" autoplay muted loop playsinline preload="none"%s>'
             '<source src="%s" type="video/mp4"></video>'
+            '<span class="hero-v-tint" aria-hidden="true"></span>'
             % ((' poster="%s"' % e(poster)) if poster else '', e(src)))
 
 
@@ -3580,28 +4111,21 @@ def build_service(lang, city, key):
     # в другом городе этой услуги может не быть — тогда ведём на его главную
     other_rel = (key + '/') if (other in svc['cities'] and svc['page'].get(lang)) else ''
 
-    blocks = ''
-    for s_ in pg.get('sections', []):
-        t_ = s_.get('title') or s_.get('h')
-        body = ''
-        if s_.get('p'):
-            body += '<p>%s</p>' % e(s_['p'])
-        for p_ in s_.get('paras', []) or []:
-            body += '<p>%s</p>' % e(p_)
-        if s_.get('steps'):
-            body += '<ol>%s</ol>' % ''.join('<li>%s</li>' % e(x) for x in s_['steps'])
-        if s_.get('list'):
-            body += '<ul>%s</ul>' % ''.join('<li>%s</li>' % e(x) for x in s_['list'])
-        if s_.get('note'):
-            body += '<p class="note">%s</p>' % e(s_['note'])
-        if t_ or body:
-            blocks += '<div class="art"><h2>%s</h2>%s</div>' % (e(t_ or ''), body)
+    blocks = sections_html(pg.get('sections', []))
 
-    # аппарат упоминаем фоном, в конце текста услуги, а не отдельным блоком
+    # аппарат упоминаем в конце текста услуги; если к нему приложено видео —
+    # выносим в отдельный блок, где этот ролик идёт фоном
+    equip_band = ''
     for it in equip['items']:
         if it.get('service') == key and city in it['cities']:
-            blocks += ('<div class="art"><p class="note"><b>%s.</b> %s</p></div>'
-                       % (e(it['title'][lang]), e(it['desc'][lang])))
+            if it.get('video'):
+                v = dict(it['video'])
+                v.setdefault('title', it['title'])
+                v.setdefault('note', it['desc'])
+                equip_band = video_block({'video': v}, lang)
+            else:
+                blocks += ('<div class="art"><p class="note"><b>%s.</b> %s</p></div>'
+                           % (e(it['title'][lang]), e(it['desc'][lang])))
             break
 
     faqs = ''.join('<details><summary>%s</summary><div class="ans">%s</div></details>'
@@ -3625,7 +4149,7 @@ def build_service(lang, city, key):
                 extra += ('<h3 class="ptab-h">%s</h3><div class="ptable">%s</div>'
                           % (e((PGROUP_TITLE.get(xg) or {}).get(lang, xg)), xr))
     # у страницы может не быть своей группы цен — тогда показываем только дополнительные
-    price_block = ('<section class="tint"><div class="wrap"><div class="sec-head"><h2>%s</h2></div>'
+    price_block = ('<section class="dark"><div class="wrap"><div class="sec-head"><h2>%s</h2></div>'
                    '%s%s'
                    '<div class="more-list"><a href="/%s/%s/services/#prices">%s</a></div>'
                    '</div></section>'
@@ -3654,8 +4178,13 @@ def build_service(lang, city, key):
         svc_split = split_block('/assets/photos/exoskin.jpg', card['title'], SPLIT_COSM[lang][0],
                                 SPLIT_COSM[lang][1], sec_class='tint', rev=True)
 
+    hv = hero_video(svc)
+    hi = svc.get('heroImage') or ''
+    hero_style = ('' if hv or not hi else
+                  ' style="background-image:linear-gradient(176deg,rgba(19,11,86,.86) 0%,'
+                  'rgba(19,11,86,.66) 42%,rgba(10,7,56,.72) 100%),url(' + e(hi) + ')"')
     main = f"""
-<section class="hero hero-sm">{hero_video(svc)}<div class="wrap">
+<section class="hero hero-sm{' has-v' if hv else ''}{' has-img' if hero_style else ''}"{hero_style}>{hv}<div class="wrap">
   <div class="kicker"><a href="/{lang}/{city}/services/">{e(nav_label('services', lang))}</a> · {e(cityname)}</div>
   <h1>{e((pg.get('title') or card['title']) + ' ' + IN_CITY[city][lang])}</h1>
   <p class="lead">{e(pg.get('intro') or card['desc'])}</p>
@@ -3667,12 +4196,13 @@ def build_service(lang, city, key):
   </div>
 </div></section>
 
-<section><div class="wrap arts">{blocks}</div></section>
+{blocks}
+{compare_block(key, lang)}
 {svc_split}
+{equip_band}
 {methods_block}
 {video_block(svc, lang, card['title'])}
 {price_block}
-{proc_blocks(key, city, lang)}
 {faq_block}
 
 {service_reviews(key, city, lang)}

@@ -38,7 +38,8 @@
       "paras": [
        "Лазерный луч поглощается меланином — пигментом внутри волоса. Энергия превращается в тепло и повреждает волосяной фолликул. Чем темнее и толще волос, тем больше в нём меланина и тем лучше работает метод.",
        "Важная деталь, от которой зависит весь курс: лазер действует только на волосы в активной фазе роста. В любой момент времени в такой фазе находится лишь часть волос в зоне — остальные «спят» и на этом сеансе не отреагируют. Поэтому одной процедурой задача не решается в принципе, и дело не в аппарате."
-      ]
+      ],
+      "kind": "text"
      },
      {
       "title": "Кому подходит",
@@ -48,7 +49,8 @@
        "вросшие волосы и раздражение после бритья",
        "мужские зоны: спина, грудь, плечи, шея, живот",
        "женское лицо мы лазером не делаем — на нём волосы чаще связаны с гормональным фоном, и лазер может дать обратный эффект; для лица предлагаем электроэпиляцию"
-      ]
+      ],
+      "kind": "fits"
      },
      {
       "title": "Как проходит сеанс",
@@ -58,7 +60,8 @@
        "проход аппаратом по зоне: ощущение — короткий горячий щелчок, охлаждение насадки его смягчает",
        "успокаивающее средство после процедуры",
        "15–60 минут в зависимости от зоны"
-      ]
+      ],
+      "kind": "steps"
      },
      {
       "title": "Как строится курс",
@@ -67,7 +70,8 @@
        "Увеличение интервала — не затягивание курса, а его логика: чем меньше волос остаётся, тем дольше нужно ждать, пока оставшиеся войдут в активную фазу. Приходить раньше смысла нет: сеанс будет почти вхолостую.",
        "У большинства заметное прореживание начинается после 2–3 процедур, а весь курс занимает обычно 6–10 сеансов и больше — это зависит от зоны, гормонального фона, плотности и цвета волос. Поэтому мы не называем фиксированное число сеансов заранее. Но если лазерная эпиляция вам подходит, результат мы гарантируем и доводим курс до конца: на консультации косметолог прямо скажет, подходит метод или нет, и если нет — предложит электроэпиляцию, а не продаст курс наугад."
       ],
-      "note": "После курса у части клиенток волосы возвращаются частично — обычно на фоне гормональных изменений: беременности, отмены или начала приёма препаратов, заболеваний щитовидной железы. Это не ошибка курса, а свойство организма; в таких случаях нужны единичные поддерживающие сеансы."
+      "note": "После курса у части клиенток волосы возвращаются частично — обычно на фоне гормональных изменений: беременности, отмены или начала приёма препаратов, заболеваний щитовидной железы. Это не ошибка курса, а свойство организма; в таких случаях нужны единичные поддерживающие сеансы.",
+      "kind": "text"
      },
      {
       "title": "Подготовка",
@@ -77,7 +81,8 @@
        "за 2–4 недели не выщипывать, не делать воск и шугаринг: фолликул должен быть на месте",
        "в день процедуры не наносить на зону кремы, дезодорант и масла",
        "предупредить мастера о приёме лекарств: часть препаратов повышает светочувствительность"
-      ]
+      ],
+      "kind": "prep"
      },
      {
       "title": "Уход после",
@@ -88,7 +93,8 @@
        "не тереть зону мочалкой и скрабом 3–4 дня",
        "через 1–2 недели волосы начнут выпадать: это ожидаемо, помогает мягкий скраб",
        "дезодорант после подмышек — на следующий день"
-      ]
+      ],
+      "kind": "after"
      },
      {
       "title": "Противопоказания",
@@ -101,7 +107,8 @@
        "родинки и татуировки в зоне: их обходим",
        "герпес в активной фазе при обработке зоны лица и бикини"
       ],
-      "note": "Полный список мастер проверяет на осмотре перед первым сеансом — это бесплатно."
+      "note": "Полный список мастер проверяет на осмотре перед первым сеансом — это бесплатно.",
+      "kind": "contra"
      }
     ],
     "faqTitle": "Часто задаваемые вопросы",
@@ -152,7 +159,8 @@
       "paras": [
        "Лазерний промінь поглинається меланіном — пігментом усередині волосини. Енергія перетворюється на тепло і пошкоджує волосяний фолікул. Чим темніша і товща волосина, тим більше в ній меланіну і тим краще працює метод.",
        "Важлива деталь, від якої залежить увесь курс: лазер діє лише на волосся в активній фазі росту. У будь-який момент у такій фазі перебуває лише частина волосся в зоні — решта «спить» і на цьому сеансі не відреагує. Тому однією процедурою задача не вирішується в принципі, і річ не в апараті."
-      ]
+      ],
+      "kind": "text"
      },
      {
       "title": "Кому підходить",
@@ -162,7 +170,8 @@
        "врослі волосини й подразнення після гоління",
        "чоловічі зони: спина, груди, плечі, шия, живіт",
        "жіноче обличчя ми лазером не робимо — там волосся частіше пов’язане з гормональним фоном, і лазер може дати зворотний ефект; для обличчя пропонуємо електроепіляцію"
-      ]
+      ],
+      "kind": "fits"
      },
      {
       "title": "Як проходить сеанс",
@@ -172,7 +181,8 @@
        "прохід апаратом по зоні: відчуття — короткий гарячий щиглик, охолодження насадки його пом’якшує",
        "заспокійливий засіб після процедури",
        "15–60 хвилин залежно від зони"
-      ]
+      ],
+      "kind": "steps"
      },
      {
       "title": "Як будується курс",
@@ -181,7 +191,8 @@
        "Збільшення інтервалу — не затягування курсу, а його логіка: чим менше волосся залишається, тим довше треба чекати, поки решта увійде в активну фазу. Приходити раніше сенсу немає: сеанс буде майже вхолосту.",
        "У більшості помітне прорідження починається після 2–3 процедур, а весь курс триває зазвичай 6–10 сеансів і більше — це залежить від зони, гормонального фону, щільності й кольору волосся. Тому ми не називаємо фіксовану кількість сеансів наперед. Але якщо лазерна епіляція вам підходить, результат ми гарантуємо і доводимо курс до кінця: на консультації косметолог прямо скаже, підходить метод чи ні, і якщо ні — запропонує електроепіляцію, а не продасть курс навмання."
       ],
-      "note": "Після курсу в частини клієнток волосся повертається частково — зазвичай на тлі гормональних змін: вагітності, відміни чи початку прийому препаратів, захворювань щитоподібної залози. Це не помилка курсу, а властивість організму; у таких випадках потрібні поодинокі підтримувальні сеанси."
+      "note": "Після курсу в частини клієнток волосся повертається частково — зазвичай на тлі гормональних змін: вагітності, відміни чи початку прийому препаратів, захворювань щитоподібної залози. Це не помилка курсу, а властивість організму; у таких випадках потрібні поодинокі підтримувальні сеанси.",
+      "kind": "text"
      },
      {
       "title": "Підготовка",
@@ -191,7 +202,8 @@
        "за 2–4 тижні не висмикувати, не робити віск і шугаринг: фолікул має бути на місці",
        "у день процедури не наносити на зону креми, дезодорант і олії",
        "попередити майстра про прийом ліків: частина препаратів підвищує світлочутливість"
-      ]
+      ],
+      "kind": "prep"
      },
      {
       "title": "Догляд після",
@@ -202,7 +214,8 @@
        "не терти зону мочалкою і скрабом 3–4 дні",
        "через 1–2 тижні волосся почне випадати: це очікувано, допомагає м’який скраб",
        "дезодорант після пахв — наступного дня"
-      ]
+      ],
+      "kind": "after"
      },
      {
       "title": "Протипоказання",
@@ -215,7 +228,8 @@
        "родимки й татуювання в зоні: їх обходимо",
        "герпес в активній фазі при обробці зони обличчя і бікіні"
       ],
-      "note": "Повний список майстер перевіряє на огляді перед першим сеансом — це безкоштовно."
+      "note": "Повний список майстер перевіряє на огляді перед першим сеансом — це безкоштовно.",
+      "kind": "contra"
      }
     ],
     "faqTitle": "Часті запитання",
@@ -266,7 +280,8 @@
       "paras": [
        "The laser beam is absorbed by melanin, the pigment inside the hair. That energy turns into heat and damages the follicle. The darker and thicker the hair, the more melanin it holds and the better the method works.",
        "One detail shapes the whole course: the laser only acts on hairs in the active growth phase. At any given moment only part of the hair in an area is in that phase — the rest is dormant and will not respond at that session. So a single treatment cannot solve the task in principle, and that has nothing to do with the device."
-      ]
+      ],
+      "kind": "text"
      },
      {
       "title": "Who it suits",
@@ -276,7 +291,8 @@
        "ingrown hairs and irritation from shaving",
        "men's areas: back, chest, shoulders, neck, abdomen",
        "we do not laser a woman's face — facial hair in women is more often hormone-driven and the laser can stimulate growth there; for the face we offer electrolysis"
-      ]
+      ],
+      "kind": "fits"
      },
      {
       "title": "How a session goes",
@@ -286,7 +302,8 @@
        "passing the handpiece over the area: it feels like a short hot flick, the cooled tip softens it",
        "a soothing product afterwards",
        "15–60 minutes depending on the area"
-      ]
+      ],
+      "kind": "steps"
      },
      {
       "title": "How the course is built",
@@ -295,7 +312,8 @@
        "A longer interval is not us stretching the course; it is the logic of it. The fewer hairs remain, the longer it takes for the rest to enter the active phase. Coming earlier is pointless: the session would largely be wasted.",
        "Most people see clear thinning after 2–3 sessions, and a full course usually runs 6–10 sessions or more, depending on the area, hormones, hair density and colour. That is why we do not quote a fixed number of sessions in advance. But if laser hair removal is right for you, we guarantee the result and see the course through: at the consultation the specialist will tell you plainly whether the method suits you, and if it does not, she will offer electrolysis rather than sell a course on spec."
       ],
-      "note": "After a course some clients see hair partly return, usually alongside hormonal change: pregnancy, starting or stopping medication, thyroid conditions. That is not a failure of the course but how the body works; in those cases single maintenance sessions are enough."
+      "note": "After a course some clients see hair partly return, usually alongside hormonal change: pregnancy, starting or stopping medication, thyroid conditions. That is not a failure of the course but how the body works; in those cases single maintenance sessions are enough.",
+      "kind": "text"
      },
      {
       "title": "How to prepare",
@@ -305,7 +323,8 @@
        "no plucking, waxing or sugaring for 2–4 weeks: the follicle has to be there",
        "no creams, deodorant or oils on the area on the day",
        "tell us about your medication: some drugs increase light sensitivity"
-      ]
+      ],
+      "kind": "prep"
      },
      {
       "title": "Aftercare",
@@ -316,7 +335,8 @@
        "do not scrub the area with a washcloth or exfoliant for 3–4 days",
        "after 1–2 weeks the hairs start to shed: that is expected, a gentle scrub helps",
        "deodorant after underarms — from the next day"
-      ]
+      ],
+      "kind": "after"
      },
      {
       "title": "Contraindications",
@@ -329,7 +349,8 @@
        "moles and tattoos in the area: we work around them",
        "active herpes when treating the face or bikini"
       ],
-      "note": "The full list is checked at the consultation before your first session — that consultation is free."
+      "note": "The full list is checked at the consultation before your first session — that consultation is free.",
+      "kind": "contra"
      }
     ],
     "faqTitle": "FAQ",
@@ -380,7 +401,8 @@
       "paras": [
        "El haz del láser lo absorbe la melanina, el pigmento del interior del vello. Esa energía se convierte en calor y daña el folículo. Cuanto más oscuro y grueso es el vello, más melanina tiene y mejor funciona el método.",
        "Un detalle marca toda la pauta: el láser solo actúa sobre el vello en fase activa de crecimiento. En cada momento solo una parte del vello de la zona está en esa fase; el resto está en reposo y no responderá ese día. Por eso una sola sesión no resuelve el problema, y no es cuestión del aparato."
-      ]
+      ],
+      "kind": "text"
      },
      {
       "title": "Para quién es",
@@ -390,7 +412,8 @@
        "vello enquistado e irritación por el afeitado",
        "zonas masculinas: espalda, pecho, hombros, cuello, abdomen",
        "no hacemos láser en el rostro femenino: ahí el vello suele depender de las hormonas y el láser puede estimular su crecimiento; para la cara ofrecemos electrólisis"
-      ]
+      ],
+      "kind": "fits"
      },
      {
       "title": "Cómo es la sesión",
@@ -400,7 +423,8 @@
        "pasada con el cabezal por la zona: se siente como un chasquido caliente y breve, el frío del cabezal lo suaviza",
        "producto calmante al terminar",
        "15–60 minutos según la zona"
-      ]
+      ],
+      "kind": "steps"
      },
      {
       "title": "Cómo se arma la pauta",
@@ -409,7 +433,8 @@
        "Alargar el intervalo no es estirar la pauta, es su lógica: cuanto menos vello queda, más tiempo hace falta para que el restante entre en fase activa. Venir antes no sirve: la sesión sería casi en balde.",
        "En la mayoría se ve un aclarado claro tras 2–3 sesiones y la pauta completa suele llevar 6–10 sesiones o más, según la zona, las hormonas, la densidad y el color del vello. Por eso no damos un número cerrado de sesiones por adelantado. Pero si la depilación láser es adecuada para ti, garantizamos el resultado y llevamos la pauta hasta el final: en la consulta te diremos con claridad si el método te conviene y, si no, te propondremos electrólisis en lugar de venderte una pauta a ciegas."
       ],
-      "note": "Después de la pauta, a algunas clientas el vello les vuelve en parte, normalmente junto con cambios hormonales: embarazo, empezar o dejar una medicación, problemas de tiroides. No es un fallo de la pauta sino cómo funciona el cuerpo; en esos casos bastan sesiones sueltas de mantenimiento."
+      "note": "Después de la pauta, a algunas clientas el vello les vuelve en parte, normalmente junto con cambios hormonales: embarazo, empezar o dejar una medicación, problemas de tiroides. No es un fallo de la pauta sino cómo funciona el cuerpo; en esos casos bastan sesiones sueltas de mantenimiento.",
+      "kind": "text"
      },
      {
       "title": "Preparación",
@@ -419,7 +444,8 @@
        "2–4 semanas sin depilar con pinzas, cera ni azúcar: el folículo tiene que estar ahí",
        "el día de la sesión, nada de cremas, desodorante ni aceites en la zona",
        "avísanos de la medicación: algunos fármacos aumentan la fotosensibilidad"
-      ]
+      ],
+      "kind": "prep"
      },
      {
       "title": "Cuidado posterior",
@@ -430,7 +456,8 @@
        "3–4 días sin frotar la zona con esponja ni exfoliante",
        "a las 1–2 semanas el vello empieza a caer: es lo esperado y un exfoliante suave ayuda",
        "desodorante tras las axilas: al día siguiente"
-      ]
+      ],
+      "kind": "after"
      },
      {
       "title": "Contraindicaciones",
@@ -443,7 +470,8 @@
        "lunares y tatuajes en la zona: los rodeamos",
        "herpes en fase activa al tratar rostro o ingles"
       ],
-      "note": "La lista completa se revisa en la valoración previa a la primera sesión, que es gratuita."
+      "note": "La lista completa se revisa en la valoración previa a la primera sesión, que es gratuita.",
+      "kind": "contra"
      }
     ],
     "faqTitle": "Preguntas frecuentes",
@@ -494,7 +522,8 @@
       "paras": [
        "Laserový paprsek pohlcuje melanin — pigment uvnitř chloupku. Energie se mění v teplo a poškodí vlasový folikul. Čím tmavší a silnější chloupek je, tím víc melaninu obsahuje a tím lépe metoda funguje.",
        "Důležitý detail, na kterém stojí celá kúra: laser působí jen na chloupky v aktivní fázi růstu. V každém okamžiku je v této fázi jen část chloupků v dané zóně — zbytek „spí“ a na tomto sezení nezareaguje. Jedním ošetřením se tedy úkol v principu vyřešit nedá, a není to otázka přístroje."
-      ]
+      ],
+      "kind": "text"
      },
      {
       "title": "Pro koho je vhodná",
@@ -504,7 +533,8 @@
        "zarůstající chloupky a podráždění po holení",
        "mužské zóny: záda, hrudník, ramena, krk, břicho",
        "ženský obličej laserem neděláme — chloupky tam častěji souvisejí s hormony a laser může mít opačný efekt; na obličej nabízíme elektroepilaci"
-      ]
+      ],
+      "kind": "fits"
      },
      {
       "title": "Jak sezení probíhá",
@@ -514,7 +544,8 @@
        "přejezd přístrojem po zóně: pocit jako krátké horké cvrnknutí, chlazení hlavice ho zmírňuje",
        "zklidňující přípravek po ošetření",
        "15–60 minut podle zóny"
-      ]
+      ],
+      "kind": "steps"
      },
      {
       "title": "Jak je kúra postavená",
@@ -523,7 +554,8 @@
        "Prodlužování intervalu není natahování kúry, ale její logika: čím méně chloupků zbývá, tím déle trvá, než ty zbylé vstoupí do aktivní fáze. Přijít dřív nemá smysl: sezení proběhne skoro naprázdno.",
        "U většiny je patrné prořídnutí po 2–3 ošetřeních a celá kúra obvykle zabere 6–10 sezení i více — podle zóny, hormonů, hustoty a barvy chloupků. Proto dopředu neuvádíme pevný počet sezení. Pokud je ale laserová epilace pro vás vhodná, výsledek garantujeme a kúru dotáhneme do konce: na konzultaci kosmetička na rovinu řekne, zda je metoda vhodná, a pokud ne, nabídne elektroepilaci místo toho, aby prodala kúru naslepo."
       ],
-      "note": "Po kúře se u části klientek chloupky částečně vracejí — obvykle při hormonálních změnách: v těhotenství, při nasazení nebo vysazení léků, při onemocnění štítné žlázy. Není to chyba kúry, ale vlastnost organismu; v takovém případě stačí jednotlivá udržovací sezení."
+      "note": "Po kúře se u části klientek chloupky částečně vracejí — obvykle při hormonálních změnách: v těhotenství, při nasazení nebo vysazení léků, při onemocnění štítné žlázy. Není to chyba kúry, ale vlastnost organismu; v takovém případě stačí jednotlivá udržovací sezení.",
+      "kind": "text"
      },
      {
       "title": "Příprava",
@@ -533,7 +565,8 @@
        "2–4 týdny nevytrhávat, nedělat vosk ani cukrovou pastu: folikul musí zůstat na místě",
        "v den ošetření nenanášet na zónu krémy, deodorant a oleje",
        "říct nám o lécích: některé zvyšují citlivost na světlo"
-      ]
+      ],
+      "kind": "prep"
      },
      {
       "title": "Péče po ošetření",
@@ -544,7 +577,8 @@
        "3–4 dny zónu nedrhnout žínkou ani peelingem",
        "za 1–2 týdny začnou chloupky vypadávat: to se čeká, pomáhá jemný peeling",
        "deodorant po podpaží až druhý den"
-      ]
+      ],
+      "kind": "after"
      },
      {
       "title": "Kontraindikace",
@@ -557,7 +591,8 @@
        "znaménka a tetování v zóně: obcházíme je",
        "herpes v aktivní fázi při ošetření obličeje a bikin"
       ],
-      "note": "Úplný seznam projde kosmetička při vstupní prohlídce před prvním sezením — ta je zdarma."
+      "note": "Úplný seznam projde kosmetička při vstupní prohlídce před prvním sezením — ta je zdarma.",
+      "kind": "contra"
      }
     ],
     "faqTitle": "Časté dotazy",
@@ -651,15 +686,18 @@
       "paras": [
        "В каждый волосяной фолликул вводится тончайшая игла, через которую подаётся разряд. Он разрушает ростковую зону волоса. Метод работает с каждым волосом отдельно — поэтому цвет волоса не имеет значения: светлые, рыжие, седые и пушковые волосы удаляются так же, как тёмные.",
        "При правильно подобранных параметрах и корректной технике обработанный фолликул больше не даёт волос. Это единственный метод с таким результатом, но он требует времени: за минуту мастер обрабатывает ограниченное число волос, поэтому работа считается поминутно."
-      ]
+      ],
+      "kind": "text"
      },
      {
       "title": "Индивидуальный подбор параметров",
-      "p": "Сила разряда, время воздействия и тип иглы подбираются под вас: под толщину волоса, глубину фолликула, тип и чувствительность кожи. Одни и те же настройки не подходят для подбородка и для голени, поэтому параметры меняются по ходу работы — мастер ориентируется на реакцию кожи, а не на единый режим."
+      "p": "Сила разряда, время воздействия и тип иглы подбираются под вас: под толщину волоса, глубину фолликула, тип и чувствительность кожи. Одни и те же настройки не подходят для подбородка и для голени, поэтому параметры меняются по ходу работы — мастер ориентируется на реакцию кожи, а не на единый режим.",
+      "kind": "text"
      },
      {
       "title": "Работаем в 4–10 рук",
-      "p": "Над одной зоной могут работать несколько мастеров одновременно. То, что при обычном формате растягивается на часы и несколько визитов, закрывается в разы быстрее. В прайсе есть отдельный вариант «в четыре руки» на 120 минут."
+      "p": "Над одной зоной могут работать несколько мастеров одновременно. То, что при обычном формате растягивается на часы и несколько визитов, закрывается в разы быстрее. В прайсе есть отдельный вариант «в четыре руки» на 120 минут.",
+      "kind": "text"
      },
      {
       "title": "Кому подходит",
@@ -669,7 +707,8 @@
        "единичные волосы, оставшиеся после курса лазера",
        "тело: любые зоны, включая бикини и подмышки",
        "ситуации, когда важно убрать волосы окончательно, а не прореживать"
-      ]
+      ],
+      "kind": "fits"
      },
      {
       "title": "Как проходит сеанс",
@@ -679,7 +718,8 @@
        "обработка волос по одному: ощущения — короткие точечные уколы с теплом",
        "антисептическая обработка и успокаивающее средство",
        "оплата по таймингу аппарата, за фактически отработанное время"
-      ]
+      ],
+      "kind": "steps"
      },
      {
       "title": "Как строится курс",
@@ -687,7 +727,8 @@
        "Волос можно обработать только тогда, когда он виден и находится в активной фазе. Поэтому сеансы идут с интервалом 1–4 недели: сначала чаще, затем реже, по мере того как волос становится меньше.",
        "Количество процедур всегда индивидуально и зависит от зоны, плотности и типа волос, гормонального фона и того, что делали с зоной раньше — выщипывание и воск годами меняют форму фолликула и усложняют работу. Ориентировочно: лицо — 10–20 сеансов, тело — 15–30 и больше. Это ориентир, а не обещание.",
        "Между сеансами нельзя выщипывать и делать воск: волос должен отрасти до видимой длины, иначе обрабатывать нечего. Брить можно."
-      ]
+      ],
+      "kind": "text"
      },
      {
       "title": "Подготовка",
@@ -697,7 +738,8 @@
        "не загорать за несколько дней до сеанса",
        "в день процедуры не наносить на зону кремы и дезодорант",
        "предупредить о приёме лекарств и о кожных заболеваниях"
-      ]
+      ],
+      "kind": "prep"
      },
      {
       "title": "Уход после",
@@ -711,7 +753,8 @@
        "первые сутки не трогать зону руками, не наносить макияж на обработанное лицо",
        "антисептик по рекомендации мастера, дальше — заживляющее средство",
        "SPF на открытых зонах, пока кожа восстанавливается"
-      ]
+      ],
+      "kind": "after"
      },
      {
       "title": "Противопоказания",
@@ -724,7 +767,8 @@
        "воспаления, повреждения и высыпания в зоне обработки",
        "склонность к келоидным рубцам"
       ],
-      "note": "Параметры и противопоказания мастер проверяет до начала работы. Пробная процедура на 30 минут по телу есть в прайсе — на ней видно, как кожа реагирует именно у вас."
+      "note": "Параметры и противопоказания мастер проверяет до начала работы. Пробная процедура на 30 минут по телу есть в прайсе — на ней видно, как кожа реагирует именно у вас.",
+      "kind": "contra"
      }
     ],
     "faqTitle": "Частые вопросы",
@@ -769,15 +813,18 @@
       "paras": [
        "У кожен волосяний фолікул вводиться найтонша голка, через яку подається розряд. Він руйнує ростову зону волосини. Метод працює з кожною волосиною окремо — тому колір волосся не має значення: світле, руде, сиве й пушкове волосся видаляється так само, як темне.",
        "За правильно підібраних параметрів і коректної техніки оброблений фолікул більше не дає волосся. Це єдиний метод із таким результатом, але він потребує часу: за хвилину майстер обробляє обмежену кількість волосин, тому робота рахується похвилинно."
-      ]
+      ],
+      "kind": "text"
      },
      {
       "title": "Індивідуальний підбір параметрів",
-      "p": "Сила розряду, час впливу й тип голки добираються під вас: під товщину волосини, глибину фолікула, тип і чутливість шкіри. Ті самі налаштування не підходять для підборіддя й для гомілки, тому параметри змінюються по ходу роботи — майстер орієнтується на реакцію шкіри, а не на єдиний режим."
+      "p": "Сила розряду, час впливу й тип голки добираються під вас: під товщину волосини, глибину фолікула, тип і чутливість шкіри. Ті самі налаштування не підходять для підборіддя й для гомілки, тому параметри змінюються по ходу роботи — майстер орієнтується на реакцію шкіри, а не на єдиний режим.",
+      "kind": "text"
      },
      {
       "title": "Працюємо в 4–10 рук",
-      "p": "Над однією зоною можуть працювати кілька майстрів одночасно. Те, що у звичайному форматі розтягується на години й кілька візитів, закривається в рази швидше. У прайсі є окремий варіант «у чотири руки» на 120 хвилин."
+      "p": "Над однією зоною можуть працювати кілька майстрів одночасно. Те, що у звичайному форматі розтягується на години й кілька візитів, закривається в рази швидше. У прайсі є окремий варіант «у чотири руки» на 120 хвилин.",
+      "kind": "text"
      },
      {
       "title": "Кому підходить",
@@ -787,7 +834,8 @@
        "поодинокі волосини, що залишилися після курсу лазера",
        "тіло: будь-які зони, включно з бікіні та пахвами",
        "ситуації, коли важливо прибрати волосся остаточно, а не проріджувати"
-      ]
+      ],
+      "kind": "fits"
      },
      {
       "title": "Як проходить сеанс",
@@ -797,7 +845,8 @@
        "обробка волосин по одній: відчуття — короткі точкові уколи з теплом",
        "антисептична обробка та заспокійливий засіб",
        "оплата за таймінгом апарата, за фактично відпрацьований час"
-      ]
+      ],
+      "kind": "steps"
      },
      {
       "title": "Як будується курс",
@@ -805,7 +854,8 @@
        "Волосину можна обробити тільки тоді, коли вона видима й перебуває в активній фазі. Тому сеанси йдуть з інтервалом 1–4 тижні: спершу частіше, далі рідше, у міру того як волосся стає менше.",
        "Кількість процедур завжди індивідуальна й залежить від зони, щільності та типу волосся, гормонального фону й того, що робили із зоною раніше — висмикування та віск роками змінюють форму фолікула й ускладнюють роботу. Орієнтовно: обличчя — 10–20 сеансів, тіло — 15–30 і більше. Це орієнтир, а не обіцянка.",
        "Між сеансами не можна висмикувати й робити віск: волосина має відрости до видимої довжини, інакше обробляти нічого. Голити можна."
-      ]
+      ],
+      "kind": "text"
      },
      {
       "title": "Підготовка",
@@ -815,7 +865,8 @@
        "не засмагати за кілька днів до сеансу",
        "у день процедури не наносити на зону креми й дезодорант",
        "попередити про прийом ліків і про шкірні захворювання"
-      ]
+      ],
+      "kind": "prep"
      },
      {
       "title": "Догляд після",
@@ -829,7 +880,8 @@
        "першу добу не торкатися зони руками, не наносити макіяж на оброблене обличчя",
        "антисептик за рекомендацією майстра, далі — загоювальний засіб",
        "SPF на відкритих зонах, поки шкіра відновлюється"
-      ]
+      ],
+      "kind": "after"
      },
      {
       "title": "Протипоказання",
@@ -842,7 +894,8 @@
        "запалення, пошкодження та висипання в зоні обробки",
        "схильність до келоїдних рубців"
       ],
-      "note": "Параметри й протипоказання майстер перевіряє до початку роботи. Пробна процедура на 30 хвилин по тілу є в прайсі — на ній видно, як шкіра реагує саме у вас."
+      "note": "Параметри й протипоказання майстер перевіряє до початку роботи. Пробна процедура на 30 хвилин по тілу є в прайсі — на ній видно, як шкіра реагує саме у вас.",
+      "kind": "contra"
      }
     ],
     "faqTitle": "Часті питання",
@@ -887,15 +940,18 @@
       "paras": [
        "A very fine needle is inserted into each follicle and delivers a discharge that destroys the hair's growth zone. The method treats every hair individually — so colour is irrelevant: blond, red, grey and fine hair comes out just as dark hair does.",
        "With correctly chosen parameters and clean technique, a treated follicle no longer produces hair. It is the only method with that outcome, but it takes time: only a limited number of hairs can be treated per minute, which is why the work is charged by the minute."
-      ]
+      ],
+      "kind": "text"
      },
      {
       "title": "Parameters chosen for you",
-      "p": "The strength of the discharge, the contact time and the needle type are set for you: for the thickness of the hair, the depth of the follicle, your skin type and sensitivity. The same settings do not suit a chin and a shin, so parameters change as the work goes on — the specialist follows your skin's reaction rather than one fixed mode."
+      "p": "The strength of the discharge, the contact time and the needle type are set for you: for the thickness of the hair, the depth of the follicle, your skin type and sensitivity. The same settings do not suit a chin and a shin, so parameters change as the work goes on — the specialist follows your skin's reaction rather than one fixed mode.",
+      "kind": "text"
      },
      {
       "title": "Four to ten hands at once",
-      "p": "Several specialists can work on one area at the same time. What normally stretches over hours and several visits is finished several times faster. The price list has a separate four-hands option of 120 minutes."
+      "p": "Several specialists can work on one area at the same time. What normally stretches over hours and several visits is finished several times faster. The price list has a separate four-hands option of 120 minutes.",
+      "kind": "text"
      },
      {
       "title": "Who it suits",
@@ -905,7 +961,8 @@
        "single hairs left after a course of laser",
        "the body: any area, including bikini and underarms",
        "cases where the hair needs to be gone for good, not just thinned"
-      ]
+      ],
+      "kind": "fits"
      },
      {
       "title": "How a session goes",
@@ -915,7 +972,8 @@
        "treating hairs one by one: short pinpoint stings with warmth",
        "antiseptic and a soothing product",
        "charged by the device timer, for the time actually worked"
-      ]
+      ],
+      "kind": "steps"
      },
      {
       "title": "How the course is built",
@@ -923,7 +981,8 @@
        "A hair can only be treated when it is visible and in its active phase. Sessions therefore run 1–4 weeks apart: more often at first, then less as the amount of hair drops.",
        "The number of sessions is always individual and depends on the area, hair density and type, hormones, and what has been done to the area before — years of plucking and waxing distort the follicle and make the work harder. As a guide: the face takes 10–20 sessions, the body 15–30 or more. That is a guide, not a promise.",
        "Between sessions, no plucking and no waxing: the hair has to grow to a visible length, otherwise there is nothing to treat. Shaving is fine."
-      ]
+      ],
+      "kind": "text"
      },
      {
       "title": "How to prepare",
@@ -933,7 +992,8 @@
        "no tanning in the days before the session",
        "no creams or deodorant on the area on the day",
        "tell us about medication and any skin conditions"
-      ]
+      ],
+      "kind": "prep"
      },
      {
       "title": "Aftercare",
@@ -947,7 +1007,8 @@
        "do not touch the area on the first day and keep make-up off a treated face",
        "antiseptic as advised, then a healing product",
        "SPF on exposed areas while the skin recovers"
-      ]
+      ],
+      "kind": "after"
      },
      {
       "title": "Contraindications",
@@ -960,7 +1021,8 @@
        "inflammation, wounds or breakouts in the treated area",
        "a tendency to keloid scarring"
       ],
-      "note": "Parameters and contraindications are checked before the work starts. The price list includes a 30-minute trial on the body — it shows how your own skin responds."
+      "note": "Parameters and contraindications are checked before the work starts. The price list includes a 30-minute trial on the body — it shows how your own skin responds.",
+      "kind": "contra"
      }
     ],
     "faqTitle": "Common questions",
@@ -1005,15 +1067,18 @@
       "paras": [
        "En cada folículo se introduce una aguja muy fina que transmite una descarga y destruye la zona de crecimiento del vello. El método trata cada pelo por separado, así que el color no importa: el vello rubio, pelirrojo, canoso y fino se elimina igual que el oscuro.",
        "Con los parámetros bien elegidos y una técnica limpia, el folículo tratado ya no vuelve a dar vello. Es el único método con ese resultado, pero requiere tiempo: por minuto se trata un número limitado de pelos, y por eso el trabajo se cobra por minutos."
-      ]
+      ],
+      "kind": "text"
      },
      {
       "title": "Parámetros ajustados a ti",
-      "p": "La intensidad de la descarga, el tiempo de acción y el tipo de aguja se eligen para ti: según el grosor del vello, la profundidad del folículo y el tipo y la sensibilidad de tu piel. Los mismos ajustes no sirven para el mentón y para la pierna, así que los parámetros cambian durante la sesión: la especialista sigue la reacción de la piel, no un modo fijo."
+      "p": "La intensidad de la descarga, el tiempo de acción y el tipo de aguja se eligen para ti: según el grosor del vello, la profundidad del folículo y el tipo y la sensibilidad de tu piel. Los mismos ajustes no sirven para el mentón y para la pierna, así que los parámetros cambian durante la sesión: la especialista sigue la reacción de la piel, no un modo fijo.",
+      "kind": "text"
      },
      {
       "title": "Trabajamos a 4–10 manos",
-      "p": "Varias especialistas pueden trabajar a la vez en una misma zona. Lo que en formato normal se alarga durante horas y varias visitas se cierra mucho más rápido. En la tarifa hay una opción «a cuatro manos» de 120 minutos."
+      "p": "Varias especialistas pueden trabajar a la vez en una misma zona. Lo que en formato normal se alarga durante horas y varias visitas se cierra mucho más rápido. En la tarifa hay una opción «a cuatro manos» de 120 minutos.",
+      "kind": "text"
      },
      {
       "title": "Para quién es",
@@ -1023,7 +1088,8 @@
        "pelos sueltos que quedan tras una pauta de láser",
        "cuerpo: cualquier zona, incluidas ingles y axilas",
        "casos en los que hay que eliminar el vello de forma definitiva y no solo aclararlo"
-      ]
+      ],
+      "kind": "fits"
      },
      {
       "title": "Cómo es la sesión",
@@ -1033,7 +1099,8 @@
        "tratamiento pelo a pelo: pinchazos breves con sensación de calor",
        "antiséptico y producto calmante",
        "cobro por el temporizador del aparato, por el tiempo realmente trabajado"
-      ]
+      ],
+      "kind": "steps"
      },
      {
       "title": "Cómo se arma la pauta",
@@ -1041,7 +1108,8 @@
        "Un pelo solo se puede tratar cuando se ve y está en fase activa. Por eso las sesiones van cada 1–4 semanas: más seguidas al principio y más espaciadas a medida que queda menos vello.",
        "El número de sesiones es siempre individual y depende de la zona, la densidad y el tipo de vello, las hormonas y de lo que se haya hecho antes en la zona: años de pinzas y cera deforman el folículo y complican el trabajo. Como referencia: el rostro lleva 10–20 sesiones y el cuerpo 15–30 o más. Es una referencia, no una promesa.",
        "Entre sesiones no se puede depilar con pinzas ni con cera: el pelo tiene que crecer hasta verse, si no, no hay nada que tratar. Afeitar sí se puede."
-      ]
+      ],
+      "kind": "text"
      },
      {
       "title": "Preparación",
@@ -1051,7 +1119,8 @@
        "no tomar el sol los días previos a la sesión",
        "el día de la sesión, sin cremas ni desodorante en la zona",
        "avísanos de la medicación y de cualquier enfermedad de la piel"
-      ]
+      ],
+      "kind": "prep"
      },
      {
       "title": "Cuidado posterior",
@@ -1065,7 +1134,8 @@
        "el primer día no tocar la zona con las manos ni maquillar un rostro tratado",
        "antiséptico según indicación y después un producto cicatrizante",
        "SPF en zonas descubiertas mientras la piel se recupera"
-      ]
+      ],
+      "kind": "after"
      },
      {
       "title": "Contraindicaciones",
@@ -1078,7 +1148,8 @@
        "inflamación, heridas o brotes en la zona a tratar",
        "tendencia a cicatrices queloides"
       ],
-      "note": "Los parámetros y las contraindicaciones se revisan antes de empezar. En la tarifa hay una sesión de prueba de 30 minutos en el cuerpo: sirve para ver cómo responde tu piel."
+      "note": "Los parámetros y las contraindicaciones se revisan antes de empezar. En la tarifa hay una sesión de prueba de 30 minutos en el cuerpo: sirve para ver cómo responde tu piel.",
+      "kind": "contra"
      }
     ],
     "faqTitle": "Preguntas frecuentes",
@@ -1123,15 +1194,18 @@
       "paras": [
        "Do každého folikulu se zavede velmi tenká jehla, kterou projde výboj. Ten zničí růstovou část chloupku. Metoda pracuje s každým chloupkem zvlášť — barva proto nehraje roli: světlé, zrzavé, šedivé i jemné chloupky se odstraňují stejně jako tmavé.",
        "Při správně zvolených parametrech a čisté technice už ošetřený folikul chloupek nevytvoří. Je to jediná metoda s takovým výsledkem, ale potřebuje čas: za minutu zvládne kosmetička jen omezený počet chloupků, proto se práce počítá po minutách."
-      ]
+      ],
+      "kind": "text"
      },
      {
       "title": "Individuální nastavení parametrů",
-      "p": "Síla výboje, doba působení i typ jehly se volí pro vás: podle tloušťky chloupku, hloubky folikulu, typu a citlivosti pleti. Stejné nastavení nesedí na bradu a na lýtko, takže se parametry během práce mění — kosmetička sleduje reakci pokožky, ne jeden pevný režim."
+      "p": "Síla výboje, doba působení i typ jehly se volí pro vás: podle tloušťky chloupku, hloubky folikulu, typu a citlivosti pleti. Stejné nastavení nesedí na bradu a na lýtko, takže se parametry během práce mění — kosmetička sleduje reakci pokožky, ne jeden pevný režim.",
+      "kind": "text"
      },
      {
       "title": "Pracujeme ve 4–10 rukou",
-      "p": "Na jedné zóně může pracovat několik kosmetiček najednou. Co se běžně protáhne na hodiny a několik návštěv, zvládneme několikrát rychleji. V ceníku je samostatná varianta „ve čtyřech rukou“ na 120 minut."
+      "p": "Na jedné zóně může pracovat několik kosmetiček najednou. Co se běžně protáhne na hodiny a několik návštěv, zvládneme několikrát rychleji. V ceníku je samostatná varianta „ve čtyřech rukou“ na 120 minut.",
+      "kind": "text"
      },
      {
       "title": "Pro koho je vhodná",
@@ -1141,7 +1215,8 @@
        "jednotlivé chloupky, které zbyly po laserové kúře",
        "tělo: jakékoli partie včetně bikin a podpaží",
        "situace, kdy je potřeba chloupky odstranit natrvalo, ne jen prořídnout"
-      ]
+      ],
+      "kind": "fits"
      },
      {
       "title": "Jak sezení probíhá",
@@ -1151,7 +1226,8 @@
        "zpracování chloupků jeden po druhém: pocit krátkých bodnutí s teplem",
        "dezinfekce a zklidňující přípravek",
        "platba podle časovače přístroje, za skutečně odpracovaný čas"
-      ]
+      ],
+      "kind": "steps"
      },
      {
       "title": "Jak je kúra postavená",
@@ -1159,7 +1235,8 @@
        "Chloupek lze ošetřit jen tehdy, když je vidět a je v aktivní fázi. Proto sezení jdou v intervalu 1–4 týdny: nejprve častěji, pak řidčeji, jak chloupků ubývá.",
        "Počet ošetření je vždy individuální a závisí na zóně, hustotě a typu chloupků, hormonech a na tom, co se se zónou dělalo dřív — léta vytrhávání a vosku mění tvar folikulu a práci komplikují. Orientačně: obličej 10–20 sezení, tělo 15–30 i více. Je to orientace, ne slib.",
        "Mezi sezeními se nesmí vytrhávat ani dělat vosk: chloupek musí dorůst do viditelné délky, jinak není co ošetřit. Holit se dá."
-      ]
+      ],
+      "kind": "text"
      },
      {
       "title": "Příprava",
@@ -1169,7 +1246,8 @@
        "několik dní před sezením se neopalovat",
        "v den ošetření nenanášet na zónu krémy a deodorant",
        "říct nám o lécích a o kožních onemocněních"
-      ]
+      ],
+      "kind": "prep"
      },
      {
       "title": "Péče po ošetření",
@@ -1183,7 +1261,8 @@
        "první den se zóny nedotýkat rukama, na ošetřený obličej nenanášet make-up",
        "dezinfekce podle doporučení, pak hojivý přípravek",
        "SPF na odhalených partiích, dokud se pleť hojí"
-      ]
+      ],
+      "kind": "after"
      },
      {
       "title": "Kontraindikace",
@@ -1196,7 +1275,8 @@
        "záněty, poranění a vyrážky v ošetřované zóně",
        "sklon ke keloidním jizvám"
       ],
-      "note": "Parametry i kontraindikace kosmetička zkontroluje před začátkem. V ceníku je zkušební ošetření na 30 minut na těle — na něm je vidět, jak reaguje právě vaše pokožka."
+      "note": "Parametry i kontraindikace kosmetička zkontroluje před začátkem. V ceníku je zkušební ošetření na 30 minut na těle — na něm je vidět, jak reaguje právě vaše pokožka.",
+      "kind": "contra"
      }
     ],
     "faqTitle": "Časté dotazy",
@@ -1267,15 +1347,18 @@
     "sections": [
      {
       "h": "Массаж лица",
-      "p": "Работаем руками по лицу, шее и зоне декольте: снимаем зажимы, улучшаем микроциркуляцию, возвращаем коже тонус. Подходит как отдельная процедура и как поддержка после чисток и пилингов."
+      "p": "Работаем руками по лицу, шее и зоне декольте: снимаем зажимы, улучшаем микроциркуляцию, возвращаем коже тонус. Подходит как отдельная процедура и как поддержка после чисток и пилингов.",
+      "kind": "text"
      },
      {
       "h": "Лимфодренажный массаж тела",
-      "p": "Мягкая техника, которая помогает отвести лишнюю жидкость и уменьшить отёки. Чаще берут курсом — так результат держится дольше."
+      "p": "Мягкая техника, которая помогает отвести лишнюю жидкость и уменьшить отёки. Чаще берут курсом — так результат держится дольше.",
+      "kind": "text"
      },
      {
       "h": "Как подбираем курс",
-      "p": "Количество сеансов определяем на консультации — она бесплатная. Чем длиннее курс, тем ниже цена одного сеанса; актуальные цифры — в прайсе ниже."
+      "p": "Количество сеансов определяем на консультации — она бесплатная. Чем длиннее курс, тем ниже цена одного сеанса; актуальные цифры — в прайсе ниже.",
+      "kind": "text"
      }
     ],
     "faqTitle": "Частые вопросы",
@@ -1296,15 +1379,18 @@
     "sections": [
      {
       "h": "Масаж обличчя",
-      "p": "Працюємо руками по обличчю, шиї та зоні декольте: знімаємо затиски, покращуємо мікроциркуляцію, повертаємо шкірі тонус. Підходить і як окрема процедура, і як підтримка після чисток та пілінгів."
+      "p": "Працюємо руками по обличчю, шиї та зоні декольте: знімаємо затиски, покращуємо мікроциркуляцію, повертаємо шкірі тонус. Підходить і як окрема процедура, і як підтримка після чисток та пілінгів.",
+      "kind": "text"
      },
      {
       "h": "Лімфодренажний масаж тіла",
-      "p": "М’яка техніка, яка допомагає відвести зайву рідину та зменшити набряки. Найчастіше беруть курсом — так результат тримається довше."
+      "p": "М’яка техніка, яка допомагає відвести зайву рідину та зменшити набряки. Найчастіше беруть курсом — так результат тримається довше.",
+      "kind": "text"
      },
      {
       "h": "Як добираємо курс",
-      "p": "Кількість сеансів визначаємо на консультації — вона безкоштовна. Що довший курс, то нижча ціна одного сеансу; актуальні цифри — у прайсі нижче."
+      "p": "Кількість сеансів визначаємо на консультації — вона безкоштовна. Що довший курс, то нижча ціна одного сеансу; актуальні цифри — у прайсі нижче.",
+      "kind": "text"
      }
     ],
     "faqTitle": "Часті запитання",
@@ -1325,15 +1411,18 @@
     "sections": [
      {
       "h": "Facial massage",
-      "p": "Hands-on work on the face, neck and décolleté: releasing tension, improving microcirculation and bringing tone back to the skin. It works on its own and as support after cleansings and peels."
+      "p": "Hands-on work on the face, neck and décolleté: releasing tension, improving microcirculation and bringing tone back to the skin. It works on its own and as support after cleansings and peels.",
+      "kind": "text"
      },
      {
       "h": "Lymphatic drainage body massage",
-      "p": "A gentle technique that helps move excess fluid and reduce swelling. Most people take it as a course — the effect lasts longer that way."
+      "p": "A gentle technique that helps move excess fluid and reduce swelling. Most people take it as a course — the effect lasts longer that way.",
+      "kind": "text"
      },
      {
       "h": "How we plan the course",
-      "p": "We decide the number of sessions at the consultation, which is free. The longer the course, the lower the price per session; current figures are in the price list below."
+      "p": "We decide the number of sessions at the consultation, which is free. The longer the course, the lower the price per session; current figures are in the price list below.",
+      "kind": "text"
      }
     ],
     "faqTitle": "Common questions",
@@ -1354,15 +1443,18 @@
     "sections": [
      {
       "h": "Masaje facial",
-      "p": "Trabajo manual en rostro, cuello y escote: soltamos tensiones, mejoramos la microcirculación y devolvemos tono a la piel. Funciona por sí solo y como apoyo tras limpiezas y peelings."
+      "p": "Trabajo manual en rostro, cuello y escote: soltamos tensiones, mejoramos la microcirculación y devolvemos tono a la piel. Funciona por sí solo y como apoyo tras limpiezas y peelings.",
+      "kind": "text"
      },
      {
       "h": "Drenaje linfático corporal",
-      "p": "Una técnica suave que ayuda a movilizar el exceso de líquido y reducir la hinchazón. La mayoría lo hace en curso: así el efecto dura más."
+      "p": "Una técnica suave que ayuda a movilizar el exceso de líquido y reducir la hinchazón. La mayoría lo hace en curso: así el efecto dura más.",
+      "kind": "text"
      },
      {
       "h": "Cómo planificamos el curso",
-      "p": "El número de sesiones se decide en la consulta, que es gratuita. Cuanto más largo el curso, menor el precio por sesión; las cifras actuales están en la tarifa de abajo."
+      "p": "El número de sesiones se decide en la consulta, que es gratuita. Cuanto más largo el curso, menor el precio por sesión; las cifras actuales están en la tarifa de abajo.",
+      "kind": "text"
      }
     ],
     "faqTitle": "Preguntas frecuentes",
@@ -1383,15 +1475,18 @@
     "sections": [
      {
       "h": "Masáž obličeje",
-      "p": "Pracujeme rukama na obličeji, krku a dekoltu: uvolňujeme napětí, zlepšujeme mikrocirkulaci a vracíme pleti tonus. Hodí se jako samostatné ošetření i jako podpora po čištění a peelingu."
+      "p": "Pracujeme rukama na obličeji, krku a dekoltu: uvolňujeme napětí, zlepšujeme mikrocirkulaci a vracíme pleti tonus. Hodí se jako samostatné ošetření i jako podpora po čištění a peelingu.",
+      "kind": "text"
      },
      {
       "h": "Lymfodrenážní masáž těla",
-      "p": "Jemná technika, která pomáhá odvést přebytečnou tekutinu a zmírnit otoky. Nejčastěji se bere v kúře — výsledek pak vydrží déle."
+      "p": "Jemná technika, která pomáhá odvést přebytečnou tekutinu a zmírnit otoky. Nejčastěji se bere v kúře — výsledek pak vydrží déle.",
+      "kind": "text"
      },
      {
       "h": "Jak volíme kúru",
-      "p": "Počet sezení určíme na konzultaci, která je zdarma. Čím delší kúra, tím nižší cena jednoho sezení; aktuální čísla najdete v ceníku níže."
+      "p": "Počet sezení určíme na konzultaci, která je zdarma. Čím delší kúra, tím nižší cena jednoho sezení; aktuální čísla najdete v ceníku níže.",
+      "kind": "text"
      }
     ],
     "faqTitle": "Časté dotazy",
@@ -1443,11 +1538,13 @@
     "sections": [
      {
       "h": "Что предлагаем?",
-      "p": "Механическая и комбинированная чистка лица, химический пилинг, карбокситерапия, консультация и подбор домашнего ухода."
+      "p": "Механическая и комбинированная чистка лица, химический пилинг, карбокситерапия, консультация и подбор домашнего ухода.",
+      "kind": "text"
      },
      {
       "h": "Кому подходит?",
-      "p": "Всем, кто хочет улучшить состояние кожи, избавиться от загрязнений, пигментации или омолодить кожу."
+      "p": "Всем, кто хочет улучшить состояние кожи, избавиться от загрязнений, пигментации или омолодить кожу.",
+      "kind": "text"
      }
     ],
     "faqTitle": "Часто задаваемые вопросы",
@@ -1482,11 +1579,13 @@
     "sections": [
      {
       "h": "Що пропонуємо?",
-      "p": "Механічне та комбіноване очищення, хімічний пілінг, карбокситерапія."
+      "p": "Механічне та комбіноване очищення, хімічний пілінг, карбокситерапія.",
+      "kind": "text"
      },
      {
       "h": "Кому підходить?",
-      "p": "Усім, хто хоче поліпшити стан шкіри."
+      "p": "Усім, хто хоче поліпшити стан шкіри.",
+      "kind": "text"
      }
     ],
     "faqTitle": "Часті запитання",
@@ -1525,11 +1624,13 @@
     "sections": [
      {
       "h": "What we offer",
-      "p": "Mechanical and combined facial cleansing, chemical peel, carboxytherapy, consultation and home-care selection."
+      "p": "Mechanical and combined facial cleansing, chemical peel, carboxytherapy, consultation and home-care selection.",
+      "kind": "text"
      },
      {
       "h": "Who is it for?",
-      "p": "Anyone looking to improve skin condition, remove impurities, pigmentation or rejuvenate."
+      "p": "Anyone looking to improve skin condition, remove impurities, pigmentation or rejuvenate.",
+      "kind": "text"
      }
     ],
     "faqTitle": "FAQ",
@@ -1578,11 +1679,13 @@
     "sections": [
      {
       "h": "¿Qué ofrecemos?",
-      "p": "Limpieza mecánica y combinada, peeling químico, carboxiterapia, consulta y selección de cuidado en casa."
+      "p": "Limpieza mecánica y combinada, peeling químico, carboxiterapia, consulta y selección de cuidado en casa.",
+      "kind": "text"
      },
      {
       "h": "¿Para quién?",
-      "p": "Para cualquiera que quiera mejorar el estado de la piel, eliminar impurezas o pigmentación."
+      "p": "Para cualquiera que quiera mejorar el estado de la piel, eliminar impurezas o pigmentación.",
+      "kind": "text"
      }
     ],
     "faqTitle": "Preguntas frecuentes",
@@ -1625,11 +1728,13 @@
     "sections": [
      {
       "h": "Co nabízíme?",
-      "p": "Mechanické a kombinované čištění pleti, chemický peeling, karboxyterapie, konzultace a výběr domácí péče."
+      "p": "Mechanické a kombinované čištění pleti, chemický peeling, karboxyterapie, konzultace a výběr domácí péče.",
+      "kind": "text"
      },
      {
       "h": "Pro koho?",
-      "p": "Pro všechny, kdo chtějí zlepšit stav pleti, zbavit se nečistot, pigmentace nebo omladit pokožku."
+      "p": "Pro všechny, kdo chtějí zlepšit stav pleti, zbavit se nečistot, pigmentace nebo omladit pokožku.",
+      "kind": "text"
      }
     ],
     "faqTitle": "Časté dotazy",
@@ -1753,7 +1858,8 @@
        "зуд, шелушение, перхоть, корочки",
        "жирные корни при сухих длинах",
        "выпадение после родов, болезни, строгой диеты или стресса"
-      ]
+      ],
+      "kind": "fits"
      },
      {
       "title": "Что делаем на приёме",
@@ -1763,18 +1869,21 @@
        "оценка: плотность волос, состояние фолликулов, соотношение тонких и толстых волос, воспаление",
        "разбор домашнего ухода: шампунь, частота мытья, укладки, окрашивания",
        "первая процедура и план: уход, интервалы и, если нужно, обследование"
-      ]
+      ],
+      "kind": "steps"
      },
      {
       "title": "Где заканчивается уход и начинается медицина",
       "paras": [
        "Мы работаем с кожей головы: очищение, снятие воспаления, уход, процедуры для питания фолликулов. Это косметологическая часть, и она действительно помогает — но только когда причина выпадения в состоянии кожи головы или в уходе.",
        "Если выпадение связано с дефицитом железа, щитовидной железой, гормональными изменениями, приёмом лекарств или кожным заболеванием, никакие процедуры причину не уберут. В таком случае мы честно говорим, что нужны анализы и консультация врача, и уже потом подбираем уход — чтобы вы не платили за курс, который не может сработать."
-      ]
+      ],
+      "kind": "text"
      },
      {
       "title": "План ухода",
-      "p": "После осмотра составляем план: какие процедуры и с каким интервалом, что поменять в домашнем уходе, когда прийти на контроль. Результат оценивается по трихоскопии через 2–3 месяца — раньше судить нельзя: волос растёт медленно, и любые изменения становятся видны только через цикл."
+      "p": "После осмотра составляем план: какие процедуры и с каким интервалом, что поменять в домашнем уходе, когда прийти на контроль. Результат оценивается по трихоскопии через 2–3 месяца — раньше судить нельзя: волос растёт медленно, и любые изменения становятся видны только через цикл.",
+      "kind": "text"
      }
     ],
     "equipment": [],
@@ -1830,7 +1939,8 @@
        "зуд, злущування, лупа, кірочки",
        "жирні корені при сухих довжинах",
        "випадіння після пологів, хвороби, суворої дієти або стресу"
-      ]
+      ],
+      "kind": "fits"
      },
      {
       "title": "Що робимо на прийомі",
@@ -1840,18 +1950,21 @@
        "оцінка: щільність волосся, стан фолікулів, співвідношення тонких і товстих волосин, запалення",
        "розбір домашнього догляду: шампунь, частота миття, укладання, фарбування",
        "перша процедура і план: догляд, інтервали і, якщо потрібно, обстеження"
-      ]
+      ],
+      "kind": "steps"
      },
      {
       "title": "Де закінчується догляд і починається медицина",
       "paras": [
        "Ми працюємо зі шкірою голови: очищення, зняття запалення, догляд, процедури для живлення фолікулів. Це косметологічна частина, і вона справді допомагає — але лише коли причина випадіння у стані шкіри голови або в догляді.",
        "Якщо випадіння повʼязане з дефіцитом заліза, щитоподібною залозою, гормональними змінами, прийомом ліків або шкірним захворюванням, жодні процедури причину не приберуть. У такому разі ми чесно говоримо, що потрібні аналізи й консультація лікаря, і вже потім добираємо догляд — щоб ви не платили за курс, який не може спрацювати."
-      ]
+      ],
+      "kind": "text"
      },
      {
       "title": "План догляду",
-      "p": "Після огляду складаємо план: які процедури і з яким інтервалом, що змінити в домашньому догляді, коли прийти на контроль. Результат оцінюється за трихоскопією через 2–3 місяці — раніше судити не можна: волосина росте повільно, і будь-які зміни стають видно лише через цикл."
+      "p": "Після огляду складаємо план: які процедури і з яким інтервалом, що змінити в домашньому догляді, коли прийти на контроль. Результат оцінюється за трихоскопією через 2–3 місяці — раніше судити не можна: волосина росте повільно, і будь-які зміни стають видно лише через цикл.",
+      "kind": "text"
      }
     ],
     "equipment": [],
@@ -1907,7 +2020,8 @@
        "itching, flaking, dandruff, crusts",
        "greasy roots with dry lengths",
        "shedding after childbirth, illness, a strict diet or stress"
-      ]
+      ],
+      "kind": "fits"
      },
      {
       "title": "What happens at the appointment",
@@ -1917,18 +2031,21 @@
        "assessment: hair density, follicle condition, the ratio of fine to thick hairs, inflammation",
        "going through home care: shampoo, washing frequency, styling, colouring",
        "a first treatment and a plan: care, intervals and, if needed, medical tests"
-      ]
+      ],
+      "kind": "steps"
      },
      {
       "title": "Where care ends and medicine begins",
       "paras": [
        "We work with the scalp: cleansing, settling inflammation, care, treatments that feed the follicles. That is the cosmetic side, and it genuinely helps — but only when the cause of the shedding lies in the scalp or in your routine.",
        "If the shedding is driven by iron deficiency, the thyroid, hormonal change, medication or a skin condition, no treatment will remove the cause. In that case we say plainly that tests and a doctor are needed, and only then choose the care — so that you do not pay for a course that cannot work."
-      ]
+      ],
+      "kind": "text"
      },
      {
       "title": "The care plan",
-      "p": "After the assessment we set out a plan: which treatments and how far apart, what to change at home, when to come back for a review. Results are judged on trichoscopy after 2–3 months — earlier is not meaningful: hair grows slowly, and change only becomes visible over a full cycle."
+      "p": "After the assessment we set out a plan: which treatments and how far apart, what to change at home, when to come back for a review. Results are judged on trichoscopy after 2–3 months — earlier is not meaningful: hair grows slowly, and change only becomes visible over a full cycle.",
+      "kind": "text"
      }
     ],
     "equipment": [],
@@ -1984,7 +2101,8 @@
        "picor, descamación, caspa, costras",
        "raíces grasas con medios y puntas secos",
        "caída tras el parto, una enfermedad, una dieta estricta o estrés"
-      ]
+      ],
+      "kind": "fits"
      },
      {
       "title": "Qué hacemos en la consulta",
@@ -1994,18 +2112,21 @@
        "valoración: densidad, estado de los folículos, proporción de cabellos finos y gruesos, inflamación",
        "revisión del cuidado en casa: champú, frecuencia de lavado, peinados, tintes",
        "un primer tratamiento y un plan: cuidado, intervalos y, si hace falta, analíticas"
-      ]
+      ],
+      "kind": "steps"
      },
      {
       "title": "Dónde acaba la estética y empieza la medicina",
       "paras": [
        "Trabajamos con el cuero cabelludo: limpieza, calmar la inflamación, cuidado y tratamientos que nutren los folículos. Es la parte estética y ayuda de verdad, pero solo cuando la causa de la caída está en el cuero cabelludo o en la rutina.",
        "Si la caída viene de un déficit de hierro, de la tiroides, de cambios hormonales, de una medicación o de una enfermedad de la piel, ningún tratamiento elimina la causa. En ese caso decimos con franqueza que hacen falta analíticas y un médico, y elegimos el cuidado después, para que no pagues por una pauta que no puede funcionar."
-      ]
+      ],
+      "kind": "text"
      },
      {
       "title": "El plan de cuidado",
-      "p": "Tras la valoración fijamos un plan: qué tratamientos y con qué intervalos, qué cambiar en casa y cuándo volver a revisión. El resultado se evalúa con tricoscopia a los 2–3 meses; antes no tiene sentido juzgar: el pelo crece despacio y los cambios solo se ven a lo largo de un ciclo completo."
+      "p": "Tras la valoración fijamos un plan: qué tratamientos y con qué intervalos, qué cambiar en casa y cuándo volver a revisión. El resultado se evalúa con tricoscopia a los 2–3 meses; antes no tiene sentido juzgar: el pelo crece despacio y los cambios solo se ven a lo largo de un ciclo completo.",
+      "kind": "text"
      }
     ],
     "equipment": [],
@@ -2061,7 +2182,8 @@
        "svědění, olupování, lupy, krustičky",
        "mastné kořínky při suchých délkách",
        "padání po porodu, nemoci, přísné dietě nebo stresu"
-      ]
+      ],
+      "kind": "fits"
      },
      {
       "title": "Co na návštěvě děláme",
@@ -2071,18 +2193,21 @@
        "zhodnocení: hustota vlasů, stav folikulů, poměr tenkých a silných vlasů, zánět",
        "rozbor domácí péče: šampon, frekvence mytí, úpravy, barvení",
        "první ošetření a plán: péče, intervaly a podle potřeby vyšetření"
-      ]
+      ],
+      "kind": "steps"
      },
      {
       "title": "Kde končí péče a začíná medicína",
       "paras": [
        "Pracujeme s pokožkou hlavy: čištění, zklidnění zánětu, péče, ošetření pro výživu folikulů. To je kosmetická část a opravdu pomáhá — ale jen tehdy, když příčina padání je ve stavu pokožky hlavy nebo v péči.",
        "Pokud padání souvisí s nedostatkem železa, se štítnou žlázou, s hormonálními změnami, s léky nebo s kožním onemocněním, žádné ošetření příčinu neodstraní. V takovém případě na rovinu řekneme, že je potřeba vyšetření a lékař, a péči volíme až potom — abyste neplatila za kúru, která nemůže zabrat."
-      ]
+      ],
+      "kind": "text"
      },
      {
       "title": "Plán péče",
-      "p": "Po vyšetření sestavíme plán: která ošetření a v jakých intervalech, co změnit v domácí péči a kdy přijít na kontrolu. Výsledek hodnotíme podle trichoskopie za 2–3 měsíce — dřív to posoudit nelze: vlas roste pomalu a změny jsou vidět až po celém cyklu."
+      "p": "Po vyšetření sestavíme plán: která ošetření a v jakých intervalech, co změnit v domácí péči a kdy přijít na kontrolu. Výsledek hodnotíme podle trichoskopie za 2–3 měsíce — dřív to posoudit nelze: vlas roste pomalu a změny jsou vidět až po celém cyklu.",
+      "kind": "text"
      }
     ],
     "equipment": [],
@@ -2160,15 +2285,18 @@
     "sections": [
      {
       "h": "Что предлагаем?",
-      "p": "Body Peel, Body Butter, Cream Lightening."
+      "p": "Body Peel, Body Butter, Cream Lightening.",
+      "kind": "text"
      },
      {
       "h": "Для кого?",
-      "p": "Для всех, кто проходит курс."
+      "p": "Для всех, кто проходит курс.",
+      "kind": "text"
      },
      {
       "h": "Как получить?",
-      "p": "Доступна в клинике или через Instagram."
+      "p": "Доступна в клинике или через Instagram.",
+      "kind": "text"
      }
     ]
    },
@@ -2178,15 +2306,18 @@
     "sections": [
      {
       "h": "Що пропонуємо?",
-      "p": "Body Peel, Body Butter, Cream Lightening."
+      "p": "Body Peel, Body Butter, Cream Lightening.",
+      "kind": "text"
      },
      {
       "h": "Для кого?",
-      "p": "Для всіх, хто проходить курс."
+      "p": "Для всіх, хто проходить курс.",
+      "kind": "text"
      },
      {
       "h": "Як отримати?",
-      "p": "В клініці або через Instagram."
+      "p": "В клініці або через Instagram.",
+      "kind": "text"
      }
     ]
    },
@@ -2196,15 +2327,18 @@
     "sections": [
      {
       "h": "What we offer",
-      "p": "Body Peel, Body Butter, Cream Lightening."
+      "p": "Body Peel, Body Butter, Cream Lightening.",
+      "kind": "text"
      },
      {
       "h": "Who is it for?",
-      "p": "For those completing peeling or epilation courses."
+      "p": "For those completing peeling or epilation courses.",
+      "kind": "text"
      },
      {
       "h": "How to get it",
-      "p": "Available at clinic or order via Instagram."
+      "p": "Available at clinic or order via Instagram.",
+      "kind": "text"
      }
     ]
    },
@@ -2214,15 +2348,18 @@
     "sections": [
      {
       "h": "¿Qué ofrecemos?",
-      "p": "Body Peel, Body Butter, Cream Lightening."
+      "p": "Body Peel, Body Butter, Cream Lightening.",
+      "kind": "text"
      },
      {
       "h": "¿Para quién?",
-      "p": "Para los que realizan cursos de epilación."
+      "p": "Para los que realizan cursos de epilación.",
+      "kind": "text"
      },
      {
       "h": "¿Cómo obtenerla?",
-      "p": "En la clínica o por Instagram."
+      "p": "En la clínica o por Instagram.",
+      "kind": "text"
      }
     ]
    },
@@ -2232,15 +2369,18 @@
     "sections": [
      {
       "h": "Co nabízíme?",
-      "p": "Body Peel, Body Butter, Cream Lightening."
+      "p": "Body Peel, Body Butter, Cream Lightening.",
+      "kind": "text"
      },
      {
       "h": "Pro koho?",
-      "p": "Pro všechny, kdo absolvují kurz epilace nebo peelingu."
+      "p": "Pro všechny, kdo absolvují kurz epilace nebo peelingu.",
+      "kind": "text"
      },
      {
       "h": "Jak získat?",
-      "p": "Koupit přímo v klinice nebo objednat přes Instagram."
+      "p": "Koupit přímo v klinice nebo objednat přes Instagram.",
+      "kind": "text"
      }
     ]
    }
@@ -2274,11 +2414,13 @@
        "Ботулинотерапия — от одной зоны до full face",
        "Контурная пластика губ — Stylage",
        "Растворение ранее введённого филлера — частичное или полное"
-      ]
+      ],
+      "kind": "text"
      },
      {
       "h": "Почему у врача",
-      "p": "Инъекции — медицинская процедура. Сначала осмотр и разбор противопоказаний, затем выбор препарата под задачу кожи — а не наоборот. Поэтому в Hi Sisters их проводит врач-дерматолог-косметолог."
+      "p": "Инъекции — медицинская процедура. Сначала осмотр и разбор противопоказаний, затем выбор препарата под задачу кожи — а не наоборот. Поэтому в Hi Sisters их проводит врач-дерматолог-косметолог.",
+      "kind": "text"
      },
      {
       "h": "Как проходит приём",
@@ -2287,7 +2429,8 @@
        "Подбор препарата и плана — честно скажем, если инъекции вам пока не нужны",
        "Процедура",
        "Рекомендации по уходу после"
-      ]
+      ],
+      "kind": "steps"
      }
     ],
     "equipment": [],
@@ -2316,11 +2459,13 @@
        "Ботулінотерапія — від однієї зони до full face",
        "Контурна пластика губ — Stylage",
        "Розчинення раніше введеного філера — часткове або повне"
-      ]
+      ],
+      "kind": "text"
      },
      {
       "h": "Чому в лікарки",
-      "p": "Ін’єкції — медична процедура. Спершу огляд і розбір протипоказань, потім вибір препарату під завдання шкіри — а не навпаки. Тому в Hi Sisters їх проводить лікарка-дерматолог-косметолог."
+      "p": "Ін’єкції — медична процедура. Спершу огляд і розбір протипоказань, потім вибір препарату під завдання шкіри — а не навпаки. Тому в Hi Sisters їх проводить лікарка-дерматолог-косметолог.",
+      "kind": "text"
      },
      {
       "h": "Як минає прийом",
@@ -2329,7 +2474,8 @@
        "Підбір препарату і плану — чесно скажемо, якщо ін’єкції вам поки не потрібні",
        "Процедура",
        "Рекомендації щодо догляду після"
-      ]
+      ],
+      "kind": "steps"
      }
     ],
     "equipment": [],
@@ -2347,6 +2493,7 @@
     "priceGroups": [],
     "note": ""
    }
-  }
+  },
+  "heroImage": "/assets/photos/hero-inject-doc.jpg"
  }
 }

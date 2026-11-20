@@ -1,97 +1,101 @@
 {
-  "items": [
-    {
-      "key": "laser",
-      "cities": [
-        "prague",
-        "valencia"
-      ],
-      "service": "laser",
-      "title": {
-        "ru": "Luna и Hunter",
-        "uk": "Luna і Hunter",
-        "cs": "Luna a Hunter",
-        "en": "Luna & Hunter",
-        "es": "Luna y Hunter"
-      },
-      "tag": {
-        "ru": "Лазерная эпиляция",
-        "uk": "Лазерна епіляція",
-        "cs": "Laserová epilace",
-        "en": "Laser hair removal",
-        "es": "Depilación láser"
-      },
-      "desc": {
-        "ru": "Мы работаем на профессиональных лазерных системах Laser Technology — диодных лазерах Luna (1200 W) и Hunter (2000 W). Это позволяет работать эффективно, безопасно и комфортно для клиента.",
-        "uk": "Ми працюємо на професійних лазерних системах Laser Technology — діодних лазерах Luna (1200 W) та Hunter (2000 W). Це дозволяє працювати ефективно, безпечно та комфортно.",
-        "cs": "Pracujeme s profesionálními laserovými systémy Laser Technology — diodovými lasery Luna (1200 W) a Hunter (2000 W). To nám umožňuje pracovat efektivně, bezpečně a pohodlně.",
-        "en": "We use professional Laser Technology diode systems — Luna (1200 W) and Hunter (2000 W). These cutting-edge lasers allow us to work effectively, safely and comfortably for every client.",
-        "es": "Trabajamos con sistemas láser profesionales Laser Technology — láseres de diodo Luna (1200 W) y Hunter (2000 W). Esto nos permite trabajar de forma eficaz, segura y cómoda."
-      }
-    },
-    {
-      "key": "electro",
-      "cities": [
-        "prague",
-        "valencia"
-      ],
-      "service": "electro",
-      "title": {
-        "ru": "Apilus",
-        "uk": "Apilus",
-        "cs": "Apilus",
-        "en": "Apilus",
-        "es": "Apilus"
-      },
-      "tag": {
-        "ru": "Электроэпиляция",
-        "uk": "Електроепіляція",
-        "cs": "Elektroepilace",
-        "en": "Electrolysis",
-        "es": "Electrólisis"
-      },
-      "desc": {
-        "ru": "Канадская система электроэпиляции. Короткий импульс обрабатывает фолликул за доли секунды — процедура переносится легче, а метод берёт любой волос: светлый, седой и пушковый.",
-        "uk": "Канадська система електроепіляції. Короткий імпульс обробляє фолікул за частки секунди — процедура переноситься легше, а метод бере будь-яке волосся: світле, сиве й пушкове.",
-        "cs": "Kanadský systém elektroepilace. Krátký impulz ošetří folikul ve zlomku sekundy — zákrok je snesitelnější a metoda zvládne jakýkoli chloupek: světlý, šedivý i jemný.",
-        "en": "A Canadian electrolysis system. A very short pulse treats the follicle in a fraction of a second, so the session is easier to sit through — and the method works on any hair: light, grey or fine.",
-        "es": "Sistema canadiense de electrólisis. El impulso dura una fracción de segundo, así que la sesión se lleva mejor, y el método funciona con cualquier vello: claro, canoso o fino."
-      }
-    },
-    {
-      "key": "zemits",
-      "cities": [
-        "prague"
-      ],
-      "service": "cosmetology",
-      "title": {
-        "ru": "Zemits",
-        "uk": "Zemits",
-        "cs": "Zemits",
-        "en": "Zemits",
-        "es": "Zemits"
-      },
-      "tag": {
-        "ru": "Косметология",
-        "uk": "Косметологія",
-        "cs": "Kosmetologie",
-        "en": "Skincare",
-        "es": "Cosmetología"
-      },
-      "desc": {
-        "ru": "Аппаратная косметология: микротоки и уходовые протоколы для лица. Работаем на оборудовании Zemits.",
-        "uk": "Апаратна косметологія: мікроструми та доглядові протоколи для обличчя. Працюємо на обладнанні Zemits.",
-        "cs": "Přístrojová kosmetologie: mikroproudy a pečující protokoly pro obličej. Pracujeme na přístrojích Zemits.",
-        "en": "Device-based skincare: microcurrent and facial care protocols, performed on Zemits equipment.",
-        "es": "Cosmetología con aparatología: microcorrientes y protocolos de cuidado facial con equipos Zemits."
-      }
-    }
-  ],
-  "sectionTitle": {
-    "ru": "Наши аппараты",
-    "uk": "Наші апарати",
-    "cs": "Naše přístroje",
-    "en": "Our equipment",
-    "es": "Nuestros equipos"
+ "items": [
+  {
+   "key": "laser",
+   "cities": [
+    "prague",
+    "valencia"
+   ],
+   "service": "laser",
+   "title": {
+    "ru": "Luna и Hunter",
+    "uk": "Luna і Hunter",
+    "cs": "Luna a Hunter",
+    "en": "Luna & Hunter",
+    "es": "Luna y Hunter"
+   },
+   "tag": {
+    "ru": "Лазерная эпиляция",
+    "uk": "Лазерна епіляція",
+    "cs": "Laserová epilace",
+    "en": "Laser hair removal",
+    "es": "Depilación láser"
+   },
+   "desc": {
+    "ru": "Мы работаем на профессиональных лазерных системах Laser Technology — диодных лазерах Luna (1200 W) и Hunter (2000 W). Это позволяет работать эффективно, безопасно и комфортно для клиента.",
+    "uk": "Ми працюємо на професійних лазерних системах Laser Technology — діодних лазерах Luna (1200 W) та Hunter (2000 W). Це дозволяє працювати ефективно, безпечно та комфортно.",
+    "cs": "Pracujeme s profesionálními laserovými systémy Laser Technology — diodovými lasery Luna (1200 W) a Hunter (2000 W). To nám umožňuje pracovat efektivně, bezpečně a pohodlně.",
+    "en": "We use professional Laser Technology diode systems — Luna (1200 W) and Hunter (2000 W). These cutting-edge lasers allow us to work effectively, safely and comfortably for every client.",
+    "es": "Trabajamos con sistemas láser profesionales Laser Technology — láseres de diodo Luna (1200 W) y Hunter (2000 W). Esto nos permite trabajar de forma eficaz, segura y cómoda."
+   }
+  },
+  {
+   "key": "electro",
+   "cities": [
+    "prague",
+    "valencia"
+   ],
+   "service": "electro",
+   "title": {
+    "ru": "Apilus",
+    "uk": "Apilus",
+    "cs": "Apilus",
+    "en": "Apilus",
+    "es": "Apilus"
+   },
+   "tag": {
+    "ru": "Электроэпиляция",
+    "uk": "Електроепіляція",
+    "cs": "Elektroepilace",
+    "en": "Electrolysis",
+    "es": "Electrólisis"
+   },
+   "desc": {
+    "ru": "Канадская система электроэпиляции. Короткий импульс обрабатывает фолликул за доли секунды — процедура переносится легче, а метод берёт любой волос: светлый, седой и пушковый.",
+    "uk": "Канадська система електроепіляції. Короткий імпульс обробляє фолікул за частки секунди — процедура переноситься легше, а метод бере будь-яке волосся: світле, сиве й пушкове.",
+    "cs": "Kanadský systém elektroepilace. Krátký impulz ošetří folikul ve zlomku sekundy — zákrok je snesitelnější a metoda zvládne jakýkoli chloupek: světlý, šedivý i jemný.",
+    "en": "A Canadian electrolysis system. A very short pulse treats the follicle in a fraction of a second, so the session is easier to sit through — and the method works on any hair: light, grey or fine.",
+    "es": "Sistema canadiense de electrólisis. El impulso dura una fracción de segundo, así que la sesión se lleva mejor, y el método funciona con cualquier vello: claro, canoso o fino."
+   }
+  },
+  {
+   "key": "zemits",
+   "cities": [
+    "prague"
+   ],
+   "service": "cosmetology",
+   "title": {
+    "ru": "Zemits",
+    "uk": "Zemits",
+    "cs": "Zemits",
+    "en": "Zemits",
+    "es": "Zemits"
+   },
+   "tag": {
+    "ru": "Косметология",
+    "uk": "Косметологія",
+    "cs": "Kosmetologie",
+    "en": "Skincare",
+    "es": "Cosmetología"
+   },
+   "desc": {
+    "ru": "Аппаратная косметология: микротоки и уходовые протоколы для лица. Работаем на оборудовании Zemits.",
+    "uk": "Апаратна косметологія: мікроструми та доглядові протоколи для обличчя. Працюємо на обладнанні Zemits.",
+    "cs": "Přístrojová kosmetologie: mikroproudy a pečující protokoly pro obličej. Pracujeme na přístrojích Zemits.",
+    "en": "Device-based skincare: microcurrent and facial care protocols, performed on Zemits equipment.",
+    "es": "Cosmetología con aparatología: microcorrientes y protocolos de cuidado facial con equipos Zemits."
+   },
+   "video": {
+    "src": "/assets/video/zemits.mp4",
+    "poster": "/assets/video/zemits.jpg"
+   }
   }
+ ],
+ "sectionTitle": {
+  "ru": "Наши аппараты",
+  "uk": "Наші апарати",
+  "cs": "Naše přístroje",
+  "en": "Our equipment",
+  "es": "Nuestros equipos"
+ }
 }

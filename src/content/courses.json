@@ -960,6 +960,7 @@
    "cs": "Nacvičuje se na živých modelkách po boku lektorky — na stejných přístrojích, se kterými pak budete pracovat.",
    "en": "Practice runs on live models beside the trainer — on the same machines you will work with afterwards.",
    "es": "La práctica es con modelos reales junto a la formadora, en los mismos equipos con los que luego vas a trabajar."
-  }
+  },
+  "layout": "portrait"
  }
 }
