@@ -357,8 +357,8 @@ PGROUP_TITLE = {
  'menFacePackages': {'ru':'Курсы для мужчин','uk':'Курси для чоловіків','cs':'Kúry pro muže','en':'Courses for men','es':'Cursos para hombres'},
  'massageSessions': {'ru':'Лимфодренажный массаж','uk':'Лімфодренажний масаж','cs':'Lymfodrenážní masáž','en':'Lymphatic drainage massage','es':'Drenaje linfático'},
  'trichologyItems': {'ru':'Трихология','uk':'Трихологія','cs':'Trichologie','en':'Trichology','es':'Tricología'},
- 'homeCare': {'ru':'Косметика для дома','uk':'Косметика для дому','cs':'Kosmetika pro domácí péči','en':'Home care','es':'Cosmética para casa'},
- 'homeCareEs': {'ru':'Косметика для дома','uk':'Косметика для дому','cs':'Kosmetika pro domácí péči','en':'Home care','es':'Cosmética para casa'},
+ 'homeCare': {'ru':'Профессиональная косметика','uk':'Професійна косметика','cs':'Profesionální kosmetika','en':'Professional cosmetics','es':'Cosmética profesional'},
+ 'homeCareEs': {'ru':'Профессиональная косметика','uk':'Професійна косметика','cs':'Profesionální kosmetika','en':'Professional cosmetics','es':'Cosmética profesional'},
  'laserWomenEs': {'ru':'Лазерная эпиляция · женщины','uk':'Лазерна епіляція · жінки','cs':'Laserová epilace · ženy','en':'Laser hair removal · women','es':'Depilación láser · mujeres'},
  'laserMenEs': {'ru':'Лазерная эпиляция · мужчины','uk':'Лазерна епіляція · чоловіки','cs':'Laserová epilace · muži','en':'Laser hair removal · men','es':'Depilación láser · hombres'},
  'laserPackagesEs': {'ru':'Комплексы зон','uk':'Комплекси зон','cs':'Balíčky zón','en':'Area packages','es':'Combos de zonas'},
@@ -1457,6 +1457,7 @@ section{padding:50px 0}
 @media(max-width:620px){.shop-lbl{min-width:100%}}
 .prod{padding:20px;background:#fff;border:1px solid var(--line-gold);border-radius:12px;
       display:flex;flex-direction:column}
+.prod[hidden],[hidden]{display:none!important}
 .alt .prod{background:var(--cream)}
 .prod .brand{font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--gold-dark)}
 .prod h3{font-size:21px;margin:5px 0 6px}

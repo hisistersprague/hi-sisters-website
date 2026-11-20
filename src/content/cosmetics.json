@@ -1,29 +1,29 @@
 {
  "head": {
   "ru": {
-   "h1": "Косметика для дома",
+   "h1": "Профессиональная косметика",
    "lead": "Профессиональные средства, которыми мы работаем в клинике. Подбираем после консультации, а не продаём «на всякий случай»."
   },
   "uk": {
-   "h1": "Косметика для дому",
+   "h1": "Професійна косметика",
    "lead": "Професійні засоби, якими ми працюємо в клініці. Підбираємо після консультації, а не продаємо «про запас»."
   },
   "cs": {
-   "h1": "Kosmetika pro domácí péči",
+   "h1": "Profesionální kosmetika",
    "lead": "Profesionální přípravky, se kterými pracujeme na klinice. Vybíráme je po konzultaci, neprodáváme je „pro jistotu“."
   },
   "en": {
-   "h1": "Home-care cosmetics",
+   "h1": "Professional cosmetics",
    "lead": "The professional products we use at the clinic. Chosen for you at a consultation — never sold just in case."
   },
   "es": {
-   "h1": "Cosmética para casa",
+   "h1": "Cosmética profesional",
    "lead": "Los productos profesionales con los que trabajamos en la clínica. Se eligen en la consulta, no se venden «por si acaso»."
   }
  },
  "ui": {
   "ru": {
-   "eyebrow": "Домашний уход",
+   "eyebrow": "Косметика клиники",
    "title": "Косметика для волос и кожи головы",
    "subtitle": "Профессиональные средства, которыми мы работаем в клинике. Подбираем индивидуально после консультации трихолога.",
    "note": "Цены в CZK. Косметика в наличии в клинике: Bulovka Medical & Business Centre, Praha 8.",
@@ -35,7 +35,7 @@
    }
   },
   "uk": {
-   "eyebrow": "Домашній догляд",
+   "eyebrow": "Косметика клініки",
    "title": "Косметика для волосся та шкіри голови",
    "subtitle": "Професійні засоби, якими ми працюємо в клініці. Підбираємо індивідуально після консультації трихолога.",
    "note": "Ціни в CZK. Косметика в наявності в клініці: Bulovka Medical & Business Centre, Praha 8.",
@@ -47,7 +47,7 @@
    }
   },
   "cs": {
-   "eyebrow": "Domácí péče",
+   "eyebrow": "Kosmetika kliniky",
    "title": "Kosmetika pro vlasy a pokožku hlavy",
    "subtitle": "Profesionální přípravky, se kterými pracujeme na klinice. Vybíráme individuálně po konzultaci s trichologem.",
    "note": "Ceny v CZK. K dostání na klinice: Bulovka Medical & Business Centre, Praha 8.",
@@ -59,8 +59,8 @@
    }
   },
   "en": {
-   "eyebrow": "Home care",
-   "title": "Hair & scalp home care",
+   "eyebrow": "Clinic cosmetics",
+   "title": "Hair and scalp cosmetics",
    "subtitle": "Professional products we use at the clinic, selected individually after a trichologist consultation.",
    "note": "Prices in CZK. Available at the clinic: Bulovka Medical & Business Centre, Praha 8.",
    "cta": "Get a trichologist’s advice",
@@ -71,7 +71,7 @@
    }
   },
   "es": {
-   "eyebrow": "Cuidado en casa",
+   "eyebrow": "Cosmética de la clínica",
    "title": "Cosmética para el cabello y el cuero cabelludo",
    "subtitle": "Productos profesionales con los que trabajamos en la clínica, seleccionados tras una consulta tricológica.",
    "note": "Precios en CZK. Disponible en la clínica: Bulovka Medical & Business Centre, Praga 8.",
@@ -382,23 +382,23 @@
  "bodyText": {
   "ru": {
    "title": "Уход за телом",
-   "desc": "Линейка для домашнего продолжения курса эпиляции: мягкий пилинг, питание и выравнивание тона кожи."
+   "desc": "Линейка, которая продолжает курс эпиляции между визитами: мягкий пилинг, питание и выравнивание тона кожи."
   },
   "uk": {
    "title": "Догляд за тілом",
-   "desc": "Лінійка для домашнього продовження курсу епіляції: м’який пілінг, живлення та вирівнювання тону шкіри."
+   "desc": "Лінійка, яка продовжує курс епіляції між візитами: м’який пілінг, живлення та вирівнювання тону шкіри."
   },
   "cs": {
    "title": "Péče o tělo",
-   "desc": "Řada pro domácí pokračování epilační kúry: jemný peeling, výživa a sjednocení tónu pleti."
+   "desc": "Řada, která drží výsledek epilační kúry mezi návštěvami: jemný peeling, výživa a sjednocení tónu pleti."
   },
   "en": {
    "title": "Body care",
-   "desc": "A line to continue your epilation course at home: gentle peeling, nourishment and an even skin tone."
+   "desc": "A range that keeps the epilation course going between visits: gentle exfoliation, nourishment and an even skin tone."
   },
   "es": {
    "title": "Cuidado corporal",
-   "desc": "Una línea para continuar en casa tu curso de depilación: peeling suave, nutrición y tono uniforme."
+   "desc": "Una línea que mantiene la pauta de depilación entre visitas: exfoliación suave, nutrición y tono uniforme."
   }
  },
  "body": {

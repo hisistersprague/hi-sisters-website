@@ -2140,24 +2140,24 @@
   "priceType": null,
   "card": {
    "ru": {
-    "title": "Косметика для дома",
-    "desc": "Профессиональная косметика для домашнего ухода — очищение, увлажнение, SPF-защита и восстановление кожи после процедур."
+    "title": "Профессиональная косметика",
+    "desc": "Профессиональные средства, которыми мы работаем в клинике: очищение, уход, SPF. Подбираем после консультации."
    },
    "uk": {
-    "title": "Косметика додому",
-    "desc": "Професійна косметика для домашнього догляду — очищення, зволоження, SPF-захист і відновлення шкіри після процедур."
+    "title": "Професійна косметика",
+    "desc": "Професійні засоби, якими ми працюємо в клініці: очищення, догляд, SPF. Підбираємо після консультації."
    },
    "en": {
-    "title": "Home Care Cosmetics",
-    "desc": "Professional home-care cosmetics — cleansing, hydration, SPF protection and post-treatment skin recovery."
+    "title": "Professional cosmetics",
+    "desc": "The professional products we use at the clinic: cleansing, care, SPF. Chosen at a consultation."
    },
    "es": {
-    "title": "Cosmética para el hogar",
-    "desc": "Cosmética profesional para el cuidado en casa — limpieza, hidratación, protección SPF y recuperación de la piel tras los tratamientos."
+    "title": "Cosmética profesional",
+    "desc": "Los productos profesionales que usamos en la clínica: limpieza, cuidado, SPF. Se eligen en la consulta."
    },
    "cs": {
-    "title": "Kosmetika pro domácí péči",
-    "desc": "Profesionální kosmetika pro domácí péči — čištění, hydratace, SPF ochrana a regenerace pokožky po procedurách."
+    "title": "Profesionální kosmetika",
+    "desc": "Profesionální přípravky, se kterými pracujeme na klinice: čištění, péče, SPF. Vybíráme je po konzultaci."
    }
   },
   "page": {
