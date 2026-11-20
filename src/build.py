@@ -27,6 +27,7 @@ studios, reviews, team = L('studios.json'), L('reviews.json'), L('team.json')
 courses, cosm = L('courses.json'), L('cosmetics.json')
 equip = L('equipment.json')
 compare = L('compare.json')
+results = L('results.json')
 advant = L('advantages.json')
 svcblocks = L('service-blocks.json')
 articles = L('articles.json')
@@ -877,6 +878,29 @@ def compare_block(key, lang):
             '<div class="cmp-wrap"><table class="cmp"><thead><tr>%s</tr></thead>'
             '<tbody>%s</tbody></table></div></div></section>'
             % (e(compare['title'][lang]), e(compare['lead'][lang]), head, body))
+
+
+def results_block(key, lang):
+    """Фотографии «до и после» по этой услуге."""
+    items = [x for x in results['items'] if x['service'] == key]
+    if not items:
+        return ''
+    u = results['ui']
+    cards = ''
+    for it in items:
+        cap = u['pattern'][lang] % (results['zones'][it['zone']][lang], it['sessions'])
+        pair = ''
+        for suf, lab in (('before', u['before'][lang]), ('after', u['after'][lang])):
+            src = '/assets/results/%s-%s.jpg' % (it['base'], suf)
+            pair += ('<figure><picture><source srcset="%s" type="image/webp">'
+                     '<img src="%s" alt="%s — %s" loading="lazy" width="900" height="390">'
+                     '</picture><figcaption>%s</figcaption></figure>'
+                     % (e(src.replace('.jpg', '.webp')), e(src), e(cap), e(lab), e(lab)))
+        cards += '<article class="ba-card"><div class="ba-pair">%s</div><p>%s</p></article>' % (pair, e(cap))
+    return ('\n<section class="alt"><div class="wrap">'
+            '<div class="sec-head"><h2>%s</h2><p>%s</p></div>'
+            '<div class="ba-grid">%s</div></div></section>'
+            % (e(u['title'][lang]), e(u['note'][lang]), cards))
 
 
 def gallery_block(svc, lang, alt=''):
@@ -1847,6 +1871,18 @@ body[data-page="services"] .more-list a:hover{border-color:var(--accent);color:v
 .cmp-sm th,.cmp-sm td{padding:11px 14px;font-size:14.6px}
 .cmp-sm tbody th{width:150px;font-weight:600}
 .dark .cmp-sm{background:rgba(255,255,255,.04)}
+
+/* до и после */
+.ba-grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(400px,1fr))}
+.ba-card{background:#fff;border:1px solid var(--line);border-radius:18px;overflow:hidden;
+  box-shadow:0 14px 34px rgba(19,11,86,.08)}
+.ba-pair{display:grid;grid-template-columns:1fr 1fr;gap:2px;background:var(--line)}
+.ba-pair figure{margin:0;position:relative;background:#fff}
+.ba-pair img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block}
+.ba-pair figcaption{position:absolute;left:10px;top:10px;padding:4px 10px;border-radius:999px;
+  background:rgba(10,7,56,.78);color:#fff;font-size:12.5px;letter-spacing:.06em;text-transform:uppercase}
+.ba-pair figure:last-child figcaption{background:var(--accent);color:var(--navy-deep);font-weight:600}
+.ba-card>p{margin:0;padding:13px 16px;font-size:15px;color:var(--navy);font-weight:500}
 
 /* фотографии услуги */
 .gal{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
@@ -4225,6 +4261,7 @@ def build_service(lang, city, key):
 {methods_block}
 {video_block(svc, lang, card['title'])}
 {gallery_block(svc, lang, card['title'])}
+{results_block(key, lang)}
 {price_block}
 {faq_block}
 

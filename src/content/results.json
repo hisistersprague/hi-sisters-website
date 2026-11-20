@@ -1,0 +1,87 @@
+{
+ "ui": {
+  "title": {
+   "ru": "Результаты наших клиенток",
+   "uk": "Результати наших клієнток",
+   "cs": "Výsledky našich klientek",
+   "en": "Results of our clients",
+   "es": "Resultados de nuestras clientas"
+  },
+  "before": {
+   "ru": "До",
+   "uk": "До",
+   "cs": "Před",
+   "en": "Before",
+   "es": "Antes"
+  },
+  "after": {
+   "ru": "После",
+   "uk": "Після",
+   "cs": "Po",
+   "en": "After",
+   "es": "Después"
+  },
+  "pattern": {
+   "ru": "%s · после %d сеансов",
+   "uk": "%s · після %d сеансів",
+   "cs": "%s · po %d sezeních",
+   "en": "%s · after %d sessions",
+   "es": "%s · después de %d sesiones"
+  },
+  "note": {
+   "ru": "Число сеансов у всех разное: оно зависит от зоны, цвета и плотности волос.",
+   "uk": "Кількість сеансів у всіх різна: вона залежить від зони, кольору та щільності волосся.",
+   "cs": "Počet sezení je u každé jiný: závisí na oblasti, barvě a hustotě chloupků.",
+   "en": "The number of sessions differs for everyone: it depends on the area, the colour and the density of the hair.",
+   "es": "El número de sesiones es distinto en cada caso: depende de la zona, del color y de la densidad del vello."
+  }
+ },
+ "zones": {
+  "underarms": {
+   "ru": "Подмышки",
+   "uk": "Пахви",
+   "cs": "Podpaží",
+   "en": "Underarms",
+   "es": "Axilas"
+  },
+  "bikini": {
+   "ru": "Бикини",
+   "uk": "Бікіні",
+   "cs": "Bikiny",
+   "en": "Bikini",
+   "es": "Ingles"
+  }
+ },
+ "items": [
+  {
+   "service": "laser",
+   "base": "laser-underarms-2",
+   "zone": "underarms",
+   "sessions": 2
+  },
+  {
+   "service": "laser",
+   "base": "laser-underarms-6",
+   "zone": "underarms",
+   "sessions": 6
+  },
+  {
+   "service": "laser",
+   "base": "laser-bikini-3",
+   "zone": "bikini",
+   "sessions": 3
+  },
+  {
+   "service": "laser",
+   "base": "laser-bikini-5a",
+   "zone": "bikini",
+   "sessions": 5
+  },
+  {
+   "service": "laser",
+   "base": "laser-bikini-5b",
+   "zone": "bikini",
+   "sessions": 5
+  }
+ ]
+}
