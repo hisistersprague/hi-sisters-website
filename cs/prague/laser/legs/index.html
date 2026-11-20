@@ -27,7 +27,7 @@
 <meta name="google-site-verification" content="w0gr_xIGKVAPVdWsNGRQxfjPjKZGN87bxB6bOTXDnwI"><link rel="preload" as="image" media="(max-width:720px)" href="/assets/photos/hero-bg-m.webp" type="image/webp"><link rel="preload" as="image" media="(min-width:721px)" href="/assets/photos/hero-bg.webp" type="image/webp"><link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/assets/app.css?v=22227e11">
+<link rel="stylesheet" href="/assets/app.css?v=980a3ebf">
 <link rel="icon" href="/favicon.svg">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-K921K357QH"></script>
 <script>
@@ -65,7 +65,8 @@ addEventListener('click',function(ev){
 </div></section>
 
 <section><div class="wrap arts"><div class="art"><h2>Kolik sezení je potřeba</h2><p>Na nohy obvykle padne 6–10 ošetření. Lýtka reagují rychleji než stehna: chloupek je tam hustší a tmavší.</p></div><div class="art"><h2>V balíčku to vyjde levněji</h2><p>Nohy se často berou spolu s podpažím a bikinami — v balíčku vyjde zóna levněji než zvlášť. Aktuální balíčky najdete v ceníku.</p></div><div class="art"><h2>Jak to vnímáte</h2><p>Citelné brnění, na vnitřní straně stehen o něco víc. Pálení být nesmí: parametry se volí podle vaší pleti a mění se od sezení k sezení.</p></div><div class="art"><h2>Jak se připravit</h2><p>Nohy oholte den předem. Dva týdny se neopalujte. Měsíc nedělejte vosk a nevytrhávejte chloupky — laser působí jen na chloupek ve folikulu.</p></div></div></section>
-<section class="alt"><div class="wrap"><div class="sec-head"><h2>Laserová epilace nohou: jak to vypadá</h2></div><video class="vfile" controls preload="none" poster="/assets/video/laser-nohy-2.jpg"><source src="/assets/video/laser-nohy-2.mp4" type="video/mp4"></video></div></section>
+
+<section class="vband" style="background-image:url(/assets/video/laser-nohy-2.jpg)"><div class="wrap"><div><h2>Laserová epilace nohou: jak to vypadá</h2></div><video muted loop playsinline autoplay preload="none" aria-hidden="true" tabindex="-1" data-vband="/assets/video/laser-nohy-2.mp4" poster="/assets/video/laser-nohy-2.jpg"></video></div></section>
 
 <section class="tint"><div class="wrap"><div class="sec-head"><h2>Ceny za tuto zónu</h2></div><div class="ptable"><div class="prow"><span>Lýtka s koleny</span><span>2400 Kč</span></div><div class="prow"><span>Nohy celé</span><span>4000 Kč</span></div><div class="prow"><span>Stehna celé</span><span>2200 Kč</span></div><div class="prow"><span>Zadní strana stehen</span><span>1700 Kč</span></div></div><div class="more-list"><a href="/cs/prague/laser/">Celý ceník laseru</a></div></div></section>
 
@@ -144,5 +145,30 @@ addEventListener('click',function(ev){
       if(!el.contains(ev.target)) el.classList.remove('is-open');
     });
   });
+})();
+(function(){
+  /* Фоновое видео блока: подгружаем и запускаем, когда блок подъезжает к экрану. */
+  var vs=[].slice.call(document.querySelectorAll('video[data-vband]'));
+  if(!vs.length) return;
+  var mq=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)');
+  var conn=navigator.connection||navigator.webkitConnection;
+  if((mq&&mq.matches)||(conn&&conn.saveData)) return;
+  function start(v){
+    if(v.dataset.on) return;
+    v.dataset.on='1';
+    var s=document.createElement('source');
+    s.src=v.dataset.vband; s.type='video/mp4';
+    v.appendChild(s); v.load();
+    var p=v.play();
+    if(p&&p.catch) p.catch(function(){});
+  }
+  if(!('IntersectionObserver' in window)){ vs.forEach(start); return; }
+  var io=new IntersectionObserver(function(es){
+    es.forEach(function(en){
+      if(!en.isIntersecting) return;
+      start(en.target); io.unobserve(en.target);
+    });
+  },{rootMargin:'300px 0px'});
+  vs.forEach(function(v){ io.observe(v); });
 })();</script>
 </body></html>

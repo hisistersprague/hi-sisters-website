@@ -27,7 +27,7 @@
 <meta name="google-site-verification" content="w0gr_xIGKVAPVdWsNGRQxfjPjKZGN87bxB6bOTXDnwI"><link rel="preload" as="image" media="(max-width:720px)" href="/assets/photos/hero-bg-m.webp" type="image/webp"><link rel="preload" as="image" media="(min-width:721px)" href="/assets/photos/hero-bg.webp" type="image/webp"><link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/assets/app.css?v=22227e11">
+<link rel="stylesheet" href="/assets/app.css?v=980a3ebf">
 <link rel="icon" href="/favicon.svg">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-K921K357QH"></script>
 <script>
@@ -61,6 +61,8 @@ addEventListener('click',function(ev){
 
 
 <section class="tint"><div class="wrap"><div class="split split-rev"><figure class="split-img"><picture><source srcset="/assets/photos/portrait.webp" type="image/webp"><img src="/assets/photos/portrait.jpg" alt="Naučíme vás jednou a na celý život" loading="lazy" width="1100" height="780"></picture></figure><div class="split-txt"><h2>Učí ty, které v klinice pracují každý den</h2><p>Kurzy vedou specialistky Hi Sisters — na stejných přístrojích a podle stejných protokolů jako s klientkami. Nejde tedy o ideální případy z učebnice, ale o to, co do ordinace opravdu chodí.</p><p>Program každého kurzu je rozepsaný níže: je vidět, co probíráme v teorii a co si osaháte rukama.</p></div></div></div></section>
+
+<section class="vband" style="background-image:url(/assets/video/elektroepilace-4ruce.jpg)"><div class="wrap"><div><h2>Jak probíhá školení</h2><p>Nacvičuje se na živých modelkách po boku lektorky — na stejných přístrojích, se kterými pak budete pracovat.</p></div><video muted loop playsinline autoplay preload="none" aria-hidden="true" tabindex="-1" data-vband="/assets/video/elektroepilace-4ruce.mp4" poster="/assets/video/elektroepilace-4ruce.jpg"></video></div></section>
 
 <section class="lilac"><div class="wrap">
   <div class="courses">
@@ -184,5 +186,30 @@ addEventListener('click',function(ev){
       if(!el.contains(ev.target)) el.classList.remove('is-open');
     });
   });
+})();
+(function(){
+  /* Фоновое видео блока: подгружаем и запускаем, когда блок подъезжает к экрану. */
+  var vs=[].slice.call(document.querySelectorAll('video[data-vband]'));
+  if(!vs.length) return;
+  var mq=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)');
+  var conn=navigator.connection||navigator.webkitConnection;
+  if((mq&&mq.matches)||(conn&&conn.saveData)) return;
+  function start(v){
+    if(v.dataset.on) return;
+    v.dataset.on='1';
+    var s=document.createElement('source');
+    s.src=v.dataset.vband; s.type='video/mp4';
+    v.appendChild(s); v.load();
+    var p=v.play();
+    if(p&&p.catch) p.catch(function(){});
+  }
+  if(!('IntersectionObserver' in window)){ vs.forEach(start); return; }
+  var io=new IntersectionObserver(function(es){
+    es.forEach(function(en){
+      if(!en.isIntersecting) return;
+      start(en.target); io.unobserve(en.target);
+    });
+  },{rootMargin:'300px 0px'});
+  vs.forEach(function(v){ io.observe(v); });
 })();</script>
 </body></html>
