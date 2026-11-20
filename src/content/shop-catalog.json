@@ -7672,7 +7672,7 @@
  },
  {
   "brand": "DMK",
-  "name": "Wetter Then Water",
+  "name": "Wetter Than Water",
   "volume": "100 ml",
   "price": 2916,
   "priceHidden": true,
@@ -7698,7 +7698,7 @@
  },
  {
   "brand": "DMK",
-  "name": "Wetter Then Water",
+  "name": "Wetter Than Water",
   "volume": "120 kapslí",
   "price": 2268,
   "priceHidden": true,
@@ -7847,7 +7847,7 @@
  },
  {
   "brand": "DMK",
-  "name": "Vitamin C",
+  "name": "Direct Delivery Vitamin C",
   "volume": "30 ml",
   "price": 2916,
   "priceHidden": true,
@@ -7862,6 +7862,14 @@
    "cs": "Rozjasňuje, podporuje tvorbu kolagenu",
    "en": "Brightens, supports collagen",
    "es": "Ilumina, apoya el colágeno"
+  },
+  "dupe": true,
+  "ing": {
+   "ru": "Витамин C, Аскорбил глюкозид, Магния аскорбилфосфат, Пантенол",
+   "uk": "Вітамін C, Аскорбіл глюкозид, Магнію аскорбілфосфат, Пантенол",
+   "cs": "Vitamin C, Askorbyl glukosid, Hořečnatý askorbyl-fosfát, Panthenol",
+   "en": "Vitamin C, Ascorbyl glucoside, Magnesium ascorbyl phosphate, Panthenol",
+   "es": "Vitamina C, Ascorbil glucósido, Ascorbil fosfato de magnesio, Pantenol"
   }
  },
  {
@@ -7892,7 +7900,7 @@
  },
  {
   "brand": "DMK",
-  "name": "Plus",
+  "name": "Pore Reduction Plus",
   "volume": "30 ml",
   "price": 1080,
   "priceHidden": true,
@@ -7907,6 +7915,13 @@
    "cs": "Sérum — pro výživu a obnovu pleti",
    "en": "Serum — for nourishing and repair",
    "es": "Sérum — para nutrir y reparar la piel"
+  },
+  "ing": {
+   "ru": "ламинария, масло шиповника, хмель, люцерна",
+   "uk": "ламінарія, олія шипшини, хміль, люцерна",
+   "cs": "chaluha kelp, šípkový olej, chmel, vojtěška",
+   "en": "kelp, rose hip oil, hops, alfalfa",
+   "es": "alga kelp, aceite de rosa mosqueta, lúpulo, alfalfa"
   }
  },
  {
@@ -8086,7 +8101,7 @@
  },
  {
   "brand": "DMK",
-  "name": "Spray",
+  "name": "Herb & Mineral Spray",
   "volume": "60 ml",
   "price": 810,
   "priceHidden": true,
@@ -8101,11 +8116,12 @@
    "cs": "Hydratuje, tonizuje",
    "en": "Hydrates, tones",
    "es": "Hidrata, tonifica"
-  }
+  },
+  "dupe": true
  },
  {
   "brand": "DMK",
-  "name": "Spray",
+  "name": "Herb & Mineral Spray",
   "volume": "120 ml",
   "price": 1458,
   "priceHidden": true,
@@ -8120,7 +8136,8 @@
    "cs": "Hydratuje, tonizuje",
    "en": "Hydrates, tones",
    "es": "Hidrata, tonifica"
-  }
+  },
+  "dupe": true
  },
  {
   "brand": "DMK",
@@ -8150,7 +8167,7 @@
  },
  {
   "brand": "DMK",
-  "name": "Cleanser",
+  "name": "Deep Pore Cleanser",
   "volume": "60 ml",
   "price": 648,
   "priceHidden": true,
@@ -8165,11 +8182,18 @@
    "cs": "Čisticí přípravek — pro mastnou a smíšenou pleť",
    "en": "Cleanser — for oily and combination skin",
    "es": "Limpiador — para piel grasa y mixta"
+  },
+  "ing": {
+   "ru": "Кора белого дуба, Экстракт юкки, Сок алоэ вера, Лимонное масло",
+   "uk": "Кора білого дуба, Екстракт юки, Сік алое вера, Лимонна олія",
+   "cs": "Kůra bílého dubu, Extrakt z juky, Šťáva z aloe vera, Citronový olej",
+   "en": "White oak bark, Yucca extract, Aloe vera juice, Lemon oil",
+   "es": "Corteza de roble blanco, Extracto de yuca, Jugo de aloe vera, Aceite de limón"
   }
  },
  {
   "brand": "DMK",
-  "name": "Cleanser",
+  "name": "Deep Pore Cleanser",
   "volume": "180 ml",
   "price": 1512,
   "priceHidden": true,
@@ -8184,6 +8208,14 @@
    "cs": "Čisticí přípravek — pro mastnou a smíšenou pleť",
    "en": "Cleanser — for oily and combination skin",
    "es": "Limpiador — para piel grasa y mixta"
+  },
+  "dupe": true,
+  "ing": {
+   "ru": "Кора белого дуба, Экстракт юкки, Сок алоэ вера, Лимонное масло",
+   "uk": "Кора білого дуба, Екстракт юки, Сік алое вера, Лимонна олія",
+   "cs": "Kůra bílého dubu, Extrakt z juky, Šťáva z aloe vera, Citronový olej",
+   "en": "White oak bark, Yucca extract, Aloe vera juice, Lemon oil",
+   "es": "Corteza de roble blanco, Extracto de yuca, Jugo de aloe vera, Aceite de limón"
   }
  },
  {
@@ -8526,7 +8558,7 @@
  },
  {
   "brand": "DMK",
-  "name": "Nutrascreen Color",
+  "name": "NutraScreen Color Balance (SPF 30)",
   "volume": "50 ml",
   "price": 1782,
   "priceHidden": true,
@@ -8716,6 +8748,13 @@
    "cs": "Hydratuje, vyživuje, rozjasňuje, pracuje s pigmentací",
    "en": "Hydrates, nourishes, brightens, targets pigmentation",
    "es": "Hidrata, nutre, ilumina, actúa sobre la pigmentación"
+  },
+  "ing": {
+   "ru": "койевая кислота, корень солодки, урсоловая кислота, фитиновая кислота, белая шелковица",
+   "uk": "коєва кислота, корінь солодки, урсолова кислота, фітинова кислота, біла шовковиця",
+   "cs": "kyselina kojová, kořen lékořice, kyselina ursolová, kyselina fytová, bílá moruše",
+   "en": "kojic acid, liquorice root, ursolic acid, phytic acid, white mulberry",
+   "es": "ácido kójico, raíz de regaliz, ácido ursólico, ácido fítico, morera blanca"
   }
  }
 ]
