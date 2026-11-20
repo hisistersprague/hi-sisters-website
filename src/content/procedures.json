@@ -3457,7 +3457,19 @@
     3,
     4,
     5,
-    6
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18
    ],
    "duration": 60,
    "title": {
@@ -3471,11 +3483,11 @@
    "body": {
     "ru": [
      "Препарат вводят тонкой иглой в кожу по всей зоне. В отличие от филлеров, задача не в том, чтобы заполнить объём, а в том, чтобы изменить качество кожи: увлажнённость, плотность, тон, упругость. Результат развивается постепенно и зависит от курса, а не от одной процедуры.",
-     "Препараты в линейке разные по действию. REJURAN построен на полинуклеотидах и работает с восстановлением кожи, JALUPRO — на аминокислотном комплексе с гиалуроновой кислотой и чаще берётся для плотности и тонуса, есть отдельный вариант для тонкой кожи вокруг глаз. Что именно подойдёт вам, решаем на приёме: это зависит от состояния кожи, возраста, зоны и того, что уже делали раньше. Полный перечень препаратов и цены — в прайсе выше."
+     "Препараты в линейке разные по действию. Полинуклеотиды (REJURAN, Plinest, PolyPhil) работают с восстановлением кожи и её плотностью. Гиалуроновая кислота (Hyalual, Restylane Skinboosters, REVOK50) — с увлажнением и упругостью. Аминокислотные комплексы JALUPRO дают фибробластам строительный материал для коллагена, а пептидные Aquashine — работают с тоном и пигментом. Под тонкую кожу вокруг глаз есть отдельные форматы почти в каждой линейке. Что именно подойдёт вам, решаем на приёме: это зависит от состояния кожи, возраста, зоны и того, что уже делали раньше. Таблица с составами — прямо под ценами."
     ],
     "uk": [
      "Препарат вводять тонкою іглою у шкіру по всій зоні. На відміну від філерів, задача не в тому, щоб заповнити обʼєм, а в тому, щоб змінити якість шкіри: зволоженість, щільність, тон, пружність. Результат розвивається поступово й залежить від курсу, а не від однієї процедури.",
-     "Препарати в лінійці різні за дією. REJURAN побудований на полінуклеотидах і працює з відновленням шкіри, JALUPRO — на амінокислотному комплексі з гіалуроновою кислотою і частіше береться для щільності й тонусу, є окремий варіант для тонкої шкіри навколо очей. Що саме підійде вам, вирішуємо на прийомі: це залежить від стану шкіри, віку, зони й того, що вже робили раніше. Повний перелік препаратів і ціни — у прайсі вище."
+     "Препарати в лінійці різні за дією. Полінуклеотиди (REJURAN, Plinest, PolyPhil) працюють із відновленням шкіри та її щільністю. Гіалуронова кислота (Hyalual, Restylane Skinboosters, REVOK50) — зі зволоженням і пружністю. Амінокислотні комплекси JALUPRO дають фібробластам будівельний матеріал для колагену, а пептидні Aquashine — працюють із тоном і пігментом. Під тонку шкіру навколо очей є окремі формати майже в кожній лінійці. Що саме підійде вам, вирішуємо на прийомі: це залежить від стану шкіри, віку, зони й того, що вже робили раніше. Таблиця зі складами — просто під цінами."
     ]
    },
    "who": {
@@ -3540,37 +3552,102 @@
       "Что внутри",
       "На какую задачу"
      ],
-     "note": "Какой препарат подойдёт именно вам, врач решает на осмотре.",
+     "note": "Какой препарат подойдёт именно вам, врач решает на осмотре. Производителей и состав приводим так, как их указывает сам производитель.",
      "rows": [
       [
-       "Rejuran I",
+       "Rejuran Healer",
        "полинуклеотиды из ДНК лосося (PharmaResearch, Корея)",
-       "тонкая кожа: зона вокруг глаз"
+       "лицо целиком: восстановление и плотность кожи"
+      ],
+      [
+       "Rejuran I",
+       "полинуклеотиды из ДНК лосося, формат для тонкой кожи",
+       "зона вокруг глаз"
       ],
       [
        "Rejuran HB",
        "полинуклеотиды и гиалуроновая кислота",
-       "лицо целиком: плотность плюс увлажнение"
+       "плотность плюс увлажнение"
       ],
       [
-       "Jalupro HMW",
-       "гиалуроновая кислота высокой молекулярной массы и аминокислоты (Professional Derma, Швейцария)",
-       "увлажнение и поддержка коллагена, без объёма"
+       "Plinest Eye",
+       "полинуклеотиды PN HPT 0,75 % — 15 мг на шприц 2 мл (Mastelli, Италия)",
+       "кожа вокруг глаз; курс 3–4 процедуры с интервалом 14–21 день"
       ],
       [
-       "Jalupro Super Hydro",
-       "гиалуроновая кислота двух молекулярных масс, семь аминокислот и пептиды",
-       "сухость, тусклость, уставшая кожа"
+       "PolyPhil",
+       "полинуклеотиды PN-HPT (Croma-Pharma, Австрия)",
+       "лицо: биостимуляция"
       ],
       [
-       "Jalupro Young Eye",
-       "гиалуроновая кислота с аминокислотами в формате для зоны вокруг глаз",
-       "кожа век и периорбитальная зона"
+       "PolyPhil Eye",
+       "полинуклеотиды PN-HPT в формате для периорбитальной зоны",
+       "кожа век и вокруг глаз"
+      ],
+      [
+       "PolyPhil Hair",
+       "полинуклеотиды PN-HPT для кожи головы",
+       "кожа головы и брови"
       ],
       [
        "PolyPhil NEXT",
-       "полинуклеотиды PN-HPT с несшитой гиалуроновой кислотой и маннитолом (Croma-Pharma, Австрия)",
-       "лицо, шея и декольте"
+       "полинуклеотиды PN-HPT с несшитой гиалуроновой кислотой и маннитолом",
+       "лицо, шея и декольте: биостимуляция с увлажнением"
+      ],
+      [
+       "Hyalual Light 1,1 %",
+       "несшитая гиалуроновая кислота 1,1 % и янтарная кислота в виде сукцината натрия 1,6 % (Institute Hyalual, Швейцария)",
+       "тонкая и сухая кожа: вокруг глаз, лоб, шея, декольте, кисти"
+      ],
+      [
+       "Hyalual Smart 1,8 %",
+       "несшитая гиалуроновая кислота 1,8 % и сукцинат натрия 1,6 %",
+       "комплексное омоложение: тон, пигментные пятна, текстура, упругость"
+      ],
+      [
+       "Restylane Skinbooster Vital",
+       "стабилизированная гиалуроновая кислота по технологии NASHA с лидокаином (Galderma)",
+       "зоны с более плотной кожей: средняя треть лица, щёки, кисти, декольте"
+      ],
+      [
+       "Restylane Skinbooster Vital Light",
+       "та же стабилизированная гиалуроновая кислота в облегчённом варианте",
+       "тонкая кожа: вокруг рта, вокруг глаз, шея"
+      ],
+      [
+       "REVOK50",
+       "стабилизированная гиалуроновая кислота 2200 кДа, 50 мг в шприце 2 мл, с аминокислотами: L-пролин, L-гидроксипролин, глицин, L-лизин",
+       "плотность и упругость кожи"
+      ],
+      [
+       "Jalupro HMW",
+       "аминокислотный комплекс и высокомолекулярная гиалуроновая кислота (Professional Derma, Швейцария)",
+       "лицо, шея, декольте и кисти: увлажнение и плотность; губы без добавления объёма"
+      ],
+      [
+       "Jalupro Super Hydro",
+       "тот же аминокислотный комплекс в более вязкой форме",
+       "глубокая поддержка связок и соединительной ткани — каркас лица"
+      ],
+      [
+       "Jalupro Young Eye",
+       "аминокислоты и гиалуроновая кислота двух плотностей",
+       "вокруг глаз: морщинки, круги и мешки, связанные с истончением кожи"
+      ],
+      [
+       "Aquashine",
+       "несшитая гиалуроновая кислота с биомиметическими пептидами, аминокислотами, витаминами и минералами (Caregen, Корея)",
+       "общее омоложение: тон, увлажнение, упругость"
+      ],
+      [
+       "Aquashine BR",
+       "тот же комплекс с пептидами, нацеленными на пигмент",
+       "тусклый тон и пигментация"
+      ],
+      [
+       "Neotiva RH Collagen",
+       "рекомбинантный коллаген",
+       "плотность и упругость кожи"
       ]
      ]
     },
@@ -3581,37 +3658,102 @@
       "Що всередині",
       "На яке завдання"
      ],
-     "note": "Який препарат підійде саме вам, лікарка вирішує на огляді.",
+     "note": "Який препарат підійде саме вам, лікарка вирішує на огляді. Виробників і склад наводимо так, як їх вказує сам виробник.",
      "rows": [
       [
-       "Rejuran I",
+       "Rejuran Healer",
        "полінуклеотиди з ДНК лосося (PharmaResearch, Корея)",
-       "тонка шкіра: зона навколо очей"
+       "обличчя цілком: відновлення і щільність шкіри"
+      ],
+      [
+       "Rejuran I",
+       "полінуклеотиди з ДНК лосося, формат для тонкої шкіри",
+       "зона навколо очей"
       ],
       [
        "Rejuran HB",
        "полінуклеотиди та гіалуронова кислота",
-       "обличчя цілком: щільність плюс зволоження"
+       "щільність плюс зволоження"
       ],
       [
-       "Jalupro HMW",
-       "гіалуронова кислота високої молекулярної маси та амінокислоти (Professional Derma, Швейцарія)",
-       "зволоження і підтримка колагену, без обʼєму"
+       "Plinest Eye",
+       "полінуклеотиди PN HPT 0,75 % — 15 мг на шприц 2 мл (Mastelli, Італія)",
+       "шкіра навколо очей; курс 3–4 процедури з інтервалом 14–21 день"
       ],
       [
-       "Jalupro Super Hydro",
-       "гіалуронова кислота двох молекулярних мас, сім амінокислот і пептиди",
-       "сухість, тьмяність, втомлена шкіра"
+       "PolyPhil",
+       "полінуклеотиди PN-HPT (Croma-Pharma, Австрія)",
+       "обличчя: біостимуляція"
       ],
       [
-       "Jalupro Young Eye",
-       "гіалуронова кислота з амінокислотами у форматі для зони навколо очей",
-       "шкіра повік і періорбітальна зона"
+       "PolyPhil Eye",
+       "полінуклеотиди PN-HPT у форматі для періорбітальної зони",
+       "шкіра повік і навколо очей"
+      ],
+      [
+       "PolyPhil Hair",
+       "полінуклеотиди PN-HPT для шкіри голови",
+       "шкіра голови та брови"
       ],
       [
        "PolyPhil NEXT",
-       "полінуклеотиди PN-HPT з незшитою гіалуроновою кислотою та манітолом (Croma-Pharma, Австрія)",
-       "обличчя, шия і декольте"
+       "полінуклеотиди PN-HPT з незшитою гіалуроновою кислотою та манітолом",
+       "обличчя, шия і декольте: біостимуляція зі зволоженням"
+      ],
+      [
+       "Hyalual Light 1,1 %",
+       "незшита гіалуронова кислота 1,1 % і бурштинова кислота у вигляді сукцинату натрію 1,6 % (Institute Hyalual, Швейцарія)",
+       "тонка і суха шкіра: навколо очей, чоло, шия, декольте, кисті"
+      ],
+      [
+       "Hyalual Smart 1,8 %",
+       "незшита гіалуронова кислота 1,8 % і сукцинат натрію 1,6 %",
+       "комплексне омолодження: тон, пігментні плями, текстура, пружність"
+      ],
+      [
+       "Restylane Skinbooster Vital",
+       "стабілізована гіалуронова кислота за технологією NASHA з лідокаїном (Galderma)",
+       "зони зі щільнішою шкірою: середня третина обличчя, щоки, кисті, декольте"
+      ],
+      [
+       "Restylane Skinbooster Vital Light",
+       "та сама стабілізована гіалуронова кислота в полегшеному варіанті",
+       "тонка шкіра: навколо рота, навколо очей, шия"
+      ],
+      [
+       "REVOK50",
+       "стабілізована гіалуронова кислота 2200 кДа, 50 мг у шприці 2 мл, з амінокислотами: L-пролін, L-гідроксипролін, гліцин, L-лізин",
+       "щільність і пружність шкіри"
+      ],
+      [
+       "Jalupro HMW",
+       "амінокислотний комплекс і високомолекулярна гіалуронова кислота (Professional Derma, Швейцарія)",
+       "обличчя, шия, декольте і кисті: зволоження та щільність; губи без додавання обʼєму"
+      ],
+      [
+       "Jalupro Super Hydro",
+       "той самий амінокислотний комплекс у вʼязкішій формі",
+       "глибока підтримка звʼязок і сполучної тканини — каркас обличчя"
+      ],
+      [
+       "Jalupro Young Eye",
+       "амінокислоти та гіалуронова кислота двох щільностей",
+       "навколо очей: зморшки, кола і мішки, повʼязані з витонченням шкіри"
+      ],
+      [
+       "Aquashine",
+       "незшита гіалуронова кислота з біоміметичними пептидами, амінокислотами, вітамінами й мінералами (Caregen, Корея)",
+       "загальне омолодження: тон, зволоження, пружність"
+      ],
+      [
+       "Aquashine BR",
+       "той самий комплекс із пептидами, націленими на пігмент",
+       "тьмяний тон і пігментація"
+      ],
+      [
+       "Neotiva RH Collagen",
+       "рекомбінантний колаген",
+       "щільність і пружність шкіри"
       ]
      ]
     },
@@ -3622,37 +3764,102 @@
       "Co obsahuje",
       "Na jaký úkol"
      ],
-     "note": "Který přípravek je vhodný právě pro vás, rozhodne lékařka při vyšetření.",
+     "note": "Který přípravek je vhodný právě pro vás, rozhodne lékařka při vyšetření. Výrobce a složení uvádíme tak, jak je uvádí sám výrobce.",
      "rows": [
       [
-       "Rejuran I",
+       "Rejuran Healer",
        "polynukleotidy z lososí DNA (PharmaResearch, Korea)",
-       "tenká pleť: oblast kolem očí"
+       "celý obličej: obnova a hustota pleti"
+      ],
+      [
+       "Rejuran I",
+       "polynukleotidy z lososí DNA, formát pro tenkou pleť",
+       "oblast kolem očí"
       ],
       [
        "Rejuran HB",
        "polynukleotidy a kyselina hyaluronová",
-       "celý obličej: hustota i hydratace"
+       "hustota plus hydratace"
       ],
       [
-       "Jalupro HMW",
-       "kyselina hyaluronová s vysokou molekulovou hmotností a aminokyseliny (Professional Derma, Švýcarsko)",
-       "hydratace a podpora kolagenu, bez objemu"
+       "Plinest Eye",
+       "polynukleotidy PN HPT 0,75 % — 15 mg ve stříkačce 2 ml (Mastelli, Itálie)",
+       "okolí očí; kúra 3–4 procedury s odstupem 14–21 dnů"
       ],
       [
-       "Jalupro Super Hydro",
-       "kyselina hyaluronová dvou molekulových hmotností, sedm aminokyselin a peptidy",
-       "suchost, šedý tón, unavená pleť"
+       "PolyPhil",
+       "polynukleotidy PN-HPT (Croma-Pharma, Rakousko)",
+       "obličej: biostimulace"
       ],
       [
-       "Jalupro Young Eye",
-       "kyselina hyaluronová s aminokyselinami ve formátu pro okolí očí",
-       "pleť víček a periorbitální oblast"
+       "PolyPhil Eye",
+       "polynukleotidy PN-HPT ve formátu pro periokulární oblast",
+       "víčka a okolí očí"
+      ],
+      [
+       "PolyPhil Hair",
+       "polynukleotidy PN-HPT pro pokožku hlavy",
+       "pokožka hlavy a obočí"
       ],
       [
        "PolyPhil NEXT",
-       "polynukleotidy PN-HPT s nezesíťovanou kyselinou hyaluronovou a mannitolem (Croma-Pharma, Rakousko)",
-       "obličej, krk a dekolt"
+       "polynukleotidy PN-HPT s nezesíťovanou kyselinou hyaluronovou a mannitolem",
+       "obličej, krk a dekolt: biostimulace s hydratací"
+      ],
+      [
+       "Hyalual Light 1,1 %",
+       "nezesíťovaná kyselina hyaluronová 1,1 % a kyselina jantarová ve formě sukcinátu sodného 1,6 % (Institute Hyalual, Švýcarsko)",
+       "tenká a suchá pleť: okolí očí, čelo, krk, dekolt, ruce"
+      ],
+      [
+       "Hyalual Smart 1,8 %",
+       "nezesíťovaná kyselina hyaluronová 1,8 % a sukcinát sodný 1,6 %",
+       "komplexní omlazení: tón, pigmentové skvrny, textura, pevnost"
+      ],
+      [
+       "Restylane Skinbooster Vital",
+       "stabilizovaná kyselina hyaluronová technologií NASHA s lidokainem (Galderma)",
+       "oblasti s hustší pletí: střední třetina obličeje, tváře, ruce, dekolt"
+      ],
+      [
+       "Restylane Skinbooster Vital Light",
+       "tatáž stabilizovaná kyselina hyaluronová v lehčí variantě",
+       "tenká pleť: okolí úst, okolí očí, krk"
+      ],
+      [
+       "REVOK50",
+       "stabilizovaná kyselina hyaluronová 2200 kDa, 50 mg ve stříkačce 2 ml, s aminokyselinami: L-prolin, L-hydroxyprolin, glycin, L-lysin",
+       "hustota a pevnost pleti"
+      ],
+      [
+       "Jalupro HMW",
+       "komplex aminokyselin a vysokomolekulární kyselina hyaluronová (Professional Derma, Švýcarsko)",
+       "obličej, krk, dekolt a ruce: hydratace a hustota; rty bez přidání objemu"
+      ],
+      [
+       "Jalupro Super Hydro",
+       "tentýž komplex aminokyselin ve viskóznější formě",
+       "hluboká podpora vazů a pojivové tkáně — nosná struktura obličeje"
+      ],
+      [
+       "Jalupro Young Eye",
+       "aminokyseliny a kyselina hyaluronová dvou hustot",
+       "okolí očí: jemné vrásky, kruhy a váčky spojené s tenčící se pletí"
+      ],
+      [
+       "Aquashine",
+       "nezesíťovaná kyselina hyaluronová s biomimetickými peptidy, aminokyselinami, vitaminy a minerály (Caregen, Korea)",
+       "celkové omlazení: tón, hydratace, pevnost"
+      ],
+      [
+       "Aquashine BR",
+       "tentýž komplex s peptidy zaměřenými na pigment",
+       "matný tón a pigmentace"
+      ],
+      [
+       "Neotiva RH Collagen",
+       "rekombinantní kolagen",
+       "hustota a pevnost pleti"
       ]
      ]
     },
@@ -3663,37 +3870,102 @@
       "What is inside",
       "What it is for"
      ],
-     "note": "Which product suits you is decided by the doctor at the appointment.",
+     "note": "Which product suits you is decided by the doctor at the consultation. Manufacturers and compositions are given as the manufacturer states them.",
      "rows": [
       [
-       "Rejuran I",
+       "Rejuran Healer",
        "polynucleotides from salmon DNA (PharmaResearch, Korea)",
-       "thin skin: the eye area"
+       "the whole face: skin repair and density"
+      ],
+      [
+       "Rejuran I",
+       "polynucleotides from salmon DNA, formulated for thin skin",
+       "the eye area"
       ],
       [
        "Rejuran HB",
        "polynucleotides with hyaluronic acid",
-       "the whole face: density plus hydration"
+       "density plus hydration"
       ],
       [
-       "Jalupro HMW",
-       "high molecular weight hyaluronic acid and amino acids (Professional Derma, Switzerland)",
-       "hydration and collagen support, no volume"
+       "Plinest Eye",
+       "PN HPT polynucleotides 0.75% — 15 mg in a 2 ml syringe (Mastelli, Italy)",
+       "the eye contour; a course of 3–4 sessions every 14–21 days"
       ],
       [
-       "Jalupro Super Hydro",
-       "hyaluronic acid of two molecular weights, seven amino acids and peptides",
-       "dryness, dull tone, tired skin"
+       "PolyPhil",
+       "PN-HPT polynucleotides (Croma-Pharma, Austria)",
+       "the face: biostimulation"
       ],
       [
-       "Jalupro Young Eye",
-       "hyaluronic acid with amino acids in a format for the eye area",
-       "eyelid skin and the periorbital area"
+       "PolyPhil Eye",
+       "PN-HPT polynucleotides in a periocular format",
+       "eyelids and the eye contour"
+      ],
+      [
+       "PolyPhil Hair",
+       "PN-HPT polynucleotides for the scalp",
+       "scalp and eyebrows"
       ],
       [
        "PolyPhil NEXT",
-       "PN-HPT polynucleotides with non-crosslinked hyaluronic acid and mannitol (Croma-Pharma, Austria)",
-       "face, neck and décolleté"
+       "PN-HPT polynucleotides with non-crosslinked hyaluronic acid and mannitol",
+       "face, neck and décolletage: biostimulation with hydration"
+      ],
+      [
+       "Hyalual Light 1.1%",
+       "non-crosslinked hyaluronic acid 1.1% and succinic acid as sodium succinate 1.6% (Institute Hyalual, Switzerland)",
+       "thin and dry skin: eye area, forehead, neck, décolletage, hands"
+      ],
+      [
+       "Hyalual Smart 1.8%",
+       "non-crosslinked hyaluronic acid 1.8% and sodium succinate 1.6%",
+       "overall rejuvenation: tone, pigment spots, texture, firmness"
+      ],
+      [
+       "Restylane Skinbooster Vital",
+       "stabilised hyaluronic acid on NASHA technology, with lidocaine (Galderma)",
+       "areas with thicker skin: midface, cheeks, hands, décolletage"
+      ],
+      [
+       "Restylane Skinbooster Vital Light",
+       "the same stabilised hyaluronic acid in a lighter version",
+       "thin skin: around the mouth, around the eyes, the neck"
+      ],
+      [
+       "REVOK50",
+       "stabilised hyaluronic acid 2200 kDa, 50 mg in a 2 ml syringe, with amino acids: L-proline, L-hydroxyproline, glycine, L-lysine",
+       "skin density and firmness"
+      ],
+      [
+       "Jalupro HMW",
+       "an amino acid cluster with high molecular weight hyaluronic acid (Professional Derma, Switzerland)",
+       "face, neck, décolletage and hands: hydration and density; lips without added volume"
+      ],
+      [
+       "Jalupro Super Hydro",
+       "the same amino acid cluster in a more viscous form",
+       "deep support for ligaments and connective tissue — the structure of the face"
+      ],
+      [
+       "Jalupro Young Eye",
+       "amino acids with bi-density hyaluronic acid",
+       "the eye area: fine lines, circles and bags linked to thinning skin"
+      ],
+      [
+       "Aquashine",
+       "non-crosslinked hyaluronic acid with biomimetic peptides, amino acids, vitamins and minerals (Caregen, Korea)",
+       "overall rejuvenation: tone, hydration, firmness"
+      ],
+      [
+       "Aquashine BR",
+       "the same complex with peptides aimed at pigment",
+       "dull tone and pigmentation"
+      ],
+      [
+       "Neotiva RH Collagen",
+       "recombinant collagen",
+       "skin density and firmness"
       ]
      ]
     },
@@ -3704,37 +3976,102 @@
       "Qué contiene",
       "Para qué"
      ],
-     "note": "Qué producto te conviene lo decide la doctora en la consulta.",
+     "note": "Qué producto le conviene lo decide la doctora en la consulta. Los fabricantes y las composiciones se indican tal como los declara el fabricante.",
      "rows": [
       [
-       "Rejuran I",
+       "Rejuran Healer",
        "polinucleótidos de ADN de salmón (PharmaResearch, Corea)",
-       "piel fina: el contorno de ojos"
+       "todo el rostro: reparación y densidad de la piel"
+      ],
+      [
+       "Rejuran I",
+       "polinucleótidos de ADN de salmón, formulado para piel fina",
+       "el contorno de ojos"
       ],
       [
        "Rejuran HB",
        "polinucleótidos con ácido hialurónico",
-       "todo el rostro: densidad e hidratación"
+       "densidad más hidratación"
       ],
       [
-       "Jalupro HMW",
-       "ácido hialurónico de alto peso molecular y aminoácidos (Professional Derma, Suiza)",
-       "hidratación y apoyo al colágeno, sin volumen"
+       "Plinest Eye",
+       "polinucleótidos PN HPT 0,75 % — 15 mg en jeringa de 2 ml (Mastelli, Italia)",
+       "contorno de ojos; pauta de 3–4 sesiones cada 14–21 días"
       ],
       [
-       "Jalupro Super Hydro",
-       "ácido hialurónico de dos pesos moleculares, siete aminoácidos y péptidos",
-       "sequedad, tono apagado, piel cansada"
+       "PolyPhil",
+       "polinucleótidos PN-HPT (Croma-Pharma, Austria)",
+       "rostro: bioestimulación"
       ],
       [
-       "Jalupro Young Eye",
-       "ácido hialurónico con aminoácidos en formato para el contorno de ojos",
-       "piel de los párpados y zona periorbitaria"
+       "PolyPhil Eye",
+       "polinucleótidos PN-HPT en formato periocular",
+       "párpados y contorno de ojos"
+      ],
+      [
+       "PolyPhil Hair",
+       "polinucleótidos PN-HPT para el cuero cabelludo",
+       "cuero cabelludo y cejas"
       ],
       [
        "PolyPhil NEXT",
-       "polinucleótidos PN-HPT con ácido hialurónico no reticulado y manitol (Croma-Pharma, Austria)",
-       "rostro, cuello y escote"
+       "polinucleótidos PN-HPT con ácido hialurónico no reticulado y manitol",
+       "rostro, cuello y escote: bioestimulación con hidratación"
+      ],
+      [
+       "Hyalual Light 1,1 %",
+       "ácido hialurónico no reticulado 1,1 % y ácido succínico en forma de succinato sódico 1,6 % (Institute Hyalual, Suiza)",
+       "piel fina y seca: contorno de ojos, frente, cuello, escote, manos"
+      ],
+      [
+       "Hyalual Smart 1,8 %",
+       "ácido hialurónico no reticulado 1,8 % y succinato sódico 1,6 %",
+       "rejuvenecimiento integral: tono, manchas, textura, firmeza"
+      ],
+      [
+       "Restylane Skinbooster Vital",
+       "ácido hialurónico estabilizado con tecnología NASHA y lidocaína (Galderma)",
+       "zonas de piel más gruesa: tercio medio facial, mejillas, manos, escote"
+      ],
+      [
+       "Restylane Skinbooster Vital Light",
+       "el mismo ácido hialurónico estabilizado en versión más ligera",
+       "piel fina: alrededor de la boca, contorno de ojos, cuello"
+      ],
+      [
+       "REVOK50",
+       "ácido hialurónico estabilizado de 2200 kDa, 50 mg en jeringa de 2 ml, con aminoácidos: L-prolina, L-hidroxiprolina, glicina, L-lisina",
+       "densidad y firmeza de la piel"
+      ],
+      [
+       "Jalupro HMW",
+       "complejo de aminoácidos con ácido hialurónico de alto peso molecular (Professional Derma, Suiza)",
+       "rostro, cuello, escote y manos: hidratación y densidad; labios sin añadir volumen"
+      ],
+      [
+       "Jalupro Super Hydro",
+       "el mismo complejo de aminoácidos en una forma más viscosa",
+       "soporte profundo de ligamentos y tejido conectivo — la estructura del rostro"
+      ],
+      [
+       "Jalupro Young Eye",
+       "aminoácidos y ácido hialurónico de dos densidades",
+       "contorno de ojos: líneas finas, ojeras y bolsas por adelgazamiento de la piel"
+      ],
+      [
+       "Aquashine",
+       "ácido hialurónico no reticulado con péptidos biomiméticos, aminoácidos, vitaminas y minerales (Caregen, Corea)",
+       "rejuvenecimiento general: tono, hidratación, firmeza"
+      ],
+      [
+       "Aquashine BR",
+       "el mismo complejo con péptidos dirigidos al pigmento",
+       "tono apagado y pigmentación"
+      ],
+      [
+       "Neotiva RH Collagen",
+       "colágeno recombinante",
+       "densidad y firmeza de la piel"
       ]
      ]
     }
@@ -3746,7 +4083,7 @@
    "service": "injections",
    "group": "injections",
    "rows": [
-    7
+    19
    ],
    "duration": 60,
    "title": {
@@ -3828,8 +4165,8 @@
    "service": "injections",
    "group": "injections",
    "rows": [
-    8,
-    9
+    20,
+    21
    ],
    "duration": 45,
    "title": {

@@ -546,7 +546,14 @@ def hero_price(city, lang):
     return '%s %d %s %s' % (PRICE_FROM[lang], min(vals), studios[city]['currency'], PRICE_UNIT[lang])
 
 
-def row_val(r, city):
+def _vis(r):
+    """Строка прайса показывается: есть цена или помечена «на консультации»."""
+    return _num(r) is not None or bool(r.get('ask'))
+
+
+def row_val(r, city, lang='ru'):
+    if r.get('ask'):
+        return PRICE_ASK.get(lang, PRICE_ASK['ru'])
     v = r.get('now') or r.get('price')
     return v if isinstance(v, str) else '%s %s' % (v, studios[city]['currency'])
 
@@ -557,13 +564,13 @@ def price_rows(group, city, lang, limit=None, order=True, link=None):
     link='anchor' — название ведёт к описанию на этой же странице,
     link='page'   — на отдельную страницу процедуры."""
     g = prices['groups'].get(group) or {}
-    rr = [(i, r) for i, r in enumerate(g.get(lang) or g.get('ru') or []) if _num(r) is not None]
+    rr = [(i, r) for i, r in enumerate(g.get(lang) or g.get('ru') or []) if _vis(r)]
     if order:
-        rr = sorted(rr, key=lambda ir: _num(ir[1]) or 0)
+        rr = sorted(rr, key=lambda ir: _num(ir[1]) or 10 ** 9)
     if limit:
         rr = rr[:limit]
     return ''.join('<div class="prow"><span>%s</span><span>%s</span></div>'
-                   % (row_label(group, i, r, city, lang, link), e(row_val(r, city)))
+                   % (row_label(group, i, r, city, lang, link), e(row_val(r, city, lang)))
                    for i, r in rr)
 
 
@@ -642,7 +649,7 @@ def proc_price_tables(key, city, lang):
     groups = service_groups(key, city, lang)
     mine = {g: [(i, r) for i, r in enumerate(prices['groups'][g].get(lang)
                                              or prices['groups'][g].get('ru') or [])
-                if _num(r) is not None] for g in groups}
+                if _vis(r)] for g in groups}
     used = set()
     out = ''
     u = PROC_UI[lang]
@@ -667,21 +674,23 @@ def proc_price_tables(key, city, lang):
             if multi:
                 vals = [n for n in (_num(r) for _i, r in rows) if n]
                 price = ('%s %d %s' % (PRICE_FROM[lang], min(vals), studios[city]['currency'])
-                         if vals else '')
+                         if vals else PRICE_ASK.get(lang, PRICE_ASK['ru']))
             else:
-                price = row_val(rows[0][1], city)
+                price = row_val(rows[0][1], city, lang)
             if not has_text:
                 for i, r in rows:
                     body += ('<div class="prow"><span>%s</span><span>%s</span></div>'
                              % (e(r['label']) if multi else
-                                row_label(it['group'], i, r, city, lang), e(row_val(r, city))))
+                                row_label(it['group'], i, r, city, lang),
+                                e(row_val(r, city, lang))))
                 continue
             # цена и описание в одной строке: нажал — раскрылось
             variants = ''
             if multi:
                 variants = ('<div class="ptable ptable-in">%s</div>'
                             % ''.join('<div class="prow"><span>%s</span><span>%s</span></div>'
-                                      % (e(r['label']), e(row_val(r, city))) for _i, r in rows))
+                                      % (e(r['label']), e(row_val(r, city, lang)))
+                                      for _i, r in rows))
             meta = proc_meta_dur(it, lang)
             body += ('<details class="prow-d proc" id="p-%s">'
                      '<summary class="prow prow-sum">'
@@ -706,7 +715,7 @@ def proc_price_tables(key, city, lang):
         if not rest:
             continue
         body = ''.join('<div class="prow"><span>%s</span><span>%s</span></div>'
-                       % (row_label(g, i, r, city, lang, 'page'), e(row_val(r, city)))
+                       % (row_label(g, i, r, city, lang, 'page'), e(row_val(r, city, lang)))
                        for i, r in rest)
         out += ('<h3 class="ptab-h">%s</h3><div class="ptable">%s</div>'
                 % (e((PGROUP_TITLE.get(g) or {}).get(lang, g)), body))
@@ -4303,9 +4312,9 @@ def build_proc(lang, city, it):
     g = prices['groups'].get(it['group']) or {}
     rr = g.get(lang) or g.get('ru') or []
     for i in it['rows']:
-        if i < len(rr) and _num(rr[i]) is not None:
+        if i < len(rr) and _vis(rr[i]):
             rows += ('<div class="prow"><span>%s</span><span>%s</span></div>'
-                     % (e(rr[i]['label']), e(row_val(rr[i], city))))
+                     % (e(rr[i]['label']), e(row_val(rr[i], city, lang))))
     price_block = ('<section class="tint"><div class="wrap"><div class="sec-head"><h2>%s</h2></div>'
                    '<div class="ptable">%s</div>'
                    '<div class="more-list"><a href="/%s/%s/%s/">%s</a></div>'

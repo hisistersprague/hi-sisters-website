@@ -3253,8 +3253,56 @@
      "price": 4500
     },
     {
-     "label": "Биоревитализация REVOK",
+     "label": "Биоревитализация REVOK50",
      "price": 6000
+    },
+    {
+     "label": "Биоревитализация HYALUAL LIGHT 1.1%",
+     "ask": true
+    },
+    {
+     "label": "Биоревитализация HYALUAL SMART 1.8%",
+     "ask": true
+    },
+    {
+     "label": "Биоревитализация NEOTIVA RH COLLAGEN",
+     "ask": true
+    },
+    {
+     "label": "Биоревитализация PLINEST EYE",
+     "ask": true
+    },
+    {
+     "label": "Биоревитализация REJURAN HEALER",
+     "ask": true
+    },
+    {
+     "label": "Биоревитализация AQUASHINE",
+     "ask": true
+    },
+    {
+     "label": "Биоревитализация AQUASHINE BR",
+     "ask": true
+    },
+    {
+     "label": "Биоревитализация RESTYLANE SKINBOOSTER VITAL",
+     "ask": true
+    },
+    {
+     "label": "Биоревитализация RESTYLANE SKINBOOSTER VITAL LIGHT",
+     "ask": true
+    },
+    {
+     "label": "Биоревитализация POLYPHIL",
+     "ask": true
+    },
+    {
+     "label": "Биоревитализация POLYPHIL EYE",
+     "ask": true
+    },
+    {
+     "label": "Биоревитализация POLYPHIL HAIR",
+     "ask": true
     },
     {
      "label": "Контурная пластика губ Stylage XXL",
@@ -3295,8 +3343,56 @@
      "price": 4500
     },
     {
-     "label": "Біоревіталізація REVOK",
+     "label": "Біоревіталізація REVOK50",
      "price": 6000
+    },
+    {
+     "label": "Біоревіталізація HYALUAL LIGHT 1.1%",
+     "ask": true
+    },
+    {
+     "label": "Біоревіталізація HYALUAL SMART 1.8%",
+     "ask": true
+    },
+    {
+     "label": "Біоревіталізація NEOTIVA RH COLLAGEN",
+     "ask": true
+    },
+    {
+     "label": "Біоревіталізація PLINEST EYE",
+     "ask": true
+    },
+    {
+     "label": "Біоревіталізація REJURAN HEALER",
+     "ask": true
+    },
+    {
+     "label": "Біоревіталізація AQUASHINE",
+     "ask": true
+    },
+    {
+     "label": "Біоревіталізація AQUASHINE BR",
+     "ask": true
+    },
+    {
+     "label": "Біоревіталізація RESTYLANE SKINBOOSTER VITAL",
+     "ask": true
+    },
+    {
+     "label": "Біоревіталізація RESTYLANE SKINBOOSTER VITAL LIGHT",
+     "ask": true
+    },
+    {
+     "label": "Біоревіталізація POLYPHIL",
+     "ask": true
+    },
+    {
+     "label": "Біоревіталізація POLYPHIL EYE",
+     "ask": true
+    },
+    {
+     "label": "Біоревіталізація POLYPHIL HAIR",
+     "ask": true
     },
     {
      "label": "Контурна пластика губ Stylage XXL",
@@ -3337,8 +3433,56 @@
      "price": 4500
     },
     {
-     "label": "REVOK biorevitalisation",
+     "label": "REVOK50 biorevitalisation",
      "price": 6000
+    },
+    {
+     "label": "HYALUAL LIGHT 1.1% biorevitalisation",
+     "ask": true
+    },
+    {
+     "label": "HYALUAL SMART 1.8% biorevitalisation",
+     "ask": true
+    },
+    {
+     "label": "NEOTIVA RH COLLAGEN biorevitalisation",
+     "ask": true
+    },
+    {
+     "label": "PLINEST EYE biorevitalisation",
+     "ask": true
+    },
+    {
+     "label": "REJURAN HEALER biorevitalisation",
+     "ask": true
+    },
+    {
+     "label": "AQUASHINE biorevitalisation",
+     "ask": true
+    },
+    {
+     "label": "AQUASHINE BR biorevitalisation",
+     "ask": true
+    },
+    {
+     "label": "RESTYLANE SKINBOOSTER VITAL biorevitalisation",
+     "ask": true
+    },
+    {
+     "label": "RESTYLANE SKINBOOSTER VITAL LIGHT biorevitalisation",
+     "ask": true
+    },
+    {
+     "label": "POLYPHIL biorevitalisation",
+     "ask": true
+    },
+    {
+     "label": "POLYPHIL EYE biorevitalisation",
+     "ask": true
+    },
+    {
+     "label": "POLYPHIL HAIR biorevitalisation",
+     "ask": true
     },
     {
      "label": "Lip filler, Stylage XXL",
@@ -3379,8 +3523,56 @@
      "price": 4500
     },
     {
-     "label": "Biorrevitalización REVOK",
+     "label": "Biorrevitalización REVOK50",
      "price": 6000
+    },
+    {
+     "label": "Biorrevitalización HYALUAL LIGHT 1.1%",
+     "ask": true
+    },
+    {
+     "label": "Biorrevitalización HYALUAL SMART 1.8%",
+     "ask": true
+    },
+    {
+     "label": "Biorrevitalización NEOTIVA RH COLLAGEN",
+     "ask": true
+    },
+    {
+     "label": "Biorrevitalización PLINEST EYE",
+     "ask": true
+    },
+    {
+     "label": "Biorrevitalización REJURAN HEALER",
+     "ask": true
+    },
+    {
+     "label": "Biorrevitalización AQUASHINE",
+     "ask": true
+    },
+    {
+     "label": "Biorrevitalización AQUASHINE BR",
+     "ask": true
+    },
+    {
+     "label": "Biorrevitalización RESTYLANE SKINBOOSTER VITAL",
+     "ask": true
+    },
+    {
+     "label": "Biorrevitalización RESTYLANE SKINBOOSTER VITAL LIGHT",
+     "ask": true
+    },
+    {
+     "label": "Biorrevitalización POLYPHIL",
+     "ask": true
+    },
+    {
+     "label": "Biorrevitalización POLYPHIL EYE",
+     "ask": true
+    },
+    {
+     "label": "Biorrevitalización POLYPHIL HAIR",
+     "ask": true
     },
     {
      "label": "Aumento de labios, Stylage XXL",
