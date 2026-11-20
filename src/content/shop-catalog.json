@@ -2069,7 +2069,7 @@
   "cat": "hair-loss",
   "stock": "pre",
   "img": "catalog/or-hair-loss-system-shampoo-250ml-250ml.jpg",
-  "dupe": false,
+  "dupe": true,
   "code": "",
   "desc": {
    "ru": "Шампунь — против выпадения волос",
@@ -2842,7 +2842,7 @@
   "cat": "hair-care",
   "stock": "pre",
   "img": "catalog/dsd-dixidox-de-luxe-peeling-200ml.jpg",
-  "dupe": false,
+  "dupe": true,
   "code": "1.3",
   "desc": {
    "ru": "Пилинг — для жирной кожи головы",
@@ -2921,7 +2921,7 @@
   "cat": "hair-loss",
   "stock": "pre",
   "img": "catalog/dsd-dixidox-de-luxe-antidandruff-shampoo-200ml.jpg",
-  "dupe": false,
+  "dupe": true,
   "code": "2.1",
   "desc": {
    "ru": "Шампунь — против перхоти",
@@ -3000,7 +3000,7 @@
   "cat": "hair-loss",
   "stock": "pre",
   "img": "catalog/dsd-dixidox-de-luxe-intense-shampoo-200ml.jpg",
-  "dupe": false,
+  "dupe": true,
   "code": "3.1",
   "desc": {
    "ru": "Шампунь — против выпадения волос",
@@ -3080,7 +3080,7 @@
   "cat": "hair-loss",
   "stock": "pre",
   "img": "catalog/dsd-crexepil-de-luxe-classic-lotion-100ml.jpg",
-  "dupe": false,
+  "dupe": true,
   "code": "3.4.2",
   "desc": {
    "ru": "Лосьон — против выпадения волос",
@@ -3106,7 +3106,7 @@
   "cat": "hair-loss",
   "stock": "pre",
   "img": "",
-  "dupe": false,
+  "dupe": true,
   "code": "3.4.3A",
   "desc": {
    "ru": "Лосьон — против выпадения волос",
@@ -3159,7 +3159,7 @@
   "cat": "hair-loss",
   "stock": "pre",
   "img": "catalog/dsd-capixyl-placenta-shock-de-luxe-lotion-100ml.jpg",
-  "dupe": false,
+  "dupe": true,
   "code": "3.4.4",
   "desc": {
    "ru": "Лосьон — против выпадения волос",
@@ -3212,7 +3212,7 @@
   "cat": "hair-loss",
   "stock": "pre",
   "img": "",
-  "dupe": false,
+  "dupe": true,
   "code": "3.4.5B",
   "desc": {
    "ru": "Масло — против выпадения волос",
@@ -3290,7 +3290,7 @@
   "cat": "hair-loss",
   "stock": "pre",
   "img": "catalog/dsd-dixidox-de-luxe-keratin-treatment-shampoo-200ml.jpg",
-  "dupe": false,
+  "dupe": true,
   "code": "4.1",
   "desc": {
    "ru": "Шампунь — против выпадения волос",
@@ -3370,7 +3370,7 @@
   "cat": "hair-loss",
   "stock": "pre",
   "img": "catalog/dsd-dixidox-de-luxe-triple-action-conditioner-200ml.jpg",
-  "dupe": false,
+  "dupe": true,
   "code": "4.2",
   "desc": {
    "ru": "Кондиционер — против выпадения волос",
@@ -3423,7 +3423,7 @@
   "cat": "hair-loss",
   "stock": "pre",
   "img": "catalog/dsd-dixidox-de-luxe-keratin-treatment-mask-50ml.jpg",
-  "dupe": false,
+  "dupe": true,
   "code": "4.3s",
   "desc": {
    "ru": "Маска — против выпадения волос",
@@ -3449,7 +3449,7 @@
   "cat": "hair-loss",
   "stock": "pre",
   "img": "catalog/dsd-dixidox-de-luxe-keratin-treatment-mask-200ml.jpg",
-  "dupe": false,
+  "dupe": true,
   "code": "4.3",
   "desc": {
    "ru": "Маска — против выпадения волос",
@@ -3818,7 +3818,7 @@
   "cat": "hair-wash",
   "stock": "pre",
   "img": "catalog/dsd-botox-hair-therapy-balsam-150ml.jpg",
-  "dupe": false,
+  "dupe": true,
   "code": "5.2.1.",
   "desc": {
    "ru": "Шампунь — для реструктуризации волос",
@@ -3993,7 +3993,7 @@
   "cur": "CZK",
   "cat": "face",
   "stock": "pre",
-  "img": "",
+  "img": "catalog/jm-age-intervention-gentle-cleanser-178ml.jpg",
   "dupe": true,
   "code": "",
   "desc": {
@@ -4002,6 +4002,13 @@
    "cs": "Čisticí přípravek — anti-age péče",
    "en": "Cleanser — anti-ageing care",
    "es": "Limpiador — cuidado antiedad"
+  },
+  "ing": {
+   "ru": "ромашка, зелёный чай, экстракт виноградных косточек, глицерин",
+   "uk": "ромашка, зелений чай, екстракт виноградних кісточок, гліцерин",
+   "cs": "heřmánek, zelený čaj, extrakt z hroznových jader, glycerin",
+   "en": "chamomile, green tea, grape seed extract, glycerin",
+   "es": "manzanilla, té verde, extracto de semilla de uva, glicerina"
   }
  },
  {
@@ -4065,7 +4072,7 @@
   "cat": "face",
   "stock": "pre",
   "img": "catalog/jm-c-esta-cleansing-gel-177ml.jpg",
-  "dupe": false,
+  "dupe": true,
   "code": "",
   "desc": {
    "ru": "Очищающее средство — для очищения кожи",
@@ -4344,7 +4351,7 @@
   "cat": "face",
   "stock": "pre",
   "img": "",
-  "dupe": false,
+  "dupe": true,
   "code": "",
   "desc": {
    "ru": "Крем с SPF — защита от солнца",
@@ -4381,7 +4388,7 @@
   "cur": "CZK",
   "cat": "face",
   "stock": "pre",
-  "img": "",
+  "img": "catalog/jm-age-intervention-retinol-plus-28g.jpg",
   "dupe": false,
   "code": "",
   "desc": {
@@ -4407,7 +4414,7 @@
   "cur": "CZK",
   "cat": "face",
   "stock": "pre",
-  "img": "",
+  "img": "catalog/jm-age-intervention-retinol-plus-xc-28g.jpg",
   "dupe": false,
   "code": "",
   "desc": {
@@ -4433,7 +4440,7 @@
   "cur": "CZK",
   "cat": "face",
   "stock": "pre",
-  "img": "",
+  "img": "catalog/jm-marini-luminate-face-lotion-30ml.jpg",
   "dupe": false,
   "code": "",
   "desc": {
@@ -4459,7 +4466,7 @@
   "cur": "CZK",
   "cat": "face",
   "stock": "pre",
-  "img": "",
+  "img": "catalog/jm-marini-luminate-face-lotion-xc-30ml.jpg",
   "dupe": false,
   "code": "",
   "desc": {
@@ -4485,7 +4492,7 @@
   "cur": "CZK",
   "cat": "face",
   "stock": "pre",
-  "img": "",
+  "img": "catalog/jm-age-intervention-duality-28g.jpg",
   "dupe": false,
   "code": "",
   "desc": {
@@ -4512,7 +4519,7 @@
   "cat": "face",
   "stock": "pre",
   "img": "",
-  "dupe": false,
+  "dupe": true,
   "code": "",
   "desc": {
    "ru": "Крем — для обновления и выравнивания кожи",
@@ -7419,7 +7426,7 @@
   "cur": "CZK",
   "cat": "body",
   "stock": "pre",
-  "img": "",
+  "img": "catalog/dmk-solar-damage-180ml.jpg",
   "code": "",
   "desc": {
    "ru": "Увлажняет, восстанавливает, снимает раздражение, стимулирует обновление",
@@ -7757,7 +7764,7 @@
   "cur": "CZK",
   "cat": "face",
   "stock": "pre",
-  "img": "",
+  "img": "catalog/dmk-calerase-60ml.jpg",
   "code": "",
   "desc": {
    "ru": "Крем — для увлажнения кожи",
@@ -7783,7 +7790,7 @@
   "cur": "CZK",
   "cat": "body",
   "stock": "pre",
-  "img": "",
+  "img": "catalog/dmk-deep-freeze-120ml.jpg",
   "code": "",
   "desc": {
    "ru": "Снимает раздражение, убирает отёки, улучшает микроциркуляцию",
@@ -7791,6 +7798,13 @@
    "cs": "Zklidňuje podráždění, odstraňuje otoky, zlepšuje mikrocirkulaci",
    "en": "Soothes irritation, reduces puffiness, improves microcirculation",
    "es": "Calma la irritación, reduce la hinchazón, mejora la microcirculación"
+  },
+  "ing": {
+   "ru": "ментол 5,65 %, камфора, экстракт листьев мате, арника горная, босвеллия (индийский ладан)",
+   "uk": "ментол 5,65 %, камфора, екстракт листя мате, арніка гірська, босвелія (індійський ладан)",
+   "cs": "mentol 5,65 %, kafr, extrakt z listů maté, arnika horská, boswellie (indické kadidlo)",
+   "en": "menthol 5.65%, camphor, maté leaf extract, arnica, boswellia (Indian frankincense)",
+   "es": "mentol 5,65 %, alcanfor, extracto de hoja de mate, árnica, boswellia (incienso indio)"
   }
  },
  {
@@ -7907,7 +7921,7 @@
   "cur": "CZK",
   "cat": "face",
   "stock": "pre",
-  "img": "",
+  "img": "catalog/dmk-pore-reduction-plus-30ml.jpg",
   "code": "",
   "desc": {
    "ru": "Сыворотка — для питания и восстановления кожи",
@@ -7967,6 +7981,13 @@
    "cs": "Vyživuje, regeneruje, rozjasňuje, působí protizánětlivě",
    "en": "Nourishes, regenerates, brightens, anti-inflammatory",
    "es": "Nutre, regenera, ilumina, antiinflamatorio"
+  },
+  "ing": {
+   "ru": "3-O-этил аскорбиновая кислота (витамин C, 6 %), бета-глюкан, пантенол, декстран, трифторацетил трипептид-2",
+   "uk": "3-O-етил аскорбінова кислота (вітамін C, 6 %), бета-глюкан, пантенол, декстран, трифторацетил трипептид-2",
+   "cs": "3-O-ethyl askorbová kyselina (vitamin C, 6 %), beta-glukan, panthenol, dextran, trifluoroacetyl tripeptid-2",
+   "en": "3-O-ethyl ascorbic acid (vitamin C, 6%), beta-glucan, panthenol, dextran, trifluoroacetyl tripeptide-2",
+   "es": "ácido 3-O-etil ascórbico (vitamina C, 6 %), beta-glucano, pantenol, dextrano, trifluoroacetil tripéptido-2"
   }
  },
  {
@@ -8268,7 +8289,8 @@
    "cs": "Kůra bílého dubu, Extrakt z juky, Březová kůra, Sója",
    "en": "White oak bark, Yucca extract, Birch bark, Soybean",
    "es": "Corteza de roble blanco, Extracto de yuca, Corteza de abedul, Soja"
-  }
+  },
+  "dupe": true
  },
  {
   "brand": "DMK",
@@ -8346,7 +8368,8 @@
    "cs": "Beta-glukan, Dýňový olej, Světlicový olej",
    "en": "Beta-glucan, Pumpkin seed oil, Safflower oil",
    "es": "Betaglucano, Aceite de semilla de calabaza, Aceite de cártamo"
-  }
+  },
+  "dupe": true
  },
  {
   "brand": "DMK",
@@ -8565,7 +8588,7 @@
   "cur": "CZK",
   "cat": "face",
   "stock": "pre",
-  "img": "",
+  "img": "catalog/dmk-nutrascreen-color-balanced-50ml.jpg",
   "code": "",
   "desc": {
    "ru": "Увлажняет, питает",
@@ -8573,6 +8596,13 @@
    "cs": "Hydratuje, vyživuje",
    "en": "Hydrates, nourishes",
    "es": "Hidrata, nutre"
+  },
+  "ing": {
+   "ru": "оксид цинка, гидролизованный рисовый протеин, экстракт таволги, галактоарабинан, фермент альтеромонаса; тон — диоксид титана и оксиды железа",
+   "uk": "оксид цинку, гідролізований рисовий протеїн, екстракт таволги, галактоарабінан, фермент альтеромонаса; тон — діоксид титану та оксиди заліза",
+   "cs": "oxid zinečnatý, hydrolyzovaný rýžový protein, extrakt z tužebníku, galaktoarabinan, ferment Alteromonas; tón — oxid titaničitý a oxidy železa",
+   "en": "zinc oxide, hydrolysed rice protein, meadowsweet extract, galactoarabinan, Alteromonas ferment; tint — titanium dioxide and iron oxides",
+   "es": "óxido de zinc, proteína de arroz hidrolizada, extracto de reina de los prados, galactoarabinano, fermento de Alteromonas; color — dióxido de titanio y óxidos de hierro"
   }
  },
  {
@@ -8625,7 +8655,8 @@
    "cs": "Hořečnatý askorbyl-fosfát, Palmitoyl oligopeptid, Palmitoyl tetrapeptid-7, Světlicový olej, Vitamin A",
    "en": "Magnesium ascorbyl phosphate, Palmitoyl oligopeptide, Palmitoyl tetrapeptide-7, Safflower oil, Vitamin A",
    "es": "Ascorbil fosfato de magnesio, Palmitoil oligopéptido, Palmitoil tetrapéptido-7, Aceite de cártamo, Vitamina A"
-  }
+  },
+  "dupe": true
  },
  {
   "brand": "DMK",

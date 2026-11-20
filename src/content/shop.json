@@ -210,6 +210,13 @@
    "cs": "Olej — péče o pokožku hlavy",
    "en": "Oil — scalp care",
    "es": "Aceite — cuidado del cuero cabelludo"
+  },
+  "ing": {
+   "ru": "Комплекс эфирных масел",
+   "uk": "Комплекс ефірних олій",
+   "cs": "Komplex esenciálních olejů",
+   "en": "Essential oil complex",
+   "es": "Complejo de aceites esenciales"
   }
  },
  {
@@ -1399,6 +1406,13 @@
    "cs": "Opalovací krém — ochrana SPF 30",
    "en": "Sunscreen — SPF 30 protection",
    "es": "Protector solar — protección SPF 30"
+  },
+  "ing": {
+   "ru": "оксид цинка, гидролизованный рисовый протеин, экстракт горца птичьего, фермент альтеромонаса, морская соль, витамин Е",
+   "uk": "оксид цинку, гідролізований рисовий протеїн, екстракт горцю пташиного, фермент альтеромонаса, морська сіль, вітамін Е",
+   "cs": "oxid zinečnatý, hydrolyzovaný rýžový protein, extrakt z truskavce ptačího, ferment Alteromonas, mořská sůl, vitamin E",
+   "en": "zinc oxide, hydrolysed rice protein, knotgrass extract, Alteromonas ferment, sea salt, vitamin E",
+   "es": "óxido de zinc, proteína de arroz hidrolizada, extracto de centinodia, fermento de Alteromonas, sal marina, vitamina E"
   }
  },
  {
@@ -1433,13 +1447,20 @@
   "price": 2100,
   "cat": "face",
   "stock": "in",
-  "img": "",
+  "img": "catalog/dmk-ultra-screen-spf50-65ml.jpg",
   "desc": {
    "ru": "Солнцезащитный крем — защита SPF 50",
    "uk": "Сонцезахисний крем — захист SPF 50",
    "cs": "Opalovací krém — ochrana SPF 50",
    "en": "Sunscreen — SPF 50 protection",
    "es": "Protector solar — protección SPF 50"
+  },
+  "ing": {
+   "ru": "оксид цинка 12 %, ниацинамид, бисаболол, аллантоин, токоферол",
+   "uk": "оксид цинку 12 %, ніацинамід, бісаболол, алантоїн, токоферол",
+   "cs": "oxid zinečnatý 12 %, niacinamid, bisabolol, alantoin, tokoferol",
+   "en": "zinc oxide 12%, niacinamide, bisabolol, allantoin, tocopherol",
+   "es": "óxido de zinc 12 %, niacinamida, bisabolol, alantoína, tocoferol"
   }
  },
  {
@@ -1498,13 +1519,20 @@
   "price": 1200,
   "cat": "face",
   "stock": "in",
-  "img": "",
+  "img": "catalog/jm-age-intervention-gentle-cleanser-178ml.jpg",
   "desc": {
    "ru": "Очищающее средство — очищение лица",
    "uk": "Очищувальний засіб — очищення обличчя",
    "cs": "Čisticí přípravek — čištění pleti",
    "en": "Cleanser — facial cleansing",
    "es": "Limpiador — limpieza facial"
+  },
+  "ing": {
+   "ru": "ромашка, зелёный чай, экстракт виноградных косточек, глицерин",
+   "uk": "ромашка, зелений чай, екстракт виноградних кісточок, гліцерин",
+   "cs": "heřmánek, zelený čaj, extrakt z hroznových jader, glycerin",
+   "en": "chamomile, green tea, grape seed extract, glycerin",
+   "es": "manzanilla, té verde, extracto de semilla de uva, glicerina"
   }
  },
  {
@@ -1654,7 +1682,7 @@
  {
   "crm": 173,
   "brand": "Jan Marini",
-  "name": "Physical Protectant SPF 30",
+  "name": "Physical Protectant SPF 30 Tinted Original (Light to Medium)",
   "volume": "57 g",
   "price": 1700,
   "cat": "face",
