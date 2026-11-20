@@ -1666,7 +1666,7 @@
   "cur": "CZK",
   "cat": "hair-wash",
   "stock": "pre",
-  "img": "",
+  "img": "catalog/or-shampoo-helianthi-150ml.jpg",
   "dupe": false,
   "code": "",
   "desc": {
@@ -3237,7 +3237,7 @@
   "cur": "CZK",
   "cat": "hair-loss",
   "stock": "pre",
-  "img": "",
+  "img": "catalog/dsd-346-eyelash-wonder-serum-4ml.jpg",
   "dupe": false,
   "code": "3.4.6",
   "desc": {
@@ -7556,7 +7556,7 @@
   "cur": "CZK",
   "cat": "face",
   "stock": "pre",
-  "img": "",
+  "img": "catalog/dmk-enbioment-serum-30ml.jpg",
   "code": "",
   "desc": {
    "ru": "Снимает воспаление, восстанавливает микробиом кожи",
