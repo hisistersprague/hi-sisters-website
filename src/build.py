@@ -1479,6 +1479,29 @@ section{padding:50px 0}
 .vframe{position:relative;padding-top:56.25%;border-radius:14px;overflow:hidden}
 .vframe iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
 .vfile{width:auto;max-width:100%;max-height:70vh;border-radius:14px;display:block;margin:0 auto}
+/* Видео внутри блока: играет само, без звука и без кнопки «пуск».
+   Съёмка вертикальная и небольшая, поэтому фоном идёт её же кадр в размытии,
+   а сам ролик показываем в родном размере — иначе он мылится. */
+.vband{position:relative;overflow:hidden;background:var(--navy) center/cover no-repeat;color:#fff}
+.vband::before{content:'';position:absolute;inset:-60px;background:inherit;background-size:cover;
+  filter:blur(34px) brightness(.52) saturate(.85);transform:scale(1.06)}
+.vband::after{content:'';position:absolute;inset:0;
+  background:linear-gradient(180deg,rgba(10,7,56,.55) 0%,rgba(10,7,56,.34) 45%,rgba(10,7,56,.66) 100%)}
+.vband .wrap{position:relative;z-index:1;display:grid;align-items:center;
+  grid-template-columns:minmax(0,1fr) auto;gap:clamp(22px,4vw,54px);
+  padding-top:clamp(30px,4vw,48px);padding-bottom:clamp(30px,4vw,48px)}
+.vband h2{color:#fff;margin:0;font-size:clamp(25px,3.2vw,40px);max-width:14em;
+  text-shadow:0 2px 20px rgba(8,5,40,.5)}
+.vband p{color:rgba(255,255,255,.93);margin:14px 0 0;max-width:32em;
+  text-shadow:0 1px 14px rgba(8,5,40,.55)}
+.vband video{height:clamp(280px,42vh,420px);width:auto;aspect-ratio:9/16;object-fit:cover;
+  display:block;border-radius:18px;justify-self:end;
+  background:rgba(255,255,255,.06);box-shadow:0 20px 54px rgba(5,3,30,.5)}
+@media(max-width:760px){
+  .vband .wrap{grid-template-columns:1fr;gap:22px}
+  .vband video{height:auto;width:min(280px,76vw);margin:0 auto;justify-self:center}
+  .vband h2{max-width:none}}
+@media(prefers-reduced-motion:reduce){.vband video{display:none}}
 .hero-v{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0;opacity:.35}
 .hero{position:relative}
 .hero .wrap{position:relative;z-index:1}
@@ -2780,6 +2803,31 @@ NAV_JS = """(function(){
       if(!el.contains(ev.target)) el.classList.remove('is-open');
     });
   });
+})();
+(function(){
+  /* Фоновое видео блока: подгружаем и запускаем, когда блок подъезжает к экрану. */
+  var vs=[].slice.call(document.querySelectorAll('video[data-vband]'));
+  if(!vs.length) return;
+  var mq=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)');
+  var conn=navigator.connection||navigator.webkitConnection;
+  if((mq&&mq.matches)||(conn&&conn.saveData)) return;
+  function start(v){
+    if(v.dataset.on) return;
+    v.dataset.on='1';
+    var s=document.createElement('source');
+    s.src=v.dataset.vband; s.type='video/mp4';
+    v.appendChild(s); v.load();
+    var p=v.play();
+    if(p&&p.catch) p.catch(function(){});
+  }
+  if(!('IntersectionObserver' in window)){ vs.forEach(start); return; }
+  var io=new IntersectionObserver(function(es){
+    es.forEach(function(en){
+      if(!en.isIntersecting) return;
+      start(en.target); io.unobserve(en.target);
+    });
+  },{rootMargin:'300px 0px'});
+  vs.forEach(function(v){ io.observe(v); });
 })();"""
 
 SHOP_JS = """
@@ -3428,24 +3476,35 @@ def video_src(obj):
 
 
 def video_block(obj, lang, title=''):
-    """Отдельный блок с видео процедуры, услуги или курса."""
+    """Видео процедуры фоном блока: играет само, без звука, поверх — заголовок.
+
+    Ролик с YouTube или Vimeo фоном не поставить, поэтому для него остаётся
+    обычная врезка с рамкой.
+    """
     v = obj.get('video') if isinstance(obj, dict) else None
     if not v:
         return ''
     src = v if isinstance(v, str) else v.get('src', '')
     poster = '' if isinstance(v, str) else v.get('poster', '')
     cap = '' if isinstance(v, str) else ((v.get('title') or {}).get(lang, '') if isinstance(v.get('title'), dict) else v.get('title', ''))
+    note = '' if isinstance(v, str) else ((v.get('note') or {}).get(lang, '') if isinstance(v.get('note'), dict) else v.get('note', ''))
     if not src:
         return ''
     if 'youtube.com' in src or 'youtu.be' in src or 'vimeo.com' in src:
         media = ('<div class="vframe"><iframe src="%s" title="%s" loading="lazy" '
                  'allow="accelerometer; autoplay; clipboard-write; encrypted-media; picture-in-picture" '
                  'allowfullscreen></iframe></div>' % (e(src), e(cap or title)))
-    else:
-        media = ('<video class="vfile" controls preload="none"%s><source src="%s" type="video/mp4"></video>'
-                 % ((' poster="%s"' % e(poster)) if poster else '', e(src)))
-    head = ('<div class="sec-head"><h2>%s</h2></div>' % e(cap)) if cap else ''
-    return '<section class="alt"><div class="wrap">%s%s</div></section>' % (head, media)
+        head = ('<div class="sec-head"><h2>%s</h2></div>' % e(cap)) if cap else ''
+        return '<section class="alt"><div class="wrap">%s%s</div></section>' % (head, media)
+    return ('\n<section class="vband"%s><div class="wrap">'
+            '<div>%s%s</div>'
+            '<video muted loop playsinline autoplay preload="none" aria-hidden="true" tabindex="-1"'
+            ' data-vband="%s"%s></video>'
+            '</div></section>'
+            % ((' style="background-image:url(%s)"' % e(poster)) if poster else '',
+               ('<h2>%s</h2>' % e(cap)) if cap else '',
+               ('<p>%s</p>' % e(note)) if note else '',
+               e(src), (' poster="%s"' % e(poster)) if poster else ''))
 
 
 def hero_video(obj):
@@ -3956,6 +4015,7 @@ def build_training(lang, city):
 
 {split_block('/assets/photos/portrait.jpg', tr['h1'], SPLIT_TRAIN[lang][0],
              SPLIT_TRAIN[lang][1], sec_class='tint', rev=True)}
+{video_block(courses, lang)}
 
 <section class="lilac"><div class="wrap">
   <div class="courses">{cards}</div>

@@ -1232,17 +1232,6 @@
     ],
     "seoTitle": "Elektroepilace {city} — cena za minutu, i světlé chloupky"
    }
-  },
-  "video": {
-   "src": "/assets/video/elektroepilace-4ruce.mp4",
-   "poster": "/assets/video/elektroepilace-4ruce.jpg",
-   "title": {
-    "ru": "Электроэпиляция в четыре руки",
-    "uk": "Електроепіляція в чотири руки",
-    "cs": "Elektroepilace ve čtyřech rukou",
-    "en": "Electrolysis with four hands",
-    "es": "Electrólisis a cuatro manos"
-   }
   }
  },
  "massage": {
