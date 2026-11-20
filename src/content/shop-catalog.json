@@ -2161,7 +2161,7 @@
   "cur": "CZK",
   "cat": "hair-care",
   "stock": "pre",
-  "img": "catalog/or-orising-lotion-fitoessenziale-calmante-100-ml-100ml.jpg",
+  "img": "",
   "dupe": false,
   "code": "",
   "desc": {
@@ -2291,7 +2291,7 @@
   "cur": "CZK",
   "cat": "hair-loss",
   "stock": "pre",
-  "img": "catalog/or-orising-natural-harmony-shampoo-dandruff-250-m-250ml.jpg",
+  "img": "",
   "dupe": false,
   "code": "",
   "desc": {
@@ -5074,7 +5074,7 @@
   "cur": "CZK",
   "cat": "face",
   "stock": "pre",
-  "img": "",
+  "img": "catalog/rn-pha-refining-skin-tonic-250ml.jpg",
   "dupe": false,
   "code": "1302250",
   "desc": {
@@ -5100,7 +5100,7 @@
   "cur": "CZK",
   "cat": "face",
   "stock": "pre",
-  "img": "",
+  "img": "catalog/rn-fresh-calming-skin-foam-220ml.jpg",
   "dupe": false,
   "code": "1301220",
   "desc": {
@@ -5126,7 +5126,7 @@
   "cur": "CZK",
   "cat": "face",
   "stock": "pre",
-  "img": "",
+  "img": "catalog/rn-soft-peeling-gel-150ml.jpg",
   "dupe": false,
   "code": "1305150",
   "desc": {
@@ -5152,7 +5152,7 @@
   "cur": "CZK",
   "cat": "face",
   "stock": "pre",
-  "img": "",
+  "img": "catalog/rn-skin-repair-moisturizing-mask-70ml.jpg",
   "dupe": false,
   "code": "1303070",
   "desc": {
@@ -5230,7 +5230,7 @@
   "cur": "CZK",
   "cat": "face",
   "stock": "pre",
-  "img": "",
+  "img": "catalog/rn-hydro-comfort-glow-moisturizer-50ml.jpg",
   "dupe": false,
   "code": "1306050",
   "desc": {
@@ -5256,7 +5256,7 @@
   "cur": "CZK",
   "cat": "face",
   "stock": "pre",
-  "img": "",
+  "img": "catalog/rn-eye-contour-gel-30ml.jpg",
   "dupe": false,
   "code": "1307030",
   "desc": {
@@ -5568,7 +5568,7 @@
   "cur": "CZK",
   "cat": "face",
   "stock": "pre",
-  "img": "",
+  "img": "catalog/rn-intense-skin-revitalizer-30ml.jpg",
   "dupe": false,
   "code": "1604030",
   "desc": {
@@ -5646,7 +5646,7 @@
   "cur": "CZK",
   "cat": "face",
   "stock": "pre",
-  "img": "",
+  "img": "catalog/rn-moisturizing-cream-oily-combined-oil-free-70ml.jpg",
   "dupe": false,
   "code": "1116070",
   "desc": {
@@ -5698,7 +5698,7 @@
   "cur": "CZK",
   "cat": "face",
   "stock": "pre",
-  "img": "",
+  "img": "catalog/rn-moisturizing-cream-oily-spf15-70ml.jpg",
   "dupe": false,
   "code": "1106070",
   "desc": {
@@ -5750,7 +5750,7 @@
   "cur": "CZK",
   "cat": "face",
   "stock": "pre",
-  "img": "",
+  "img": "catalog/rn-drying-treatment-demi-make-up-30ml.jpg",
   "dupe": false,
   "code": "1109030",
   "desc": {
@@ -5828,7 +5828,7 @@
   "cur": "CZK",
   "cat": "face",
   "stock": "pre",
-  "img": "",
+  "img": "catalog/rn-complex-peel-solution-250ml.jpg",
   "dupe": false,
   "code": "1402250",
   "desc": {
@@ -5854,7 +5854,7 @@
   "cur": "CZK",
   "cat": "face",
   "stock": "pre",
-  "img": "",
+  "img": "catalog/rn-multifunctional-accelerative-cream-50ml.jpg",
   "dupe": false,
   "code": "1408050",
   "desc": {
@@ -6062,7 +6062,7 @@
   "cur": "CZK",
   "cat": "face",
   "stock": "pre",
-  "img": "",
+  "img": "catalog/rn-aqua-vital-revitalizing-cream-50ml.jpg",
   "dupe": false,
   "code": "1606050",
   "desc": {
@@ -6133,7 +6133,7 @@
   "cur": "CZK",
   "cat": "body",
   "stock": "pre",
-  "img": "",
+  "img": "catalog/rn-multifruit-peel-soap-250ml.jpg",
   "dupe": false,
   "code": "7001250",
   "desc": {
@@ -6185,7 +6185,7 @@
   "cur": "CZK",
   "cat": "face",
   "stock": "pre",
-  "img": "",
+  "img": "catalog/rn-enzyme-exfoliator-70ml.jpg",
   "dupe": false,
   "code": "9019070",
   "desc": {
@@ -6386,7 +6386,7 @@
   "cur": "CZK",
   "cat": "face",
   "stock": "pre",
-  "img": "",
+  "img": "catalog/rn-redness-concentrate-30ml.jpg",
   "dupe": false,
   "code": "1804030",
   "desc": {
@@ -6412,7 +6412,7 @@
   "cur": "CZK",
   "cat": "face",
   "stock": "pre",
-  "img": "",
+  "img": "catalog/rn-redness-balm-50ml.jpg",
   "dupe": false,
   "code": "1806050",
   "desc": {
@@ -6438,7 +6438,7 @@
   "cur": "CZK",
   "cat": "face",
   "stock": "pre",
-  "img": "",
+  "img": "catalog/rn-gentle-mask-passiflora-70ml.jpg",
   "dupe": false,
   "code": "9021070",
   "desc": {
@@ -6535,7 +6535,7 @@
   "cur": "CZK",
   "cat": "face",
   "stock": "pre",
-  "img": "",
+  "img": "catalog/rn-sunscreen-cream-spf30-80ml.jpg",
   "dupe": false,
   "code": "9006080",
   "desc": {
@@ -6989,7 +6989,7 @@
   "cur": "CZK",
   "cat": "face",
   "stock": "pre",
-  "img": "",
+  "img": "catalog/as-ultra-shield-spf-50-40ml.jpg",
   "dupe": false,
   "code": "425233",
   "desc": {
@@ -7098,14 +7098,14 @@
   }
  },
  {
-  "brand": "RENEW",
-  "name": "Skinlace",
+  "brand": "AlphaScience",
+  "name": "Skinlase",
   "volume": "40 ml",
   "price": 1724,
   "cur": "CZK",
   "cat": "face",
   "stock": "pre",
-  "img": "catalog/renew-skinlace-40ml.jpg",
+  "img": "catalog/as-skinlase-40ml.jpg",
   "dupe": false,
   "code": "110115",
   "desc": {
@@ -8119,7 +8119,7 @@
   "cur": "CZK",
   "cat": "face",
   "stock": "pre",
-  "img": "catalog/dmk-cleanser-60ml.jpg",
+  "img": "",
   "code": "",
   "desc": {
    "ru": "Очищающее средство — для жирной и комбинированной кожи",
@@ -8138,7 +8138,7 @@
   "cur": "CZK",
   "cat": "face",
   "stock": "pre",
-  "img": "catalog/dmk-cleanser-180ml.jpg",
+  "img": "",
   "code": "",
   "desc": {
    "ru": "Очищающее средство — для жирной и комбинированной кожи",

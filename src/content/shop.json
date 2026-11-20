@@ -487,6 +487,13 @@
    "cs": "Kapsle — pro vlasy, pokožku a nehty",
    "en": "Capsules — for hair, skin and nails",
    "es": "Cápsulas — para cabello, piel y uñas"
+  },
+  "ing": {
+   "ru": "баобаб, биотин, цинк",
+   "uk": "баобаб, біотин, цинк",
+   "cs": "baobab, biotin, zinek",
+   "en": "baobab, biotin, zinc",
+   "es": "baobab, biotina, zinc"
   }
  },
  {
@@ -1049,6 +1056,13 @@
    "cs": "Šampon — pro podrážděnou pokožku hlavy",
    "en": "Shampoo — for irritated scalp",
    "es": "Champú — para cuero cabelludo irritado"
+  },
+  "ing": {
+   "ru": "сок алоэ вера, биотин, биотиноил трипептид-1, экстракт ромашки, экстракт огурца, масло жожоба, экстракт подсолнечника, пантенол, апигенин",
+   "uk": "сік алоє вера, біотин, біотиноїл трипептид-1, екстракт ромашки, екстракт огірка, олія жожоба, екстракт соняшника, пантенол, апігенін",
+   "cs": "aloe vera, biotin, biotinoyl tripeptid-1, extrakt z kamilky, extrakt z okurky, jojobový olej, extrakt ze slunečnice, panthenol, apigenin",
+   "en": "aloe vera juice, biotin, biotinoyl tripeptide-1, chamomile extract, cucumber extract, jojoba seed oil, sunflower seed extract, panthenol, apigenin",
+   "es": "jugo de aloe vera, biotina, biotinoil tripéptido-1, extracto de camomila, extracto de pepino, aceite de jojoba, extracto de girasol, pantenol, apigenina"
   }
  },
  {
@@ -2162,7 +2176,7 @@
   "price": 250,
   "cat": "body",
   "stock": "pre",
-  "img": "ep-.jpg",
+  "img": "",
   "desc": {
    "ru": "Антисептик — обеззараживание кожи",
    "uk": "Антисептик — знезараження шкіри",
@@ -2179,7 +2193,7 @@
   "price": 350,
   "cat": "body",
   "stock": "pre",
-  "img": "ep-.jpg",
+  "img": "",
   "desc": {
    "ru": "Антисептик — обеззараживание кожи",
    "uk": "Антисептик — знезараження шкіри",
