@@ -27,7 +27,7 @@
 <meta name="google-site-verification" content="w0gr_xIGKVAPVdWsNGRQxfjPjKZGN87bxB6bOTXDnwI"><link rel="preload" as="image" media="(max-width:720px)" href="/assets/photos/hero-bg-m.webp" type="image/webp"><link rel="preload" as="image" media="(min-width:721px)" href="/assets/photos/hero-bg.webp" type="image/webp"><link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/assets/app.css?v=01610ff2">
+<link rel="stylesheet" href="/assets/app.css?v=65f02b5c">
 <link rel="icon" href="/favicon.svg">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-K921K357QH"></script>
 <script>
@@ -39,7 +39,7 @@ addEventListener('click',function(ev){
 },true);
 </script>
 </head>
-<body data-city="prague">
+<body data-city="prague" data-page="cosmetics">
 <header class="top">
   <div class="wrap top-in">
     <a class="brand" href="/ru/prague/" aria-label="Hi Sisters Clinic"><span class="brand-top"></span><span class="brand-sub"></span></a>
@@ -577,7 +577,8 @@ target="_blank" rel="noopener">Предзаказ</a>
     </div>
   </div>
   <nav class="foot-nav"><a href="/ru/prague/">Главная</a><a href="/ru/prague/services/">Услуги</a><a href="/ru/prague/training/">Обучение</a><a href="/ru/prague/cosmetics/">Косметика</a><a href="/ru/prague/about/">О нас</a><a href="/ru/prague/contacts/">Контакты</a></nav>
-</div></footer><div class="sticky"><a class="btn btn-gold" href="/ru/prague/booking/" data-book>Записаться</a></div><script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Hi Sisters Clinic","item":"https://hi-sisters.clinic/ru/prague/"},{"@type":"ListItem","position":2,"name":"Косметика","item":"https://hi-sisters.clinic/ru/prague/cosmetics/"},{"@type":"ListItem","position":3,"name":"Jan Marini","item":"https://hi-sisters.clinic/ru/prague/cosmetics/jan-marini/"}]}</script><script>(function(){
+</div></footer><div class="sticky"><a class="btn btn-gold" href="/ru/prague/booking/" data-book>Записаться</a></div>
+<button class="gotop" type="button" data-gotop aria-label="Наверх" title="Наверх"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button><script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Hi Sisters Clinic","item":"https://hi-sisters.clinic/ru/prague/"},{"@type":"ListItem","position":2,"name":"Косметика","item":"https://hi-sisters.clinic/ru/prague/cosmetics/"},{"@type":"ListItem","position":3,"name":"Jan Marini","item":"https://hi-sisters.clinic/ru/prague/cosmetics/jan-marini/"}]}</script><script>(function(){
   var cars=[].slice.call(document.querySelectorAll('[data-car]'));
   cars.forEach(function(car){
     var track=car.querySelector('.rc-track');
@@ -640,5 +641,40 @@ target="_blank" rel="noopener">Предзаказ</a>
     });
   },{rootMargin:'300px 0px'});
   vs.forEach(function(v){ io.observe(v); });
+})();
+(function(){
+  /* ссылка из прайса ведёт к процедуре: раскрываем её и подводим к экрану */
+  function openTarget(){
+    var h=location.hash; if(!h||h.length<2) return;
+    var el=null;
+    try{ el=document.querySelector(h); }catch(e){ return; }
+    if(!el) return;
+    if(el.tagName==='DETAILS'){ el.open=true; }
+    setTimeout(function(){ el.scrollIntoView({block:'start'}); },0);
+  }
+  addEventListener('hashchange',openTarget);
+  addEventListener('load',openTarget);
+  document.addEventListener('click',function(ev){
+    var a=ev.target.closest('a[href^="#"]'); if(!a) return;
+    var id=a.getAttribute('href'); if(id.length<2) return;
+    var el=null;
+    try{ el=document.querySelector(id); }catch(e){ return; }
+    if(el&&el.tagName==='DETAILS'){ el.open=true; }
+  });
+  openTarget();
+})();
+(function(){
+  var b=document.querySelector('[data-gotop]'); if(!b) return;
+  var shown=false;
+  function sync(){
+    var need=(window.pageYOffset||document.documentElement.scrollTop)>600;
+    if(need!==shown){ shown=need; b.classList.toggle('is-on',need); }
+  }
+  addEventListener('scroll',sync,{passive:true});
+  b.addEventListener('click',function(){
+    var soft=!window.matchMedia||!window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    window.scrollTo(soft?{top:0,behavior:'smooth'}:{top:0});
+  });
+  sync();
 })();</script>
 </body></html>
