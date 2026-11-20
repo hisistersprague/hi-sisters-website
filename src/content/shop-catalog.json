@@ -112,7 +112,7 @@
   "cur": "CZK",
   "cat": "hair-loss",
   "stock": "pre",
-  "img": "",
+  "img": "catalog/or-rinforzante-maska.jpg",
   "dupe": false,
   "code": "",
   "desc": {
@@ -138,7 +138,7 @@
   "cur": "CZK",
   "cat": "hair-loss",
   "stock": "pre",
-  "img": "",
+  "img": "catalog/or-rinforzante-maska.jpg",
   "dupe": false,
   "code": "",
   "desc": {
@@ -164,7 +164,7 @@
   "cur": "CZK",
   "cat": "hair-loss",
   "stock": "pre",
-  "img": "",
+  "img": "catalog/or-rinforzante-maska.jpg",
   "dupe": false,
   "code": "",
   "desc": {
@@ -687,7 +687,7 @@
   "cur": "CZK",
   "cat": "hair-loss",
   "stock": "pre",
-  "img": "",
+  "img": "catalog/or-staminorising-complex-amp.jpg",
   "dupe": false,
   "code": "",
   "desc": {
@@ -713,7 +713,7 @@
   "cur": "CZK",
   "cat": "hair-loss",
   "stock": "pre",
-  "img": "",
+  "img": "catalog/or-staminorising-complex-95ml.jpg",
   "dupe": false,
   "code": "",
   "desc": {
@@ -1848,7 +1848,7 @@
   "cur": "CZK",
   "cat": "hair-care",
   "stock": "pre",
-  "img": "catalog/or-orising-lotion-proteica-100-ml-100ml.jpg",
+  "img": "catalog/or-lotion-proteica-100ml.jpg",
   "dupe": false,
   "code": "",
   "desc": {
@@ -1887,7 +1887,7 @@
   "cur": "CZK",
   "cat": "hair-care",
   "stock": "pre",
-  "img": "catalog/or-orising-lotion-mineralizzante-100-ml-100ml.jpg",
+  "img": "catalog/or-lotion-mineralizzante-100ml.jpg",
   "dupe": false,
   "code": "",
   "desc": {
@@ -1926,7 +1926,7 @@
   "cur": "CZK",
   "cat": "hair-care",
   "stock": "pre",
-  "img": "",
+  "img": "catalog/or-mousse-proteica-200ml.jpg",
   "dupe": false,
   "code": "",
   "desc": {
@@ -1945,7 +1945,7 @@
   "cur": "CZK",
   "cat": "hair-care",
   "stock": "pre",
-  "img": "catalog/or-orising-mousse-mineralizzante-200-ml-200ml.jpg",
+  "img": "catalog/or-mousse-mineralizzante-200ml.jpg",
   "dupe": false,
   "code": "",
   "desc": {
@@ -2121,7 +2121,7 @@
   "cur": "CZK",
   "cat": "hair-care",
   "stock": "pre",
-  "img": "",
+  "img": "catalog/or-lotion-energetica-d-150ml.jpg",
   "dupe": false,
   "code": "",
   "desc": {
@@ -2173,7 +2173,7 @@
   "cur": "CZK",
   "cat": "hair-care",
   "stock": "pre",
-  "img": "",
+  "img": "catalog/or-lotion-fitoessenziale-calmante-100ml.jpg",
   "dupe": false,
   "code": "",
   "desc": {
@@ -2225,7 +2225,7 @@
   "cur": "CZK",
   "cat": "hair-wash",
   "stock": "pre",
-  "img": "",
+  "img": "catalog/or-natural-benefit-scalp-100ml.jpg",
   "dupe": false,
   "code": "",
   "desc": {
@@ -2251,7 +2251,7 @@
   "cur": "CZK",
   "cat": "hair-loss",
   "stock": "pre",
-  "img": "",
+  "img": "catalog/or-nh-shampoo-invigorating-250ml.jpg",
   "dupe": false,
   "code": "",
   "desc": {
@@ -2277,7 +2277,7 @@
   "cur": "CZK",
   "cat": "hair-wash",
   "stock": "pre",
-  "img": "",
+  "img": "catalog/or-nh-shampoo-repairing-250ml.jpg",
   "dupe": false,
   "code": "",
   "desc": {
@@ -2303,7 +2303,7 @@
   "cur": "CZK",
   "cat": "hair-loss",
   "stock": "pre",
-  "img": "",
+  "img": "catalog/or-nh-shampoo-dandruff-250ml.jpg",
   "dupe": false,
   "code": "",
   "desc": {
@@ -2329,7 +2329,7 @@
   "cur": "CZK",
   "cat": "hair-care",
   "stock": "pre",
-  "img": "",
+  "img": "catalog/or-nh-conditioner-repairing-250ml.jpg",
   "dupe": false,
   "code": "",
   "desc": {
@@ -2355,7 +2355,7 @@
   "cur": "CZK",
   "cat": "hair-care",
   "stock": "pre",
-  "img": "",
+  "img": "catalog/or-natural-serum-repairing-100ml.jpg",
   "dupe": false,
   "code": "",
   "desc": {
@@ -2407,7 +2407,7 @@
   "cur": "CZK",
   "cat": "hair-loss",
   "stock": "pre",
-  "img": "",
+  "img": "catalog/or-natural-serum-invigorating-100ml.jpg",
   "dupe": false,
   "code": "",
   "desc": {
@@ -2490,7 +2490,7 @@
   "cur": "CZK",
   "cat": "hair-care",
   "stock": "pre",
-  "img": "catalog/or-orising-fluid-fluido-essenziale-per-le-punte-6-60ml.jpg",
+  "img": "catalog/or-fluido-punte-60ml.jpg",
   "dupe": false,
   "code": "",
   "desc": {
@@ -2587,7 +2587,7 @@
   "cur": "CZK",
   "cat": "hair-wash",
   "stock": "pre",
-  "img": "",
+  "img": "catalog/or-man-keratin-50ml.jpg",
   "dupe": false,
   "code": "",
   "desc": {
