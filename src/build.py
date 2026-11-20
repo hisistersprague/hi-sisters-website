@@ -35,6 +35,8 @@ VOL_UNITS = {'uk': {' г': ' г', ' капс.': ' капс.'},
              'en': {' г': ' g', ' капс.': ' caps'},
              'es': {' г': ' g', ' капс.': ' cáps.'}}
 shop_items = L('shop.json')
+# «pro»: товар для работы кабинета, пробник или подарок — на витрину не идёт
+shop_items = [it for it in shop_items if not it.get('pro')]
 # DMK в договоре с поставщиком запрещает публиковать цены домашних препаратов
 # и продавать их через сайт: показываем товар, но зовём на консультацию
 PRICE_HIDDEN_BRANDS = {'dmk'}
@@ -68,6 +70,8 @@ def _key(it):
 _have = {_key(it) for it in shop_items}
 shop_catalog, _extra = [], {}
 for it in L('shop-catalog.json'):
+    if it.get('pro'):                         # не для продажи: кабинет, пробник, подарок
+        continue
     it = dict(it, brand='DSD' if it['brand'] == 'DSD de Luxe' else it['brand'])
     k = _key(it)
     if it.pop('dupe', False) or k in _have:   # товар уже в СРМ: там цена и наличие,
@@ -2668,11 +2672,11 @@ def build_services(lang, city):
 
 # ──────────────────────────────── косметика ────────────────────────────────
 COSM_NOTE_ES = {
- 'ru': 'Линейка для тела есть в студии в Валенсии. Косметика для волос и кожи головы — в пражской клинике.',
- 'uk': 'Лінійка для тіла є в студії у Валенсії. Косметика для волосся та шкіри голови — у празькій клініці.',
- 'cs': 'Tělová řada je k dostání ve studiu ve Valencii. Kosmetika na vlasy a pokožku hlavy je v pražské klinice.',
- 'en': 'The body line is available at the Valencia studio. Hair and scalp care is stocked at the Prague clinic.',
- 'es': 'La línea corporal está disponible en el estudio de Valencia. La cosmética para el cabello y el cuero cabelludo está en la clínica de Praga.',
+ 'ru': 'В студии в Валенсии средства подбираем на консультации. Полка с косметикой для дома — в пражской клинике.',
+ 'uk': 'У студії у Валенсії засоби добираємо на консультації. Полиця з косметикою для дому — у празькій клініці.',
+ 'cs': 'Ve studiu ve Valencii přípravky vybíráme na konzultaci. Police s domácí kosmetikou je v pražské klinice.',
+ 'en': 'At the Valencia studio we choose products during the consultation. The home-care shelf is at the Prague clinic.',
+ 'es': 'En el estudio de Valencia elegimos los productos durante la consulta. La estantería de cosmética para casa está en la clínica de Praga.',
 }
 
 

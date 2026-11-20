@@ -75,7 +75,8 @@
    "cs": "Máta peprná, Extrakt z kopřivy",
    "en": "Peppermint, Nettle extract",
    "es": "Menta piperita, Extracto de ortiga"
-  }
+  },
+  "pro": true
  },
  {
   "brand": "Orising",
@@ -205,7 +206,8 @@
    "cs": "Máta peprná, Extrakt z kopřivy",
    "en": "Peppermint, Nettle extract",
    "es": "Menta piperita, Extracto de ortiga"
-  }
+  },
+  "pro": true
  },
  {
   "brand": "Orising",
@@ -387,7 +389,8 @@
    "cs": "Tymián, Levandule, Extrakt z kořene lopuchu",
    "en": "Thyme, Lavender, Burdock root extract",
    "es": "Tomillo, Lavanda, Extracto de raíz de bardana"
-  }
+  },
+  "pro": true
  },
  {
   "brand": "Orising",
@@ -569,7 +572,8 @@
    "cs": "Islandský lišejník, Extrakt z lopuchu",
    "en": "Iceland moss, Burdock extract",
    "es": "Musgo de Islandia, Extracto de bardana"
-  }
+  },
+  "pro": true
  },
  {
   "brand": "Orising",
@@ -803,7 +807,8 @@
    "cs": "Proso, Bambus, Jírovec, Extrakt ze šeříku, Vitamin B6",
    "en": "Millet, Bamboo, Horse chestnut, Lilac extract, Vitamin B6",
    "es": "Mijo, Bambú, Castaño de Indias, Extracto de lila, Vitamina B6"
-  }
+  },
+  "pro": true
  },
  {
   "brand": "Orising",
@@ -933,7 +938,8 @@
    "cs": "Chinovníková kůra, Podběl, Řebříček, Extrakt z červené révy",
    "en": "Cinchona bark, Coltsfoot, Yarrow, Red vine extract",
    "es": "Corteza de quina, Tusilago, Milenrama, Extracto de vid roja"
-  }
+  },
+  "pro": true
  },
  {
   "brand": "Orising",
@@ -1115,7 +1121,8 @@
    "cs": "Kokosový olej, Extrakt z ovsa",
    "en": "Coconut oil, Oat extract",
    "es": "Aceite de coco, Extracto de avena"
-  }
+  },
+  "pro": true
  },
  {
   "brand": "Orising",
@@ -1543,7 +1550,8 @@
    "cs": "Pšeničné proteiny, Extrakt z granátového jablka, Kmenové buňky jabloně",
    "en": "Wheat proteins, Pomegranate extract, Apple stem cells",
    "es": "Proteínas de trigo, Extracto de granada, Células madre de manzana"
-  }
+  },
+  "pro": true
  },
  {
   "brand": "Orising",
@@ -1621,7 +1629,8 @@
    "cs": "Arganový olej, Extrakt z liči, Rýžové proteiny, Extrakt z přesličky",
    "en": "Argan oil, Lychee extract, Rice proteins, Horsetail extract",
    "es": "Aceite de argán, Extracto de lichi, Proteínas de arroz, Extracto de cola de caballo"
-  }
+  },
+  "pro": true
  },
  {
   "brand": "Orising",
@@ -1867,7 +1876,8 @@
    "cs": "Lotion — pro obnovu vlasů",
    "en": "Lotion — for hair repair",
    "es": "Loción — para reparar el cabello"
-  }
+  },
+  "pro": true
  },
  {
   "brand": "Orising",
@@ -1905,7 +1915,8 @@
    "cs": "Lotion — pro obnovu vlasů",
    "en": "Lotion — for hair repair",
    "es": "Loción — para reparar el cabello"
-  }
+  },
+  "pro": true
  },
  {
   "brand": "Orising",
@@ -2099,7 +2110,8 @@
    "cs": "Tymián, Šalvěj, Máta peprná, Jalovec, Kopřiva",
    "en": "Thyme, Sage, Peppermint, Juniper, Nettle",
    "es": "Tomillo, Salvia, Menta piperita, Enebro, Ortiga"
-  }
+  },
+  "pro": true
  },
  {
   "brand": "Orising",
@@ -2818,7 +2830,8 @@
    "cs": "Glukonolakton, Hydrolyzovaná DNA a RNA, Extrakt ze šalvěje, Panthenol, Biotin, Inositol, Retinyl-palmitát, Měsíček lékařský, Heřmánek",
    "en": "Gluconolactone, Hydrolyzed DNA and RNA, Sage extract, Panthenol, Biotin, Inositol, Retinyl palmitate, Calendula, Chamomile",
    "es": "Gluconolactona, ADN y ARN hidrolizados, Extracto de salvia, Pantenol, Biotina, Inositol, Palmitato de retinilo, Caléndula, Manzanilla"
-  }
+  },
+  "pro": true
  },
  {
   "brand": "DSD de Luxe",
@@ -2870,7 +2883,8 @@
    "cs": "Prášek z meruňkových pecek, Kyselina salicylová, Kyselina glykolová, Kyselina jablečná, Kyselina vinná, Mentol, Eukalyptol, Hydrolyzovaný keratin, Niacinamid",
    "en": "Apricot seed powder, Salicylic acid, Glycolic acid, Malic acid, Tartaric acid, Menthol, Eucalyptol, Hydrolyzed keratin, Niacinamide",
    "es": "Polvo de hueso de albaricoque, Ácido salicílico, Ácido glicólico, Ácido málico, Ácido tartárico, Mentol, Eucaliptol, Queratina hidrolizada, Niacinamida"
-  }
+  },
+  "pro": true
  },
  {
   "brand": "DSD de Luxe",
@@ -2948,7 +2962,8 @@
    "cs": "Piroctone olamin, Klimbazol, Kyselina salicylová, Mentol, Eukalyptol, Kvasnicový extrakt, Vitamin E",
    "en": "Piroctone olamine, Climbazole, Salicylic acid, Menthol, Eucalyptol, Yeast extract, Vitamin E",
    "es": "Piroctona olamina, Climbazol, Ácido salicílico, Mentol, Eucaliptol, Extracto de levadura, Vitamina E"
-  }
+  },
+  "pro": true
  },
  {
   "brand": "DSD de Luxe",
@@ -3026,7 +3041,8 @@
    "cs": "Inositol, Hydrolyzovaný keratin, Biotin, Hydrolyzovaný kolagen, Placentární protein, Retinyl-palmitát, Vitamin E, Extrakt z kapsika, Extrakt ze serenoy, Extrakt z hlohu",
    "en": "Inositol, Hydrolyzed keratin, Biotin, Hydrolyzed collagen, Placental protein, Retinyl palmitate, Vitamin E, Capsicum extract, Saw palmetto extract, Hawthorn extract",
    "es": "Inositol, Queratina hidrolizada, Biotina, Colágeno hidrolizado, Proteína placentaria, Palmitato de retinilo, Vitamina E, Extracto de capsicum, Extracto de saw palmetto, Extracto de espino blanco"
-  }
+  },
+  "pro": true
  },
  {
   "brand": "DSD de Luxe",
@@ -3052,7 +3068,8 @@
    "cs": "Placentární protein, Extrakt z hlohu, Biotin, Panthenol, Hydrolyzovaná DNA a RNA, Vitamin E, Askorbyl-palmitát, Extrakt ze serenoy, Extrakt z jírovce",
    "en": "Placental protein, Hawthorn extract, Biotin, Panthenol, Hydrolyzed DNA and RNA, Vitamin E, Ascorbyl palmitate, Saw palmetto extract, Horse chestnut extract",
    "es": "Proteína placentaria, Extracto de espino blanco, Biotina, Pantenol, ADN y ARN hidrolizados, Vitamina E, Palmitato de ascorbilo, Extracto de saw palmetto, Extracto de castaño de Indias"
-  }
+  },
+  "pro": true
  },
  {
   "brand": "DSD de Luxe",
@@ -3130,7 +3147,8 @@
    "cs": "Rostlinné kmenové buňky",
    "en": "Plant stem cells",
    "es": "Células madre vegetales"
-  }
+  },
+  "pro": true
  },
  {
   "brand": "DSD de Luxe",
@@ -3182,7 +3200,8 @@
    "cs": "Placentární protein, Biotin, Panthenol, Vitamin E, Extrakt ze serenoy, Retinyl-palmitát, Inositol, Fermenty saccharomyces (zinek, hořčík, křemík)",
    "en": "Placental protein, Biotin, Panthenol, Vitamin E, Saw palmetto extract, Retinyl palmitate, Inositol, Saccharomyces ferments (zinc, magnesium, silicon)",
    "es": "Proteína placentaria, Biotina, Pantenol, Vitamina E, Extracto de saw palmetto, Palmitato de retinilo, Inositol, Fermentos de saccharomyces (zinc, magnesio, silicio)"
-  }
+  },
+  "pro": true
  },
  {
   "brand": "DSD de Luxe",
@@ -3312,7 +3331,8 @@
    "cs": "Keratin",
    "en": "Keratin",
    "es": "Queratina"
-  }
+  },
+  "pro": true
  },
  {
   "brand": "DSD de Luxe",
@@ -3338,7 +3358,8 @@
    "cs": "Placentární protein, Extrakt z bavlníkových semen, Panthenol, Thiamin (B1), Riboflavin (B2), Kvasnicový extrakt, Vitamin E",
    "en": "Placental protein, Cotton seed extract, Panthenol, Thiamine (B1), Riboflavin (B2), Yeast extract, Vitamin E",
    "es": "Proteína placentaria, Extracto de semilla de algodón, Pantenol, Tiamina (B1), Riboflavina (B2), Extracto de levadura, Vitamina E"
-  }
+  },
+  "pro": true
  },
  {
   "brand": "DSD de Luxe",
@@ -3390,7 +3411,8 @@
    "cs": "Šťáva z aloe vera, Inositol, Bambucké máslo, Biotin, Vitamin E, Retinyl-palmitát, Extrakt ze serenoy, Hydrolyzovaný kolagen, Hydrolyzovaný keratin",
    "en": "Aloe vera juice, Inositol, Shea butter, Biotin, Vitamin E, Retinyl palmitate, Saw palmetto extract, Hydrolyzed collagen, Hydrolyzed keratin",
    "es": "Jugo de aloe vera, Inositol, Manteca de karité, Biotina, Vitamina E, Palmitato de retinilo, Extracto de saw palmetto, Colágeno hidrolizado, Queratina hidrolizada"
-  }
+  },
+  "pro": true
  },
  {
   "brand": "DSD de Luxe",
@@ -3468,7 +3490,8 @@
    "cs": "Keratin",
    "en": "Keratin",
    "es": "Queratina"
-  }
+  },
+  "pro": true
  },
  {
   "brand": "DSD de Luxe",
@@ -3494,7 +3517,8 @@
    "cs": "Keratin",
    "en": "Keratin",
    "es": "Queratina"
-  }
+  },
+  "pro": true
  },
  {
   "brand": "DSD de Luxe",
@@ -3624,7 +3648,8 @@
    "cs": "Retinyl-palmitát, Sfingolipidy, Vitamin E, Hydrolyzovaný kolagen, Extrakt z červených řas, Hydrolyzovaný keratin, Panthenol, Hydrolyzované hedvábí, Mateří kašička",
    "en": "Retinyl palmitate, Sphingolipids, Vitamin E, Hydrolyzed collagen, Red algae extract, Hydrolyzed keratin, Panthenol, Hydrolyzed silk, Royal jelly",
    "es": "Palmitato de retinilo, Esfingolípidos, Vitamina E, Colágeno hidrolizado, Extracto de algas rojas, Queratina hidrolizada, Pantenol, Seda hidrolizada, Jalea real"
-  }
+  },
+  "pro": true
  },
  {
   "brand": "DSD de Luxe",
@@ -3702,7 +3727,8 @@
    "cs": "Sfingolipidy, Hydrolyzovaný keratin, Panthenol, Hydrolyzované hedvábí, Kvasnicový extrakt, Extrakt z ibišku, Fosfolipidy",
    "en": "Sphingolipids, Hydrolyzed keratin, Panthenol, Hydrolyzed silk, Yeast extract, Hibiscus extract, Phospholipids",
    "es": "Esfingolípidos, Queratina hidrolizada, Pantenol, Seda hidrolizada, Extracto de levadura, Extracto de hibisco, Fosfolípidos"
-  }
+  },
+  "pro": true
  },
  {
   "brand": "DSD de Luxe",
@@ -3780,7 +3806,8 @@
    "cs": "Panthenol, Hyaluronát sodný, Glukonolakton, Hydrolyzované hedvábí, Vitamin E, Medový extrakt",
    "en": "Panthenol, Sodium hyaluronate, Gluconolactone, Hydrolyzed silk, Vitamin E, Honey extract",
    "es": "Pantenol, Hialuronato de sodio, Gluconolactona, Seda hidrolizada, Vitamina E, Extracto de miel"
-  }
+  },
+  "pro": true
  },
  {
   "brand": "DSD de Luxe",
@@ -3929,7 +3956,8 @@
    "cs": "Aminopyrrol, melatonin",
    "en": "Aminopyrrole, melatonin",
    "es": "Aminopirrol, melatonina"
-  }
+  },
+  "pro": true
  },
  {
   "brand": "DSD de Luxe",
@@ -6693,7 +6721,8 @@
    "cs": "Kyselina askorbová (vitamin C), Extrakt z ginkgo biloby, Cysteamin hydrochlorid, Kyselina fytová, Acetyl glycyl beta-alanin",
    "en": "Ascorbic acid (vitamin C), Ginkgo biloba extract, Cysteamine HCl, Phytic acid, Acetyl glycyl beta-alanine",
    "es": "Ácido ascórbico (vitamina C), Extracto de ginkgo biloba, Clorhidrato de cisteamina, Ácido fítico, Acetil glicil beta-alanina"
-  }
+  },
+  "pro": true
  },
  {
   "brand": "AlphaScience",
@@ -6745,7 +6774,8 @@
    "cs": "1% arbutin, 7% extrakt z borůvky, 2% extrakt z černého rybízu",
    "en": "1% arbutin, 7% extract bilberry, 2% extract blackcurrant",
    "es": "1% arbutina, 7% extracto de arándano, 2% extracto de grosella negra"
-  }
+  },
+  "pro": true
  },
  {
   "brand": "AlphaScience",
@@ -6797,7 +6827,8 @@
    "cs": "Kyselina askorbová (vitamin C), Extrakt z ginkgo biloby, Kyselina tříslová, Kyselina ferulová, Kyselina gallová",
    "en": "Ascorbic acid (vitamin C), Ginkgo biloba extract, Tannic acid, Ferulic acid, Gallic acid",
    "es": "Ácido ascórbico (vitamina C), Extracto de ginkgo biloba, Ácido tánico, Ácido ferúlico, Ácido gálico"
-  }
+  },
+  "pro": true
  },
  {
   "brand": "AlphaScience",
@@ -6849,7 +6880,8 @@
    "cs": "Kyselina askorbová (vitamin C), Extrakt z ginkgo biloby, Kyselina fytová, Kyselina tříslová, Kyselina gallová",
    "en": "Ascorbic acid (vitamin C), Ginkgo biloba extract, Phytic acid, Tannic acid, Gallic acid",
    "es": "Ácido ascórbico (vitamina C), Extracto de ginkgo biloba, Ácido fítico, Ácido tánico, Ácido gálico"
-  }
+  },
+  "pro": true
  },
  {
   "brand": "AlphaScience",
@@ -6901,7 +6933,8 @@
    "cs": "Kyselina askorbová (vitamin C), Extrakt z ginkgo biloby, Acetyl glycyl beta-alanin, Kyselina fytová",
    "en": "Ascorbic acid (vitamin C), Ginkgo biloba extract, Acetyl glycyl beta-alanine, Phytic acid",
    "es": "Ácido ascórbico (vitamina C), Extracto de ginkgo biloba, Acetil glicil beta-alanina, Ácido fítico"
-  }
+  },
+  "pro": true
  },
  {
   "brand": "AlphaScience",
@@ -6953,7 +6986,8 @@
    "cs": "5% taurin",
    "en": "5% taurine",
    "es": "5% taurina"
-  }
+  },
+  "pro": true
  },
  {
   "brand": "AlphaScience",
@@ -7247,7 +7281,8 @@
    "cs": "Krém — anti-age péče",
    "en": "Cream — anti-ageing care",
    "es": "Crema — cuidado antiedad"
-  }
+  },
+  "pro": true
  },
  {
   "brand": "RENEW",
@@ -7292,7 +7327,8 @@
    "cs": "Kořen hydrastisu, Tymián, Vitamin C",
    "en": "Orange root (goldenseal), Thyme, Vitamin C",
    "es": "Raíz de hidrastis, Tomillo, Vitamina C"
-  }
+  },
+  "pro": true
  },
  {
   "brand": "DMK",
@@ -7318,7 +7354,8 @@
    "cs": "Síra, Kaolin, Eukalyptový olej",
    "en": "Sulphur, Kaolin, Eucalyptus oil",
    "es": "Azufre, Caolín, Aceite de eucalipto"
-  }
+  },
+  "pro": true
  },
  {
   "brand": "DMK",
@@ -7344,7 +7381,8 @@
    "cs": "Panthenol, Kyselina hyaluronová, Allantoin, Azulen",
    "en": "Panthenol, Hyaluronic acid, Allantoin, Azulene",
    "es": "Pantenol, Ácido hialurónico, Alantoína, Azuleno"
-  }
+  },
+  "pro": true
  },
  {
   "brand": "DMK",

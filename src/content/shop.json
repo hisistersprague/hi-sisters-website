@@ -69,7 +69,8 @@
    "cs": "Panthenol, Inositol, Biotin, Vitamin E, Extrakt z kapsika, Placentární protein, Hydrolyzovaný kolagen, Hydrolyzovaný keratin, Mateří kašička",
    "en": "Panthenol, Inositol, Biotin, Vitamin E, Capsicum extract, Placental protein, Hydrolyzed collagen, Hydrolyzed keratin, Royal jelly",
    "es": "Pantenol, Inositol, Biotina, Vitamina E, Extracto de capsicum, Proteína placentaria, Colágeno hidrolizado, Queratina hidrolizada, Jalea real"
-  }
+  },
+  "pro": true
  },
  {
   "crm": 232,
@@ -93,7 +94,8 @@
    "cs": "Placentární protein, Extrakt z bavlníkových semen, Panthenol, Thiamin (B1), Riboflavin (B2), Kvasnicový extrakt, Vitamin E",
    "en": "Placental protein, Cotton seed extract, Panthenol, Thiamine (B1), Riboflavin (B2), Yeast extract, Vitamin E",
    "es": "Proteína placentaria, Extracto de semilla de algodón, Pantenol, Tiamina (B1), Riboflavina (B2), Extracto de levadura, Vitamina E"
-  }
+  },
+  "pro": true
  },
  {
   "crm": 233,
@@ -165,7 +167,8 @@
    "cs": "Placentární protein, Extrakt z hlohu, Biotin, Panthenol, Hydrolyzovaná DNA a RNA, Vitamin E, Askorbyl-palmitát, Extrakt ze serenoy, Extrakt z jírovce",
    "en": "Placental protein, Hawthorn extract, Biotin, Panthenol, Hydrolyzed DNA and RNA, Vitamin E, Ascorbyl palmitate, Saw palmetto extract, Horse chestnut extract",
    "es": "Proteína placentaria, Extracto de espino blanco, Biotina, Pantenol, ADN y ARN hidrolizados, Vitamina E, Palmitato de ascorbilo, Extracto de saw palmetto, Extracto de castaño de Indias"
-  }
+  },
+  "pro": true
  },
  {
   "crm": 235,
@@ -189,7 +192,8 @@
    "cs": "Placentární protein, Biotin, Panthenol, Vitamin E, Extrakt ze serenoy, Retinyl-palmitát, Inositol, Fermenty saccharomyces (zinek, hořčík, křemík)",
    "en": "Placental protein, Biotin, Panthenol, Vitamin E, Saw palmetto extract, Retinyl palmitate, Inositol, Saccharomyces ferments (zinc, magnesium, silicon)",
    "es": "Proteína placentaria, Biotina, Pantenol, Vitamina E, Extracto de saw palmetto, Palmitato de retinilo, Inositol, Fermentos de saccharomyces (zinc, magnesio, silicio)"
-  }
+  },
+  "pro": true
  },
  {
   "crm": 234,
@@ -230,7 +234,8 @@
    "cs": "Šťáva z aloe vera, Inositol, Bambucké máslo, Biotin, Vitamin E, Retinyl-palmitát, Extrakt ze serenoy, Hydrolyzovaný kolagen, Hydrolyzovaný keratin",
    "en": "Aloe vera juice, Inositol, Shea butter, Biotin, Vitamin E, Retinyl palmitate, Saw palmetto extract, Hydrolyzed collagen, Hydrolyzed keratin",
    "es": "Jugo de aloe vera, Inositol, Manteca de karité, Biotina, Vitamina E, Palmitato de retinilo, Extracto de saw palmetto, Colágeno hidrolizado, Queratina hidrolizada"
-  }
+  },
+  "pro": true
  },
  {
   "crm": 208,
@@ -638,7 +643,8 @@
    "cs": "Olej ze sladkých mandlí, Bambucké máslo, Kakaové máslo, Šťáva z aloe vera, Glycerin, Vitamin E",
    "en": "Sweet almond oil, Shea butter, Cocoa butter, Aloe vera juice, Glycerin, Vitamin E",
    "es": "Aceite de almendras dulces, Manteca de karité, Manteca de cacao, Jugo de aloe vera, Glicerina, Vitamina E"
-  }
+  },
+  "pro": true
  },
  {
   "crm": 180,
@@ -1015,7 +1021,8 @@
    "cs": "Sodná sůl PCA, Hydrolyzovaný kolagen, Hydrolyzovaný keratin, Panthenol, Extrakt ze slunečnice, Extrakt z heřmánku, Jablečný ocet",
    "en": "Sodium PCA, Hydrolyzed collagen, Hydrolyzed keratin, Panthenol, Sunflower extract, Chamomile extract, Apple cider vinegar",
    "es": "PCA de sodio, Colágeno hidrolizado, Queratina hidrolizada, Pantenol, Extracto de girasol, Extracto de manzanilla, Vinagre de manzana"
-  }
+  },
+  "pro": true
  },
  {
   "crm": 216,
@@ -1792,7 +1799,8 @@
    "cs": "Lotion — hydratace těla",
    "en": "Lotion — body hydration",
    "es": "Loción — hidratación corporal"
-  }
+  },
+  "pro": true
  },
  {
   "crm": 131,
@@ -1894,7 +1902,8 @@
    "cs": "Krém — intimní péče",
    "en": "Cream — intimate care",
    "es": "Crema — cuidado íntimo"
-  }
+  },
+  "pro": true
  },
  {
   "crm": 69,
@@ -1911,7 +1920,8 @@
    "cs": "Krém — ochrana SPF 50",
    "en": "Cream — SPF 50 protection",
    "es": "Crema — protección SPF 50"
-  }
+  },
+  "pro": true
  },
  {
   "crm": 30,
@@ -1928,7 +1938,8 @@
    "cs": "Tělové máslo — hydratace těla",
    "en": "Body butter — body hydration",
    "es": "Manteca corporal — hidratación corporal"
-  }
+  },
+  "pro": true
  },
  {
   "crm": 29,
@@ -1945,7 +1956,8 @@
    "cs": "Krém — zesvětlení intimních partií",
    "en": "Cream — intimate area brightening",
    "es": "Crema — aclarado de zonas íntimas"
-  }
+  },
+  "pro": true
  },
  {
   "crm": 31,
@@ -1962,7 +1974,8 @@
    "cs": "Pěna — jemný tělový peeling",
    "en": "Foam — gentle body peel",
    "es": "Espuma — peeling corporal suave"
-  }
+  },
+  "pro": true
  },
  {
   "crm": 68,
@@ -1979,7 +1992,8 @@
    "cs": "Krém — ochrana SPF 50",
    "en": "Cream — SPF 50 protection",
    "es": "Crema — protección SPF 50"
-  }
+  },
+  "pro": true
  },
  {
   "crm": 243,
@@ -2064,7 +2078,8 @@
    "cs": "Krém — zklidnění pleti",
    "en": "Cream — skin soothing",
    "es": "Crema — calmado de la piel"
-  }
+  },
+  "pro": true
  },
  {
   "crm": 57,
@@ -2081,7 +2096,8 @@
    "cs": "Krém — zklidnění pleti",
    "en": "Cream — skin soothing",
    "es": "Crema — calmado de la piel"
-  }
+  },
+  "pro": true
  },
  {
   "crm": 102,
@@ -2098,7 +2114,8 @@
    "cs": "Krém — zklidnění pleti",
    "en": "Cream — skin soothing",
    "es": "Crema — calmado de la piel"
-  }
+  },
+  "pro": true
  },
  {
   "crm": 129,
@@ -2183,7 +2200,8 @@
    "cs": "Antiseptikum — dezinfekce pokožky",
    "en": "Antiseptic — skin disinfection",
    "es": "Antiséptico — desinfección de la piel"
-  }
+  },
+  "pro": true
  },
  {
   "crm": 47,
@@ -2200,6 +2218,7 @@
    "cs": "Antiseptikum — dezinfekce pokožky",
    "en": "Antiseptic — skin disinfection",
    "es": "Antiséptico — desinfección de la piel"
-  }
+  },
+  "pro": true
  }
 ]

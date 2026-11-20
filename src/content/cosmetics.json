@@ -402,54 +402,7 @@
   }
  },
  "body": {
-  "prague": [
-   {
-    "name": "Body Butter",
-    "price": 1600,
-    "brand": "Happy Intim",
-    "volume": "200 ml",
-    "stock": "pre",
-    "crm": 30
-   },
-   {
-    "name": "Body Peel",
-    "price": 1600,
-    "brand": "Happy Intim",
-    "volume": "150 ml",
-    "stock": "pre",
-    "crm": 31
-   },
-   {
-    "name": "Cream Lightening",
-    "price": 1600,
-    "brand": "Happy Intim",
-    "volume": "50 ml",
-    "stock": "in",
-    "crm": 29
-   }
-  ],
-  "valencia": [
-   {
-    "name": "Body Butter",
-    "price": 65,
-    "brand": "Happy Intim",
-    "volume": "200 ml",
-    "crm": 30
-   },
-   {
-    "name": "Body Peel",
-    "price": 65,
-    "brand": "Happy Intim",
-    "volume": "150 ml",
-    "crm": 31
-   },
-   {
-    "name": "Cream Lightening",
-    "price": 65,
-    "brand": "Happy Intim",
-    "volume": "50 ml",
-    "crm": 29
-   }
-  ]
+  "prague": [],
+  "valencia": []
  }
 }
