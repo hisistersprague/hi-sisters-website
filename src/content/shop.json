@@ -14,6 +14,13 @@
    "cs": "Šampon — proti lupům",
    "en": "Shampoo — anti-dandruff",
    "es": "Champú — anticaspa"
+  },
+  "ing": {
+   "ru": "Пироктон оламин, Климбазол, Салициловая кислота, Ментол, Эвкалиптол, Дрожжевой экстракт, Витамин Е",
+   "uk": "Піроктон оламін, Клімбазол, Саліцилова кислота, Ментол, Евкаліптол, Дріжджовий екстракт, Вітамін Е",
+   "cs": "Piroctone olamin, Klimbazol, Kyselina salicylová, Mentol, Eukalyptol, Kvasnicový extrakt, Vitamin E",
+   "en": "Piroctone olamine, Climbazole, Salicylic acid, Menthol, Eucalyptol, Yeast extract, Vitamin E",
+   "es": "Piroctona olamina, Climbazol, Ácido salicílico, Mentol, Eucaliptol, Extracto de levadura, Vitamina E"
   }
  },
  {
@@ -31,6 +38,13 @@
    "cs": "Lotion — proti vypadávání vlasů",
    "en": "Lotion — against hair loss",
    "es": "Loción — anticaída del cabello"
+  },
+  "ing": {
+   "ru": "Плацентарный протеин, Экстракт со пальметто, Пантенол, Биотин, Ретинил пальмитат, Инозитол, Экстракт конского каштана, Метилникотинат",
+   "uk": "Плацентарний протеїн, Екстракт со пальметто, Пантенол, Біотин, Ретиніл пальмітат, Інозитол, Екстракт кінського каштана, Метилнікотинат",
+   "cs": "Placentární protein, Extrakt ze serenoy, Panthenol, Biotin, Retinyl-palmitát, Inositol, Extrakt z jírovce, Methylnikotinát",
+   "en": "Placental protein, Saw palmetto extract, Panthenol, Biotin, Retinyl palmitate, Inositol, Horse chestnut extract, Methyl nicotinate",
+   "es": "Proteína placentaria, Extracto de saw palmetto, Pantenol, Biotina, Palmitato de retinilo, Inositol, Extracto de castaño de Indias, Nicotinato de metilo"
   }
  },
  {
@@ -48,6 +62,13 @@
    "cs": "Šampon — regenerace a keratinová péče",
    "en": "Shampoo — repair and keratin care",
    "es": "Champú — reparación y cuidado con queratina"
+  },
+  "ing": {
+   "ru": "Пантенол, Инозитол, Биотин, Витамин Е, Экстракт капсикума, Плацентарный протеин, Гидролизованный коллаген, Гидролизованный кератин, Маточное молочко",
+   "uk": "Пантенол, Інозитол, Біотин, Вітамін Е, Екстракт капсикуму, Плацентарний протеїн, Гідролізований колаген, Гідролізований кератин, Маточне молочко",
+   "cs": "Panthenol, Inositol, Biotin, Vitamin E, Extrakt z kapsika, Placentární protein, Hydrolyzovaný kolagen, Hydrolyzovaný keratin, Mateří kašička",
+   "en": "Panthenol, Inositol, Biotin, Vitamin E, Capsicum extract, Placental protein, Hydrolyzed collagen, Hydrolyzed keratin, Royal jelly",
+   "es": "Pantenol, Inositol, Biotina, Vitamina E, Extracto de capsicum, Proteína placentaria, Colágeno hidrolizado, Queratina hidrolizada, Jalea real"
   }
  },
  {
@@ -65,6 +86,13 @@
    "cs": "Šampon — ochrana a hladkost vlasů",
    "en": "Shampoo — protection and smoothness",
    "es": "Champú — protección y suavidad"
+  },
+  "ing": {
+   "ru": "Плацентарный протеин, Экстракт семян хлопка, Пантенол, Тиамин (B1), Рибофлавин (B2), Дрожжевой экстракт, Витамин Е",
+   "uk": "Плацентарний протеїн, Екстракт насіння бавовни, Пантенол, Тіамін (B1), Рибофлавін (B2), Дріжджовий екстракт, Вітамін Е",
+   "cs": "Placentární protein, Extrakt z bavlníkových semen, Panthenol, Thiamin (B1), Riboflavin (B2), Kvasnicový extrakt, Vitamin E",
+   "en": "Placental protein, Cotton seed extract, Panthenol, Thiamine (B1), Riboflavin (B2), Yeast extract, Vitamin E",
+   "es": "Proteína placentaria, Extracto de semilla de algodón, Pantenol, Tiamina (B1), Riboflavina (B2), Extracto de levadura, Vitamina E"
   }
  },
  {
@@ -82,6 +110,13 @@
    "cs": "Šampon — regenerace a keratinová péče",
    "en": "Shampoo — repair and keratin care",
    "es": "Champú — reparación y cuidado con queratina"
+  },
+  "ing": {
+   "ru": "Пантенол, Инозитол, Биотин, Витамин Е, Экстракт капсикума, Плацентарный протеин, Гидролизованный коллаген, Гидролизованный кератин, Маточное молочко",
+   "uk": "Пантенол, Інозитол, Біотин, Вітамін Е, Екстракт капсикуму, Плацентарний протеїн, Гідролізований колаген, Гідролізований кератин, Маточне молочко",
+   "cs": "Panthenol, Inositol, Biotin, Vitamin E, Extrakt z kapsika, Placentární protein, Hydrolyzovaný kolagen, Hydrolyzovaný keratin, Mateří kašička",
+   "en": "Panthenol, Inositol, Biotin, Vitamin E, Capsicum extract, Placental protein, Hydrolyzed collagen, Hydrolyzed keratin, Royal jelly",
+   "es": "Pantenol, Inositol, Biotina, Vitamina E, Extracto de capsicum, Proteína placentaria, Colágeno hidrolizado, Queratina hidrolizada, Jalea real"
   }
  },
  {
@@ -99,6 +134,13 @@
    "cs": "Lotion — péče o pokožku hlavy",
    "en": "Lotion — scalp care",
    "es": "Loción — cuidado del cuero cabelludo"
+  },
+  "ing": {
+   "ru": "Маточное молочко, Гидролизованный соевый протеин, Плацентарный протеин, Инозитол, Биотин, Гидролизованный кератин, Пантенол, Ретинил пальмитат, Экстракт конского каштана",
+   "uk": "Маточне молочко, Гідролізований соєвий протеїн, Плацентарний протеїн, Інозитол, Біотин, Гідролізований кератин, Пантенол, Ретиніл пальмітат, Екстракт кінського каштана",
+   "cs": "Mateří kašička, Hydrolyzovaný sójový protein, Placentární protein, Inositol, Biotin, Hydrolyzovaný keratin, Panthenol, Retinyl-palmitát, Extrakt z jírovce",
+   "en": "Royal jelly, Hydrolyzed soy protein, Placental protein, Inositol, Biotin, Hydrolyzed keratin, Panthenol, Retinyl palmitate, Horse chestnut extract",
+   "es": "Jalea real, Proteína de soja hidrolizada, Proteína placentaria, Inositol, Biotina, Queratina hidrolizada, Pantenol, Palmitato de retinilo, Extracto de castaño de Indias"
   }
  },
  {
@@ -116,6 +158,13 @@
    "cs": "Lotion — proti vypadávání vlasů",
    "en": "Lotion — against hair loss",
    "es": "Loción — anticaída del cabello"
+  },
+  "ing": {
+   "ru": "Плацентарный протеин, Экстракт боярышника, Биотин, Пантенол, Гидролизованные ДНК и РНК, Витамин Е, Аскорбил пальмитат, Экстракт со пальметто, Экстракт конского каштана",
+   "uk": "Плацентарний протеїн, Екстракт глоду, Біотин, Пантенол, Гідролізовані ДНК та РНК, Вітамін Е, Аскорбіл пальмітат, Екстракт со пальметто, Екстракт кінського каштана",
+   "cs": "Placentární protein, Extrakt z hlohu, Biotin, Panthenol, Hydrolyzovaná DNA a RNA, Vitamin E, Askorbyl-palmitát, Extrakt ze serenoy, Extrakt z jírovce",
+   "en": "Placental protein, Hawthorn extract, Biotin, Panthenol, Hydrolyzed DNA and RNA, Vitamin E, Ascorbyl palmitate, Saw palmetto extract, Horse chestnut extract",
+   "es": "Proteína placentaria, Extracto de espino blanco, Biotina, Pantenol, ADN y ARN hidrolizados, Vitamina E, Palmitato de ascorbilo, Extracto de saw palmetto, Extracto de castaño de Indias"
   }
  },
  {
@@ -133,6 +182,13 @@
    "cs": "Lotion — proti vypadávání vlasů",
    "en": "Lotion — against hair loss",
    "es": "Loción — anticaída del cabello"
+  },
+  "ing": {
+   "ru": "Плацентарный протеин, Биотин, Пантенол, Витамин Е, Экстракт со пальметто, Ретинил пальмитат, Инозитол, Ферменты сахаромицетов (цинк, магний, кремний)",
+   "uk": "Плацентарний протеїн, Біотин, Пантенол, Вітамін Е, Екстракт со пальметто, Ретиніл пальмітат, Інозитол, Ферменти сахароміцетів (цинк, магній, кремній)",
+   "cs": "Placentární protein, Biotin, Panthenol, Vitamin E, Extrakt ze serenoy, Retinyl-palmitát, Inositol, Fermenty saccharomyces (zinek, hořčík, křemík)",
+   "en": "Placental protein, Biotin, Panthenol, Vitamin E, Saw palmetto extract, Retinyl palmitate, Inositol, Saccharomyces ferments (zinc, magnesium, silicon)",
+   "es": "Proteína placentaria, Biotina, Pantenol, Vitamina E, Extracto de saw palmetto, Palmitato de retinilo, Inositol, Fermentos de saccharomyces (zinc, magnesio, silicio)"
   }
  },
  {
@@ -167,6 +223,13 @@
    "cs": "Kondicionér — regenerace a keratinová péče",
    "en": "Conditioner — repair and keratin care",
    "es": "Acondicionador — reparación y cuidado con queratina"
+  },
+  "ing": {
+   "ru": "Сок алоэ вера, Инозитол, Масло ши, Биотин, Витамин Е, Ретинил пальмитат, Экстракт со пальметто, Гидролизованный коллаген, Гидролизованный кератин",
+   "uk": "Сік алое вера, Інозитол, Олія ши, Біотин, Вітамін Е, Ретиніл пальмітат, Екстракт со пальметто, Гідролізований колаген, Гідролізований кератин",
+   "cs": "Šťáva z aloe vera, Inositol, Bambucké máslo, Biotin, Vitamin E, Retinyl-palmitát, Extrakt ze serenoy, Hydrolyzovaný kolagen, Hydrolyzovaný keratin",
+   "en": "Aloe vera juice, Inositol, Shea butter, Biotin, Vitamin E, Retinyl palmitate, Saw palmetto extract, Hydrolyzed collagen, Hydrolyzed keratin",
+   "es": "Jugo de aloe vera, Inositol, Manteca de karité, Biotina, Vitamina E, Palmitato de retinilo, Extracto de saw palmetto, Colágeno hidrolizado, Queratina hidrolizada"
   }
  },
  {
@@ -184,6 +247,13 @@
    "cs": "Kondicionér — regenerace a keratinová péče",
    "en": "Conditioner — repair and keratin care",
    "es": "Acondicionador — reparación y cuidado con queratina"
+  },
+  "ing": {
+   "ru": "Сок алоэ вера, Инозитол, Масло ши, Биотин, Витамин Е, Ретинил пальмитат, Экстракт со пальметто, Гидролизованный коллаген, Гидролизованный кератин",
+   "uk": "Сік алое вера, Інозитол, Олія ши, Біотин, Вітамін Е, Ретиніл пальмітат, Екстракт со пальметто, Гідролізований колаген, Гідролізований кератин",
+   "cs": "Šťáva z aloe vera, Inositol, Bambucké máslo, Biotin, Vitamin E, Retinyl-palmitát, Extrakt ze serenoy, Hydrolyzovaný kolagen, Hydrolyzovaný keratin",
+   "en": "Aloe vera juice, Inositol, Shea butter, Biotin, Vitamin E, Retinyl palmitate, Saw palmetto extract, Hydrolyzed collagen, Hydrolyzed keratin",
+   "es": "Jugo de aloe vera, Inositol, Manteca de karité, Biotina, Vitamina E, Palmitato de retinilo, Extracto de saw palmetto, Colágeno hidrolizado, Queratina hidrolizada"
   }
  },
  {
@@ -201,6 +271,13 @@
    "cs": "Maska — regenerace a keratinová péče",
    "en": "Mask — repair and keratin care",
    "es": "Mascarilla — reparación y cuidado con queratina"
+  },
+  "ing": {
+   "ru": "Гидролизованный кератин, Дрожжевой экстракт, Экстракт капсикума, Пантенол, Тиамин (B1), Аденозин, Ниацинамид, Кофеин, Эвкалиптол",
+   "uk": "Гідролізований кератин, Дріжджовий екстракт, Екстракт капсикуму, Пантенол, Тіамін (B1), Аденозин, Ніацинамід, Кофеїн, Евкаліптол",
+   "cs": "Hydrolyzovaný keratin, Kvasnicový extrakt, Extrakt z kapsika, Panthenol, Thiamin (B1), Adenosin, Niacinamid, Kofein, Eukalyptol",
+   "en": "Hydrolyzed keratin, Yeast extract, Capsicum extract, Panthenol, Thiamine (B1), Adenosine, Niacinamide, Caffeine, Eucalyptol",
+   "es": "Queratina hidrolizada, Extracto de levadura, Extracto de capsicum, Pantenol, Tiamina (B1), Adenosina, Niacinamida, Cafeína, Eucaliptol"
   }
  },
  {
@@ -218,6 +295,13 @@
    "cs": "Maska — regenerace a keratinová péče",
    "en": "Mask — repair and keratin care",
    "es": "Mascarilla — reparación y cuidado con queratina"
+  },
+  "ing": {
+   "ru": "Гидролизованный кератин, Дрожжевой экстракт, Экстракт капсикума, Пантенол, Тиамин (B1), Аденозин, Ниацинамид, Кофеин, Эвкалиптол",
+   "uk": "Гідролізований кератин, Дріжджовий екстракт, Екстракт капсикуму, Пантенол, Тіамін (B1), Аденозин, Ніацинамід, Кофеїн, Евкаліптол",
+   "cs": "Hydrolyzovaný keratin, Kvasnicový extrakt, Extrakt z kapsika, Panthenol, Thiamin (B1), Adenosin, Niacinamid, Kofein, Eukalyptol",
+   "en": "Hydrolyzed keratin, Yeast extract, Capsicum extract, Panthenol, Thiamine (B1), Adenosine, Niacinamide, Caffeine, Eucalyptol",
+   "es": "Queratina hidrolizada, Extracto de levadura, Extracto de capsicum, Pantenol, Tiamina (B1), Adenosina, Niacinamida, Cafeína, Eucaliptol"
   }
  },
  {
@@ -235,6 +319,13 @@
    "cs": "Balzám — ochrana a hladkost vlasů",
    "en": "Balm — protection and smoothness",
    "es": "Bálsamo — protección y suavidad"
+  },
+  "ing": {
+   "ru": "Витамин Е, Гидролизованный шёлк, Гиалуронат натрия, Пантенол, Гидролизованный экстракт каштана",
+   "uk": "Вітамін Е, Гідролізований шовк, Гіалуронат натрію, Пантенол, Гідролізований екстракт каштана",
+   "cs": "Vitamin E, Hydrolyzované hedvábí, Hyaluronát sodný, Panthenol, Hydrolyzovaný kaštanový extrakt",
+   "en": "Vitamin E, Hydrolyzed silk, Sodium hyaluronate, Panthenol, Hydrolyzed chestnut extract",
+   "es": "Vitamina E, Seda hidrolizada, Hialuronato de sodio, Pantenol, Extracto de castaño hidrolizado"
   }
  },
  {
@@ -252,6 +343,13 @@
    "cs": "Lotion — proti vypadávání vlasů",
    "en": "Lotion — against hair loss",
    "es": "Loción — anticaída del cabello"
+  },
+  "ing": {
+   "ru": "Гидролизованный кератин, Экстракт со пальметто, Плацентарный протеин, Ацетил тетрапептид-3, Экстракт красного клевера, Декстран, Ферменты сахаромицетов (цинк, магний, кремний), Салициловая кислота",
+   "uk": "Гідролізований кератин, Екстракт со пальметто, Плацентарний протеїн, Ацетил тетрапептид-3, Екстракт червоної конюшини, Декстран, Ферменти сахароміцетів (цинк, магній, кремній), Саліцилова кислота",
+   "cs": "Hydrolyzovaný keratin, Extrakt ze serenoy, Placentární protein, Acetyl tetrapeptid-3, Extrakt z jetele lučního, Dextran, Fermenty saccharomyces (zinek, hořčík, křemík), Kyselina salicylová",
+   "en": "Hydrolyzed keratin, Saw palmetto extract, Placental protein, Acetyl tetrapeptide-3, Red clover extract, Dextran, Saccharomyces ferments (zinc, magnesium, silicon), Salicylic acid",
+   "es": "Queratina hidrolizada, Extracto de saw palmetto, Proteína placentaria, Acetil tetrapéptido-3, Extracto de trébol rojo, Dextrano, Fermentos de saccharomyces (zinc, magnesio, silicio), Ácido salicílico"
   }
  },
  {
@@ -269,6 +367,13 @@
    "cs": "Lotion — proti vypadávání vlasů",
    "en": "Lotion — against hair loss",
    "es": "Loción — anticaída del cabello"
+  },
+  "ing": {
+   "ru": "Плацентарный протеин, Тиамин (B1), Биотин, Инозитол, Ретинил пальмитат, Экстракт асаи, Витамин Е, Пантенол, Экстракт конского каштана",
+   "uk": "Плацентарний протеїн, Тіамін (B1), Біотин, Інозитол, Ретиніл пальмітат, Екстракт асаї, Вітамін Е, Пантенол, Екстракт кінського каштана",
+   "cs": "Placentární protein, Thiamin (B1), Biotin, Inositol, Retinyl-palmitát, Extrakt z acai, Vitamin E, Panthenol, Extrakt z jírovce",
+   "en": "Placental protein, Thiamine (B1), Biotin, Inositol, Retinyl palmitate, Acai extract, Vitamin E, Panthenol, Horse chestnut extract",
+   "es": "Proteína placentaria, Tiamina (B1), Biotina, Inositol, Palmitato de retinilo, Extracto de açaí, Vitamina E, Pantenol, Extracto de castaño de Indias"
   }
  },
  {
@@ -286,6 +391,13 @@
    "cs": "Šampon — proti vypadávání vlasů",
    "en": "Shampoo — against hair loss",
    "es": "Champú — anticaída del cabello"
+  },
+  "ing": {
+   "ru": "Инозитол, Гидролизованный кератин, Биотин, Гидролизованный коллаген, Плацентарный протеин, Ретинил пальмитат, Витамин Е, Экстракт капсикума, Экстракт со пальметто, Экстракт боярышника",
+   "uk": "Інозитол, Гідролізований кератин, Біотин, Гідролізований колаген, Плацентарний протеїн, Ретиніл пальмітат, Вітамін Е, Екстракт капсикуму, Екстракт со пальметто, Екстракт глоду",
+   "cs": "Inositol, Hydrolyzovaný keratin, Biotin, Hydrolyzovaný kolagen, Placentární protein, Retinyl-palmitát, Vitamin E, Extrakt z kapsika, Extrakt ze serenoy, Extrakt z hlohu",
+   "en": "Inositol, Hydrolyzed keratin, Biotin, Hydrolyzed collagen, Placental protein, Retinyl palmitate, Vitamin E, Capsicum extract, Saw palmetto extract, Hawthorn extract",
+   "es": "Inositol, Queratina hidrolizada, Biotina, Colágeno hidrolizado, Proteína placentaria, Palmitato de retinilo, Vitamina E, Extracto de capsicum, Extracto de saw palmetto, Extracto de espino blanco"
   }
  },
  {
@@ -303,6 +415,13 @@
    "cs": "Čisticí přípravek — hloubkové čištění",
    "en": "Cleanser — deep cleansing",
    "es": "Limpiador — limpieza profunda"
+  },
+  "ing": {
+   "ru": "Порошок абрикосовой косточки, Салициловая кислота, Гликолевая кислота, Яблочная кислота, Винная кислота, Ментол, Эвкалиптол, Гидролизованный кератин, Ниацинамид",
+   "uk": "Порошок абрикосової кісточки, Саліцилова кислота, Гліколева кислота, Яблучна кислота, Винна кислота, Ментол, Евкаліптол, Гідролізований кератин, Ніацинамід",
+   "cs": "Prášek z meruňkových pecek, Kyselina salicylová, Kyselina glykolová, Kyselina jablečná, Kyselina vinná, Mentol, Eukalyptol, Hydrolyzovaný keratin, Niacinamid",
+   "en": "Apricot seed powder, Salicylic acid, Glycolic acid, Malic acid, Tartaric acid, Menthol, Eucalyptol, Hydrolyzed keratin, Niacinamide",
+   "es": "Polvo de hueso de albaricoque, Ácido salicílico, Ácido glicólico, Ácido málico, Ácido tartárico, Mentol, Eucaliptol, Queratina hidrolizada, Niacinamida"
   }
  },
  {
@@ -371,6 +490,13 @@
    "cs": "Šampon — pro normální pokožku hlavy",
    "en": "Shampoo — for normal scalp",
    "es": "Champú — para cuero cabelludo normal"
+  },
+  "ing": {
+   "ru": "Биотин, Медный трипептид-1, Биотиноил трипептид-1, Сульфат цинка, Экстракт зародышей пшеницы, Экстракт зелёного чая, Витамин Е",
+   "uk": "Біотин, Мідний трипептид-1, Біотиноїл трипептид-1, Сульфат цинку, Екстракт зародків пшениці, Екстракт зеленого чаю, Вітамін Е",
+   "cs": "Biotin, Měďnatý tripeptid-1, Biotinoyl tripeptid-1, Síran zinečnatý, Extrakt z pšeničných klíčků, Extrakt ze zeleného čaje, Vitamin E",
+   "en": "Biotin, Copper tripeptide-1, Biotinoyl tripeptide-1, Zinc sulfate, Wheat germ extract, Green tea extract, Vitamin E",
+   "es": "Biotina, Tripéptido de cobre-1, Biotinoil tripéptido-1, Sulfato de zinc, Extracto de germen de trigo, Extracto de té verde, Vitamina E"
   }
  },
  {
@@ -388,6 +514,13 @@
    "cs": "Sprej — ochrana a hladkost vlasů",
    "en": "Spray — protection and smoothness",
    "es": "Spray — protección y suavidad"
+  },
+  "ing": {
+   "ru": "Пантенол, Гидролизованный кератин, Гидролизованный протеин пшеницы, Глицерин, Биотиноил трипептид-1, Апигенин",
+   "uk": "Пантенол, Гідролізований кератин, Гідролізований протеїн пшениці, Гліцерин, Біотиноїл трипептид-1, Апігенін",
+   "cs": "Panthenol, Hydrolyzovaný keratin, Hydrolyzovaný pšeničný protein, Glycerin, Biotinoyl tripeptid-1, Apigenin",
+   "en": "Panthenol, Hydrolyzed keratin, Hydrolyzed wheat protein, Glycerin, Biotinoyl tripeptide-1, Apigenin",
+   "es": "Pantenol, Queratina hidrolizada, Proteína de trigo hidrolizada, Glicerina, Biotinoil tripéptido-1, Apigenina"
   }
  },
  {
@@ -405,6 +538,13 @@
    "cs": "Šampon — proti vypadávání vlasů, pro ženy",
    "en": "Shampoo — against hair loss, for women",
    "es": "Champú — anticaída del cabello, para mujeres"
+  },
+  "ing": {
+   "ru": "Биотин, Медный пептид, Биотиноил трипептид-1, Экстракт гинкго билоба, Экстракт женьшеня, Экстракт со пальметто, Сульфат цинка",
+   "uk": "Біотин, Мідний пептид, Біотиноїл трипептид-1, Екстракт гінкго білоба, Екстракт женьшеню, Екстракт со пальметто, Сульфат цинку",
+   "cs": "Biotin, Měďnatý peptid, Biotinoyl tripeptid-1, Extrakt z ginkgo biloby, Extrakt ze ženšenu, Extrakt ze serenoy, Síran zinečnatý",
+   "en": "Biotin, Copper peptide, Biotinoyl tripeptide-1, Ginkgo biloba extract, Ginseng extract, Saw palmetto extract, Zinc sulfate",
+   "es": "Biotina, Péptido de cobre, Biotinoil tripéptido-1, Extracto de ginkgo biloba, Extracto de ginseng, Extracto de saw palmetto, Sulfato de zinc"
   }
  },
  {
@@ -422,6 +562,13 @@
    "cs": "Šampon — pro suchou pokožku hlavy",
    "en": "Shampoo — for dry scalp",
    "es": "Champú — para cuero cabelludo seco"
+  },
+  "ing": {
+   "ru": "Биотин, Сок алоэ вера, Пантенол, Экстракт подсолнечника, Гексапептид-11, Экстракт зелёного чая, Масло жожоба",
+   "uk": "Біотин, Сік алое вера, Пантенол, Екстракт соняшнику, Гексапептид-11, Екстракт зеленого чаю, Олія жожоба",
+   "cs": "Biotin, Šťáva z aloe vera, Panthenol, Extrakt ze slunečnice, Hexapeptid-11, Extrakt ze zeleného čaje, Jojobový olej",
+   "en": "Biotin, Aloe vera juice, Panthenol, Sunflower extract, Hexapeptide-11, Green tea extract, Jojoba oil",
+   "es": "Biotina, Jugo de aloe vera, Pantenol, Extracto de girasol, Hexapéptido-11, Extracto de té verde, Aceite de jojoba"
   }
  },
  {
@@ -439,6 +586,13 @@
    "cs": "Krém — hydratace těla",
    "en": "Cream — body hydration",
    "es": "Crema — hidratación corporal"
+  },
+  "ing": {
+   "ru": "Масло сладкого миндаля, Масло ши, Масло какао, Сок алоэ вера, Глицерин, Витамин Е",
+   "uk": "Олія солодкого мигдалю, Олія ши, Олія какао, Сік алое вера, Гліцерин, Вітамін Е",
+   "cs": "Olej ze sladkých mandlí, Bambucké máslo, Kakaové máslo, Šťáva z aloe vera, Glycerin, Vitamin E",
+   "en": "Sweet almond oil, Shea butter, Cocoa butter, Aloe vera juice, Glycerin, Vitamin E",
+   "es": "Aceite de almendras dulces, Manteca de karité, Manteca de cacao, Jugo de aloe vera, Glicerina, Vitamina E"
   }
  },
  {
@@ -456,6 +610,13 @@
    "cs": "Krém — hydratace těla",
    "en": "Cream — body hydration",
    "es": "Crema — hidratación corporal"
+  },
+  "ing": {
+   "ru": "Масло сладкого миндаля, Масло ши, Масло какао, Сок алоэ вера, Глицерин, Витамин Е",
+   "uk": "Олія солодкого мигдалю, Олія ши, Олія какао, Сік алое вера, Гліцерин, Вітамін Е",
+   "cs": "Olej ze sladkých mandlí, Bambucké máslo, Kakaové máslo, Šťáva z aloe vera, Glycerin, Vitamin E",
+   "en": "Sweet almond oil, Shea butter, Cocoa butter, Aloe vera juice, Glycerin, Vitamin E",
+   "es": "Aceite de almendras dulces, Manteca de karité, Manteca de cacao, Jugo de aloe vera, Glicerina, Vitamina E"
   }
  },
  {
@@ -473,6 +634,13 @@
    "cs": "Kondicionér — hydratace pleti",
    "en": "Conditioner — skin hydration",
    "es": "Acondicionador — hidratación de la piel"
+  },
+  "ing": {
+   "ru": "Натрия PCA, Аминокислоты шёлка, Гидролизованный кератин, Экстракт подсолнечника, Витамин C, Витамин Е",
+   "uk": "Натрію PCA, Амінокислоти шовку, Гідролізований кератин, Екстракт соняшнику, Вітамін C, Вітамін Е",
+   "cs": "Sodná sůl PCA, Hedvábné aminokyseliny, Hydrolyzovaný keratin, Extrakt ze slunečnice, Vitamin C, Vitamin E",
+   "en": "Sodium PCA, Silk amino acids, Hydrolyzed keratin, Sunflower extract, Vitamin C, Vitamin E",
+   "es": "PCA de sodio, Aminoácidos de seda, Queratina hidrolizada, Extracto de girasol, Vitamina C, Vitamina E"
   }
  },
  {
@@ -490,6 +658,13 @@
    "cs": "Maska — péče o pokožku hlavy",
    "en": "Mask — scalp care",
    "es": "Mascarilla — cuidado del cuero cabelludo"
+  },
+  "ing": {
+   "ru": "Масло ши, Аргановое масло, Кокосовое масло, Масло виноградной косточки, Экстракт стволовых клеток яблока, Убихинон (коэнзим Q10), Гексапептид-11, Масло мяты перечной",
+   "uk": "Олія ши, Арганова олія, Кокосова олія, Олія виноградної кісточки, Екстракт стовбурових клітин яблука, Убіхінон (коензим Q10), Гексапептид-11, Олія перцевої м'яти",
+   "cs": "Bambucké máslo, Arganový olej, Kokosový olej, Olej z hroznových jader, Extrakt z jablečných kmenových buněk, Ubichinon (koenzym Q10), Hexapeptid-11, Olej z máty peprné",
+   "en": "Shea butter, Argan oil, Coconut oil, Grape seed oil, Apple stem cell extract, Ubiquinone (coenzyme Q10), Hexapeptide-11, Peppermint oil",
+   "es": "Manteca de karité, Aceite de argán, Aceite de coco, Aceite de semilla de uva, Extracto de células madre de manzana, Ubiquinona (coenzima Q10), Hexapéptido-11, Aceite de menta piperita"
   }
  },
  {
@@ -507,6 +682,13 @@
    "cs": "Sérum — proti vypadávání vlasů",
    "en": "Serum — against hair loss",
    "es": "Sérum — anticaída del cabello"
+  },
+  "ing": {
+   "ru": "Масло эвкалипта, Масло мяты перечной, Пантенол, Биотин, Сульфат цинка, Экстракт со пальметто, Медный трипептид-1, Биотиноил трипептид-1, Витамин Е",
+   "uk": "Олія евкаліпту, Олія перцевої м'яти, Пантенол, Біотин, Сульфат цинку, Екстракт со пальметто, Мідний трипептид-1, Біотиноїл трипептид-1, Вітамін Е",
+   "cs": "Eukalyptový olej, Olej z máty peprné, Panthenol, Biotin, Síran zinečnatý, Extrakt ze serenoy, Měďnatý tripeptid-1, Biotinoyl tripeptid-1, Vitamin E",
+   "en": "Eucalyptus oil, Peppermint oil, Panthenol, Biotin, Zinc sulfate, Saw palmetto extract, Copper tripeptide-1, Biotinoyl tripeptide-1, Vitamin E",
+   "es": "Aceite de eucalipto, Aceite de menta piperita, Pantenol, Biotina, Sulfato de zinc, Extracto de saw palmetto, Tripéptido de cobre-1, Biotinoil tripéptido-1, Vitamina E"
   }
  },
  {
@@ -517,7 +699,7 @@
   "price": 1900,
   "cat": "hair-loss",
   "stock": "in",
-  "img": "",
+  "img": "set-folligen-vitatin-cellagen.jpg",
   "desc": {
    "ru": "Набор — против выпадения волос, для женщин",
    "uk": "Набір — проти випадіння волосся, для жінок",
@@ -534,7 +716,7 @@
   "price": 1900,
   "cat": "hair-loss",
   "stock": "in",
-  "img": "",
+  "img": "set-saturate-vitatin-cellagen.jpg",
   "desc": {
    "ru": "Набор — против выпадения волос, для женщин",
    "uk": "Набір — проти випадіння волосся, для жінок",
@@ -575,6 +757,13 @@
    "cs": "Šampon — pro suchou pokožku hlavy",
    "en": "Shampoo — for dry scalp",
    "es": "Champú — para cuero cabelludo seco"
+  },
+  "ing": {
+   "ru": "Биотин, Биотиноил трипептид-1, Экстракт женьшеня, Экстракт со пальметто, Экстракт гинкго билоба, Масло зародышей пшеницы, Масло жожоба, Сульфат цинка",
+   "uk": "Біотин, Біотиноїл трипептид-1, Екстракт женьшеню, Екстракт со пальметто, Екстракт гінкго білоба, Олія зародків пшениці, Олія жожоба, Сульфат цинку",
+   "cs": "Biotin, Biotinoyl tripeptid-1, Extrakt ze ženšenu, Extrakt ze serenoy, Extrakt z ginkgo biloby, Olej z pšeničných klíčků, Jojobový olej, Síran zinečnatý",
+   "en": "Biotin, Biotinoyl tripeptide-1, Ginseng extract, Saw palmetto extract, Ginkgo biloba extract, Wheat germ oil, Jojoba oil, Zinc sulfate",
+   "es": "Biotina, Biotinoil tripéptido-1, Extracto de ginseng, Extracto de saw palmetto, Extracto de ginkgo biloba, Aceite de germen de trigo, Aceite de jojoba, Sulfato de zinc"
   }
  },
  {
@@ -592,6 +781,13 @@
    "cs": "Šampon — pro mastnou pokožku hlavy",
    "en": "Shampoo — for oily scalp",
    "es": "Champú — para cuero cabelludo graso"
+  },
+  "ing": {
+   "ru": "Витамин C, Биотин, Камфора, Ментол, Гидролизованный кератин, Масло жожоба, Сульфат цинка, Инозитол",
+   "uk": "Вітамін C, Біотин, Камфора, Ментол, Гідролізований кератин, Олія жожоба, Сульфат цинку, Інозитол",
+   "cs": "Vitamin C, Biotin, Kafr, Mentol, Hydrolyzovaný keratin, Jojobový olej, Síran zinečnatý, Inositol",
+   "en": "Vitamin C, Biotin, Camphor, Menthol, Hydrolyzed keratin, Jojoba oil, Zinc sulfate, Inositol",
+   "es": "Vitamina C, Biotina, Alcanfor, Mentol, Queratina hidrolizada, Aceite de jojoba, Sulfato de zinc, Inositol"
   }
  },
  {
@@ -609,6 +805,13 @@
    "cs": "Sérum — proti vypadávání vlasů, pro ženy",
    "en": "Serum — against hair loss, for women",
    "es": "Sérum — anticaída del cabello, para mujeres"
+  },
+  "ing": {
+   "ru": "Медный пептид, Биотиноил трипептид-1, Метилникотинат, Биотин, Экстракт женьшеня, Экстракт со пальметто, Экстракт гинкго билоба, Сульфат цинка",
+   "uk": "Мідний пептид, Біотиноїл трипептид-1, Метилнікотинат, Біотин, Екстракт женьшеню, Екстракт со пальметто, Екстракт гінкго білоба, Сульфат цинку",
+   "cs": "Měďnatý peptid, Biotinoyl tripeptid-1, Methylnikotinát, Biotin, Extrakt ze ženšenu, Extrakt ze serenoy, Extrakt z ginkgo biloby, Síran zinečnatý",
+   "en": "Copper peptide, Biotinoyl tripeptide-1, Methyl nicotinate, Biotin, Ginseng extract, Saw palmetto extract, Ginkgo biloba extract, Zinc sulfate",
+   "es": "Péptido de cobre, Biotinoil tripéptido-1, Nicotinato de metilo, Biotina, Extracto de ginseng, Extracto de saw palmetto, Extracto de ginkgo biloba, Sulfato de zinc"
   }
  },
  {
@@ -626,6 +829,13 @@
    "cs": "Sérum — proti vypadávání vlasů, pro ženy",
    "en": "Serum — against hair loss, for women",
    "es": "Sérum — anticaída del cabello, para mujeres"
+  },
+  "ing": {
+   "ru": "Медный пептид, Биотиноил трипептид-1, Метилникотинат, Биотин, Экстракт женьшеня, Экстракт со пальметто, Экстракт гинкго билоба, Сульфат цинка",
+   "uk": "Мідний пептид, Біотиноїл трипептид-1, Метилнікотинат, Біотин, Екстракт женьшеню, Екстракт со пальметто, Екстракт гінкго білоба, Сульфат цинку",
+   "cs": "Měďnatý peptid, Biotinoyl tripeptid-1, Methylnikotinát, Biotin, Extrakt ze ženšenu, Extrakt ze serenoy, Extrakt z ginkgo biloby, Síran zinečnatý",
+   "en": "Copper peptide, Biotinoyl tripeptide-1, Methyl nicotinate, Biotin, Ginseng extract, Saw palmetto extract, Ginkgo biloba extract, Zinc sulfate",
+   "es": "Péptido de cobre, Biotinoil tripéptido-1, Nicotinato de metilo, Biotina, Extracto de ginseng, Extracto de saw palmetto, Extracto de ginkgo biloba, Sulfato de zinc"
   }
  },
  {
@@ -643,6 +853,13 @@
    "cs": "Sérum — proti vypadávání vlasů",
    "en": "Serum — against hair loss",
    "es": "Sérum — anticaída del cabello"
+  },
+  "ing": {
+   "ru": "Масло эвкалипта, Масло мяты перечной, Пантенол, Биотин, Сульфат цинка, Экстракт со пальметто, Медный трипептид-1, Биотиноил трипептид-1, Витамин Е",
+   "uk": "Олія евкаліпту, Олія перцевої м'яти, Пантенол, Біотин, Сульфат цинку, Екстракт со пальметто, Мідний трипептид-1, Біотиноїл трипептид-1, Вітамін Е",
+   "cs": "Eukalyptový olej, Olej z máty peprné, Panthenol, Biotin, Síran zinečnatý, Extrakt ze serenoy, Měďnatý tripeptid-1, Biotinoyl tripeptid-1, Vitamin E",
+   "en": "Eucalyptus oil, Peppermint oil, Panthenol, Biotin, Zinc sulfate, Saw palmetto extract, Copper tripeptide-1, Biotinoyl tripeptide-1, Vitamin E",
+   "es": "Aceite de eucalipto, Aceite de menta piperita, Pantenol, Biotina, Sulfato de zinc, Extracto de saw palmetto, Tripéptido de cobre-1, Biotinoil tripéptido-1, Vitamina E"
   }
  },
  {
@@ -660,6 +877,13 @@
    "cs": "Kondicionér — péče o pokožku hlavy",
    "en": "Conditioner — scalp care",
    "es": "Acondicionador — cuidado del cuero cabelludo"
+  },
+  "ing": {
+   "ru": "Пироктон оламин, Экстракт хмеля, Экстракт розмарина, Экстракт гидрастиса, Экстракт гамамелиса, Ментол, Витамин C",
+   "uk": "Піроктон оламін, Екстракт хмелю, Екстракт розмарину, Екстракт гідрастису, Екстракт гамамелісу, Ментол, Вітамін C",
+   "cs": "Piroctone olamin, Extrakt z chmele, Extrakt z rozmarýnu, Extrakt z hydrastisu, Extrakt z vilínu, Mentol, Vitamin C",
+   "en": "Piroctone olamine, Hops extract, Rosemary extract, Goldenseal extract, Witch hazel extract, Menthol, Vitamin C",
+   "es": "Piroctona olamina, Extracto de lúpulo, Extracto de romero, Extracto de hidrastis, Extracto de hamamelis, Mentol, Vitamina C"
   }
  },
  {
@@ -677,6 +901,13 @@
    "cs": "Čisticí přípravek — pro podrážděnou pokožku hlavy",
    "en": "Cleanser — for irritated scalp",
    "es": "Limpiador — para cuero cabelludo irritado"
+  },
+  "ing": {
+   "ru": "Гиалуронат натрия, Натрия PCA, Аминокислоты пшеницы, Экстракт окопника, Гидроксипролин, Биотин, Сульфат цинка, Ментол",
+   "uk": "Гіалуронат натрію, Натрію PCA, Амінокислоти пшениці, Екстракт живокосту, Гідроксипролін, Біотин, Сульфат цинку, Ментол",
+   "cs": "Hyaluronát sodný, Sodná sůl PCA, Pšeničné aminokyseliny, Extrakt z kostivalu, Hydroxyprolin, Biotin, Síran zinečnatý, Mentol",
+   "en": "Sodium hyaluronate, Sodium PCA, Wheat amino acids, Comfrey extract, Hydroxyproline, Biotin, Zinc sulfate, Menthol",
+   "es": "Hialuronato de sodio, PCA de sodio, Aminoácidos de trigo, Extracto de consuelda, Hidroxiprolina, Biotina, Sulfato de zinc, Mentol"
   }
  },
  {
@@ -694,6 +925,13 @@
    "cs": "Sérum — péče o pokožku hlavy",
    "en": "Serum — scalp care",
    "es": "Sérum — cuidado del cuero cabelludo"
+  },
+  "ing": {
+   "ru": "Экстракт маки перуанской, Экстракт лука, Ниацинамид, Эктоин, Цинк PCA, Биотин, Биотиноил трипептид-1, Экстракт женьшеня, Аргинин",
+   "uk": "Екстракт маки перуанської, Екстракт цибулі, Ніацинамід, Ектоїн, Цинк PCA, Біотин, Біотиноїл трипептид-1, Екстракт женьшеню, Аргінін",
+   "cs": "Extrakt z maky peruánské, Extrakt z cibule, Niacinamid, Ektoin, Zinek PCA, Biotin, Biotinoyl tripeptid-1, Extrakt ze ženšenu, Arginin",
+   "en": "Maca root extract, Onion extract, Niacinamide, Ectoin, Zinc PCA, Biotin, Biotinoyl tripeptide-1, Ginseng extract, Arginine",
+   "es": "Extracto de maca, Extracto de cebolla, Niacinamida, Ectoína, Zinc PCA, Biotina, Biotinoil tripéptido-1, Extracto de ginseng, Arginina"
   }
  },
  {
@@ -711,6 +949,13 @@
    "cs": "Kondicionér — hustota a objem vlasů",
    "en": "Conditioner — hair density and volume",
    "es": "Acondicionador — densidad y volumen del cabello"
+  },
+  "ing": {
+   "ru": "Экстракт женьшеня, Экстракт со пальметто, Экстракт солодки, Экстракт крапивы, Биотин, Экстракт гинкго билоба, Сульфат цинка, Витамин Е",
+   "uk": "Екстракт женьшеню, Екстракт со пальметто, Екстракт солодки, Екстракт кропиви, Біотин, Екстракт гінкго білоба, Сульфат цинку, Вітамін Е",
+   "cs": "Extrakt ze ženšenu, Extrakt ze serenoy, Extrakt z lékořice, Extrakt z kopřivy, Biotin, Extrakt z ginkgo biloby, Síran zinečnatý, Vitamin E",
+   "en": "Ginseng extract, Saw palmetto extract, Licorice extract, Nettle extract, Biotin, Ginkgo biloba extract, Zinc sulfate, Vitamin E",
+   "es": "Extracto de ginseng, Extracto de saw palmetto, Extracto de regaliz, Extracto de ortiga, Biotina, Extracto de ginkgo biloba, Sulfato de zinc, Vitamina E"
   }
  },
  {
@@ -728,6 +973,13 @@
    "cs": "Šampon — hloubkové čištění",
    "en": "Shampoo — deep cleansing",
    "es": "Champú — limpieza profunda"
+  },
+  "ing": {
+   "ru": "Натрия PCA, Гидролизованный коллаген, Гидролизованный кератин, Пантенол, Экстракт подсолнечника, Экстракт ромашки, Яблочный уксус",
+   "uk": "Натрію PCA, Гідролізований колаген, Гідролізований кератин, Пантенол, Екстракт соняшнику, Екстракт ромашки, Яблучний оцет",
+   "cs": "Sodná sůl PCA, Hydrolyzovaný kolagen, Hydrolyzovaný keratin, Panthenol, Extrakt ze slunečnice, Extrakt z heřmánku, Jablečný ocet",
+   "en": "Sodium PCA, Hydrolyzed collagen, Hydrolyzed keratin, Panthenol, Sunflower extract, Chamomile extract, Apple cider vinegar",
+   "es": "PCA de sodio, Colágeno hidrolizado, Queratina hidrolizada, Pantenol, Extracto de girasol, Extracto de manzanilla, Vinagre de manzana"
   }
  },
  {
@@ -745,6 +997,13 @@
    "cs": "Šampon — hloubkové čištění",
    "en": "Shampoo — deep cleansing",
    "es": "Champú — limpieza profunda"
+  },
+  "ing": {
+   "ru": "Натрия PCA, Гидролизованный коллаген, Гидролизованный кератин, Пантенол, Экстракт подсолнечника, Экстракт ромашки, Яблочный уксус",
+   "uk": "Натрію PCA, Гідролізований колаген, Гідролізований кератин, Пантенол, Екстракт соняшнику, Екстракт ромашки, Яблучний оцет",
+   "cs": "Sodná sůl PCA, Hydrolyzovaný kolagen, Hydrolyzovaný keratin, Panthenol, Extrakt ze slunečnice, Extrakt z heřmánku, Jablečný ocet",
+   "en": "Sodium PCA, Hydrolyzed collagen, Hydrolyzed keratin, Panthenol, Sunflower extract, Chamomile extract, Apple cider vinegar",
+   "es": "PCA de sodio, Colágeno hidrolizado, Queratina hidrolizada, Pantenol, Extracto de girasol, Extracto de manzanilla, Vinagre de manzana"
   }
  },
  {
@@ -779,6 +1038,13 @@
    "cs": "Šampon — proti lupům",
    "en": "Shampoo — anti-dandruff",
    "es": "Champú — anticaspa"
+  },
+  "ing": {
+   "ru": "Пироктон оламин, Климбазол, Пантенол, Аллантоин",
+   "uk": "Піроктон оламін, Клімбазол, Пантенол, Алантоїн",
+   "cs": "Piroctone olamin, Klimbazol, Panthenol, Allantoin",
+   "en": "Piroctone olamine, Climbazole, Panthenol, Allantoin",
+   "es": "Piroctona olamina, Climbazol, Pantenol, Alantoína"
   }
  },
  {
@@ -796,6 +1062,13 @@
    "cs": "Krém — péče při akné",
    "en": "Cream — for acne-prone skin",
    "es": "Crema — para piel con acné"
+  },
+  "ing": {
+   "ru": "Масло авокадо, Масло печени трески, Экстракт красного клевера",
+   "uk": "Олія авокадо, Олія печінки тріски, Екстракт червоної конюшини",
+   "cs": "Avokádový olej, Olej z tresčích jater, Extrakt z jetele lučního",
+   "en": "Avocado oil, Cod liver oil, Red clover extract",
+   "es": "Aceite de aguacate, Aceite de hígado de bacalao, Extracto de trébol rojo"
   }
  },
  {
@@ -813,6 +1086,13 @@
    "cs": "Čisticí přípravek — péče při akné",
    "en": "Cleanser — for acne-prone skin",
    "es": "Limpiador — para piel con acné"
+  },
+  "ing": {
+   "ru": "Салициловая кислота, Сок алоэ вера, Пантенол",
+   "uk": "Саліцилова кислота, Сік алое вера, Пантенол",
+   "cs": "Kyselina salicylová, Šťáva z aloe vera, Panthenol",
+   "en": "Salicylic acid, Aloe vera juice, Panthenol",
+   "es": "Ácido salicílico, Jugo de aloe vera, Pantenol"
   }
  },
  {
@@ -830,6 +1110,13 @@
    "cs": "Sprej — péče při akné",
    "en": "Spray — for acne-prone skin",
    "es": "Spray — para piel con acné"
+  },
+  "ing": {
+   "ru": "Салициловая кислота, Сок алоэ вера, Альгиновая кислота",
+   "uk": "Саліцилова кислота, Сік алое вера, Альгінова кислота",
+   "cs": "Kyselina salicylová, Šťáva z aloe vera, Kyselina alginová",
+   "en": "Salicylic acid, Aloe vera juice, Alginic acid",
+   "es": "Ácido salicílico, Jugo de aloe vera, Ácido algínico"
   }
  },
  {
@@ -847,6 +1134,13 @@
    "cs": "Gel — zklidnění pleti",
    "en": "Gel — skin soothing",
    "es": "Gel — calmado de la piel"
+  },
+  "ing": {
+   "ru": "Экстракт гамамелиса, Бета-глюкан, Пальмитоил олигопептид",
+   "uk": "Екстракт гамамелісу, Бета-глюкан, Пальмітоїл олігопептид",
+   "cs": "Extrakt z vilínu, Beta-glukan, Palmitoyl oligopeptid",
+   "en": "Witch hazel extract, Beta-glucan, Palmitoyl oligopeptide",
+   "es": "Extracto de hamamelis, Betaglucano, Palmitoil oligopéptido"
   }
  },
  {
@@ -864,6 +1158,13 @@
    "cs": "Krém — zklidnění pleti",
    "en": "Cream — skin soothing",
    "es": "Crema — calmado de la piel"
+  },
+  "ing": {
+   "ru": "Бета-глюкан, Масло семян тыквы, Сафлоровое масло",
+   "uk": "Бета-глюкан, Олія гарбузового насіння, Сафлорова олія",
+   "cs": "Beta-glukan, Dýňový olej, Světlicový olej",
+   "en": "Beta-glucan, Pumpkin seed oil, Safflower oil",
+   "es": "Betaglucano, Aceite de semilla de calabaza, Aceite de cártamo"
   }
  },
  {
@@ -881,6 +1182,13 @@
    "cs": "Krém — sjednocení tónu",
    "en": "Cream — evening out skin tone",
    "es": "Crema — unificación del tono"
+  },
+  "ing": {
+   "ru": "Койевая кислота, Пантенол, Этиласкорбиновая кислота, Апельсиновое масло, Гидрогенизированный лецитин",
+   "uk": "Коєва кислота, Пантенол, Етиласкорбінова кислота, Апельсинова олія, Гідрогенізований лецитин",
+   "cs": "Kyselina kojová, Panthenol, Ethyl-askorbová kyselina, Pomerančový olej, Hydrogenovaný lecitin",
+   "en": "Kojic acid, Panthenol, Ethyl ascorbic acid, Orange oil, Hydrogenated lecithin",
+   "es": "Ácido kójico, Pantenol, Ácido etil ascórbico, Aceite de naranja, Lecitina hidrogenada"
   }
  },
  {
@@ -898,6 +1206,13 @@
    "cs": "Čisticí přípravek — hloubkové čištění",
    "en": "Cleanser — deep cleansing",
    "es": "Limpiador — limpieza profunda"
+  },
+  "ing": {
+   "ru": "Кора белого дуба, Экстракт юкки, Сок алоэ вера, Лимонное масло",
+   "uk": "Кора білого дуба, Екстракт юки, Сік алое вера, Лимонна олія",
+   "cs": "Kůra bílého dubu, Extrakt z juky, Šťáva z aloe vera, Citronový olej",
+   "en": "White oak bark, Yucca extract, Aloe vera juice, Lemon oil",
+   "es": "Corteza de roble blanco, Extracto de yuca, Jugo de aloe vera, Aceite de limón"
   }
  },
  {
@@ -915,6 +1230,13 @@
    "cs": "Sérum — vitamin C a antioxidační ochrana",
    "en": "Serum — vitamin C and antioxidant protection",
    "es": "Sérum — vitamina C y protección antioxidante"
+  },
+  "ing": {
+   "ru": "Витамин C, Аскорбил глюкозид, Магния аскорбилфосфат, Пантенол",
+   "uk": "Вітамін C, Аскорбіл глюкозид, Магнію аскорбілфосфат, Пантенол",
+   "cs": "Vitamin C, Askorbyl glukosid, Hořečnatý askorbyl-fosfát, Panthenol",
+   "en": "Vitamin C, Ascorbyl glucoside, Magnesium ascorbyl phosphate, Panthenol",
+   "es": "Vitamina C, Ascorbil glucósido, Ascorbil fosfato de magnesio, Pantenol"
   }
  },
  {
@@ -932,6 +1254,13 @@
    "cs": "Sprej — hydratace pleti",
    "en": "Spray — skin hydration",
    "es": "Spray — hidratación de la piel"
+  },
+  "ing": {
+   "ru": "Сарсапарель, Экстракт люцерны и коровяка, Ламинария (келп), Экстракт хмеля",
+   "uk": "Сарсапарель, Екстракт люцерни та дивини, Ламінарія (келп), Екстракт хмелю",
+   "cs": "Sarsaparilla, Extrakt z vojtěšky a divizny, Chaluha (kelp), Extrakt z chmele",
+   "en": "Sarsaparilla, Alfalfa and mullein extract, Kelp, Hops extract",
+   "es": "Zarzaparrilla, Extracto de alfalfa y gordolobo, Alga kelp, Extracto de lúpulo"
   }
  },
  {
@@ -949,6 +1278,13 @@
    "cs": "Sprej — hydratace pleti",
    "en": "Spray — skin hydration",
    "es": "Spray — hidratación de la piel"
+  },
+  "ing": {
+   "ru": "Сарсапарель, Экстракт люцерны и коровяка, Ламинария (келп), Экстракт хмеля",
+   "uk": "Сарсапарель, Екстракт люцерни та дивини, Ламінарія (келп), Екстракт хмелю",
+   "cs": "Sarsaparilla, Extrakt z vojtěšky a divizny, Chaluha (kelp), Extrakt z chmele",
+   "en": "Sarsaparilla, Alfalfa and mullein extract, Kelp, Hops extract",
+   "es": "Zarzaparrilla, Extracto de alfalfa y gordolobo, Alga kelp, Extracto de lúpulo"
   }
  },
  {
@@ -966,6 +1302,13 @@
    "cs": "Kapky — sjednocení tónu",
    "en": "Drops — evening out skin tone",
    "es": "Gotas — unificación del tono"
+  },
+  "ing": {
+   "ru": "Койевая кислота, Экстракт солодки, Экстракт галидриса",
+   "uk": "Коєва кислота, Екстракт солодки, Екстракт галідрису",
+   "cs": "Kyselina kojová, Extrakt z lékořice, Extrakt z halidrys",
+   "en": "Kojic acid, Licorice root extract, Halidrys siliquosa extract",
+   "es": "Ácido kójico, Extracto de regaliz, Extracto de halidrys"
   }
  },
  {
@@ -983,6 +1326,13 @@
    "cs": "Čisticí přípravek — čištění pleti",
    "en": "Cleanser — facial cleansing",
    "es": "Limpiador — limpieza facial"
+  },
+  "ing": {
+   "ru": "Кора белого дуба, Экстракт юкки, Кора берёзы, Соя",
+   "uk": "Кора білого дуба, Екстракт юки, Кора берези, Соя",
+   "cs": "Kůra bílého dubu, Extrakt z juky, Březová kůra, Sója",
+   "en": "White oak bark, Yucca extract, Birch bark, Soybean",
+   "es": "Corteza de roble blanco, Extracto de yuca, Corteza de abedul, Soja"
   }
  },
  {
@@ -1017,6 +1367,13 @@
    "cs": "Krém — péče proti stárnutí",
    "en": "Cream — anti-ageing care",
    "es": "Crema — cuidado antiedad"
+  },
+  "ing": {
+   "ru": "Магния аскорбилфосфат, Пальмитоил олигопептид, Пальмитоил тетрапептид-7, Сафлоровое масло, Витамин А",
+   "uk": "Магнію аскорбілфосфат, Пальмітоїл олігопептид, Пальмітоїл тетрапептид-7, Сафлорова олія, Вітамін А",
+   "cs": "Hořečnatý askorbyl-fosfát, Palmitoyl oligopeptid, Palmitoyl tetrapeptid-7, Světlicový olej, Vitamin A",
+   "en": "Magnesium ascorbyl phosphate, Palmitoyl oligopeptide, Palmitoyl tetrapeptide-7, Safflower oil, Vitamin A",
+   "es": "Ascorbil fosfato de magnesio, Palmitoil oligopéptido, Palmitoil tetrapéptido-7, Aceite de cártamo, Vitamina A"
   }
  },
  {
@@ -1051,6 +1408,13 @@
    "cs": "Gel — čištění pleti",
    "en": "Gel — facial cleansing",
    "es": "Gel — limpieza facial"
+  },
+  "ing": {
+   "ru": "Аскорбил пальмитат (витамин C), DMAE",
+   "uk": "Аскорбіл пальмітат (вітамін C), DMAE",
+   "cs": "Askorbyl-palmitát (vitamin C), DMAE",
+   "en": "Ascorbyl palmitate (vitamin C), DMAE",
+   "es": "Palmitato de ascorbilo (vitamina C), DMAE"
   }
  },
  {
@@ -1068,6 +1432,13 @@
    "cs": "Sérum — hydratace pleti",
    "en": "Serum — skin hydration",
    "es": "Sérum — hidratación de la piel"
+  },
+  "ing": {
+   "ru": "Липосомальная гиалуроновая кислота, Сшитая гиалуроновая кислота, Низкомолекулярная гиалуроновая кислота, Олигопептид-24, Лизат сахаромицетов",
+   "uk": "Ліпосомальна гіалуронова кислота, Зшита гіалуронова кислота, Низькомолекулярна гіалуронова кислота, Олігопептид-24, Лізат сахароміцетів",
+   "cs": "Lipozomální kyselina hyaluronová, Zesíťovaná kyselina hyaluronová, Nízkomolekulární kyselina hyaluronová, Oligopeptid-24, Lyzát saccharomyces",
+   "en": "Liposomal hyaluronic acid, Cross-linked hyaluronic acid, Low molecular weight hyaluronic acid, Oligopeptide-24, Saccharomyces lysate extract",
+   "es": "Ácido hialurónico liposomal, Ácido hialurónico reticulado, Ácido hialurónico de bajo peso molecular, Oligopéptido-24, Lisado de saccharomyces"
   }
  },
  {
@@ -1102,6 +1473,13 @@
    "cs": "Sérum — péče proti stárnutí",
    "en": "Serum — anti-ageing care",
    "es": "Sérum — cuidado antiedad"
+  },
+  "ing": {
+   "ru": "Антивозрастные пептиды, Коэнзим Q10, Экстракт зелёного чая, Экстракт красного чая, Экстракт виноградных косточек, Экстракт граната, Масло ши",
+   "uk": "Антивікові пептиди, Коензим Q10, Екстракт зеленого чаю, Екстракт червоного чаю, Екстракт виноградних кісточок, Екстракт гранату, Олія ши",
+   "cs": "Anti-age peptidy, Koenzym Q10, Extrakt ze zeleného čaje, Extrakt z červeného čaje, Extrakt z hroznových jader, Extrakt z granátového jablka, Bambucké máslo",
+   "en": "Anti-aging peptides, Coenzyme Q10, Green tea extract, Red tea extract, Grape seed extract, Pomegranate extract, Shea butter",
+   "es": "Péptidos antiedad, Coenzima Q10, Extracto de té verde, Extracto de té rojo, Extracto de semilla de uva, Extracto de granada, Manteca de karité"
   }
  },
  {
@@ -1119,6 +1497,13 @@
    "cs": "Krém — péče při akné",
    "en": "Cream — for acne-prone skin",
    "es": "Crema — para piel con acné"
+  },
+  "ing": {
+   "ru": "Гликолевая кислота, Салициловая кислота, Азелаиновая кислота",
+   "uk": "Гліколева кислота, Саліцилова кислота, Азелаїнова кислота",
+   "cs": "Kyselina glykolová, Kyselina salicylová, Kyselina azelaová",
+   "en": "Glycolic acid, Salicylic acid, Azelaic acid",
+   "es": "Ácido glicólico, Ácido salicílico, Ácido azelaico"
   }
  },
  {
@@ -1136,6 +1521,13 @@
    "cs": "Lotion — péče při akné",
    "en": "Lotion — for acne-prone skin",
    "es": "Loción — para piel con acné"
+  },
+  "ing": {
+   "ru": "Гликолевая кислота, Салициловая кислота, Азелаиновая кислота",
+   "uk": "Гліколева кислота, Саліцилова кислота, Азелаїнова кислота",
+   "cs": "Kyselina glykolová, Kyselina salicylová, Kyselina azelaová",
+   "en": "Glycolic acid, Salicylic acid, Azelaic acid",
+   "es": "Ácido glicólico, Ácido salicílico, Ácido azelaico"
   }
  },
  {
@@ -1153,6 +1545,13 @@
    "cs": "Čisticí přípravek — jemné odlupování",
    "en": "Cleanser — gentle exfoliation",
    "es": "Limpiador — exfoliación suave"
+  },
+  "ing": {
+   "ru": "Гликолевая кислота, Сорбитол",
+   "uk": "Гліколева кислота, Сорбіт",
+   "cs": "Kyselina glykolová, Sorbitol",
+   "en": "Glycolic acid, Sorbitol",
+   "es": "Ácido glicólico, Sorbitol"
   }
  },
  {
@@ -1170,6 +1569,13 @@
    "cs": "Sérum — vitamin C a antioxidační ochrana",
    "en": "Serum — vitamin C and antioxidant protection",
    "es": "Sérum — vitamina C y protección antioxidante"
+  },
+  "ing": {
+   "ru": "Аскорбил пальмитат (витамин C), DMAE, Витамины B5 и Е, Гиалуроновая кислота",
+   "uk": "Аскорбіл пальмітат (вітамін C), DMAE, Вітаміни B5 та Е, Гіалуронова кислота",
+   "cs": "Askorbyl-palmitát (vitamin C), DMAE, Vitaminy B5 a E, Kyselina hyaluronová",
+   "en": "Ascorbyl palmitate (vitamin C), DMAE, Vitamins B5 & E, Hyaluronic acid",
+   "es": "Palmitato de ascorbilo (vitamina C), DMAE, Vitaminas B5 y E, Ácido hialurónico"
   }
  },
  {
@@ -1187,6 +1593,13 @@
    "cs": "Krém — péče proti stárnutí",
    "en": "Cream — anti-ageing care",
    "es": "Crema — cuidado antiedad"
+  },
+  "ing": {
+   "ru": "Бензоилпероксид, Ретинол, Антивозрастные пептиды, Хризин, Альфа-бисаболол, Экстракт зелёного чая, Гиалуроновая кислота",
+   "uk": "Бензоїлпероксид, Ретинол, Антивікові пептиди, Хризин, Альфа-бісаболол, Екстракт зеленого чаю, Гіалуронова кислота",
+   "cs": "Benzoylperoxid, Retinol, Anti-age peptidy, Chrysin, Alfa-bisabolol, Extrakt ze zeleného čaje, Kyselina hyaluronová",
+   "en": "Benzoyl peroxide, All-trans retinol, Anti-aging peptides, Chrysin, Alpha-bisabolol, Green tea extract, Hyaluronic acid",
+   "es": "Peróxido de benzoilo, Retinol, Péptidos antiedad, Crisina, Alfa-bisabolol, Extracto de té verde, Ácido hialurónico"
   }
  },
  {
@@ -1221,6 +1634,13 @@
    "cs": "Krém — péče o oční okolí",
    "en": "Cream — eye-area care",
    "es": "Crema — cuidado del contorno de ojos"
+  },
+  "ing": {
+   "ru": "Трансформирующий фактор роста бета-1, Тимозин бета-4, Антивозрастные пептиды, Гиалуроновая кислота",
+   "uk": "Трансформуючий фактор росту бета-1, Тимозин бета-4, Антивікові пептиди, Гіалуронова кислота",
+   "cs": "Transformující růstový faktor beta-1, Thymosin beta-4, Anti-age peptidy, Kyselina hyaluronová",
+   "en": "Transforming growth factor beta-1, Thymosin beta-4, Anti-aging peptides, Hyaluronic acid",
+   "es": "Factor de crecimiento transformante beta-1, Timosina beta-4, Péptidos antiedad, Ácido hialurónico"
   }
  },
  {
@@ -1238,6 +1658,13 @@
    "cs": "Krém — péče proti stárnutí",
    "en": "Cream — anti-ageing care",
    "es": "Crema — cuidado antiedad"
+  },
+  "ing": {
+   "ru": "Трансформирующий фактор роста бета-1, Тимозин бета-4, Антивозрастные пептиды, Гиалуроновая кислота",
+   "uk": "Трансформуючий фактор росту бета-1, Тимозин бета-4, Антивікові пептиди, Гіалуронова кислота",
+   "cs": "Transformující růstový faktor beta-1, Thymosin beta-4, Anti-age peptidy, Kyselina hyaluronová",
+   "en": "Transforming growth factor beta-1, Thymosin beta-4, Anti-aging peptides, Hyaluronic acid",
+   "es": "Factor de crecimiento transformante beta-1, Timosina beta-4, Péptidos antiedad, Ácido hialurónico"
   }
  },
  {
