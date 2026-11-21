@@ -323,7 +323,7 @@ section{padding:50px 0}
 .studios{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px}
 .studio{background:#fff;border:1px solid var(--line-gold);border-radius:14px;padding:26px}
 .alt .studio{background:var(--cream)}
-.studio h3{font-size:24px;margin-bottom:14px}
+.studio h2{font-size:24px;margin:0 0 14px}
 .studio dl{display:grid;grid-template-columns:auto 1fr;gap:9px 16px;font-size:15px;margin-bottom:20px}
 .studio dt{color:var(--muted)}
 .studio a{text-underline-offset:3px}
@@ -668,7 +668,7 @@ section{padding:50px 0}
 .chip.is-on{background:var(--accent);border-color:var(--accent);color:var(--accent-ink);font-weight:600}
 .shop-sort{padding:8px 13px;border-radius:999px;border:1px solid var(--line-gold);background:#fff;
    font:inherit;font-size:14px;color:var(--navy);cursor:pointer}
-.shop-count{font-size:13.5px;color:var(--muted);margin-bottom:12px}
+.shop-count{font-size:13.5px;color:var(--muted);margin-bottom:12px}h2.shop-count{font-family:inherit;font-weight:400;letter-spacing:0;margin-top:0}
 
 /* прайс: группа — кнопка, раскрывается таблицей */
 .ptab-h{font-family:'Cormorant Garamond',serif;font-size:23px;font-weight:600;
@@ -921,7 +921,7 @@ body[data-page="services"] .more-list a:hover{border-color:var(--accent);color:v
 .dark .cmp-sm{background:rgba(255,255,255,.04)}
 
 /* до и после */
-.ba-grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(400px,1fr))}
+.ba-grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(min(100%,400px),1fr))}
 .ba-card{background:#fff;border:1px solid var(--line);border-radius:18px;overflow:hidden;max-width:640px;
   box-shadow:0 14px 34px rgba(19,11,86,.08)}
 .ba-pair{display:grid;grid-template-columns:1fr 1fr;gap:2px;background:var(--line)}
