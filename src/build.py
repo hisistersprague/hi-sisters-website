@@ -187,6 +187,9 @@ def slogan_html(lang):
 
 
 # Город в предложном падеже — для заголовков «… в Праге».
+STUDIO_WORD = {'ru': 'Студия', 'uk': 'Студія', 'cs': 'Studio',
+               'en': 'Studio', 'es': 'Estudio'}
+
 IN_CITY = {
  'prague':   {'ru':'в Праге','uk':'у Празі','cs':'v Praze','en':'in Prague','es':'en Praga'},
  'valencia': {'ru':'в Валенсии','uk':'у Валенсії','cs':'ve Valencii','en':'in Valencia','es':'en Valencia'},
@@ -2279,11 +2282,12 @@ CSSVER = hashlib.md5(css().encode('utf-8')).hexdigest()[:8]
 OG_LOCALE = {'ru': 'ru_RU', 'uk': 'uk_UA', 'cs': 'cs_CZ', 'en': 'en_GB', 'es': 'es_ES'}
 
 
-def head(lang, city, title, desc, rel='', langs=None, section=''):
+def head(lang, city, title, desc, rel='', langs=None, section='', noindex=False):
     base = 'https://hi-sisters.clinic'
     ls_ = langs or LANGS
     alts = '\n'.join('  <link rel="alternate" hreflang="%s" href="%s/%s/%s/%s">' % (l, base, l, city, rel)
                      for l in ls_)
+    robots = '<meta name="robots" content="noindex,follow">' if noindex else ''
     return f"""<!doctype html>
 <html lang="{lang}">
 <head>
@@ -2292,6 +2296,7 @@ def head(lang, city, title, desc, rel='', langs=None, section=''):
 <title>{e(title)}</title>
 <meta name="description" content="{e(desc)}">
 <link rel="canonical" href="{base}/{lang}/{city}/{rel}">
+{robots}
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Hi Sisters Clinic">
 <meta property="og:locale" content="{OG_LOCALE[lang]}">
@@ -2535,11 +2540,21 @@ def with_city(title, desc, lang, city):
             title = '%s, %s' % (title, nm)
     tail = desc.rstrip().rstrip('.').lower()
     if not any(f in tail for f in forms):
-        room = 166 - len(nm)
+        # город дописываем отдельной фразой: раньше он прилипал к последнему слову
+        # («…тепловой энергией Валенсия.») и так же выглядел в выдаче Google
+        add = '%s %s.' % (STUDIO_WORD[lang], IN_CITY[city][lang])
+        room = 168 - len(add) - 1
         base = desc.rstrip()
         if len(base) > room:
-            base = base[:room].rsplit(' ', 1)[0]
-        desc = '%s %s.' % (base.rstrip(' ,.;:—-'), nm)
+            cut = base[:room]
+            end = max(cut.rfind('. '), cut.rfind('! '), cut.rfind('? '))
+            if end > room // 2:                      # помещается целое предложение
+                base = cut[:end + 1]
+            else:                                    # иначе режем по слову
+                base = cut.rsplit(' ', 1)[0].rstrip(' ,;:—-') + '.'
+        elif not base.endswith(('.', '!', '?')):
+            base += '.'
+        desc = '%s %s' % (base, add)
     return title, desc
 
 
@@ -2553,7 +2568,7 @@ def gotop_btn(lang):
 
 
 def doc(lang, city, rel, current, title, desc, main, cta=None, other_rel=None,
-        with_band=True, schema='', langs=None, add_city=True):
+        with_band=True, schema='', langs=None, add_city=True, noindex=False):
     if add_city:
         title, desc = with_city(title, desc, lang, city)
     label = cta or HERO[lang]['cta']
@@ -2562,7 +2577,7 @@ def doc(lang, city, rel, current, title, desc, main, cta=None, other_rel=None,
     # Google показывает около 60 знаков: длинный хвост с названием клиники только мешает
     if len(title) > 65 and ', Hi Sisters Clinic' in title:
         title = title.replace(', Hi Sisters Clinic', '')
-    return (head(lang, city, title, desc, rel, langs=langs, section=current)
+    return (head(lang, city, title, desc, rel, langs=langs, section=current, noindex=noindex)
             + header(lang, city, rel, current, other_rel, langs=langs)
             + '\n<main>' + main + (band(lang, city) if with_band else '') + '</main>'
             + footer(lang, city)
@@ -3059,7 +3074,9 @@ def build_home(lang, city):
     why = icon_cards([(v['title'], v['desc']) for v in vals], ICO_VALUES)
 
     title = '%s %s — Hi Sisters Clinic' % (KICKER[city][lang], cityname)
-    desc = '%s %s%s.' % (h['lead'], (price + '. ') if price else '', st['address'])
+    # цена идёт отдельным предложением, поэтому начинаем её с заглавной буквы
+    price_s = (price[0].upper() + price[1:] + '. ') if price else ''
+    desc = '%s %s%s.' % (h['lead'], price_s, st['address'])
 
     main = f"""
 <section class="hero"><div class="wrap"><div class="hero-grid"><div>
@@ -4120,7 +4137,8 @@ def build_booking(lang, city):
 </div></section>
 """
     title = '%s — %s, Hi Sisters Clinic' % (bp['h1'], cityname)
-    return doc(lang, city, REL['booking'], 'booking', title, bp['lead'], main, with_band=False)
+    return doc(lang, city, REL['booking'], 'booking', title, bp['lead'], main,
+               with_band=False, noindex=True)
 
 
 
