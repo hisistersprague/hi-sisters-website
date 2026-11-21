@@ -2546,15 +2546,21 @@ def with_city(title, desc, lang, city):
         room = 168 - len(add) - 1
         base = desc.rstrip()
         if len(base) > room:
+            # обрезаем только по концу предложения: обрывок вроде
+            # «разрушает фолликул тепловой.» в выдаче хуже, чем текст без города
             cut = base[:room]
             end = max(cut.rfind('. '), cut.rfind('! '), cut.rfind('? '))
-            if end > room // 2:                      # помещается целое предложение
+            if end <= room // 2:         # целого предложения нет — режем по запятой
+                end = max(cut.rfind(', '), cut.rfind('; '), cut.rfind(' — '), cut.rfind(': '))
+                end = end - 1 if end > room // 2 else -1
+                cut = cut[:end + 1].rstrip(' ,;:—-') + '.' if end > 0 else ''
+                base = cut or None
+            else:
                 base = cut[:end + 1]
-            else:                                    # иначе режем по слову
-                base = cut.rsplit(' ', 1)[0].rstrip(' ,;:—-') + '.'
         elif not base.endswith(('.', '!', '?')):
             base += '.'
-        desc = '%s %s' % (base, add)
+        if base:
+            desc = '%s %s' % (base, add)
     return title, desc
 
 
