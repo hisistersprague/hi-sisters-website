@@ -2266,10 +2266,38 @@
   },
   "heroImage": "/assets/photos/hero-tricho.jpg",
   "gallery": [
-   "/assets/photos/g-tricho-1.jpg",
-   "/assets/photos/g-tricho-2.jpg",
-   "/assets/photos/g-tricho-3.jpg"
-  ]
+   {
+    "src": "/assets/video/tricho-procedura.mp4",
+    "poster": "/assets/video/tricho-procedura.jpg"
+   },
+   {
+    "src": "/assets/video/tricho-uhod.mp4",
+    "poster": "/assets/video/tricho-uhod.jpg"
+   }
+  ],
+  "heroVideo": {
+   "src": "/assets/video/tricho-hero.mp4",
+   "poster": "/assets/video/tricho-hero.jpg"
+  },
+  "video": {
+   "src": "/assets/video/tricho-skop.mp4",
+   "poster": "/assets/video/tricho-skop.jpg",
+   "layout": "portrait",
+   "title": {
+    "ru": "Трихоскопия: кожа головы под увеличением",
+    "uk": "Трихоскопія: шкіра голови під збільшенням",
+    "cs": "Trichoskopie: pokožka hlavy pod zvětšením",
+    "en": "Trichoscopy: the scalp under magnification",
+    "es": "Tricoscopia: el cuero cabelludo con aumento"
+   },
+   "note": {
+    "ru": "Смотрим кожу головы и волосы по зонам, оцениваем плотность и состояние фолликулов. Через 2–3 месяца сравниваем снимки — так видно, работает план или нет.",
+    "uk": "Дивимося шкіру голови й волосся по зонах, оцінюємо щільність і стан фолікулів. Через 2–3 місяці порівнюємо знімки — так видно, працює план чи ні.",
+    "cs": "Pokožku hlavy a vlasy si prohlédneme po zónách, hodnotíme hustotu a stav folikulů. Za 2–3 měsíce snímky porovnáme — tak je vidět, jestli plán funguje.",
+    "en": "We look at the scalp and hair area by area and assess density and the state of the follicles. In 2–3 months we compare the images — that shows whether the plan is working.",
+    "es": "Revisamos el cuero cabelludo y el cabello zona por zona y valoramos la densidad y el estado de los folículos. A los 2–3 meses comparamos las imágenes: así se ve si el plan funciona."
+   }
+  }
  },
  "cosmetics": {
   "image": "assets/cosmetics.jpg",
