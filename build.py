@@ -915,17 +915,35 @@ def results_block(key, lang):
 
 
 def gallery_block(svc, lang, alt=''):
-    """Несколько фотографий услуги в ряд — чтобы страница не была только текстом."""
+    """Несколько кадров услуги в ряд — чтобы страница не была только текстом.
+
+    В списке могут стоять и фотографии, и короткие видео (.mp4): видео
+    подгружается и запускается само, когда ряд подъезжает к экрану.
+    """
     gs = svc.get('gallery') or []
     if not gs:
         return ''
-    pics = ''.join('<figure><picture><source srcset="%s" type="image/webp">'
-                   '<img src="%s" alt="%s" loading="lazy" width="760" height="760">'
-                   '</picture></figure>'
-                   % (e(g.replace('.jpg', '.webp')), e(g), e(alt))
-                   for g in gs)
-    return ('\n<section class="tint"><div class="wrap"><div class="gal">%s</div></div></section>'
-            % pics)
+    pics = ''
+    has_video = False
+    for g in gs:
+        src = g.get('src', '') if isinstance(g, dict) else g
+        poster = g.get('poster', '') if isinstance(g, dict) else ''
+        if not src:
+            continue
+        if src.endswith('.mp4'):
+            has_video = True
+            pics += ('<figure><video muted loop playsinline preload="none" aria-hidden="true"'
+                     ' tabindex="-1" data-vband="%s"%s></video></figure>'
+                     % (e(src), (' poster="%s"' % e(poster)) if poster else ''))
+        else:
+            pics += ('<figure><picture><source srcset="%s" type="image/webp">'
+                     '<img src="%s" alt="%s" loading="lazy" width="760" height="760">'
+                     '</picture></figure>'
+                     % (e(src.replace('.jpg', '.webp')), e(src), e(alt)))
+    if not pics:
+        return ''
+    return ('\n<section class="tint"><div class="wrap"><div class="gal%s">%s</div></div></section>'
+            % (' gal-v' if has_video else '', pics))
 
 
 def proc_blocks(key, city, lang):
@@ -1898,6 +1916,11 @@ body[data-page="services"] .more-list a:hover{border-color:var(--accent);color:v
 /* фотографии услуги */
 .gal{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
 .gal figure{margin:0}
+.gal video{width:100%;aspect-ratio:1;object-fit:cover;border-radius:18px;display:block;
+  background:var(--navy-deep)}
+/* вертикальные ролики не растягиваем во всю ширину: ряд узких карточек по центру */
+.gal-v{grid-template-columns:repeat(auto-fit,minmax(200px,290px));justify-content:center}
+.gal-v video{aspect-ratio:9/16}
 .gal img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:18px;display:block;
   box-shadow:0 14px 34px rgba(19,11,86,.1)}
 @media(max-width:560px){.gal{grid-template-columns:1fr 1fr;gap:10px}
@@ -4258,7 +4281,12 @@ def build_service(lang, city, key):
 
     hv = hero_video(svc)
     hi = svc.get('heroImage') or ''
-    hero_style = ('' if hv or not hi else
+    if hv:
+        # под видео кладём его же первый кадр: он виден, пока видео грузится,
+        # и остаётся, если браузер не играет видео (экономия трафика, «меньше движения»)
+        hvp = svc.get('heroVideo')
+        hi = (hvp.get('poster') or '') if isinstance(hvp, dict) else ''
+    hero_style = ('' if not hi else
                   ' style="background-image:linear-gradient(176deg,rgba(19,11,86,.86) 0%,'
                   'rgba(19,11,86,.66) 42%,rgba(10,7,56,.72) 100%),url(' + e(hi) + ')"')
     main = f"""
