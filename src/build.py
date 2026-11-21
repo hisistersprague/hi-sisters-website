@@ -722,7 +722,7 @@ def proc_price_tables(key, city, lang):
     return out
 
 
-def proc_body(it, lang, h='h4'):
+def proc_body(it, lang, h='h3'):
     """Текст процедуры по смыслу: рассказ — абзацами, ход приёма — схемой шагов,
     «кому подходит» и «после» — карточками, частота — сноской."""
     u = PROC_UI[lang]
@@ -1304,7 +1304,7 @@ section{padding:50px 0}
 .studios{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px}
 .studio{background:#fff;border:1px solid var(--line-gold);border-radius:14px;padding:26px}
 .alt .studio{background:var(--cream)}
-.studio h3{font-size:24px;margin-bottom:14px}
+.studio h2{font-size:24px;margin:0 0 14px}
 .studio dl{display:grid;grid-template-columns:auto 1fr;gap:9px 16px;font-size:15px;margin-bottom:20px}
 .studio dt{color:var(--muted)}
 .studio a{text-underline-offset:3px}
@@ -1649,7 +1649,7 @@ section{padding:50px 0}
 .chip.is-on{background:var(--accent);border-color:var(--accent);color:var(--accent-ink);font-weight:600}
 .shop-sort{padding:8px 13px;border-radius:999px;border:1px solid var(--line-gold);background:#fff;
    font:inherit;font-size:14px;color:var(--navy);cursor:pointer}
-.shop-count{font-size:13.5px;color:var(--muted);margin-bottom:12px}
+.shop-count{font-size:13.5px;color:var(--muted);margin-bottom:12px}h2.shop-count{font-family:inherit;font-weight:400;letter-spacing:0;margin-top:0}
 
 /* прайс: группа — кнопка, раскрывается таблицей */
 .ptab-h{font-family:'Cormorant Garamond',serif;font-size:23px;font-weight:600;
@@ -1902,7 +1902,7 @@ body[data-page="services"] .more-list a:hover{border-color:var(--accent);color:v
 .dark .cmp-sm{background:rgba(255,255,255,.04)}
 
 /* до и после */
-.ba-grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(400px,1fr))}
+.ba-grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(min(100%,400px),1fr))}
 .ba-card{background:#fff;border:1px solid var(--line);border-radius:18px;overflow:hidden;max-width:640px;
   box-shadow:0 14px 34px rgba(19,11,86,.08)}
 .ba-pair{display:grid;grid-template-columns:1fr 1fr;gap:2px;background:var(--line)}
@@ -3761,12 +3761,28 @@ def prod_vol(vol, lang):
     return vol
 
 
+def prod_full(brand, name):
+    """Полное название товара: бренд + имя, но без удвоения.
+
+    В каталоге часть позиций уже названа вместе с маркой («DMK Acu Klenz»),
+    поэтому слепое склеивание давало «DMK DMK Acu Klenz» — и в alt картинки,
+    и в разметке товара, и в тексте заказа, который уходит в WhatsApp.
+    """
+    name = (name or '').strip()
+    brand = (brand or '').strip()
+    if not brand:
+        return name
+    if name.lower().startswith(brand.lower()):
+        return name
+    return (brand + ' ' + name).strip()
+
+
 def prod_card(p, lang, city, cur, ord_=0, cat_label=''):
     """Фото, назначение, состав, цена и кнопка заказа — всё в одной карточке."""
     u = ORDER_UI[lang]
     brand = p.get('brand', '')
     name = prod_name(p, lang)
-    full = (brand + ' ' + name).strip()
+    full = prod_full(brand, name)
     vol = prod_vol(p.get('volume', '') or '', lang)
     img = p.get('img')
     pic = ('<img src="/assets/shop/%s" alt="%s" loading="lazy" width="520" height="390">'
@@ -3811,7 +3827,7 @@ def shop_schema(lang, city):
     out = []
     for n, it in enumerate(items, 1):
         brand = it.get('brand', '')
-        name = (brand + ' ' + prod_name(it, lang)).strip()
+        name = prod_full(brand, prod_name(it, lang))
         desc = (it.get('desc') or {}).get(lang) or (it.get('desc') or {}).get('ru', '')
         st = it.get('stock')
         if it.get('priceHidden'):      # цену этого бренда публиковать нельзя
@@ -3903,7 +3919,7 @@ def build_brand(lang, city, brand):
 </div></section>
 
 <section class="rose"><div class="wrap">
-  <div class="shop-count">{e(u['items'])}: {len(items)}</div>
+  <h2 class="shop-count">{e(u['items'])}: {len(items)}</h2>
   <div class="prods">{cards}</div>
 </div></section>"""
     title = '%s — %s' % (brand, u['buy'])
@@ -4040,7 +4056,7 @@ def build_contacts(lang, city):
                       % (ig, ig) for ig in s.get('instagram', []))
         cards += f"""
       <div class="studio">
-        <h3>{e(nm)}</h3>
+        <h2>{e(nm)}</h2>
         <dl>
           <dt>{e(u_ct.get('addressLabel','Адрес'))}</dt><dd>{e(s['address'])}</dd>
           <dt>{e(cp['hours'])}</dt><dd>{e((s.get('hours') or {}).get(lang,''))}</dd>
@@ -4068,8 +4084,11 @@ def build_contacts(lang, city):
 </div></section>
 """
     title = '%s — Hi Sisters Clinic %s' % (cp['h1'], cityname)
+    # во вступлении названы оба города, поэтому у Праги и Валенсии получалось
+    # одинаковое описание в поиске — дописываем адрес той студии, чья это страница
+    desc = '%s %s: %s.' % (cp['lead'].rstrip(), cityname, st['address'])
     sch = jld(biz_schema(lang, city)) + crumbs(lang, city, [(cp['h1'], REL['contacts'])])
-    return doc(lang, city, REL['contacts'], 'contacts', title, cp['lead'], main, schema=sch)
+    return doc(lang, city, REL['contacts'], 'contacts', title, desc, main, schema=sch)
 
 
 
@@ -4835,7 +4854,8 @@ def not_found_page():
             '.l{display:flex;flex-wrap:wrap;gap:8px}'
             'a{color:#130B56;background:#EFD9B4;text-decoration:none;padding:7px 14px;'
             'border-radius:999px;font-size:14px}a:hover{background:#fff}</style></head>'
-            '<body><main><h1>Hi Sisters Clinic</h1>' + blocks + '</main></body></html>')
+            '<body><main><h1>Hi Sisters Clinic</h1>' + blocks + '</main>'
+            '<script>(function(){var P=location.pathname;var L=[\'ru\',\'uk\',\'cs\',\'en\',\'es\'];var m=P.match(/^\\/(ru|uk|cs|en|es)(\\/|$)/);var g=(navigator.language||\'\').slice(0,2).toLowerCase();var lang=m?m[1]:(L.indexOf(g)>-1?g:\'\');var city=/\\/valencia(\\/|$)/.test(P)?\'valencia\':\'\';var ss=document.querySelectorAll(\'section[lang]\'),i,hit=0;for(i=0;i<ss.length;i++){if(ss[i].getAttribute(\'lang\')===lang)hit=1;}if(hit){for(i=0;i<ss.length;i++)ss[i].hidden=ss[i].getAttribute(\'lang\')!==lang;document.documentElement.lang=lang;}if(city){var as=document.querySelectorAll(\'a[href^="/"]\');for(i=0;i<as.length;i++)as[i].setAttribute(\'href\',as[i].getAttribute(\'href\').replace(\'/prague/\',\'/valencia/\'));}})();</script>' + '</body></html>')
 
 
 ROBOTS = """User-agent: *
