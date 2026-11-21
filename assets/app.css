@@ -935,6 +935,11 @@ body[data-page="services"] .more-list a:hover{border-color:var(--accent);color:v
 /* фотографии услуги */
 .gal{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
 .gal figure{margin:0}
+.gal video{width:100%;aspect-ratio:1;object-fit:cover;border-radius:18px;display:block;
+  background:var(--navy-deep)}
+/* вертикальные ролики не растягиваем во всю ширину: ряд узких карточек по центру */
+.gal-v{grid-template-columns:repeat(auto-fit,minmax(200px,290px));justify-content:center}
+.gal-v video{aspect-ratio:9/16}
 .gal img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:18px;display:block;
   box-shadow:0 14px 34px rgba(19,11,86,.1)}
 @media(max-width:560px){.gal{grid-template-columns:1fr 1fr;gap:10px}
