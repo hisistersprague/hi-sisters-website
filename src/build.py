@@ -3861,6 +3861,22 @@ def city_brands(city):
     return sorted(out, key=lambda x: x.lower())
 
 
+def cosmetics_hero_style():
+    """Шапка магазина: своё фото витрины с домашним уходом, а не общий баннер.
+
+    Один и тот же файл на каталоге и на страницах брендов — браузер берёт его
+    из кэша, так что страницы брендов не тяжелеют. webp отдаём первым,
+    jpg остаётся запасным для старых браузеров.
+    """
+    grad = ('linear-gradient(176deg,rgba(19,11,86,.86) 0%,'
+            'rgba(19,11,86,.66) 42%,rgba(10,7,56,.72) 100%)')
+    return (' style="background-image:%s,url(/assets/photos/hero-cosmetics.jpg);'
+            'background-image:%s,image-set('
+            "url(/assets/photos/hero-cosmetics.webp) type('image/webp'),"
+            "url(/assets/photos/hero-cosmetics.jpg) type('image/jpeg'));"
+            'background-position:center,50%% 74%%"' % (grad, grad))
+
+
 def build_brand(lang, city, brand):
     """Страница одного бренда: по запросам «марка + город» ищут чаще всего."""
     st = studios[city]
@@ -3874,8 +3890,9 @@ def build_brand(lang, city, brand):
     cards = ''.join(prod_card(it, lang, city, cur, n, short.get(it['cat'], ''))
                     for n, it in enumerate(items))
     lead = u['lead'] % brand
+    hero_style = cosmetics_hero_style()
     main = f"""
-<section class="hero hero-sm"><div class="wrap">
+<section class="hero hero-sm has-img"{hero_style}><div class="wrap">
   <div class="kicker"><a href="/{lang}/{city}/{REL['cosmetics']}">{e(nav_label('cosmetics', lang))}</a> · {e(cityname)}</div>
   <h1>{e(brand)} — {e(u['buy'])}</h1>
   <p class="lead">{e(lead)}</p>
@@ -3919,15 +3936,7 @@ def build_cosmetics(lang, city):
         note = COSM_NOTE_ES[lang]
         cta_link = ''
 
-    # в шапке — своё фото: витрина с домашним уходом, а не общий баннер.
-    # webp отдаём первым, jpg остаётся запасным для старых браузеров
-    _grad = ('linear-gradient(176deg,rgba(19,11,86,.86) 0%,'
-             'rgba(19,11,86,.66) 42%,rgba(10,7,56,.72) 100%)')
-    hero_style = (' style="background-image:%s,url(/assets/photos/hero-cosmetics.jpg);'
-                  'background-image:%s,image-set('
-                  "url(/assets/photos/hero-cosmetics.webp) type('image/webp'),"
-                  "url(/assets/photos/hero-cosmetics.jpg) type('image/jpeg'));"
-                  'background-position:center,50%% 74%%"' % (_grad, _grad))
+    hero_style = cosmetics_hero_style()
     main = f"""
 <section class="hero hero-sm has-img"{hero_style}><div class="wrap">
   <div class="kicker">{e(nav_label('cosmetics', lang))} · {e(cityname)}</div>
