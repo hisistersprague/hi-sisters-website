@@ -117,15 +117,26 @@
     "en": "Botulinum therapy · forehead and glabella",
     "es": "Toxina botulínica · frente y entrecejo"
    }
+  },
+  {
+   "service": "injections",
+   "base": "injections-lips-1",
+   "cap": {
+    "ru": "Увеличение губ · филлер",
+    "uk": "Збільшення губ · філер",
+    "cs": "Zvětšení rtů · výplň",
+    "en": "Lip augmentation · filler",
+    "es": "Aumento de labios · relleno"
+   }
   }
  ],
  "notes": {
   "injections": {
-   "ru": "Фотографии наших клиенток. Результат зависит от исходной мимики, дозировки и индивидуальной реакции — он у всех разный.",
-   "uk": "Фотографії наших клієнток. Результат залежить від вихідної міміки, дозування та індивідуальної реакції — він у всіх різний.",
-   "cs": "Fotografie našich klientek. Výsledek závisí na výchozí mimice, dávkování a individuální reakci — u každé je jiný.",
-   "en": "Photographs of our clients. The result depends on the starting expression lines, the dose and the individual response — it differs for everyone.",
-   "es": "Fotografías de nuestras clientas. El resultado depende de la mímica inicial, la dosis y la reacción individual: es distinto en cada caso."
+   "ru": "Фотографии наших клиенток. Результат зависит от исходных данных, дозировки и индивидуальной реакции — он у всех разный.",
+   "uk": "Фотографії наших клієнток. Результат залежить від вихідних даних, дозування та індивідуальної реакції — він у всіх різний.",
+   "cs": "Fotografie našich klientek. Výsledek závisí na výchozím stavu, dávkování a individuální reakci — u každé je jiný.",
+   "en": "Photos of our own clients. The result depends on the starting point, the dose and the individual response — it differs for everyone.",
+   "es": "Fotos de nuestras clientas. El resultado depende del punto de partida, la dosis y la reacción individual: es distinto en cada persona."
   }
  }
 }
