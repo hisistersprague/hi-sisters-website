@@ -1,7 +1,7 @@
 
 :root{
   --navy:#130B56; --navy-deep:#0A0738; --navy-light:#1E1670;
-  --gold:#D6B57D; --gold-light:#F2DDD0; --gold-dark:#A8895A;
+  --gold:#D6B57D; --gold-light:#F2DDD0; --gold-dark:#8A6E42;
   --accent:#F2B5E8;            /* розовый из сторис — на кнопках и активных элементах */
   --accent-ink:#2B0F55;
   --cta:#E8C6B0; --cta-ink:#0A0738;   /* кнопка записи: один цвет на всём сайте */
@@ -189,10 +189,11 @@ img{max-width:100%}
 .proof-years{font-size:14px;color:#CFC9E6}
 .proof-years b{font-family:'Cormorant Garamond',serif;font-size:21px;color:var(--gold-ui)}
 .rev-trust{display:inline-flex;align-items:center;gap:10px;text-decoration:none}
-.rev-trust-stars{color:var(--gold);letter-spacing:2px;font-size:17px}
+.rev-trust-stars{color:#9A7A45;letter-spacing:2px;font-size:17px}
 .rev-trust-text{color:var(--navy);font-size:14.5px;font-weight:500;
             border-bottom:1px solid var(--navy)}
 .hero .rev-trust-text{color:#fff;border-bottom-color:var(--gold-ui)}
+.hero .rev-trust-stars{color:var(--gold)}
 .sec-head+.rev-trust{margin:-14px 0 22px}
 .alt .rev-trust-text{color:var(--navy)}
 .where{margin-top:20px;font-size:14.5px;color:#CFC9E6}
@@ -296,7 +297,7 @@ section{padding:50px 0}
 .rc-track .rev{flex:0 0 320px;scroll-snap-align:start;margin:0;display:flex;flex-direction:column}
 .rc-track .rev p{flex:1}
 .rc-btn{position:absolute;top:50%;transform:translateY(-50%);width:40px;height:40px;
-  border-radius:50%;border:1px solid var(--line-gold);background:#fff;color:var(--accent);
+  border-radius:50%;border:1px solid var(--line-gold);background:#fff;color:var(--navy);
   font-size:22px;line-height:1;cursor:pointer;display:flex;align-items:center;
   justify-content:center;box-shadow:0 4px 14px rgba(19,11,86,.08);z-index:2}
 .rc-btn:hover{border-color:var(--accent);background:var(--rose)}
@@ -832,8 +833,11 @@ body[data-page="services"]{
   --accent-10:rgba(255,46,136,.1); --accent-20:rgba(255,46,136,.18);
   --accent-30:rgba(255,46,136,.3);
 }
-body[data-page="services"] .infocard li::before{background:var(--accent);color:#fff}
-body[data-page="services"] .steps li::before{background:var(--accent);color:#fff}
+/* белым буквам нужна заливка потемнее: на #FF2E88 контраст всего 3,5 */
+body[data-page="services"]{--accent-fill:#E3176F}
+body[data-page="services"] .btn-sm{background:var(--accent-fill);border-color:var(--accent-fill)}
+body[data-page="services"] .infocard li::before{background:var(--accent-fill);color:#fff}
+body[data-page="services"] .steps li::before{background:var(--accent-fill);color:#fff}
 body[data-page="services"] .sec-head h2::before,
 body[data-page="services"] .art h2::before{background:var(--accent);height:4px;width:58px}
 body[data-page="services"] .ptab-h::before{background:var(--accent);height:4px;width:26px}
