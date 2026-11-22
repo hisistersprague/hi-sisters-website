@@ -1610,7 +1610,8 @@ section{padding:50px 0}
 /* мышь должна доезжать до меню, не проваливаясь в пустоту */
 .has-sub::after{content:"";position:absolute;left:0;right:0;top:100%;height:12px}
 @media(max-width:900px){
-  .nav-x{display:inline-block}
+  .nav-x{display:inline-block;width:34px;height:34px;margin-left:-6px}
+  .nav-x::after{left:14px;top:14px}
   .nav-sub{position:static;min-width:0;width:100%;flex:1 0 100%;margin:4px 0 6px;box-shadow:none;
     background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.18)}
   .has-sub{width:100%}
@@ -2158,7 +2159,7 @@ footer a{color:#fff;text-decoration:none}
   .city-sw::after{content:"⇄";font-size:12px;opacity:.85}
   .langs{order:4;gap:1px;flex:0 0 auto;margin-right:auto;padding-top:7px;
          border-top:1px solid rgba(226,193,120,.22)}
-  .langs a{padding:6px 7px;font-size:12.5px}
+  .langs a{padding:9px 9px;font-size:12.5px;min-width:34px;text-align:center}
   .socs{order:5;flex:1 1 auto;justify-content:flex-end;gap:10px;padding-top:7px;
         border-top:1px solid rgba(226,193,120,.22)}
   .soc{width:34px;height:34px;border-radius:11px;background:rgba(255,255,255,.08)}
