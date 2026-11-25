@@ -70,6 +70,9 @@ textarea:focus-visible,summary:focus-visible,[tabindex]:focus-visible{
    box-shadow:0 6px 18px rgba(19,11,86,.18)}
 .skip:focus{left:0}
 .crumb{background:#fff;border-bottom:1px solid var(--line)}
+.reviewed{background:var(--cream);border-top:1px solid var(--line)}
+.reviewed p{margin:0;padding:14px 0;font-size:14px;color:var(--muted)}
+.reviewed a{color:var(--gold-dark)}
 .crumb ol{display:flex;flex-wrap:wrap;align-items:center;gap:7px;list-style:none;
    margin:0;padding:10px 0;font-size:13.5px;color:var(--muted)}
 .crumb li{display:flex;align-items:center;gap:7px}
