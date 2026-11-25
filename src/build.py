@@ -1050,9 +1050,33 @@ img{max-width:100%}
 .soc-instagram:hover{color:var(--accent)}
 @media(max-width:860px){.soc{width:27px;height:27px}.soc svg{width:17px;height:17px}}
 .top-tel{font-size:14.5px;text-decoration:none;white-space:nowrap;color:#fff}
+/* планшет: телефон и кнопка записи вместе в шапку не влезали — страница ехала вбок.
+   Телефон убираем, он остаётся в подвале и на странице контактов, кнопка важнее */
+@media(min-width:721px) and (max-width:900px){.top-tel{display:none}.top-in{gap:10px}}
 .nav-row{border-top:1px solid rgba(226,193,120,.35)}
 .mainnav{display:flex;flex-wrap:wrap;gap:2px}
 .mainnav::-webkit-scrollbar{display:none}
+/* видно, где находится фокус при переходе по Tab — иначе клавиатурой не сориентироваться */
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,
+textarea:focus-visible,summary:focus-visible,[tabindex]:focus-visible{
+   outline:2px solid var(--gold-ui);outline-offset:2px;border-radius:3px}
+.skip{position:absolute;left:-9999px;top:0;z-index:140;background:#fff;color:var(--navy-deep);
+   padding:11px 18px;border-radius:0 0 10px 0;font-size:15px;text-decoration:none;
+   box-shadow:0 6px 18px rgba(19,11,86,.18)}
+.skip:focus{left:0}
+.crumb{background:#fff;border-bottom:1px solid var(--line)}
+.crumb ol{display:flex;flex-wrap:wrap;align-items:center;gap:7px;list-style:none;
+   margin:0;padding:10px 0;font-size:13.5px;color:var(--muted)}
+.crumb li{display:flex;align-items:center;gap:7px}
+.crumb li+li::before{content:"\203A";opacity:.55}
+.crumb a{color:inherit;text-decoration:none}
+.crumb a:hover{color:var(--gold-dark)}
+.crumb [aria-current]{color:var(--ink)}
+@media(max-width:560px){/* длинная цепочка на телефоне едет в строку, а не в три этажа */
+  .crumb ol{font-size:12.5px;gap:5px;flex-wrap:nowrap;overflow-x:auto;
+     scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .crumb ol::-webkit-scrollbar{display:none}
+  .crumb li{white-space:nowrap}.crumb li+li::before{opacity:.45}}
 .mainnav a{padding:12px 14px;font-size:15.5px;text-decoration:none;white-space:nowrap;
            color:#fff;border-bottom:2px solid transparent;transition:color .15s}
 .mainnav a:hover{color:var(--gold-ui)}
@@ -2377,6 +2401,30 @@ def faq_schema(items):
                                for f in items]})
 
 
+SKIP_LBL = {'ru': 'К содержимому', 'uk': 'До вмісту', 'cs': 'Na obsah',
+            'en': 'Skip to content', 'es': 'Ir al contenido'}
+CRUMB_LBL = {'ru': 'Вы здесь', 'uk': 'Ви тут', 'cs': 'Kde jste',
+             'en': 'Breadcrumb', 'es': 'Migas de pan'}
+NAV_LBL = {'ru': 'Разделы сайта', 'uk': 'Розділи сайту', 'cs': 'Sekce webu',
+           'en': 'Site sections', 'es': 'Secciones del sitio'}
+FOOT_LBL = {'ru': 'Ссылки в подвале', 'uk': 'Посилання в підвалі', 'cs': 'Odkazy v zápatí',
+            'en': 'Footer links', 'es': 'Enlaces del pie'}
+
+
+def crumb_bar(lang, city, trail):
+    """Видимая цепочка «Hi Sisters › Услуги › Лазерная эпиляция».
+
+    Та же цепочка, что в разметке BreadcrumbList: поиск любит, когда разметка
+    описывает то, что человек действительно видит на странице.
+    """
+    items = ['<li><a href="/%s/%s/">Hi Sisters</a></li>' % (lang, city)]
+    for nm, rel in trail[:-1]:
+        items.append('<li><a href="/%s/%s/%s">%s</a></li>' % (lang, city, rel, e(nm)))
+    items.append('<li><span aria-current="page">%s</span></li>' % e(trail[-1][0]))
+    return ('<nav class="crumb" aria-label="%s"><div class="wrap"><ol>%s</ol></div></nav>'
+            % (e(CRUMB_LBL[lang]), ''.join(items)))
+
+
 def crumbs(lang, city, trail):
     """trail: [(название, путь), …] — путь относительно /<язык>/<город>/."""
     items = [{'@type': 'ListItem', 'position': 1,
@@ -2468,7 +2516,7 @@ addEventListener('click',function(ev){{
 }},true);
 </script>
 </head>
-<body data-city="{city}" data-page="{section}">"""
+<body data-city="{city}" data-page="{section}"><a class="skip" href="#main">{e(SKIP_LBL[lang])}</a>"""
 
 
 
@@ -2614,7 +2662,7 @@ def header(lang, city, rel, current, other_rel=None, langs=None):
     <a class="top-tel" href="tel:{st['phone'].replace(' ','')}">{e(st['phone'])}</a>
     <a class="btn btn-sm" href="{book_href(lang, city)}" data-book>{e(HERO[lang]['cta'])}</a>
   </div>
-  <div class="nav-row"><div class="wrap"><nav class="mainnav">{items}</nav></div></div>
+  <div class="nav-row"><div class="wrap"><nav class="mainnav" aria-label="{e(NAV_LBL[lang])}">{items}</nav></div></div>
 </header>"""
 
 
@@ -2684,7 +2732,7 @@ def footer(lang, city):
       {e((ot.get('hours') or {}).get(lang,''))}
     </div>
   </div>
-  <nav class="foot-nav">{nav}</nav>
+  <nav class="foot-nav" aria-label="{e(FOOT_LBL[lang])}">{nav}</nav>
   <p class="foot-upd">{e(UPDATED[lang])} <time datetime="{UPD_ISO}">{UPD_MARK}</time></p>
 </div></footer>"""
 
@@ -2737,7 +2785,7 @@ def gotop_btn(lang):
 
 def doc(lang, city, rel, current, title, desc, main, cta=None, other_rel=None,
         with_band=True, schema='', langs=None, add_city=True, noindex=False,
-        og_image=None):
+        og_image=None, crumb=None):
     if add_city:
         title, desc = with_city(title, desc, lang, city)
     label = cta or HERO[lang]['cta']
@@ -2755,10 +2803,16 @@ def doc(lang, city, rel, current, title, desc, main, cta=None, other_rel=None,
                                    'name': 'Hi Sisters Clinic'},
                      'about': {'@id': '%s/%s/%s/#business' % (BASE, lang, city)}})
     schema = schema + page_node
+    bar = ''
+    if crumb:
+        schema = crumbs(lang, city, crumb) + schema
+        # на страницах первого уровня цепочка дублирует верхнее меню — показываем глубже
+        if len(crumb) > 1:
+            bar = crumb_bar(lang, city, crumb)
     return (head(lang, city, title, desc, rel, langs=langs, section=current,
                  noindex=noindex, og_image=og_image)
             + header(lang, city, rel, current, other_rel, langs=langs)
-            + '\n<main>' + main + (band(lang, city) if with_band else '') + '</main>'
+            + bar + '\n<main id="main">' + main + (band(lang, city) if with_band else '') + '</main>'
             + footer(lang, city)
             + sticky + gotop_btn(lang) + schema + '<script>' + NAV_JS + '</script>'
             + '\n</body></html>')
@@ -4155,8 +4209,8 @@ def build_brand(lang, city, brand):
     desc = lead
     return doc(lang, city, REL['cosmetics'] + brand_slug(brand) + '/', 'cosmetics',
                title, desc, main, other_rel=REL['cosmetics'], add_city=False,
-               schema=crumbs(lang, city, [(nav_label('cosmetics', lang), REL['cosmetics']),
-                                          (brand, REL['cosmetics'] + brand_slug(brand) + '/')]))
+               crumb=[(nav_label('cosmetics', lang), REL['cosmetics']),
+                      (brand, REL['cosmetics'] + brand_slug(brand) + '/')])
 
 
 def build_cosmetics(lang, city):
@@ -4423,10 +4477,10 @@ def build_compare_page(lang, city):
     title = '%s — %s, Hi Sisters Clinic' % (compare['title'][lang], cityname)
     desc = compare['lead'][lang][:160]
     qa = [{'q': cp['q3'] + '?', 'a': cp['a3']}]
-    sch = (crumbs(lang, city, [(SERVICES_PAGE[lang]['h1'], REL['services']),
-                               (compare['title'][lang], REL['compare'])])
-           + faq_schema(qa))
-    return doc(lang, city, REL['compare'], 'services', title, desc, main, schema=sch)
+    sch = faq_schema(qa)
+    return doc(lang, city, REL['compare'], 'services', title, desc, main, schema=sch,
+               crumb=[(SERVICES_PAGE[lang]['h1'], REL['services']),
+                      (compare['title'][lang], REL['compare'])])
 
 
 def build_prices_page(lang, city):
@@ -4930,11 +4984,11 @@ def build_service(lang, city, key):
             vids.append({'src': g_['src'], 'poster': g_.get('poster'),
                          'title': '%s — %s' % (nm, cityname)})
     sch = (service_schema(lang, city, key, price_min(SERVICE_GROUP.get(city, {}).get(key, ''), lang))
-           + crumbs(lang, city, [(SERVICES_PAGE[lang]['h1'], REL['services']), (nm, key + '/')])
            + faq_schema(pg.get('faq', []))
            + video_schema(lang, city, vids, page_url))
     return doc(lang, city, key + '/', 'services', title, desc, main,
                other_rel=other_rel, schema=sch, og_image=svc.get('heroImage'),
+               crumb=[(SERVICES_PAGE[lang]['h1'], REL['services']), (nm, key + '/')],
                langs=[l for l in LANGS if svc['page'].get(l)])
 
 
@@ -4996,12 +5050,12 @@ def build_proc(lang, city, it):
 </div></section>
 """
     desc = (lead or '')[:300]
-    sch = (crumbs(lang, city, [(SERVICES_PAGE[lang]['h1'], REL['services']),
-                               (card['title'], key + '/'), (title_, proc_rel(it))])
-           + faq_schema((it.get('faq') or {}).get(lang, [])))
+    sch = faq_schema((it.get('faq') or {}).get(lang, []))
     return doc(lang, city, proc_rel(it), 'services',
                '%s — %s, Hi Sisters Clinic' % (title_, cityname), desc, main,
                other_rel='', schema=sch,
+               crumb=[(SERVICES_PAGE[lang]['h1'], REL['services']),
+                      (card['title'], key + '/'), (title_, proc_rel(it))],
                langs=[l for l in LANGS if (it.get('title') or {}).get(l)])
 
 
@@ -5078,12 +5132,12 @@ def build_zone(lang, city, key):
 </div></section>
 """
     sch = (service_schema(lang, city, 'laser', pmin)
-           + crumbs(lang, city, [(SERVICES_PAGE[lang]['h1'], REL['services']),
-                                 (services['laser']['card'].get(lang, services['laser']['card']['ru'])['title'], 'laser/'),
-                                 (t['title'], 'laser/%s/' % key)])
            + faq_schema([{'q': q, 'a': a} for q, a in t['faq']]))
     return doc(lang, city, 'laser/%s/' % key, 'services',
-               '%s — Hi Sisters Clinic' % title_city, t['intro'], main, schema=sch)
+               '%s — Hi Sisters Clinic' % title_city, t['intro'], main, schema=sch,
+               crumb=[(SERVICES_PAGE[lang]['h1'], REL['services']),
+                      (services['laser']['card'].get(lang, services['laser']['card']['ru'])['title'], 'laser/'),
+                      (t['title'], 'laser/%s/' % key)])
 
 
 # ──────────────────────────────── обучение ────────────────────────────────
@@ -5245,11 +5299,11 @@ def build_course(lang, city, cid):
 </div></section>
 """
     rel = REL['training'] + cid + '/'
-    sch = (crumbs(lang, city, [(tr['h1'], REL['training']), (title_, rel)])
-           + jld(course_schema(lang, city, cid, it, title_, lead)))
+    sch = jld(course_schema(lang, city, cid, it, title_, lead))
     return doc(lang, city, rel, 'training',
                '%s — %s, Hi Sisters Clinic' % (title_, cityname), (lead or '')[:300],
-               main, cta=tr['cta'], schema=sch)
+               main, cta=tr['cta'], schema=sch,
+               crumb=[(tr['h1'], REL['training']), (title_, rel)])
 
 
 def build_training(lang, city):
@@ -5344,6 +5398,57 @@ def sitemap(pages, dates=None):
     out.append('</urlset>')
     return '\n'.join(out)
 
+
+
+IMG_SKIP = ('/assets/clients/',)       # стоковые аватарки в плашке — не наши фотографии
+
+
+def image_sitemap(seo_pages, pages_html):
+    """Карта картинок: каждое фото один раз, на той странице, где оно к месту.
+
+    Фотографии студий, работ и средств — наши, и в поиске по картинкам они
+    приводят людей не хуже текста. Каждый файл указываем однажды, иначе карта
+    разрастается в пять языковых копий одного и того же.
+    """
+    seen = set()
+    rows = []
+    order = [l for l in ('ru', 'cs', 'uk', 'en', 'es') if l in LANGS]
+    allowed = {'%s/%s/%s/%s' % (BASE, l, c, r) for l, c, r in seo_pages}
+    # страницы с малым числом фото идут первыми: так фото средства попадает
+    # в карту на страницу своего бренда, а не в общий каталог из трёхсот карточек
+    def n_img(t):
+        u = '%s/%s/%s/%s' % (BASE, t[0], t[1], t[2])
+        return len(re.findall(r'<img\b', pages_html.get(u, '')))
+    pages_sorted = sorted(seo_pages, key=n_img)
+    for lang in order:
+        for l, city, rel in pages_sorted:
+            if l != lang:
+                continue
+            url = '%s/%s/%s/%s' % (BASE, l, city, rel)
+            html_ = pages_html.get(url)
+            if not html_ or url not in allowed:
+                continue
+            imgs = []
+            for m in re.finditer(r'<img\b[^>]*>', html_):
+                tag = m.group(0)
+                src = re.search(r'src="([^"]+)"', tag)
+                alt = re.search(r'alt="([^"]*)"', tag)
+                if not src:
+                    continue
+                href = src.group(1)
+                if (not href.startswith('/assets/') or href in seen
+                        or any(href.startswith(x) for x in IMG_SKIP) or not (alt and alt.group(1))):
+                    continue
+                seen.add(href)
+                imgs.append('<image:image><image:loc>%s%s</image:loc>'
+                            '<image:title>%s</image:title></image:image>'
+                            % (BASE, href, alt.group(1)))
+            if imgs:
+                rows.append('<url><loc>%s</loc>%s</url>' % (url, ''.join(imgs)))
+    return ('<?xml version="1.0" encoding="UTF-8"?>\n'
+            '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" '
+            'xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">\n'
+            + '\n'.join(rows) + '\n</urlset>\n')
 
 
 # ─────────────── корень сайта: мгновенный переход на язык посетителя ───────────────
@@ -5520,7 +5625,8 @@ AI_BOTS = ['GPTBot', 'OAI-SearchBot', 'ChatGPT-User', 'ClaudeBot', 'Claude-User'
 
 ROBOTS = ("User-agent: *\nAllow: /\nDisallow: /admin/\nDisallow: /src/\nDisallow: /new/\n\n"
           + ''.join('User-agent: %s\nAllow: /\n\n' % b for b in AI_BOTS)
-          + "Sitemap: %s/sitemap.xml\n" % BASE)
+          + "Sitemap: %s/sitemap.xml\n" % BASE
+          + "Sitemap: %s/sitemap-images.xml\n" % BASE)
 
 
 # ───────────────────────────────── сборка ─────────────────────────────────
@@ -5634,6 +5740,8 @@ if __name__ == '__main__':
     dates = page_dates(PAGE_HTML)
     io.open(os.path.join(OUT, 'sitemap.xml'), 'w', encoding='utf-8').write(
         sitemap(seo_pages, dates))
+    img_map = image_sitemap(seo_pages, PAGE_HTML)
+    io.open(os.path.join(OUT, 'sitemap-images.xml'), 'w', encoding='utf-8').write(img_map)
     # метки заменяем на настоящую дату последнего изменения страницы
     import datetime as _dt
     today_iso = _dt.date.today().isoformat()
@@ -5668,6 +5776,8 @@ if __name__ == '__main__':
 
     print('страниц собрано: %d' % len(pages))
     print('карта сайта: %d адресов' % seo_pages.__len__())
+    print('карта картинок: %d фото на %d страницах'
+          % (img_map.count('<image:loc>'), img_map.count('<url><loc>')))
     print('css: %.1f КБ' % (os.path.getsize(os.path.join(OUT, 'assets', 'app.css')) / 1024))
     sizes = [os.path.getsize(os.path.join(dp, f))
              for dp, _, fs in os.walk(OUT) for f in fs if f == 'index.html']

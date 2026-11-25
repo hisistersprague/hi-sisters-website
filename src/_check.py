@@ -49,7 +49,7 @@ for fp in sorted(pages):
     if n_h1 != 1:
         fail('не один h1', '%s: %d' % (rel, n_h1))
 
-    nav = re.search(r'<nav class="mainnav">(.*?)</nav>', h, re.S)
+    nav = re.search(r'<nav class="mainnav"[^>]*>(.*?)</nav>', h, re.S)
     if not nav:
         fail('нет навигации', rel)
     else:
