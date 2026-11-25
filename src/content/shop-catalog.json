@@ -59,7 +59,7 @@
   "cur": "CZK",
   "cat": "hair-loss",
   "stock": "pre",
-  "img": "catalog/or-orising-lotion-caduta-100-ml-100ml.jpg",
+  "img": "",
   "dupe": false,
   "code": "",
   "desc": {
@@ -3211,7 +3211,7 @@
   "cur": "CZK",
   "cat": "hair-loss",
   "stock": "pre",
-  "img": "",
+  "img": "catalog/dsd-345b-essential-oil-35ml.jpg",
   "dupe": true,
   "code": "3.4.5B",
   "desc": {
@@ -4518,7 +4518,7 @@
   "cur": "CZK",
   "cat": "face",
   "stock": "pre",
-  "img": "",
+  "img": "jm-duality-xc.jpg",
   "dupe": true,
   "code": "",
   "desc": {
