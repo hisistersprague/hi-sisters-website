@@ -1065,6 +1065,9 @@ textarea:focus-visible,summary:focus-visible,[tabindex]:focus-visible{
    box-shadow:0 6px 18px rgba(19,11,86,.18)}
 .skip:focus{left:0}
 .crumb{background:#fff;border-bottom:1px solid var(--line)}
+.reviewed{background:var(--cream);border-top:1px solid var(--line)}
+.reviewed p{margin:0;padding:14px 0;font-size:14px;color:var(--muted)}
+.reviewed a{color:var(--gold-dark)}
 .crumb ol{display:flex;flex-wrap:wrap;align-items:center;gap:7px;list-style:none;
    margin:0;padding:10px 0;font-size:13.5px;color:var(--muted)}
 .crumb li{display:flex;align-items:center;gap:7px}
@@ -2366,6 +2369,58 @@ def team_schema(lang, city):
     return jld({'@context': 'https://schema.org', '@graph': out})
 
 
+REVIEWED_SERVICES = ('cosmetology', 'trichology', 'injections')
+REVIEWER_PHOTO = 'maria'
+TEAM_LBL = {'ru': 'Команда клиники', 'uk': 'Команда клініки', 'cs': 'Tým kliniky',
+            'en': 'Our team', 'es': 'Nuestro equipo'}
+REVIEWED_LBL = {
+ 'ru': 'Текст проверила %s, %s.',
+ 'uk': 'Текст перевірила %s, %s.',
+ 'cs': 'Text zkontrolovala %s, %s.',
+ 'en': 'Reviewed by %s, %s.',
+ 'es': 'Texto revisado por %s, %s.',
+}
+
+
+def reviewer(lang):
+    """Врач, которая вычитывает тексты процедур. Данные — из content/team.json."""
+    for m in team:
+        if m.get('photo') == REVIEWER_PHOTO:
+            nm = (m.get('name') or {}).get(lang) or (m.get('name') or {}).get('ru')
+            role = (m.get('role') or {}).get(lang) or (m.get('role') or {}).get('ru')
+            return (nm, role, m) if nm else None
+    return None
+
+
+def reviewed_note(lang, city):
+    """Видимая строка «текст проверила врач» — то же, что в разметке.
+
+    Поиск засчитывает reviewedBy только тогда, когда человек видит это на странице,
+    а не только в коде.
+    """
+    r = reviewer(lang)
+    if not r:
+        return ''
+    nm, role, _ = r
+    txt = REVIEWED_LBL[lang] % (e(nm), e((role or '').lower()))
+    return ('<section class="reviewed"><div class="wrap"><p>%s '
+            '<a href="/%s/%s/%s">%s</a></p></div></section>'
+            % (txt, lang, city, REL['about'], e(TEAM_LBL[lang])))
+
+
+def reviewed_by(lang, city):
+    """Узел Person для reviewedBy у страницы."""
+    r = reviewer(lang)
+    if not r:
+        return None
+    nm, role, m = r
+    person = {'@type': 'Person', 'name': nm, 'jobTitle': role, 'worksFor': ORG_REF,
+              'workLocation': {'@id': '%s/%s/%s/#business' % (BASE, lang, city)}}
+    if m.get('img'):
+        person['image'] = BASE + '/assets/team/' + m['img']
+    return person
+
+
 VIDEO_DATES = {
  '/assets/video/cisteni-pleti.mp4': '2026-11-19',
  '/assets/video/elektroepilace-4ruce.mp4': '2026-11-19',
@@ -2802,7 +2857,7 @@ def gotop_btn(lang):
 
 def doc(lang, city, rel, current, title, desc, main, cta=None, other_rel=None,
         with_band=True, schema='', langs=None, add_city=True, noindex=False,
-        og_image=None, crumb=None):
+        og_image=None, crumb=None, reviewed=False):
     if add_city:
         title, desc = with_city(title, desc, lang, city)
     label = cta or HERO[lang]['cta']
@@ -2812,13 +2867,20 @@ def doc(lang, city, rel, current, title, desc, main, cta=None, other_rel=None,
     if len(title) > 65 and ', Hi Sisters Clinic' in title:
         title = title.replace(', Hi Sisters Clinic', '')
     url_ = '%s/%s/%s/%s' % (BASE, lang, city, rel)
-    page_node = jld({'@context': 'https://schema.org', '@type': 'WebPage',
+    page_fields = {'@context': 'https://schema.org', '@type': 'WebPage',
                      '@id': url_ + '#page', 'url': url_, 'name': title,
                      'description': desc, 'inLanguage': lang,
                      'dateModified': UPD_ISO,
                      'isPartOf': {'@type': 'WebSite', '@id': BASE + '/#website', 'url': BASE + '/',
                                    'name': 'Hi Sisters Clinic'},
-                     'about': {'@id': '%s/%s/%s/#business' % (BASE, lang, city)}})
+                     'about': {'@id': '%s/%s/%s/#business' % (BASE, lang, city)}}
+    note = ''
+    if reviewed:
+        rv = reviewed_by(lang, city)
+        if rv:
+            page_fields['reviewedBy'] = rv
+            note = reviewed_note(lang, city)
+    page_node = jld(page_fields)
     schema = schema + page_node
     bar = ''
     if crumb:
@@ -2829,7 +2891,7 @@ def doc(lang, city, rel, current, title, desc, main, cta=None, other_rel=None,
     return (head(lang, city, title, desc, rel, langs=langs, section=current,
                  noindex=noindex, og_image=og_image)
             + header(lang, city, rel, current, other_rel, langs=langs)
-            + bar + '\n<main id="main">' + main + (band(lang, city) if with_band else '') + '</main>'
+            + bar + '\n<main id="main">' + main + note + (band(lang, city) if with_band else '') + '</main>'
             + footer(lang, city)
             + sticky + gotop_btn(lang) + schema + '<script>' + NAV_JS + '</script>'
             + '\n</body></html>')
@@ -5053,6 +5115,7 @@ def build_service(lang, city, key):
            + video_schema(lang, city, vids, page_url))
     return doc(lang, city, key + '/', 'services', title, desc, main,
                other_rel=other_rel, schema=sch, og_image=svc.get('heroImage'),
+               reviewed=key in REVIEWED_SERVICES,
                crumb=[(SERVICES_PAGE[lang]['h1'], REL['services']), (nm, key + '/')],
                langs=[l for l in LANGS if svc['page'].get(l)])
 
@@ -5118,7 +5181,7 @@ def build_proc(lang, city, it):
     sch = faq_schema((it.get('faq') or {}).get(lang, []))
     return doc(lang, city, proc_rel(it), 'services',
                '%s — %s, Hi Sisters Clinic' % (title_, cityname), desc, main,
-               other_rel='', schema=sch,
+               other_rel='', schema=sch, reviewed=key in REVIEWED_SERVICES,
                crumb=[(SERVICES_PAGE[lang]['h1'], REL['services']),
                       (card['title'], key + '/'), (title_, proc_rel(it))],
                langs=[l for l in LANGS if (it.get('title') or {}).get(l)])
