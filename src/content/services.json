@@ -236,7 +236,7 @@
     "faq": [
      {
       "q": "Чи даєте ви гарантію результату?",
-      "a": "Так — якщо лазерна епіляція вам підходить. На консультації ми дивимося тип і колір волосся, стан шкіри й зʼясовуємо, чи немає гормональних причин росту. Якщо метод підходить, ми ведемо курс до результату. Якщо не підходить — говоримо про це одразу і пропонуємо електроепіляцію, яка працює з волосся будь-якого кольору."
+      "a": "Так — якщо лазерна епіляція вам підходить. На консультації ми дивимося тип і колір волосся, стан шкіри й з’ясовуємо, чи немає гормональних причин росту. Якщо метод підходить, ми ведемо курс до результату. Якщо не підходить — говоримо про це одразу і пропонуємо електроепіляцію, яка працює з волосся будь-якого кольору."
      },
      {
       "q": "Чи боляче робити лазерну епіляцію?",
@@ -289,8 +289,8 @@
       "list": [
        "dark body hair: underarms, bikini, legs, arms, back, chest",
        "ingrown hairs and irritation from shaving",
-       "men's areas: back, chest, shoulders, neck, abdomen",
-       "we do not laser a woman's face — facial hair in women is more often hormone-driven and the laser can stimulate growth there; for the face we offer electrolysis"
+       "men’s areas: back, chest, shoulders, neck, abdomen",
+       "we do not laser a woman’s face — facial hair in women is more often hormone-driven and the laser can stimulate growth there; for the face we offer electrolysis"
       ],
       "kind": "fits"
      },
@@ -376,7 +376,7 @@
       "a": "A treated follicle does not recover. But the skin holds follicles that were dormant during the course, and hormones can switch them on — pregnancy, thyroid, medication. Then single maintenance sessions are enough, not a new course."
      },
      {
-      "q": "Do you treat a woman's face with laser?",
+      "q": "Do you treat a woman’s face with laser?",
       "a": "No. Facial hair in women is more often hormone-driven, and the laser can stimulate growth in that area. For the face we offer electrolysis, which treats each hair individually."
      },
      {
@@ -944,14 +944,14 @@
      {
       "title": "How electrolysis works",
       "paras": [
-       "A very fine needle is inserted into each follicle and delivers a discharge that destroys the hair's growth zone. The method treats every hair individually — so colour is irrelevant: blond, red, grey and fine hair comes out just as dark hair does.",
+       "A very fine needle is inserted into each follicle and delivers a discharge that destroys the hair’s growth zone. The method treats every hair individually — so colour is irrelevant: blond, red, grey and fine hair comes out just as dark hair does.",
        "With correctly chosen parameters and clean technique, a treated follicle no longer produces hair. It is the only method with that outcome, but it takes time: only a limited number of hairs can be treated per minute, which is why the work is charged by the minute."
       ],
       "kind": "text"
      },
      {
       "title": "Parameters chosen for you",
-      "p": "The strength of the discharge, the contact time and the needle type are set for you: for the thickness of the hair, the depth of the follicle, your skin type and sensitivity. The same settings do not suit a chin and a shin, so parameters change as the work goes on — the specialist follows your skin's reaction rather than one fixed mode.",
+      "p": "The strength of the discharge, the contact time and the needle type are set for you: for the thickness of the hair, the depth of the follicle, your skin type and sensitivity. The same settings do not suit a chin and a shin, so parameters change as the work goes on — the specialist follows your skin’s reaction rather than one fixed mode.",
       "kind": "text"
      },
      {
@@ -1945,10 +1945,10 @@
     "sections": [
      {
       "title": "З чим до нас приходять",
-      "p": "Найчастіше — з випадінням, яке триває довше місяця. Але проблеми шкіри голови ширші: зуд, злущування, лупа, жирність коренів, відчуття стягнутості, стоншення волосся і втрата обʼєму. Часто все це повʼязано між собою, і починати має сенс зі шкіри голови, а не з купівлі нового шампуню.",
+      "p": "Найчастіше — з випадінням, яке триває довше місяця. Але проблеми шкіри голови ширші: зуд, злущування, лупа, жирність коренів, відчуття стягнутості, стоншення волосся і втрата об’єму. Часто все це пов’язано між собою, і починати має сенс зі шкіри голови, а не з купівлі нового шампуню.",
       "list": [
        "волосся випадає сильніше за звичайне довше місяця",
-       "обʼєм зменшився, волосся стало тоншим",
+       "об’єм зменшився, волосся стало тоншим",
        "зуд, злущування, лупа, кірочки",
        "жирні корені при сухих довжинах",
        "випадіння після пологів, хвороби, суворої дієти або стресу"
@@ -1958,7 +1958,7 @@
      {
       "title": "Що робимо на прийомі",
       "steps": [
-       "розмова: коли почалося, що змінювалося у здоровʼї, які препарати приймаєте",
+       "розмова: коли почалося, що змінювалося у здоров’ї, які препарати приймаєте",
        "трихоскопія: дивимося шкіру голови й волосся під збільшенням по зонах",
        "оцінка: щільність волосся, стан фолікулів, співвідношення тонких і товстих волосин, запалення",
        "розбір домашнього догляду: шампунь, частота миття, укладання, фарбування",
@@ -1970,7 +1970,7 @@
       "title": "Де закінчується догляд і починається медицина",
       "paras": [
        "Ми працюємо зі шкірою голови: очищення, зняття запалення, догляд, процедури для живлення фолікулів. Це косметологічна частина, і вона справді допомагає — але лише коли причина випадіння у стані шкіри голови або в догляді.",
-       "Якщо випадіння повʼязане з дефіцитом заліза, щитоподібною залозою, гормональними змінами, прийомом ліків або шкірним захворюванням, жодні процедури причину не приберуть. У такому разі ми чесно говоримо, що потрібні аналізи й консультація лікаря, і вже потім добираємо догляд — щоб ви не платили за курс, який не може спрацювати."
+       "Якщо випадіння пов’язане з дефіцитом заліза, щитоподібною залозою, гормональними змінами, прийомом ліків або шкірним захворюванням, жодні процедури причину не приберуть. У такому разі ми чесно говоримо, що потрібні аналізи й консультація лікаря, і вже потім добираємо догляд — щоб ви не платили за курс, який не може спрацювати."
       ],
       "kind": "text"
      },
@@ -1989,7 +1989,7 @@
      },
      {
       "q": "Коли звертатися до трихолога?",
-      "a": "Якщо посилене випадіння триває довше місяця, якщо помітно зменшився обʼєм, якщо є зуд, злущування чи кірочки, а також якщо випадіння почалося після пологів, хвороби або різкого схуднення. Що раніше — то простіше: відновити щільність легше, ніж повернути вже втрачені фолікули."
+      "a": "Якщо посилене випадіння триває довше місяця, якщо помітно зменшився об’єм, якщо є зуд, злущування чи кірочки, а також якщо випадіння почалося після пологів, хвороби або різкого схуднення. Що раніше — то простіше: відновити щільність легше, ніж повернути вже втрачені фолікули."
      },
      {
       "q": "Чи потрібно здавати аналізи?",
@@ -2445,7 +2445,7 @@
     "desc": "Биоревитализация на Rejuran, Hyalual, Restylane, Jalupro, PolyPhil, Plinest, Aquashine и REVOK50, контурная пластика губ и растворение препарата. Проводит врач-дерматолог-косметолог."
    },
    "uk": {
-    "title": "Інʼєкційна косметологія",
+    "title": "Ін’єкційна косметологія",
     "desc": "Біоревіталізація на Rejuran, Hyalual, Restylane, Jalupro, PolyPhil, Plinest, Aquashine і REVOK50, контурна пластика губ та розчинення препарату. Проводить лікар-дерматолог-косметолог."
    }
   },

@@ -695,7 +695,7 @@
   },
   "ing": {
    "ru": "Масло ши, Аргановое масло, Кокосовое масло, Масло виноградной косточки, Экстракт стволовых клеток яблока, Убихинон (коэнзим Q10), Гексапептид-11, Масло мяты перечной",
-   "uk": "Олія ши, Арганова олія, Кокосова олія, Олія виноградної кісточки, Екстракт стовбурових клітин яблука, Убіхінон (коензим Q10), Гексапептид-11, Олія перцевої м'яти",
+   "uk": "Олія ши, Арганова олія, Кокосова олія, Олія виноградної кісточки, Екстракт стовбурових клітин яблука, Убіхінон (коензим Q10), Гексапептид-11, Олія перцевої м’яти",
    "cs": "Bambucké máslo, Arganový olej, Kokosový olej, Olej z hroznových jader, Extrakt z jablečných kmenových buněk, Ubichinon (koenzym Q10), Hexapeptid-11, Olej z máty peprné",
    "en": "Shea butter, Argan oil, Coconut oil, Grape seed oil, Apple stem cell extract, Ubiquinone (coenzyme Q10), Hexapeptide-11, Peppermint oil",
    "es": "Manteca de karité, Aceite de argán, Aceite de coco, Aceite de semilla de uva, Extracto de células madre de manzana, Ubiquinona (coenzima Q10), Hexapéptido-11, Aceite de menta piperita"
@@ -719,7 +719,7 @@
   },
   "ing": {
    "ru": "Масло эвкалипта, Масло мяты перечной, Пантенол, Биотин, Сульфат цинка, Экстракт со пальметто, Медный трипептид-1, Биотиноил трипептид-1, Витамин Е",
-   "uk": "Олія евкаліпту, Олія перцевої м'яти, Пантенол, Біотин, Сульфат цинку, Екстракт со пальметто, Мідний трипептид-1, Біотиноїл трипептид-1, Вітамін Е",
+   "uk": "Олія евкаліпту, Олія перцевої м’яти, Пантенол, Біотин, Сульфат цинку, Екстракт со пальметто, Мідний трипептид-1, Біотиноїл трипептид-1, Вітамін Е",
    "cs": "Eukalyptový olej, Olej z máty peprné, Panthenol, Biotin, Síran zinečnatý, Extrakt ze serenoy, Měďnatý tripeptid-1, Biotinoyl tripeptid-1, Vitamin E",
    "en": "Eucalyptus oil, Peppermint oil, Panthenol, Biotin, Zinc sulfate, Saw palmetto extract, Copper tripeptide-1, Biotinoyl tripeptide-1, Vitamin E",
    "es": "Aceite de eucalipto, Aceite de menta piperita, Pantenol, Biotina, Sulfato de zinc, Extracto de saw palmetto, Tripéptido de cobre-1, Biotinoil tripéptido-1, Vitamina E"
@@ -904,7 +904,7 @@
   },
   "ing": {
    "ru": "Масло эвкалипта, Масло мяты перечной, Пантенол, Биотин, Сульфат цинка, Экстракт со пальметто, Медный трипептид-1, Биотиноил трипептид-1, Витамин Е",
-   "uk": "Олія евкаліпту, Олія перцевої м'яти, Пантенол, Біотин, Сульфат цинку, Екстракт со пальметто, Мідний трипептид-1, Біотиноїл трипептид-1, Вітамін Е",
+   "uk": "Олія евкаліпту, Олія перцевої м’яти, Пантенол, Біотин, Сульфат цинку, Екстракт со пальметто, Мідний трипептид-1, Біотиноїл трипептид-1, Вітамін Е",
    "cs": "Eukalyptový olej, Olej z máty peprné, Panthenol, Biotin, Síran zinečnatý, Extrakt ze serenoy, Měďnatý tripeptid-1, Biotinoyl tripeptid-1, Vitamin E",
    "en": "Eucalyptus oil, Peppermint oil, Panthenol, Biotin, Zinc sulfate, Saw palmetto extract, Copper tripeptide-1, Biotinoyl tripeptide-1, Vitamin E",
    "es": "Aceite de eucalipto, Aceite de menta piperita, Pantenol, Biotina, Sulfato de zinc, Extracto de saw palmetto, Tripéptido de cobre-1, Biotinoil tripéptido-1, Vitamina E"
@@ -993,7 +993,7 @@
   "img": "crm-mediceuticals-vitatin-250-ml.jpg",
   "desc": {
    "ru": "Кондиционер — плотность и объём волос",
-   "uk": "Кондиціонер — щільність та обʼєм волосся",
+   "uk": "Кондиціонер — щільність та об’єм волосся",
    "cs": "Kondicionér — hustota a objem vlasů",
    "en": "Conditioner — hair density and volume",
    "es": "Acondicionador — densidad y volumen del cabello"
@@ -1618,7 +1618,7 @@
   "img": "marini-bioglycolic-cleanser.jpg",
   "desc": {
    "ru": "Очищающее средство — мягкое отшелушивание",
-   "uk": "Очищувальний засіб — мʼяке відлущення",
+   "uk": "Очищувальний засіб — м’яке відлущення",
    "cs": "Čisticí přípravek — jemné odlupování",
    "en": "Cleanser — gentle exfoliation",
    "es": "Limpiador — exfoliación suave"
@@ -1892,7 +1892,7 @@
   "img": "ep-120.jpg",
   "desc": {
    "ru": "Пудра — мягкое отшелушивание",
-   "uk": "Пудра — мʼяке відлущення",
+   "uk": "Пудра — м’яке відлущення",
    "cs": "Pudr — jemné odlupování",
    "en": "Powder — gentle exfoliation",
    "es": "Polvo — exfoliación suave"
@@ -1909,7 +1909,7 @@
   "img": "ep-50.jpg",
   "desc": {
    "ru": "Пудра — мягкое отшелушивание",
-   "uk": "Пудра — мʼяке відлущення",
+   "uk": "Пудра — м’яке відлущення",
    "cs": "Pudr — jemné odlupování",
    "en": "Powder — gentle exfoliation",
    "es": "Polvo — exfoliación suave"
@@ -1998,7 +1998,7 @@
   "img": "",
   "desc": {
    "ru": "Пенка — мягкий пилинг тела",
-   "uk": "Пінка — мʼякий пілінг тіла",
+   "uk": "Пінка — м’який пілінг тіла",
    "cs": "Pěna — jemný tělový peeling",
    "en": "Foam — gentle body peel",
    "es": "Espuma — peeling corporal suave"

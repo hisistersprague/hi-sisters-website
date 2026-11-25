@@ -1317,6 +1317,11 @@ section{padding:50px 0}
 .studio dl{display:grid;grid-template-columns:auto 1fr;gap:9px 16px;font-size:15px;margin-bottom:20px}
 .studio dt{color:var(--muted)}
 .studio a{text-underline-offset:3px}
+@media(max-width:720px){
+  /* телефон, почта и Instagram — это то, по чему реально тыкают пальцем */
+  .studio dd a,.foot-studio a,.shop-brands a{display:inline-block;padding:6px 0;min-height:30px;line-height:1.5}
+  .shop-brands a{padding:6px 2px}
+}
 .studio-cta{display:flex;flex-wrap:wrap;gap:10px}
 
 /* блок записи */

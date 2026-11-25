@@ -1,0 +1,302 @@
+{
+ "biorevitalization": {
+  "title": {
+   "cs": "Biorevitalizace",
+   "en": "Biorevitalisation",
+   "es": "Biorevitalización"
+  },
+  "lead": {
+   "cs": "Mikroinjekce přípravků, které pracují s hydratací a hustotou pleti zevnitř. Přípravek vybíráme podle úkolu, ne podle popularity.",
+   "en": "Micro-injections of products that work on hydration and density from inside the skin. The product is chosen for the task, not for its popularity.",
+   "es": "Microinyecciones de productos que trabajan la hidratación y la densidad desde dentro de la piel. El producto se elige por el objetivo, no por su fama."
+  },
+  "body": {
+   "cs": [
+    "Přípravek se zavádí tenkou jehlou do pleti po celé ošetřované ploše. Na rozdíl od výplní nejde o doplnění objemu, ale o změnu kvality pleti: hydrataci, hustotu, tón a pružnost. Výsledek se vyvíjí postupně a závisí na kúře, ne na jednom zákroku.",
+    "Přípravky v řadě se liší účinkem. REJURAN stojí na polynukleotidech a pracuje s obnovou pleti, JALUPRO na aminokyselinovém komplexu s kyselinou hyaluronovou a bere se spíš na hustotu a tonus; existuje i varianta pro tenkou pleť kolem očí. Co se hodí právě vám, rozhodneme na konzultaci: záleží na stavu pleti, věku, oblasti a na tom, co jste absolvovala dřív. Úplný seznam přípravků a ceny jsou v ceníku výše."
+   ],
+   "en": [
+    "The product is injected with a fine needle across the whole area. Unlike fillers, the point is not to add volume but to change the quality of the skin: hydration, density, tone and firmness. The result builds gradually and depends on the course, not on a single session.",
+    "The products differ in how they work. REJURAN is built on polynucleotides and works on skin repair; JALUPRO is an amino acid complex with hyaluronic acid and is usually chosen for density and tone, and there is a separate version for the thin skin around the eyes. Which one suits you is decided at the appointment: it depends on the condition of your skin, your age, the area and what you have had done before. The full list of products and prices is in the price list above."
+   ],
+   "es": [
+    "El producto se inyecta con una aguja fina por toda la zona. A diferencia de los rellenos, no se trata de añadir volumen, sino de cambiar la calidad de la piel: hidratación, densidad, tono y firmeza. El resultado se construye poco a poco y depende del curso, no de una sola sesión.",
+    "Los productos actúan de forma distinta. REJURAN se basa en polinucleótidos y trabaja la reparación de la piel; JALUPRO es un complejo de aminoácidos con ácido hialurónico y se elige más para densidad y tono, y existe una versión para la piel fina del contorno de ojos. Cuál te conviene se decide en la consulta: depende del estado de la piel, la edad, la zona y lo que te hayas hecho antes. La lista completa de productos y precios está en la tarifa de arriba."
+   ]
+  },
+  "who": {
+   "cs": [
+    "dehydratovaná pleť, šedý tón",
+    "pokles hustoty a pružnosti",
+    "jemné vrásky, i v okolí očí",
+    "příprava pleti na událost 3–4 týdny předem",
+    "obnova pleti po náročných zákrocích nebo po slunci"
+   ],
+   "en": [
+    "dehydrated skin, dull tone",
+    "loss of density and firmness",
+    "fine lines, including around the eyes",
+    "preparing the skin for an event three to four weeks ahead",
+    "recovery after intensive procedures or sun exposure"
+   ],
+   "es": [
+    "piel deshidratada, tono apagado",
+    "pérdida de densidad y firmeza",
+    "arrugas finas, también en el contorno de ojos",
+    "preparar la piel para un evento con tres o cuatro semanas de antelación",
+    "recuperación tras procedimientos intensos o tras el sol"
+   ]
+  },
+  "how": {
+   "cs": [
+    "vyšetření, volba přípravku a oblasti",
+    "dezinfekce, podle potřeby znecitlivující krém",
+    "mikroinjekce v celé oblasti",
+    "zklidňující péče",
+    "doporučení na 2–3 dny a plán kúry"
+   ],
+   "en": [
+    "examination, choice of product and area",
+    "antiseptic preparation and numbing cream if needed",
+    "micro-injections across the area",
+    "soothing aftercare",
+    "advice for the next two or three days and a plan for the course"
+   ],
+   "es": [
+    "valoración, elección del producto y de la zona",
+    "antisepsia y crema anestésica si hace falta",
+    "microinyecciones por toda la zona",
+    "cuidado calmante",
+    "pautas para dos o tres días y plan del curso"
+   ]
+  },
+  "after": {
+   "cs": [
+    "stopy po vpiších a drobné papuly se rozejdou během několika hodin až jednoho dne",
+    "možné jsou drobné modřinky, hlavně kolem očí a na krku",
+    "2–3 dny bez sauny, bazénu, parní lázně, sportu a alkoholu",
+    "v den zákroku nenanášet make-up a nesahat si na pleť rukama",
+    "SPF je povinné",
+    "výsledek se hodnotí 2–4 týdny po skončení kúry, ne hned"
+   ],
+   "en": [
+    "injection marks and small papules settle within a few hours to a day",
+    "small bruises are possible, especially around the eyes and on the neck",
+    "two to three days without sauna, pool, steam room, sport or alcohol",
+    "no make-up on the day and do not touch the skin with your hands",
+    "SPF is a must",
+    "the result is judged two to four weeks after the course ends, not straight away"
+   ],
+   "es": [
+    "las marcas de las inyecciones y las pápulas se reabsorben en unas horas, como mucho en un día",
+    "pueden salir pequeños moratones, sobre todo alrededor de los ojos y en el cuello",
+    "dos o tres días sin sauna, piscina, baño de vapor, deporte ni alcohol",
+    "el mismo día, sin maquillaje y sin tocarse la piel con las manos",
+    "el SPF es obligatorio",
+    "el resultado se valora de dos a cuatro semanas después de terminar el curso, no al momento"
+   ]
+  },
+  "freq": {
+   "cs": "Kúra je obvykle 3–4 zákroky s odstupem 2–4 týdnů, dál udržovací zákrok jednou za 3–6 měsíců. Přesné schéma určuje lékařka po vyšetření. Zákrok se neprovádí v těhotenství, při kojení, při aktivním zánětu v oblasti, při poruchách srážlivosti a při vzplanutí autoimunitního onemocnění.",
+   "en": "A course is usually three to four sessions two to four weeks apart, then maintenance every three to six months. The exact schedule is set by the doctor after an examination. The procedure is not done during pregnancy or breastfeeding, with active inflammation in the area, clotting disorders or an autoimmune flare-up.",
+   "es": "El curso suele ser de tres a cuatro sesiones cada dos a cuatro semanas y luego mantenimiento cada tres a seis meses. La pauta exacta la marca la doctora tras la valoración. No se realiza en embarazo o lactancia, con inflamación activa en la zona, con trastornos de la coagulación ni en brote autoinmune."
+  }
+ },
+ "lip-augmentation": {
+  "title": {
+   "cs": "Modelace rtů",
+   "en": "Lip filler",
+   "es": "Relleno de labios"
+  },
+  "lead": {
+   "cs": "Výplň na bázi kyseliny hyaluronové: pracujeme s tvarem, objemem a symetrií rtů. Přirozený výsledek je také výsledek.",
+   "en": "A hyaluronic acid filler: we work with the shape, volume and symmetry of the lips. A natural result is a result too.",
+   "es": "Relleno de ácido hialurónico: trabajamos la forma, el volumen y la simetría de los labios. Un resultado natural también es un resultado."
+  },
+  "body": {
+   "cs": [
+    "Lékařka aplikuje výplň do rtů podle vaší anatomie: tvaru obličeje, proporcí a výchozí asymetrie. Úkol formulujeme před zákrokem — hydratovat a zvýraznit kontury, přidat trochu objemu, srovnat asymetrii. Množství přípravku se řídí úkolem, ne přáním „udělat víc za stejné peníze“.",
+    "Přípravek vybíráme při vyšetření: podle úkolu — hydratovat, přidat lehký objem nebo upravit tvar —, podle hustoty tkání a podle toho, co bylo aplikováno dříve. Pracujeme se Stylage i dalšími řadami hyaluronových výplní; který přípravek a kolik ho bude, řekne lékařka před zákrokem, ne v jeho průběhu.",
+    "Neslibujeme „jako na fotce z internetu“: rty má každá jiné a výsledek závisí na výchozím tvaru, tloušťce tkání a na tom, jak pleť přípravek drží. Pokud je přání nereálné, lékařka to řekne před zákrokem, ne po něm."
+   ],
+   "en": [
+    "The doctor places the filler according to your anatomy: the shape of your face, your proportions and any asymmetry you start with. The goal is agreed before the procedure — hydrate and define the border, add a little volume, even out asymmetry. The amount of product follows the goal, not a wish to “get more for the same money”.",
+    "The product is chosen at the appointment: for the task — hydration, a light volume or a change of shape — for the density of your tissue and for whatever was injected before. We work with Stylage and other hyaluronic acid filler lines; which product and how much is named before the procedure, not during it.",
+    "We do not promise “like the photo on the internet”: lips differ, and the result depends on the starting shape, the thickness of the tissue and how your skin holds the product. If a request is unrealistic, the doctor says so before the procedure, not after."
+   ],
+   "es": [
+    "La doctora coloca el relleno según tu anatomía: la forma de la cara, las proporciones y la asimetría de partida. El objetivo se define antes del procedimiento: hidratar y marcar el contorno, añadir algo de volumen, corregir la asimetría. La cantidad de producto responde al objetivo, no al deseo de «ponerme más por el mismo dinero».",
+    "El producto se elige en la consulta: según el objetivo —hidratar, dar un volumen ligero o corregir la forma—, según la densidad de los tejidos y según lo que se haya inyectado antes. Trabajamos con Stylage y otras líneas de rellenos de ácido hialurónico; qué producto y cuánto se dice antes del procedimiento, no sobre la marcha.",
+    "No prometemos «como en la foto de internet»: cada boca es distinta y el resultado depende de la forma inicial, del grosor de los tejidos y de cómo la piel retiene el producto. Si lo que pides no es realista, la doctora te lo dice antes, no después."
+   ]
+  },
+  "who": {
+   "cs": [
+    "tenké rty, nevýrazná kontura",
+    "asymetrie",
+    "suché a dehydratované rty",
+    "věkové změny: pokleslé koutky, ztráta objemu"
+   ],
+   "en": [
+    "thin lips, an undefined border",
+    "asymmetry",
+    "dry, dehydrated lips",
+    "age-related changes: drooping corners, loss of volume"
+   ],
+   "es": [
+    "labios finos, contorno poco definido",
+    "asimetría",
+    "labios secos y deshidratados",
+    "cambios con la edad: comisuras caídas, pérdida de volumen"
+   ]
+  },
+  "how": {
+   "cs": [
+    "rozhovor o cíli a vyšetření",
+    "povrchová anestezie",
+    "aplikace výplně podle nákresu",
+    "modelace a kontrola symetrie",
+    "chlazení a doporučení na několik dní"
+   ],
+   "en": [
+    "a talk about the goal and an examination",
+    "topical anaesthesia",
+    "filler placed along the marking",
+    "modelling and a check of symmetry",
+    "cooling and advice for the next few days"
+   ],
+   "es": [
+    "conversación sobre el objetivo y valoración",
+    "anestesia tópica",
+    "colocación del relleno siguiendo el marcaje",
+    "modelado y control de la simetría",
+    "frío y pautas para los días siguientes"
+   ]
+  },
+  "after": {
+   "cs": [
+    "otok první 1–3 dny je normální a je vždy",
+    "možné jsou modřinky a nerovnosti, které se srovnají během 1–2 týdnů",
+    "výsledek se hodnotí po dvou týdnech, dřív ne",
+    "dva týdny bez sauny, parní lázně, solária a sportu",
+    "rty nemasírovat, pokud lékařka neřekne jinak",
+    "zákrok se neprovádí při aktivním oparu, v těhotenství, při kojení, při zánětu a poruchách srážlivosti"
+   ],
+   "en": [
+    "swelling for the first one to three days is normal and always happens",
+    "bruises and small irregularities are possible and settle within one to two weeks",
+    "judge the result after two weeks, not earlier",
+    "two weeks without sauna, steam room, solarium or sport",
+    "do not massage the lips unless the doctor says otherwise",
+    "the procedure is not done with active herpes, in pregnancy or breastfeeding, with inflammation or clotting disorders"
+   ],
+   "es": [
+    "la inflamación de uno a tres días es normal y siempre aparece",
+    "pueden salir moratones e irregularidades que se corrigen en una o dos semanas",
+    "el resultado se valora a las dos semanas, no antes",
+    "dos semanas sin sauna, baño de vapor, solárium ni deporte",
+    "no masajear los labios salvo que la doctora lo indique",
+    "no se realiza con herpes activo, en embarazo o lactancia, con inflamación o trastornos de la coagulación"
+   ]
+  },
+  "freq": {
+   "cs": "Korekce obvykle po 6–12 měsících podle přípravku, množství a metabolismu. Častěji jen z indikace, ne „pro udržení“.",
+   "en": "A touch-up is usually needed after six to twelve months, depending on the product, the amount and your metabolism. More often only when there is a reason, not “for maintenance”.",
+   "es": "El retoque suele hacerse a los seis o doce meses, según el producto, la cantidad y el metabolismo. Antes, solo si hay motivo, no «para mantener»."
+  }
+ },
+ "filler-dissolving": {
+  "title": {
+   "cs": "Rozpuštění výplně",
+   "en": "Dissolving filler",
+   "es": "Disolución del relleno"
+  },
+  "lead": {
+   "cs": "Zákrok pro případy, kdy výsledek nesedí, přípravek migroval nebo je ho prostě moc.",
+   "en": "A procedure for when the result does not suit you, the product has migrated, or there is simply too much of it.",
+   "es": "Un procedimiento para cuando el resultado no convence, el producto ha migrado o simplemente hay demasiado."
+  },
+  "body": {
+   "cs": [
+    "Výplně na bázi kyseliny hyaluronové jde odstranit: lékařka aplikuje enzym, který přípravek rozloží. Rozpuštění bývá částečné — když je potřeba ubrat objem nebo upravit jedno místo — a úplné, kdy se odstraní všechen přípravek v oblasti.",
+    "Je to běžný zákrok, ne přiznání neúspěchu: tkáně se mění, přípravek se může rozložit jinak, než bylo v plánu, nebo se vám prostě přestane líbit. Lékařka posoudí, kolik přípravku kde je, a upozorní, že po rozpuštění bude oblast nějakou dobu vypadat „prázdněji“ — to přejde."
+   ],
+   "en": [
+    "Hyaluronic acid fillers can be removed: the doctor injects an enzyme that breaks the product down. Dissolving can be partial — to take away excess volume or correct one spot — or complete, when all of the product in the area is removed.",
+    "This is a normal procedure, not an admission of failure: tissue changes, the product can settle differently than planned, or you may simply stop liking it. The doctor assesses how much product is where and warns you that the area will look “emptier” than usual for a while — that passes."
+   ],
+   "es": [
+    "Los rellenos de ácido hialurónico se pueden retirar: la doctora inyecta una enzima que descompone el producto. La disolución puede ser parcial —para quitar volumen de más o corregir un punto— o completa, cuando se retira todo el producto de la zona.",
+    "Es un procedimiento normal, no un reconocimiento de fracaso: los tejidos cambian, el producto puede distribuirse de otra forma de la prevista o simplemente dejar de gustarte. La doctora valora cuánto producto hay y dónde, y te avisa de que durante un tiempo la zona se verá «más vacía» de lo habitual: eso pasa."
+   ]
+  },
+  "who": {
+   "cs": [
+    "nevyhovuje tvar nebo objem po výplni",
+    "přípravek se rozložil nerovnoměrně nebo migroval",
+    "je potřeba ubrat část objemu před novým zákrokem",
+    "otok v oblasti, který neustupuje"
+   ],
+   "en": [
+    "the shape or volume after a filler does not suit you",
+    "the product has spread unevenly or migrated",
+    "part of the volume has to go before a new procedure",
+    "swelling in the area that does not settle"
+   ],
+   "es": [
+    "no convence la forma o el volumen tras un relleno",
+    "el producto se ha distribuido de forma desigual o ha migrado",
+    "hay que quitar parte del volumen antes de un nuevo procedimiento",
+    "inflamación en la zona que no cede"
+   ]
+  },
+  "how": {
+   "cs": [
+    "vyšetření, posouzení množství a uložení přípravku",
+    "dezinfekce a anestezie",
+    "aplikace enzymu do potřebných míst",
+    "kontrola po několika dnech, v případě potřeby opakovaná aplikace"
+   ],
+   "en": [
+    "examination, assessment of how much product there is and where",
+    "antiseptic preparation and anaesthesia",
+    "the enzyme is injected into the points that need it",
+    "a check after a few days and, if needed, a second injection"
+   ],
+   "es": [
+    "valoración de cuánto producto hay y dónde está",
+    "antisepsia y anestesia",
+    "inyección de la enzima en los puntos necesarios",
+    "control a los pocos días y, si hace falta, una segunda inyección"
+   ]
+  },
+  "after": {
+   "cs": [
+    "otok a citlivost v prvních dnech",
+    "oblast může vypadat „prázdně“ — tkáně potřebují čas",
+    "novou výplň lze aplikovat nejdřív za dva týdny",
+    "možná je alergická reakce na enzym — proto zákrok dělá lékařka a reakci sleduje",
+    "dva týdny bez sauny, parní lázně a solária"
+   ],
+   "en": [
+    "swelling and tenderness in the first days",
+    "the area may look “empty” — the tissue needs time",
+    "a new filler is placed no sooner than two weeks later",
+    "an allergic reaction to the enzyme is possible, which is why a doctor does this and watches the reaction",
+    "two weeks without sauna, steam room or solarium"
+   ],
+   "es": [
+    "inflamación y sensibilidad los primeros días",
+    "la zona puede verse «vacía»: los tejidos necesitan tiempo",
+    "el nuevo relleno no se coloca antes de dos semanas",
+    "es posible una reacción alérgica a la enzima: por eso lo hace la doctora y vigila la reacción",
+    "dos semanas sin sauna, baño de vapor ni solárium"
+   ]
+  },
+  "freq": {
+   "cs": "Jednorázově; někdy jsou potřeba dva zákroky s odstupem jednoho až dvou týdnů, pokud je přípravku hodně nebo je hustý.",
+   "en": "Usually once; sometimes two sessions one to two weeks apart are needed if there is a lot of product or it is dense.",
+   "es": "Suele ser una sola vez; a veces hacen falta dos sesiones separadas una o dos semanas si hay mucho producto o es denso."
+  }
+ }
+}
