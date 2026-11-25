@@ -2265,6 +2265,10 @@ def biz_schema(lang, city):
     }
 
 
+ORG_REF = {'@type': 'Organization', '@id': BASE + '/#org',
+           'name': 'Hi Sisters Clinic', 'url': BASE + '/'}
+
+
 def org_schema(lang, city):
     """Организация и сайт: логотип, соцсети, языки. На это опираются
     карточка бренда в поиске и ответы ассистентов, когда их спрашивают «кто это»."""
@@ -2295,7 +2299,7 @@ def org_schema(lang, city):
         'url': BASE + '/',
         'name': 'Hi Sisters Clinic',
         'inLanguage': lang,
-        'publisher': {'@id': BASE + '/#org'},
+        'publisher': ORG_REF,
     }
     return jld({'@context': 'https://schema.org', '@graph': [org, site]})
 
@@ -2313,7 +2317,7 @@ def team_schema(lang, city):
         if not nm:
             continue
         person = {'@type': 'Person', 'name': nm, 'jobTitle': role,
-                  'worksFor': {'@id': BASE + '/#org'},
+                  'worksFor': ORG_REF,
                   'workLocation': {'@id': '%s/%s/%s/#business' % (BASE, lang, city)}}
         if desc:
             person['description'] = desc
@@ -2353,7 +2357,7 @@ def video_schema(lang, city, items, page_url, upload='2026-11-21'):
                'contentUrl': BASE + v['src'],
                'uploadDate': VIDEO_DATES.get(v['src']) or v.get('date') or upload,
                'inLanguage': lang,
-               'publisher': {'@id': BASE + '/#org'},
+               'publisher': ORG_REF,
                'isFamilyFriendly': True,
                'url': page_url}
         if v.get('poster'):
@@ -2747,7 +2751,8 @@ def doc(lang, city, rel, current, title, desc, main, cta=None, other_rel=None,
                      '@id': url_ + '#page', 'url': url_, 'name': title,
                      'description': desc, 'inLanguage': lang,
                      'dateModified': UPD_ISO,
-                     'isPartOf': {'@id': BASE + '/#website'},
+                     'isPartOf': {'@type': 'WebSite', '@id': BASE + '/#website', 'url': BASE + '/',
+                                   'name': 'Hi Sisters Clinic'},
                      'about': {'@id': '%s/%s/%s/#business' % (BASE, lang, city)}})
     schema = schema + page_node
     return (head(lang, city, title, desc, rel, langs=langs, section=current,
@@ -4187,6 +4192,7 @@ def build_cosmetics(lang, city):
     {cta_link}
   </div>
 </div></section>
+{quick_list(QUICK_SHOP[lang], lang)}
 {intro}
 {shop}
 <section class="{'alt' if shop else ''}"><div class="wrap"><p class="note">{e(note)}</p></div></section>
@@ -4712,6 +4718,55 @@ QUICK_LABEL = {'ru': 'Коротко', 'uk': 'Коротко', 'cs': 'Stručně'
                'en': 'In short', 'es': 'En resumen'}
 
 
+QUICK_TRAIN = {
+ 'ru': ['Курсы лазерной и электроэпиляции: теория, практика на моделях, европейский диплом.',
+        'Очные курсы от 1 до 5 дней в Праге и Валенсии, есть онлайн-теория с доступом на 6 месяцев.',
+        'После курса остаётся поддержка: разбор сложных случаев и ответы на вопросы.'],
+ 'uk': ['Курси лазерної та електроепіляції: теорія, практика на моделях, європейський диплом.',
+        'Очні курси від 1 до 5 днів у Празі та Валенсії, є онлайн-теорія з доступом на 6 місяців.',
+        'Після курсу залишається підтримка: розбір складних випадків і відповіді на запитання.'],
+ 'cs': ['Kurzy laserové epilace a elektroepilace: teorie, praxe na modelech, evropský diplom.',
+        'Prezenční kurzy od 1 do 5 dnů v Praze a ve Valencii, online teorie s přístupem na 6 měsíců.',
+        'Po kurzu zůstává podpora: rozbor složitých případů a odpovědi na dotazy.'],
+ 'en': ['Courses in laser hair removal and electrolysis: theory, practice on models, a European diploma.',
+        'In-person courses of 1 to 5 days in Prague and Valencia, plus online theory with 6 months of access.',
+        'Support continues after the course: we go through difficult cases and answer questions.'],
+ 'es': ['Cursos de depilación láser y electrólisis: teoría, práctica con modelos y diploma europeo.',
+        'Cursos presenciales de 1 a 5 días en Praga y Valencia, y teoría online con 6 meses de acceso.',
+        'El apoyo sigue después del curso: revisamos casos difíciles y respondemos dudas.'],
+}
+
+QUICK_SHOP = {
+ 'ru': ['Профессиональные средства, которыми мы работаем в клинике: уход для кожи и для волос.',
+        'Подбираем после консультации, а не продаём «на всякий случай».',
+        'Что есть в наличии — помечено в карточке; остальное привозим под заказ.'],
+ 'uk': ['Професійні засоби, якими ми працюємо в клініці: догляд для шкіри та для волосся.',
+        'Добираємо після консультації, а не продаємо «про всяк випадок».',
+        'Що є в наявності — позначено в картці; решту привозимо на замовлення.'],
+ 'cs': ['Profesionální přípravky, se kterými pracujeme na klinice: péče o pleť i o vlasy.',
+        'Vybíráme po konzultaci, neprodáváme „pro jistotu“.',
+        'Co je skladem, je označené v kartě; ostatní vozíme na objednávku.'],
+ 'en': ['The professional products we use at the clinic: skin care and hair care.',
+        'We choose them after a consultation, we do not sell “just in case”.',
+        'What is in stock is marked on the card; the rest we bring to order.'],
+ 'es': ['Los productos profesionales que usamos en la clínica: cuidado de la piel y del cabello.',
+        'Los elegimos tras una consulta, no vendemos «por si acaso».',
+        'Lo que hay en stock está marcado en la ficha; el resto lo traemos por encargo.'],
+}
+
+
+def quick_list(items, lang, extra_line=None):
+    """Тот же блок «коротко», но из готового списка строк."""
+    items = list(items or [])
+    if extra_line:
+        items = items + [extra_line]
+    if not items:
+        return ''
+    return ('\n<section class="tint"><div class="wrap"><div class="quick">'
+            '<h2>%s</h2><ul>%s</ul></div></div></section>'
+            % (e(QUICK_LABEL[lang]), ''.join('<li>%s</li>' % e(x) for x in items)))
+
+
 def quick_block(svc, lang, price):
     """Короткий ответ в начале страницы: три факта и цена.
 
@@ -5009,7 +5064,7 @@ def build_zone(lang, city, key):
     <span class="free">{e(h['free'])}</span>
   </div>
 </div></section>
-
+{quick_block(services['laser'], lang, price)}
 <section><div class="wrap arts">{arts}</div></section>
 {video_block(z, lang, title_city)}
 
@@ -5019,7 +5074,7 @@ def build_zone(lang, city, key):
 
 <section class="alt"><div class="wrap">
   <div class="sec-head"><h2>{e(ui_z['other'])}</h2></div>
-  <div class="more-list">{sibs}</div>
+  <div class="more-list">{sibs}<a href="/{lang}/{city}/{REL['compare']}">{e(compare['title'][lang])}</a><a href="/{lang}/{city}/{REL['prices']}">{e(nav_label('prices', lang))}</a><a href="/{lang}/{city}/{REL['faq']}">{e(nav_label('faq', lang))}</a></div>
 </div></section>
 """
     sch = (service_schema(lang, city, 'laser', pmin)
@@ -5101,6 +5156,41 @@ def course_packages(it, lang):
             '<div class="c-packs">%s</div></div></section>' % (e(u['options']), out))
 
 
+def course_price(price_str, city):
+    """«25 000 Kč / 1 000 €» → (25000, 'CZK') для Праги, (1000, 'EUR') для Валенсии."""
+    if not price_str:
+        return None
+    want = 'Kč' if city == 'prague' else '€'
+    for part in str(price_str).split('/'):
+        if want in part:
+            digits = re.sub(r'[^0-9]', '', part)
+            if digits:
+                return int(digits), ('CZK' if want == 'Kč' else 'EUR')
+    return None
+
+
+def course_schema(lang, city, cid, it, title_, lead):
+    """Курс для поиска: кто учит, сколько стоит, очно или онлайн."""
+    obj = {'@context': 'https://schema.org', '@type': 'Course',
+           'name': title_, 'description': lead, 'inLanguage': lang,
+           'provider': ORG_REF,
+           'url': '%s/%s/%s/%s%s/' % (BASE, lang, city, REL['training'], cid)}
+    inst = {'@type': 'CourseInstance',
+            'courseMode': 'online' if 'online' in cid else 'onsite',
+            'inLanguage': lang}
+    if 'online' not in cid:
+        inst['location'] = {'@id': '%s/%s/%s/#business' % (BASE, lang, city)}
+    if it.get('trainer'):
+        inst['instructor'] = {'@type': 'Person', 'name': it['trainer']}
+    obj['hasCourseInstance'] = inst
+    pr = course_price(it.get('price'), city)
+    if pr:
+        obj['offers'] = {'@type': 'Offer', 'price': str(pr[0]), 'priceCurrency': pr[1],
+                         'availability': 'https://schema.org/InStock',
+                         'url': obj['url']}
+    return obj
+
+
 def build_course(lang, city, cid):
     """Отдельная страница курса: программа, стоимость, варианты, запись."""
     st = studios[city]; tr = TRAIN[lang]; u = COURSE_UI[lang]
@@ -5156,10 +5246,7 @@ def build_course(lang, city, cid):
 """
     rel = REL['training'] + cid + '/'
     sch = (crumbs(lang, city, [(tr['h1'], REL['training']), (title_, rel)])
-           + jld({'@context': 'https://schema.org', '@type': 'Course', 'name': title_,
-                  'description': lead,
-                  'provider': {'@type': 'Organization', 'name': 'Hi Sisters Clinic',
-                               'url': BASE}}))
+           + jld(course_schema(lang, city, cid, it, title_, lead)))
     return doc(lang, city, rel, 'training',
                '%s — %s, Hi Sisters Clinic' % (title_, cityname), (lead or '')[:300],
                main, cta=tr['cta'], schema=sch)
@@ -5201,7 +5288,7 @@ def build_training(lang, city):
   <h1>{e(tr['h1'])}</h1>
   <p class="lead">{e(tr['lead'])}</p>
 </div></section>
-
+{quick_list(QUICK_TRAIN[lang], lang)}
 {split_block('/assets/photos/portrait.jpg', tr['h1'], SPLIT_TRAIN[lang][0],
              SPLIT_TRAIN[lang][1], sec_class='tint', rev=True)}
 {video_block(courses, lang)}
