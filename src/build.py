@@ -2280,8 +2280,21 @@ def biz_schema(lang, city):
         'knowsLanguage': ['ru', 'uk', 'cs', 'en', 'es'],
         'paymentAccepted': 'Cash, Credit Card',
         'sameAs': ['https://instagram.com/' + h for h in st.get('instagram', [])]
+                  + (['https://www.threads.net/@' + st['threads']] if st.get('threads') else [])
                   + ([st['maps']] if st.get('maps') else []),
         'hasMap': st.get('maps', ''),
+        # ассистенту мало знать, что запись есть: нужен адрес, куда вести человека
+        'potentialAction': {
+            '@type': 'ReserveAction',
+            'name': HERO[lang]['cta'],
+            'target': {'@type': 'EntryPoint',
+                       'urlTemplate': (BASE + book_href(lang, city)
+                                       if book_href(lang, city).startswith('/')
+                                       else book_href(lang, city)),
+                       'inLanguage': lang,
+                       'actionPlatform': ['https://schema.org/DesktopWebPlatform',
+                                          'https://schema.org/MobileWebPlatform']},
+            'result': {'@type': 'Reservation', 'name': name}},
         'makesOffer': [
             {'@type': 'Offer', 'itemOffered': {'@type': 'Service',
              'name': (services[k]['card'].get(lang) or services[k]['card']['ru'])['title']}}
@@ -4483,6 +4496,51 @@ def build_compare_page(lang, city):
                       (compare['title'][lang], REL['compare'])])
 
 
+CUR_CODE = {'prague': 'CZK', 'valencia': 'EUR'}
+
+
+def price_offers(lang, city, url):
+    """Прайс в разметке: конкретные цены, а не «от».
+
+    Ассистенты и поиск отвечают на «сколько стоит» только тогда, когда цена
+    лежит в данных, а не картинкой в таблице. Берём ровно те строки, где цена —
+    число: «по договорённости» и диапазоны в разметку не идут.
+    """
+    cur = CUR_CODE.get(city) or studios[city]['currency']
+    cats = []
+    for grp in pgroups(city, lang):
+        g = prices['groups'].get(grp) or {}
+        rows = g.get(lang) or g.get('ru') or []
+        t_ = (PGROUP_TITLE.get(grp) or {}).get(lang, grp)
+        if t_ == '—':
+            continue
+        offers = []
+        for r in rows:
+            if not _vis(r) or r.get('ask'):
+                continue
+            v = r.get('now') or r.get('price')
+            if not isinstance(v, (int, float)):
+                continue
+            nm = (r.get('label') or '').strip()
+            if not nm:
+                continue
+            offers.append({'@type': 'Offer', 'name': nm, 'price': str(int(v)),
+                           'priceCurrency': cur, 'url': url,
+                           'availability': 'https://schema.org/InStock',
+                           'seller': {'@id': '%s/%s/%s/#business' % (BASE, lang, city)}})
+        if offers:
+            cats.append({'@type': 'OfferCatalog', 'name': t_, 'itemListElement': offers})
+    if not cats:
+        return ''
+    return jld({'@context': 'https://schema.org', '@type': 'OfferCatalog',
+                '@id': url + '#prices',
+                'name': '%s — %s' % (PRICES_PAGE[lang]['h1'],
+                                     studios[city]['city'].get(lang, studios[city]['city']['en'])),
+                'url': url, 'inLanguage': lang,
+                'provider': {'@id': '%s/%s/%s/#business' % (BASE, lang, city)},
+                'itemListElement': cats})
+
+
 def build_prices_page(lang, city):
     """Весь прайс города одной страницей: «сколько стоит» — самый частый вопрос,
     и отвечать на него лучше отдельным адресом, а не куском другой страницы."""
@@ -4520,7 +4578,8 @@ def build_prices_page(lang, city):
 """
     title = '%s %s — Hi Sisters Clinic' % (pp['h1'], IN_CITY[city][lang])
     desc = pp['lead'][:160]
-    sch = crumbs(lang, city, [(pp['h1'], REL['prices'])])
+    sch = (crumbs(lang, city, [(pp['h1'], REL['prices'])])
+           + price_offers(lang, city, '%s/%s/%s/%s' % (BASE, lang, city, REL['prices'])))
     return doc(lang, city, REL['prices'], 'services', title, desc, main, schema=sch)
 
 
