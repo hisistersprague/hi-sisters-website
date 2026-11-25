@@ -119,8 +119,10 @@ NAV_ORDER = ['home', 'services', 'training', 'cosmetics', 'about', 'contacts']
 REL = {'home': '', 'services': 'services/', 'training': 'training/',
        'cosmetics': 'cosmetics/', 'about': 'about/', 'contacts': 'contacts/',
        'booking': 'booking/',
-       'faq': 'faq/'}
+       'faq': 'faq/', 'prices': 'prices/',
+       'compare': 'laser-or-electro/'}
 NAV_EXTRA = {   # чего нет в старом ui.nav
+ 'prices': {'ru': 'Цены', 'uk': 'Ціни', 'cs': 'Ceník', 'en': 'Prices', 'es': 'Precios'},
  'cosmetics': {'ru': 'Косметика', 'uk': 'Косметика', 'cs': 'Kosmetika',
                'en': 'Cosmetics', 'es': 'Cosmética'},
  'faq': {'ru': 'Вопросы и ответы', 'uk': 'Запитання та відповіді',
@@ -2413,12 +2415,15 @@ CSSVER = hashlib.md5(css().encode('utf-8')).hexdigest()[:8]
 OG_LOCALE = {'ru': 'ru_RU', 'uk': 'uk_UA', 'cs': 'cs_CZ', 'en': 'en_GB', 'es': 'es_ES'}
 
 
-def head(lang, city, title, desc, rel='', langs=None, section='', noindex=False):
+def head(lang, city, title, desc, rel='', langs=None, section='', noindex=False,
+         og_image=None, og_size=None):
     base = 'https://hi-sisters.clinic'
     ls_ = langs or LANGS
     alts = '\n'.join('  <link rel="alternate" hreflang="%s" href="%s/%s/%s/%s">' % (l, base, l, city, rel)
                      for l in ls_)
     robots = '<meta name="robots" content="noindex,follow">' if noindex else ''
+    og_img = og_image or '/assets/og.jpg'
+    og_w, og_h = og_size or ((1600, 720) if og_image else (1200, 630))
     return f"""<!doctype html>
 <html lang="{lang}">
 <head>
@@ -2434,11 +2439,11 @@ def head(lang, city, title, desc, rel='', langs=None, section='', noindex=False)
 <meta property="og:title" content="{e(title)}">
 <meta property="og:description" content="{e(desc)}">
 <meta property="og:url" content="{base}/{lang}/{city}/{rel}">
-<meta property="og:image" content="{base}/assets/og.jpg">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
+<meta property="og:image" content="{base}{og_img}">
+<meta property="og:image:width" content="{og_w}">
+<meta property="og:image:height" content="{og_h}">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="{base}/assets/og.jpg">
+<meta name="twitter:image" content="{base}{og_img}">
 
 {alts}
   <link rel="alternate" hreflang="x-default" href="{base}/{'cs' if 'cs' in ls_ else ls_[0]}/prague/{rel}">
@@ -2656,7 +2661,7 @@ def footer(lang, city):
     othername = studios[other]['city'].get(lang, studios[other]['city']['en'])
     ot = studios[other]
     nav = ''.join('<a href="/%s/%s/%s">%s</a>' % (lang, city, REL[k], e(nav_label(k, lang)))
-                  for k in NAV_ORDER + ['faq'])
+                  for k in NAV_ORDER + ['prices', 'faq'])
     return f"""
 <footer><div class="wrap">
   <div class="foot-title">{e(FOOT[lang])}</div>
@@ -2727,7 +2732,8 @@ def gotop_btn(lang):
 
 
 def doc(lang, city, rel, current, title, desc, main, cta=None, other_rel=None,
-        with_band=True, schema='', langs=None, add_city=True, noindex=False):
+        with_band=True, schema='', langs=None, add_city=True, noindex=False,
+        og_image=None):
     if add_city:
         title, desc = with_city(title, desc, lang, city)
     label = cta or HERO[lang]['cta']
@@ -2744,7 +2750,8 @@ def doc(lang, city, rel, current, title, desc, main, cta=None, other_rel=None,
                      'isPartOf': {'@id': BASE + '/#website'},
                      'about': {'@id': '%s/%s/%s/#business' % (BASE, lang, city)}})
     schema = schema + page_node
-    return (head(lang, city, title, desc, rel, langs=langs, section=current, noindex=noindex)
+    return (head(lang, city, title, desc, rel, langs=langs, section=current,
+                 noindex=noindex, og_image=og_image)
             + header(lang, city, rel, current, other_rel, langs=langs)
             + '\n<main>' + main + (band(lang, city) if with_band else '') + '</main>'
             + footer(lang, city)
@@ -4283,6 +4290,180 @@ FAQ_PAGE = {
 }
 
 
+PRICES_PAGE = {
+ 'ru': {'h1': 'Цены', 'kicker': 'Прайс',
+        'lead': 'Весь прайс студии на одной странице: эпиляция, уход за кожей, трихология и курсы. '
+                'Цены указаны за один сеанс, если рядом не написано иное.',
+        'note': 'Точную стоимость курса называем на бесплатной консультации — после осмотра '
+                'зоны и подбора параметров.'},
+ 'uk': {'h1': 'Ціни', 'kicker': 'Прайс',
+        'lead': 'Увесь прайс студії на одній сторінці: епіляція, догляд за шкірою, трихологія та курси. '
+                'Ціни вказані за один сеанс, якщо поруч не написано інше.',
+        'note': 'Точну вартість курсу називаємо на безкоштовній консультації — після огляду '
+                'зони та підбору параметрів.'},
+ 'cs': {'h1': 'Ceník', 'kicker': 'Ceník',
+        'lead': 'Celý ceník studia na jedné stránce: epilace, péče o pleť, trichologie a kurzy. '
+                'Ceny jsou za jedno ošetření, pokud není uvedeno jinak.',
+        'note': 'Přesnou cenu kúry řekneme na bezplatné konzultaci — po prohlídce zóny '
+                'a nastavení parametrů.'},
+ 'en': {'h1': 'Prices', 'kicker': 'Price list',
+        'lead': 'The whole price list on one page: hair removal, skin care, trichology and courses. '
+                'Prices are per session unless stated otherwise.',
+        'note': 'The exact price of a course is given at the free consultation, after we look '
+                'at the area and set the parameters.'},
+ 'es': {'h1': 'Precios', 'kicker': 'Tarifas',
+        'lead': 'Todas las tarifas del estudio en una página: depilación, cuidado de la piel, '
+                'tricología y formación. Los precios son por sesión salvo que se indique otra cosa.',
+        'note': 'El precio exacto de la pauta se dice en la consulta gratuita, después de ver '
+                'la zona y ajustar los parámetros.'},
+}
+
+
+COMPARE_PAGE = {
+ 'ru': {'kicker': 'Сравнение',
+        'q1': 'Когда лучше лазер', 'q2': 'Когда нужна электроэпиляция',
+        'q3': 'Можно ли совмещать',
+        'a3': 'Да, и чаще всего так и делаем: лазером снимаем основную массу тёмных волос, '
+              'а электроэпиляцией закрываем то, что лазер не берёт — светлые, седые и пушковые. '
+              'Какой порядок подойдёт именно вам, решаем на консультации.',
+        'more': 'Подробнее о методе'},
+ 'uk': {'kicker': 'Порівняння',
+        'q1': 'Коли краще лазер', 'q2': 'Коли потрібна електроепіляція',
+        'q3': 'Чи можна поєднувати',
+        'a3': 'Так, і найчастіше саме так і робимо: лазером знімаємо основну масу темного волосся, '
+              'а електроепіляцією закриваємо те, що лазер не бере — світле, сиве й пушкове. '
+              'Який порядок підійде саме вам, вирішуємо на консультації.',
+        'more': 'Докладніше про метод'},
+ 'cs': {'kicker': 'Srovnání',
+        'q1': 'Kdy je lepší laser', 'q2': 'Kdy je potřeba elektroepilace',
+        'q3': 'Dá se to kombinovat',
+        'a3': 'Ano, a většinou to tak děláme: laserem sundáme hlavní množství tmavých chloupků '
+              'a elektroepilací dořešíme to, na co laser nestačí — světlé, šedivé a jemné chmýří. '
+              'Jaké pořadí sedne vám, určíme na konzultaci.',
+        'more': 'Více o metodě'},
+ 'en': {'kicker': 'Comparison',
+        'q1': 'When laser is the better choice', 'q2': 'When electrolysis is needed',
+        'q3': 'Can they be combined',
+        'a3': 'Yes, and usually that is exactly what we do: the laser removes the bulk of the dark '
+              'hair and electrolysis finishes what the laser cannot see — blond, grey and vellus hair. '
+              'Which order suits you we decide at the consultation.',
+        'more': 'More about the method'},
+ 'es': {'kicker': 'Comparativa',
+        'q1': 'Cuándo conviene el láser', 'q2': 'Cuándo hace falta la electrólisis',
+        'q3': 'Se pueden combinar',
+        'a3': 'Sí, y normalmente es lo que hacemos: el láser quita el grueso del vello oscuro y la '
+              'electrólisis termina lo que el láser no ve — rubio, canoso y vello fino. '
+              'Qué orden te conviene lo decidimos en la consulta.',
+        'more': 'Más sobre el método'},
+}
+
+
+def build_compare_page(lang, city):
+    """«Лазер или электроэпиляция» отдельной страницей.
+
+    Это запрос, с которого начинают выбор, и именно его задают ассистентам.
+    Таблица и факты — те же, что на страницах услуг."""
+    if 'laser' not in services or 'electro' not in services:
+        return None
+    if city not in services['laser']['cities'] or city not in services['electro']['cities']:
+        return None
+    lpg = services['laser']['page'].get(lang)
+    epg = services['electro']['page'].get(lang)
+    if not lpg or not epg:
+        return None
+    cp = COMPARE_PAGE[lang]
+    st = studios[city]
+    h = HERO[lang]
+    cityname = st['city'].get(lang, st['city']['en'])
+    cols = compare['cols'][lang]
+    head = ''.join('<th%s>%s</th>' % (' class="cmp-k"' if i == 0 else '', e(c))
+                   for i, c in enumerate(cols))
+    body = ''.join('<tr><th scope="row">%s</th><td>%s</td><td>%s</td></tr>'
+                   % (e(r[lang][0]), e(r[lang][1]), e(r[lang][2])) for r in compare['rows'])
+    lq = (services['laser'].get('quick') or {}).get(lang) or []
+    eq = (services['electro'].get('quick') or {}).get(lang) or []
+    main = f"""
+<section class="hero hero-sm"><div class="wrap">
+  <div class="kicker">{e(cp['kicker'])} · {e(cityname)}</div>
+  <h1>{e(compare['title'][lang])}</h1>
+  <p class="lead">{e(compare['lead'][lang])}</p>
+  <div class="cta-row">
+    <a class="btn btn-gold" href="{book_href(lang, city)}" data-book>{e(h['cta'])}</a>
+    <span class="free">{e(h['free'])}</span>
+  </div>
+</div></section>
+
+<section class="dark"><div class="wrap">
+  <div class="cmp-wrap"><table class="cmp"><thead><tr>{head}</tr></thead><tbody>{body}</tbody></table></div>
+</div></section>
+
+<section class="tint"><div class="wrap arts">
+  <div class="art">
+    <h2>{e(cp['q1'])}</h2>
+    <ul>{''.join('<li>%s</li>' % e(x) for x in lq)}</ul>
+    <div class="more-list"><a href="/{lang}/{city}/laser/">{e(cp['more'])}</a></div>
+  </div>
+  <div class="art">
+    <h2>{e(cp['q2'])}</h2>
+    <ul>{''.join('<li>%s</li>' % e(x) for x in eq)}</ul>
+    <div class="more-list"><a href="/{lang}/{city}/electro/">{e(cp['more'])}</a></div>
+  </div>
+</div></section>
+
+<section><div class="wrap arts"><div class="art">
+  <h2>{e(cp['q3'])}</h2><p>{e(cp['a3'])}</p>
+</div></div></section>
+"""
+    title = '%s — %s, Hi Sisters Clinic' % (compare['title'][lang], cityname)
+    desc = compare['lead'][lang][:160]
+    qa = [{'q': cp['q3'] + '?', 'a': cp['a3']}]
+    sch = (crumbs(lang, city, [(SERVICES_PAGE[lang]['h1'], REL['services']),
+                               (compare['title'][lang], REL['compare'])])
+           + faq_schema(qa))
+    return doc(lang, city, REL['compare'], 'services', title, desc, main, schema=sch)
+
+
+def build_prices_page(lang, city):
+    """Весь прайс города одной страницей: «сколько стоит» — самый частый вопрос,
+    и отвечать на него лучше отдельным адресом, а не куском другой страницы."""
+    st = studios[city]
+    pp = PRICES_PAGE[lang]
+    h = HERO[lang]
+    cityname = st['city'].get(lang, st['city']['en'])
+    tables = ''
+    groups = 0
+    for grp in pgroups(city, lang):
+        rows = price_rows(grp, city, lang, order=False, link='page')
+        if not rows:
+            continue
+        t_ = (PGROUP_TITLE.get(grp) or {}).get(lang, grp)
+        if t_ == '—':
+            continue
+        groups += 1
+        tables += ('<h2 class="ptab-h">%s</h2><div class="ptable">%s</div>' % (e(t_), rows))
+    if not groups:
+        return None
+    main = f"""
+<section class="hero hero-sm"><div class="wrap">
+  <div class="kicker">{e(pp['kicker'])} · {e(cityname)}</div>
+  <h1>{e(pp['h1'])} — {e(cityname)}</h1>
+  <p class="lead">{e(pp['lead'])}</p>
+  <div class="cta-row">
+    <a class="btn btn-gold" href="{book_href(lang, city)}" data-book>{e(h['cta'])}</a>
+    <span class="free">{e(h['free'])}</span>
+  </div>
+</div></section>
+
+<section class="tint"><div class="wrap">{tables}
+  <p class="note">{e(pp['note'])}</p>
+</div></section>
+"""
+    title = '%s %s — Hi Sisters Clinic' % (pp['h1'], IN_CITY[city][lang])
+    desc = pp['lead'][:160]
+    sch = crumbs(lang, city, [(pp['h1'], REL['prices'])])
+    return doc(lang, city, REL['prices'], 'services', title, desc, main, schema=sch)
+
+
 def build_faq_page(lang, city):
     """Все вопросы и ответы города на одном адресе.
 
@@ -4619,6 +4800,12 @@ def build_service(lang, city, key):
     sib_links = ''.join('<a href="/%s/%s/%s/">%s</a>'
                         % (lang, city, k, e((services[k]['card'].get(lang) or {}).get('title', '')))
                         for k in sib)
+    # со страницы услуги всегда есть куда идти: сравнение, прайс и вопросы
+    sib_links += ('<a href="/%s/%s/%s">%s</a>' % (lang, city, REL['prices'], e(nav_label('prices', lang)))
+                  + '<a href="/%s/%s/%s">%s</a>' % (lang, city, REL['faq'], e(nav_label('faq', lang))))
+    if key in ('laser', 'electro'):
+        sib_links = ('<a href="/%s/%s/%s">%s</a>' % (lang, city, REL['compare'],
+                                                     e(compare['title'][lang])) + sib_links)
 
     svc_split = ''
     if key == 'cosmetology':
@@ -4692,7 +4879,7 @@ def build_service(lang, city, key):
            + faq_schema(pg.get('faq', []))
            + video_schema(lang, city, vids, page_url))
     return doc(lang, city, key + '/', 'services', title, desc, main,
-               other_rel=other_rel, schema=sch,
+               other_rel=other_rel, schema=sch, og_image=svc.get('heroImage'),
                langs=[l for l in LANGS if svc['page'].get(l)])
 
 
@@ -5305,6 +5492,16 @@ if __name__ == '__main__':
                 pages.append('/%s/%s/%s' % (lang, city, rel))
                 if rel != REL['booking']:     # форму записи индексировать незачем
                     seo_pages.append((lang, city, rel))
+            cmp_html = build_compare_page(lang, city)
+            if cmp_html:
+                write(os.path.join(d, 'laser-or-electro', 'index.html'), cmp_html)
+                pages.append('/%s/%s/%s' % (lang, city, REL['compare']))
+                seo_pages.append((lang, city, REL['compare']))
+            prices_html = build_prices_page(lang, city)
+            if prices_html:
+                write(os.path.join(d, 'prices', 'index.html'), prices_html)
+                pages.append('/%s/%s/%s' % (lang, city, REL['prices']))
+                seo_pages.append((lang, city, REL['prices']))
             faq_html = build_faq_page(lang, city)
             if faq_html:
                 write(os.path.join(d, 'faq', 'index.html'), faq_html)
