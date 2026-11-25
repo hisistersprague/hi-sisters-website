@@ -2480,6 +2480,9 @@ CSSVER = hashlib.md5(css().encode('utf-8')).hexdigest()[:8]
 OG_LOCALE = {'ru': 'ru_RU', 'uk': 'uk_UA', 'cs': 'cs_CZ', 'en': 'en_GB', 'es': 'es_ES'}
 
 
+OG_SIZE = {'/assets/photos/hero-cosmetics.jpg': (1600, 900)}
+
+
 def head(lang, city, title, desc, rel='', langs=None, section='', noindex=False,
          og_image=None, og_size=None):
     base = 'https://hi-sisters.clinic'
@@ -2488,7 +2491,8 @@ def head(lang, city, title, desc, rel='', langs=None, section='', noindex=False,
                      for l in ls_)
     robots = '<meta name="robots" content="noindex,follow">' if noindex else ''
     og_img = og_image or '/assets/og.jpg'
-    og_w, og_h = og_size or ((1600, 720) if og_image else (1200, 630))
+    og_w, og_h = (og_size or OG_SIZE.get(og_img)
+                  or ((1600, 720) if og_image else (1200, 630)))
     return f"""<!doctype html>
 <html lang="{lang}">
 <head>
@@ -4222,6 +4226,7 @@ def build_brand(lang, city, brand):
     desc = lead
     return doc(lang, city, REL['cosmetics'] + brand_slug(brand) + '/', 'cosmetics',
                title, desc, main, other_rel=REL['cosmetics'], add_city=False,
+               og_image='/assets/photos/hero-cosmetics.jpg',
                crumb=[(nav_label('cosmetics', lang), REL['cosmetics']),
                       (brand, REL['cosmetics'] + brand_slug(brand) + '/')])
 
@@ -4266,6 +4271,7 @@ def build_cosmetics(lang, city):
 """
     title = '%s — %s, Hi Sisters Clinic' % (hd['h1'], cityname)
     return doc(lang, city, REL['cosmetics'], 'cosmetics', title, hd['lead'], main,
+               og_image='/assets/photos/hero-cosmetics.jpg',
                schema=crumbs(lang, city, [(hd['h1'], REL['cosmetics'])])
                       + shop_schema(lang, city))
 
@@ -5623,6 +5629,14 @@ def llms_txt():
     lines.append('- Laser is used for dark hair; electrolysis removes light, red and grey hair '
                  'and is the method offered for a woman\'s face.')
     lines.append('- A laser course is usually 6–10 sessions with intervals growing from 4 to 8 weeks.')
+    for city_, grp_ in (('prague', 'laserWomen'), ('valencia', 'laserWomenEs')):
+        g_ = prices['groups'].get(grp_) or {}
+        vals = [n for n in (_num(r) for r in (g_.get('en') or g_.get('ru') or [])) if n]
+        if vals:
+            lines.append('- Laser hair removal in %s: from %d %s per zone, single session.'
+                         % (studios[city_]['city_en'], min(vals), CUR_CODE[city_]))
+    lines.append('- Full price list: %s/en/prague/%s and %s/en/valencia/%s'
+                 % (BASE, REL['prices'], BASE, REL['prices']))
     lines.append('')
     lines.append('## Main pages (English)')
     for rel, name in [('', 'Prague — overview'), (REL['services'], 'Services and prices'),
@@ -5631,12 +5645,23 @@ def llms_txt():
                       ('injections/', 'Injectables'), (REL['training'], 'Courses for specialists'),
                       (REL['cosmetics'], 'Professional cosmetics shop'),
                       (REL['about'], 'About the clinic and the team'),
-                      (REL['contacts'], 'Contacts and opening hours')]:
+                      (REL['contacts'], 'Contacts and opening hours'),
+                      (REL['prices'], 'Full price list'),
+                      (REL['faq'], 'Questions and answers'),
+                      (REL['compare'], 'Laser or electrolysis: how to choose')]:
         lines.append('- [%s](%s/en/prague/%s)' % (name, BASE, rel))
+    lines.append('')
+    lines.append('## Laser areas (price and course length for each)')
+    for zkey in zones:
+        t_ = ((zones[zkey].get('en') or {}).get('title')
+              or (zones[zkey].get('ru') or {}).get('title') or zkey)
+        lines.append('- [%s](%s/en/prague/laser/%s/)' % (t_, BASE, zkey))
     lines.append('')
     lines.append('## Valencia')
     for rel, name in [('', 'Valencia — overview'), ('laser/', 'Laser hair removal'),
                       ('electro/', 'Electrolysis'), (REL['training'], 'Courses'),
+                      (REL['prices'], 'Full price list'), (REL['faq'], 'Questions and answers'),
+                      (REL['compare'], 'Laser or electrolysis: how to choose'),
                       (REL['contacts'], 'Contacts')]:
         lines.append('- [%s](%s/es/valencia/%s)' % (name, BASE, rel))
     lines.append('')

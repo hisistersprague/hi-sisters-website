@@ -1164,7 +1164,7 @@
  },
  {
   "brand": "Orising",
-  "name": "Orising Šampon / Filler System , Volume Shampoo",
+  "name": "Orising Šampon Filler System Volume Shampoo",
   "volume": "250 ml",
   "price": 750,
   "cur": "CZK",
@@ -4299,13 +4299,13 @@
  },
  {
   "brand": "Jan Marini",
-  "name": "Antioxidant Daily Face Protectant SPF 30",
+  "name": "Antioxidant Daily Face Protectant SPF 33",
   "volume": "57 g",
   "price": 1600,
   "cur": "CZK",
   "cat": "face",
   "stock": "pre",
-  "img": "",
+  "img": "catalog/jm-antioxidant-daily-face-protectant-spf-30-57g.jpg",
   "dupe": false,
   "code": "",
   "desc": {
@@ -4325,13 +4325,13 @@
  },
  {
   "brand": "Jan Marini",
-  "name": "Marini Physical Protectant SPF 30 Tinted Fair to Light",
+  "name": "Marini Physical Protectant SPF 45 Tinted Fair to Light",
   "volume": "57 g",
   "price": 1600,
   "cur": "CZK",
   "cat": "face",
   "stock": "pre",
-  "img": "",
+  "img": "catalog/jm-marini-physical-protectant-spf-30-fair-to-ligh-57g.jpg",
   "dupe": false,
   "code": "",
   "desc": {
@@ -4344,7 +4344,7 @@
  },
  {
   "brand": "Jan Marini",
-  "name": "Marini Physical Protectant SPF 30 Tinted Original (Light to Medium)",
+  "name": "Marini Physical Protectant SPF 45 Tinted Original (Light to Medium)",
   "volume": "57 g",
   "price": 1600,
   "cur": "CZK",
@@ -4363,7 +4363,7 @@
  },
  {
   "brand": "Jan Marini",
-  "name": "Marini Physical Protectant SPF 30 Tinted Medium to Deep",
+  "name": "Marini Physical Protectant SPF 45 Tinted Medium to Deep",
   "volume": "57 g",
   "price": 1600,
   "cur": "CZK",
