@@ -2132,6 +2132,7 @@ footer a{color:#fff;text-decoration:none}
 .foot-title::after{content:'';display:block;width:38px;height:2px;background:var(--gold-ui);margin-top:12px}
 .foot-studio{line-height:1.75}
 .foot-studio b{color:#fff;font-weight:500}
+.foot-upd{margin:14px 0 0;font-size:12.5px;color:rgba(255,255,255,.55)}
 .foot-nav{display:flex;flex-wrap:wrap;gap:6px 18px;margin-top:24px;
           padding-top:20px;border-top:1px solid rgba(212,184,150,.32)}
 .foot-nav a{text-decoration:none;opacity:.85}
@@ -2244,6 +2245,105 @@ def biz_schema(lang, city):
              'name': (services[k]['card'].get(lang) or services[k]['card']['ru'])['title']}}
             for k in services if city in services[k]['cities'] and services[k]['card'].get(lang)],
     }
+
+
+def org_schema(lang, city):
+    """Организация и сайт: логотип, соцсети, языки. На это опираются
+    карточка бренда в поиске и ответы ассистентов, когда их спрашивают «кто это»."""
+    st = studios[city]
+    same = ['https://instagram.com/' + h for h in st.get('instagram', [])]
+    if st.get('threads'):
+        same.append('https://www.threads.net/@' + st['threads'])
+    if st.get('maps'):
+        same.append(st['maps'])
+    org = {
+        '@type': 'Organization',
+        '@id': BASE + '/#org',
+        'name': 'Hi Sisters Clinic',
+        'url': BASE + '/',
+        'logo': {'@type': 'ImageObject', 'url': BASE + '/assets/logo.svg'},
+        'image': BASE + '/assets/og.jpg',
+        'email': st.get('email', ''),
+        'sameAs': same,
+        'contactPoint': [{'@type': 'ContactPoint', 'telephone': studios[c]['phone'],
+                          'contactType': 'reservations',
+                          'areaServed': studios[c]['country'],
+                          'availableLanguage': ['ru', 'uk', 'cs', 'en', 'es']}
+                         for c in CITIES],
+    }
+    site = {
+        '@type': 'WebSite',
+        '@id': BASE + '/#website',
+        'url': BASE + '/',
+        'name': 'Hi Sisters Clinic',
+        'inLanguage': lang,
+        'publisher': {'@id': BASE + '/#org'},
+    }
+    return jld({'@context': 'https://schema.org', '@graph': [org, site]})
+
+
+def team_schema(lang, city):
+    """Специалисты клиники: имя, роль, опыт. Для медицинских тем поисковики
+    и ассистенты смотрят в первую очередь на то, кто стоит за текстом."""
+    out = []
+    for m in team:
+        if city not in (m.get('cities') or CITIES):
+            continue
+        nm = (m.get('name') or {}).get(lang) or (m.get('name') or {}).get('ru')
+        role = (m.get('role') or {}).get(lang) or (m.get('role') or {}).get('ru')
+        desc = (m.get('desc') or {}).get(lang) or (m.get('desc') or {}).get('ru')
+        if not nm:
+            continue
+        person = {'@type': 'Person', 'name': nm, 'jobTitle': role,
+                  'worksFor': {'@id': BASE + '/#org'},
+                  'workLocation': {'@id': '%s/%s/%s/#business' % (BASE, lang, city)}}
+        if desc:
+            person['description'] = desc
+        if m.get('img'):
+            person['image'] = BASE + '/assets/team/' + m['img']
+        out.append(person)
+    if not out:
+        return ''
+    return jld({'@context': 'https://schema.org', '@graph': out})
+
+
+VIDEO_DATES = {
+ '/assets/video/cisteni-pleti.mp4': '2026-11-19',
+ '/assets/video/elektroepilace-4ruce.mp4': '2026-11-19',
+ '/assets/video/kosmetologie-hero.mp4': '2026-11-20',
+ '/assets/video/laser-nohy-1.mp4': '2026-11-19',
+ '/assets/video/laser-nohy-2.mp4': '2026-11-19',
+ '/assets/video/tricho-hero.mp4': '2026-11-21',
+ '/assets/video/tricho-procedura.mp4': '2026-11-21',
+ '/assets/video/tricho-skop.mp4': '2026-11-21',
+ '/assets/video/tricho-uhod.mp4': '2026-11-21',
+ '/assets/video/zemits.mp4': '2026-11-20',
+}
+
+
+def video_schema(lang, city, items, page_url, upload='2026-11-21'):
+    """Видео на странице: название, обложка, файл. items — список словарей
+    с ключами src/poster/title."""
+    out = []
+    for v in items:
+        if not v or not v.get('src'):
+            continue
+        name = v.get('title') or ''
+        obj = {'@type': 'VideoObject',
+               'name': name or 'Hi Sisters Clinic',
+               'description': v.get('note') or name or 'Hi Sisters Clinic',
+               'contentUrl': BASE + v['src'],
+               'uploadDate': VIDEO_DATES.get(v['src']) or v.get('date') or upload,
+               'inLanguage': lang,
+               'publisher': {'@id': BASE + '/#org'},
+               'isFamilyFriendly': True,
+               'url': page_url}
+        if v.get('poster'):
+            obj['thumbnailUrl'] = [BASE + v['poster']]
+        out.append(obj)
+    if not out:
+        return ''
+    return jld({'@context': 'https://schema.org', '@graph': out})
 
 
 def faq_schema(items):
@@ -2512,6 +2612,25 @@ def band(lang, city):
 </div></section>"""
 
 
+UPDATED = {'ru': 'Обновлено', 'uk': 'Оновлено', 'cs': 'Aktualizováno',
+           'en': 'Updated', 'es': 'Actualizado'}
+# дату подставляем после сборки: в самой странице стоит метка, иначе она
+# меняла бы хеш страницы и дата обновлялась бы при каждой сборке
+UPD_MARK = '@@UPD@@'
+UPD_ISO = '@@UPDISO@@'
+
+
+def fmt_date(iso, lang):
+    """2026-11-25 → 25.11.2026 / 25 Nov 2026 / 25/11/2026."""
+    y, m, d = iso.split('-')
+    if lang == 'en':
+        mon = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'][int(m)-1]
+        return '%d %s %s' % (int(d), mon, y)
+    if lang == 'es':
+        return '%s/%s/%s' % (d, m, y)
+    return '%s.%s.%s' % (d, m, y)
+
+
 def footer(lang, city):
     st = studios[city]
     other = 'valencia' if city == 'prague' else 'prague'
@@ -2539,6 +2658,7 @@ def footer(lang, city):
     </div>
   </div>
   <nav class="foot-nav">{nav}</nav>
+  <p class="foot-upd">{e(UPDATED[lang])} <time datetime="{UPD_ISO}">{UPD_MARK}</time></p>
 </div></footer>"""
 
 
@@ -2598,6 +2718,14 @@ def doc(lang, city, rel, current, title, desc, main, cta=None, other_rel=None,
     # Google показывает около 60 знаков: длинный хвост с названием клиники только мешает
     if len(title) > 65 and ', Hi Sisters Clinic' in title:
         title = title.replace(', Hi Sisters Clinic', '')
+    url_ = '%s/%s/%s/%s' % (BASE, lang, city, rel)
+    page_node = jld({'@context': 'https://schema.org', '@type': 'WebPage',
+                     '@id': url_ + '#page', 'url': url_, 'name': title,
+                     'description': desc, 'inLanguage': lang,
+                     'dateModified': UPD_ISO,
+                     'isPartOf': {'@id': BASE + '/#website'},
+                     'about': {'@id': '%s/%s/%s/#business' % (BASE, lang, city)}})
+    schema = schema + page_node
     return (head(lang, city, title, desc, rel, langs=langs, section=current, noindex=noindex)
             + header(lang, city, rel, current, other_rel, langs=langs)
             + '\n<main>' + main + (band(lang, city) if with_band else '') + '</main>'
@@ -3136,7 +3264,8 @@ def build_home(lang, city):
 {advantages_block(lang, city)}
 {photo_band(lang, city)}
 """ + reviews_block(lang, 24, city=city, carousel=True)
-    return doc(lang, city, '', 'home', title, desc, main, schema=jld(biz_schema(lang, city)))
+    return doc(lang, city, '', 'home', title, desc, main,
+               schema=jld(biz_schema(lang, city)) + org_schema(lang, city))
 
 
 # ──────────────────────────────── услуги ────────────────────────────────
@@ -4106,7 +4235,8 @@ def build_about(lang, city):
 """ + reviews_block(lang, 3, alt=True, city=city)
     title = '%s — Hi Sisters Clinic' % ab['h1']
     return doc(lang, city, REL['about'], 'about', title, ab['lead'], main,
-               schema=crumbs(lang, city, [(ab['h1'], REL['about'])]))
+               schema=crumbs(lang, city, [(ab['h1'], REL['about'])])
+                      + org_schema(lang, city) + team_schema(lang, city))
 
 
 # ──────────────────────────────── контакты ────────────────────────────────
@@ -4424,9 +4554,26 @@ def build_service(lang, city, key):
              else '%s — %s, Hi Sisters Clinic' % (pg.get('title') or card['title'], cityname))
     desc = (pg.get('intro') or card['desc'])[:300]
     nm = pg.get('title') or card['title']
+    # ролики на странице: без разметки поиск их не видит
+    page_url = '%s/%s/%s/%s/' % (BASE, lang, city, key)
+    vids = []
+    hv_ = svc.get('heroVideo')
+    if isinstance(hv_, dict) and hv_.get('src'):
+        vids.append({'src': hv_['src'], 'poster': hv_.get('poster'),
+                     'title': '%s — %s' % (nm, cityname)})
+    vb_ = svc.get('video')
+    if isinstance(vb_, dict) and vb_.get('src'):
+        vids.append({'src': vb_['src'], 'poster': vb_.get('poster'),
+                     'title': (vb_.get('title') or {}).get(lang) or nm,
+                     'note': (vb_.get('note') or {}).get(lang) or ''})
+    for g_ in (svc.get('gallery') or []):
+        if isinstance(g_, dict) and str(g_.get('src', '')).endswith('.mp4'):
+            vids.append({'src': g_['src'], 'poster': g_.get('poster'),
+                         'title': '%s — %s' % (nm, cityname)})
     sch = (service_schema(lang, city, key, price_min(SERVICE_GROUP.get(city, {}).get(key, ''), lang))
            + crumbs(lang, city, [(SERVICES_PAGE[lang]['h1'], REL['services']), (nm, key + '/')])
-           + faq_schema(pg.get('faq', [])))
+           + faq_schema(pg.get('faq', []))
+           + video_schema(lang, city, vids, page_url))
     return doc(lang, city, key + '/', 'services', title, desc, main,
                other_rel=other_rel, schema=sch,
                langs=[l for l in LANGS if svc['page'].get(l)])
@@ -4902,6 +5049,50 @@ NOT_FOUND = {
 }
 
 
+def llms_txt():
+    """Короткая карта сайта для языковых моделей: кто мы, где, что и почём.
+    Формат llms.txt: заголовок, абзац сути, затем списки ссылок."""
+    pr, va = studios['prague'], studios['valencia']
+    lines = ['# Hi Sisters Clinic', '']
+    lines.append('> Epilation and skin care clinic with two studios: Prague (Czech Republic) '
+                 'and Valencia (Spain). Laser hair removal, electrolysis, cosmetology, '
+                 'trichology, injectables, professional cosmetics and courses for specialists. '
+                 'Site languages: Russian, Ukrainian, Czech, English, Spanish.')
+    lines.append('')
+    lines.append('## Facts')
+    lines.append('- Prague studio: %s. Phone %s. %s.' % (pr['address'], pr['phone'],
+                                                         (pr.get('hours') or {}).get('en', '')))
+    lines.append('- Valencia studio: %s. Phone %s. %s.' % (va['address'], va['phone'],
+                                                           (va.get('hours') or {}).get('en', '')))
+    lines.append('- Prices are published on the site; the first consultation is free.')
+    lines.append('- Laser is used for dark hair; electrolysis removes light, red and grey hair '
+                 'and is the method offered for a woman\'s face.')
+    lines.append('- A laser course is usually 6–10 sessions with intervals growing from 4 to 8 weeks.')
+    lines.append('')
+    lines.append('## Main pages (English)')
+    for rel, name in [('', 'Prague — overview'), (REL['services'], 'Services and prices'),
+                      ('laser/', 'Laser hair removal'), ('electro/', 'Electrolysis'),
+                      ('cosmetology/', 'Cosmetology'), ('trichology/', 'Trichology'),
+                      ('injections/', 'Injectables'), (REL['training'], 'Courses for specialists'),
+                      (REL['cosmetics'], 'Professional cosmetics shop'),
+                      (REL['about'], 'About the clinic and the team'),
+                      (REL['contacts'], 'Contacts and opening hours')]:
+        lines.append('- [%s](%s/en/prague/%s)' % (name, BASE, rel))
+    lines.append('')
+    lines.append('## Valencia')
+    for rel, name in [('', 'Valencia — overview'), ('laser/', 'Laser hair removal'),
+                      ('electro/', 'Electrolysis'), (REL['training'], 'Courses'),
+                      (REL['contacts'], 'Contacts')]:
+        lines.append('- [%s](%s/es/valencia/%s)' % (name, BASE, rel))
+    lines.append('')
+    lines.append('## Other languages')
+    lines.append('- Same structure under /ru/, /uk/, /cs/, /es/ — for example '
+                 '%s/cs/prague/laser/' % BASE)
+    lines.append('- Full list of pages: %s/sitemap.xml' % BASE)
+    lines.append('')
+    return '\n'.join(lines)
+
+
 def not_found_page():
     """404 для GitHub Pages: не бросаем человека, а уводим в разделы на его языке."""
     blocks = ''
@@ -4929,14 +5120,16 @@ def not_found_page():
             '<script>(function(){var P=location.pathname;var L=[\'ru\',\'uk\',\'cs\',\'en\',\'es\'];var m=P.match(/^\\/(ru|uk|cs|en|es)(\\/|$)/);var g=(navigator.language||\'\').slice(0,2).toLowerCase();var lang=m?m[1]:(L.indexOf(g)>-1?g:\'\');var city=/\\/valencia(\\/|$)/.test(P)?\'valencia\':\'\';var ss=document.querySelectorAll(\'section[lang]\'),i,hit=0;for(i=0;i<ss.length;i++){if(ss[i].getAttribute(\'lang\')===lang)hit=1;}if(hit){for(i=0;i<ss.length;i++)ss[i].hidden=ss[i].getAttribute(\'lang\')!==lang;document.documentElement.lang=lang;}if(city){var as=document.querySelectorAll(\'a[href^="/"]\');for(i=0;i<as.length;i++)as[i].setAttribute(\'href\',as[i].getAttribute(\'href\').replace(\'/prague/\',\'/valencia/\'));}})();</script>' + '</body></html>')
 
 
-ROBOTS = """User-agent: *
-Allow: /
-Disallow: /admin/
-Disallow: /src/
-Disallow: /new/
+# Роботов перечисляем поимённо: так видно, что ассистентам сайт открыт,
+# и случайная общая блокировка их не заденет.
+AI_BOTS = ['GPTBot', 'OAI-SearchBot', 'ChatGPT-User', 'ClaudeBot', 'Claude-User',
+           'Claude-SearchBot', 'anthropic-ai', 'PerplexityBot', 'Perplexity-User',
+           'Google-Extended', 'Applebot', 'Applebot-Extended', 'Bingbot',
+           'SeznamBot', 'CCBot', 'Amazonbot', 'meta-externalagent', 'YandexBot']
 
-Sitemap: %s/sitemap.xml
-""" % BASE
+ROBOTS = ("User-agent: *\nAllow: /\nDisallow: /admin/\nDisallow: /src/\nDisallow: /new/\n\n"
+          + ''.join('User-agent: %s\nAllow: /\n\n' % b for b in AI_BOTS)
+          + "Sitemap: %s/sitemap.xml\n" % BASE)
 
 
 # ───────────────────────────────── сборка ─────────────────────────────────
@@ -5032,9 +5225,28 @@ if __name__ == '__main__':
                 pages.append('/%s/%s/laser/%s/' % (lang, city, zkey))
                 seo_pages.append((lang, city, 'laser/%s/' % zkey))
 
+    dates = page_dates(PAGE_HTML)
     io.open(os.path.join(OUT, 'sitemap.xml'), 'w', encoding='utf-8').write(
-        sitemap(seo_pages, page_dates(PAGE_HTML)))
+        sitemap(seo_pages, dates))
+    # метки заменяем на настоящую дату последнего изменения страницы
+    import datetime as _dt
+    today_iso = _dt.date.today().isoformat()
+    for dp_, _, fs_ in os.walk(OUT):
+        for f_ in fs_:
+            if f_ != 'index.html':
+                continue
+            path_ = os.path.join(dp_, f_)
+            txt = io.open(path_, encoding='utf-8').read()
+            if UPD_MARK not in txt and UPD_ISO not in txt:
+                continue
+            rel_ = os.path.relpath(path_, OUT).replace(os.sep, '/')
+            url_ = BASE + '/' + rel_[:-len('index.html')]
+            iso = dates.get(url_, today_iso)
+            lang_ = rel_.split('/')[0]
+            txt = txt.replace(UPD_ISO, iso).replace(UPD_MARK, fmt_date(iso, lang_ if lang_ in LANGS else 'cs'))
+            io.open(path_, 'w', encoding='utf-8').write(txt)
     io.open(os.path.join(OUT, 'robots.txt'), 'w', encoding='utf-8').write(ROBOTS)
+    io.open(os.path.join(OUT, 'llms.txt'), 'w', encoding='utf-8').write(llms_txt())
     io.open(os.path.join(OUT, '404.html'), 'w', encoding='utf-8').write(not_found_page())
     io.open(os.path.join(OUT, 'index.html'), 'w', encoding='utf-8').write(root_redirect())
     # массажа тела больше нет: старый адрес уводит на косметологию, а не висит пустым
