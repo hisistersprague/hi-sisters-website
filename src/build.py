@@ -118,10 +118,14 @@ def pick(block, lang, fallback='ru'):
 NAV_ORDER = ['home', 'services', 'training', 'cosmetics', 'about', 'contacts']
 REL = {'home': '', 'services': 'services/', 'training': 'training/',
        'cosmetics': 'cosmetics/', 'about': 'about/', 'contacts': 'contacts/',
-       'booking': 'booking/'}
+       'booking': 'booking/',
+       'faq': 'faq/'}
 NAV_EXTRA = {   # чего нет в старом ui.nav
  'cosmetics': {'ru': 'Косметика', 'uk': 'Косметика', 'cs': 'Kosmetika',
                'en': 'Cosmetics', 'es': 'Cosmética'},
+ 'faq': {'ru': 'Вопросы и ответы', 'uk': 'Запитання та відповіді',
+         'cs': 'Otázky a odpovědi', 'en': 'Questions and answers',
+         'es': 'Preguntas y respuestas'},
 }
 
 
@@ -1920,6 +1924,12 @@ body[data-page="services"] .more-list a:hover{border-color:var(--accent);color:v
 .dark .cmp-sm{background:rgba(255,255,255,.04)}
 
 /* до и после */
+details.qa{border-bottom:1px solid var(--line);padding:14px 0}
+details.qa summary{cursor:pointer;font-weight:500;font-size:17px;color:var(--navy);list-style:none}
+details.qa summary::-webkit-details-marker{display:none}
+details.qa summary::after{content:'+';float:right;color:var(--gold-dark);font-size:20px;line-height:1}
+details.qa[open] summary::after{content:'–'}
+details.qa p{margin:10px 0 0;font-size:16px;line-height:1.65;color:var(--ink)}
 .quick{background:#fff;border:1px solid var(--line-gold);border-radius:18px;padding:22px 24px;max-width:760px}
 .quick h2{font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:var(--gold-dark);font-family:Jost,system-ui,sans-serif;font-weight:500;margin:0 0 10px}
 .quick ul{margin:0;padding-left:18px}
@@ -2646,7 +2656,7 @@ def footer(lang, city):
     othername = studios[other]['city'].get(lang, studios[other]['city']['en'])
     ot = studios[other]
     nav = ''.join('<a href="/%s/%s/%s">%s</a>' % (lang, city, REL[k], e(nav_label(k, lang)))
-                  for k in NAV_ORDER)
+                  for k in NAV_ORDER + ['faq'])
     return f"""
 <footer><div class="wrap">
   <div class="foot-title">{e(FOOT[lang])}</div>
@@ -4248,6 +4258,85 @@ def build_about(lang, city):
 
 
 # ──────────────────────────────── контакты ────────────────────────────────
+FAQ_PAGE = {
+ 'ru': {'h1': 'Вопросы и ответы',
+        'lead': 'Всё, что чаще всего спрашивают перед первым визитом: про боль, число сеансов, '
+                'подготовку, противопоказания и результат. Ответы — те же, что вы услышите на консультации.',
+        'all': 'Подробнее об услуге'},
+ 'uk': {'h1': 'Запитання та відповіді',
+        'lead': 'Усе, що найчастіше питають перед першим візитом: про біль, кількість сеансів, '
+                'підготовку, протипоказання і результат. Відповіді — ті самі, що ви почуєте на консультації.',
+        'all': 'Докладніше про послугу'},
+ 'cs': {'h1': 'Otázky a odpovědi',
+        'lead': 'To, na co se ptáte nejčastěji před první návštěvou: bolest, počet sezení, '
+                'příprava, kontraindikace a výsledek. Odpovědi jsou stejné, jaké uslyšíte na konzultaci.',
+        'all': 'Více o službě'},
+ 'en': {'h1': 'Questions and answers',
+        'lead': 'What people ask most before a first visit: pain, number of sessions, preparation, '
+                'contraindications and results. The answers are the same ones you hear at a consultation.',
+        'all': 'More about this service'},
+ 'es': {'h1': 'Preguntas y respuestas',
+        'lead': 'Lo que más se pregunta antes de la primera visita: dolor, número de sesiones, '
+                'preparación, contraindicaciones y resultados. Las respuestas son las mismas que '
+                'escucharás en la consulta.',
+        'all': 'Más sobre el servicio'},
+}
+
+
+def build_faq_page(lang, city):
+    """Все вопросы и ответы города на одном адресе.
+
+    Текст тот же, что на страницах услуг: отдельная страница нужна, чтобы на неё
+    можно было сослаться, и чтобы поиск и ассистенты видели блок вопросов целиком.
+    """
+    st = studios[city]
+    fp = FAQ_PAGE[lang]
+    cityname = st['city'].get(lang, st['city']['en'])
+    h = HERO[lang]
+    blocks = ''
+    all_qa = []
+    for key, svc in services.items():
+        if key == 'cosmetics' or city not in svc['cities']:
+            continue
+        pg = svc['page'].get(lang)
+        if not pg or not pg.get('faq'):
+            continue
+        title = pg.get('title') or (svc['card'].get(lang) or svc['card']['ru'])['title']
+        items = ''
+        for f in pg['faq']:
+            q, a = f.get('q'), f.get('a')
+            if not q or not a:
+                continue
+            all_qa.append({'q': q, 'a': a})
+            items += ('<details class="qa"><summary>%s</summary><p>%s</p></details>'
+                      % (e(q), e(a)))
+        if not items:
+            continue
+        blocks += ('\n<section class="alt"><div class="wrap">'
+                   '<div class="sec-head"><h2>%s</h2></div>%s'
+                   '<div class="more-list"><a href="/%s/%s/%s/">%s</a></div>'
+                   '</div></section>' % (e(title), items, lang, city, key, e(fp['all'])))
+    if not all_qa:
+        return None
+    main = f"""
+<section class="hero hero-sm"><div class="wrap">
+  <div class="kicker">{e(fp['h1'])} · {e(cityname)}</div>
+  <h1>{e(fp['h1'])}</h1>
+  <p class="lead">{e(fp['lead'])}</p>
+  <div class="cta-row">
+    <a class="btn btn-gold" href="{book_href(lang, city)}" data-book>{e(h['cta'])}</a>
+    <span class="free">{e(h['free'])}</span>
+  </div>
+</div></section>
+{blocks}
+"""
+    title = '%s — %s, Hi Sisters Clinic' % (fp['h1'], cityname)
+    desc = fp['lead'][:160]
+    sch = (faq_schema(all_qa)
+           + crumbs(lang, city, [(fp['h1'], REL['faq'])]))
+    return doc(lang, city, REL['faq'], 'services', title, desc, main, schema=sch)
+
+
 def build_contacts(lang, city):
     """Обе студии на одной странице: адрес, часы, телефон, запись."""
     st = studios[city]
@@ -5216,6 +5305,11 @@ if __name__ == '__main__':
                 pages.append('/%s/%s/%s' % (lang, city, rel))
                 if rel != REL['booking']:     # форму записи индексировать незачем
                     seo_pages.append((lang, city, rel))
+            faq_html = build_faq_page(lang, city)
+            if faq_html:
+                write(os.path.join(d, 'faq', 'index.html'), faq_html)
+                pages.append('/%s/%s/%s' % (lang, city, REL['faq']))
+                seo_pages.append((lang, city, REL['faq']))
             for key, svc in services.items():
                 # /cosmetics/ — отдельная страница каталога, общая услуга её не перекрывает
                 if key == 'cosmetics' or city not in svc['cities'] or not svc['page'].get(lang):
