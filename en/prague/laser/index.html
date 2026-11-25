@@ -28,15 +28,17 @@
 <meta name="google-site-verification" content="w0gr_xIGKVAPVdWsNGRQxfjPjKZGN87bxB6bOTXDnwI"><link rel="preload" as="image" media="(max-width:720px)" href="/assets/photos/hero-bg-m.webp" type="image/webp"><link rel="preload" as="image" media="(min-width:721px)" href="/assets/photos/hero-bg.webp" type="image/webp"><link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/assets/app.css?v=adac3170">
+<link rel="stylesheet" href="/assets/app.css?v=4cb267b0">
 <link rel="icon" href="/favicon.svg">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-K921K357QH"></script>
 <script>
 window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
 gtag('js',new Date());gtag('config','AW-18276095826');gtag('config','G-K921K357QH');
 addEventListener('click',function(ev){
-  var a=ev.target.closest('[data-book]'); if(!a) return;
-  gtag('event','booking_click',{studio:a.dataset.book||document.body.dataset.city,lang:document.documentElement.lang});
+  var a=ev.target.closest('[data-book]');
+  if(a){gtag('event','booking_click',{studio:a.dataset.book||document.body.dataset.city,lang:document.documentElement.lang});return;}
+  var t=ev.target.closest('a[href^="tel:"]');
+  if(t)gtag('event','phone_click',{studio:document.body.dataset.city,lang:document.documentElement.lang});
 },true);
 </script>
 </head>
@@ -66,6 +68,7 @@ addEventListener('click',function(ev){
   </div>
 </div></section>
 
+<section class="tint"><div class="wrap"><div class="quick"><h2>In short</h2><ul><li>Works on dark, dense hair: the laser acts through melanin.</li><li>A course is usually 6–10 sessions, with intervals growing from 4 to 8 weeks.</li><li>A woman’s face we treat with electrolysis, not laser.</li><li>From 550 Kč. First consultation free.</li></ul></div></div></section>
 <section><div class="wrap arts"><div class="art"><h2>How the laser works</h2><p>The laser beam is absorbed by melanin, the pigment inside the hair. That energy turns into heat and damages the follicle. The darker and thicker the hair, the more melanin it holds and the better the method works.</p><p>One detail shapes the whole course: the laser only acts on hairs in the active growth phase. At any given moment only part of the hair in an area is in that phase — the rest is dormant and will not respond at that session. So a single treatment cannot solve the task in principle, and that has nothing to do with the device.</p></div></div></section>
 <section class="alt"><div class="wrap"><div class="infogrid"><article class="infocard ic-fits"><h2><span class="ic-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>Who it suits</h2><p>The method works best on dark hair. Blond, red and grey hair does not hold enough melanin — electrolysis is more effective there, and we will say so plainly rather than sell a course that will not work.</p><ul><li>dark body hair: underarms, bikini, legs, arms, back, chest</li><li>ingrown hairs and irritation from shaving</li><li>men’s areas: back, chest, shoulders, neck, abdomen</li><li>we do not laser a woman’s face — facial hair in women is more often hormone-driven and the laser can stimulate growth there; for the face we offer electrolysis</li></ul></article></div></div></section>
 <section class="dark"><div class="wrap"><div class="sec-head"><h2>How a session goes</h2></div><ol class="steps"><li>checking the area and contraindications, setting parameters for your skin and hair</li><li>protective goggles, applying gel</li><li>passing the handpiece over the area: it feels like a short hot flick, the cooled tip softens it</li><li>a soothing product afterwards</li><li>15–60 minutes depending on the area</li></ol></div></section>

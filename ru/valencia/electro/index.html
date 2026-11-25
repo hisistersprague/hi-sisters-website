@@ -28,15 +28,17 @@
 <meta name="google-site-verification" content="w0gr_xIGKVAPVdWsNGRQxfjPjKZGN87bxB6bOTXDnwI"><link rel="preload" as="image" media="(max-width:720px)" href="/assets/photos/hero-bg-m.webp" type="image/webp"><link rel="preload" as="image" media="(min-width:721px)" href="/assets/photos/hero-bg.webp" type="image/webp"><link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/assets/app.css?v=adac3170">
+<link rel="stylesheet" href="/assets/app.css?v=4cb267b0">
 <link rel="icon" href="/favicon.svg">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-K921K357QH"></script>
 <script>
 window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
 gtag('js',new Date());gtag('config','AW-18276095826');gtag('config','G-K921K357QH');
 addEventListener('click',function(ev){
-  var a=ev.target.closest('[data-book]'); if(!a) return;
-  gtag('event','booking_click',{studio:a.dataset.book||document.body.dataset.city,lang:document.documentElement.lang});
+  var a=ev.target.closest('[data-book]');
+  if(a){gtag('event','booking_click',{studio:a.dataset.book||document.body.dataset.city,lang:document.documentElement.lang});return;}
+  var t=ev.target.closest('a[href^="tel:"]');
+  if(t)gtag('event','phone_click',{studio:document.body.dataset.city,lang:document.documentElement.lang});
 },true);
 </script>
 </head>
@@ -66,6 +68,7 @@ addEventListener('click',function(ev){
   </div>
 </div></section>
 
+<section class="tint"><div class="wrap"><div class="quick"><h2>Коротко</h2><ul><li>Убирает любой волос, включая светлый, рыжий и седой: игла работает с фолликулом, пигмент не важен.</li><li>Лицо — обычно 10–20 сеансов, тело — 15–30, интервал 1–4 недели.</li><li>Работаем в 4–10 рук: большая зона закрывается в разы быстрее.</li><li>От 45 €. Первая консультация бесплатно.</li></ul></div></div></section>
 <section><div class="wrap arts"><div class="art"><h2>Как работает электроэпиляция</h2><p>В каждый волосяной фолликул вводится тончайшая игла, через которую подаётся разряд. Он разрушает ростковую зону волоса. Метод работает с каждым волосом отдельно — поэтому цвет волоса не имеет значения: светлые, рыжие, седые и пушковые волосы удаляются так же, как тёмные.</p><p>При правильно подобранных параметрах и корректной технике обработанный фолликул больше не даёт волос. Это единственный метод с таким результатом, но он требует времени: за минуту мастер обрабатывает ограниченное число волос, поэтому работа считается поминутно.</p></div><div class="art"><h2>Индивидуальный подбор параметров</h2><p>Сила разряда, время воздействия и тип иглы подбираются под вас: под толщину волоса, глубину фолликула, тип и чувствительность кожи. Одни и те же настройки не подходят для подбородка и для голени, поэтому параметры меняются по ходу работы — мастер ориентируется на реакцию кожи, а не на единый режим.</p></div><div class="art"><h2>Работаем в 4–10 рук</h2><p>Над одной зоной могут работать несколько мастеров одновременно. То, что при обычном формате растягивается на часы и несколько визитов, закрывается в разы быстрее. В прайсе есть отдельный вариант «в четыре руки» на 120 минут.</p></div></div></section>
 <section class="alt"><div class="wrap"><div class="infogrid"><article class="infocard ic-fits"><h2><span class="ic-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>Кому подходит</h2><ul><li>светлые, рыжие, седые и пушковые волосы, на которые лазер не действует</li><li>лицо: подбородок, щёки, над верхней губой, шея</li><li>единичные волосы, оставшиеся после курса лазера</li><li>тело: любые зоны, включая бикини и подмышки</li><li>ситуации, когда важно убрать волосы окончательно, а не прореживать</li></ul></article></div></div></section>
 <section class="dark"><div class="wrap"><div class="sec-head"><h2>Как проходит сеанс</h2></div><ol class="steps"><li>осмотр зоны, проверка противопоказаний, подбор параметров</li><li>обезболивание: аппликационный крем, при необходимости — другие варианты</li><li>обработка волос по одному: ощущения — короткие точечные уколы с теплом</li><li>антисептическая обработка и успокаивающее средство</li><li>оплата по таймингу аппарата, за фактически отработанное время</li></ol></div></section>

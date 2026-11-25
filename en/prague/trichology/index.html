@@ -28,15 +28,17 @@
 <meta name="google-site-verification" content="w0gr_xIGKVAPVdWsNGRQxfjPjKZGN87bxB6bOTXDnwI"><link rel="preload" as="image" media="(max-width:720px)" href="/assets/photos/hero-bg-m.webp" type="image/webp"><link rel="preload" as="image" media="(min-width:721px)" href="/assets/photos/hero-bg.webp" type="image/webp"><link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/assets/app.css?v=adac3170">
+<link rel="stylesheet" href="/assets/app.css?v=4cb267b0">
 <link rel="icon" href="/favicon.svg">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-K921K357QH"></script>
 <script>
 window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
 gtag('js',new Date());gtag('config','AW-18276095826');gtag('config','G-K921K357QH');
 addEventListener('click',function(ev){
-  var a=ev.target.closest('[data-book]'); if(!a) return;
-  gtag('event','booking_click',{studio:a.dataset.book||document.body.dataset.city,lang:document.documentElement.lang});
+  var a=ev.target.closest('[data-book]');
+  if(a){gtag('event','booking_click',{studio:a.dataset.book||document.body.dataset.city,lang:document.documentElement.lang});return;}
+  var t=ev.target.closest('a[href^="tel:"]');
+  if(t)gtag('event','phone_click',{studio:document.body.dataset.city,lang:document.documentElement.lang});
 },true);
 </script>
 </head>
@@ -66,6 +68,7 @@ addEventListener('click',function(ev){
   </div>
 </div></section>
 
+<section class="tint"><div class="wrap"><div class="quick"><h2>In short</h2><ul><li>Trichoscopy under magnification, the causes of shedding and a care plan.</li><li>A check-up in 2–3 months: we compare the images and see whether the plan works.</li><li>If deficiencies or hormones are behind it, we send you for tests instead of selling a course.</li><li>From 1500 Kč. First consultation free.</li></ul></div></div></section>
 <section class="alt"><div class="wrap"><div class="infogrid"><article class="infocard ic-fits"><h2><span class="ic-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>What people come with</h2><p>Most often with shedding that has lasted more than a month. But scalp problems go wider: itching, flaking, dandruff, greasy roots, a tight feeling, thinning hair and lost volume. These are often connected, and it makes sense to start with the scalp rather than with another new shampoo.</p><ul><li>hair shedding more than usual for over a month</li><li>volume has dropped, the hair has become finer</li><li>itching, flaking, dandruff, crusts</li><li>greasy roots with dry lengths</li><li>shedding after childbirth, illness, a strict diet or stress</li></ul></article></div></div></section>
 <section class="dark"><div class="wrap"><div class="sec-head"><h2>What happens at the appointment</h2></div><ol class="steps"><li>a conversation: when it started, what changed in your health, what you take</li><li>trichoscopy: the scalp and hair examined under magnification, area by area</li><li>assessment: hair density, follicle condition, the ratio of fine to thick hairs, inflammation</li><li>going through home care: shampoo, washing frequency, styling, colouring</li><li>a first treatment and a plan: care, intervals and, if needed, medical tests</li></ol></div></section>
 <section><div class="wrap arts"><div class="art"><h2>Where care ends and medicine begins</h2><p>We work with the scalp: cleansing, settling inflammation, care, treatments that feed the follicles. That is the cosmetic side, and it genuinely helps — but only when the cause of the shedding lies in the scalp or in your routine.</p><p>If the shedding is driven by iron deficiency, the thyroid, hormonal change, medication or a skin condition, no treatment will remove the cause. In that case we say plainly that tests and a doctor are needed, and only then choose the care — so that you do not pay for a course that cannot work.</p></div><div class="art"><h2>The care plan</h2><p>After the assessment we set out a plan: which treatments and how far apart, what to change at home, when to come back for a review. Results are judged on trichoscopy after 2–3 months — earlier is not meaningful: hair grows slowly, and change only becomes visible over a full cycle.</p></div></div></section>

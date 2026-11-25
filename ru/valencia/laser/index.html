@@ -28,15 +28,17 @@
 <meta name="google-site-verification" content="w0gr_xIGKVAPVdWsNGRQxfjPjKZGN87bxB6bOTXDnwI"><link rel="preload" as="image" media="(max-width:720px)" href="/assets/photos/hero-bg-m.webp" type="image/webp"><link rel="preload" as="image" media="(min-width:721px)" href="/assets/photos/hero-bg.webp" type="image/webp"><link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/assets/app.css?v=adac3170">
+<link rel="stylesheet" href="/assets/app.css?v=4cb267b0">
 <link rel="icon" href="/favicon.svg">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-K921K357QH"></script>
 <script>
 window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
 gtag('js',new Date());gtag('config','AW-18276095826');gtag('config','G-K921K357QH');
 addEventListener('click',function(ev){
-  var a=ev.target.closest('[data-book]'); if(!a) return;
-  gtag('event','booking_click',{studio:a.dataset.book||document.body.dataset.city,lang:document.documentElement.lang});
+  var a=ev.target.closest('[data-book]');
+  if(a){gtag('event','booking_click',{studio:a.dataset.book||document.body.dataset.city,lang:document.documentElement.lang});return;}
+  var t=ev.target.closest('a[href^="tel:"]');
+  if(t)gtag('event','phone_click',{studio:document.body.dataset.city,lang:document.documentElement.lang});
 },true);
 </script>
 </head>
@@ -66,6 +68,7 @@ addEventListener('click',function(ev){
   </div>
 </div></section>
 
+<section class="tint"><div class="wrap"><div class="quick"><h2>Коротко</h2><ul><li>Работает по тёмному и густому волосу: лазер действует через меланин.</li><li>Курс обычно 6–10 сеансов, интервал растёт с 4 до 8 недель.</li><li>Женское лицо делаем электроэпиляцией, а не лазером.</li><li>От 20 €. Первая консультация бесплатно.</li></ul></div></div></section>
 <section><div class="wrap arts"><div class="art"><h2>Как работает лазер</h2><p>Лазерный луч поглощается меланином — пигментом внутри волоса. Энергия превращается в тепло и повреждает волосяной фолликул. Чем темнее и толще волос, тем больше в нём меланина и тем лучше работает метод.</p><p>Важная деталь, от которой зависит весь курс: лазер действует только на волосы в активной фазе роста. В любой момент времени в такой фазе находится лишь часть волос в зоне — остальные «спят» и на этом сеансе не отреагируют. Поэтому одной процедурой задача не решается в принципе, и дело не в аппарате.</p></div></div></section>
 <section class="alt"><div class="wrap"><div class="infogrid"><article class="infocard ic-fits"><h2><span class="ic-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>Кому подходит</h2><p>Лучше всего метод работает на тёмных волосах. Для светлых, рыжих и седых волос меланина не хватает — там эффективнее электроэпиляция, и мы скажем об этом прямо, а не продадим курс, который не сработает.</p><ul><li>тёмные волосы на теле: подмышки, бикини, ноги, руки, спина, грудь</li><li>вросшие волосы и раздражение после бритья</li><li>мужские зоны: спина, грудь, плечи, шея, живот</li><li>женское лицо мы лазером не делаем — на нём волосы чаще связаны с гормональным фоном, и лазер может дать обратный эффект; для лица предлагаем электроэпиляцию</li></ul></article></div></div></section>
 <section class="dark"><div class="wrap"><div class="sec-head"><h2>Как проходит сеанс</h2></div><ol class="steps"><li>осмотр зоны, проверка противопоказаний, выбор параметров под тип кожи и волос</li><li>защитные очки, нанесение геля</li><li>проход аппаратом по зоне: ощущение — короткий горячий щелчок, охлаждение насадки его смягчает</li><li>успокаивающее средство после процедуры</li><li>15–60 минут в зависимости от зоны</li></ol></div></section>

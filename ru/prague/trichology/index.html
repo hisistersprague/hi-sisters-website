@@ -28,15 +28,17 @@
 <meta name="google-site-verification" content="w0gr_xIGKVAPVdWsNGRQxfjPjKZGN87bxB6bOTXDnwI"><link rel="preload" as="image" media="(max-width:720px)" href="/assets/photos/hero-bg-m.webp" type="image/webp"><link rel="preload" as="image" media="(min-width:721px)" href="/assets/photos/hero-bg.webp" type="image/webp"><link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/assets/app.css?v=adac3170">
+<link rel="stylesheet" href="/assets/app.css?v=4cb267b0">
 <link rel="icon" href="/favicon.svg">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-K921K357QH"></script>
 <script>
 window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
 gtag('js',new Date());gtag('config','AW-18276095826');gtag('config','G-K921K357QH');
 addEventListener('click',function(ev){
-  var a=ev.target.closest('[data-book]'); if(!a) return;
-  gtag('event','booking_click',{studio:a.dataset.book||document.body.dataset.city,lang:document.documentElement.lang});
+  var a=ev.target.closest('[data-book]');
+  if(a){gtag('event','booking_click',{studio:a.dataset.book||document.body.dataset.city,lang:document.documentElement.lang});return;}
+  var t=ev.target.closest('a[href^="tel:"]');
+  if(t)gtag('event','phone_click',{studio:document.body.dataset.city,lang:document.documentElement.lang});
 },true);
 </script>
 </head>
@@ -66,6 +68,7 @@ addEventListener('click',function(ev){
   </div>
 </div></section>
 
+<section class="tint"><div class="wrap"><div class="quick"><h2>Коротко</h2><ul><li>Трихоскопия под увеличением, разбор причин выпадения и план ухода.</li><li>Контроль через 2–3 месяца: сравниваем снимки и решаем, работает ли план.</li><li>Если дело в дефицитах или гормонах — отправим к врачу и на анализы, а не продадим курс.</li><li>От 1500 Kč. Первая консультация бесплатно.</li></ul></div></div></section>
 <section class="alt"><div class="wrap"><div class="infogrid"><article class="infocard ic-fits"><h2><span class="ic-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>С чем к нам приходят</h2><p>Чаще всего — с выпадением, которое длится дольше месяца. Но проблемы кожи головы шире: зуд, шелушение, перхоть, жирность корней, чувство стянутости, истончение волос и потеря объёма. Часто всё это связано между собой, и начинать имеет смысл с кожи головы, а не с покупки нового шампуня.</p><ul><li>волосы выпадают сильнее обычного дольше месяца</li><li>объём уменьшился, волосы стали тоньше</li><li>зуд, шелушение, перхоть, корочки</li><li>жирные корни при сухих длинах</li><li>выпадение после родов, болезни, строгой диеты или стресса</li></ul></article></div></div></section>
 <section class="dark"><div class="wrap"><div class="sec-head"><h2>Что делаем на приёме</h2></div><ol class="steps"><li>разговор: когда началось, что менялось в здоровье, какие препараты принимаете</li><li>трихоскопия: смотрим кожу головы и волосы под увеличением по зонам</li><li>оценка: плотность волос, состояние фолликулов, соотношение тонких и толстых волос, воспаление</li><li>разбор домашнего ухода: шампунь, частота мытья, укладки, окрашивания</li><li>первая процедура и план: уход, интервалы и, если нужно, обследование</li></ol></div></section>
 <section><div class="wrap arts"><div class="art"><h2>Где заканчивается уход и начинается медицина</h2><p>Мы работаем с кожей головы: очищение, снятие воспаления, уход, процедуры для питания фолликулов. Это косметологическая часть, и она действительно помогает — но только когда причина выпадения в состоянии кожи головы или в уходе.</p><p>Если выпадение связано с дефицитом железа, щитовидной железой, гормональными изменениями, приёмом лекарств или кожным заболеванием, никакие процедуры причину не уберут. В таком случае мы честно говорим, что нужны анализы и консультация врача, и уже потом подбираем уход — чтобы вы не платили за курс, который не может сработать.</p></div><div class="art"><h2>План ухода</h2><p>После осмотра составляем план: какие процедуры и с каким интервалом, что поменять в домашнем уходе, когда прийти на контроль. Результат оценивается по трихоскопии через 2–3 месяца — раньше судить нельзя: волос растёт медленно, и любые изменения становятся видны только через цикл.</p></div></div></section>

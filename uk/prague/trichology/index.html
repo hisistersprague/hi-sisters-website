@@ -28,15 +28,17 @@
 <meta name="google-site-verification" content="w0gr_xIGKVAPVdWsNGRQxfjPjKZGN87bxB6bOTXDnwI"><link rel="preload" as="image" media="(max-width:720px)" href="/assets/photos/hero-bg-m.webp" type="image/webp"><link rel="preload" as="image" media="(min-width:721px)" href="/assets/photos/hero-bg.webp" type="image/webp"><link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/assets/app.css?v=adac3170">
+<link rel="stylesheet" href="/assets/app.css?v=4cb267b0">
 <link rel="icon" href="/favicon.svg">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-K921K357QH"></script>
 <script>
 window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
 gtag('js',new Date());gtag('config','AW-18276095826');gtag('config','G-K921K357QH');
 addEventListener('click',function(ev){
-  var a=ev.target.closest('[data-book]'); if(!a) return;
-  gtag('event','booking_click',{studio:a.dataset.book||document.body.dataset.city,lang:document.documentElement.lang});
+  var a=ev.target.closest('[data-book]');
+  if(a){gtag('event','booking_click',{studio:a.dataset.book||document.body.dataset.city,lang:document.documentElement.lang});return;}
+  var t=ev.target.closest('a[href^="tel:"]');
+  if(t)gtag('event','phone_click',{studio:document.body.dataset.city,lang:document.documentElement.lang});
 },true);
 </script>
 </head>
@@ -66,6 +68,7 @@ addEventListener('click',function(ev){
   </div>
 </div></section>
 
+<section class="tint"><div class="wrap"><div class="quick"><h2>Коротко</h2><ul><li>Трихоскопія під збільшенням, розбір причин випадіння і план догляду.</li><li>Контроль через 2–3 місяці: порівнюємо знімки й вирішуємо, чи працює план.</li><li>Якщо причина в дефіцитах або гормонах — направимо до лікаря й на аналізи, а не продамо курс.</li><li>Від 1500 Kč. Перша консультація безкоштовна.</li></ul></div></div></section>
 <section class="alt"><div class="wrap"><div class="infogrid"><article class="infocard ic-fits"><h2><span class="ic-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>З чим до нас приходять</h2><p>Найчастіше — з випадінням, яке триває довше місяця. Але проблеми шкіри голови ширші: зуд, злущування, лупа, жирність коренів, відчуття стягнутості, стоншення волосся і втрата об’єму. Часто все це пов’язано між собою, і починати має сенс зі шкіри голови, а не з купівлі нового шампуню.</p><ul><li>волосся випадає сильніше за звичайне довше місяця</li><li>об’єм зменшився, волосся стало тоншим</li><li>зуд, злущування, лупа, кірочки</li><li>жирні корені при сухих довжинах</li><li>випадіння після пологів, хвороби, суворої дієти або стресу</li></ul></article></div></div></section>
 <section class="dark"><div class="wrap"><div class="sec-head"><h2>Що робимо на прийомі</h2></div><ol class="steps"><li>розмова: коли почалося, що змінювалося у здоров’ї, які препарати приймаєте</li><li>трихоскопія: дивимося шкіру голови й волосся під збільшенням по зонах</li><li>оцінка: щільність волосся, стан фолікулів, співвідношення тонких і товстих волосин, запалення</li><li>розбір домашнього догляду: шампунь, частота миття, укладання, фарбування</li><li>перша процедура і план: догляд, інтервали і, якщо потрібно, обстеження</li></ol></div></section>
 <section><div class="wrap arts"><div class="art"><h2>Де закінчується догляд і починається медицина</h2><p>Ми працюємо зі шкірою голови: очищення, зняття запалення, догляд, процедури для живлення фолікулів. Це косметологічна частина, і вона справді допомагає — але лише коли причина випадіння у стані шкіри голови або в догляді.</p><p>Якщо випадіння пов’язане з дефіцитом заліза, щитоподібною залозою, гормональними змінами, прийомом ліків або шкірним захворюванням, жодні процедури причину не приберуть. У такому разі ми чесно говоримо, що потрібні аналізи й консультація лікаря, і вже потім добираємо догляд — щоб ви не платили за курс, який не може спрацювати.</p></div><div class="art"><h2>План догляду</h2><p>Після огляду складаємо план: які процедури і з яким інтервалом, що змінити в домашньому догляді, коли прийти на контроль. Результат оцінюється за трихоскопією через 2–3 місяці — раніше судити не можна: волосина росте повільно, і будь-які зміни стають видно лише через цикл.</p></div></div></section>

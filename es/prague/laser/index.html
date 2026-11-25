@@ -28,15 +28,17 @@
 <meta name="google-site-verification" content="w0gr_xIGKVAPVdWsNGRQxfjPjKZGN87bxB6bOTXDnwI"><link rel="preload" as="image" media="(max-width:720px)" href="/assets/photos/hero-bg-m.webp" type="image/webp"><link rel="preload" as="image" media="(min-width:721px)" href="/assets/photos/hero-bg.webp" type="image/webp"><link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/assets/app.css?v=adac3170">
+<link rel="stylesheet" href="/assets/app.css?v=4cb267b0">
 <link rel="icon" href="/favicon.svg">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-K921K357QH"></script>
 <script>
 window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
 gtag('js',new Date());gtag('config','AW-18276095826');gtag('config','G-K921K357QH');
 addEventListener('click',function(ev){
-  var a=ev.target.closest('[data-book]'); if(!a) return;
-  gtag('event','booking_click',{studio:a.dataset.book||document.body.dataset.city,lang:document.documentElement.lang});
+  var a=ev.target.closest('[data-book]');
+  if(a){gtag('event','booking_click',{studio:a.dataset.book||document.body.dataset.city,lang:document.documentElement.lang});return;}
+  var t=ev.target.closest('a[href^="tel:"]');
+  if(t)gtag('event','phone_click',{studio:document.body.dataset.city,lang:document.documentElement.lang});
 },true);
 </script>
 </head>
@@ -66,6 +68,7 @@ addEventListener('click',function(ev){
   </div>
 </div></section>
 
+<section class="tint"><div class="wrap"><div class="quick"><h2>En resumen</h2><ul><li>Funciona con vello oscuro y denso: el láser actúa a través de la melanina.</li><li>La pauta suele ser de 6–10 sesiones, con intervalos que pasan de 4 a 8 semanas.</li><li>El rostro femenino lo tratamos con electrólisis, no con láser.</li><li>Desde 550 Kč. Primera consulta gratuita.</li></ul></div></div></section>
 <section><div class="wrap arts"><div class="art"><h2>Cómo funciona el láser</h2><p>El haz del láser lo absorbe la melanina, el pigmento del interior del vello. Esa energía se convierte en calor y daña el folículo. Cuanto más oscuro y grueso es el vello, más melanina tiene y mejor funciona el método.</p><p>Un detalle marca toda la pauta: el láser solo actúa sobre el vello en fase activa de crecimiento. En cada momento solo una parte del vello de la zona está en esa fase; el resto está en reposo y no responderá ese día. Por eso una sola sesión no resuelve el problema, y no es cuestión del aparato.</p></div></div></section>
 <section class="alt"><div class="wrap"><div class="infogrid"><article class="infocard ic-fits"><h2><span class="ic-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>Para quién es</h2><p>El método funciona mejor en vello oscuro. El vello rubio, pelirrojo y canoso no tiene melanina suficiente: ahí es más eficaz la electrólisis, y lo decimos con claridad en lugar de vender una pauta que no va a funcionar.</p><ul><li>vello oscuro del cuerpo: axilas, ingles, piernas, brazos, espalda, pecho</li><li>vello enquistado e irritación por el afeitado</li><li>zonas masculinas: espalda, pecho, hombros, cuello, abdomen</li><li>no hacemos láser en el rostro femenino: ahí el vello suele depender de las hormonas y el láser puede estimular su crecimiento; para la cara ofrecemos electrólisis</li></ul></article></div></div></section>
 <section class="dark"><div class="wrap"><div class="sec-head"><h2>Cómo es la sesión</h2></div><ol class="steps"><li>revisión de la zona y de las contraindicaciones, ajuste de parámetros según piel y vello</li><li>gafas de protección y aplicación de gel</li><li>pasada con el cabezal por la zona: se siente como un chasquido caliente y breve, el frío del cabezal lo suaviza</li><li>producto calmante al terminar</li><li>15–60 minutos según la zona</li></ol></div></section>
