@@ -1,0 +1,34 @@
+# Hi Sisters Clinic
+
+> Epilation and skin care clinic with two studios: Prague (Czech Republic) and Valencia (Spain). Laser hair removal, electrolysis, cosmetology, trichology, injectables, professional cosmetics and courses for specialists. Site languages: Russian, Ukrainian, Czech, English, Spanish.
+
+## Facts
+- Prague studio: Chlumčanského 497/5, Praha 8-Libeň, 180 00. Phone +420 702 192 946. Daily 10:00–19:00.
+- Valencia studio: Carrer de Pere Aleixandre, 34, 46004 València. Phone +34 637 02 47 59. Mon–Sat 10:00–20:00.
+- Prices are published on the site; the first consultation is free.
+- Laser is used for dark hair; electrolysis removes light, red and grey hair and is the method offered for a woman's face.
+- A laser course is usually 6–10 sessions with intervals growing from 4 to 8 weeks.
+
+## Main pages (English)
+- [Prague — overview](https://hi-sisters.clinic/en/prague/)
+- [Services and prices](https://hi-sisters.clinic/en/prague/services/)
+- [Laser hair removal](https://hi-sisters.clinic/en/prague/laser/)
+- [Electrolysis](https://hi-sisters.clinic/en/prague/electro/)
+- [Cosmetology](https://hi-sisters.clinic/en/prague/cosmetology/)
+- [Trichology](https://hi-sisters.clinic/en/prague/trichology/)
+- [Injectables](https://hi-sisters.clinic/en/prague/injections/)
+- [Courses for specialists](https://hi-sisters.clinic/en/prague/training/)
+- [Professional cosmetics shop](https://hi-sisters.clinic/en/prague/cosmetics/)
+- [About the clinic and the team](https://hi-sisters.clinic/en/prague/about/)
+- [Contacts and opening hours](https://hi-sisters.clinic/en/prague/contacts/)
+
+## Valencia
+- [Valencia — overview](https://hi-sisters.clinic/es/valencia/)
+- [Laser hair removal](https://hi-sisters.clinic/es/valencia/laser/)
+- [Electrolysis](https://hi-sisters.clinic/es/valencia/electro/)
+- [Courses](https://hi-sisters.clinic/es/valencia/training/)
+- [Contacts](https://hi-sisters.clinic/es/valencia/contacts/)
+
+## Other languages
+- Same structure under /ru/, /uk/, /cs/, /es/ — for example https://hi-sisters.clinic/cs/prague/laser/
+- Full list of pages: https://hi-sisters.clinic/sitemap.xml
