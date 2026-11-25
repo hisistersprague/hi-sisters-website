@@ -931,6 +931,12 @@ body[data-page="services"] .more-list a:hover{border-color:var(--accent);color:v
 .dark .cmp-sm{background:rgba(255,255,255,.04)}
 
 /* до и после */
+details.qa{border-bottom:1px solid var(--line);padding:14px 0}
+details.qa summary{cursor:pointer;font-weight:500;font-size:17px;color:var(--navy);list-style:none}
+details.qa summary::-webkit-details-marker{display:none}
+details.qa summary::after{content:'+';float:right;color:var(--gold-dark);font-size:20px;line-height:1}
+details.qa[open] summary::after{content:'–'}
+details.qa p{margin:10px 0 0;font-size:16px;line-height:1.65;color:var(--ink)}
 .quick{background:#fff;border:1px solid var(--line-gold);border-radius:18px;padding:22px 24px;max-width:760px}
 .quick h2{font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:var(--gold-dark);font-family:Jost,system-ui,sans-serif;font-weight:500;margin:0 0 10px}
 .quick ul{margin:0;padding-left:18px}
