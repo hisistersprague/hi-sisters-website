@@ -651,7 +651,34 @@
    "/assets/photos/g-laser-1.jpg",
    "/assets/photos/g-laser-2.jpg",
    "/assets/photos/g-laser-3.jpg"
-  ]
+  ],
+  "quick": {
+   "ru": [
+    "Работает по тёмному и густому волосу: лазер действует через меланин.",
+    "Курс обычно 6–10 сеансов, интервал растёт с 4 до 8 недель.",
+    "Женское лицо делаем электроэпиляцией, а не лазером."
+   ],
+   "uk": [
+    "Працює по темному й густому волоссю: лазер діє через меланін.",
+    "Курс зазвичай 6–10 сеансів, інтервал зростає з 4 до 8 тижнів.",
+    "Жіноче обличчя робимо електроепіляцією, а не лазером."
+   ],
+   "cs": [
+    "Funguje na tmavé a husté chloupky: laser působí přes melanin.",
+    "Kúra je obvykle 6–10 sezení, interval se prodlužuje ze 4 na 8 týdnů.",
+    "Ženský obličej děláme elektroepilací, ne laserem."
+   ],
+   "en": [
+    "Works on dark, dense hair: the laser acts through melanin.",
+    "A course is usually 6–10 sessions, with intervals growing from 4 to 8 weeks.",
+    "A woman’s face we treat with electrolysis, not laser."
+   ],
+   "es": [
+    "Funciona con vello oscuro y denso: el láser actúa a través de la melanina.",
+    "La pauta suele ser de 6–10 sesiones, con intervalos que pasan de 4 a 8 semanas.",
+    "El rostro femenino lo tratamos con electrólisis, no con láser."
+   ]
+  }
  },
  "electro": {
   "image": "assets/electro.jpg",
@@ -1325,7 +1352,34 @@
    "/assets/photos/g-electro-1.jpg",
    "/assets/photos/g-electro-2.jpg",
    "/assets/photos/g-electro-3.jpg"
-  ]
+  ],
+  "quick": {
+   "ru": [
+    "Убирает любой волос, включая светлый, рыжий и седой: игла работает с фолликулом, пигмент не важен.",
+    "Лицо — обычно 10–20 сеансов, тело — 15–30, интервал 1–4 недели.",
+    "Работаем в 4–10 рук: большая зона закрывается в разы быстрее."
+   ],
+   "uk": [
+    "Прибирає будь-яке волосся, зокрема світле, руде й сиве: голка працює з фолікулом, пігмент не має значення.",
+    "Обличчя — зазвичай 10–20 сеансів, тіло — 15–30, інтервал 1–4 тижні.",
+    "Працюємо в 4–10 рук: велика зона закривається значно швидше."
+   ],
+   "cs": [
+    "Odstraní jakýkoli chloupek včetně světlého, zrzavého a šedivého: jehla pracuje s folikulem, pigment nehraje roli.",
+    "Obličej obvykle 10–20 sezení, tělo 15–30, interval 1–4 týdny.",
+    "Pracujeme ve 4–10 rukou: velká zóna je hotová mnohem rychleji."
+   ],
+   "en": [
+    "Removes any hair, including blond, red and grey: the needle works on the follicle, pigment does not matter.",
+    "Face usually 10–20 sessions, body 15–30, with 1–4 weeks between them.",
+    "We work with 4–10 hands: a large area is finished far faster."
+   ],
+   "es": [
+    "Elimina cualquier vello, también rubio, pelirrojo y canoso: la aguja trabaja sobre el folículo y el pigmento da igual.",
+    "Rostro: 10–20 sesiones; cuerpo: 15–30, con 1–4 semanas entre ellas.",
+    "Trabajamos a 4–10 manos: una zona grande se termina mucho más rápido."
+   ]
+  }
  },
  "massage": {
   "image": "assets/massage.jpg",
@@ -1794,6 +1848,33 @@
   "heroVideo": {
    "src": "/assets/video/kosmetologie-hero.mp4",
    "poster": "/assets/video/kosmetologie-hero.jpg"
+  },
+  "quick": {
+   "ru": [
+    "Чистки, пилинги, аппаратный уход и инъекционные методики — программу собираем под состояние кожи.",
+    "Обычно одна процедура в 2–4 недели.",
+    "Консультация с разбором кожи — бесплатно."
+   ],
+   "uk": [
+    "Чистки, пілінги, апаратний догляд та ін’єкційні методики — програму збираємо під стан шкіри.",
+    "Зазвичай одна процедура на 2–4 тижні.",
+    "Консультація з розбором шкіри — безкоштовно."
+   ],
+   "cs": [
+    "Čištění, peelingy, přístrojová péče a injekční metody — program skládáme podle stavu pleti.",
+    "Obvykle jedno ošetření za 2–4 týdny.",
+    "Konzultace s rozborem pleti je zdarma."
+   ],
+   "en": [
+    "Cleansing, peels, device-based care and injectables — the programme is built around your skin.",
+    "Usually one treatment every 2–4 weeks.",
+    "A consultation with a skin assessment is free."
+   ],
+   "es": [
+    "Limpiezas, peelings, aparatología e inyectables: el programa se arma según el estado de tu piel.",
+    "Normalmente un tratamiento cada 2–4 semanas.",
+    "La consulta con valoración de la piel es gratuita."
+   ]
   }
  },
  "microcurrent": {
@@ -2297,6 +2378,33 @@
     "en": "We look at the scalp and hair area by area and assess density and the state of the follicles. In 2–3 months we compare the images — that shows whether the plan is working.",
     "es": "Revisamos el cuero cabelludo y el cabello zona por zona y valoramos la densidad y el estado de los folículos. A los 2–3 meses comparamos las imágenes: así se ve si el plan funciona."
    }
+  },
+  "quick": {
+   "ru": [
+    "Трихоскопия под увеличением, разбор причин выпадения и план ухода.",
+    "Контроль через 2–3 месяца: сравниваем снимки и решаем, работает ли план.",
+    "Если дело в дефицитах или гормонах — отправим к врачу и на анализы, а не продадим курс."
+   ],
+   "uk": [
+    "Трихоскопія під збільшенням, розбір причин випадіння і план догляду.",
+    "Контроль через 2–3 місяці: порівнюємо знімки й вирішуємо, чи працює план.",
+    "Якщо причина в дефіцитах або гормонах — направимо до лікаря й на аналізи, а не продамо курс."
+   ],
+   "cs": [
+    "Trichoskopie pod zvětšením, rozbor příčin padání a plán péče.",
+    "Kontrola za 2–3 měsíce: porovnáme snímky a vyhodnotíme, jestli plán funguje.",
+    "Pokud jde o deficity nebo hormony, pošleme na vyšetření, místo abychom prodali kúru."
+   ],
+   "en": [
+    "Trichoscopy under magnification, the causes of shedding and a care plan.",
+    "A check-up in 2–3 months: we compare the images and see whether the plan works.",
+    "If deficiencies or hormones are behind it, we send you for tests instead of selling a course."
+   ],
+   "es": [
+    "Tricoscopia con aumento, análisis de las causas de la caída y plan de cuidado.",
+    "Revisión a los 2–3 meses: comparamos las imágenes y vemos si el plan funciona.",
+    "Si la causa son déficits u hormonas, te derivamos a analíticas en vez de venderte una pauta."
+   ]
   }
  },
  "cosmetics": {
@@ -2541,6 +2649,18 @@
     "note": ""
    }
   },
-  "heroImage": "/assets/photos/hero-inject-face.jpg"
+  "heroImage": "/assets/photos/hero-inject-face.jpg",
+  "quick": {
+   "ru": [
+    "Биоревитализация, ботулинотерапия и контурная пластика губ.",
+    "Все инъекции делает врач-дерматолог-косметолог — после очного осмотра.",
+    "Первая консультация бесплатная; препарат подбирают под задачу."
+   ],
+   "uk": [
+    "Біоревіталізація, ботулінотерапія та контурна пластика губ.",
+    "Усі ін’єкції робить лікарка-дерматолог-косметолог — після очного огляду.",
+    "Перша консультація безкоштовна; препарат добирають під задачу."
+   ]
+  }
  }
 }

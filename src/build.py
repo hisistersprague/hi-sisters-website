@@ -1920,6 +1920,12 @@ body[data-page="services"] .more-list a:hover{border-color:var(--accent);color:v
 .dark .cmp-sm{background:rgba(255,255,255,.04)}
 
 /* до и после */
+.quick{background:#fff;border:1px solid var(--line-gold);border-radius:18px;padding:22px 24px;max-width:760px}
+.quick h2{font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:var(--gold-dark);font-family:Jost,system-ui,sans-serif;font-weight:500;margin:0 0 10px}
+.quick ul{margin:0;padding-left:18px}
+.quick li{margin-bottom:7px;font-size:16px;line-height:1.55;color:var(--navy)}
+.quick li:last-child{margin-bottom:0}
+@media(max-width:720px){.quick{padding:18px 18px}.quick li{font-size:15.5px}}
 .ba-grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(min(100%,400px),1fr))}
 .ba-card{background:#fff;border:1px solid var(--line);border-radius:18px;overflow:hidden;max-width:640px;
   box-shadow:0 14px 34px rgba(19,11,86,.08)}
@@ -2436,8 +2442,10 @@ def head(lang, city, title, desc, rel='', langs=None, section='', noindex=False)
 window.dataLayer=window.dataLayer||[];function gtag(){{dataLayer.push(arguments);}}
 gtag('js',new Date());gtag('config','AW-18276095826');gtag('config','G-K921K357QH');
 addEventListener('click',function(ev){{
-  var a=ev.target.closest('[data-book]'); if(!a) return;
-  gtag('event','booking_click',{{studio:a.dataset.book||document.body.dataset.city,lang:document.documentElement.lang}});
+  var a=ev.target.closest('[data-book]');
+  if(a){{gtag('event','booking_click',{{studio:a.dataset.book||document.body.dataset.city,lang:document.documentElement.lang}});return;}}
+  var t=ev.target.closest('a[href^="tel:"]');
+  if(t)gtag('event','phone_click',{{studio:document.body.dataset.city,lang:document.documentElement.lang}});
 }},true);
 </script>
 </head>
@@ -4430,6 +4438,26 @@ def service_reviews(key, city, lang, proc=None):
 
 
 # ─────────────────────── отдельная страница услуги ───────────────────────
+QUICK_LABEL = {'ru': 'Коротко', 'uk': 'Коротко', 'cs': 'Stručně',
+               'en': 'In short', 'es': 'En resumen'}
+
+
+def quick_block(svc, lang, price):
+    """Короткий ответ в начале страницы: три факта и цена.
+
+    Это первое, что читают и человек, который торопится, и поисковый
+    ассистент: такие абзацы цитируют целиком, в отличие от длинного текста.
+    """
+    items = list((svc.get('quick') or {}).get(lang) or [])
+    if not items:
+        return ''
+    if price:
+        items = items + ['%s. %s.' % (price[0].upper() + price[1:], HERO[lang]['free'])]
+    return ('\n<section class="tint"><div class="wrap"><div class="quick">'
+            '<h2>%s</h2><ul>%s</ul></div></div></section>'
+            % (e(QUICK_LABEL[lang]), ''.join('<li>%s</li>' % e(x) for x in items)))
+
+
 def build_service(lang, city, key):
     st = studios[city]; h = HERO[lang]; sec = SECTIONS[lang]
     svc = services[key]
@@ -4530,7 +4558,7 @@ def build_service(lang, city, key):
     <span class="free">{e(h['free'])}</span>
   </div>
 </div></section>
-
+{quick_block(svc, lang, price)}
 {blocks}
 {compare_block(key, lang)}
 {svc_split}
