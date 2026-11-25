@@ -14,6 +14,7 @@
   /<lang>/<city>/contacts/   обе студии
   /<lang>/<city>/<service>/  отдельная услуга
 """
+import unicodedata
 import json, io, os, html, shutil, hashlib, re
 from urllib.parse import quote
 
@@ -313,7 +314,11 @@ FOOT = {'ru':'Наши студии','uk':'Наші студії','cs':'Naše st
 MORE_LABEL = {'ru':'Подробнее','uk':'Детальніше','cs':'Více','en':'Details','es':'Más info'}
 BACK = {'ru':'На главную','uk':'На головну','cs':'Zpět na hlavní','en':'Back to home','es':'Volver al inicio'}
 UP_LABEL = {'ru':'Наверх','uk':'Нагору','cs':'Nahoru','en':'Back to top','es':'Arriba'}
+# Подпись в переключателе — код языка, а не страны: чешский это CS (ISO 639-1),
+# как в адресах /cs/ и в hreflang. Подсказка при наведении называет язык словом.
 LANGNAME = {'ru': 'RU', 'uk': 'UA', 'cs': 'CS', 'en': 'EN', 'es': 'ES'}
+LANGFULL = {'ru': 'Русский', 'uk': 'Українська', 'cs': 'Čeština',
+            'en': 'English', 'es': 'Español'}
 
 KICKER = {
  'prague':   {'ru':'Эпиляция и косметология','uk':'Епіляція та косметологія','cs':'Epilace a kosmetologie',
@@ -2449,8 +2454,8 @@ def header(lang, city, rel, current, other_rel=None, langs=None):
     orel = rel if other_rel is None else other_rel
     ls_ = langs or LANGS
     # страница есть не на всех языках: с недостающего ведём на список услуг
-    langs = ''.join('<a href="/%s/%s/%s"%s>%s</a>'
-                    % (l, city, rel if l in ls_ else REL['services'],
+    langs = ''.join('<a href="/%s/%s/%s" lang="%s" title="%s"%s>%s</a>'
+                    % (l, city, rel if l in ls_ else REL['services'], l, e(LANGFULL[l]),
                        ' aria-current="true"' if l == lang else '', LANGNAME[l])
                     for l in LANGS)
     sub = nav_submenu(lang, city, rel)
@@ -3770,10 +3775,27 @@ def tight(html):
     return re.sub(r'\n\s+', '\n', html).strip()
 
 
+def _fold_latin(t):
+    """á→a, č→c, ř→r, ñ→n. Кириллицу не трогаем: «й» разложилось бы в «и»."""
+    out = []
+    for ch in t:
+        d = unicodedata.normalize('NFKD', ch)
+        if len(d) > 1 and 'a' <= d[0].lower() <= 'z':
+            out.append(d[0])
+        else:
+            out.append(ch)
+    return ''.join(out)
+
+
 def search_key(*parts):
-    """Строка для поиска: без знаков препинания, чтобы «шампунь против перхоти» находился."""
+    """Строка для поиска: без знаков препинания, чтобы «шампунь против перхоти» находился.
+
+    Рядом кладём написание без диакритики: чешское «šampon» ищут и как «sampon».
+    """
     t = ' '.join(x for x in parts if x).lower()
-    return re.sub(r'\s+', ' ', re.sub(r'[^0-9a-zа-яёіїєáčďéěíňóřšťúůýžäöüñ]+', ' ', t)).strip()
+    t = re.sub(r'\s+', ' ', re.sub(r'[^0-9a-zа-яёіїєáčďéěíňóřšťúůýžäöüñ]+', ' ', t)).strip()
+    extra = [w for w in dict.fromkeys(t.split()) if _fold_latin(w) != w]
+    return (t + ' ' + ' '.join(_fold_latin(w) for w in extra)).strip() if extra else t
 
 
 def prod_name(p, lang):
@@ -3805,6 +3827,21 @@ def prod_full(brand, name):
     return (brand + ' ' + name).strip()
 
 
+def prod_title(brand, name):
+    """Заголовок карточки: марка уже напечатана чипом над названием,
+    поэтому «Orising Orising Luce Illuminante» на экране не нужно —
+    в заголовке оставляем только само название."""
+    name = (name or '').strip()
+    brand = (brand or '').strip()
+    if not brand or not name.lower().startswith(brand.lower()):
+        return name
+    tail = name[len(brand):]
+    if tail[:1].isalnum():       # «ORISINGLUCE» — отдельное слово линейки, не марка
+        return name
+    rest = tail.lstrip(' -–—·:')
+    return rest if len(rest) >= 3 else name
+
+
 def prod_card(p, lang, city, cur, ord_=0, cat_label=''):
     """Фото, назначение, состав, цена и кнопка заказа — всё в одной карточке."""
     u = ORDER_UI[lang]
@@ -3834,7 +3871,7 @@ def prod_card(p, lang, city, cur, ord_=0, cat_label=''):
                data-price="{p['price']}" data-ord="{ord_}">
         <figure class="prod-pic" data-q="{e(search_key(brand, name, vol, desc, ing))}">{'<span class="prod-cat">' + e(cat_label) + '</span>' if cat_label else ''}{badge}{pic}</figure>
         {'<div class="brand">' + e(brand) + '</div>' if brand else ''}
-        <h3>{e(name)}</h3>
+        <h3>{e(prod_title(brand, name))}</h3>
         <p class="prod-for">{e(desc)}</p>
         {ing_html}
         <div class="pm"><span>{e(vol)}</span>{'<b>' + e(p['price']) + ' ' + e(cur) + '</b>' if not p.get('priceHidden') else '<i class="pm-ask">' + e(PRICE_ASK[lang]) + '</i>'}</div>

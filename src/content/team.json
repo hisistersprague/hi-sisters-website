@@ -85,34 +85,6 @@
   ]
  },
  {
-  "photo": "julianna",
-  "name": {
-   "ru": "Юлианна",
-   "uk": "Юліанна",
-   "cs": "Julianna",
-   "en": "Julianna",
-   "es": "Julianna"
-  },
-  "role": {
-   "ru": "Универсальный мастер",
-   "uk": "Універсальна майстриня",
-   "cs": "Univerzální specialistka",
-   "en": "All-round specialist",
-   "es": "Especialista polivalente"
-  },
-  "desc": {
-   "ru": "В команде с 2024 года. Лазерная эпиляция (Hunter, Luna) и электроэпиляция (Apilus), консультации по уходу, чистки и пилинги, мезотерапия, массаж и микротоки лица и шеи.",
-   "uk": "У команді з 2024 року. Лазерна епіляція (Hunter, Luna) та електроепіляція (Apilus), консультації з догляду, чистки й пілінги, мезотерапія, масаж і мікроструми обличчя та шиї.",
-   "cs": "V týmu od roku 2024. Laserová epilace (Hunter, Luna) a elektroepilace (Apilus), konzultace péče, čištění a peelingy, mezoterapie, masáž a mikroproudy obličeje a krku.",
-   "en": "With the team since 2024. Laser hair removal (Hunter, Luna) and electrolysis (Apilus), skincare consultations, cleansing and peels, mesotherapy, facial and neck massage and microcurrent.",
-   "es": "En el equipo desde 2024. Depilación láser (Hunter, Luna) y electrólisis (Apilus), consultas de cuidado facial, limpiezas y peelings, mesoterapia, masaje y microcorrientes de rostro y cuello."
-  },
-  "img": "face1.jpg",
-  "cities": [
-   "prague"
-  ]
- },
- {
   "photo": "natalia",
   "name": {
    "ru": "Наталья",
