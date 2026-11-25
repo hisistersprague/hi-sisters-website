@@ -59,3 +59,4 @@ User-agent: YandexBot
 Allow: /
 
 Sitemap: https://hi-sisters.clinic/sitemap.xml
+Sitemap: https://hi-sisters.clinic/sitemap-images.xml

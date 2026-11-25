@@ -55,9 +55,33 @@ img{max-width:100%}
 .soc-instagram:hover{color:var(--accent)}
 @media(max-width:860px){.soc{width:27px;height:27px}.soc svg{width:17px;height:17px}}
 .top-tel{font-size:14.5px;text-decoration:none;white-space:nowrap;color:#fff}
+/* планшет: телефон и кнопка записи вместе в шапку не влезали — страница ехала вбок.
+   Телефон убираем, он остаётся в подвале и на странице контактов, кнопка важнее */
+@media(min-width:721px) and (max-width:900px){.top-tel{display:none}.top-in{gap:10px}}
 .nav-row{border-top:1px solid rgba(226,193,120,.35)}
 .mainnav{display:flex;flex-wrap:wrap;gap:2px}
 .mainnav::-webkit-scrollbar{display:none}
+/* видно, где находится фокус при переходе по Tab — иначе клавиатурой не сориентироваться */
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,
+textarea:focus-visible,summary:focus-visible,[tabindex]:focus-visible{
+   outline:2px solid var(--gold-ui);outline-offset:2px;border-radius:3px}
+.skip{position:absolute;left:-9999px;top:0;z-index:140;background:#fff;color:var(--navy-deep);
+   padding:11px 18px;border-radius:0 0 10px 0;font-size:15px;text-decoration:none;
+   box-shadow:0 6px 18px rgba(19,11,86,.18)}
+.skip:focus{left:0}
+.crumb{background:#fff;border-bottom:1px solid var(--line)}
+.crumb ol{display:flex;flex-wrap:wrap;align-items:center;gap:7px;list-style:none;
+   margin:0;padding:10px 0;font-size:13.5px;color:var(--muted)}
+.crumb li{display:flex;align-items:center;gap:7px}
+.crumb li+li::before{content:"A";opacity:.55}
+.crumb a{color:inherit;text-decoration:none}
+.crumb a:hover{color:var(--gold-dark)}
+.crumb [aria-current]{color:var(--ink)}
+@media(max-width:560px){/* длинная цепочка на телефоне едет в строку, а не в три этажа */
+  .crumb ol{font-size:12.5px;gap:5px;flex-wrap:nowrap;overflow-x:auto;
+     scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .crumb ol::-webkit-scrollbar{display:none}
+  .crumb li{white-space:nowrap}.crumb li+li::before{opacity:.45}}
 .mainnav a{padding:12px 14px;font-size:15.5px;text-decoration:none;white-space:nowrap;
            color:#fff;border-bottom:2px solid transparent;transition:color .15s}
 .mainnav a:hover{color:var(--gold-ui)}
