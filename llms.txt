@@ -320,6 +320,60 @@
 - [About the clinic](https://hi-sisters.clinic/es/valencia/about/)
 - [Contacts](https://hi-sisters.clinic/es/valencia/contacts/)
 
+## The same pages in each language
+
+### Русский
+- [Лазерная эпиляция — Прага](https://hi-sisters.clinic/ru/prague/laser/)
+- [Электроэпиляция — Прага](https://hi-sisters.clinic/ru/prague/electro/)
+- [Косметология — Прага](https://hi-sisters.clinic/ru/prague/cosmetology/)
+- [Трихология — Прага](https://hi-sisters.clinic/ru/prague/trichology/)
+- [Инъекционная косметология — Прага](https://hi-sisters.clinic/ru/prague/injections/)
+- [Цены — Прага](https://hi-sisters.clinic/ru/prague/prices/)
+- [Лазерная эпиляция — Валенсия](https://hi-sisters.clinic/ru/valencia/laser/)
+- [Электроэпиляция — Валенсия](https://hi-sisters.clinic/ru/valencia/electro/)
+- [Цены — Валенсия](https://hi-sisters.clinic/ru/valencia/prices/)
+
+### Українська
+- [Лазерна епіляція — Прага](https://hi-sisters.clinic/uk/prague/laser/)
+- [Електроепіляція — Прага](https://hi-sisters.clinic/uk/prague/electro/)
+- [Косметологія — Прага](https://hi-sisters.clinic/uk/prague/cosmetology/)
+- [Трихологія — Прага](https://hi-sisters.clinic/uk/prague/trichology/)
+- [Ін’єкційна косметологія — Прага](https://hi-sisters.clinic/uk/prague/injections/)
+- [Ціни — Прага](https://hi-sisters.clinic/uk/prague/prices/)
+- [Лазерна епіляція — Валенсія](https://hi-sisters.clinic/uk/valencia/laser/)
+- [Електроепіляція — Валенсія](https://hi-sisters.clinic/uk/valencia/electro/)
+- [Ціни — Валенсія](https://hi-sisters.clinic/uk/valencia/prices/)
+
+### Čeština
+- [Laserová epilace — Praha](https://hi-sisters.clinic/cs/prague/laser/)
+- [Elektroepilace — Praha](https://hi-sisters.clinic/cs/prague/electro/)
+- [Kosmetologie — Praha](https://hi-sisters.clinic/cs/prague/cosmetology/)
+- [Trichologie — Praha](https://hi-sisters.clinic/cs/prague/trichology/)
+- [Ceník — Praha](https://hi-sisters.clinic/cs/prague/prices/)
+- [Laserová epilace — Valencie](https://hi-sisters.clinic/cs/valencia/laser/)
+- [Elektroepilace — Valencie](https://hi-sisters.clinic/cs/valencia/electro/)
+- [Ceník — Valencie](https://hi-sisters.clinic/cs/valencia/prices/)
+
+### English
+- [Laser epilation — Prague](https://hi-sisters.clinic/en/prague/laser/)
+- [Electrolysis — Prague](https://hi-sisters.clinic/en/prague/electro/)
+- [Cosmetology — Prague](https://hi-sisters.clinic/en/prague/cosmetology/)
+- [Trichology — Prague](https://hi-sisters.clinic/en/prague/trichology/)
+- [Prices — Prague](https://hi-sisters.clinic/en/prague/prices/)
+- [Laser epilation — Valencia](https://hi-sisters.clinic/en/valencia/laser/)
+- [Electrolysis — Valencia](https://hi-sisters.clinic/en/valencia/electro/)
+- [Prices — Valencia](https://hi-sisters.clinic/en/valencia/prices/)
+
+### Español
+- [Depilación láser — Praga](https://hi-sisters.clinic/es/prague/laser/)
+- [Electrólisis — Praga](https://hi-sisters.clinic/es/prague/electro/)
+- [Cosmetología — Praga](https://hi-sisters.clinic/es/prague/cosmetology/)
+- [Tricología — Praga](https://hi-sisters.clinic/es/prague/trichology/)
+- [Precios — Praga](https://hi-sisters.clinic/es/prague/prices/)
+- [Depilación láser — Valencia](https://hi-sisters.clinic/es/valencia/laser/)
+- [Electrólisis — Valencia](https://hi-sisters.clinic/es/valencia/electro/)
+- [Precios — Valencia](https://hi-sisters.clinic/es/valencia/prices/)
+
 ## Other languages
 - Every page exists in five languages at /<lang>/<city>/<section>/, where <lang> is ru, uk, cs, en or es and <city> is prague or valencia — for example https://hi-sisters.clinic/cs/prague/laser/ or https://hi-sisters.clinic/es/valencia/prices/
 - Injectable cosmetology and the cosmetics shop are Prague only; the injectables pages exist in Russian and Ukrainian.
