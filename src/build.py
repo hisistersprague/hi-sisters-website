@@ -2199,7 +2199,7 @@ footer a{color:#fff;text-decoration:none}
 .foot-title::after{content:'';display:block;width:38px;height:2px;background:var(--gold-ui);margin-top:12px}
 .foot-studio{line-height:1.75}
 .foot-studio b{color:#fff;font-weight:500}
-.foot-upd{margin:14px 0 0;font-size:12.5px;color:rgba(255,255,255,.55)}
+.foot-upd{margin:14px 0 0;font-size:12.5px;color:rgba(255,255,255,.55)}\n.foot-legal{margin:14px 0 0;font-size:12.5px;color:rgba(255,255,255,.62)}
 .foot-nav{display:flex;flex-wrap:wrap;gap:6px 18px;margin-top:24px;
           padding-top:20px;border-top:1px solid rgba(212,184,150,.32)}
 .foot-nav a{text-decoration:none;opacity:.85}
@@ -2279,6 +2279,12 @@ def jld(obj):
             % json.dumps(obj, ensure_ascii=False, separators=(',', ':')))
 
 
+# Юридическое лицо чешской студии: сверено с государственным реестром ARES
+# 26.11.2026. По § 435 гражданского кодекса ЧР эти данные положено указывать,
+# а поиску и ассистентам они подтверждают, что за сайтом стоит реальная фирма.
+LEGAL = {'prague': {'name': 'Hi sisters s.r.o.', 'ico': '17522552'}}
+
+
 def biz_schema(lang, city):
     """Клиника: адрес, координаты, часы, телефон, соцсети, вилка цен.
     Рейтинг Google здесь не указываем — размечать чужие отзывы нельзя."""
@@ -2296,6 +2302,9 @@ def biz_schema(lang, city):
         'image': BASE + '/assets/laser.jpg',
         'telephone': st['phone'], 'email': st.get('email', ''), 'priceRange': '$$',
         'currenciesAccepted': 'CZK' if city == 'prague' else 'EUR',
+        **({'legalName': LEGAL[city]['name'], 'taxID': LEGAL[city]['ico'],
+            'identifier': {'@type': 'PropertyValue', 'propertyID': 'ICO',
+                           'value': LEGAL[city]['ico']}} if city in LEGAL else {}),
         'address': {'@type': 'PostalAddress', 'streetAddress': st['street'],
                     'addressLocality': st['city_en'], 'postalCode': st['zip'],
                     'addressCountry': st['country']},
@@ -2862,6 +2871,9 @@ def footer(lang, city):
     ot = studios[other]
     nav = ''.join('<a href="/%s/%s/%s">%s</a>' % (lang, city, REL[k], e(nav_label(k, lang)))
                   for k in NAV_ORDER + ['prices', 'faq'])
+    lg = LEGAL.get(city)
+    legal = ('<p class="foot-legal">%s, IČO %s · %s</p>'
+             % (e(lg['name']), e(lg['ico']), e(st['address']))) if lg else ''
     return f"""
 <footer><div class="wrap">
   <div class="foot-title">{e(FOOT[lang])}</div>
@@ -2881,6 +2893,7 @@ def footer(lang, city):
     </div>
   </div>
   <nav class="foot-nav" aria-label="{e(FOOT_LBL[lang])}">{nav}</nav>
+  {legal}
   <p class="foot-upd">{e(UPDATED[lang])} <time datetime="{UPD_ISO}">{UPD_MARK}</time></p>
 </div></footer>"""
 
@@ -4522,6 +4535,54 @@ FAQ_PAGE = {
 }
 
 
+# Заголовки вкладки для страниц, где название раздела само по себе ничего не говорит
+# поиску: «Цены» и слоган про обучение не содержат слов, которые люди набирают.
+SEO_TITLE = {
+ 'prices': {
+  'prague': {'ru': 'Цены на эпиляцию и косметологию в Праге',
+             'uk': 'Ціни на епіляцію та косметологію у Празі',
+             'cs': 'Ceník epilace a kosmetologie v Praze',
+             'en': 'Hair removal and skin care prices in Prague',
+             'es': 'Precios de depilación y cosmetología en Praga'},
+  'valencia': {'ru': 'Цены на эпиляцию в Валенсии',
+               'uk': 'Ціни на епіляцію у Валенсії',
+               'cs': 'Ceník epilace ve Valencii',
+               'en': 'Hair removal prices in Valencia',
+               'es': 'Precios de depilación en Valencia'}},
+ 'training': {
+  'prague': {'ru': 'Обучение лазерной и электроэпиляции в Праге',
+             'uk': 'Навчання лазерній та електроепіляції у Празі',
+             'cs': 'Kurzy laserové a elektroepilace v Praze',
+             'en': 'Laser and electrolysis courses in Prague',
+             'es': 'Cursos de depilación láser y electrólisis en Praga'},
+  'valencia': {'ru': 'Обучение лазерной и электроэпиляции в Валенсии',
+               'uk': 'Навчання лазерній та електроепіляції у Валенсії',
+               'cs': 'Kurzy laserové a elektroepilace ve Valencii',
+               'en': 'Laser and electrolysis courses in Valencia',
+               'es': 'Cursos de depilación láser y electrólisis en Valencia'}},
+ 'faq': {
+  'prague': {'ru': 'Вопросы об эпиляции и уходе за кожей в Праге',
+             'uk': 'Питання про епіляцію та догляд за шкірою у Празі',
+             'cs': 'Otázky o epilaci a péči o pleť v Praze',
+             'en': 'Questions about hair removal and skin care in Prague',
+             'es': 'Preguntas sobre depilación y cuidado de la piel en Praga'},
+  'valencia': {'ru': 'Вопросы об эпиляции в Валенсии',
+               'uk': 'Питання про епіляцію у Валенсії',
+               'cs': 'Otázky o epilaci ve Valencii',
+               'en': 'Questions about hair removal in Valencia',
+               'es': 'Preguntas sobre depilación en Valencia'}},
+}
+
+
+def seo_title(key, city, lang, fallback):
+    """Заголовок вкладки со словами, которые люди набирают в поиске.
+
+    «Цены» и слоган про обучение сами по себе ничего поисковику не говорят.
+    Марку дописываем коротко — длинный заголовок поиск всё равно обрежет."""
+    t = ((SEO_TITLE.get(key) or {}).get(city) or {}).get(lang)
+    return '%s — Hi Sisters' % t if t else fallback
+
+
 PRICES_PAGE = {
  'ru': {'h1': 'Цены', 'kicker': 'Прайс',
         'lead': 'Весь прайс студии на одной странице: эпиляция, уход за кожей, трихология и курсы. '
@@ -4751,7 +4812,8 @@ def build_prices_page(lang, city):
   <p class="note">{e(pp['note'])}</p>
 </div></section>
 """
-    title = '%s %s — Hi Sisters Clinic' % (pp['h1'], IN_CITY[city][lang])
+    title = seo_title('prices', city, lang,
+                      '%s %s — Hi Sisters Clinic' % (pp['h1'], IN_CITY[city][lang]))
     desc = pp['lead'][:160]
     sch = (crumbs(lang, city, [(pp['h1'], REL['prices'])])
            + price_offers(lang, city, '%s/%s/%s/%s' % (BASE, lang, city, REL['prices'])))
@@ -4805,7 +4867,8 @@ def build_faq_page(lang, city):
 </div></section>
 {blocks}
 """
-    title = '%s — %s, Hi Sisters Clinic' % (fp['h1'], cityname)
+    title = seo_title('faq', city, lang,
+                      '%s — %s, Hi Sisters Clinic' % (fp['h1'], cityname))
     desc = fp['lead'][:160]
     sch = (faq_schema(all_qa)
            + crumbs(lang, city, [(fp['h1'], REL['faq'])]))
@@ -5607,7 +5670,8 @@ def build_training(lang, city):
   <div class="courses">{cards}</div>
 </div></section>
 """
-    title = '%s — %s, Hi Sisters Clinic' % (tr['h1'], cityname)
+    title = seo_title('training', city, lang,
+                      '%s — %s, Hi Sisters Clinic' % (tr['h1'], cityname))
     return doc(lang, city, REL['training'], 'training', title, tr['lead'], main, cta=tr['cta'],
                schema=crumbs(lang, city, [(tr['kicker'], REL['training'])]))
 
@@ -5970,6 +6034,31 @@ def llms_txt():
                       (REL['about'], 'About the clinic'),
                       (REL['contacts'], 'Contacts')]:
         A('- [%s](%s/es/valencia/%s)' % (name, BASE, rel))
+    A('')
+
+    # названия разделов на пяти языках: запрос к ассистенту чаще всего приходит
+    # не по-английски, и ему нужно за что зацепиться на языке вопроса
+    A('## The same pages in each language')
+    for l in LANGS:
+        A('')
+        A('### %s' % LANGFULL.get(l, l))
+        for city_ in CITIES:
+            for key, svc in services.items():
+                if city_ not in (svc.get('cities') or []):
+                    continue
+                pg = (svc.get('page') or {}).get(l) or {}
+                card = (svc.get('card') or {}).get(l) or {}
+                name = pg.get('title') or card.get('title')
+                if not name:
+                    continue
+                A('- [%s — %s](%s/%s/%s/%s/)'
+                  % (name, studios[city_]['city'].get(l, studios[city_]['city']['en']),
+                     BASE, l, city_, key))
+            pp = PRICES_PAGE.get(l) or {}
+            if pp.get('h1'):
+                A('- [%s — %s](%s/%s/%s/%s)'
+                  % (pp['h1'], studios[city_]['city'].get(l, studios[city_]['city']['en']),
+                     BASE, l, city_, REL['prices']))
     A('')
 
     A('## Other languages')
