@@ -2331,6 +2331,36 @@ ORG_REF = {'@type': 'Organization', '@id': BASE + '/#org',
            'name': 'Hi Sisters Clinic', 'url': BASE + '/'}
 
 
+# О чём клиника: по этому списку поисковики и ассистенты понимают,
+# на какие вопросы её уместно предлагать. Только то, что мы правда делаем.
+KNOWS_ABOUT = {
+ 'ru': ['Лазерная эпиляция', 'Электроэпиляция', 'Эпиляция лица', 'Эпиляция бикини',
+        'Косметология', 'Чистка лица', 'Химические пилинги', 'Трихология',
+        'Лечение выпадения волос', 'Инъекционная косметология', 'Биоревитализация',
+        'Профессиональная косметика', 'Обучение лазерной эпиляции',
+        'Обучение электроэпиляции'],
+ 'uk': ['Лазерна епіляція', 'Електроепіляція', 'Епіляція обличчя', 'Епіляція бікіні',
+        'Косметологія', 'Чищення обличчя', 'Хімічні пілінги', 'Трихологія',
+        'Лікування випадіння волосся', 'Ін’єкційна косметологія', 'Біоревіталізація',
+        'Професійна косметика', 'Навчання лазерної епіляції',
+        'Навчання електроепіляції'],
+ 'cs': ['Laserová epilace', 'Elektroepilace', 'Epilace obličeje', 'Epilace bikin',
+        'Kosmetologie', 'Čištění pleti', 'Chemické peelingy', 'Trichologie',
+        'Léčba padání vlasů', 'Injekční kosmetologie', 'Biorevitalizace',
+        'Profesionální kosmetika', 'Kurzy laserové epilace', 'Kurzy elektroepilace'],
+ 'en': ['Laser hair removal', 'Electrolysis', 'Facial hair removal', 'Bikini hair removal',
+        'Cosmetology', 'Facial cleansing', 'Chemical peels', 'Trichology',
+        'Hair loss treatment', 'Injectable cosmetology', 'Biorevitalisation',
+        'Professional skin care products', 'Laser hair removal training',
+        'Electrolysis training'],
+ 'es': ['Depilación láser', 'Electrólisis', 'Depilación facial', 'Depilación de ingles',
+        'Cosmetología', 'Limpieza facial', 'Peelings químicos', 'Tricología',
+        'Tratamiento de la caída del cabello', 'Cosmetología inyectable',
+        'Biorrevitalización', 'Cosmética profesional', 'Cursos de depilación láser',
+        'Cursos de electrólisis'],
+}
+
+
 def org_schema(lang, city):
     """Организация и сайт: логотип, соцсети, языки. На это опираются
     карточка бренда в поиске и ответы ассистентов, когда их спрашивают «кто это»."""
@@ -2344,6 +2374,7 @@ def org_schema(lang, city):
         '@type': 'Organization',
         '@id': BASE + '/#org',
         'name': 'Hi Sisters Clinic',
+        'alternateName': 'Hi Sisters',
         'url': BASE + '/',
         'logo': {'@type': 'ImageObject', 'url': BASE + '/assets/logo.svg'},
         'image': BASE + '/assets/og.jpg',
@@ -2354,6 +2385,15 @@ def org_schema(lang, city):
                           'areaServed': studios[c]['country'],
                           'availableLanguage': ['ru', 'uk', 'cs', 'en', 'es']}
                          for c in CITIES],
+        # факты со страницы «О нас»: год открытия, размер команды, города
+        'foundingDate': '2019',
+        'numberOfEmployees': {'@type': 'QuantitativeValue', 'value': 7},
+        'knowsLanguage': ['ru', 'uk', 'cs', 'en', 'es'],
+        'knowsAbout': KNOWS_ABOUT.get(lang, KNOWS_ABOUT['en']),
+        'areaServed': [{'@type': 'City', 'name': studios[c]['city_en']} for c in CITIES],
+        'location': [{'@id': '%s/%s/%s/#business' % (BASE, lang, c)} for c in CITIES],
+        'founder': {'@type': 'Person', 'name': 'Anna Nichyporuk',
+                    'alternateName': 'Анна Ничипорук'},
     }
     site = {
         '@type': 'WebSite',
@@ -2381,6 +2421,12 @@ def team_schema(lang, city):
         person = {'@type': 'Person', 'name': nm, 'jobTitle': role,
                   'worksFor': ORG_REF,
                   'workLocation': {'@id': '%s/%s/%s/#business' % (BASE, lang, city)}}
+        if m.get('sameAs'):
+            person['sameAs'] = m['sameAs']
+        if m.get('knows'):
+            person['knowsAbout'] = [KNOWS_ABOUT.get(lang, KNOWS_ABOUT['en'])[i]
+                                    for i in m['knows']
+                                    if i < len(KNOWS_ABOUT.get(lang, KNOWS_ABOUT['en']))]
         if desc:
             person['description'] = desc
         if m.get('img'):
@@ -2582,6 +2628,7 @@ def head(lang, city, title, desc, rel='', langs=None, section='', noindex=False,
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Hi Sisters Clinic">
 <meta property="og:locale" content="{OG_LOCALE[lang]}">
+{"".join(f'<meta property="og:locale:alternate" content="{OG_LOCALE[l]}">' for l in LANGS if l != lang)}
 <meta property="og:title" content="{e(title)}">
 <meta property="og:description" content="{e(desc)}">
 <meta property="og:url" content="{base}/{lang}/{city}/{rel}">
@@ -5754,67 +5801,186 @@ NOT_FOUND = {
 }
 
 
+INDEXNOW_KEY = '66b05e7f2d6a6785cced00c2ec8ac8ea'
+
+
 def llms_txt():
-    """Короткая карта сайта для языковых моделей: кто мы, где, что и почём.
-    Формат llms.txt: заголовок, абзац сути, затем списки ссылок."""
+    """Карта клиники для языковых моделей: кто мы, где, что делаем и почём.
+
+    Ассистенты отвечают тем, что могут процитировать. Поэтому здесь не только
+    ссылки, но и сами факты — полный прайс обоих городов, длительность курса
+    по зонам, состав обучения и короткие ответы на частые вопросы. Всё берётся
+    из тех же данных, что и страницы, так что разойтись они не могут."""
+    lang = 'en'
     pr, va = studios['prague'], studios['valencia']
-    lines = ['# Hi Sisters Clinic', '']
-    lines.append('> Epilation and skin care clinic with two studios: Prague (Czech Republic) '
-                 'and Valencia (Spain). Laser hair removal, electrolysis, cosmetology, '
-                 'trichology, injectables, professional cosmetics and courses for specialists. '
-                 'Site languages: Russian, Ukrainian, Czech, English, Spanish.')
-    lines.append('')
-    lines.append('## Facts')
-    lines.append('- Prague studio: %s. Phone %s. %s.' % (pr['address'], pr['phone'],
-                                                         (pr.get('hours') or {}).get('en', '')))
-    lines.append('- Valencia studio: %s. Phone %s. %s.' % (va['address'], va['phone'],
-                                                           (va.get('hours') or {}).get('en', '')))
-    lines.append('- Prices are published on the site; the first consultation is free.')
-    lines.append('- Laser is used for dark hair; electrolysis removes light, red and grey hair '
-                 'and is the method offered for a woman\'s face.')
-    lines.append('- A laser course is usually 6–10 sessions with intervals growing from 4 to 8 weeks.')
-    for city_, grp_ in (('prague', 'laserWomen'), ('valencia', 'laserWomenEs')):
+    L = []
+    A = L.append
+
+    A('# Hi Sisters Clinic')
+    A('')
+    A('> Hair removal and skin care clinic with two studios: Prague (Czech Republic) and '
+      'Valencia (Spain). Laser hair removal, electrolysis, cosmetology, trichology, '
+      'injectables, professional cosmetics and courses for specialists. Founded in 2019 by '
+      'Anna Nichyporuk, seven specialists, more than 8000 clients. The site is published in '
+      'Russian, Ukrainian, Czech, English and Spanish.')
+    A('')
+
+    A('## Facts')
+    A('- Prague studio: %s. Phone %s. %s.'
+      % (pr['address'], pr['phone'], (pr.get('hours') or {}).get('en', '')))
+    A('- Valencia studio: %s. Phone %s. %s.'
+      % (va['address'], va['phone'], (va.get('hours') or {}).get('en', '')))
+    A('- Google rating: Prague %s (%s reviews), Valencia %s (%s reviews).'
+      % (pr.get('rating', ''), pr.get('reviews', ''), va.get('rating', ''), va.get('reviews', '')))
+    A('- Staff speak Russian, Ukrainian, Czech, English and Spanish.')
+    A('- The first consultation is free; the whole price list is published on the site.')
+    A('- Two methods are used side by side. Laser removes dark hair quickly; electrolysis '
+      "removes light, red, grey and vellus hair, and it is the method used on a woman's face.")
+    A('- A laser course is usually 6-10 sessions, with the interval growing from 4 to 8 weeks.')
+    A('- On large or difficult areas several specialists work at once, from 4 to 10 hands, '
+      'so an area that takes hours alone is finished far faster.')
+    A('- Prague also does cosmetology, trichology and injectables; Valencia does hair removal, '
+      'intimate peels and courses.')
+    for city_ in CITIES:
+        grp_ = ZONE_GROUP[city_]
         g_ = prices['groups'].get(grp_) or {}
         vals = [n for n in (_num(r) for r in (g_.get('en') or g_.get('ru') or [])) if n]
         if vals:
-            lines.append('- Laser hair removal in %s: from %d %s per zone, single session.'
-                         % (studios[city_]['city_en'], min(vals), CUR_CODE[city_]))
-    lines.append('- Full price list: %s/en/prague/%s and %s/en/valencia/%s'
-                 % (BASE, REL['prices'], BASE, REL['prices']))
-    lines.append('')
-    lines.append('## Main pages (English)')
+            A('- Laser hair removal in %s: from %d %s for a single session on one area.'
+              % (studios[city_]['city_en'], min(vals), CUR_CODE[city_]))
+    A('- Full price list: %s/en/prague/%s and %s/en/valencia/%s'
+      % (BASE, REL['prices'], BASE, REL['prices']))
+    A('')
+
+    # ── полный прайс обоих городов ───────────────────────────────────────────
+    for city_ in CITIES:
+        A('## Price list, %s (%s, one session unless the line says otherwise)'
+          % (studios[city_]['city_en'], CUR_CODE[city_]))
+        for grp in pgroups(city_, lang):
+            t_ = (PGROUP_TITLE.get(grp) or {}).get(lang, grp)
+            if t_ == '—':
+                continue
+            g = prices['groups'].get(grp) or {}
+            rows = [r for r in (g.get(lang) or g.get('ru') or []) if _vis(r)]
+            if not rows:
+                continue
+            A('')
+            A('### %s' % t_)
+            for r in rows:
+                A('- %s — %s' % (r['label'], row_val(r, city_, lang)))
+        A('')
+
+    # ── зоны лазера: у каждой своя страница ──────────────────────────────────
+    A('## Laser areas with a page of their own')
+    for city_ in CITIES:
+        for zkey in zones:
+            rows_i = (zones[zkey].get('rows') or {}).get(city_) or []
+            if not rows_i:
+                continue
+            gname = zone_group(zkey, city_)
+            g = prices['groups'].get(gname) or {}
+            rr = g.get(lang) or g.get('ru') or []
+            vals = [_num(rr[i]) for i in rows_i if i < len(rr) and _num(rr[i]) is not None]
+            t_ = ((zones[zkey].get('en') or {}).get('title')
+                  or (zones[zkey].get('ru') or {}).get('title') or zkey)
+            price = (' — from %d %s' % (min(vals), CUR_CODE[city_])) if vals else ''
+            A('- [%s, %s](%s/en/%s/laser/%s/)%s'
+              % (t_, studios[city_]['city_en'], BASE, city_, zkey, price))
+    A('')
+
+    # ── процедуры с отдельными страницами ────────────────────────────────────
+    for key in ('cosmetology', 'trichology', 'injections'):
+        svc = services.get(key) or {}
+        items = proc_list(key, 'prague', lang)
+        if not items:
+            continue
+        name = ((svc.get('card') or {}).get(lang) or (svc.get('card') or {}).get('ru') or {}).get('title', key)
+        A('## %s, Prague — procedures and prices' % name)
+        for it in items:
+            A('- [%s](%s/en/prague/%s/%s/) — %s'
+              % ((it.get('title') or {}).get(lang), BASE, key, it['slug'],
+                 proc_price(it, 'prague', lang) or ''))
+        A('')
+
+    # ── обучение ─────────────────────────────────────────────────────────────
+    items = (courses.get('items') or {}).get(lang) or []
+    visible = courses.get('visible') or []
+    if items:
+        A('## Courses for specialists')
+        for it in items:
+            line = '- %s' % it.get('title', '')
+            if it.get('id') in visible:
+                line = '- [%s](%s/en/prague/%s%s/)' % (it.get('title', ''), BASE,
+                                                       REL['training'], it['id'])
+            bits = [x for x in (it.get('format'), it.get('price'), it.get('trainer')) if x]
+            if bits:
+                line += ' — ' + '; '.join(bits)
+            A(line)
+        A('')
+
+    # ── марки косметики ──────────────────────────────────────────────────────
+    brands = []
+    for it in shop_items:
+        b = it.get('brand')
+        if b and b not in brands:
+            brands.append(b)
+    if brands:
+        A('## Professional cosmetics sold in the Prague studio')
+        for b in sorted(brands, key=lambda x: x.lower()):
+            A('- [%s](%s/en/prague/%s%s/)' % (b, BASE, REL['cosmetics'], brand_slug(b)))
+        A('')
+
+    # ── короткие ответы: их удобно цитировать ────────────────────────────────
+    qa = []
+    for key, svc in services.items():
+        pg = (svc.get('page') or {}).get(lang) or {}
+        topic = ((svc.get('card') or {}).get(lang)
+                 or (svc.get('card') or {}).get('ru') or {}).get('title', key)
+        for f in (pg.get('faq') or []):
+            if f.get('q') and f.get('a'):
+                qa.append((topic, f['q'], f['a']))
+    if qa:
+        A('## Common questions')
+        # тему ставим перед вопросом: «Does it hurt?» есть и у лазера, и у электро,
+        # а в вырванной цитате иначе не понять, о чём речь
+        for topic, q, a in qa[:30]:
+            A('- **%s — %s** %s' % (topic, q, re.sub(r'\s+', ' ', a).strip()))
+        A('')
+
+    A('## Main pages (English)')
     for rel, name in [('', 'Prague — overview'), (REL['services'], 'Services and prices'),
                       ('laser/', 'Laser hair removal'), ('electro/', 'Electrolysis'),
                       ('cosmetology/', 'Cosmetology'), ('trichology/', 'Trichology'),
-                      ('injections/', 'Injectables'), (REL['training'], 'Courses for specialists'),
+                      (REL['training'], 'Courses for specialists'),
                       (REL['cosmetics'], 'Professional cosmetics shop'),
                       (REL['about'], 'About the clinic and the team'),
                       (REL['contacts'], 'Contacts and opening hours'),
                       (REL['prices'], 'Full price list'),
                       (REL['faq'], 'Questions and answers'),
-                      (REL['compare'], 'Laser or electrolysis: how to choose')]:
-        lines.append('- [%s](%s/en/prague/%s)' % (name, BASE, rel))
-    lines.append('')
-    lines.append('## Laser areas (price and course length for each)')
-    for zkey in zones:
-        t_ = ((zones[zkey].get('en') or {}).get('title')
-              or (zones[zkey].get('ru') or {}).get('title') or zkey)
-        lines.append('- [%s](%s/en/prague/laser/%s/)' % (t_, BASE, zkey))
-    lines.append('')
-    lines.append('## Valencia')
+                      (REL['compare'], 'Laser or electrolysis: how to choose'),
+                      (REL['booking'], 'Online booking')]:
+        A('- [%s](%s/en/prague/%s)' % (name, BASE, rel))
+    A('')
+
+    A('## Valencia')
     for rel, name in [('', 'Valencia — overview'), ('laser/', 'Laser hair removal'),
                       ('electro/', 'Electrolysis'), (REL['training'], 'Courses'),
                       (REL['prices'], 'Full price list'), (REL['faq'], 'Questions and answers'),
                       (REL['compare'], 'Laser or electrolysis: how to choose'),
+                      (REL['about'], 'About the clinic'),
                       (REL['contacts'], 'Contacts')]:
-        lines.append('- [%s](%s/es/valencia/%s)' % (name, BASE, rel))
-    lines.append('')
-    lines.append('## Other languages')
-    lines.append('- Same structure under /ru/, /uk/, /cs/, /es/ — for example '
-                 '%s/cs/prague/laser/' % BASE)
-    lines.append('- Full list of pages: %s/sitemap.xml' % BASE)
-    lines.append('')
-    return '\n'.join(lines)
+        A('- [%s](%s/es/valencia/%s)' % (name, BASE, rel))
+    A('')
+
+    A('## Other languages')
+    A('- Every page exists in five languages at /<lang>/<city>/<section>/, where <lang> is '
+      'ru, uk, cs, en or es and <city> is prague or valencia — for example '
+      '%s/cs/prague/laser/ or %s/es/valencia/prices/' % (BASE, BASE))
+    A('- Injectable cosmetology and the cosmetics shop are Prague only; the injectables '
+      'pages exist in Russian and Ukrainian.')
+    A('- Full list of pages: %s/sitemap.xml' % BASE)
+    A('')
+    return '\n'.join(L)
 
 
 def not_found_page():
@@ -5988,6 +6154,10 @@ if __name__ == '__main__':
             txt = txt.replace(UPD_ISO, iso).replace(UPD_MARK, fmt_date(iso, lang_ if lang_ in LANGS else 'cs'))
             io.open(path_, 'w', encoding='utf-8').write(txt)
     io.open(os.path.join(OUT, 'robots.txt'), 'w', encoding='utf-8').write(ROBOTS)
+    # IndexNow: ключ лежит в корне сайта, по нему Bing, Seznam и Yandex проверяют,
+    # что просьбу переобойти страницы прислал владелец домена. Seznam важен для Праги,
+    # Bing — потому что из его индекса берёт ответы ChatGPT.
+    io.open(os.path.join(OUT, INDEXNOW_KEY + '.txt'), 'w', encoding='utf-8').write(INDEXNOW_KEY)
     io.open(os.path.join(OUT, 'llms.txt'), 'w', encoding='utf-8').write(llms_txt())
     io.open(os.path.join(OUT, '404.html'), 'w', encoding='utf-8').write(not_found_page())
     io.open(os.path.join(OUT, 'index.html'), 'w', encoding='utf-8').write(root_redirect())
