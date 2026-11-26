@@ -167,6 +167,17 @@ CBOX_DIRECT = 'https://cbox.mobi/go/?cdn=hi-sisters&open=1'
 UTM = '&utm_source=website&utm_medium=site&utm_content=online_booking'
 
 
+# Форма CleverBox говорит на одном языке — чешском: параметра языка у неё нет
+# (проверено на lang/locale/l/language/hl). Пока это так, гостя на другом языке
+# честнее предупредить и сразу дать канал, где ответят на его языке.
+BOOK_LANGNOTE = {
+ 'ru': 'Сама форма — на чешском: так настроена программа студии. Если удобнее по-русски, напишите в WhatsApp — запишем вручную.',
+ 'uk': 'Сама форма — чеською: так налаштована програма студії. Якщо зручніше українською, напишіть у WhatsApp — запишемо вручну.',
+ 'en': 'The form itself is in Czech — that is how the studio system is set up. If you prefer English, message us on WhatsApp and we will book you in.',
+ 'es': 'El formulario está en checo: así está configurado el sistema del estudio. Si prefieres español, escríbenos por WhatsApp y te damos cita.',
+}
+
+
 def widget_url(city, lang):
     """Адрес формы записи. DiKiDi умеет язык в пути, CleverBox — нет."""
     if city == 'valencia':
@@ -1489,6 +1500,8 @@ section{padding:50px 0}
               в наш индиго, не убивая читаемость */
            filter:hue-rotate(-24deg) saturate(.78) brightness(1.02)}
 .booknote{margin:18px auto 0;max-width:680px;text-align:center}
+.booklang{margin:0 auto 16px}
+.booklang .btn{margin-top:10px}
 .booknote a{color:var(--navy)}
 @media(max-width:720px){.bookframe{height:640px;border-radius:10px}}
 
@@ -4780,6 +4793,8 @@ def build_booking(lang, city):
     cityname = st['city'].get(lang, st['city']['en'])
     igs = ig_main(city, lang)
     url = widget_url(city, lang)
+    ln = BOOK_LANGNOTE.get(lang) if city == 'prague' else None
+    langnote = ('<p class="note booknote booklang">%s %s</p>' % (e(ln), wa_btn(lang, city))) if ln else ''
 
     main = f"""
 <section class="hero hero-sm"><div class="wrap">
@@ -4789,6 +4804,7 @@ def build_booking(lang, city):
 </div></section>
 
 <section class="tint"><div class="wrap">
+  {langnote}
   <div class="bookwrap">
     <iframe class="bookframe" src="{url}" title="{e(bp['frame'])}"
             allow="payment" referrerpolicy="no-referrer-when-downgrade"></iframe>
