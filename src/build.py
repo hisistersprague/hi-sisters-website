@@ -588,11 +588,20 @@ def price_rows(group, city, lang, limit=None, order=True, link=None):
                    for i, r in rr)
 
 
+def zone_group(key, city):
+    """Группа прайса, из которой зона берёт свои строки."""
+    return (zones[key].get('group') or {}).get(city) or ZONE_GROUP.get(city)
+
+
 def zone_for(group, i, city):
-    """Зона лазера для строки прайса — у зоны есть своя страница."""
-    if group != ZONE_GROUP.get(city):
-        return None
+    """Зона лазера для строки прайса — у зоны есть своя страница.
+
+    Номера строк у каждой зоны свои внутри её группы прайса: у мужских зон
+    это мужской прайс. Без сверки группы женская строка попадала на страницу
+    с тем же номером из мужского списка."""
     for zk, z in zones.items():
+        if group != zone_group(zk, city):
+            continue
         if i in (z['rows'].get(city) or []):
             return zk
     return None
@@ -996,7 +1005,7 @@ def css():
     return """
 :root{
   --navy:#130B56; --navy-deep:#0A0738; --navy-light:#1E1670;
-  --gold:#D6B57D; --gold-light:#F2DDD0; --gold-dark:#8A6E42;
+  --gold:#D6B57D; --gold-light:#F2DDD0; --gold-dark:#7F6031;
   --accent:#F2B5E8;            /* розовый из сторис — на кнопках и активных элементах */
   --accent-ink:#2B0F55;
   --cta:#E8C6B0; --cta-ink:#0A0738;   /* кнопка записи: один цвет на всём сайте */
@@ -1087,7 +1096,7 @@ textarea:focus-visible,summary:focus-visible,[tabindex]:focus-visible{
 .city-sw{padding:5px 11px;border:1px solid var(--gold-ui);border-radius:999px;
          font-size:13px;text-decoration:none;white-space:nowrap;background:transparent;
          color:var(--gold-ui)}
-.city-sw span{color:var(--gold-dark)}
+.city-sw span{color:var(--gold)}
 
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;
      padding:13px 24px;border-radius:7px;border:1.5px solid var(--navy);background:var(--navy);
@@ -1194,7 +1203,7 @@ textarea:focus-visible,summary:focus-visible,[tabindex]:focus-visible{
 .free{font-size:14px;color:var(--muted)}
 .proof{display:flex;flex-wrap:wrap;align-items:center;gap:18px 26px;
        padding-top:22px;border-top:1px solid rgba(212,184,150,.3)}
-.stars{color:#9A7A45;letter-spacing:.08em}
+.stars{color:#7F6031;letter-spacing:.08em}
 .hero-badge{display:inline-flex;align-items:center;gap:13px;padding:10px 22px 10px 12px;
             background:rgba(255,255,255,.1);backdrop-filter:blur(12px);
             border:1px solid var(--gold-ui);border-radius:60px;
@@ -1211,7 +1220,7 @@ textarea:focus-visible,summary:focus-visible,[tabindex]:focus-visible{
 .proof-years{font-size:14px;color:#CFC9E6}
 .proof-years b{font-family:'Cormorant Garamond',serif;font-size:21px;color:var(--gold-ui)}
 .rev-trust{display:inline-flex;align-items:center;gap:10px;text-decoration:none}
-.rev-trust-stars{color:#9A7A45;letter-spacing:2px;font-size:17px}
+.rev-trust-stars{color:#7F6031;letter-spacing:2px;font-size:17px}
 .rev-trust-text{color:var(--navy);font-size:14.5px;font-weight:500;
             border-bottom:1px solid var(--navy)}
 .hero .rev-trust-text{color:#fff;border-bottom-color:var(--gold-ui)}
@@ -1602,7 +1611,7 @@ section{padding:50px 0}
 .mate .ava{width:84px;height:84px;margin-bottom:14px}
 .mate .ava-let{font-size:34px}
 .mate h3{font-size:20px;margin-bottom:3px}
-.mate .role{font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:#B0509B;margin-bottom:9px}
+.mate .role{font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:#A4418F;margin-bottom:9px}
 .mate p{font-size:14.5px;color:var(--muted)}
 
 /* косметика */
@@ -1849,7 +1858,7 @@ section{padding:50px 0}
 .prow-h span:first-child{font-size:16px}
 .proc-idx{margin-bottom:26px}
 .proc-idx h3{font-family:'Cormorant Garamond',serif;font-size:23px;font-weight:600;margin:0 0 10px}
-.proc-idx h3 a{color:var(--accent);text-decoration:none}
+.proc-idx h3 a{color:var(--accent-text,var(--accent));text-decoration:none}
 .proc-idx h3 a:hover{text-decoration:underline}
 .proc-sub{font-family:'Cormorant Garamond',serif;font-size:26px;font-weight:600;
   margin:38px 0 14px;color:var(--accent)}
@@ -1861,8 +1870,8 @@ body[data-page="services"]{
   --accent-30:rgba(255,46,136,.3);
 }
 /* белым буквам нужна заливка потемнее: на #FF2E88 контраст всего 3,5 */
-body[data-page="services"]{--accent-fill:#E3176F}
-body[data-page="services"] .btn-sm{background:var(--accent-fill);border-color:var(--accent-fill)}
+body[data-page="services"]{--accent-fill:#E3176F;--accent-text:#C9105F}
+body[data-page="services"] .btn-sm{background:var(--accent-fill);border-color:var(--accent-fill);color:#fff}
 body[data-page="services"] .infocard li::before{background:var(--accent-fill);color:#fff}
 body[data-page="services"] .steps li::before{background:var(--accent-fill);color:#fff}
 body[data-page="services"] .sec-head h2::before,
@@ -2282,8 +2291,8 @@ def biz_schema(lang, city):
         'areaServed': {'@type': 'City', 'name': st['city_en']},
         'knowsLanguage': ['ru', 'uk', 'cs', 'en', 'es'],
         'paymentAccepted': 'Cash, Credit Card',
-        'sameAs': ['https://instagram.com/' + h for h in st.get('instagram', [])]
-                  + (['https://www.threads.net/@' + st['threads']] if st.get('threads') else [])
+        'sameAs': ['https://www.instagram.com/' + h for h in st.get('instagram', [])]
+                  + (['https://www.threads.com/@' + st['threads']] if st.get('threads') else [])
                   + ([st['maps']] if st.get('maps') else []),
         'hasMap': st.get('maps', ''),
         # ассистенту мало знать, что запись есть: нужен адрес, куда вести человека
@@ -2313,9 +2322,9 @@ def org_schema(lang, city):
     """Организация и сайт: логотип, соцсети, языки. На это опираются
     карточка бренда в поиске и ответы ассистентов, когда их спрашивают «кто это»."""
     st = studios[city]
-    same = ['https://instagram.com/' + h for h in st.get('instagram', [])]
+    same = ['https://www.instagram.com/' + h for h in st.get('instagram', [])]
     if st.get('threads'):
-        same.append('https://www.threads.net/@' + st['threads'])
+        same.append('https://www.threads.com/@' + st['threads'])
     if st.get('maps'):
         same.append(st['maps'])
     org = {
@@ -2657,20 +2666,27 @@ SOCIAL_LBL = {
               'telegram': 'Telegram', 'instagram': 'Instagram'}
 
 
-def social_links(city):
+def ig_main(city, lang):
+    """Instagram под язык страницы: у студий есть аккаунты на разных языках,
+    и человеку нужен тот, где посты он сможет прочитать."""
+    st = studios[city]
+    return (st.get('instagram_lang') or {}).get(lang) or (st.get('instagram') or [''])[0]
+
+
+def social_links(city, lang):
     """Мессенджеры по телефону студии, Instagram — свой у каждого города."""
     st = studios[city]
     digits = re.sub(r'[^0-9]', '', st['phone'])
-    ig = (st.get('instagram') or [''])[0]
+    ig = ig_main(city, lang)
     out = [('whatsapp', 'https://wa.me/%s' % digits),
            ('viber', 'viber://chat?number=%%2B%s' % digits),
            ('telegram', 'https://t.me/+%s' % digits)]
     if ig:
-        out.append(('instagram', 'https://instagram.com/%s' % ig))
+        out.append(('instagram', 'https://www.instagram.com/%s' % ig))
     if st.get('tiktok'):
         out.append(('tiktok', 'https://www.tiktok.com/@%s' % st['tiktok'].lstrip('@')))
     if st.get('threads'):
-        out.append(('threads', 'https://www.threads.net/@%s' % st['threads'].lstrip('@')))
+        out.append(('threads', 'https://www.threads.com/@%s' % st['threads'].lstrip('@')))
     return ''.join(
         '<a class="soc soc-%s" href="%s" target="_blank" rel="noopener" '
         'aria-label="%s" title="%s"><svg viewBox="0 0 24 24" aria-hidden="true">%s</svg></a>'
@@ -2730,7 +2746,7 @@ def header(lang, city, rel, current, other_rel=None, langs=None):
     <a class="city-sw" href="/{lang}/{other}/{orel}" title="{e(OTHER_CITY[lang]['switch'])} {e(othername)}">{e(cityname)} <span>· {e(othername)}</span></a>
     <span class="top-sp"></span>
     <nav class="langs" aria-label="Language">{langs}</nav>
-    <div class="socs">{social_links(city)}</div>
+    <div class="socs">{social_links(city, lang)}</div>
     <a class="top-tel" href="tel:{st['phone'].replace(' ','')}">{e(st['phone'])}</a>
     <a class="btn btn-sm" href="{book_href(lang, city)}" data-book>{e(HERO[lang]['cta'])}</a>
   </div>
@@ -4717,7 +4733,7 @@ def build_contacts(lang, city):
     for cc in order:
         s = studios[cc]
         nm = s['city'].get(lang, s['city']['en'])
-        igs = ''.join('<a href="https://instagram.com/%s" target="_blank" rel="noopener">@%s</a> '
+        igs = ''.join('<a href="https://www.instagram.com/%s" target="_blank" rel="noopener">@%s</a> '
                       % (ig, ig) for ig in s.get('instagram', []))
         cards += f"""
       <div class="studio">
@@ -4762,7 +4778,7 @@ def build_booking(lang, city):
     st = studios[city]
     bp = BOOKPAGE[lang]
     cityname = st['city'].get(lang, st['city']['en'])
-    igs = (st.get('instagram') or [''])[0]
+    igs = ig_main(city, lang)
     url = widget_url(city, lang)
 
     main = f"""
@@ -4779,7 +4795,7 @@ def build_booking(lang, city):
   </div>
   <p class="note booknote">{e(bp['fallback'])}
     <a href="tel:{st['phone'].replace(' ','')}">{e(st['phone'])}</a>
-    {'· <a href="https://instagram.com/' + igs + '" target="_blank" rel="noopener">@' + e(igs) + '</a>' if igs else ''}
+    {'· <a href="https://www.instagram.com/' + igs + '" target="_blank" rel="noopener">@' + e(igs) + '</a>' if igs else ''}
     · <a href="{url}" target="_blank" rel="noopener">{e(bp['newtab'])}</a>
   </p>
 </div></section>
@@ -5200,7 +5216,7 @@ ZONE_UI = {
 
 def zone_rows(city, lang, key):
     """Строки прайса именно этой зоны: берём по номеру, порядок во всех языках один."""
-    gname = (zones[key].get('group') or {}).get(city) or ZONE_GROUP[city]
+    gname = zone_group(key, city)
     grp = prices['groups'].get(gname) or {}
     rows = grp.get(lang) or grp.get('ru') or []
     cur = studios[city]['currency']
