@@ -1715,7 +1715,7 @@ section{padding:50px 0}
 .chips{display:flex;flex-wrap:wrap;gap:8px}
 .chip{padding:7px 15px;border-radius:999px;border:1px solid var(--line-gold);background:transparent;
    font:inherit;font-size:14px;color:var(--navy);cursor:pointer;transition:.15s}
-.chip:hover{border-color:var(--navy)}
+.chip:hover{border-color:var(--navy)}\na.chip{display:inline-flex;align-items:center;min-height:40px;text-decoration:none;line-height:1.2}\n.pjump{padding:18px 0 0}\n.pjump .wrap{display:flex;flex-wrap:wrap;gap:8px}\n.ptab-h{scroll-margin-top:130px}\n@media(min-width:721px) and (max-width:919px){.ptab-h{scroll-margin-top:236px}}\n@media(max-width:720px){.ptab-h{scroll-margin-top:24px}}
 .chip.is-on{background:var(--accent);border-color:var(--accent);color:var(--accent-ink);font-weight:600}
 .shop-sort{padding:8px 13px;border-radius:999px;border:1px solid var(--line-gold);background:#fff;
    font:inherit;font-size:14px;color:var(--navy);cursor:pointer}
@@ -3805,7 +3805,8 @@ NAV_JS = """(function(){
     window.scrollTo(soft?{top:0,behavior:'smooth'}:{top:0});
   });
   sync();
-})();"""
+})();
+"""
 
 SHOP_JS = """
 (function(){
@@ -4168,6 +4169,20 @@ def prod_title(brand, name):
     return rest if len(rest) >= 3 else name
 
 
+def prod_for(title, desc):
+    """Назначение под названием: «Body Lotion» + «Lotion — увлажнение тела» читается
+    как «Lotion Lotion». Если описание начинается тем же словом, которым кончается
+    название, это слово убираем — остаётся «Увлажнение тела»."""
+    m = re.match(r'^(\S+)\s+[—–-]\s+(.+)$', (desc or '').strip())
+    if not m:
+        return desc
+    first, rest = m.group(1), m.group(2)
+    words = (title or '').split()
+    if not words or first.strip('.,').lower() != words[-1].strip('.,').lower():
+        return desc
+    return rest[:1].upper() + rest[1:]
+
+
 def prod_card(p, lang, city, cur, ord_=0, cat_label=''):
     """Фото, назначение, состав, цена и кнопка заказа — всё в одной карточке."""
     u = ORDER_UI[lang]
@@ -4198,7 +4213,7 @@ def prod_card(p, lang, city, cur, ord_=0, cat_label=''):
         <figure class="prod-pic" data-q="{e(search_key(brand, name, vol, desc, ing))}">{'<span class="prod-cat">' + e(cat_label) + '</span>' if cat_label else ''}{badge}{pic}</figure>
         {'<div class="brand">' + e(brand) + '</div>' if brand else ''}
         <h3>{e(prod_title(brand, name))}</h3>
-        <p class="prod-for">{e(desc)}</p>
+        <p class="prod-for">{e(prod_for(prod_title(brand, name), desc))}</p>
         {ing_html}
         <div class="pm"><span>{e(vol)}</span>{'<b>' + e(p['price']) + ' ' + e(cur) + '</b>' if not p.get('priceHidden') else '<i class="pm-ask">' + e(PRICE_ASK[lang]) + '</i>'}</div>
         <a class="btn btn-sm btn-gold prod-order" href="{wa_base(city)}" data-p="{e(label)}"
@@ -4638,6 +4653,10 @@ def price_offers(lang, city, url):
                 'itemListElement': cats})
 
 
+PJUMP_LBL = {'ru': 'Разделы прайса', 'uk': 'Розділи прайсу', 'cs': 'Sekce ceníku',
+             'en': 'Price list sections', 'es': 'Secciones de la tarifa'}
+
+
 def build_prices_page(lang, city):
     """Весь прайс города одной страницей: «сколько стоит» — самый частый вопрос,
     и отвечать на него лучше отдельным адресом, а не куском другой страницы."""
@@ -4647,6 +4666,7 @@ def build_prices_page(lang, city):
     cityname = st['city'].get(lang, st['city']['en'])
     tables = ''
     groups = 0
+    jump = []
     for grp in pgroups(city, lang):
         rows = price_rows(grp, city, lang, order=False, link='page')
         if not rows:
@@ -4655,9 +4675,20 @@ def build_prices_page(lang, city):
         if t_ == '—':
             continue
         groups += 1
-        tables += ('<h2 class="ptab-h">%s</h2><div class="ptable">%s</div>' % (e(t_), rows))
+        # якорь от ключа группы, а не от перевода: ссылка на раздел одна на всех языках
+        gid = 'g-' + re.sub(r'[^a-z0-9]+', '-', grp.lower()).strip('-')
+        jump.append((gid, t_))
+        tables += ('<h2 class="ptab-h" id="%s">%s</h2><div class="ptable">%s</div>'
+                   % (gid, e(t_), rows))
     if not groups:
         return None
+    # в прайсе больше десятка разделов: без перехода по ним это длинная прокрутка
+    jumpbar = ''
+    if len(jump) > 3:
+        jumpbar = ('\n<nav class="pjump" aria-label="%s"><div class="wrap">%s</div></nav>\n'
+                   % (e(PJUMP_LBL[lang]),
+                      ''.join('<a class="chip" href="#%s">%s</a>' % (gid, e(t))
+                              for gid, t in jump)))
     main = f"""
 <section class="hero hero-sm"><div class="wrap">
   <div class="kicker">{e(pp['kicker'])} · {e(cityname)}</div>
@@ -4668,7 +4699,7 @@ def build_prices_page(lang, city):
     <span class="free">{e(h['free'])}</span>
   </div>
 </div></section>
-
+{jumpbar}
 <section class="tint"><div class="wrap">{tables}
   <p class="note">{e(pp['note'])}</p>
 </div></section>
@@ -5383,6 +5414,21 @@ def course_price(price_str, city):
     return None
 
 
+def course_workload(cid):
+    """Длительность курса для поиска, в формате ISO 8601. Число дней или часов
+    одно на все языки, поэтому читаем его из русского описания формата."""
+    items = (courses.get('items') or {}).get('ru') or []
+    src = next((x for x in items if x.get('id') == cid), None)
+    f = ((src or {}).get('format') or '').lower()
+    m = re.search(r'(\d+)\s*час', f)
+    if m:
+        return 'PT%dH' % int(m.group(1))
+    m = re.search(r'(\d+)\s*(?:день|дня|дней)', f)
+    if m:
+        return 'P%dD' % int(m.group(1))
+    return None
+
+
 def course_schema(lang, city, cid, it, title_, lead):
     """Курс для поиска: кто учит, сколько стоит, очно или онлайн."""
     obj = {'@context': 'https://schema.org', '@type': 'Course',
@@ -5396,6 +5442,9 @@ def course_schema(lang, city, cid, it, title_, lead):
         inst['location'] = {'@id': '%s/%s/%s/#business' % (BASE, lang, city)}
     if it.get('trainer'):
         inst['instructor'] = {'@type': 'Person', 'name': it['trainer']}
+    wl = course_workload(cid)
+    if wl:
+        inst['courseWorkload'] = wl
     obj['hasCourseInstance'] = inst
     pr = course_price(it.get('price'), city)
     if pr:
