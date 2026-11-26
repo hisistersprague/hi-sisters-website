@@ -5841,19 +5841,25 @@ def root_redirect():
           "if(m[c]){p=m[c];break;}}"
           "setTimeout(function(){location.replace('/'+p+'/prague/'"
           "+location.search+location.hash);},350);})();")
+    # Счётчик ставим ДО переадресации, иначе браузер уходит со страницы раньше,
+    # чем он успеет сработать, и Google Ads считает корень страницей без тега.
+    # По той же причине у мета-переадресации задержка в секунду: за это время
+    # отрабатывает скрипт выше, который уводит гостя на страницу его языка,
+    # а мета остаётся запасным вариантом для браузеров без JavaScript.
     return ('<!doctype html><html lang="cs"><head><meta charset="utf-8">'
             '<meta name="viewport" content="width=device-width,initial-scale=1">'
             '<title>Hi Sisters Clinic — Praha a Valencia</title>'
             '<meta name="robots" content="noindex,follow">'
             '<meta name="google-site-verification" content="w0gr_xIGKVAPVdWsNGRQxfjPjKZGN87bxB6bOTXDnwI">'
             '<link rel="canonical" href="%s/cs/prague/">%s'
-            '<meta http-equiv="refresh" content="0;url=/cs/prague/">'
             '<link rel="icon" href="/favicon.svg">%s'
+            '<script>%s</script>'
+            '<meta http-equiv="refresh" content="1;url=/cs/prague/">'
             '<style>body{font-family:system-ui,sans-serif;background:#130B56;color:#fff;'
             'margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center;'
             'text-align:center}a{color:#EFD9B4}ul{list-style:none;padding:0;line-height:2.2}'
             '</style></head><body><div><p>Hi Sisters Clinic</p><ul>%s</ul></div>'
-            '<script>%s</script></body></html>' % (BASE, alts, GTAG, links, js))
+            '</body></html>' % (BASE, alts, GTAG, js, links))
 
 
 NOT_FOUND = {
