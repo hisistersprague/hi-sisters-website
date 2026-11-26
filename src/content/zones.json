@@ -1,925 +1,927 @@
 {
- "bikini": {
-  "rows": {
-   "prague": [
-    1,
-    2
-   ],
-   "valencia": [
-    2,
-    5
-   ]
+  "bikini": {
+    "rows": {
+      "prague": [
+        1,
+        2
+      ],
+      "valencia": [
+        2,
+        5
+      ]
+    },
+    "ru": {
+      "title": "Лазерная эпиляция бикини",
+      "intro": "Глубокое и классическое бикини. Курс заканчивается результатом, а не переходит в бесконечные поддерживающие визиты.",
+      "sections": [
+        [
+          "Сколько нужно сеансов",
+          "В среднем курс занимает 6–10 процедур. Точное число зависит от гормонального фона, типа и плотности волос — его называют на бесплатной консультации, до того как вы заплатите за первый сеанс."
+        ],
+        [
+          "Почему между процедурами два месяца",
+          "Лазер действует только на волосы в активной фазе роста, остальным нужно время, чтобы в неё войти. Поэтому после первой процедуры следующая — не раньше чем через два месяца. Частые визиты результат не ускоряют."
+        ],
+        [
+          "Что чувствуется",
+          "Ощутимые покалывания — это нормально. Жжения и ожога быть не должно: если кожу жжёт, параметры подобраны неверно. В интимной зоне работаем медленнее и мягче, мощность подбираем от сеанса к сеансу."
+        ],
+        [
+          "Как подготовиться",
+          "За сутки до визита побрить зону. Две недели не загорать. Месяц до процедуры не выщипывать волосы и не делать воск или шугаринг — волос должен остаться в фолликуле, иначе лазеру не на что действовать."
+        ]
+      ],
+      "faq": [
+        [
+          "Сколько держится результат?",
+          "После завершённого курса волосы не возвращаются. Если вы приходите с нуля и соблюдаете рекомендации, мы отвечаем за результат."
+        ],
+        [
+          "Чем глубокое бикини отличается от классического?",
+          "Классическое — это линия трусиков и пах. Глубокое включает всю интимную зону, включая межъягодичную складку. Что именно обрабатывать, решаем на консультации."
+        ]
+      ]
+    },
+    "uk": {
+      "title": "Лазерна епіляція бікіні",
+      "intro": "Глибоке та класичне бікіні. Курс завершується результатом, а не переходить у нескінченні підтримувальні візити.",
+      "sections": [
+        [
+          "Скільки потрібно сеансів",
+          "У середньому курс триває 6–10 процедур. Точну кількість визначає гормональний фон, тип і щільність волосся — її називають на безкоштовній консультації, ще до оплати першого сеансу."
+        ],
+        [
+          "Чому між процедурами два місяці",
+          "Лазер діє лише на волосся в активній фазі росту, решті потрібен час, щоб у неї увійти. Тому після першої процедури наступна — не раніше ніж за два місяці. Часті візити результат не прискорюють."
+        ],
+        [
+          "Що відчувається",
+          "Відчутні поколювання — це нормально. Печіння й опіку бути не повинно: якщо шкіру пече, параметри дібрані неправильно. В інтимній зоні працюємо повільніше й м’якше, потужність добираємо від сеансу до сеансу."
+        ],
+        [
+          "Як підготуватися",
+          "За добу до візиту поголити зону. Два тижні не засмагати. Місяць до процедури не виривати волосся й не робити віск чи шугаринг — волос має лишитися у фолікулі, інакше лазеру немає на що діяти."
+        ]
+      ],
+      "faq": [
+        [
+          "Скільки тримається результат?",
+          "Після завершеного курсу волосся не повертається. Якщо ви приходите з нуля й дотримуєтесь рекомендацій, ми відповідаємо за результат."
+        ],
+        [
+          "Чим глибоке бікіні відрізняється від класичного?",
+          "Класичне — це лінія трусиків і пах. Глибоке охоплює всю інтимну зону, разом із міжсідничною складкою. Що саме обробляти, вирішуємо на консультації."
+        ]
+      ]
+    },
+    "cs": {
+      "title": "Laserová epilace bikin",
+      "intro": "Hluboké i klasické bikiny. Kúra končí výsledkem, ne nekonečnými udržovacími návštěvami.",
+      "sections": [
+        [
+          "Kolik sezení je potřeba",
+          "Kúra obvykle trvá 6–10 ošetření. Přesný počet závisí na hormonálním pozadí, typu a hustotě chloupků — řekneme ho na bezplatné konzultaci, ještě než zaplatíte první sezení."
+        ],
+        [
+          "Proč jsou mezi zákroky dva měsíce",
+          "Laser působí jen na chloupky v aktivní fázi růstu, ostatní potřebují čas, aby do ní vstoupily. Po prvním ošetření proto přijde další nejdříve za dva měsíce. Časté návštěvy výsledek neurychlí."
+        ],
+        [
+          "Jak to vnímáte",
+          "Citelné brnění je normální. Pálení ani popálení být nesmí: pokud pleť pálí, jsou špatně zvolené parametry. V intimní zóně pracujeme pomaleji a jemněji a výkon ladíme od sezení k sezení."
+        ],
+        [
+          "Jak se připravit",
+          "Den předem zónu oholte. Dva týdny se neopalujte. Měsíc před zákrokem nevytrhávejte chloupky a nedělejte vosk ani cukrovou pastu — chloupek musí zůstat ve folikulu, jinak laser nemá na co působit."
+        ]
+      ],
+      "faq": [
+        [
+          "Jak dlouho výsledek vydrží?",
+          "Po dokončené kúře se chloupky nevracejí. Pokud začínáte od nuly a držíte se doporučení, ručíme za výsledek."
+        ],
+        [
+          "Čím se liší hluboké bikiny od klasických?",
+          "Klasické jsou linie kalhotek a třísla. Hluboké zahrnují celou intimní zónu včetně mezihýžďové rýhy. Co přesně ošetřit, domluvíme na konzultaci."
+        ]
+      ]
+    },
+    "en": {
+      "title": "Laser hair removal, bikini",
+      "intro": "Deep and classic bikini. The course ends with a result rather than turning into endless top-up visits.",
+      "sections": [
+        [
+          "How many sessions it takes",
+          "A course usually runs to 6–10 treatments. The exact number depends on your hormones and on the type and density of the hair — we tell you at the free consultation, before you pay for the first session."
+        ],
+        [
+          "Why there are two months in between",
+          "The laser only works on hair in its active growth phase; the rest needs time to get there. So the second session comes no sooner than two months after the first. Frequent visits do not speed the result up."
+        ],
+        [
+          "What it feels like",
+          "A noticeable tingling is normal. Burning is not: if the skin burns, the settings are wrong. In the intimate area we work slower and gentler, and adjust the power from session to session."
+        ],
+        [
+          "How to prepare",
+          "Shave the area a day before. Avoid the sun for two weeks. For a month before, do not pluck, wax or sugar — the hair has to stay in the follicle, otherwise the laser has nothing to act on."
+        ]
+      ],
+      "faq": [
+        [
+          "How long does the result last?",
+          "After a completed course the hair does not come back. If you start from scratch and follow the aftercare, we stand behind the result."
+        ],
+        [
+          "What is the difference between deep and classic bikini?",
+          "Classic covers the panty line and the groin. Deep covers the whole intimate area, including the buttock crease. We agree on the exact area at the consultation."
+        ]
+      ]
+    },
+    "es": {
+      "title": "Depilación láser de ingles",
+      "intro": "Ingles completas y clásicas. El curso termina con un resultado y no se convierte en visitas de mantenimiento sin fin.",
+      "sections": [
+        [
+          "Cuántas sesiones hacen falta",
+          "Un curso suele ser de 6–10 sesiones. El número exacto depende de tus hormonas y del tipo y la densidad del vello: te lo decimos en la consulta gratuita, antes de que pagues la primera sesión."
+        ],
+        [
+          "Por qué pasan dos meses entre sesiones",
+          "El láser solo actúa sobre el vello en fase activa de crecimiento; el resto necesita tiempo para entrar en ella. Por eso la segunda sesión no llega antes de dos meses. Ir más a menudo no acelera nada."
+        ],
+        [
+          "Qué se siente",
+          "Un hormigueo perceptible es normal. Quemazón, no: si la piel quema, los parámetros están mal elegidos. En la zona íntima trabajamos más despacio y suave, y ajustamos la potencia en cada sesión."
+        ],
+        [
+          "Cómo prepararte",
+          "Aféitate la zona el día antes. No tomes el sol durante dos semanas. El mes previo, nada de pinzas, cera ni azúcar: el vello debe quedarse en el folículo o el láser no tiene sobre qué actuar."
+        ]
+      ],
+      "faq": [
+        [
+          "¿Cuánto dura el resultado?",
+          "Tras un curso completo el vello no vuelve. Si empiezas desde cero y sigues las recomendaciones, respondemos por el resultado."
+        ],
+        [
+          "¿En qué se diferencian las ingles completas de las clásicas?",
+          "Las clásicas cubren la línea del bañador y la ingle. Las completas abarcan toda la zona íntima, incluido el pliegue interglúteo. La zona exacta se decide en la consulta."
+        ]
+      ]
+    }
   },
-  "ru": {
-   "title": "Лазерная эпиляция бикини",
-   "intro": "Глубокое и классическое бикини. Курс заканчивается результатом, а не переходит в бесконечные поддерживающие визиты.",
-   "sections": [
-    [
-     "Сколько нужно сеансов",
-     "В среднем курс занимает 6–10 процедур. Точное число зависит от гормонального фона, типа и плотности волос — его называют на бесплатной консультации, до того как вы заплатите за первый сеанс."
-    ],
-    [
-     "Почему между процедурами два месяца",
-     "Лазер действует только на волосы в активной фазе роста, остальным нужно время, чтобы в неё войти. Поэтому после первой процедуры следующая — не раньше чем через два месяца. Частые визиты результат не ускоряют."
-    ],
-    [
-     "Что чувствуется",
-     "Ощутимые покалывания — это нормально. Жжения и ожога быть не должно: если кожу жжёт, параметры подобраны неверно. В интимной зоне работаем медленнее и мягче, мощность подбираем от сеанса к сеансу."
-    ],
-    [
-     "Как подготовиться",
-     "За сутки до визита побрить зону. Две недели не загорать. Месяц до процедуры не выщипывать волосы и не делать воск или шугаринг — волос должен остаться в фолликуле, иначе лазеру не на что действовать."
-    ]
-   ],
-   "faq": [
-    [
-     "Сколько держится результат?",
-     "После завершённого курса волосы не возвращаются. Если вы приходите с нуля и соблюдаете рекомендации, мы отвечаем за результат."
-    ],
-    [
-     "Чем глубокое бикини отличается от классического?",
-     "Классическое — это линия трусиков и пах. Глубокое включает всю интимную зону, включая межъягодичную складку. Что именно обрабатывать, решаем на консультации."
-    ]
-   ]
+  "underarms": {
+    "rows": {
+      "prague": [
+        0
+      ],
+      "valencia": [
+        1
+      ]
+    },
+    "ru": {
+      "title": "Лазерная эпиляция подмышек",
+      "intro": "Самая быстрая зона: сама процедура занимает считаные минуты, а результат виден уже после первых сеансов.",
+      "sections": [
+        [
+          "Сколько нужно сеансов",
+          "Подмышки обычно закрываются за 6–8 процедур. Волос здесь тёмный и плотный, поэтому лазер работает по нему особенно хорошо."
+        ],
+        [
+          "Почему интервалы широкие",
+          "После первой процедуры следующая — через два месяца и позже. За первый год курса выходит 4–5 визитов, а не поход каждый месяц."
+        ],
+        [
+          "Что чувствуется",
+          "Короткие ощутимые покалывания. Зона небольшая, всё проходит быстро. Жжения быть не должно — это признак неверно подобранных параметров."
+        ],
+        [
+          "Что нельзя после процедуры",
+          "Сутки не пользоваться дезодорантом, два дня не ходить в баню и бассейн, две недели не загорать. Эти правила короткие, но от них зависит, не будет ли раздражения."
+        ]
+      ],
+      "faq": [
+        [
+          "Можно ли делать летом?",
+          "Да, если две недели до и после процедуры вы не загораете и пользуетесь защитой от солнца."
+        ],
+        [
+          "Почему волосы выпадают не сразу?",
+          "Разрушенный волос выходит из кожи на 10–14 день после процедуры. Это нормально и ожидаемо."
+        ]
+      ]
+    },
+    "uk": {
+      "title": "Лазерна епіляція пахв",
+      "intro": "Найшвидша зона: сама процедура триває лічені хвилини, а результат помітний уже після перших сеансів.",
+      "sections": [
+        [
+          "Скільки потрібно сеансів",
+          "Пахви зазвичай закриваються за 6–8 процедур. Волос тут темний і щільний, тож лазер працює по ньому особливо добре."
+        ],
+        [
+          "Чому інтервали широкі",
+          "Після першої процедури наступна — через два місяці й пізніше. За перший рік курсу виходить 4–5 візитів, а не похід щомісяця."
+        ],
+        [
+          "Що відчувається",
+          "Короткі відчутні поколювання. Зона невелика, усе минає швидко. Печіння бути не повинно — це ознака неправильно дібраних параметрів."
+        ],
+        [
+          "Чого не можна після процедури",
+          "Добу не користуватися дезодорантом, два дні не ходити в сауну й басейн, два тижні не засмагати. Правила короткі, але від них залежить, чи не буде подразнення."
+        ]
+      ],
+      "faq": [
+        [
+          "Чи можна робити влітку?",
+          "Так, якщо два тижні до і після процедури ви не засмагаєте та користуєтесь захистом від сонця."
+        ],
+        [
+          "Чому волосся випадає не одразу?",
+          "Зруйнований волос виходить зі шкіри на 10–14 день після процедури. Це нормально й очікувано."
+        ]
+      ]
+    },
+    "cs": {
+      "title": "Laserová epilace podpaží",
+      "intro": "Nejrychlejší zóna: samotné ošetření trvá pár minut a výsledek je vidět už po prvních sezeních.",
+      "sections": [
+        [
+          "Kolik sezení je potřeba",
+          "Podpaží se obvykle zvládne za 6–8 ošetření. Chloupek je tu tmavý a hustý, takže na něj laser funguje obzvlášť dobře."
+        ],
+        [
+          "Proč jsou intervaly dlouhé",
+          "Po prvním ošetření přijde další za dva měsíce a později. Za první rok kúry to vyjde na 4–5 návštěv, ne na cestu každý měsíc."
+        ],
+        [
+          "Jak to vnímáte",
+          "Krátké citelné brnění. Zóna je malá, všechno rychle odsýpá. Pálení být nesmí — je to známka špatně zvolených parametrů."
+        ],
+        [
+          "Co po ošetření nedělat",
+          "Den nepoužívat deodorant, dva dny vynechat saunu a bazén, dva týdny se neopalovat. Pravidla jsou krátká, ale rozhodují o tom, jestli nepřijde podráždění."
+        ]
+      ],
+      "faq": [
+        [
+          "Dá se to dělat v létě?",
+          "Ano, pokud se dva týdny před ošetřením a po něm neopalujete a používáte ochranu proti slunci."
+        ],
+        [
+          "Proč chloupky nevypadnou hned?",
+          "Zničený chloupek vychází z kůže 10.–14. den po ošetření. Je to normální a očekávané."
+        ]
+      ]
+    },
+    "en": {
+      "title": "Laser hair removal, underarms",
+      "intro": "The quickest area: the treatment itself takes minutes, and the result shows after the first sessions.",
+      "sections": [
+        [
+          "How many sessions it takes",
+          "Underarms usually clear in 6–8 treatments. The hair here is dark and dense, so the laser works on it particularly well."
+        ],
+        [
+          "Why the intervals are long",
+          "The second session comes two months after the first, or later. The first year of a course means 4–5 visits, not a trip every month."
+        ],
+        [
+          "What it feels like",
+          "Short, noticeable tingling. The area is small, so it is over quickly. Burning should not happen — it is a sign the settings are wrong."
+        ],
+        [
+          "What to avoid afterwards",
+          "No deodorant for a day, no sauna or pool for two days, no sunbathing for two weeks. Short rules, but they decide whether you get irritation."
+        ]
+      ],
+      "faq": [
+        [
+          "Can it be done in summer?",
+          "Yes, as long as you stay out of the sun for two weeks before and after and use sun protection."
+        ],
+        [
+          "Why does the hair not fall out straight away?",
+          "A destroyed hair leaves the skin on day 10–14 after the session. That is normal and expected."
+        ]
+      ]
+    },
+    "es": {
+      "title": "Depilación láser de axilas",
+      "intro": "La zona más rápida: la sesión dura unos minutos y el resultado se nota ya tras las primeras.",
+      "sections": [
+        [
+          "Cuántas sesiones hacen falta",
+          "Las axilas suelen quedar listas en 6–8 sesiones. El vello aquí es oscuro y denso, así que el láser funciona especialmente bien."
+        ],
+        [
+          "Por qué los intervalos son amplios",
+          "La segunda sesión llega dos meses después de la primera, o más tarde. El primer año del curso son 4–5 visitas, no una cada mes."
+        ],
+        [
+          "Qué se siente",
+          "Un hormigueo breve pero perceptible. La zona es pequeña y todo pasa rápido. No debe haber quemazón: es señal de parámetros mal elegidos."
+        ],
+        [
+          "Qué evitar después",
+          "Nada de desodorante durante un día, ni sauna o piscina durante dos, ni sol durante dos semanas. Son reglas cortas, pero de ellas depende que no haya irritación."
+        ]
+      ],
+      "faq": [
+        [
+          "¿Se puede hacer en verano?",
+          "Sí, siempre que no tomes el sol dos semanas antes y después y uses protección solar."
+        ],
+        [
+          "¿Por qué el vello no se cae enseguida?",
+          "El vello destruido sale de la piel entre el día 10 y el 14 tras la sesión. Es normal y esperable."
+        ]
+      ]
+    }
   },
-  "uk": {
-   "title": "Лазерна епіляція бікіні",
-   "intro": "Глибоке та класичне бікіні. Курс завершується результатом, а не переходить у нескінченні підтримувальні візити.",
-   "sections": [
-    [
-     "Скільки потрібно сеансів",
-     "У середньому курс триває 6–10 процедур. Точну кількість визначає гормональний фон, тип і щільність волосся — її називають на безкоштовній консультації, ще до оплати першого сеансу."
-    ],
-    [
-     "Чому між процедурами два місяці",
-     "Лазер діє лише на волосся в активній фазі росту, решті потрібен час, щоб у неї увійти. Тому після першої процедури наступна — не раніше ніж за два місяці. Часті візити результат не прискорюють."
-    ],
-    [
-     "Що відчувається",
-     "Відчутні поколювання — це нормально. Печіння й опіку бути не повинно: якщо шкіру пече, параметри дібрані неправильно. В інтимній зоні працюємо повільніше й м’якше, потужність добираємо від сеансу до сеансу."
-    ],
-    [
-     "Як підготуватися",
-     "За добу до візиту поголити зону. Два тижні не засмагати. Місяць до процедури не виривати волосся й не робити віск чи шугаринг — волос має лишитися у фолікулі, інакше лазеру немає на що діяти."
-    ]
-   ],
-   "faq": [
-    [
-     "Скільки тримається результат?",
-     "Після завершеного курсу волосся не повертається. Якщо ви приходите з нуля й дотримуєтесь рекомендацій, ми відповідаємо за результат."
-    ],
-    [
-     "Чим глибоке бікіні відрізняється від класичного?",
-     "Класичне — це лінія трусиків і пах. Глибоке охоплює всю інтимну зону, разом із міжсідничною складкою. Що саме обробляти, вирішуємо на консультації."
-    ]
-   ]
+  "legs": {
+    "rows": {
+      "prague": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "valencia": [
+        7,
+        9,
+        10,
+        11
+      ]
+    },
+    "ru": {
+      "title": "Лазерная эпиляция ног",
+      "intro": "Голени, бёдра или ноги полностью. Большая площадь — поэтому здесь особенно заметно, сколько визитов экономит правильный интервал.",
+      "sections": [
+        [
+          "Сколько нужно сеансов",
+          "На ноги обычно уходит 6–10 процедур. Голени отвечают быстрее бёдер: волос там плотнее и темнее."
+        ],
+        [
+          "Комплексом дешевле",
+          "Ноги часто берут вместе с подмышками и бикини — в комплексе зона выходит дешевле, чем по отдельности. Действующие комплексы собраны в прайсе."
+        ],
+        [
+          "Что чувствуется",
+          "Ощутимые покалывания, на внутренней стороне бёдер — чуть заметнее. Жжения быть не должно: параметры подбираются под вашу кожу и меняются от сеанса к сеансу."
+        ],
+        [
+          "Как подготовиться",
+          "Побрить ноги за сутки. Не загорать две недели. Месяц не делать воск и не выщипывать волосы — лазер работает только по волосу в фолликуле."
+        ]
+      ],
+      "faq": [
+        [
+          "Сколько длится процедура на ноги полностью?",
+          "Большие зоны мы закрываем в несколько рук: когда это возможно, над одной клиенткой работают сразу несколько специалисток, и зона обрабатывается в разы быстрее."
+        ],
+        [
+          "Можно ли делать при варикозе?",
+          "Это решается на консультации: в зависимости от стадии и расположения вен мы либо обходим участок, либо рекомендуем сначала обратиться к флебологу."
+        ]
+      ]
+    },
+    "uk": {
+      "title": "Лазерна епіляція ніг",
+      "intro": "Гомілки, стегна або ноги повністю. Велика площа — тож саме тут помітно, скільки візитів економить правильний інтервал.",
+      "sections": [
+        [
+          "Скільки потрібно сеансів",
+          "На ноги зазвичай іде 6–10 процедур. Гомілки відповідають швидше за стегна: волос там щільніший і темніший."
+        ],
+        [
+          "Комплексом дешевше",
+          "Ноги часто беруть разом із пахвами та бікіні — у комплексі зона виходить дешевше, ніж окремо. Чинні комплекси зібрані в прайсі."
+        ],
+        [
+          "Що відчувається",
+          "Відчутні поколювання, на внутрішній поверхні стегон — трохи помітніші. Печіння бути не повинно: параметри добираються під вашу шкіру й змінюються від сеансу до сеансу."
+        ],
+        [
+          "Як підготуватися",
+          "Поголити ноги за добу. Не засмагати два тижні. Місяць не робити віск і не виривати волосся — лазер працює лише по волосу у фолікулі."
+        ]
+      ],
+      "faq": [
+        [
+          "Скільки триває процедура на ноги повністю?",
+          "Великі зони ми закриваємо в кілька рук: коли це можливо, над однією клієнткою працюють одразу кілька спеціалісток, і зона обробляється значно швидше."
+        ],
+        [
+          "Чи можна робити при варикозі?",
+          "Це вирішується на консультації: залежно від стадії та розташування вен ми або обходимо ділянку, або радимо спершу звернутися до флеболога."
+        ]
+      ]
+    },
+    "cs": {
+      "title": "Laserová epilace nohou",
+      "intro": "Lýtka, stehna nebo celé nohy. Velká plocha — právě tady je nejvíc znát, kolik návštěv ušetří správný interval.",
+      "sections": [
+        [
+          "Kolik sezení je potřeba",
+          "Na nohy obvykle padne 6–10 ošetření. Lýtka reagují rychleji než stehna: chloupek je tam hustší a tmavší."
+        ],
+        [
+          "V balíčku to vyjde levněji",
+          "Nohy se často berou spolu s podpažím a bikinami — v balíčku vyjde zóna levněji než zvlášť. Aktuální balíčky najdete v ceníku."
+        ],
+        [
+          "Jak to vnímáte",
+          "Citelné brnění, na vnitřní straně stehen o něco víc. Pálení být nesmí: parametry se volí podle vaší pleti a mění se od sezení k sezení."
+        ],
+        [
+          "Jak se připravit",
+          "Nohy oholte den předem. Dva týdny se neopalujte. Měsíc nedělejte vosk a nevytrhávejte chloupky — laser působí jen na chloupek ve folikulu."
+        ]
+      ],
+      "faq": [
+        [
+          "Jak dlouho trvá ošetření celých nohou?",
+          "Velké zóny zvládáme ve více rukou: kdykoli to jde, pracuje na jedné klientce několik specialistek naráz a zóna je hotová mnohem rychleji."
+        ],
+        [
+          "Dá se to dělat při křečových žilách?",
+          "Řeší se to na konzultaci: podle stadia a umístění žil buď místo obejdeme, nebo doporučíme nejdřív návštěvu flebologa."
+        ]
+      ]
+    },
+    "en": {
+      "title": "Laser hair removal, legs",
+      "intro": "Shins, thighs or full legs. A large area — which is exactly where the right interval saves you the most visits.",
+      "sections": [
+        [
+          "How many sessions it takes",
+          "Legs usually take 6–10 treatments. Shins respond faster than thighs: the hair there is denser and darker."
+        ],
+        [
+          "A package costs less",
+          "Legs are often taken together with underarms and bikini — in a package the area comes out cheaper than separately. Current packages are in the price list."
+        ],
+        [
+          "What it feels like",
+          "A noticeable tingling, slightly stronger on the inner thighs. Burning should not happen: the settings are chosen for your skin and change from session to session."
+        ],
+        [
+          "How to prepare",
+          "Shave your legs a day before. No sunbathing for two weeks. No waxing or plucking for a month — the laser only works on hair still in the follicle."
+        ]
+      ],
+      "faq": [
+        [
+          "How long does a full-leg session take?",
+          "We cover large areas with several pairs of hands: whenever possible, several specialists work on one client at once and the area is finished far faster."
+        ],
+        [
+          "Can it be done with varicose veins?",
+          "That is decided at the consultation: depending on the stage and location of the veins we either work around the area or suggest seeing a phlebologist first."
+        ]
+      ]
+    },
+    "es": {
+      "title": "Depilación láser de piernas",
+      "intro": "Medias piernas, muslos o piernas completas. Una zona grande, justo donde un intervalo bien elegido ahorra más visitas.",
+      "sections": [
+        [
+          "Cuántas sesiones hacen falta",
+          "Las piernas suelen necesitar 6–10 sesiones. Las medias piernas responden antes que los muslos: el vello es más denso y oscuro."
+        ],
+        [
+          "En combo sale más barato",
+          "Las piernas se suelen combinar con axilas e ingles: en combo la zona sale más barata que por separado. Los combos vigentes están en la tarifa."
+        ],
+        [
+          "Qué se siente",
+          "Un hormigueo perceptible, algo más fuerte en la cara interna del muslo. No debe haber quemazón: los parámetros se eligen para tu piel y cambian en cada sesión."
+        ],
+        [
+          "Cómo prepararte",
+          "Aféitate las piernas el día antes. Sin sol durante dos semanas. Sin cera ni pinzas durante un mes: el láser solo actúa sobre el vello que sigue en el folículo."
+        ]
+      ],
+      "faq": [
+        [
+          "¿Cuánto dura una sesión de piernas completas?",
+          "Las zonas grandes las cubrimos a varias manos: siempre que se puede, varias especialistas trabajan a la vez sobre una clienta y la zona se termina mucho antes."
+        ],
+        [
+          "¿Se puede con varices?",
+          "Se decide en la consulta: según el estadio y la ubicación de las venas, rodeamos la zona o recomendamos acudir antes a un flebólogo."
+        ]
+      ]
+    },
+    "video": {
+      "src": "/assets/video/laser-nohy-2.mp4",
+      "poster": "/assets/video/laser-nohy-2.jpg",
+      "title": {
+        "ru": "Лазерная эпиляция ног: как это выглядит",
+        "uk": "Лазерна епіляція ніг: як це виглядає",
+        "cs": "Laserová epilace nohou: jak to vypadá",
+        "en": "Laser hair removal on legs: what it looks like",
+        "es": "Depilación láser de piernas: cómo se ve"
+      }
+    }
   },
-  "cs": {
-   "title": "Laserová epilace bikin",
-   "intro": "Hluboké i klasické bikiny. Kúra končí výsledkem, ne nekonečnými udržovacími návštěvami.",
-   "sections": [
-    [
-     "Kolik sezení je potřeba",
-     "Kúra obvykle trvá 6–10 ošetření. Přesný počet závisí na hormonálním pozadí, typu a hustotě chloupků — řekneme ho na bezplatné konzultaci, ještě než zaplatíte první sezení."
-    ],
-    [
-     "Proč jsou mezi zákroky dva měsíce",
-     "Laser působí jen na chloupky v aktivní fázi růstu, ostatní potřebují čas, aby do ní vstoupily. Po prvním ošetření proto přijde další nejdříve za dva měsíce. Časté návštěvy výsledek neurychlí."
-    ],
-    [
-     "Jak to vnímáte",
-     "Citelné brnění je normální. Pálení ani popálení být nesmí: pokud pleť pálí, jsou špatně zvolené parametry. V intimní zóně pracujeme pomaleji a jemněji a výkon ladíme od sezení k sezení."
-    ],
-    [
-     "Jak se připravit",
-     "Den předem zónu oholte. Dva týdny se neopalujte. Měsíc před zákrokem nevytrhávejte chloupky a nedělejte vosk ani cukrovou pastu — chloupek musí zůstat ve folikulu, jinak laser nemá na co působit."
-    ]
-   ],
-   "faq": [
-    [
-     "Jak dlouho výsledek vydrží?",
-     "Po dokončené kúře se chloupky nevracejí. Pokud začínáte od nuly a držíte se doporučení, ručíme za výsledek."
-    ],
-    [
-     "Čím se liší hluboké bikiny od klasických?",
-     "Klasické jsou linie kalhotek a třísla. Hluboké zahrnují celou intimní zónu včetně mezihýžďové rýhy. Co přesně ošetřit, domluvíme na konzultaci."
-    ]
-   ]
+  "arms": {
+    "rows": {
+      "prague": [
+        7,
+        8
+      ],
+      "valencia": [
+        8,
+        3
+      ]
+    },
+    "ru": {
+      "title": "Лазерная эпиляция рук",
+      "intro": "Зона, о которой вспоминают перед летом: руки по локоть или полностью. Волос здесь тоньше, чем на теле, поэтому курс строится аккуратно.",
+      "sections": [
+        [
+          "Сколько нужно сеансов",
+          "Обычно 6–10 процедур. На предплечьях волос тоньше и светлее, чем в подмышках, поэтому результат проявляется чуть медленнее, зато держится так же."
+        ],
+        [
+          "По локоть или полностью",
+          "Чаще берут руки по локоть: именно эта часть видна в футболке. Если волос заметен и выше, честнее сразу считать полную зону — граница между обработанным и необработанным участком бывает видна."
+        ],
+        [
+          "Что чувствуется",
+          "Короткие тёплые щелчки, кожа на руках переносит процедуру легче, чем бикини. Охлаждение насадки снимает основную часть ощущений."
+        ],
+        [
+          "Что нельзя после",
+          "Две недели не загорать и пользоваться SPF — руки открыты чаще других зон, и свежая кожа легко даёт пигментацию. Сутки без сауны и бассейна."
+        ]
+      ],
+      "faq": [
+        [
+          "Можно ли делать летом?",
+          "Можно, но руки почти всегда открыты. Нужен SPF каждый день и две недели без загара до и после сеанса."
+        ],
+        [
+          "Останутся ли светлые волоски?",
+          "Светлый и седой волос лазер не берёт — по ним работает электроэпиляция. На осмотре мы сразу скажем, сколько такого волоса в зоне."
+        ],
+        [
+          "Сколько держится результат?",
+          "Обработанный фолликул не восстанавливается. Единичные волоски могут появиться при гормональных изменениях — тогда нужен поддерживающий сеанс, а не новый курс."
+        ]
+      ]
+    },
+    "uk": {
+      "title": "Лазерна епіляція рук",
+      "intro": "Зона, про яку згадують перед літом: руки до ліктя або повністю. Волос тут тонший, ніж на тілі, тому курс будується акуратно.",
+      "sections": [
+        [
+          "Скільки потрібно сеансів",
+          "Зазвичай 6–10 процедур. На передпліччях волос тонший і світліший, ніж у пахвах, тому результат проявляється трохи повільніше, зате тримається так само."
+        ],
+        [
+          "До ліктя чи повністю",
+          "Частіше беруть руки до ліктя: саме ця частина видна у футболці. Якщо волос помітний і вище, чесніше одразу рахувати повну зону — межа між обробленою та необробленою ділянкою буває видна."
+        ],
+        [
+          "Що відчувається",
+          "Короткі теплі щиглики, шкіра на руках переносить процедуру легше, ніж бікіні. Охолодження насадки знімає основну частину відчуттів."
+        ],
+        [
+          "Чого не можна після",
+          "Два тижні не засмагати й користуватися SPF — руки відкриті частіше за інші зони, і свіжа шкіра легко дає пігментацію. Добу без сауни й басейну."
+        ]
+      ],
+      "faq": [
+        [
+          "Чи можна робити влітку?",
+          "Можна, але руки майже завжди відкриті. Потрібен SPF щодня і два тижні без засмаги до та після сеансу."
+        ],
+        [
+          "Чи залишаться світлі волоски?",
+          "Світлий і сивий волос лазер не бере — по ньому працює електроепіляція. На огляді ми одразу скажемо, скільки такого волосся в зоні."
+        ],
+        [
+          "Скільки тримається результат?",
+          "Оброблений фолікул не відновлюється. Поодинокі волоски можуть з’явитися при гормональних змінах — тоді потрібен підтримувальний сеанс, а не новий курс."
+        ]
+      ]
+    },
+    "cs": {
+      "title": "Laserová epilace rukou",
+      "intro": "Zóna, na kterou se vzpomene před létem: ruce po lokty nebo celé. Chloupek je tu jemnější než na těle, proto kúru stavíme opatrně.",
+      "sections": [
+        [
+          "Kolik sezení je potřeba",
+          "Obvykle 6–10 ošetření. Na předloktí je chloupek jemnější a světlejší než v podpaží, takže výsledek přichází o něco pomaleji, ale drží stejně."
+        ],
+        [
+          "Po lokty, nebo celé",
+          "Častěji se volí ruce po lokty: právě ta část je vidět v tričku. Pokud je chloupek výrazný i výš, je poctivější počítat rovnou celou zónu — přechod mezi ošetřenou a neošetřenou částí bývá vidět."
+        ],
+        [
+          "Co ucítíte",
+          "Krátká teplá cvrnknutí; kůže na rukou ošetření snáší lépe než bikiny. Chlazení hlavice většinu pocitů utlumí."
+        ],
+        [
+          "Co po ošetření nedělat",
+          "Dva týdny se neopalovat a používat SPF — ruce jsou odhalené častěji než jiné partie a čerstvá kůže snadno zapigmentuje. Jeden den bez sauny a bazénu."
+        ]
+      ],
+      "faq": [
+        [
+          "Dá se to dělat v létě?",
+          "Dá, ale ruce jsou skoro pořád odhalené. Je potřeba SPF každý den a dva týdny bez opalování před sezením i po něm."
+        ],
+        [
+          "Zůstanou světlé chloupky?",
+          "Světlý a šedivý chloupek laser nevezme — na ten je elektroepilace. Při vyšetření hned řekneme, kolik takových chloupků v zóně je."
+        ],
+        [
+          "Jak dlouho výsledek vydrží?",
+          "Ošetřený folikul se neobnoví. Jednotlivé chloupky se mohou objevit při hormonálních změnách — pak stačí udržovací sezení, ne nová kúra."
+        ]
+      ]
+    },
+    "en": {
+      "title": "Laser hair removal on arms",
+      "intro": "The area people remember before summer: forearms or full arms. The hair here is finer than on the body, so the course is built carefully.",
+      "sections": [
+        [
+          "How many sessions",
+          "Usually 6–10. On the forearms the hair is finer and lighter than in the underarms, so results come a little slower but hold just as well."
+        ],
+        [
+          "Forearms or full arms",
+          "Most people start with forearms — that is what shows in a T-shirt. If the hair is noticeable higher up too, it is more honest to treat the whole arm: the line between treated and untreated skin can show."
+        ],
+        [
+          "What it feels like",
+          "Short warm flicks; the skin on the arms takes it more easily than the bikini area. The cooled tip removes most of the sensation."
+        ],
+        [
+          "What to avoid afterwards",
+          "No tanning for two weeks and SPF daily — arms are exposed more than other areas and fresh skin pigments easily. No sauna or pool for a day."
+        ]
+      ],
+      "faq": [
+        [
+          "Can it be done in summer?",
+          "Yes, but arms are almost always uncovered. You will need SPF every day and two weeks without tanning before and after each session."
+        ],
+        [
+          "Will light hairs remain?",
+          "The laser cannot see blond or grey hair — that is what electrolysis is for. At the consultation we will tell you how much of it is in the area."
+        ],
+        [
+          "How long does the result last?",
+          "A treated follicle does not recover. Single hairs can appear with hormonal change — then one maintenance session is enough, not a new course."
+        ]
+      ]
+    },
+    "es": {
+      "title": "Depilación láser de brazos",
+      "intro": "La zona que se recuerda antes del verano: medio brazo o brazo entero. El vello aquí es más fino que en el cuerpo, así que la pauta se monta con cuidado.",
+      "sections": [
+        [
+          "Cuántas sesiones hacen falta",
+          "Normalmente 6–10. En el antebrazo el vello es más fino y claro que en las axilas, así que el resultado llega algo más despacio, pero se mantiene igual."
+        ],
+        [
+          "Medio brazo o entero",
+          "Lo habitual es empezar por medio brazo: es lo que se ve con una camiseta. Si el vello se nota también más arriba, es más honesto tratar el brazo entero: la línea entre lo tratado y lo no tratado puede verse."
+        ],
+        [
+          "Qué se siente",
+          "Chasquidos cortos y cálidos; la piel del brazo lo lleva mejor que las ingles. El frío del cabezal quita la mayor parte de la sensación."
+        ],
+        [
+          "Qué evitar después",
+          "Dos semanas sin sol y SPF a diario: los brazos van descubiertos más que otras zonas y la piel reciente pigmenta con facilidad. Un día sin sauna ni piscina."
+        ]
+      ],
+      "faq": [
+        [
+          "¿Se puede hacer en verano?",
+          "Sí, pero los brazos van casi siempre al aire. Hace falta SPF a diario y dos semanas sin broncearse antes y después de cada sesión."
+        ],
+        [
+          "¿Quedará vello claro?",
+          "El láser no ve el vello rubio ni canoso: para eso está la electrólisis. En la valoración te diremos cuánto hay en la zona."
+        ],
+        [
+          "¿Cuánto dura el resultado?",
+          "Un folículo tratado no se recupera. Pueden salir pelos sueltos con cambios hormonales; entonces basta una sesión de mantenimiento, no una pauta nueva."
+        ]
+      ]
+    }
   },
-  "en": {
-   "title": "Laser hair removal, bikini",
-   "intro": "Deep and classic bikini. The course ends with a result rather than turning into endless top-up visits.",
-   "sections": [
-    [
-     "How many sessions it takes",
-     "A course usually runs to 6–10 treatments. The exact number depends on your hormones and on the type and density of the hair — we tell you at the free consultation, before you pay for the first session."
-    ],
-    [
-     "Why there are two months in between",
-     "The laser only works on hair in its active growth phase; the rest needs time to get there. So the second session comes no sooner than two months after the first. Frequent visits do not speed the result up."
-    ],
-    [
-     "What it feels like",
-     "A noticeable tingling is normal. Burning is not: if the skin burns, the settings are wrong. In the intimate area we work slower and gentler, and adjust the power from session to session."
-    ],
-    [
-     "How to prepare",
-     "Shave the area a day before. Avoid the sun for two weeks. For a month before, do not pluck, wax or sugar — the hair has to stay in the follicle, otherwise the laser has nothing to act on."
-    ]
-   ],
-   "faq": [
-    [
-     "How long does the result last?",
-     "After a completed course the hair does not come back. If you start from scratch and follow the aftercare, we stand behind the result."
-    ],
-    [
-     "What is the difference between deep and classic bikini?",
-     "Classic covers the panty line and the groin. Deep covers the whole intimate area, including the buttock crease. We agree on the exact area at the consultation."
-    ]
-   ]
-  },
-  "es": {
-   "title": "Depilación láser de ingles",
-   "intro": "Ingles completas y clásicas. El curso termina con un resultado y no se convierte en visitas de mantenimiento sin fin.",
-   "sections": [
-    [
-     "Cuántas sesiones hacen falta",
-     "Un curso suele ser de 6–10 sesiones. El número exacto depende de tus hormonas y del tipo y la densidad del vello: te lo decimos en la consulta gratuita, antes de que pagues la primera sesión."
-    ],
-    [
-     "Por qué pasan dos meses entre sesiones",
-     "El láser solo actúa sobre el vello en fase activa de crecimiento; el resto necesita tiempo para entrar en ella. Por eso la segunda sesión no llega antes de dos meses. Ir más a menudo no acelera nada."
-    ],
-    [
-     "Qué se siente",
-     "Un hormigueo perceptible es normal. Quemazón, no: si la piel quema, los parámetros están mal elegidos. En la zona íntima trabajamos más despacio y suave, y ajustamos la potencia en cada sesión."
-    ],
-    [
-     "Cómo prepararte",
-     "Aféitate la zona el día antes. No tomes el sol durante dos semanas. El mes previo, nada de pinzas, cera ni azúcar: el vello debe quedarse en el folículo o el láser no tiene sobre qué actuar."
-    ]
-   ],
-   "faq": [
-    [
-     "¿Cuánto dura el resultado?",
-     "Tras un curso completo el vello no vuelve. Si empiezas desde cero y sigues las recomendaciones, respondemos por el resultado."
-    ],
-    [
-     "¿En qué se diferencian las ingles completas de las clásicas?",
-     "Las clásicas cubren la línea del bañador y la ingle. Las completas abarcan toda la zona íntima, incluido el pliegue interglúteo. La zona exacta se decide en la consulta."
-    ]
-   ]
+  "men": {
+    "group": {
+      "prague": "laserMen",
+      "valencia": "laserMenEs"
+    },
+    "rows": {
+      "prague": [
+        1,
+        2,
+        8,
+        5,
+        0,
+        15
+      ],
+      "valencia": [
+        11,
+        15,
+        9,
+        17,
+        1,
+        5
+      ]
+    },
+    "ru": {
+      "title": "Лазерная эпиляция для мужчин",
+      "intro": "Спина, грудь, плечи, шея, руки. Мужской волос толще и плотнее женского — лазер на нём работает особенно хорошо, но параметры нужны другие.",
+      "sections": [
+        [
+          "Какие зоны берут чаще всего",
+          "Спина и плечи — на первом месте: сам себе их не побреешь, а волос растёт быстро. Дальше идут грудь и живот, шея и зона бороды по линии роста, руки. Мы работаем со всеми этими зонами, включая полный торс и полную спину одним сеансом."
+        ],
+        [
+          "Сколько нужно сеансов",
+          "Обычно 8–12, больше, чем у женщин: мужской волос гуще, а на спине и груди он чувствительнее к гормональному фону. Заметное прореживание видно после 3–4 процедур."
+        ],
+        [
+          "Что чувствуется",
+          "Мужская кожа плотнее, но и мощность под неё подбирается выше. Ощущение — короткий горячий щелчок; на спине переносится легче, чем на груди и животе."
+        ],
+        [
+          "Подготовка и уход",
+          "Побрить зону за сутки, две недели не загорать, в день процедуры без кремов и дезодоранта. После — сутки без сауны, бассейна и спортзала, SPF на открытых участках."
+        ]
+      ],
+      "faq": [
+        [
+          "Можно ли оставить бороду и убрать только шею?",
+          "Да, это частый запрос. Линию роста обсуждаем до процедуры и обрабатываем только ниже неё — граница получается ровной."
+        ],
+        [
+          "Волосы на спине вернутся?",
+          "Обработанный фолликул не восстанавливается. Но рост волос на спине и груди зависит от гормонов, поэтому единичные волосы со временем могут появиться — закрывается поддерживающим сеансом."
+        ],
+        [
+          "Сколько длится сеанс на спине?",
+          "Полная спина — около 30–40 минут. Торс целиком дольше, точное время назовём на осмотре."
+        ]
+      ]
+    },
+    "uk": {
+      "title": "Лазерна епіляція для чоловіків",
+      "intro": "Спина, груди, плечі, шия, руки. Чоловічий волос товщий і щільніший за жіночий — лазер на ньому працює особливо добре, але параметри потрібні інші.",
+      "sections": [
+        [
+          "Які зони беруть найчастіше",
+          "Спина і плечі — на першому місці: сам собі їх не поголиш, а волос росте швидко. Далі йдуть груди й живіт, шия та зона бороди по лінії росту, руки. Ми працюємо з усіма цими зонами, включно з повним торсом і повною спиною за один сеанс."
+        ],
+        [
+          "Скільки потрібно сеансів",
+          "Зазвичай 8–12, більше, ніж у жінок: чоловічий волос густіший, а на спині та грудях він чутливіший до гормонального фону. Помітне прорідження видно після 3–4 процедур."
+        ],
+        [
+          "Що відчувається",
+          "Чоловіча шкіра щільніша, але й потужність під неї добирається вища. Відчуття — короткий гарячий щиглик; на спині переноситься легше, ніж на грудях і животі."
+        ],
+        [
+          "Підготовка і догляд",
+          "Поголити зону за добу, два тижні не засмагати, у день процедури без кремів і дезодоранту. Після — добу без сауни, басейну і спортзалу, SPF на відкритих ділянках."
+        ]
+      ],
+      "faq": [
+        [
+          "Чи можна залишити бороду й прибрати тільки шию?",
+          "Так, це частий запит. Лінію росту обговорюємо до процедури й обробляємо лише нижче неї — межа виходить рівною."
+        ],
+        [
+          "Чи повернеться волосся на спині?",
+          "Оброблений фолікул не відновлюється. Але ріст волосся на спині й грудях залежить від гормонів, тому поодинокі волосини з часом можуть з’явитися — закривається підтримувальним сеансом."
+        ],
+        [
+          "Скільки триває сеанс на спині?",
+          "Повна спина — близько 30–40 хвилин. Торс цілком довше, точний час назвемо на огляді."
+        ]
+      ]
+    },
+    "cs": {
+      "title": "Laserová epilace pro muže",
+      "intro": "Záda, hrudník, ramena, krk, paže. Mužský chloupek je silnější a hustší než ženský — laser na něj funguje obzvlášť dobře, ale parametry musí být jiné.",
+      "sections": [
+        [
+          "Které partie se řeší nejčastěji",
+          "Záda a ramena jsou na prvním místě: sám si je neoholíte a chloupky rostou rychle. Pak hrudník a břicho, krk a linie vousů, paže. Zvládneme všechny tyto partie, včetně celého trupu nebo celých zad v jednom sezení."
+        ],
+        [
+          "Kolik sezení je potřeba",
+          "Obvykle 8–12, víc než u žen: mužský chloupek je hustší a na zádech i hrudníku citlivěji reaguje na hormony. Patrné prořídnutí je vidět po 3–4 ošetřeních."
+        ],
+        [
+          "Co ucítíte",
+          "Mužská kůže je silnější, ale i výkon se jí přizpůsobí. Pocit je jako krátké horké cvrnknutí; na zádech se snáší lépe než na hrudníku a břiše."
+        ],
+        [
+          "Příprava a péče",
+          "Oholit partii den předem, dva týdny se neopalovat, v den ošetření bez krémů a deodorantu. Po ošetření den bez sauny, bazénu a posilovny, SPF na odhalených místech."
+        ]
+      ],
+      "faq": [
+        [
+          "Jde nechat vousy a odstranit jen krk?",
+          "Ano, je to častý požadavek. Linii vousů domluvíme předem a ošetřujeme jen pod ní — přechod je rovný."
+        ],
+        [
+          "Vrátí se chloupky na zádech?",
+          "Ošetřený folikul se neobnoví. Růst na zádech a hrudníku ale závisí na hormonech, takže jednotlivé chloupky se časem objevit mohou — vyřeší je udržovací sezení."
+        ],
+        [
+          "Jak dlouho trvá sezení na zádech?",
+          "Celá záda zhruba 30–40 minut. Celý trup déle, přesný čas řekneme při vyšetření."
+        ]
+      ]
+    },
+    "en": {
+      "title": "Laser hair removal for men",
+      "intro": "Back, chest, shoulders, neck, arms. Male hair is thicker and denser than female hair — the laser works particularly well on it, but the settings have to be different.",
+      "sections": [
+        [
+          "The areas men ask for most",
+          "Back and shoulders come first: you cannot shave them yourself and the hair grows back fast. Then chest and abdomen, the neck and the beard line, and arms. We treat all of these, including a full torso or a full back in one session."
+        ],
+        [
+          "How many sessions",
+          "Usually 8–12 — more than for women: male hair is denser, and on the back and chest it responds more to hormones. Visible thinning shows after 3–4 sessions."
+        ],
+        [
+          "What it feels like",
+          "Male skin is thicker, and the power is set accordingly. It feels like a short hot flick; the back takes it more easily than the chest and abdomen."
+        ],
+        [
+          "Preparation and aftercare",
+          "Shave the area a day before, no tanning for two weeks, no creams or deodorant on the day. Afterwards: no sauna, pool or gym for a day, SPF on exposed skin."
+        ]
+      ],
+      "faq": [
+        [
+          "Can I keep the beard and clear only the neck?",
+          "Yes, that is a common request. We agree the beard line beforehand and treat only below it, so the edge stays clean."
+        ],
+        [
+          "Will back hair come back?",
+          "A treated follicle does not recover. Growth on the back and chest depends on hormones, though, so single hairs can appear over time — one maintenance session handles them."
+        ],
+        [
+          "How long does a back session take?",
+          "A full back is about 30–40 minutes. A full torso takes longer; we will give you the exact time at the consultation."
+        ]
+      ]
+    },
+    "es": {
+      "title": "Depilación láser para hombres",
+      "intro": "Espalda, pecho, hombros, cuello, brazos. El vello masculino es más grueso y denso que el femenino: el láser funciona especialmente bien con él, pero los parámetros tienen que ser otros.",
+      "sections": [
+        [
+          "Las zonas que más se piden",
+          "Espalda y hombros van primero: no te los afeitas solo y el vello vuelve rápido. Después pecho y abdomen, cuello y línea de la barba, y brazos. Tratamos todas ellas, incluido el torso completo o la espalda entera en una sesión."
+        ],
+        [
+          "Cuántas sesiones hacen falta",
+          "Normalmente 8–12, más que en mujeres: el vello masculino es más denso y en espalda y pecho responde más a las hormonas. El aclarado se ve tras 3–4 sesiones."
+        ],
+        [
+          "Qué se siente",
+          "La piel masculina es más gruesa y la potencia se ajusta a ella. Se siente como un chasquido caliente y breve; la espalda lo lleva mejor que el pecho y el abdomen."
+        ],
+        [
+          "Preparación y cuidados",
+          "Afeitar la zona el día antes, dos semanas sin sol, el día de la sesión sin cremas ni desodorante. Después: un día sin sauna, piscina ni gimnasio, y SPF en la piel descubierta."
+        ]
+      ],
+      "faq": [
+        [
+          "¿Puedo conservar la barba y limpiar solo el cuello?",
+          "Sí, se pide a menudo. Acordamos la línea de la barba antes y tratamos solo por debajo, así el borde queda limpio."
+        ],
+        [
+          "¿Volverá el vello de la espalda?",
+          "Un folículo tratado no se recupera. El crecimiento en espalda y pecho depende de las hormonas, así que pueden salir pelos sueltos con el tiempo: se resuelven con una sesión de mantenimiento."
+        ],
+        [
+          "¿Cuánto dura una sesión de espalda?",
+          "La espalda entera unos 30–40 minutos. El torso completo más; el tiempo exacto lo decimos en la valoración."
+        ]
+      ]
+    }
   }
- },
- "underarms": {
-  "rows": {
-   "prague": [
-    0
-   ],
-   "valencia": [
-    1
-   ]
-  },
-  "ru": {
-   "title": "Лазерная эпиляция подмышек",
-   "intro": "Самая быстрая зона: сама процедура занимает считаные минуты, а результат виден уже после первых сеансов.",
-   "sections": [
-    [
-     "Сколько нужно сеансов",
-     "Подмышки обычно закрываются за 6–8 процедур. Волос здесь тёмный и плотный, поэтому лазер работает по нему особенно хорошо."
-    ],
-    [
-     "Почему интервалы широкие",
-     "После первой процедуры следующая — через два месяца и позже. За первый год курса выходит 4–5 визитов, а не поход каждый месяц."
-    ],
-    [
-     "Что чувствуется",
-     "Короткие ощутимые покалывания. Зона небольшая, всё проходит быстро. Жжения быть не должно — это признак неверно подобранных параметров."
-    ],
-    [
-     "Что нельзя после процедуры",
-     "Сутки не пользоваться дезодорантом, два дня не ходить в баню и бассейн, две недели не загорать. Эти правила короткие, но от них зависит, не будет ли раздражения."
-    ]
-   ],
-   "faq": [
-    [
-     "Можно ли делать летом?",
-     "Да, если две недели до и после процедуры вы не загораете и пользуетесь защитой от солнца."
-    ],
-    [
-     "Почему волосы выпадают не сразу?",
-     "Разрушенный волос выходит из кожи на 10–14 день после процедуры. Это нормально и ожидаемо."
-    ]
-   ]
-  },
-  "uk": {
-   "title": "Лазерна епіляція пахв",
-   "intro": "Найшвидша зона: сама процедура триває лічені хвилини, а результат помітний уже після перших сеансів.",
-   "sections": [
-    [
-     "Скільки потрібно сеансів",
-     "Пахви зазвичай закриваються за 6–8 процедур. Волос тут темний і щільний, тож лазер працює по ньому особливо добре."
-    ],
-    [
-     "Чому інтервали широкі",
-     "Після першої процедури наступна — через два місяці й пізніше. За перший рік курсу виходить 4–5 візитів, а не похід щомісяця."
-    ],
-    [
-     "Що відчувається",
-     "Короткі відчутні поколювання. Зона невелика, усе минає швидко. Печіння бути не повинно — це ознака неправильно дібраних параметрів."
-    ],
-    [
-     "Чого не можна після процедури",
-     "Добу не користуватися дезодорантом, два дні не ходити в сауну й басейн, два тижні не засмагати. Правила короткі, але від них залежить, чи не буде подразнення."
-    ]
-   ],
-   "faq": [
-    [
-     "Чи можна робити влітку?",
-     "Так, якщо два тижні до і після процедури ви не засмагаєте та користуєтесь захистом від сонця."
-    ],
-    [
-     "Чому волосся випадає не одразу?",
-     "Зруйнований волос виходить зі шкіри на 10–14 день після процедури. Це нормально й очікувано."
-    ]
-   ]
-  },
-  "cs": {
-   "title": "Laserová epilace podpaží",
-   "intro": "Nejrychlejší zóna: samotné ošetření trvá pár minut a výsledek je vidět už po prvních sezeních.",
-   "sections": [
-    [
-     "Kolik sezení je potřeba",
-     "Podpaží se obvykle zvládne za 6–8 ošetření. Chloupek je tu tmavý a hustý, takže na něj laser funguje obzvlášť dobře."
-    ],
-    [
-     "Proč jsou intervaly dlouhé",
-     "Po prvním ošetření přijde další za dva měsíce a později. Za první rok kúry to vyjde na 4–5 návštěv, ne na cestu každý měsíc."
-    ],
-    [
-     "Jak to vnímáte",
-     "Krátké citelné brnění. Zóna je malá, všechno rychle odsýpá. Pálení být nesmí — je to známka špatně zvolených parametrů."
-    ],
-    [
-     "Co po ošetření nedělat",
-     "Den nepoužívat deodorant, dva dny vynechat saunu a bazén, dva týdny se neopalovat. Pravidla jsou krátká, ale rozhodují o tom, jestli nepřijde podráždění."
-    ]
-   ],
-   "faq": [
-    [
-     "Dá se to dělat v létě?",
-     "Ano, pokud se dva týdny před ošetřením a po něm neopalujete a používáte ochranu proti slunci."
-    ],
-    [
-     "Proč chloupky nevypadnou hned?",
-     "Zničený chloupek vychází z kůže 10.–14. den po ošetření. Je to normální a očekávané."
-    ]
-   ]
-  },
-  "en": {
-   "title": "Laser hair removal, underarms",
-   "intro": "The quickest area: the treatment itself takes minutes, and the result shows after the first sessions.",
-   "sections": [
-    [
-     "How many sessions it takes",
-     "Underarms usually clear in 6–8 treatments. The hair here is dark and dense, so the laser works on it particularly well."
-    ],
-    [
-     "Why the intervals are long",
-     "The second session comes two months after the first, or later. The first year of a course means 4–5 visits, not a trip every month."
-    ],
-    [
-     "What it feels like",
-     "Short, noticeable tingling. The area is small, so it is over quickly. Burning should not happen — it is a sign the settings are wrong."
-    ],
-    [
-     "What to avoid afterwards",
-     "No deodorant for a day, no sauna or pool for two days, no sunbathing for two weeks. Short rules, but they decide whether you get irritation."
-    ]
-   ],
-   "faq": [
-    [
-     "Can it be done in summer?",
-     "Yes, as long as you stay out of the sun for two weeks before and after and use sun protection."
-    ],
-    [
-     "Why does the hair not fall out straight away?",
-     "A destroyed hair leaves the skin on day 10–14 after the session. That is normal and expected."
-    ]
-   ]
-  },
-  "es": {
-   "title": "Depilación láser de axilas",
-   "intro": "La zona más rápida: la sesión dura unos minutos y el resultado se nota ya tras las primeras.",
-   "sections": [
-    [
-     "Cuántas sesiones hacen falta",
-     "Las axilas suelen quedar listas en 6–8 sesiones. El vello aquí es oscuro y denso, así que el láser funciona especialmente bien."
-    ],
-    [
-     "Por qué los intervalos son amplios",
-     "La segunda sesión llega dos meses después de la primera, o más tarde. El primer año del curso son 4–5 visitas, no una cada mes."
-    ],
-    [
-     "Qué se siente",
-     "Un hormigueo breve pero perceptible. La zona es pequeña y todo pasa rápido. No debe haber quemazón: es señal de parámetros mal elegidos."
-    ],
-    [
-     "Qué evitar después",
-     "Nada de desodorante durante un día, ni sauna o piscina durante dos, ni sol durante dos semanas. Son reglas cortas, pero de ellas depende que no haya irritación."
-    ]
-   ],
-   "faq": [
-    [
-     "¿Se puede hacer en verano?",
-     "Sí, siempre que no tomes el sol dos semanas antes y después y uses protección solar."
-    ],
-    [
-     "¿Por qué el vello no se cae enseguida?",
-     "El vello destruido sale de la piel entre el día 10 y el 14 tras la sesión. Es normal y esperable."
-    ]
-   ]
-  }
- },
- "legs": {
-  "rows": {
-   "prague": [
-    3,
-    4,
-    5,
-    6
-   ],
-   "valencia": [
-    7,
-    9,
-    10,
-    11
-   ]
-  },
-  "ru": {
-   "title": "Лазерная эпиляция ног",
-   "intro": "Голени, бёдра или ноги полностью. Большая площадь — поэтому здесь особенно заметно, сколько визитов экономит правильный интервал.",
-   "sections": [
-    [
-     "Сколько нужно сеансов",
-     "На ноги обычно уходит 6–10 процедур. Голени отвечают быстрее бёдер: волос там плотнее и темнее."
-    ],
-    [
-     "Комплексом дешевле",
-     "Ноги часто берут вместе с подмышками и бикини — в комплексе зона выходит дешевле, чем по отдельности. Действующие комплексы собраны в прайсе."
-    ],
-    [
-     "Что чувствуется",
-     "Ощутимые покалывания, на внутренней стороне бёдер — чуть заметнее. Жжения быть не должно: параметры подбираются под вашу кожу и меняются от сеанса к сеансу."
-    ],
-    [
-     "Как подготовиться",
-     "Побрить ноги за сутки. Не загорать две недели. Месяц не делать воск и не выщипывать волосы — лазер работает только по волосу в фолликуле."
-    ]
-   ],
-   "faq": [
-    [
-     "Сколько длится процедура на ноги полностью?",
-     "Большие зоны мы закрываем в несколько рук: когда это возможно, над одной клиенткой работают сразу несколько специалисток, и зона обрабатывается в разы быстрее."
-    ],
-    [
-     "Можно ли делать при варикозе?",
-     "Это решается на консультации: в зависимости от стадии и расположения вен мы либо обходим участок, либо рекомендуем сначала обратиться к флебологу."
-    ]
-   ]
-  },
-  "uk": {
-   "title": "Лазерна епіляція ніг",
-   "intro": "Гомілки, стегна або ноги повністю. Велика площа — тож саме тут помітно, скільки візитів економить правильний інтервал.",
-   "sections": [
-    [
-     "Скільки потрібно сеансів",
-     "На ноги зазвичай іде 6–10 процедур. Гомілки відповідають швидше за стегна: волос там щільніший і темніший."
-    ],
-    [
-     "Комплексом дешевше",
-     "Ноги часто беруть разом із пахвами та бікіні — у комплексі зона виходить дешевше, ніж окремо. Чинні комплекси зібрані в прайсі."
-    ],
-    [
-     "Що відчувається",
-     "Відчутні поколювання, на внутрішній поверхні стегон — трохи помітніші. Печіння бути не повинно: параметри добираються під вашу шкіру й змінюються від сеансу до сеансу."
-    ],
-    [
-     "Як підготуватися",
-     "Поголити ноги за добу. Не засмагати два тижні. Місяць не робити віск і не виривати волосся — лазер працює лише по волосу у фолікулі."
-    ]
-   ],
-   "faq": [
-    [
-     "Скільки триває процедура на ноги повністю?",
-     "Великі зони ми закриваємо в кілька рук: коли це можливо, над однією клієнткою працюють одразу кілька спеціалісток, і зона обробляється значно швидше."
-    ],
-    [
-     "Чи можна робити при варикозі?",
-     "Це вирішується на консультації: залежно від стадії та розташування вен ми або обходимо ділянку, або радимо спершу звернутися до флеболога."
-    ]
-   ]
-  },
-  "cs": {
-   "title": "Laserová epilace nohou",
-   "intro": "Lýtka, stehna nebo celé nohy. Velká plocha — právě tady je nejvíc znát, kolik návštěv ušetří správný interval.",
-   "sections": [
-    [
-     "Kolik sezení je potřeba",
-     "Na nohy obvykle padne 6–10 ošetření. Lýtka reagují rychleji než stehna: chloupek je tam hustší a tmavší."
-    ],
-    [
-     "V balíčku to vyjde levněji",
-     "Nohy se často berou spolu s podpažím a bikinami — v balíčku vyjde zóna levněji než zvlášť. Aktuální balíčky najdete v ceníku."
-    ],
-    [
-     "Jak to vnímáte",
-     "Citelné brnění, na vnitřní straně stehen o něco víc. Pálení být nesmí: parametry se volí podle vaší pleti a mění se od sezení k sezení."
-    ],
-    [
-     "Jak se připravit",
-     "Nohy oholte den předem. Dva týdny se neopalujte. Měsíc nedělejte vosk a nevytrhávejte chloupky — laser působí jen na chloupek ve folikulu."
-    ]
-   ],
-   "faq": [
-    [
-     "Jak dlouho trvá ošetření celých nohou?",
-     "Velké zóny zvládáme ve více rukou: kdykoli to jde, pracuje na jedné klientce několik specialistek naráz a zóna je hotová mnohem rychleji."
-    ],
-    [
-     "Dá se to dělat při křečových žilách?",
-     "Řeší se to na konzultaci: podle stadia a umístění žil buď místo obejdeme, nebo doporučíme nejdřív návštěvu flebologa."
-    ]
-   ]
-  },
-  "en": {
-   "title": "Laser hair removal, legs",
-   "intro": "Shins, thighs or full legs. A large area — which is exactly where the right interval saves you the most visits.",
-   "sections": [
-    [
-     "How many sessions it takes",
-     "Legs usually take 6–10 treatments. Shins respond faster than thighs: the hair there is denser and darker."
-    ],
-    [
-     "A package costs less",
-     "Legs are often taken together with underarms and bikini — in a package the area comes out cheaper than separately. Current packages are in the price list."
-    ],
-    [
-     "What it feels like",
-     "A noticeable tingling, slightly stronger on the inner thighs. Burning should not happen: the settings are chosen for your skin and change from session to session."
-    ],
-    [
-     "How to prepare",
-     "Shave your legs a day before. No sunbathing for two weeks. No waxing or plucking for a month — the laser only works on hair still in the follicle."
-    ]
-   ],
-   "faq": [
-    [
-     "How long does a full-leg session take?",
-     "We cover large areas with several pairs of hands: whenever possible, several specialists work on one client at once and the area is finished far faster."
-    ],
-    [
-     "Can it be done with varicose veins?",
-     "That is decided at the consultation: depending on the stage and location of the veins we either work around the area or suggest seeing a phlebologist first."
-    ]
-   ]
-  },
-  "es": {
-   "title": "Depilación láser de piernas",
-   "intro": "Medias piernas, muslos o piernas completas. Una zona grande, justo donde un intervalo bien elegido ahorra más visitas.",
-   "sections": [
-    [
-     "Cuántas sesiones hacen falta",
-     "Las piernas suelen necesitar 6–10 sesiones. Las medias piernas responden antes que los muslos: el vello es más denso y oscuro."
-    ],
-    [
-     "En combo sale más barato",
-     "Las piernas se suelen combinar con axilas e ingles: en combo la zona sale más barata que por separado. Los combos vigentes están en la tarifa."
-    ],
-    [
-     "Qué se siente",
-     "Un hormigueo perceptible, algo más fuerte en la cara interna del muslo. No debe haber quemazón: los parámetros se eligen para tu piel y cambian en cada sesión."
-    ],
-    [
-     "Cómo prepararte",
-     "Aféitate las piernas el día antes. Sin sol durante dos semanas. Sin cera ni pinzas durante un mes: el láser solo actúa sobre el vello que sigue en el folículo."
-    ]
-   ],
-   "faq": [
-    [
-     "¿Cuánto dura una sesión de piernas completas?",
-     "Las zonas grandes las cubrimos a varias manos: siempre que se puede, varias especialistas trabajan a la vez sobre una clienta y la zona se termina mucho antes."
-    ],
-    [
-     "¿Se puede con varices?",
-     "Se decide en la consulta: según el estadio y la ubicación de las venas, rodeamos la zona o recomendamos acudir antes a un flebólogo."
-    ]
-   ]
-  },
-  "video": {
-   "src": "/assets/video/laser-nohy-2.mp4",
-   "poster": "/assets/video/laser-nohy-2.jpg",
-   "title": {
-    "ru": "Лазерная эпиляция ног: как это выглядит",
-    "uk": "Лазерна епіляція ніг: як це виглядає",
-    "cs": "Laserová epilace nohou: jak to vypadá",
-    "en": "Laser hair removal on legs: what it looks like",
-    "es": "Depilación láser de piernas: cómo se ve"
-   }
-  }
- },
- "arms": {
-  "rows": {
-   "prague": [
-    7,
-    8
-   ],
-   "valencia": [
-    8,
-    3
-   ]
-  },
-  "ru": {
-   "title": "Лазерная эпиляция рук",
-   "intro": "Зона, о которой вспоминают перед летом: руки по локоть или полностью. Волос здесь тоньше, чем на теле, поэтому курс строится аккуратно.",
-   "sections": [
-    [
-     "Сколько нужно сеансов",
-     "Обычно 6–10 процедур. На предплечьях волос тоньше и светлее, чем в подмышках, поэтому результат проявляется чуть медленнее, зато держится так же."
-    ],
-    [
-     "По локоть или полностью",
-     "Чаще берут руки по локоть: именно эта часть видна в футболке. Если волос заметен и выше, честнее сразу считать полную зону — граница между обработанным и необработанным участком бывает видна."
-    ],
-    [
-     "Что чувствуется",
-     "Короткие тёплые щелчки, кожа на руках переносит процедуру легче, чем бикини. Охлаждение насадки снимает основную часть ощущений."
-    ],
-    [
-     "Что нельзя после",
-     "Две недели не загорать и пользоваться SPF — руки открыты чаще других зон, и свежая кожа легко даёт пигментацию. Сутки без сауны и бассейна."
-    ]
-   ],
-   "faq": [
-    [
-     "Можно ли делать летом?",
-     "Можно, но руки почти всегда открыты. Нужен SPF каждый день и две недели без загара до и после сеанса."
-    ],
-    [
-     "Останутся ли светлые волоски?",
-     "Светлый и седой волос лазер не берёт — по ним работает электроэпиляция. На осмотре мы сразу скажем, сколько такого волоса в зоне."
-    ],
-    [
-     "Сколько держится результат?",
-     "Обработанный фолликул не восстанавливается. Единичные волоски могут появиться при гормональных изменениях — тогда нужен поддерживающий сеанс, а не новый курс."
-    ]
-   ]
-  },
-  "uk": {
-   "title": "Лазерна епіляція рук",
-   "intro": "Зона, про яку згадують перед літом: руки до ліктя або повністю. Волос тут тонший, ніж на тілі, тому курс будується акуратно.",
-   "sections": [
-    [
-     "Скільки потрібно сеансів",
-     "Зазвичай 6–10 процедур. На передпліччях волос тонший і світліший, ніж у пахвах, тому результат проявляється трохи повільніше, зате тримається так само."
-    ],
-    [
-     "До ліктя чи повністю",
-     "Частіше беруть руки до ліктя: саме ця частина видна у футболці. Якщо волос помітний і вище, чесніше одразу рахувати повну зону — межа між обробленою та необробленою ділянкою буває видна."
-    ],
-    [
-     "Що відчувається",
-     "Короткі теплі щиглики, шкіра на руках переносить процедуру легше, ніж бікіні. Охолодження насадки знімає основну частину відчуттів."
-    ],
-    [
-     "Чого не можна після",
-     "Два тижні не засмагати й користуватися SPF — руки відкриті частіше за інші зони, і свіжа шкіра легко дає пігментацію. Добу без сауни й басейну."
-    ]
-   ],
-   "faq": [
-    [
-     "Чи можна робити влітку?",
-     "Можна, але руки майже завжди відкриті. Потрібен SPF щодня і два тижні без засмаги до та після сеансу."
-    ],
-    [
-     "Чи залишаться світлі волоски?",
-     "Світлий і сивий волос лазер не бере — по ньому працює електроепіляція. На огляді ми одразу скажемо, скільки такого волосся в зоні."
-    ],
-    [
-     "Скільки тримається результат?",
-     "Оброблений фолікул не відновлюється. Поодинокі волоски можуть з’явитися при гормональних змінах — тоді потрібен підтримувальний сеанс, а не новий курс."
-    ]
-   ]
-  },
-  "cs": {
-   "title": "Laserová epilace rukou",
-   "intro": "Zóna, na kterou se vzpomene před létem: ruce po lokty nebo celé. Chloupek je tu jemnější než na těle, proto kúru stavíme opatrně.",
-   "sections": [
-    [
-     "Kolik sezení je potřeba",
-     "Obvykle 6–10 ošetření. Na předloktí je chloupek jemnější a světlejší než v podpaží, takže výsledek přichází o něco pomaleji, ale drží stejně."
-    ],
-    [
-     "Po lokty, nebo celé",
-     "Častěji se volí ruce po lokty: právě ta část je vidět v tričku. Pokud je chloupek výrazný i výš, je poctivější počítat rovnou celou zónu — přechod mezi ošetřenou a neošetřenou částí bývá vidět."
-    ],
-    [
-     "Co ucítíte",
-     "Krátká teplá cvrnknutí; kůže na rukou ošetření snáší lépe než bikiny. Chlazení hlavice většinu pocitů utlumí."
-    ],
-    [
-     "Co po ošetření nedělat",
-     "Dva týdny se neopalovat a používat SPF — ruce jsou odhalené častěji než jiné partie a čerstvá kůže snadno zapigmentuje. Jeden den bez sauny a bazénu."
-    ]
-   ],
-   "faq": [
-    [
-     "Dá se to dělat v létě?",
-     "Dá, ale ruce jsou skoro pořád odhalené. Je potřeba SPF každý den a dva týdny bez opalování před sezením i po něm."
-    ],
-    [
-     "Zůstanou světlé chloupky?",
-     "Světlý a šedivý chloupek laser nevezme — na ten je elektroepilace. Při vyšetření hned řekneme, kolik takových chloupků v zóně je."
-    ],
-    [
-     "Jak dlouho výsledek vydrží?",
-     "Ošetřený folikul se neobnoví. Jednotlivé chloupky se mohou objevit při hormonálních změnách — pak stačí udržovací sezení, ne nová kúra."
-    ]
-   ]
-  },
-  "en": {
-   "title": "Laser hair removal on arms",
-   "intro": "The area people remember before summer: forearms or full arms. The hair here is finer than on the body, so the course is built carefully.",
-   "sections": [
-    [
-     "How many sessions",
-     "Usually 6–10. On the forearms the hair is finer and lighter than in the underarms, so results come a little slower but hold just as well."
-    ],
-    [
-     "Forearms or full arms",
-     "Most people start with forearms — that is what shows in a T-shirt. If the hair is noticeable higher up too, it is more honest to treat the whole arm: the line between treated and untreated skin can show."
-    ],
-    [
-     "What it feels like",
-     "Short warm flicks; the skin on the arms takes it more easily than the bikini area. The cooled tip removes most of the sensation."
-    ],
-    [
-     "What to avoid afterwards",
-     "No tanning for two weeks and SPF daily — arms are exposed more than other areas and fresh skin pigments easily. No sauna or pool for a day."
-    ]
-   ],
-   "faq": [
-    [
-     "Can it be done in summer?",
-     "Yes, but arms are almost always uncovered. You will need SPF every day and two weeks without tanning before and after each session."
-    ],
-    [
-     "Will light hairs remain?",
-     "The laser cannot see blond or grey hair — that is what electrolysis is for. At the consultation we will tell you how much of it is in the area."
-    ],
-    [
-     "How long does the result last?",
-     "A treated follicle does not recover. Single hairs can appear with hormonal change — then one maintenance session is enough, not a new course."
-    ]
-   ]
-  },
-  "es": {
-   "title": "Depilación láser de brazos",
-   "intro": "La zona que se recuerda antes del verano: medio brazo o brazo entero. El vello aquí es más fino que en el cuerpo, así que la pauta se monta con cuidado.",
-   "sections": [
-    [
-     "Cuántas sesiones hacen falta",
-     "Normalmente 6–10. En el antebrazo el vello es más fino y claro que en las axilas, así que el resultado llega algo más despacio, pero se mantiene igual."
-    ],
-    [
-     "Medio brazo o entero",
-     "Lo habitual es empezar por medio brazo: es lo que se ve con una camiseta. Si el vello se nota también más arriba, es más honesto tratar el brazo entero: la línea entre lo tratado y lo no tratado puede verse."
-    ],
-    [
-     "Qué se siente",
-     "Chasquidos cortos y cálidos; la piel del brazo lo lleva mejor que las ingles. El frío del cabezal quita la mayor parte de la sensación."
-    ],
-    [
-     "Qué evitar después",
-     "Dos semanas sin sol y SPF a diario: los brazos van descubiertos más que otras zonas y la piel reciente pigmenta con facilidad. Un día sin sauna ni piscina."
-    ]
-   ],
-   "faq": [
-    [
-     "¿Se puede hacer en verano?",
-     "Sí, pero los brazos van casi siempre al aire. Hace falta SPF a diario y dos semanas sin broncearse antes y después de cada sesión."
-    ],
-    [
-     "¿Quedará vello claro?",
-     "El láser no ve el vello rubio ni canoso: para eso está la electrólisis. En la valoración te diremos cuánto hay en la zona."
-    ],
-    [
-     "¿Cuánto dura el resultado?",
-     "Un folículo tratado no se recupera. Pueden salir pelos sueltos con cambios hormonales; entonces basta una sesión de mantenimiento, no una pauta nueva."
-    ]
-   ]
-  }
- },
- "men": {
-  "group": {
-   "prague": "laserMen",
-   "valencia": "laserMenEs"
-  },
-  "rows": {
-   "prague": [
-    1,
-    2,
-    8,
-    5,
-    0,
-    15
-   ],
-   "valencia": [
-    1,
-    4,
-    7,
-    2
-   ]
-  },
-  "ru": {
-   "title": "Лазерная эпиляция для мужчин",
-   "intro": "Спина, грудь, плечи, шея, руки. Мужской волос толще и плотнее женского — лазер на нём работает особенно хорошо, но параметры нужны другие.",
-   "sections": [
-    [
-     "Какие зоны берут чаще всего",
-     "Спина и плечи — на первом месте: сам себе их не побреешь, а волос растёт быстро. Дальше идут грудь и живот, шея и зона бороды по линии роста, руки. Мы работаем со всеми этими зонами, включая полный торс и полную спину одним сеансом."
-    ],
-    [
-     "Сколько нужно сеансов",
-     "Обычно 8–12, больше, чем у женщин: мужской волос гуще, а на спине и груди он чувствительнее к гормональному фону. Заметное прореживание видно после 3–4 процедур."
-    ],
-    [
-     "Что чувствуется",
-     "Мужская кожа плотнее, но и мощность под неё подбирается выше. Ощущение — короткий горячий щелчок; на спине переносится легче, чем на груди и животе."
-    ],
-    [
-     "Подготовка и уход",
-     "Побрить зону за сутки, две недели не загорать, в день процедуры без кремов и дезодоранта. После — сутки без сауны, бассейна и спортзала, SPF на открытых участках."
-    ]
-   ],
-   "faq": [
-    [
-     "Можно ли оставить бороду и убрать только шею?",
-     "Да, это частый запрос. Линию роста обсуждаем до процедуры и обрабатываем только ниже неё — граница получается ровной."
-    ],
-    [
-     "Волосы на спине вернутся?",
-     "Обработанный фолликул не восстанавливается. Но рост волос на спине и груди зависит от гормонов, поэтому единичные волосы со временем могут появиться — закрывается поддерживающим сеансом."
-    ],
-    [
-     "Сколько длится сеанс на спине?",
-     "Полная спина — около 30–40 минут. Торс целиком дольше, точное время назовём на осмотре."
-    ]
-   ]
-  },
-  "uk": {
-   "title": "Лазерна епіляція для чоловіків",
-   "intro": "Спина, груди, плечі, шия, руки. Чоловічий волос товщий і щільніший за жіночий — лазер на ньому працює особливо добре, але параметри потрібні інші.",
-   "sections": [
-    [
-     "Які зони беруть найчастіше",
-     "Спина і плечі — на першому місці: сам собі їх не поголиш, а волос росте швидко. Далі йдуть груди й живіт, шия та зона бороди по лінії росту, руки. Ми працюємо з усіма цими зонами, включно з повним торсом і повною спиною за один сеанс."
-    ],
-    [
-     "Скільки потрібно сеансів",
-     "Зазвичай 8–12, більше, ніж у жінок: чоловічий волос густіший, а на спині та грудях він чутливіший до гормонального фону. Помітне прорідження видно після 3–4 процедур."
-    ],
-    [
-     "Що відчувається",
-     "Чоловіча шкіра щільніша, але й потужність під неї добирається вища. Відчуття — короткий гарячий щиглик; на спині переноситься легше, ніж на грудях і животі."
-    ],
-    [
-     "Підготовка і догляд",
-     "Поголити зону за добу, два тижні не засмагати, у день процедури без кремів і дезодоранту. Після — добу без сауни, басейну і спортзалу, SPF на відкритих ділянках."
-    ]
-   ],
-   "faq": [
-    [
-     "Чи можна залишити бороду й прибрати тільки шию?",
-     "Так, це частий запит. Лінію росту обговорюємо до процедури й обробляємо лише нижче неї — межа виходить рівною."
-    ],
-    [
-     "Чи повернеться волосся на спині?",
-     "Оброблений фолікул не відновлюється. Але ріст волосся на спині й грудях залежить від гормонів, тому поодинокі волосини з часом можуть з’явитися — закривається підтримувальним сеансом."
-    ],
-    [
-     "Скільки триває сеанс на спині?",
-     "Повна спина — близько 30–40 хвилин. Торс цілком довше, точний час назвемо на огляді."
-    ]
-   ]
-  },
-  "cs": {
-   "title": "Laserová epilace pro muže",
-   "intro": "Záda, hrudník, ramena, krk, paže. Mužský chloupek je silnější a hustší než ženský — laser na něj funguje obzvlášť dobře, ale parametry musí být jiné.",
-   "sections": [
-    [
-     "Které partie se řeší nejčastěji",
-     "Záda a ramena jsou na prvním místě: sám si je neoholíte a chloupky rostou rychle. Pak hrudník a břicho, krk a linie vousů, paže. Zvládneme všechny tyto partie, včetně celého trupu nebo celých zad v jednom sezení."
-    ],
-    [
-     "Kolik sezení je potřeba",
-     "Obvykle 8–12, víc než u žen: mužský chloupek je hustší a na zádech i hrudníku citlivěji reaguje na hormony. Patrné prořídnutí je vidět po 3–4 ošetřeních."
-    ],
-    [
-     "Co ucítíte",
-     "Mužská kůže je silnější, ale i výkon se jí přizpůsobí. Pocit je jako krátké horké cvrnknutí; na zádech se snáší lépe než na hrudníku a břiše."
-    ],
-    [
-     "Příprava a péče",
-     "Oholit partii den předem, dva týdny se neopalovat, v den ošetření bez krémů a deodorantu. Po ošetření den bez sauny, bazénu a posilovny, SPF na odhalených místech."
-    ]
-   ],
-   "faq": [
-    [
-     "Jde nechat vousy a odstranit jen krk?",
-     "Ano, je to častý požadavek. Linii vousů domluvíme předem a ošetřujeme jen pod ní — přechod je rovný."
-    ],
-    [
-     "Vrátí se chloupky na zádech?",
-     "Ošetřený folikul se neobnoví. Růst na zádech a hrudníku ale závisí na hormonech, takže jednotlivé chloupky se časem objevit mohou — vyřeší je udržovací sezení."
-    ],
-    [
-     "Jak dlouho trvá sezení na zádech?",
-     "Celá záda zhruba 30–40 minut. Celý trup déle, přesný čas řekneme při vyšetření."
-    ]
-   ]
-  },
-  "en": {
-   "title": "Laser hair removal for men",
-   "intro": "Back, chest, shoulders, neck, arms. Male hair is thicker and denser than female hair — the laser works particularly well on it, but the settings have to be different.",
-   "sections": [
-    [
-     "The areas men ask for most",
-     "Back and shoulders come first: you cannot shave them yourself and the hair grows back fast. Then chest and abdomen, the neck and the beard line, and arms. We treat all of these, including a full torso or a full back in one session."
-    ],
-    [
-     "How many sessions",
-     "Usually 8–12 — more than for women: male hair is denser, and on the back and chest it responds more to hormones. Visible thinning shows after 3–4 sessions."
-    ],
-    [
-     "What it feels like",
-     "Male skin is thicker, and the power is set accordingly. It feels like a short hot flick; the back takes it more easily than the chest and abdomen."
-    ],
-    [
-     "Preparation and aftercare",
-     "Shave the area a day before, no tanning for two weeks, no creams or deodorant on the day. Afterwards: no sauna, pool or gym for a day, SPF on exposed skin."
-    ]
-   ],
-   "faq": [
-    [
-     "Can I keep the beard and clear only the neck?",
-     "Yes, that is a common request. We agree the beard line beforehand and treat only below it, so the edge stays clean."
-    ],
-    [
-     "Will back hair come back?",
-     "A treated follicle does not recover. Growth on the back and chest depends on hormones, though, so single hairs can appear over time — one maintenance session handles them."
-    ],
-    [
-     "How long does a back session take?",
-     "A full back is about 30–40 minutes. A full torso takes longer; we will give you the exact time at the consultation."
-    ]
-   ]
-  },
-  "es": {
-   "title": "Depilación láser para hombres",
-   "intro": "Espalda, pecho, hombros, cuello, brazos. El vello masculino es más grueso y denso que el femenino: el láser funciona especialmente bien con él, pero los parámetros tienen que ser otros.",
-   "sections": [
-    [
-     "Las zonas que más se piden",
-     "Espalda y hombros van primero: no te los afeitas solo y el vello vuelve rápido. Después pecho y abdomen, cuello y línea de la barba, y brazos. Tratamos todas ellas, incluido el torso completo o la espalda entera en una sesión."
-    ],
-    [
-     "Cuántas sesiones hacen falta",
-     "Normalmente 8–12, más que en mujeres: el vello masculino es más denso y en espalda y pecho responde más a las hormonas. El aclarado se ve tras 3–4 sesiones."
-    ],
-    [
-     "Qué se siente",
-     "La piel masculina es más gruesa y la potencia se ajusta a ella. Se siente como un chasquido caliente y breve; la espalda lo lleva mejor que el pecho y el abdomen."
-    ],
-    [
-     "Preparación y cuidados",
-     "Afeitar la zona el día antes, dos semanas sin sol, el día de la sesión sin cremas ni desodorante. Después: un día sin sauna, piscina ni gimnasio, y SPF en la piel descubierta."
-    ]
-   ],
-   "faq": [
-    [
-     "¿Puedo conservar la barba y limpiar solo el cuello?",
-     "Sí, se pide a menudo. Acordamos la línea de la barba antes y tratamos solo por debajo, así el borde queda limpio."
-    ],
-    [
-     "¿Volverá el vello de la espalda?",
-     "Un folículo tratado no se recupera. El crecimiento en espalda y pecho depende de las hormonas, así que pueden salir pelos sueltos con el tiempo: se resuelven con una sesión de mantenimiento."
-    ],
-    [
-     "¿Cuánto dura una sesión de espalda?",
-     "La espalda entera unos 30–40 minutos. El torso completo más; el tiempo exacto lo decimos en la valoración."
-    ]
-   ]
-  }
- }
 }
