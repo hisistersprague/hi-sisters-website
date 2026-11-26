@@ -1,7 +1,7 @@
 
 :root{
   --navy:#130B56; --navy-deep:#0A0738; --navy-light:#1E1670;
-  --gold:#D6B57D; --gold-light:#F2DDD0; --gold-dark:#8A6E42;
+  --gold:#D6B57D; --gold-light:#F2DDD0; --gold-dark:#7F6031;
   --accent:#F2B5E8;            /* розовый из сторис — на кнопках и активных элементах */
   --accent-ink:#2B0F55;
   --cta:#E8C6B0; --cta-ink:#0A0738;   /* кнопка записи: один цвет на всём сайте */
@@ -92,7 +92,7 @@ textarea:focus-visible,summary:focus-visible,[tabindex]:focus-visible{
 .city-sw{padding:5px 11px;border:1px solid var(--gold-ui);border-radius:999px;
          font-size:13px;text-decoration:none;white-space:nowrap;background:transparent;
          color:var(--gold-ui)}
-.city-sw span{color:var(--gold-dark)}
+.city-sw span{color:var(--gold)}
 
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;
      padding:13px 24px;border-radius:7px;border:1.5px solid var(--navy);background:var(--navy);
@@ -199,7 +199,7 @@ textarea:focus-visible,summary:focus-visible,[tabindex]:focus-visible{
 .free{font-size:14px;color:var(--muted)}
 .proof{display:flex;flex-wrap:wrap;align-items:center;gap:18px 26px;
        padding-top:22px;border-top:1px solid rgba(212,184,150,.3)}
-.stars{color:#9A7A45;letter-spacing:.08em}
+.stars{color:#7F6031;letter-spacing:.08em}
 .hero-badge{display:inline-flex;align-items:center;gap:13px;padding:10px 22px 10px 12px;
             background:rgba(255,255,255,.1);backdrop-filter:blur(12px);
             border:1px solid var(--gold-ui);border-radius:60px;
@@ -216,7 +216,7 @@ textarea:focus-visible,summary:focus-visible,[tabindex]:focus-visible{
 .proof-years{font-size:14px;color:#CFC9E6}
 .proof-years b{font-family:'Cormorant Garamond',serif;font-size:21px;color:var(--gold-ui)}
 .rev-trust{display:inline-flex;align-items:center;gap:10px;text-decoration:none}
-.rev-trust-stars{color:#9A7A45;letter-spacing:2px;font-size:17px}
+.rev-trust-stars{color:#7F6031;letter-spacing:2px;font-size:17px}
 .rev-trust-text{color:var(--navy);font-size:14.5px;font-weight:500;
             border-bottom:1px solid var(--navy)}
 .hero .rev-trust-text{color:#fff;border-bottom-color:var(--gold-ui)}
@@ -607,7 +607,7 @@ section{padding:50px 0}
 .mate .ava{width:84px;height:84px;margin-bottom:14px}
 .mate .ava-let{font-size:34px}
 .mate h3{font-size:20px;margin-bottom:3px}
-.mate .role{font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:#B0509B;margin-bottom:9px}
+.mate .role{font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:#A4418F;margin-bottom:9px}
 .mate p{font-size:14.5px;color:var(--muted)}
 
 /* косметика */
@@ -854,7 +854,7 @@ section{padding:50px 0}
 .prow-h span:first-child{font-size:16px}
 .proc-idx{margin-bottom:26px}
 .proc-idx h3{font-family:'Cormorant Garamond',serif;font-size:23px;font-weight:600;margin:0 0 10px}
-.proc-idx h3 a{color:var(--accent);text-decoration:none}
+.proc-idx h3 a{color:var(--accent-text,var(--accent));text-decoration:none}
 .proc-idx h3 a:hover{text-decoration:underline}
 .proc-sub{font-family:'Cormorant Garamond',serif;font-size:26px;font-weight:600;
   margin:38px 0 14px;color:var(--accent)}
@@ -866,8 +866,8 @@ body[data-page="services"]{
   --accent-30:rgba(255,46,136,.3);
 }
 /* белым буквам нужна заливка потемнее: на #FF2E88 контраст всего 3,5 */
-body[data-page="services"]{--accent-fill:#E3176F}
-body[data-page="services"] .btn-sm{background:var(--accent-fill);border-color:var(--accent-fill)}
+body[data-page="services"]{--accent-fill:#E3176F;--accent-text:#C9105F}
+body[data-page="services"] .btn-sm{background:var(--accent-fill);border-color:var(--accent-fill);color:#fff}
 body[data-page="services"] .infocard li::before{background:var(--accent-fill);color:#fff}
 body[data-page="services"] .steps li::before{background:var(--accent-fill);color:#fff}
 body[data-page="services"] .sec-head h2::before,
